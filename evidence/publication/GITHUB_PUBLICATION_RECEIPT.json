@@ -1,0 +1,74 @@
+{
+  "schema": "navier-stokes-everyday-github-publication-receipt/v1",
+  "status": "pass",
+  "verified_at": "2026-09-20T21:44:06.0860038+00:00",
+  "receipt_scope": "This receipt records the release-content commit and the first successful public checks. It was added in the next commit, without changing any checked release artifact.",
+  "repository": {
+    "name_with_owner": "KokunoYumeto/navier-stokes-proof-everyday-english",
+    "url": "https://github.com/KokunoYumeto/navier-stokes-proof-everyday-english",
+    "visibility": "public",
+    "default_branch": "main",
+    "release_content_commit": "66ff7f013606fdbc50c97aba6ae257f68b696892",
+    "description": "Everyday English Edition of the Navier–Stokes Proof, with PDF, EPUB, LaTeX, HTML, and verification records.",
+    "homepage": "https://kokunoyumeto.github.io/navier-stokes-proof-everyday-english/"
+  },
+  "github_pages": {
+    "url": "https://kokunoyumeto.github.io/navier-stokes-proof-everyday-english/",
+    "source_branch": "main",
+    "source_path": "/docs",
+    "https_enforced": true,
+    "build_id": 1228270486,
+    "build_status": "built",
+    "build_commit": "66ff7f013606fdbc50c97aba6ae257f68b696892"
+  },
+  "release_inputs": {
+    "final_qa_sha256": "3adda303f665ec4945235801ef9fcba0da8217d41f9e4d6aca4592ccb126e9f7",
+    "repository_manifest_sha256": "41b7a649a013bc70311b5e4b5e512dea0eda08cc86b5f7caa8c217cda9a6e8f8",
+    "repository_manifest_text_sha256": "bf29fcc1c5a8071498434aecf297bdc1cd6989949d7bed99eed4f152cac66a89"
+  },
+  "public_checks": [
+    {
+      "name": "repository",
+      "url": "https://github.com/KokunoYumeto/navier-stokes-proof-everyday-english",
+      "http_status": 200,
+      "bytes_received": 305339,
+      "result": "pass"
+    },
+    {
+      "name": "pdf",
+      "url": "https://raw.githubusercontent.com/KokunoYumeto/navier-stokes-proof-everyday-english/main/output/everyday-english/pdf/everyday-english-edition.pdf",
+      "http_status": 200,
+      "bytes_received": 5108345,
+      "sha256": "e8d8a06d53be4fd6e2408485f1be5b97ddef440f98fcabcabcfbf4a04750f55f",
+      "matches_checked_release": true,
+      "result": "pass"
+    },
+    {
+      "name": "epub",
+      "url": "https://raw.githubusercontent.com/KokunoYumeto/navier-stokes-proof-everyday-english/main/output/everyday-english/epub/everyday-english-edition.epub",
+      "http_status": 200,
+      "bytes_received": 2269611,
+      "sha256": "da3cf6071a690d8bcbeee044daa1e40bf1697f987e91a8c953b247c367e7d821",
+      "matches_checked_release": true,
+      "result": "pass"
+    },
+    {
+      "name": "latex_entry_point",
+      "url": "https://raw.githubusercontent.com/KokunoYumeto/navier-stokes-proof-everyday-english/main/everyday/main.tex",
+      "http_status": 200,
+      "bytes_received": 1323,
+      "sha256": "90cee55b7abdeccb20e03c08c1a16fd7a4d1b22c981e05acdcac9b9de20d1774",
+      "matches_checked_release": true,
+      "result": "pass"
+    },
+    {
+      "name": "online_reading_copy",
+      "url": "https://kokunoyumeto.github.io/navier-stokes-proof-everyday-english/",
+      "http_status": 200,
+      "bytes_received": 3865657,
+      "sha256": "56efba577998bd5ff80503b4779587ed659c15b44d6ccf5ec4ce1852bad9f6c3",
+      "matches_checked_release": true,
+      "result": "pass"
+    }
+  ]
+}
