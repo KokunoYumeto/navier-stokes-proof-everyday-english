@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/navier-stokes-everyday/ADDITIONS.schema.json",
+  "title": "Everyday English teaching-addition record",
+  "description": "One proof-backed record for one live EEAddition target block.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "record_type",
+    "status",
+    "pdf_pages",
+    "target",
+    "placement",
+    "source_dependencies",
+    "mathematical_claim_map",
+    "proof_records",
+    "notation_checks",
+    "scope_checks",
+    "defines_concept",
+    "accepting_examples",
+    "rejecting_examples",
+    "does_not_claim",
+    "supersession"
+  ],
+  "properties": {
+    "id": { "$ref": "#/$defs/recordId" },
+    "record_type": { "const": "addition" },
+    "status": { "$ref": "#/$defs/status" },
+    "pdf_pages": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/pdfPage" }
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "file_sha256", "target_id", "title", "body_sha256"],
+      "properties": {
+        "path": { "$ref": "#/$defs/relativePath" },
+        "file_sha256": { "$ref": "#/$defs/sha256" },
+        "target_id": { "$ref": "#/$defs/additionId" },
+        "title": { "$ref": "#/$defs/nonemptyString" },
+        "body_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "placement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["after_target_id", "before_target_id", "reason"],
+      "properties": {
+        "after_target_id": {
+          "oneOf": [
+            { "$ref": "#/$defs/targetId" },
+            { "type": "null" }
+          ]
+        },
+        "before_target_id": {
+          "oneOf": [
+            { "$ref": "#/$defs/targetId" },
+            { "type": "null" }
+          ]
+        },
+        "reason": { "$ref": "#/$defs/nonemptyString" }
+      }
+    },
+    "source_dependencies": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["dependency_id", "authority_type", "path", "locator", "exact_support", "file_sha256"],
+        "properties": {
+          "dependency_id": { "$ref": "#/$defs/recordId" },
+          "authority_type": { "enum": ["paper", "frozen_lean", "local_derivation"] },
+          "path": { "$ref": "#/$defs/relativePath" },
+          "locator": { "$ref": "#/$defs/nonemptyString" },
+          "exact_support": { "$ref": "#/$defs/nonemptyString" },
+          "file_sha256": {
+            "oneOf": [
+              { "$ref": "#/$defs/sha256" },
+              { "type": "null" }
+            ]
+          }
+        }
+      }
+    },
+    "mathematical_claim_map": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_id", "exact_claim", "source_dependency_ids"],
+        "properties": {
+          "claim_id": { "$ref": "#/$defs/recordId" },
+          "exact_claim": { "$ref": "#/$defs/nonemptyString" },
+          "source_dependency_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "$ref": "#/$defs/recordId" }
+          }
+        }
+      }
+    },
+    "proof_records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["proof_id", "claim_ids", "authority_type", "authority_locator", "argument", "conclusion", "result"],
+        "properties": {
+          "proof_id": { "$ref": "#/$defs/recordId" },
+          "claim_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "$ref": "#/$defs/recordId" }
+          },
+          "authority_type": { "enum": ["paper", "frozen_lean", "local_derivation"] },
+          "authority_locator": { "$ref": "#/$defs/nonemptyString" },
+          "argument": { "$ref": "#/$defs/nonemptyString" },
+          "conclusion": { "$ref": "#/$defs/nonemptyString" },
+          "result": { "enum": ["pass", "pending", "fail"] }
+        }
+      }
+    },
+    "notation_checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/namedCheck" }
+    },
+    "scope_checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/namedCheck" }
+    },
+    "defines_concept": { "type": "boolean" },
+    "accepting_examples": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/nonemptyString" }
+    },
+    "rejecting_examples": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/nonemptyString" }
+    },
+    "does_not_claim": { "$ref": "#/$defs/nonemptyString" },
+    "supersession": { "$ref": "#/$defs/supersession" }
+  },
+  "$defs": {
+    "nonemptyString": { "type": "string", "minLength": 1 },
+    "recordId": { "type": "string", "minLength": 1, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$" },
+    "additionId": { "type": "string", "pattern": "^EE-ADD-P[0-9]{3}-[0-9]{3}$" },
+    "targetId": { "type": "string", "pattern": "^EE-(?:TGT|ADD)-P[0-9]{3}-[0-9]{3}$" },
+    "status": { "enum": ["pass", "pending", "fail", "superseded"] },
+    "pdfPage": { "type": "integer", "minimum": 1, "maximum": 166 },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "relativePath": { "type": "string", "minLength": 1, "pattern": "^(?![A-Za-z]:)(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$" },
+    "namedCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subject", "result", "evidence"],
+      "properties": {
+        "subject": { "$ref": "#/$defs/nonemptyString" },
+        "result": { "enum": ["pass", "pending", "fail", "not_applicable"] },
+        "evidence": { "$ref": "#/$defs/nonemptyString" }
+      }
+    },
+    "supersession": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supersedes", "superseded_by"],
+      "properties": {
+        "supersedes": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/recordId" } },
+        "superseded_by": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/recordId" } }
+      }
+    }
+  }
+}

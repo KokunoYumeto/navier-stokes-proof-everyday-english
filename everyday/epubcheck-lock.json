@@ -1,0 +1,12 @@
+{
+  "archive": {
+    "bytes": 33093170,
+    "name": "epubcheck-5.4.0.zip",
+    "sha256": "33350c61038e71dfb3d45a76aed04bf5481e6d5500cb780f6e98db8bbd15a28c",
+    "url": "https://github.com/w3c/epubcheck/releases/download/v5.4.0/epubcheck-5.4.0.zip"
+  },
+  "release_page": "https://github.com/w3c/epubcheck/releases/tag/v5.4.0",
+  "runtime_jar": "tmp/dependencies/epubcheck-5.4.0-runtime/epubcheck-5.4.0/epubcheck.jar",
+  "schema": "navier-stokes-epubcheck-lock/v1",
+  "version": "5.4.0"
+}

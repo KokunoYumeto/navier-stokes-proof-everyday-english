@@ -1,0 +1,742 @@
+\NSPage{037}
+\item[(ii)]
+\begin{EESegment}{EE-TGT-P037-001}
+The inequalities \NSi{NS-F-P037-001}{a>0}, \NSi{NS-F-P037-002}{P_c>2}, and
+\NSi{NS-F-P037-003}{v_s<\mathcal U(P_c,J_c)} hold on \NSi{NS-F-P037-004}{(X_a,X_h]}.
+On the first collar \NSi{NS-F-P037-005}{(X_a,X_{\mathrm{an}}]}, one also has
+\NSi{NS-F-P037-006}{v_s>2}. At its inner endpoint,
+\NSi{NS-F-P037-007}{a(X_a,\eta)>0} and
+\NSi{NS-F-P037-008}{v_s(X_a,\eta)>2+c_{\mathrm{ex}}} for a constant
+\NSi{NS-F-P037-009}{c_{\mathrm{ex}}>0}. Write
+\NSi{NS-F-P037-010}{y_a=\log(X/X_a)}. On the first collar, the stress then factors as
+\end{EESegment}
+\NSFormula{NS-F-P037-011}{display}{4.33}
+\begin{equation}
+\begin{gathered}
+\mathcal T_0=e^{-t_1^2/y_a^2}g_a(y_a)B_a(y_a,\eta),\qquad g_a(0)>0,\\
+B_a(0,\eta)=F(X_a,\eta)\mathfrak s(X_a,\eta)\ne0.
+\end{gathered}
+\tag{4.33}\label{eq:4.33}
+\end{equation}
+\begin{EESegment}{EE-TGT-P037-002}
+The functions \NSi{NS-F-P037-012}{g_a,B_a} stay smooth through
+\NSi{NS-F-P037-013}{y_a=0}. For every fixed multi-index
+\NSi{NS-F-P037-014}{\alpha}, there are finite constants such that
+\end{EESegment}
+\NSFormula{NS-F-P037-015}{display}{none}
+\[
+\lvert\mathcal T_0\rvert\ge c e^{-t_1^2/y_a^2},
+\qquad
+\lvert\partial_{X,\eta}^{\alpha}\mathcal T_0\rvert
+   \le C_{\alpha}e^{-t_1^2/y_a^2}y_a^{-N_{\alpha}}.
+\]
+\begin{EESegment}{EE-TGT-P037-003}
+Everything stated in items (i) and (ii) holds for every
+\NSi{NS-F-P037-016}{\eta\in[-1,1]}.
+\end{EESegment}
+
+\item[(iii)]
+\begin{EESegment}{EE-TGT-P037-004}
+Near \NSi{NS-F-P037-017}{X_h}, the fields are exactly
+\NSi{NS-F-P037-018}{U_0=4\eta},
+\NSi{NS-F-P037-019}{E_0=P_*f x^{1/10}}, and
+\NSi{NS-F-P037-020}{\mathfrak m(X_h,\eta)=\mathfrak m_0(X_h,\eta)}. Here
+\NSi{NS-F-P037-021}{\mathfrak m_0=(M_0,I_0,J_0,S_0,C_{p,0})} is the list of five
+integrals of this reference pair, each taken from zero. These are equalities between functions of
+\NSi{NS-F-P037-022}{\eta}, and both pressures take the same prescribed value
+\NSi{NS-F-P037-023}{\Pi_0(\eta)} at \NSi{NS-F-P037-024}{X=0}.
+\end{EESegment}
+\end{enumerate}
+\begin{EESegment}{EE-TGT-P037-005}
+This leaves \NSi{NS-F-P037-025}{X_R} free to exceed any further prescribed lower bound, without
+changing the earlier choices of \NSi{NS-F-P037-026}{\Lambda,T_{\mathrm{sh}}}.
+\end{EESegment}
+\end{proposition}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P037-006}
+First choose axis data for Proposition~\ref{prop:B.2}. Then use
+Proposition~\ref{prop:B.3} and Corollary~\ref{cor:B.10} to continue the profile and match its
+moments. Set \NSi{NS-F-P037-027}{U_*=4\eta+j_0}, where
+\NSi{NS-F-P037-028}{0<j_0\le .05} is the small offset in the axis velocity, and define
+\end{EESegment}
+\NSFormula{NS-F-P037-029}{display}{none}
+\[
+H_*=D\eta+dU_*,
+\qquad
+Z_*=-A(1-2\eta U_*)U_*-H_*U_*'-d\Pi_0'+4A\eta\Pi_0.
+\]
+\begin{EESegment}{EE-TGT-P037-007}
+The pressure bounds in Lemma~\ref{lem:4.8} show that
+\NSi{NS-F-P037-030}{Z_*} is positive at the one point where
+\NSi{NS-F-P037-031}{H_*} is zero. Choose a threshold
+\NSi{NS-F-P037-032}{\delta_*>0}, and then choose a positive regularization parameter
+\NSi{NS-F-P037-033}{\sigma_*>0} that keeps the denominator in the next fraction away from zero,
+so that
+\end{EESegment}
+\NSFormula{NS-F-P037-034}{display}{none}
+\[
+\chi=\frac{H_*^2}{H_*^2+\sigma_*^2}>.99
+\quad\hbox{where}\quad \lvert Z_*\rvert\le\delta_*.
+\]
+\begin{EESegment}{EE-TGT-P037-008}
+With these choices, the positive analytic value on the axis is
+\end{EESegment}
+\NSFormula{NS-F-P037-035}{display}{none}
+\[
+\phi(0,\eta)=\exp\!\left(-\Lambda\int_0^{\eta}
+\frac{L(w)H_*(w)}{H_*(w)^2+\sigma_*^2}\,dw\right).
+\]
+\begin{EESegment}{EE-TGT-P037-009}
+The parameter \NSi{NS-F-P037-036}{\Lambda} sets the radial scale
+\NSi{NS-F-P037-037}{Y=\Lambda X}. Propositions~\ref{prop:B.2} and~\ref{prop:B.3}
+give the stress-free solution through \NSi{NS-F-P037-038}{Y=4.1} and the exit inequality
+\NSi{NS-F-P037-039}{p_{s,1}+p_{s,2}^2/p_{s,1}>2+c_{\mathrm{ex}}} at
+\NSi{NS-F-P037-040}{Y=4}. Proposition~\ref{prop:B.5} and Corollary~\ref{cor:B.6}
+give the regularity at the axis and on the collar in part (i), along with the first-collar claims in part (ii).
+The factor \NSi{NS-F-P037-041}{\kappa_0} reduces the reference shear, and
+\NSi{NS-F-P037-042}{t_1} is the width of its first transition in
+\NSi{NS-F-P037-043}{\log(X/X_a)}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P037-010}
+For part (iii), calculate the reference integrals
+\NSi{NS-F-P037-044}{\mathfrak m_0}. Under the normalization
+\end{EESegment}
+\NSFormula{NS-F-P037-045}{display}{none}
+\[
+\widehat{\mathfrak m}=(M/X_R,I/X_R^{3/2},J/X_R^{3/2},S/X_R,C_p),
+\]
+\begin{EESegment}{EE-TGT-P037-011}
+direct integration of the reference pair gives
+\end{EESegment}
+\NSFormula{NS-F-P037-046}{display}{4.34}
+\begin{equation}
+\begin{gathered}
+\widehat M_0(x)=4\eta x,\qquad
+\widehat I_0(x)=\frac{5\sqrt2}{8}P_*f x^{8/5},\qquad
+\widehat J_0(x)=4\eta\widehat I_0(x),\\
+\widehat S_0(x)=16\eta^2x-\frac5{12}P_*^2f^2x^{6/5},\qquad
+C_{p,0}(x)=\frac52P_*^2f^2x^{1/5}.
+\end{gathered}
+\tag{4.34}\label{eq:4.34}
+\end{equation}
+\begin{EESegment}{EE-TGT-P037-012}
+The first continuation from Proposition~\ref{prop:B.5} ends at
+\end{EESegment}
+\NSFormula{NS-F-P037-047}{display}{none}
+\[
+X_i=110,\qquad G_i(\eta)=U(X_i,\eta),\qquad
+a(X_i,\eta)=4/5,\qquad \mathcal D_XU(X_i,\eta)=0.
+\]
+\begin{EESegment}{EE-TGT-P037-013}
+The next transition, \eqref{eq:B.34}, keeps
+\NSi{NS-F-P037-048}{U=G_i} while matching
+\NSi{NS-F-P037-049}{E} to the azimuthal reference profile. It keeps
+\NSi{NS-F-P037-050}{U=G_i} until the restoration interval described below.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P037-014}
+To set a matching tolerance before choosing \NSi{NS-F-P037-051}{\mathsf C}, put
+\NSi{NS-F-P037-052}{\mathcal R=[e^{-8},e^{-5}]}, and take all the following minima and maxima over
+\NSi{NS-F-P037-053}{\mathcal R\times[-1,1]}. The reference fields have
+\NSi{NS-F-P037-054}{Q_{\min}=\min Q_{s,0}>0} and
+\NSi{NS-F-P037-055}{e_*=\min E_0>0}.
+\end{EESegment}
+\NSPage{038}
+\begin{EESegment}{EE-TGT-P038-001}
+They also give the finite number
+\NSi{NS-F-P038-001}{w_*=1+\max\lvert N_{s,0}/(E_0Q_{s,0})\rvert}. Here restoration means changing
+\NSi{NS-F-P038-002}{U=G_i(\eta)} to \NSi{NS-F-P038-003}{4\eta} on
+\NSi{NS-F-P038-004}{e^{-8}<x<e^{-7}}. After that come the five moment corrections on
+\NSi{NS-F-P038-005}{e^{-6}<x<e^{-5}}. At the entrance
+\NSi{NS-F-P038-006}{x=e^{-6}} to the correction interval, write
+\NSi{NS-F-P038-007}{\Delta\widehat{\mathfrak m}=\widehat{\mathfrak m}-\widehat{\mathfrak m}_0},
+using \eqref{eq:4.19} with \NSi{NS-F-P038-008}{\rho=X_R}. For the prescribed finite order
+\NSi{NS-F-P038-009}{k}, choose \NSi{NS-F-P038-010}{\varepsilon_m>0} small enough that the bound
+\end{EESegment}
+\NSFormula{NS-F-P038-011}{display}{none}
+\[
+\lVert G_i-4\eta\rVert_{C^{k+1}}+
+\lVert\Delta\widehat{\mathfrak m}(e^{-6},\mathord\cdot)\rVert_{C^{k+1}}<\varepsilon_m
+\]
+\begin{EESegment}{EE-TGT-P038-002}
+makes the restoration and correction satisfy
+\end{EESegment}
+\NSFormula{NS-F-P038-012}{display}{none}
+\[
+Q_s\ge Q_{\min}/2,\qquad E\ge e_*/2,\qquad .7\le a\le .9,
+\qquad
+\left\lvert\frac{N_s}{EQ_s}\right\rvert\le w_*,
+\qquad
+\lvert b_s\rvert\le\frac{.1}{1+w_*}.
+\]
+\begin{EESegment}{EE-TGT-P038-003}
+It follows that \NSi{NS-F-P038-013}{v_s=a+b_s^2/a\le .9+.01/.7<1}, while
+\end{EESegment}
+\NSFormula{NS-F-P038-014}{display}{none}
+\[
+G=Q_s-\frac{b_sN_s}{aE}\ge\frac67Q_s\ge\frac{3Q_{\min}}7,
+\qquad
+P_c=\frac{X_Rx}{L}G>2
+\]
+\begin{EESegment}{EE-TGT-P038-004}
+for every sufficiently large \NSi{NS-F-P038-015}{X_R}. The same fixed tolerance therefore keeps the relaxed
+condition true through both restoration and moment matching, as part (ii) requires.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P038-005}
+For each required order \NSi{NS-F-P038-016}{k}, Lemma~\ref{lem:B.7} gives
+\end{EESegment}
+\NSFormula{NS-F-P038-017}{display}{none}
+\[
+\lVert G_i-4\eta\rVert_{C^k}
+\le C_kj_0+C_k^{\mathrm{nat}}/\Lambda
+   +C_k^{\mathrm{join}}(\Lambda)(t_1+\kappa_0+\omega_{\mathrm{fin}}),
+\]
+\begin{EESegment}{EE-TGT-P038-006}
+where \NSi{NS-F-P038-018}{\omega_{\mathrm{fin}}} is the sum of the last two widths in
+\NSi{NS-F-P038-019}{\log X}. One width is used to set
+\NSi{NS-F-P038-020}{\mathcal D_XU=0}; the other is used to move
+\NSi{NS-F-P038-021}{a} to \NSi{NS-F-P038-022}{4/5} before
+\NSi{NS-F-P038-023}{X=X_i}. The same lemma bounds
+\NSi{NS-F-P038-024}{\log(\mathsf C E(X_i,\mathord\cdot))} independently of the later amplitude. That
+bound fixes the length \NSi{NS-F-P038-025}{T_{\mathrm{sh}}} of the transition to
+\NSi{NS-F-P038-026}{E_0}. The endpoint of this transition satisfies
+\end{EESegment}
+\NSFormula{NS-F-P038-027}{display}{none}
+\[
+x_{\mathrm{sep}}=e^{T_{\mathrm{sh}}}/(\mathsf C P_*)^{10}\longrightarrow0.
+\]
+\begin{EESegment}{EE-TGT-P038-007}
+Choose \NSi{NS-F-P038-028}{j_0,\Lambda} first, to control the first two errors. Then choose
+\NSi{NS-F-P038-029}{\mathsf C} large, and finally choose the widths and
+\NSi{NS-F-P038-030}{\kappa_0} small. The bound \eqref{eq:B.39} then makes the normalized moment
+error at \NSi{NS-F-P038-031}{x=e^{-6}} smaller than the chosen tolerance. The prescribed orders
+include the extra derivative required by \eqref{eq:B.35}.
+Proposition~\ref{prop:B.8} restores \NSi{NS-F-P038-032}{U_0} and solves all five moment
+equations before \NSi{NS-F-P038-033}{x=e^{-5}}, while keeping the relaxed inequalities above.
+Direct integration of \NSi{NS-F-P038-034}{(U_0,E_0)} gives \eqref{eq:4.34}, which finishes part (iii).
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P038-008}
+The inner and outer constructions leave an interval where only the relaxed cone condition is
+known. On that interval, replace the shear by a periodic family with the same mean, with every
+value in the family satisfying the admissible condition. The following map measures how far the
+shear is from each of the four constraint boundaries. For \NSi{NS-F-P038-035}{a>0},
+\NSi{NS-F-P038-036}{b\in\mathbb R}, and
+\NSi{NS-F-P038-037}{p=(p_1,p_2)\in\mathbb R^2}, define
+\end{EESegment}
+\NSFormula{NS-F-P038-038}{display}{4.35}
+\begin{equation}
+\begin{gathered}
+v=a+\frac{b^2}{a},\qquad c=p_1-\frac ba p_2,\qquad j=p_2+\frac ba p_1,\\
+\Psi(a,b,p)=\bigl(a,\ v-2,\ c-v,\ 2(c-v)^2-(v-2)j^2\bigr).
+\end{gathered}
+\tag{4.35}\label{eq:4.35}
+\end{equation}
+\begin{EESegment}{EE-TGT-P038-009}
+For the profile data \NSi{NS-F-P038-039}{(a,b_s,p_s)}, all four entries are positive exactly when
+\NSi{NS-F-P038-040}{a>0}, \NSi{NS-F-P038-041}{v_s>2}, and \eqref{eq:4.22} hold. The map
+\NSi{NS-F-P038-042}{\Psi} is smooth on \NSi{NS-F-P038-043}{\{a>0\}}.
+\end{EESegment}
+
+\begin{lemma}\label{lem:4.11}
+\begin{EESegment}{EE-TGT-P038-010}
+Let \NSi{NS-F-P038-044}{\mathcal I=[X_-,X_+]\Subset(0,\infty)}, and let
+\NSi{NS-F-P038-045}{a,b_s,p_s} be smooth on
+\NSi{NS-F-P038-046}{\mathcal I\times[-1,1]}, with
+\NSi{NS-F-P038-047}{a>0}. Define \NSi{NS-F-P038-048}{t_s,v_s,P_c,J_c} by
+\eqref{eq:4.20}. Suppose \NSi{NS-F-P038-049}{P_c>2} and
+\NSi{NS-F-P038-050}{v_s<\mathcal U(P_c,J_c)} everywhere on this rectangle, and suppose
+\NSi{NS-F-P038-051}{v_s>2} near both radial endpoints. Then there is a smooth
+period-one family \NSi{NS-F-P038-052}{(a_L,-b_L)(X,\eta,\varphi)},
+\NSi{NS-F-P038-053}{\varphi\in\mathbb R/\mathbb Z}, whose mean is the original shear:
+\end{EESegment}
+\NSFormula{NS-F-P038-054}{display}{none}
+\[
+\int_0^1(a_L,-b_L)(X,\eta,\varphi)\,d\varphi=(a,-b_s)(X,\eta).
+\]
+\NSPage{039}
+\begin{EESegment}{EE-TGT-P039-001}
+Every shear on this loop satisfies the admissible cone condition while the given vector
+\NSi{NS-F-P039-001}{p_s(X,\eta)} stays fixed. More precisely, there is a number
+\NSi{NS-F-P039-002}{\mu_L>0} such that
+\end{EESegment}
+\NSFormula{NS-F-P039-003}{display}{4.36}
+\begin{equation}
+\Psi_i(a_L,b_L,p_s)\ge\mu_L
+\quad\hbox{on }\mathcal I\times[-1,1]\times\mathbb R/\mathbb Z,
+\qquad 1\le i\le4.
+\tag{4.36}\label{eq:4.36}
+\end{equation}
+\begin{EESegment}{EE-TGT-P039-002}
+Near both radial endpoints, the loop does not depend on
+\NSi{NS-F-P039-004}{\varphi} and is equal to
+\NSi{NS-F-P039-005}{(a,-b_s)}. Smoothness here includes one-sided derivatives at
+\NSi{NS-F-P039-006}{\eta=\pm1}. The number
+\NSi{NS-F-P039-007}{\mu_L} may depend on all the fixed input data.
+\end{EESegment}
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P039-003}
+The variance construction in Lemma~\ref{lem:C.1} gives a smooth
+\NSi{NS-F-P039-008}{2\pi}-periodic ratio
+\NSi{NS-F-P039-009}{t_\ell(X,\eta,\theta')} and a smooth function
+\NSi{NS-F-P039-010}{\rho_\ell(X,\eta)\ge0}. Write
+\NSi{NS-F-P039-011}{\langle f\rangle=(2\pi)^{-1}\int_0^{2\pi}f\,d\theta'}. These functions satisfy
+\end{EESegment}
+\NSFormula{NS-F-P039-012}{display}{none}
+\[
+\langle t_\ell\rangle=t_s,
+\qquad
+\langle(t_\ell-t_s)^2\rangle=\rho_\ell/a,
+\qquad
+v_\ell=v_s+\rho_\ell>2.
+\]
+\begin{EESegment}{EE-TGT-P039-004}
+For every \NSi{NS-F-P039-013}{\theta'}, they also satisfy
+\end{EESegment}
+\NSFormula{NS-F-P039-014}{display}{none}
+\[
+c_\ell=p_{s,1}+t_\ell p_{s,2}>2,
+\qquad
+j_\ell=p_{s,2}-t_\ell p_{s,1},
+\qquad
+v_\ell<\mathcal U(c_\ell,j_\ell).
+\]
+\begin{EESegment}{EE-TGT-P039-005}
+These are \eqref{eq:C.10} and \eqref{eq:C.8}, together with the cutoff choice
+\eqref{eq:C.9}. The construction stays smooth at points where
+\NSi{NS-F-P039-015}{\rho_\ell=0}. Near the radial endpoints it has
+\NSi{NS-F-P039-016}{\rho_\ell=0} and \NSi{NS-F-P039-017}{t_\ell=t_s}.
+Now introduce the lifted parameter \NSi{NS-F-P039-018}{\varphi}, starting from
+\NSi{NS-F-P039-019}{\varphi(0)=0}, by
+\end{EESegment}
+\NSFormula{NS-F-P039-020}{display}{4.37}
+\begin{equation}
+\frac{d\varphi}{d\theta'}=\frac{a(1+t_\ell^2)}{2\pi v_\ell},
+\qquad
+(a_L,-b_L)=\frac{v_\ell(1,t_\ell)}{1+t_\ell^2}.
+\tag{4.37}\label{eq:4.37}
+\end{equation}
+\begin{EESegment}{EE-TGT-P039-006}
+Direct integration shows both that the new parameter has period one and that the shear has the
+required mean when it is written in this parameter:
+\end{EESegment}
+\NSFormula{NS-F-P039-021}{display}{none}
+\begin{align*}
+\int_0^{2\pi}\frac{d\varphi}{d\theta'}\,d\theta'
+   &=\frac a{v_\ell}(1+t_s^2+\rho_\ell/a)=1,\\
+\int_0^1(a_L,-b_L)\,d\varphi
+   &=\frac a{2\pi}\int_0^{2\pi}(1,t_\ell)\,d\theta'
+     =(a,at_s)=(a,-b_s).
+\end{align*}
+\begin{EESegment}{EE-TGT-P039-007}
+The positive derivative in \eqref{eq:4.37} has a positive minimum on the compact parameter set,
+so the inverse change of parameter is smooth. The shear obtained this way satisfies
+\NSi{NS-F-P039-022}{-b_L/a_L=t_\ell} and
+\NSi{NS-F-P039-023}{a_L(1+t_\ell^2)=v_\ell}. Lemma~\ref{lem:4.5} then shows that every
+entry of \NSi{NS-F-P039-024}{\Psi(a_L,b_L,p_s)} is positive. The smallest value among all those
+entries on \NSi{NS-F-P039-025}{\mathcal I\times[-1,1]\times\mathbb R/\mathbb Z} is therefore
+a positive number \NSi{NS-F-P039-026}{\mu_L}, which proves \eqref{eq:4.36}. Wherever
+\NSi{NS-F-P039-027}{\rho_\ell=0}, formula \eqref{eq:4.37} becomes
+\NSi{NS-F-P039-028}{(a_L,-b_L)=(a,-b_s)}, which proves the claim about the endpoints.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P039-008}
+\subsection{Proof of the leading profile theorem.}\label{sec:4.6}
+\end{EESegment}
+
+\begin{proof}[Proof of Theorem~\ref{thm:4.6}]
+\begin{EESegment}{EE-TGT-P039-009}
+First attach the two profiles from Lemma~\ref{lem:4.8} and Proposition~\ref{prop:4.10}, keeping
+their five cumulative integrals unchanged at the radius where they meet. Then use
+Lemma~\ref{lem:4.11} to change the shear on the interval where only the relaxed cone condition
+holds. Estimate the errors caused by that change, and use Lemma~\ref{lem:4.7} to solve the five
+equations that restore the integrals. Every estimate below is for
+\NSi{NS-F-P039-029}{\eta\in[-1,1]}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P039-010}
+\noindent\textbf{Step 1: choose the parameters and join the profiles.}
+Choose the outer parameters \NSi{NS-F-P039-030}{M_d,T_d,P_*,\lambda,h} and
+\NSi{NS-F-P039-031}{\Pi_0} from Lemma~\ref{lem:4.8}, using the family with the endpoint
+property in Lemma~\ref{lem:4.9}. Apply Proposition~\ref{prop:4.10} with this same function
+\NSi{NS-F-P039-032}{\Pi_0}. In that proposition, \NSi{NS-F-P039-033}{\Lambda} and the logarithmic
+transition length \NSi{NS-F-P039-034}{T_{\mathrm{sh}}} are fixed before the amplitude normalization
+\NSi{NS-F-P039-035}{\mathsf C}. Let \NSi{NS-F-P039-036}{R_*} be the radius threshold from
+Lemma~\ref{lem:4.8}, and let \NSi{NS-F-P039-037}{\mathsf C_0} be a lower bound from the axis
+construction after these choices. Then take
+\end{EESegment}
+\NSFormula{NS-F-P039-038}{display}{none}
+\[
+\mathsf C\ge\max\!\left\{\mathsf C_0,\frac{(R_*/110)^{1/10}}{P_*}\right\},
+\qquad
+X_R=110(\mathsf C P_*)^{10}\ge R_*.
+\]
+\NSPage{040}
+\begin{EESegment}{EE-TGT-P040-001}
+The proof of Proposition~\ref{prop:4.10} defines the tolerance
+\NSi{NS-F-P040-001}{\varepsilon_m} and the total logarithmic width
+\NSi{NS-F-P040-002}{\omega_{\mathrm{fin}}}. Using the smallness convention from
+Definition~\ref{def:3.3}, choose the profile parameters so that
+\end{EESegment}
+\NSFormula{NS-F-P040-003}{display}{none}
+\begin{gather*}
+0<\mathsf C^{-1}\ll T_{\mathrm{sh}}^{-1}\ll\Lambda^{-1}\ll\sigma_*\ll\delta_*\ll j_0
+\ll\varepsilon_m\ll h\ll\lambda\ll P_*^{-1}\ll M_d^{-1}\ll1,\\
+0<\omega_{\mathrm{fin}}\ll t_1\ll\kappa_0\ll \mathsf C^{-1}.
+\end{gather*}
+\begin{EESegment}{EE-TGT-P040-002}
+The second line continues the order of choices in the first. In particular,
+\NSi{NS-F-P040-004}{M_d,P_*} are large;
+\NSi{NS-F-P040-005}{\lambda,h,\varepsilon_m,j_0,\delta_*,\sigma_*} are small;
+\NSi{NS-F-P040-006}{\Lambda,T_{\mathrm{sh}},\mathsf C} are large; and the three last transition
+parameters are small. The exact scales derived from them, along with the extra requirement on the
+amplitude, are still
+\end{EESegment}
+\NSFormula{NS-F-P040-007}{display}{none}
+\[
+T_d=e^{M_d}+10,\qquad P_*>e^{T_d},\qquad X_R=110(\mathsf C P_*)^{10}.
+\]
+\begin{EESegment}{EE-TGT-P040-003}
+After making these choices, fix the periodic shear and the correction bumps used in Steps 2--3.
+Then choose \NSi{NS-F-P040-008}{N^{-1}\ll\omega_{\mathrm{fin}}}. In the same convention, this
+means taking \NSi{NS-F-P040-009}{N} large enough after
+\NSi{NS-F-P040-010}{\omega_{\mathrm{fin}}}, those functions, and every constant in the estimates
+below have been fixed. This order of choices fixes every radial scale and width before the last
+integer \NSi{NS-F-P040-011}{N} is chosen.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P040-004}
+Put \NSi{NS-F-P040-012}{X_h=X_Re^{-5}}. Let
+\NSi{NS-F-P040-013}{(U_{\mathrm{in}},E_{\mathrm{in}})} be the axis connection and
+\NSi{NS-F-P040-014}{(U_{\mathrm{out}},E_{\mathrm{out}})} the prepared outer pair, and define
+\end{EESegment}
+\NSFormula{NS-F-P040-015}{display}{none}
+\[
+(U_0,E_0)(X,\eta)=
+\begin{cases}
+(U_{\mathrm{in}},E_{\mathrm{in}})(X,\eta),&X\le X_h,\\
+(U_{\mathrm{out}},E_{\mathrm{out}})(X,\eta),&X\ge X_h.
+\end{cases}
+\]
+\begin{EESegment}{EE-TGT-P040-005}
+Both definitions equal
+\NSi{NS-F-P040-016}{(4\eta,P_*(1+\eta^2)^{-1}(X/X_R)^{1/10})} near
+\NSi{NS-F-P040-017}{X_h}, so \NSi{NS-F-P040-018}{U_0,E_0} are smooth there. These are the
+profiles before Step 2 changes the shear. Set
+\NSi{NS-F-P040-019}{H_0=\sqrt{2X}E_0}, and use \eqref{eq:4.15} to define
+\NSi{NS-F-P040-020}{\mathfrak m_0=(M_0,I_0,J_0,S_0,C_{p,0})} from
+\NSi{NS-F-P040-021}{U_0,E_0}. Keep the prescribed axis pressure
+\NSi{NS-F-P040-022}{\Pi_0(\eta)}, and put
+\NSi{NS-F-P040-023}{\Pi_0^{\mathrm{prof}}(X,\eta)=\Pi_0(\eta)+C_{p,0}(X,\eta)}. Use
+\eqref{eq:4.7}, \eqref{eq:4.16}, and \eqref{eq:4.11} to calculate
+\NSi{NS-F-P040-024}{V_0,Q_{s,0},N_{s,0},p_{s,0},a_0,b_{s,0},\mathcal T_{0,0}} from
+\NSi{NS-F-P040-025}{U_0,E_0,\Pi_0^{\mathrm{prof}}}. Write
+\NSi{NS-F-P040-026}{p_0=p_{s,0}},
+\NSi{NS-F-P040-027}{b_0=b_{s,0}}, and
+\NSi{NS-F-P040-028}{\mathfrak s_0=(a_0,-b_0)}. The five equalities in
+Proposition~\ref{prop:4.10}(iii) give
+\end{EESegment}
+\NSFormula{NS-F-P040-029}{display}{none}
+\[
+\mathfrak m_0(X_h,\eta)=\mathfrak m_{\mathrm{out}}(X_h,\eta).
+\]
+\begin{EESegment}{EE-TGT-P040-006}
+For \NSi{NS-F-P040-030}{X\ge X_h}, the five integrands agree as well. It follows that
+\end{EESegment}
+\NSFormula{NS-F-P040-031}{display}{none}
+\begin{align*}
+\mathfrak m_0(X,\eta)-\mathfrak m_{\mathrm{out}}(X,\eta)
+&=\mathfrak m_0(X_h,\eta)-\mathfrak m_{\mathrm{out}}(X_h,\eta)\\
+&\quad+\int_{X_h}^{X}
+\begin{pmatrix}
+U_0-U_{\mathrm{out}}\\
+H_0-H_{\mathrm{out}}\\
+U_0H_0-U_{\mathrm{out}}H_{\mathrm{out}}\\
+U_0^2-U_{\mathrm{out}}^2-(E_0^2-E_{\mathrm{out}}^2)/2\\
+(E_0^2-E_{\mathrm{out}}^2)/(2x)
+\end{pmatrix}dx=0.
+\end{align*}
+\begin{EESegment}{EE-TGT-P040-007}
+Lemma~\ref{lem:4.4}(i) now shows that the pressures and the coefficients
+\NSi{NS-F-P040-032}{V_0,Q_{s,0},N_{s,0},p_0,\mathfrak s_0,\mathcal T_{0,0}} agree with their
+outer counterparts on this interval. In particular, the joined pair has the same pressure
+normalization and the same four total moment identities as the pair in Lemma~\ref{lem:4.8}. Its
+angular identity follows from
+\end{EESegment}
+\NSFormula{NS-F-P040-033}{display}{none}
+\[
+\int_0^\infty(H_0-H_{\mathrm{out}})\,dX
+=I_0(X_h)-I_{\mathrm{out}}(X_h)=0.
+\]
+\begin{EESegment}{EE-TGT-P040-008}
+The joined pair is regular at the axis, so the conditional conclusions about the stress in
+Lemma~\ref{lem:4.9} now apply. Its stress is zero outside
+\NSi{NS-F-P040-034}{[X_a,X_b]}. It has the stated factorizations at the inner and outer edges,
+and the admissible cone condition holds near both edges. The relaxed cone condition holds on the
+whole interval between them.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P040-009}
+It remains to specify the interval where the shear still has to change. Let
+\NSi{NS-F-P040-035}{\mathcal I_1} be the first correction interval reserved in
+Lemma~\ref{lem:4.8}. Choose a closed interval
+\NSi{NS-F-P040-036}{\mathcal I=[X_-,X_+]\subset(X_a,\inf\mathcal I_1)} that contains
+\end{EESegment}
+\NSPage{041}
+\begin{EESegment}{EE-TGT-P041-001}
+every point of \NSi{NS-F-P041-001}{(X_a,X_b)} where the joined pair might fail the
+admissible condition. Choose its left endpoint strictly between
+\NSi{NS-F-P041-002}{X_a} and the end of the analytic collar. Choose its right endpoint so that
+\NSi{NS-F-P041-003}{X_{\mathrm{good}}<X_+<\inf\mathcal I_1}. Shorten the analytic collar to an
+endpoint \NSi{NS-F-P041-004}{X_{\mathrm{an}}\in(X_a,X_-)}. Take
+\NSi{NS-F-P041-005}{Y_0<Y_1} inside \NSi{NS-F-P041-006}{\mathcal I_1}, with
+\NSi{NS-F-P041-007}{X_+<Y_0}, and set
+\NSi{NS-F-P041-008}{\mathcal J=[X_-,Y_1]}. The original pair is admissible near both ends of
+\NSi{NS-F-P041-009}{\mathcal I} and everywhere on
+\NSi{NS-F-P041-010}{[X_+,Y_1]}. Apply Lemma~\ref{lem:4.11} on
+\NSi{NS-F-P041-011}{\mathcal I\times[-1,1]} to the shear
+\NSi{NS-F-P041-012}{(a_0,-b_0)} and the inviscid vector
+\NSi{NS-F-P041-013}{p_0} of this pair.
+\end{EESegment}
+\begin{EESegment}{EE-TGT-P041-002}
+For each modified pair \NSi{NS-F-P041-014}{(U_j,E_j)},
+\NSi{NS-F-P041-015}{j=N,f}, used below, define
+\NSi{NS-F-P041-016}{\mathfrak m_j} by \eqref{eq:4.15}, set
+\NSi{NS-F-P041-017}{\Pi_j=\Pi_0+C_{p,j}}, and calculate the remaining coefficients from
+\eqref{eq:4.7}, \eqref{eq:4.16}, and \eqref{eq:4.11}. Write
+\NSi{NS-F-P041-018}{p_j=p_{s,j}} and \NSi{NS-F-P041-019}{b_j=b_{s,j}}, and let
+\NSi{NS-F-P041-020}{V_j} denote the radial-velocity profile of the pair.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P041-003}
+\noindent\textbf{Step 2: realize the periodic shear at a finite frequency.}
+The periodic shear points in the required cone direction. To get that shear from actual profiles,
+integrate the difference between it and the original shear, then evaluate the resulting
+antiderivatives at a large radial frequency. Let
+\NSi{NS-F-P041-021}{(a_L,-b_L)(X,\eta,\varphi)} be the loop just constructed. Its mean identities
+give periodic antiderivatives \NSi{NS-F-P041-022}{\mathscr A,\mathscr B} with mean zero, satisfying
+\end{EESegment}
+\NSFormula{NS-F-P041-023}{display}{none}
+\[
+\partial_\varphi\mathscr A=-\tfrac12(a_L-a_0),
+\qquad
+\partial_\varphi\mathscr B=\tfrac12E_0(b_L-b_0),
+\qquad
+\int_0^1\mathscr A\,d\varphi=\int_0^1\mathscr B\,d\varphi=0.
+\]
+\begin{EESegment}{EE-TGT-P041-004}
+They are zero near both ends of \NSi{NS-F-P041-024}{\mathcal I}, because the loop is constant
+there. Extend them by zero outside \NSi{NS-F-P041-025}{\mathcal I}. For an integer
+\NSi{NS-F-P041-026}{N\ge1}, define
+\end{EESegment}
+\NSFormula{NS-F-P041-027}{display}{4.38}
+\begin{equation}
+E_N=E_0\exp\!\left(\frac{\mathscr A(X,\eta,N\log X)}{N}\right),
+\qquad
+U_N=U_0+\frac{\mathscr B(X,\eta,N\log X)}{N}.
+\tag{4.38}\label{eq:4.38}
+\end{equation}
+\begin{EESegment}{EE-TGT-P041-005}
+In the shear identities below, \NSi{NS-F-P041-028}{\mathcal D_X\mathscr A} and
+\NSi{NS-F-P041-029}{\mathcal D_X\mathscr B} mean that \NSi{NS-F-P041-030}{X} is
+differentiated while \NSi{NS-F-P041-031}{\varphi} is held fixed. After taking those
+derivatives, evaluate every loop expression at \NSi{NS-F-P041-032}{\varphi=N\log X}.
+The chain rule gives the exact identities
+\end{EESegment}
+\NSFormula{NS-F-P041-033}{display}{none}
+\begin{align*}
+a_N&=1-2\mathcal D_X\log E_N=a_L-\frac{2\mathcal D_X\mathscr A}{N},\\
+b_N&=\frac{2\mathcal D_XU_N}{E_N}
+=e^{-\mathscr A/N}\left(b_L+\frac{2\mathcal D_X\mathscr B}{NE_0}\right).
+\end{align*}
+\begin{EESegment}{EE-TGT-P041-006}
+Every radius is now fixed, and \NSi{NS-F-P041-034}{E_0} has a positive minimum on
+\NSi{NS-F-P041-035}{\mathcal J\times[-1,1]}. The phase does not depend on
+\NSi{NS-F-P041-036}{\eta}. It follows that, for every fixed
+\NSi{NS-F-P041-037}{k}, there are constants independent of
+\NSi{NS-F-P041-038}{N} for which
+\end{EESegment}
+\NSFormula{NS-F-P041-039}{display}{4.39}
+\begin{equation}
+\lVert U_N-U_0,E_N-E_0\rVert_k\le A_k/N,
+\qquad
+\lVert a_N-a_L,b_N-b_L\rVert_k\le B_k/N.
+\tag{4.39}\label{eq:4.39}
+\end{equation}
+\begin{EESegment}{EE-TGT-P041-007}
+Here, and through the end of Step 3, \NSi{NS-F-P041-040}{\lVert\mathord\cdot\rVert_k} means the
+componentwise maximum of the \NSi{NS-F-P041-041}{\eta}-derivatives of orders
+\NSi{NS-F-P041-042}{0\le j\le k} on
+\NSi{NS-F-P041-043}{\mathcal J\times[-1,1]}, or on the stated subinterval of
+\NSi{NS-F-P041-044}{\mathcal J}. The second bound is taken on
+\NSi{NS-F-P041-045}{\mathcal I}. The shear is unchanged on
+\NSi{NS-F-P041-046}{\mathcal J\setminus\mathcal I}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P041-008}
+Write \NSi{NS-F-P041-047}{u_N=U_N-U_0},
+\NSi{NS-F-P041-048}{e_N=E_N-E_0}, and
+\NSi{NS-F-P041-049}{\Delta\mathfrak m_N=\mathfrak m_N-\mathfrak m_0}. Nothing changes below
+\NSi{NS-F-P041-050}{X_-}. For \NSi{NS-F-P041-051}{X\in\mathcal J}, the exact formulas for the five increments are
+\end{EESegment}
+\NSFormula{NS-F-P041-052}{display}{none}
+\[
+\Delta\mathfrak m_N(X,\eta)=\int_{X_-}^{X}
+\begin{pmatrix}
+u_N\\
+\sqrt{2x}\,e_N\\
+H_0u_N+U_0\sqrt{2x}\,e_N+\sqrt{2x}\,u_Ne_N\\
+2U_0u_N+u_N^2-E_0e_N-e_N^2/2\\
+E_0e_N/x+e_N^2/(2x)
+\end{pmatrix}dx.
+\]
+\begin{EESegment}{EE-TGT-P041-009}
+The interval is fixed and stays away from zero. The product rule and \eqref{eq:4.39} therefore give
+\end{EESegment}
+\NSFormula{NS-F-P041-053}{display}{none}
+\[
+\lVert\Delta\mathfrak m_N\rVert_k\le D_k/N,
+\qquad
+\lVert\Pi_N-\Pi_0^{\mathrm{prof}}\rVert_k
+=\lVert\Delta C_{p,N}\rVert_k\le D_k/N.
+\]
+\NSPage{042}
+\begin{EESegment}{EE-TGT-P042-001}
+Apply Lemma~\ref{lem:4.4}(ii) with the common value
+\NSi{NS-F-P042-001}{\Pi_0(\eta)} on the axis, and take \NSi{NS-F-P042-002}{N} large enough that
+\NSi{NS-F-P042-003}{E_N\ge\frac12\min_{\mathcal J\times[-1,1]}E_0}. The lemma gives
+\end{EESegment}
+\NSFormula{NS-F-P042-004}{display}{4.40}
+\begin{equation}
+\lVert p_N-p_0\rVert_k\le C_k(A_{k+1}+D_{k+1})/N=:P_k/N.
+\tag{4.40}\label{eq:4.40}
+\end{equation}
+\begin{EESegment}{EE-TGT-P042-002}
+So the large change in radial shear has only a small effect on the integrated vector
+\NSi{NS-F-P042-005}{p_s}. This estimate does not require the radial derivatives of
+\NSi{NS-F-P042-006}{E_N-E_0} or \NSi{NS-F-P042-007}{U_N-U_0} to be small.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P042-003}
+The change in \NSi{NS-F-P042-008}{p_s} is now controlled, while the shear follows the chosen loop
+to order \NSi{NS-F-P042-009}{N^{-1}}. The remaining job is to show that these errors
+fit inside the loop's strict margin from the cone boundary. Use the map
+\NSi{NS-F-P042-010}{\Psi} from \eqref{eq:4.35}. With
+\NSi{NS-F-P042-011}{\mathbb T=\mathbb R/\mathbb Z}, let
+\end{EESegment}
+\NSFormula{NS-F-P042-012}{display}{none}
+\[
+\mu_L=\min_{\mathcal I\times[-1,1]\times\mathbb T}\min_i
+\Psi_i(a_L,b_L,p_0)>0,
+\qquad
+\mu_R=\min_{[X_+,Y_1]\times[-1,1]}\min_i
+\Psi_i(a_0,b_0,p_0)>0.
+\]
+\begin{EESegment}{EE-TGT-P042-004}
+Both minima are positive, by Lemma~\ref{lem:4.11} and the way
+\NSi{NS-F-P042-013}{\mathcal I} was chosen. Take a compact neighborhood of the values of
+\NSi{NS-F-P042-014}{(a_L,b_L,p_0)} and \NSi{NS-F-P042-015}{(a_0,b_0,p_0)} on the two domains
+shown above, with \NSi{NS-F-P042-016}{a>0} throughout that neighborhood. Let
+\NSi{NS-F-P042-017}{C_\Psi} be an upper bound for the Lipschitz constant of
+\NSi{NS-F-P042-018}{\Psi} there. Equations~\eqref{eq:4.39} and \eqref{eq:4.40} show that, for every
+sufficiently large \NSi{NS-F-P042-019}{N}, the perturbed triples lie in this neighborhood and obey
+the following componentwise bounds:
+\end{EESegment}
+\NSFormula{NS-F-P042-020}{display}{4.41}
+\begin{equation}
+\begin{aligned}
+\Psi_i(a_N,b_N,p_N)&\ge\mu_L-C_\Psi(B_0+P_0)/N\ge\mu_L/2
+&&\text{on }\mathcal I,\\
+\Psi_i(a_N,b_N,p_N)&\ge\mu_R-C_\Psi P_0/N\ge\mu_R/2
+&&\text{on }[X_+,Y_1].
+\end{aligned}
+\tag{4.41}\label{eq:4.41}
+\end{equation}
+\begin{EESegment}{EE-TGT-P042-005}
+The positivity of these four quantities says exactly that
+\NSi{NS-F-P042-021}{a_N>0}, \NSi{NS-F-P042-022}{v_N>2}, and \eqref{eq:4.22} hold. The
+modulated pair is therefore admissible everywhere on
+\NSi{NS-F-P042-023}{\mathcal J}. Its five cumulative integrals still differ from the original
+ones by \NSi{NS-F-P042-024}{O(N^{-1})}. The next step restores them exactly.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P042-006}
+\noindent\textbf{Step 3: solve the five moment equations.}
+On \NSi{NS-F-P042-025}{(Y_0,Y_1)\subset\mathcal I_1}, the modulation has not changed the
+profiles, and
+\end{EESegment}
+\NSFormula{NS-F-P042-026}{display}{none}
+\[
+U_N=U_0=0,
+\qquad
+E_N=E_0=K(\eta)X^{-1/2-\lambda},
+\qquad
+K(\eta)=c_{\mathrm{patch}}(1+\eta^2)^{-1}>0.
+\]
+\begin{EESegment}{EE-TGT-P042-007}
+Choose two smooth, nonnegative, nonzero functions
+\NSi{NS-F-P042-027}{\beta_1,\beta_2} whose compact supports in
+\NSi{NS-F-P042-028}{(Y_0,Y_1)} are disjoint and ordered. Choose three functions
+\NSi{NS-F-P042-029}{\gamma_1,\gamma_2,\gamma_3} with the same properties. Set
+\end{EESegment}
+\NSFormula{NS-F-P042-030}{display}{none}
+\[
+u_c=\sum_{i=1}^2\alpha_i(\eta)\beta_i(X),
+\qquad
+e_c=\sum_{j=1}^3\xi_j(\eta)\gamma_j(X),
+\qquad
+c=(\alpha_1,\alpha_2,\xi_1,\xi_2,\xi_3).
+\]
+\begin{EESegment}{EE-TGT-P042-008}
+For \NSi{NS-F-P042-031}{U_f=U_N+u_c} and
+\NSi{NS-F-P042-032}{E_f=E_N+e_c}, the exact changes at
+\NSi{NS-F-P042-033}{Y_1}, listed in the order
+\NSi{NS-F-P042-034}{(M,J,I,S,C_p)}, are
+\end{EESegment}
+\NSFormula{NS-F-P042-035}{display}{4.42}
+\begin{equation}
+\begin{pmatrix}
+\int u_c\,dX\\
+\int(H_0u_c+\sqrt{2X}\,u_ce_c)\,dX\\
+\int\sqrt{2X}\,e_c\,dX\\
+\int(u_c^2-E_0e_c-e_c^2/2)\,dX\\
+\int(E_0e_c/X+e_c^2/(2X))\,dX
+\end{pmatrix}
+=B(\eta)c+\mathcal Q_\eta(c,c)=d_N(\eta).
+\tag{4.42}\label{eq:4.42}
+\end{equation}
+\begin{EESegment}{EE-TGT-P042-009}
+All five integrals are taken over \NSi{NS-F-P042-036}{(Y_0,Y_1)}, and
+\NSi{NS-F-P042-037}{d_N} is \NSi{NS-F-P042-038}{-\Delta\mathfrak m_N(Y_1,\eta)}, with its
+entries put in the same row order. The linear map has two diagonal blocks:
+\end{EESegment}
+\NSFormula{NS-F-P042-039}{display}{none}
+\[
+B_U=
+\begin{pmatrix}
+\int\beta_1&\int\beta_2\\
+\int H_0\beta_1&\int H_0\beta_2
+\end{pmatrix},
+\qquad
+B_E=
+\begin{pmatrix}
+\int\sqrt{2X}\gamma_1&\int\sqrt{2X}\gamma_2&\int\sqrt{2X}\gamma_3\\
+-\int E_0\gamma_1&-\int E_0\gamma_2&-\int E_0\gamma_3\\
+\int E_0\gamma_1/X&\int E_0\gamma_2/X&\int E_0\gamma_3/X
+\end{pmatrix}.
+\]
+\begin{EESegment}{EE-TGT-P042-010}
+The weights in \NSi{NS-F-P042-040}{B_U} have exponents
+\NSi{NS-F-P042-041}{0,-\lambda}, while those in
+\NSi{NS-F-P042-042}{B_E} have exponents
+\NSi{NS-F-P042-043}{1/2,-1/2-\lambda,-3/2-\lambda}. Since
+\NSi{NS-F-P042-044}{\lambda>0}, all these exponents are distinct. Lemma~\ref{lem:4.7} then
+shows that both blocks are invertible,
+\end{EESegment}

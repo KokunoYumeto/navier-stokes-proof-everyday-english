@@ -1,0 +1,569 @@
+\NSPage{055}%
+For a tuple \NSi{NS-F-P055-001}{V} of physical fields, we write
+\NSFormula{NS-F-P055-002}{display}{5.23}
+\begin{equation}
+ |V|_m=\max_{|\alpha|+b\leq m}|\partial_x^\alpha\partial_t^bV|.
+ \tag{5.23}\label{eq:5.23}
+\end{equation}
+This is the pointwise maximum of its Cartesian space--time derivatives through order
+\NSi{NS-F-P055-003}{m}. We write
+\NSi{NS-F-P055-004}{u_n=u_{r,n}e_r+u_{\theta,n}e_\theta+u_{z,n}e_z} for the physical velocity
+coefficient in \eqref{eq:5.1}, and \NSi{NS-F-P055-005}{\mathcal T_0} for the leading stress profile of
+\eqref{eq:4.11}. We define the finite tuple, before applying any cutoff in
+\NSi{NS-F-P055-006}{q}, by
+\NSFormula{NS-F-P055-007}{display}{none}
+\[
+ \mathcal U^{[N]}=
+ (u_{\mathrm{slow}}^{[N]},p_{\mathrm{slow}}^{[N]},T_{\mathrm{slow}}^{[N]})
+ =\sum_{n=0}^{N}(u_n,p_n,q^{-A-1/2+\lambda_n}\mathcal T_n).
+\]
+The profiles in this sum already include their radial cutoffs and moment corrections. For a
+physical stress pair \NSi{NS-F-P055-008}{T=(T_\theta,T_z)}, we define
+\NSFormula{NS-F-P055-009}{display}{5.24}
+\begin{equation}
+ \mathcal F_{\mathrm{slow}}(u,p,T)=\mathscr R(u,p)
+ +(\partial_r+2/r)T_\theta e_\theta+(\partial_r+1/r)T_ze_z.
+ \tag{5.24}\label{eq:5.24}
+\end{equation}
+The added terms are the tangential divergence of the stress retained for the later wave
+construction.
+
+\begin{proposition}\label{prop:5.3}
+Fix the leading profiles of Theorem~\ref{thm:4.6}. There is a sequence of positive-order profiles
+constructed at each order by Lemma~\ref{lem:5.1} and then Lemma~\ref{lem:5.2}, using the finalized
+lower orders. Every finite velocity sum \NSi{NS-F-P055-010}{u_{\mathrm{slow}}^{[N]}} is divergence-free.
+On every fixed compact profile range \NSi{NS-F-P055-011}{0\leq X\leq X_{\max}},
+\NSi{NS-F-P055-012}{-1\leq\eta\leq1}, with \NSi{NS-F-P055-013}{0<X_{\max}<\infty}, for each
+\NSi{NS-F-P055-014}{N,m\geq0} and \NSi{NS-F-P055-015}{0<q\leq1}, its augmented momentum residual
+satisfies
+\NSFormula{NS-F-P055-016}{display}{5.25}
+\begin{equation}
+ |\mathcal F_{\mathrm{slow}}(\mathcal U^{[N]})|_m
+ \leq C_{N,m}q^{2h(N+1)-K_m},
+ \qquad K_m\ \text{independent of }N.
+ \tag{5.25}\label{eq:5.25}
+\end{equation}
+The constants may depend on the fixed profile range, and
+\NSi{NS-F-P055-017}{C_{N,m}} may depend on \NSi{NS-F-P055-018}{N}; the exponent loss
+\NSi{NS-F-P055-019}{K_m} does not.
+\end{proposition}
+
+\begin{proof}
+\textbf{Step 1: construct the sequence and cancel the retained coefficients.}
+At order \NSi{NS-F-P055-020}{n}, we apply Lemma~\ref{lem:5.1} with the already finalized orders
+\NSi{NS-F-P055-021}{0,\ldots,n-1}. We then apply Lemma~\ref{lem:5.2} to extend and repair the
+current profiles, reconstruct \NSi{NS-F-P055-022}{V_n,\Pi_n} from Equations~\eqref{eq:5.2}
+and~\eqref{eq:5.5}, and define \NSi{NS-F-P055-023}{\mathcal T_n} by \eqref{eq:5.9}. These
+operations preserve the equations on the retained inner interval and the regularity needed to
+form \NSi{NS-F-P055-024}{\Omega_n/X} at the next order. Both lemmas use the same fixed radial
+intervals, so the induction continues for all \NSi{NS-F-P055-025}{n}.
+
+Equation~\eqref{eq:5.2} gives exact incompressibility at each order, hence for every finite sum.
+The pressure equation holds globally. Differentiating the stress primitives gives
+\NSFormula{NS-F-P055-026}{display}{none}
+\[
+ (\partial_R+2/R)\mathcal T_{n,\theta}=-\mathfrak r_{\theta,n},
+ \qquad
+ (\partial_R+1/R)\mathcal T_{n,z}=-\mathfrak r_{z,n}.
+\]
+Thus the tangential residual is exactly minus the stress divergence at each retained order.
+The same leading identities hold at order zero by Proposition~\ref{prop:4.2}. After truncation at
+\NSi{NS-F-P055-027}{N}, every uncancelled product or shifted viscous term has exponent increment
+at least \NSi{NS-F-P055-028}{2h(N+1)}. For example, at \NSi{NS-F-P055-029}{N=1} the product of
+two order-one velocity coefficients and axial viscosity applied to order one first enter at order
+two.
+
+\textbf{Step 2: estimate physical derivatives of the finite residual.}
+The powers of \NSi{NS-F-P055-030}{q} introduced by physical differentiation follow directly from
+the coordinates. For a profile \NSi{NS-F-P055-031}{g(x_\perp/\sqrt q,\eta)} smooth in its Cartesian
+arguments on a compact profile range, a derivative with \NSi{NS-F-P055-032}{a=|\beta|} transverse,
+\NSi{NS-F-P055-033}{k} axial and \NSi{NS-F-P055-034}{l} time differentiations satisfies
+\NSFormula{NS-F-P055-035}{display}{5.26}
+\begin{equation}
+ \left|\partial_{x_\perp}^{\beta}\partial_z^k\partial_t^l
+ \bigl[q^b g(x_\perp/\sqrt q,\eta)\bigr]\right|
+ \leq C_m(1+|b|)^m\|g\|_{C^m}q^{b-a/2-Dk-l},
+ \qquad m=a+k+l.
+ \tag{5.26}\label{eq:5.26}
+\end{equation}
+
+\NSPage{056}%
+This is the chain rule with
+\NSi{NS-F-P056-001}{\partial_t=q^{-1}L^{-1}(-q\partial_q+X\partial_X+D\eta\partial_\eta)}
+and
+\NSi{NS-F-P056-002}{\partial_z=q^{-D}L^{-1}(2\eta q\partial_q-2\eta X\partial_X+d\partial_\eta)};
+transverse differentiation introduces a factor \NSi{NS-F-P056-003}{q^{-1/2}} in these smooth
+Cartesian profiles.
+
+The powers of \NSi{NS-F-P056-004}{n} generated by differentiating
+\NSi{NS-F-P056-005}{q^{\lambda_n}} enter the coefficient constants. The exponent reduction depends
+only on the number and type of physical derivatives. On the common stress support,
+\NSi{NS-F-P056-006}{X\geq X_a>0}, so
+\NSi{NS-F-P056-007}{r^{-1}=q^{-1/2}(2X)^{-1/2}} also has derivative losses independent of
+\NSi{NS-F-P056-008}{N}; near the axis the velocity is estimated through its smooth Cartesian
+representative. There are only finitely many terms in a fixed truncated residual. Applying
+\eqref{eq:5.26} to them gives \eqref{eq:5.25}, with
+\NSi{NS-F-P056-009}{K_m} independent of \NSi{NS-F-P056-010}{N}.
+\end{proof}
+
+\subsection{Divergence-preserving summation of the coefficients.}\label{sec:5.4}
+The finite tuples \NSi{NS-F-P056-011}{\mathcal U^{[N]}} have the improving residual decay in
+\eqref{eq:5.25}, but the constants \NSi{NS-F-P056-012}{C_{n,m}} in their coefficient bounds
+\eqref{eq:5.17} may grow too quickly for the full formal series \eqref{eq:5.1} to converge. We
+obtain smooth fields by multiplying the \NSi{NS-F-P056-013}{n}\,th positive-order term by
+\NSi{NS-F-P056-014}{\chi(c_nq)}, where \NSi{NS-F-P056-015}{\chi=1} near zero and
+\NSi{NS-F-P056-016}{\chi=0} beyond one, and choosing \NSi{NS-F-P056-017}{c_n\to\infty}, as in
+\eqref{eq:5.34}. Later terms then vanish outside successively smaller neighborhoods of
+\NSi{NS-F-P056-018}{q=0}. On a compact set with \NSi{NS-F-P056-019}{q} bounded below, only
+finitely many terms remain. We must show that the finite residual bound of Proposition~\ref{prop:5.3}
+survives these cutoffs. This is the conclusion \eqref{eq:5.36} of Lemma~\ref{lem:5.4}, applied to the
+augmented residual \eqref{eq:5.24}.
+
+To preserve incompressibility, we apply these cutoffs to vector potentials before differentiating.
+An axisymmetric Stokes streamfunction \NSi{NS-F-P056-020}{S} gives such a potential: if
+\NSi{NS-F-P056-021}{S/r^2} is smooth in \NSi{NS-F-P056-022}{(r^2,z,t)}, then
+\NSFormula{NS-F-P056-023}{display}{none}
+\[
+ \mathcal A=\frac Sr e_\theta=\frac S{r^2}(-x_2,x_1,0),
+ \qquad
+ \operatorname{curl}\mathcal A=-\frac{\partial_zS}{r}e_r+\frac{\partial_rS}{r}e_z.
+\]
+The assumed smoothness of \NSi{NS-F-P056-024}{S/r^2} as a function of
+\NSi{NS-F-P056-025}{(r^2,z,t)} makes the potential smooth in Cartesian coordinates. For the
+positive-order profiles constructed above, the physical streamfunctions and their vector potentials
+are
+\NSFormula{NS-F-P056-026}{display}{5.27}
+\begin{equation}
+ F_n=X\mathcal A_X(U_n),
+ \qquad \mathcal S_n=q^{1-A+\lambda_n}F_n,
+ \qquad \mathcal A_n=(\mathcal S_n/r)e_\theta,
+ \qquad
+ u_{z,n}=\partial_s\mathcal S_n,
+ \qquad ru_{r,n}=-\partial_z\mathcal S_n.
+ \tag{5.27}\label{eq:5.27}
+\end{equation}
+Here \NSi{NS-F-P056-027}{s=r^2/2}, as in \eqref{eq:4.1}. Indeed
+\NSi{NS-F-P056-028}{\operatorname{curl}\mathcal A_n=u_{r,n}e_r+u_{z,n}e_z} gives the radial and
+axial velocity components. In Cartesian coordinates, using \NSi{NS-F-P056-029}{r^2=2qX},
+\NSFormula{NS-F-P056-030}{display}{none}
+\[
+ \mathcal A_n=\frac{\mathcal S_n}{r^2}(-x_2,x_1,0)
+ =\frac12q^{-A+\lambda_n}\frac{F_n}{X}(-x_2,x_1,0).
+\]
+Since \NSi{NS-F-P056-031}{F_n/X} is smooth at \NSi{NS-F-P056-032}{X=0}, this expression extends
+smoothly across the axis for \NSi{NS-F-P056-033}{q>0}. Lemma~\ref{lem:5.2} supplies common
+supports and bounds on every fixed coefficient derivative, with no bound uniform in
+\NSi{NS-F-P056-034}{n} required.
+
+Cutting off \NSi{NS-F-P056-035}{\mathcal A_n} and taking its curl includes the extra velocity term
+from differentiating the cutoff, so the result remains divergence-free. We formulate the summation
+argument for tuples of physical fields, allowing its later application to the wave and mean correction
+sequence. For the present application its indices are \NSi{NS-F-P056-036}{j=n}, its decay orders are
+\NSi{NS-F-P056-037}{g_n=2nh}, and its entries are
+\NSFormula{NS-F-P056-038}{display}{none}
+\[
+ A_n=\mathcal A_n,
+ \qquad B_n=u_{\theta,n}e_\theta,
+ \qquad p_n=q^{-2A+\lambda_n}\Pi_n,
+ \qquad T_n=q^{-A-1/2+\lambda_n}\mathcal T_n.
+\]
+Its differential polynomial will be \NSi{NS-F-P056-039}{\mathcal F_{\mathrm{slow}}} from
+\eqref{eq:5.24}. In the lemma, \NSi{NS-F-P056-040}{U_j} denotes a tuple of physical fields, not the
+axial profile \NSi{NS-F-P056-041}{U_n(X,\eta)}. We use the derivative notation \eqref{eq:5.23} and
+set \NSi{NS-F-P056-042}{\Lambda_{\log}(q)=1+|\log q|}. All estimates in the lemma hold uniformly
+over its stated domain.
+
+\NSPage{057}%
+The general argument needs a common domain, increasing decay orders, and derivative losses
+independent of the summation index. Let \NSi{NS-F-P057-001}{\Omega} be a domain on which
+\NSi{NS-F-P057-002}{0<q<q_0\leq1}. Assume that \NSi{NS-F-P057-003}{q=q(z,t)} is smooth, is
+bounded below on compact subsets of \NSi{NS-F-P057-004}{\Omega}, and satisfies
+\NSFormula{NS-F-P057-005}{display}{5.28}
+\begin{equation}
+ |\partial_z^a\partial_t^bq|\leq C_{a,b}q^{1-aD-b},
+ \qquad a,b\geq0,
+ \qquad 0<D<1.
+ \tag{5.28}\label{eq:5.28}
+\end{equation}
+Let \NSi{NS-F-P057-006}{U_0=(u_0,p_0,T_0)} be smooth, with
+\NSi{NS-F-P057-007}{\operatorname{div}u_0=0}. Assume that for every \NSi{NS-F-P057-008}{m}
+there are finite \NSi{NS-F-P057-009}{C_m,K_m,P_m} such that
+\NSi{NS-F-P057-010}{|U_0|_m\leq C_mq^{-K_m}\Lambda_{\log}(q)^{P_m}}. The entries
+\NSi{NS-F-P057-011}{T_0} and \NSi{NS-F-P057-012}{T_j} below may be omitted. For
+\NSi{NS-F-P057-013}{j\geq1}, suppose that the smooth physical tuples
+\NSFormula{NS-F-P057-014}{display}{5.29}
+\begin{equation}
+ Z_j=(A_j,B_j,p_j,T_j),
+ \qquad B_j=b_j(r,z,t)e_\theta,
+ \qquad U_j=(\operatorname{curl}A_j+B_j,p_j,T_j)
+ \tag{5.29}\label{eq:5.29}
+\end{equation}
+are defined on this same domain. Require smooth Cartesian representatives at the axis and smooth
+zero extensions at every lateral boundary of their spatial supports. Suppose that, for every
+\NSi{NS-F-P057-015}{j,m}, there are finite constants
+\NSi{NS-F-P057-016}{C_{j,m},P_{j,m}} such that
+\NSFormula{NS-F-P057-017}{display}{5.30}
+\begin{equation}
+ |Z_j|_m\leq C_{j,m}q^{g_j-\ell_m}\Lambda_{\log}(q)^{P_{j,m}},
+ \qquad 0<g_1\leq g_2\leq\cdots\longrightarrow\infty,
+ \tag{5.30}\label{eq:5.30}
+\end{equation}
+where the nonnegative, nondecreasing losses \NSi{NS-F-P057-018}{\ell_m} are independent of
+\NSi{NS-F-P057-019}{j}.
+
+For each finite \NSi{NS-F-P057-020}{J}, we set
+\NSi{NS-F-P057-021}{U^{[J]}=U_0+\sum_{j=1}^{J}U_j}. We write the scalar components of a tuple as
+\NSi{NS-F-P057-022}{U=(U^1,\ldots,U^{N_U})}. A fixed differential polynomial of finite order and
+degree has, componentwise, the form
+\NSFormula{NS-F-P057-023}{display}{5.31}
+\begin{equation}
+ (\mathcal F(U))^a=c_{a0}(x,t)
+ +\sum_{\nu=1}^{M_a}c_{a\nu}(x,t)
+ \prod_{r=1}^{d_{a\nu}}\partial_{x,t}^{\beta_{a\nu r}}U^{k_{a\nu r}}.
+ \tag{5.31}\label{eq:5.31}
+\end{equation}
+Here the output index runs through the fixed finite set \NSi{NS-F-P057-024}{1\leq a\leq N_F},
+each \NSi{NS-F-P057-025}{M_a} is finite, and the fixed integers
+\NSi{NS-F-P057-026}{s\geq0,d\geq1} bound the order and degree:
+\NSi{NS-F-P057-027}{1\leq d_{a\nu}\leq d,\ |\beta_{a\nu r}|\leq s}, and
+\NSi{NS-F-P057-028}{1\leq k_{a\nu r}\leq N_U}. For
+\NSi{NS-F-P057-029}{\beta=(\alpha,b)\in\mathbb N_0^4},
+\NSi{NS-F-P057-030}{\partial_{x,t}^{\beta}=\partial_x^\alpha\partial_t^b}. The coefficient
+functions, indices, and order and degree bounds \NSi{NS-F-P057-031}{s,d} are fixed independently of
+the summation and truncation indices.
+
+For each nonconstant monomial in \eqref{eq:5.31}, fix a common region
+\NSi{NS-F-P057-032}{\Omega_{a\nu}} containing the supports of its field factors in the base and in
+every increment, both before and after applying cutoffs. For the term independent of
+\NSi{NS-F-P057-033}{U}, we set \NSi{NS-F-P057-034}{\Omega_{a0}=\Omega}. For every coefficient
+\NSi{NS-F-P057-035}{c_{a\nu}}, \NSi{NS-F-P057-036}{0\leq\nu\leq M_a}, and every Cartesian
+space--time multi-index \NSi{NS-F-P057-037}{I\in\mathbb N_0^4}, require
+\NSFormula{NS-F-P057-038}{display}{5.32}
+\begin{equation}
+ |\partial_{x,t}^{I}c_{a\nu}(x,t)|
+ \leq C_Iq^{-K_I}\Lambda_{\log}(q)^{P_I}
+ \qquad ((x,t)\in\Omega_{a\nu}).
+ \tag{5.32}\label{eq:5.32}
+\end{equation}
+The regions are independent of truncation. Since the coefficient list is finite, the finite constants
+\NSi{NS-F-P057-039}{C_I,K_I,P_I} may be chosen common to that list for each fixed
+\NSi{NS-F-P057-040}{I}; they are independent of the truncation index. Thus the bounds hold
+throughout a comparison of partial sums and cutoff sums. The terms
+\NSi{NS-F-P057-041}{c_{a0}}, which are independent of \NSi{NS-F-P057-042}{U}, cancel from that
+comparison. The following residual hypothesis concerns the full \NSi{NS-F-P057-043}{\mathcal F},
+including those terms: assume that each finite partial sum satisfies
+\NSFormula{NS-F-P057-044}{display}{5.33}
+\begin{equation}
+ |\mathcal F(U^{[J]})|_m
+ \leq C_{J,m}q^{\rho_J-K_m^{\mathcal F}}\Lambda_{\log}(q)^{P_{J,m}}+E_{J,m},
+ \qquad \rho_J\longrightarrow\infty,
+ \tag{5.33}\label{eq:5.33}
+\end{equation}
+where \NSi{NS-F-P057-045}{K_m^{\mathcal F}} is independent of \NSi{NS-F-P057-046}{J} and, for every fixed
+\NSi{NS-F-P057-047}{J,m,N},
+\NSi{NS-F-P057-048}{0\leq E_{J,m}\leq C_{J,m,N}q^N}. These bounds, including the flat remainder,
+are uniform over the full domain at that fixed stage.
+
+\begin{lemma}\label{lem:5.4}
+There are numbers \NSi{NS-F-P057-049}{a_{j+1}\geq2a_j}, with
+\NSi{NS-F-P057-050}{a_1^{-1}<q_0}, and a fixed smooth cutoff \NSi{NS-F-P057-051}{\chi}, equal to one
+on \NSi{NS-F-P057-052}{[0,1/2]} and zero on \NSi{NS-F-P057-053}{[1,\infty)}, such that
+\NSFormula{NS-F-P057-054}{display}{5.34}
+\begin{equation}
+ U=U_0+\sum_{j\geq1}
+ \bigl(\operatorname{curl}(\chi(a_jq)A_j)+\chi(a_jq)B_j,
+       \chi(a_jq)p_j,\chi(a_jq)T_j\bigr)
+ \tag{5.34}\label{eq:5.34}
+\end{equation}
+
+\NSPage{058}%
+is locally finite and smooth, and its velocity component \NSi{NS-F-P058-001}{u} satisfies
+\NSi{NS-F-P058-002}{\operatorname{div}u=0}. Its added terms extend smoothly by zero across the outer
+boundary \NSi{NS-F-P058-003}{q=q_0}. For every \NSi{NS-F-P058-004}{m} and
+\NSi{NS-F-P058-005}{J\geq\max(1,m)} one has
+\NSFormula{NS-F-P058-006}{display}{5.35}
+\begin{equation}
+ |U-U^{[J]}|_m\leq2^{-J}q^{g_{J+1}/2-\ell_m'}
+ \qquad\left(0<q<\frac1{2a_J}\right),
+ \tag{5.35}\label{eq:5.35}
+\end{equation}
+where \NSi{NS-F-P058-007}{\ell_m'} is independent of \NSi{NS-F-P058-008}{J}.
+
+Under the residual hypothesis \eqref{eq:5.33}, every Cartesian space--time derivative of
+\NSi{NS-F-P058-009}{\mathcal F(U)} vanishes to infinite order as
+\NSi{NS-F-P058-010}{q\downarrow0}:
+\NSFormula{NS-F-P058-011}{display}{5.36}
+\begin{equation}
+ \forall m,N\qquad\exists\delta,C>0\qquad
+ |\mathcal F(U)|_m\leq Cq^N
+ \qquad(0<q<\delta).
+ \tag{5.36}\label{eq:5.36}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+We bound the derivatives of each cutoff, choose the cutoffs so the tail is summable after any fixed
+number of derivatives, and compare the residual with one finite partial sum before cutoffs. In these
+bounds, each prescribed Cartesian derivative reduces the power of \NSi{NS-F-P058-012}{q} by an
+amount independent of the truncation order.
+
+\textbf{Step 1: bound the cutoff and curl derivatives.}
+For a positive-order derivative of \NSi{NS-F-P058-013}{\chi(aq)}, the chain rule gives terms of the
+form
+\NSFormula{NS-F-P058-014}{display}{none}
+\[
+ a^k\chi^{(k)}(aq)\prod_{\nu=1}^{k}\partial_z^{a_\nu}\partial_t^{b_\nu}q,
+ \qquad
+ \sum_\nu a_\nu=a',
+ \qquad
+ \sum_\nu b_\nu=b'.
+\]
+On their support, \NSi{NS-F-P058-015}{1/2\leq aq\leq1}. Using \eqref{eq:5.28}, the factors
+\NSi{NS-F-P058-016}{q^k} compensate for \NSi{NS-F-P058-017}{a^k}, since
+\NSi{NS-F-P058-018}{aq} is bounded on the cutoff support. Consequently
+\NSFormula{NS-F-P058-019}{display}{none}
+\[
+ |\partial_z^{a'}\partial_t^{b'}\chi(aq)|
+ \leq C_{a',b'}q^{-a'D-b'},
+\]
+with constants independent of \NSi{NS-F-P058-020}{a}. Since
+\NSi{NS-F-P058-021}{q=q(z,t)},
+\NSi{NS-F-P058-022}{\partial_{x_1}q=\partial_{x_2}q=0}. In particular the commutator in
+\NSFormula{NS-F-P058-023}{display}{none}
+\[
+ \operatorname{curl}(\chi(aq)A_j)
+ =\chi(aq)\operatorname{curl}A_j+a\chi'(aq)\nabla q\times A_j
+\]
+is controlled by the assumed derivatives of the potentials. The product rule therefore bounds
+derivatives through order \NSi{NS-F-P058-024}{m} of the \NSi{NS-F-P058-025}{j}\,th summand in
+\eqref{eq:5.34} by
+\NSi{NS-F-P058-026}{\widehat C_{j,m}q^{g_j-\ell_m'}\Lambda_{\log}(q)^{\widehat P_{j,m}}}, where
+the exponent reduction \NSi{NS-F-P058-027}{\ell_m'} depends only on
+\NSi{NS-F-P058-028}{m} and \NSi{NS-F-P058-029}{\ell_{m+1}}.
+
+\textbf{Step 2: choose the cutoffs and estimate the tail.}
+We choose the scales \NSi{NS-F-P058-030}{a_j} recursively so that
+\NSi{NS-F-P058-031}{a_{j+1}\geq2a_j}, each cutoff \NSi{NS-F-P058-032}{\chi(a_jq)} is supported in
+\NSi{NS-F-P058-033}{q<q_0}, and
+\NSFormula{NS-F-P058-034}{display}{5.37}
+\begin{equation}
+ \widehat C_{j,m}\Lambda_{\log}(q)^{\widehat P_{j,m}}q^{g_j/2}
+ \leq2^{-j}
+ \qquad(0<q\leq a_j^{-1},\ 0\leq m\leq j).
+ \tag{5.37}\label{eq:5.37}
+\end{equation}
+Only finitely many requirements are imposed at step \NSi{NS-F-P058-035}{j}, and each holds for all
+sufficiently small \NSi{NS-F-P058-036}{q} because \NSi{NS-F-P058-037}{g_j>0}. Derivatives through
+order \NSi{NS-F-P058-038}{m} of the resulting cutoff increment are bounded by
+\NSi{NS-F-P058-039}{2^{-j}q^{g_j/2-\ell_m'}} whenever \NSi{NS-F-P058-040}{m\leq j}. On a compact
+subset where \NSi{NS-F-P058-041}{q\geq\delta>0}, all terms with
+\NSi{NS-F-P058-042}{a_j>\delta^{-1}} vanish. Thus the sum is locally finite. The curl of any vector
+field is divergence-free, and \NSi{NS-F-P058-043}{\chi(a_jq)B_j} is divergence-free because its
+angular amplitude is independent of \NSi{NS-F-P058-044}{\theta}. Smoothness and the stated support
+extensions follow termwise.
+
+For fixed \NSi{NS-F-P058-045}{m} and \NSi{NS-F-P058-046}{J\geq\max(1,m)}, when
+\NSi{NS-F-P058-047}{q<(2a_J)^{-1}} the first \NSi{NS-F-P058-048}{J} cutoffs equal one. Since
+\NSi{NS-F-P058-049}{q<1} and \NSi{NS-F-P058-050}{g_j} is nondecreasing, the remaining terms obey
+\NSFormula{NS-F-P058-051}{display}{none}
+\[
+ \sum_{j>J}2^{-j}q^{g_j/2-\ell_m'}
+ \leq2^{-J}q^{g_{J+1}/2-\ell_m'},
+\]
+which proves \eqref{eq:5.35}.
+
+\NSPage{059}%
+\textbf{Step 3: compare the residual with one finite partial sum.}
+The cutoff sum \NSi{NS-F-P059-001}{U} is now smooth, and its velocity component is divergence-free.
+To prove flatness of \NSi{NS-F-P059-002}{\mathcal F(U)}, we compare it with
+\NSi{NS-F-P059-003}{\mathcal F(U^{[J]})} for a finite partial sum with sufficiently high residual
+decay, and control the change caused by \NSi{NS-F-P059-004}{U-U^{[J]}}. The assumed bound on
+\NSi{NS-F-P059-005}{|U_0|_m} and \eqref{eq:5.30} give
+\NSFormula{NS-F-P059-006}{display}{5.38}
+\begin{equation}
+ |U^{[J]}|_m\leq C_{J,m}q^{-K_m}\Lambda_{\log}(q)^{P_{J,m}},
+ \tag{5.38}\label{eq:5.38}
+\end{equation}
+with \NSi{NS-F-P059-007}{K_m\geq0} independent of \NSi{NS-F-P059-008}{J}: every increment has
+\NSi{NS-F-P059-009}{g_j>0}, and taking the curl requires one additional derivative of its potential.
+The order and degree bounds \NSi{NS-F-P059-010}{s,d} are those in \eqref{eq:5.31}. Subtracting two
+monomials one factor at a time, then applying the product rule and \eqref{eq:5.32}, gives for
+\NSi{NS-F-P059-011}{e=U-U^{[J]}}
+\NSFormula{NS-F-P059-012}{display}{5.39}
+\begin{equation}
+ |\mathcal F(U)-\mathcal F(U^{[J]})|_m
+ \leq C_mq^{-H_m}|e|_{m+s}
+ \bigl(1+|U^{[J]}|_{m+s}+|e|_{m+s}\bigr)^{d-1},
+ \tag{5.39}\label{eq:5.39}
+\end{equation}
+where \NSi{NS-F-P059-013}{H_m} is independent of \NSi{NS-F-P059-014}{J}; the finitely many
+coefficient logarithms are absorbed into this fixed power of \NSi{NS-F-P059-015}{q^{-1}}. A
+polynomial independent of \NSi{NS-F-P059-016}{U} has zero difference and needs no estimate.
+
+For fixed derivative order \NSi{NS-F-P059-017}{m} and decay order \NSi{NS-F-P059-018}{N}, we
+choose \NSi{NS-F-P059-019}{J\geq m+s} large enough that
+\NSFormula{NS-F-P059-020}{display}{none}
+\[
+ \frac{g_{J+1}}2-\ell_{m+s}'
+ \geq N+H_m+(d-1)(K_{m+s}+1),
+ \qquad
+ \rho_J-K_m^{\mathcal F}\geq N+1.
+\]
+We also take \NSi{NS-F-P059-021}{J} large enough that
+\NSi{NS-F-P059-022}{g_{J+1}/2-\ell_{m+s}'} is nonnegative, and then keep
+\NSi{NS-F-P059-023}{J} fixed. After shrinking the \NSi{NS-F-P059-024}{q}-neighborhood,
+\NSi{NS-F-P059-025}{\chi(a_jq)=1} for \NSi{NS-F-P059-026}{j\leq J}, the constants and logarithms
+in \eqref{eq:5.38} are absorbed by \NSi{NS-F-P059-027}{q^{-1}}, and
+\NSi{NS-F-P059-028}{|e|_{m+s}\leq1} by \eqref{eq:5.35}. Formula~\eqref{eq:5.39} is then
+\NSi{NS-F-P059-029}{O(q^N)}. The same holds for \eqref{eq:5.33}, after absorbing its logarithm by
+one power and using the flatness of this fixed \NSi{NS-F-P059-030}{E_{J,m}}. This proves
+\eqref{eq:5.36}. The order of choices is \NSi{NS-F-P059-031}{(m,N)}, then
+\NSi{NS-F-P059-032}{J}, then the neighborhood and constants; the comparison uses only the
+remainder \NSi{NS-F-P059-033}{E_{J,m}} at that fixed truncation.
+\end{proof}
+
+A finite block of initial terms with nonpositive decay orders may receive one common cutoff,
+applied as in \eqref{eq:5.34}, and be included in the base \NSi{NS-F-P059-034}{U_0}. Its cutoff
+equals one near \NSi{NS-F-P059-035}{q=0}, preserving every comparison with a finite partial sum
+there.
+
+For smooth vector fields \NSi{NS-F-P059-036}{v,e} and smooth scalar fields
+\NSi{NS-F-P059-037}{p,\pi}, the physical residual comparison is
+\NSFormula{NS-F-P059-038}{display}{none}
+\[
+ \mathscr R(v+e,p+\pi)-\mathscr R(v,p)
+ =\partial_te-\Delta e+\nabla\pi+(v\mathbin\cdot\nabla)e+(e\mathbin\cdot\nabla)v
+ +(e\mathbin\cdot\nabla)e.
+\]
+For \NSi{NS-F-P059-039}{\mathcal F_{\mathrm{slow}}}, we add the difference of the linear tangential
+stress-divergence term in \eqref{eq:5.24}. On the common annular stress support, the cylindrical
+coefficients and each of their prescribed Cartesian derivatives are bounded by a fixed negative power
+of \NSi{NS-F-P059-040}{q}. In the final correction sequence,
+\NSi{NS-F-P059-041}{\mathcal F=\mathscr R} and there is no stress variable.
+
+The same cutoff choices can meet further normalized estimates when those estimates have been proved
+for the coefficients. More precisely, at step \NSi{NS-F-P059-042}{j} one may add any finite list of
+requirements
+\NSFormula{NS-F-P059-043}{display}{5.40}
+\begin{equation}
+ B_{j,k}\Lambda_{\log}(q)^{P_{j,k}}q^{\gamma_{j,k}}\leq2^{-j},
+ \qquad \gamma_{j,k}>0,
+ \tag{5.40}\label{eq:5.40}
+\end{equation}
+to \eqref{eq:5.37}. For derivatives of the normalized expansion coefficients and boundary weights,
+we impose these additional coefficient estimates using the corresponding cutoff product rules. To
+recover a full expansion after a fixed truncation \NSi{NS-F-P059-044}{N} and at a fixed derivative
+order \NSi{NS-F-P059-045}{m}, we choose
+\NSi{NS-F-P059-046}{M\geq\max(N,m)} with
+\NSi{NS-F-P059-047}{g_{M+1}/2\geq g_{N+1}}: the finite block from
+\NSi{NS-F-P059-048}{N+1} through \NSi{NS-F-P059-049}{M} retains its original orders near
+\NSi{NS-F-P059-050}{q=0}, while \eqref{eq:5.35} controls the remaining tail at order
+\NSi{NS-F-P059-051}{g_{N+1}}, with its fixed exponent reduction
+\NSi{NS-F-P059-052}{\ell_m'}.
+
+\NSPage{060}%
+\subsection{The realized base field.}\label{sec:5.5}
+The finite tuples \NSi{NS-F-P060-001}{\mathcal U^{[N]}} from Proposition~\ref{prop:5.3} now satisfy
+the residual estimates required by Lemma~\ref{lem:5.4}. In this subsection we apply that lemma to
+the coefficient fields and their potentials \NSi{NS-F-P060-002}{\mathcal A_n} in \eqref{eq:5.27} to
+construct the smooth background \NSi{NS-F-P060-003}{(u_B,p_B)}. We must also retain the leading
+profile as in \eqref{eq:5.42}, the exact heat exterior \eqref{eq:4.29}, and the weighted stress bounds
+\eqref{eq:5.43} used to choose the wave amplitudes and their corrections in Propositions~\ref{prop:7.5}
+and~\ref{prop:7.6}.
+
+\begin{proposition}\label{prop:5.5}
+There are smooth axisymmetric fields \NSi{NS-F-P060-004}{(u_B,p_B)} for
+\NSi{NS-F-P060-005}{q>0} and two physical tangential stress components
+\NSi{NS-F-P060-006}{\mathcal T_{\mathrm{phys}}}, supported where
+\NSi{NS-F-P060-007}{X_a\leq X(r,z,t)\leq X_b}, such that
+\NSi{NS-F-P060-008}{\operatorname{div}u_B=0} and
+\NSFormula{NS-F-P060-009}{display}{5.41}
+\begin{equation}
+ \mathscr R(u_B,p_B)
+ =-(\partial_r+2/r)\mathcal T_{\mathrm{phys},\theta}e_\theta
+  -(\partial_r+1/r)\mathcal T_{\mathrm{phys},z}e_z+\mathcal E_B.
+ \tag{5.41}\label{eq:5.41}
+\end{equation}
+For every fixed \NSi{NS-F-P060-010}{0<X_{\max}<\infty}, uniformly on the profile rectangle
+\NSi{NS-F-P060-011}{[0,X_{\max}]\times[-1,1]} in \NSi{NS-F-P060-012}{(X,\eta)}, for every
+Cartesian space--time derivative \NSi{NS-F-P060-013}{\partial^\alpha} and every
+\NSi{NS-F-P060-014}{M>0},
+\NSi{NS-F-P060-015}{|\partial^\alpha\mathcal E_B|\leq C_{\alpha,M}q^M} as
+\NSi{NS-F-P060-016}{q\downarrow0}. The constants may depend on
+\NSi{NS-F-P060-017}{X_{\max}}. The formal expansion of
+\NSi{NS-F-P060-018}{(u_B,p_B,\mathcal T_{\mathrm{phys}})} has the finite truncations
+\NSi{NS-F-P060-019}{\mathcal U^{[N]}} from Proposition~\ref{prop:5.3}, with the physical Stokes
+streamfunctions \NSi{NS-F-P060-020}{\mathcal S_n} from \eqref{eq:5.27} summed before differentiation.
+
+Fix radial endpoints \NSi{NS-F-P060-021}{0<X_{\mathrm{lo}}<X_a<X_b<X_{\mathrm{hi}}<\infty}.
+The rectangle \NSi{NS-F-P060-022}{[X_{\mathrm{lo}},X_{\mathrm{hi}}]\times[-1,1]} is the fixed radial
+enlargement of the closed active annulus
+\NSi{NS-F-P060-023}{[X_a,X_b]\times[-1,1]} from Theorem~\ref{thm:4.6}(ii), with
+\NSi{NS-F-P060-024}{\eta} ranging over its full closed parameter interval. Uniformly on this enlarged
+rectangle, for every fixed composition \NSi{NS-F-P060-025}{\mathscr D^I} of
+\NSi{NS-F-P060-026}{q\partial_q,\partial_X,\partial_\eta}, as
+\NSi{NS-F-P060-027}{q\downarrow0},
+\NSFormula{NS-F-P060-028}{display}{5.42}
+\begin{equation}
+ \begin{aligned}
+  \mathscr D^I(q^Au_{\theta,B}-E_0)&=O_I(q^{2h}),
+  &\mathscr D^I(q^Au_{z,B}-U_0)&=O_I(q^{2h}),\\
+  \mathscr D^I(q^{1/2}u_{r,B}-V_0/\sqrt{2X})&=O_I(q^{2h}),
+  &\mathscr D^I(q^Au_{r,B})&=O_I(q^h).
+ \end{aligned}
+ \tag{5.42}\label{eq:5.42}
+\end{equation}
+The constants in these estimates may depend on the fixed radial endpoints. With
+\NSi{NS-F-P060-029}{\widehat{\mathcal T}=q^{A+1/2}\mathcal T_{\mathrm{phys}}}, the weighted comparison uses
+\NSi{NS-F-P060-030}{\zeta,\delta} from Theorem~\ref{thm:4.6}(iv) and holds on
+\NSi{NS-F-P060-031}{X_a<X<X_b}, \NSi{NS-F-P060-032}{-1\leq\eta\leq1}:
+\NSFormula{NS-F-P060-033}{display}{5.43}
+\begin{equation}
+ |\mathscr D^I(\widehat{\mathcal T}-\mathcal T_0)|
+ \leq C_Iq^{2h}\zeta\delta^{-N_I}
+ \leq C_Iq^h\zeta\delta^{-N_I}
+ \qquad(0<q\leq1).
+ \tag{5.43}\label{eq:5.43}
+\end{equation}
+Every fixed physical space--time derivative of
+\NSi{NS-F-P060-034}{u_B,p_B,\mathcal T_{\mathrm{phys}},\mathcal E_B} extends continuously to
+\NSi{NS-F-P060-035}{\eta=\pm1} on compact sets with \NSi{NS-F-P060-036}{q>0}. The positive-order
+corrections \NSi{NS-F-P060-037}{u_B-u^{(0)}} and \NSi{NS-F-P060-038}{p_B-p^{(0)}} vanish for
+\NSi{NS-F-P060-039}{X\geq X_+}, with \NSi{NS-F-P060-040}{X_+} from Lemma~\ref{lem:5.2}; in
+particular the leading profile's exact exterior \eqref{eq:4.29} is preserved. On the reserved interval
+\NSi{NS-F-P060-041}{X\in\mathcal I_{\mathrm{mean}}\subset(X_a,X_v)} from
+Theorem~\ref{thm:4.6}(vi), for every \NSi{NS-F-P060-042}{-1\leq\eta\leq1}, the base velocity agrees
+exactly with the leading profile:
+\NSFormula{NS-F-P060-043}{display}{5.44}
+\begin{equation}
+ u_B=u^{(0)},
+ \qquad u_{z,B}=0,
+ \qquad q^Au_{\theta,B}=E_0=c_{\mathrm{patch}}(1+\eta^2)^{-1}X^{-1/2-\lambda}.
+ \tag{5.44}\label{eq:5.44}
+\end{equation}
+Here \NSi{NS-F-P060-044}{u^{(0)}} denotes the velocity determined by the leading profile in
+\eqref{eq:4.3}.
+\end{proposition}
+
+\begin{proof}
+\textbf{Step 1: verify the summation hypotheses and choose the cutoffs.}
+We use the potentials \eqref{eq:5.27} and the physical tuples specified before Lemma~\ref{lem:5.4},
+keeping order zero intact. The Cartesian formula for \NSi{NS-F-P060-045}{\mathcal A_n} there verifies
+regularity at the axis, and Lemma~\ref{lem:5.2} supplies the common supports and all fixed coefficient
+derivative bounds. By \eqref{eq:5.26}, since \NSi{NS-F-P060-046}{D<1/2}, the tuple of coefficients in
+\eqref{eq:5.27} and \eqref{eq:5.1}, including the stress components, has a reduction in the power of
+\NSi{NS-F-P060-047}{q} bounded by \NSi{NS-F-P060-048}{\ell_m=2A+m}. The coefficient constants
+absorb the powers of \NSi{NS-F-P060-049}{n} generated by differentiating
+\NSi{NS-F-P060-050}{q^{\lambda_n}}. For the cutoffs, we set
+\NSi{NS-F-P060-051}{\sigma=c_nq}. For every integer \NSi{NS-F-P060-052}{j\geq0},
+\NSFormula{NS-F-P060-053}{display}{none}
+\[
+ (q\partial_q)^j\chi(c_nq)
+ =(\sigma\partial_\sigma)^j\chi(\sigma)\big|_{\sigma=c_nq},
+\]
+\NSFormula{NS-F-P060-054}{display}{none}
+\[
+ \sup_{n\geq1,\,q>0}|(q\partial_q)^j\chi(c_nq)|
+ \leq\sup_{\sigma>0}|(\sigma\partial_\sigma)^j\chi(\sigma)|
+ =:C_j<\infty.
+\]

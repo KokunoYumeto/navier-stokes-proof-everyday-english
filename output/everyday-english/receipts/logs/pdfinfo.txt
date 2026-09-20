@@ -1,0 +1,20 @@
+Title:           Everyday English Edition of the Navier–Stokes Proof
+Subject:         A complete mathematics-preserving edition in everyday English
+Keywords:        Navier–Stokes, finite-time blowup, LaTeX, source reconstruction
+Author:          OpenAI (paper); independent source reconstruction
+Creator:         Independent Everyday English Edition built from the verified source-faithful reconstruction
+Producer:        MiKTeX pdfTeX-1.40.29
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           168
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       5108345 bytes
+Optimized:       no
+PDF version:     1.5

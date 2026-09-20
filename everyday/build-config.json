@@ -1,0 +1,72 @@
+{
+  "schema": "navier-stokes-everyday-build-config/v1",
+  "title": "Everyday English Edition of the Navier–Stokes Proof",
+  "language": "en",
+  "identifier": "urn:uuid:6e628ddf-a210-5503-9ed5-80ca462287d2",
+  "publication_date": "2026-09-20",
+  "source_date_epoch": 1789862400,
+  "job_name": "everyday-english-edition",
+  "entrypoint": "everyday/main.tex",
+  "pdf_style": "everyday/ee-edition.sty",
+  "web_style": "everyday/ee-web.sty",
+  "web_css": "everyday/accessibility.css",
+  "pdf_passes": 3,
+  "timeouts_seconds": {
+    "pdf_pass": 300,
+    "html": 1800,
+    "epub": 600,
+    "audit": 600
+  },
+  "expected_ranges": [
+    "pp001-006",
+    "pp007-012",
+    "pp013-018",
+    "pp019-024",
+    "pp025-030",
+    "pp031-036",
+    "pp037-042",
+    "pp043-048",
+    "pp049-054",
+    "pp055-060",
+    "pp061-066",
+    "pp067-072",
+    "pp073-078",
+    "pp079-084",
+    "pp085-090",
+    "pp091-096",
+    "pp097-102",
+    "pp103-108",
+    "pp109-114",
+    "pp115-120",
+    "pp121-126",
+    "pp127-132",
+    "pp133-138",
+    "pp139-144",
+    "pp145-150",
+    "pp151-156",
+    "pp157-162",
+    "pp163-164",
+    "pp165-166"
+  ],
+  "figures": {
+    "NS-FIG-1": "figure-1.svg",
+    "NS-FIG-2": "figure-2.svg",
+    "NS-FIG-3": "figure-3.svg",
+    "NS-FIG-4": "figure-4.svg",
+    "NS-FIG-5": "figure-5.svg",
+    "NS-FIG-6": "figure-6.svg"
+  },
+  "outputs": {
+    "root": "output/everyday-english",
+    "pdf": "pdf/everyday-english-edition.pdf",
+    "html": "html/index.html",
+    "epub": "epub/everyday-english-edition.epub",
+    "receipts": "receipts"
+  },
+  "provisional_notice": "Provisional local build. The complete translation and its single full-book QA pass have not yet been accepted. Do not publish this build.",
+  "final_requirements": {
+    "content_audit_must_pass": true,
+    "epubcheck_must_be_available": true,
+    "overfull_boxes_must_be_zero": true
+  }
+}

@@ -1,0 +1,3594 @@
+{
+  "schema": "navier-stokes-everyday-english-canon-routing/1",
+  "prepared_on": "2026-09-20",
+  "purpose": "Route bounded language jobs in the Everyday English Edition to the corpus's current checked human passages without treating the passages as mathematical authority.",
+  "source_corpus": {
+    "project_relative_root": "work/everyday_english_corpus_20260919",
+    "built_on": "2026-09-19",
+    "selection_rule": "An entry is present only when its canon ID occurs in sources/canon_passages.json, its source is status included, its exact record is verified direct human language, and the current canon and reference-layer reports pass.",
+    "count_precedence_note": "The historical first-build section records 30 passages. The later expansion, current manifest, exact index, and passing reports agree on 34; this index follows that current 34-record intersection.",
+    "control_status": {
+      "build_report": "pass",
+      "canon_report": "pass",
+      "reference_layers_report": "pass"
+    },
+    "input_sha256": {
+      "README.md": "e077b248ed37cfbe12733af7f697acbca1f68fb6db2af2594392507390b0f3e2",
+      "SELECTION_POLICY.md": "04ec6c80e58a6c2fad696b97d20fa3b72221b4d762f97ffa9a1006076cbed6a9",
+      "EXCLUSIONS.md": "7cbe8444c73a9e1583efcce3911194198d6ef761514bd14191745e2d083cdaaa",
+      "CANON_USAGE_GUIDE.md": "7455890f484e221df9352e897ff5ef9f75a7ed0513b8b6d918773c1f0679cc3b",
+      "BUILD_LOG.md": "6b6cea5973d601ddf01dce5ae8f6f82dcbc37f91be7ee522b73d8231e1b7a19d",
+      "sources/source_selection.json": "8e2ff8e67a1ef7f9932830d421ba09630bb5ffa82aa8393910435528caa8a627",
+      "sources/canon_passages.json": "6baa9a1b6071fcbcd6192695e55efb1d056d111f3ec7055bfc6e04dc4f4f5601",
+      "sources/reference_layers.json": "303b8f00dc0b96df6adbf3ee36c4802ac00d3d12ebf1a4e7542f8f26685de9f7",
+      "derived/CANON_INDEX.md": "10043ee86ecb4cb11d05eda1295dafdbedfeb7b11dc1de4e352d95d1e8d20520",
+      "derived/canon_passages_exact.jsonl": "11f5fbd4bbdf22cf1ce97c91e469a69048207d26156e7be7035eaf566abf5237",
+      "checks/build_report.json": "507ab96cd0c29285607ee8114d20a8c48d92bcc7f389930deddc85c7e654c95e",
+      "checks/canon_report.json": "c8dd8f58bc55cfb54e45b1a07c3d33bb2aba6d36e75063bc81ee56ad01d38d9a",
+      "checks/reference_layers_report.json": "39cde94c53155936c1d3a33ee1470befd1eda3af0c23668e3f847178d247c78b"
+    }
+  },
+  "global_limitations": [
+    "This is a routing index for attested wording, clause order, reference, correction, comparison, reasons, and sequences; it is not a translation template.",
+    "No entry establishes universal, neutral, culture-free, or population-wide comprehension or frequency.",
+    "No entry establishes mathematical correctness or source-to-target equivalence. The frozen mathematical source and a separate bidirectional audit remain authoritative.",
+    "Spoken pauses, false starts, overlap, transcript notation, local forms, and private-letter conventions are preserved as evidence but must not be imitated merely to make edited prose sound informal.",
+    "Public Q&A entries support only their named narrow construction; they are not private-language evidence or representative samples of an English variety."
+  ],
+  "role_definitions": {
+    "afterthought": "Add a practical extra after the main message has closed.",
+    "alternative_cases": "Lay out distinct cases or branches explicitly.",
+    "causal_explanation": "State a reason or cause and connect it to a result.",
+    "comparison_analogy": "Set cases side by side or use a comparison to make an experience intelligible.",
+    "concrete_description": "Answer what a named thing is like or contains without claiming a formal definition.",
+    "contrast": "Make a difference, reversal, exception, or catch visible.",
+    "correction": "Reject a proposed reading or move and supply a repair.",
+    "definition": "State a technical defining condition while retaining the technical object.",
+    "direct_instruction": "Tell a listener a concrete action to perform.",
+    "direct_request": "Ask directly for one concrete action or confirmation without implying a wider negotiation.",
+    "equivalent_restatement": "Put two equivalent readings of one condition next to each other.",
+    "inference": "Make a conclusion explicit from facts or counts already stated.",
+    "narrative": "Put events in time order and show what changed or resulted.",
+    "observable_cue": "Tie an action to a visible or otherwise directly checkable signal.",
+    "personal_update": "Give connected private news or circumstances in ordinary writing.",
+    "practical_rationale": "Explain why an action, order, or choice is useful in practice.",
+    "process_explanation": "Explain how a physical or practical process unfolds.",
+    "question_and_response": "Pose a concrete question and give or elicit a direct answer.",
+    "reference_recovery": "Ask or show where an earlier result, detail, or referent came from.",
+    "reported_speech": "Retell what people said as part of an event narrative.",
+    "request_negotiation": "Ask for an action and adjust its timing, scope, or terms in interaction.",
+    "response_evaluation": "Give a direct response or evaluation after a question, proposal, or trial.",
+    "rule_statement": "State the aim or governing rule of an activity.",
+    "scope_condition": "State the case, requirement, exception, or boundary under which a claim or action applies.",
+    "sequence": "Order steps, actions, or events so their progression is explicit.",
+    "sympathy_support": "Express concern or support while giving the circumstances that call for it.",
+    "time_anchoring": "Place an event relative to a remembered or dated point in time."
+  },
+  "counts": {
+    "accepted_passages": 34,
+    "represented_sources": 29,
+    "quoted_exact_lines": 432,
+    "accepted_exact_lines_available": 692,
+    "accepted_search_words_available": 4145,
+    "by_mode": {
+      "spoken": 24,
+      "written": 10
+    },
+    "by_collection": {
+      "sbcsae": 20,
+      "scots": 10,
+      "stackexchange": 4
+    },
+    "by_role": {
+      "afterthought": 1,
+      "alternative_cases": 1,
+      "causal_explanation": 15,
+      "comparison_analogy": 2,
+      "concrete_description": 1,
+      "contrast": 5,
+      "correction": 2,
+      "definition": 2,
+      "direct_instruction": 8,
+      "direct_request": 1,
+      "equivalent_restatement": 1,
+      "inference": 4,
+      "narrative": 7,
+      "observable_cue": 1,
+      "personal_update": 6,
+      "practical_rationale": 4,
+      "process_explanation": 1,
+      "question_and_response": 2,
+      "reference_recovery": 1,
+      "reported_speech": 1,
+      "request_negotiation": 1,
+      "response_evaluation": 2,
+      "rule_statement": 2,
+      "scope_condition": 5,
+      "sequence": 11,
+      "sympathy_support": 2,
+      "time_anchoring": 1
+    }
+  },
+  "entries": [
+    {
+      "canon_id": "EE-001",
+      "source_id": "SBC009",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC009:L11-L20",
+      "quote_locator": "SBC009:L11-L20",
+      "source_file": "sources/sbcsae/raw/SBC009.trn",
+      "source_title": "Zero Equals Zero",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC009.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "everyday_explanation",
+      "setting": "one teenager helping another study for a math test",
+      "variety": "US English; Mobile, Alabama",
+      "bounded_roles": [
+        "reference_recovery",
+        "sequence"
+      ],
+      "canonical_function": "Ask where a result came from and unpack the calculation into actions.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 11,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "[I] don't know what I did to ge=t that."
+          },
+          {
+            "source_line": 12,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": ".. Where did I get that .. square root of- --"
+          },
+          {
+            "source_line": 13,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "um=,"
+          },
+          {
+            "source_line": 14,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "... ex squa[red]."
+          },
+          {
+            "source_line": 15,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "[Because] you brought this .. over here."
+          },
+          {
+            "source_line": 16,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... You brought ... three (H) over here."
+          },
+          {
+            "source_line": 17,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... divided by three,"
+          },
+          {
+            "source_line": 18,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "(H) and then you have ex squared,"
+          },
+          {
+            "source_line": 19,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "so if you want to find ex,"
+          },
+          {
+            "source_line": 20,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "you have the square root of ex squared."
+          }
+        ]
+      },
+      "limitations": [
+        "Evidence for explanatory language only. It is not a check that the calculation is right.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "Direct, unrehearsed peer-to-peer explanation while two teenagers work on mathematics at home.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-002",
+      "source_id": "SBC009",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC009:L84-L105",
+      "quote_locator": "SBC009:L84-L105",
+      "source_file": "sources/sbcsae/raw/SBC009.trn",
+      "source_title": "Zero Equals Zero",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC009.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "everyday_explanation",
+      "setting": "one teenager helping another study for a math test",
+      "variety": "US English; Mobile, Alabama",
+      "bounded_roles": [
+        "sequence",
+        "scope_condition",
+        "causal_explanation"
+      ],
+      "canonical_function": "Give the next calculation step, answer a scope question, and say why the step is needed.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 84,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... So then you just multiply=,"
+          },
+          {
+            "source_line": 85,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "the whole thing by the square root of two,"
+          },
+          {
+            "source_line": 86,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "and you get the square root of two over two."
+          },
+          {
+            "source_line": 87,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... @ (H)[=]"
+          },
+          {
+            "source_line": 88,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "[Even f]or the top .. one?"
+          },
+          {
+            "source_line": 89,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "... Even for that one?"
+          },
+          {
+            "source_line": 90,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... No=."
+          },
+          {
+            "source_line": 91,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "For- --"
+          },
+          {
+            "source_line": 92,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "I'm talking about for this one."
+          },
+          {
+            "source_line": 93,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "... Oh=."
+          },
+          {
+            "source_line": 94,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "... (H) All you do is like go,"
+          },
+          {
+            "source_line": 95,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": ".. [t- .. two over one],"
+          },
+          {
+            "source_line": 96,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "[You have the square root of one=],"
+          },
+          {
+            "source_line": 97,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "like that,"
+          },
+          {
+            "source_line": 98,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "right?"
+          },
+          {
+            "source_line": 99,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... M-m."
+          },
+          {
+            "source_line": 100,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... Since you have the square root of two on the bottom,"
+          },
+          {
+            "source_line": 101,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... to make that a square,"
+          },
+          {
+            "source_line": 102,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "you have to multiply by the square root of two."
+          },
+          {
+            "source_line": 103,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... (H) And then you get two=,"
+          },
+          {
+            "source_line": 104,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "(H) and you multiply the top by the square root of two,"
+          },
+          {
+            "source_line": 105,
+            "speaker_or_writer": "KATHY",
+            "text_exact": ".. and you get,"
+          }
+        ]
+      },
+      "limitations": [
+        "Evidence for wording, scope repair, and sequencing only; not mathematical authority.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "Direct peer explanation with a correction when the listener applies a step too widely.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-003",
+      "source_id": "SBC009",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC009:L443-L460",
+      "quote_locator": "SBC009:L447-L460",
+      "source_file": "sources/sbcsae/raw/SBC009.trn",
+      "source_title": "Zero Equals Zero",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC009.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "everyday_explanation",
+      "setting": "one teenager helping another study for a math test",
+      "variety": "US English; Mobile, Alabama",
+      "bounded_roles": [
+        "correction",
+        "direct_instruction"
+      ],
+      "canonical_function": "Correct a proposed method and restate the concrete move to make.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 447,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... Just bring nega- --"
+          },
+          {
+            "source_line": 448,
+            "speaker_or_writer": "KATHY",
+            "text_exact": ".. Just bring two-thirds,"
+          },
+          {
+            "source_line": 449,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... over to the other side."
+          },
+          {
+            "source_line": 450,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "Negative two-thirds,"
+          },
+          {
+            "source_line": 451,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "over to the other side."
+          },
+          {
+            "source_line": 452,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "... And make it equal to zero?"
+          },
+          {
+            "source_line": 453,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... No."
+          },
+          {
+            "source_line": 454,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "No keep that there,"
+          },
+          {
+            "source_line": 455,
+            "speaker_or_writer": "KATHY",
+            "text_exact": ".. (H) But then have,"
+          },
+          {
+            "source_line": 456,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "Another one over there?"
+          },
+          {
+            "source_line": 457,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "Yeah,"
+          },
+          {
+            "source_line": 458,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "have,"
+          },
+          {
+            "source_line": 459,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... is .. less than or equal to,"
+          },
+          {
+            "source_line": 460,
+            "speaker_or_writer": "KATHY",
+            "text_exact": ".. (H) negative two ... thirds."
+          }
+        ]
+      },
+      "limitations": [
+        "Evidence for correction and instruction language only; not mathematical authority.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "The speaker responds to a live misunderstanding and gives the repair in small pieces.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-004",
+      "source_id": "SBC009",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC009:L663-L678",
+      "quote_locator": "SBC009:L663-L678",
+      "source_file": "sources/sbcsae/raw/SBC009.trn",
+      "source_title": "Zero Equals Zero",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC009.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "everyday_explanation",
+      "setting": "one teenager helping another study for a math test",
+      "variety": "US English; Mobile, Alabama",
+      "bounded_roles": [
+        "rule_statement",
+        "causal_explanation",
+        "alternative_cases"
+      ],
+      "canonical_function": "State a rule, give the reason, and split the result into alternatives.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 663,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... And when you divide by a ne[gative],"
+          },
+          {
+            "source_line": 664,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "[(Hx)]"
+          },
+          {
+            "source_line": 665,
+            "speaker_or_writer": "KATHY",
+            "text_exact": ".. [2you have to flip the signs2]."
+          },
+          {
+            "source_line": 666,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "[2(TSK) Yeah=2]."
+          },
+          {
+            "source_line": 667,
+            "speaker_or_writer": "NATHAN",
+            "text_exact": "(H) .. Okay."
+          },
+          {
+            "source_line": 668,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... And when you do that,"
+          },
+          {
+            "source_line": 669,
+            "speaker_or_writer": "KATHY",
+            "text_exact": ".. it's gonna be a o=r."
+          },
+          {
+            "source_line": 670,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... (H) Because if you look at it,"
+          },
+          {
+            "source_line": 671,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... cause,"
+          },
+          {
+            "source_line": 672,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "you know,"
+          },
+          {
+            "source_line": 673,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "it can't be greater ... than seven-halves,"
+          },
+          {
+            "source_line": 674,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... and less than negative halve at the sa-,"
+          },
+          {
+            "source_line": 675,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "one-half at the same time."
+          },
+          {
+            "source_line": 676,
+            "speaker_or_writer": "KATHY",
+            "text_exact": "... So it's gonna be either ex,"
+          },
+          {
+            "source_line": 677,
+            "speaker_or_writer": "KATHY",
+            "text_exact": ".. is less than or equal to negative ... one-half,"
+          },
+          {
+            "source_line": 678,
+            "speaker_or_writer": "KATHY",
+            "text_exact": ".. (H) or,"
+          }
+        ]
+      },
+      "limitations": [
+        "Evidence for causal and alternative structure only; not mathematical authority.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A direct explanation ties the word 'or' to what cannot happen at the same time.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-005",
+      "source_id": "SBC024",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC024:L519-L544",
+      "quote_locator": "SBC024:L522-L544",
+      "source_file": "sources/sbcsae/raw/SBC024.trn",
+      "source_title": "Risk",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC024.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "everyday_explanation",
+      "setting": "a couple teaching and playing a computer game",
+      "variety": "US English; Cape Cod, Massachusetts",
+      "bounded_roles": [
+        "rule_statement",
+        "direct_instruction",
+        "scope_condition"
+      ],
+      "canonical_function": "Teach the aim and basic rules of a card game.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 522,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": ".. Always pass left."
+          },
+          {
+            "source_line": 523,
+            "speaker_or_writer": "DAN",
+            "text_exact": "... (THROAT)"
+          },
+          {
+            "source_line": 524,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "... Alright."
+          },
+          {
+            "source_line": 525,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "... (TSK) (H) So this is us[=."
+          },
+          {
+            "source_line": 526,
+            "speaker_or_writer": "DAN",
+            "text_exact": "[<@ Groucho,"
+          },
+          {
+            "source_line": 527,
+            "speaker_or_writer": "DAN",
+            "text_exact": "Harpo @>],"
+          },
+          {
+            "source_line": 528,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": ".. % The object,"
+          },
+          {
+            "source_line": 529,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "okay,"
+          },
+          {
+            "source_line": 530,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "every] heart,"
+          },
+          {
+            "source_line": 531,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "... okay,"
+          },
+          {
+            "source_line": 532,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "every heart is one [point,"
+          },
+          {
+            "source_line": 533,
+            "speaker_or_writer": "DAN",
+            "text_exact": "[Is tr-] --"
+          },
+          {
+            "source_line": 534,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "the q-] queen of spades is thirteen points,"
+          },
+          {
+            "source_line": 535,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "the object is not to have any points."
+          },
+          {
+            "source_line": 536,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": ".. And,"
+          },
+          {
+            "source_line": 537,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "(H) you p=lay following suit,"
+          },
+          {
+            "source_line": 538,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "... an=d,"
+          },
+          {
+            "source_line": 539,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "... you can take,"
+          },
+          {
+            "source_line": 540,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "if you take tricks,"
+          },
+          {
+            "source_line": 541,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "th- the highest card of the suit,"
+          },
+          {
+            "source_line": 542,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "takes the trick."
+          },
+          {
+            "source_line": 543,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "If you don't have the card of the suit,"
+          },
+          {
+            "source_line": 544,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "[you throw] (H) whatever you want."
+          }
+        ]
+      },
+      "limitations": [
+        "The overlapping turns and false starts belong to speech and are not a model for finished prose.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "One partner explains a game to the other while they are playing at home.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-006",
+      "source_id": "SBC024",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC024:L642-L652",
+      "quote_locator": "SBC024:L648-L652",
+      "source_file": "sources/sbcsae/raw/SBC024.trn",
+      "source_title": "Risk",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC024.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "everyday_explanation",
+      "setting": "a couple teaching and playing a computer game",
+      "variety": "US English; Cape Cod, Massachusetts",
+      "bounded_roles": [
+        "inference",
+        "causal_explanation"
+      ],
+      "canonical_function": "Reason from a total and a visible count to what remains.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 648,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "[Okay,"
+          },
+          {
+            "source_line": 649,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "cause there are] thirteen cards,"
+          },
+          {
+            "source_line": 650,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "I'm assuming it's an equal deal."
+          },
+          {
+            "source_line": 651,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "Now there are eight clubs out,"
+          },
+          {
+            "source_line": 652,
+            "speaker_or_writer": "JENNIFER",
+            "text_exact": "(H) that means there are only f=our more left."
+          }
+        ]
+      },
+      "limitations": [
+        "Evidence for making an inference explicit in conversation, not a mathematical proof model.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A player says the numbers and then states what they mean for the game.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-007",
+      "source_id": "SBC002",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC002:L75-L104",
+      "quote_locator": "SBC002:L85-L100",
+      "source_file": "sources/sbcsae/raw/SBC002.trn",
+      "source_title": "Lambada",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC002.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "friends talking after dinner",
+      "variety": "US English; San Francisco, California",
+      "bounded_roles": [
+        "process_explanation",
+        "sequence",
+        "causal_explanation"
+      ],
+      "canonical_function": "Explain a physical process and connect it to an observed difference.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 85,
+            "speaker_or_writer": "MILES",
+            "text_exact": "there's] less calcium % deposits <X in them X>."
+          },
+          {
+            "source_line": 86,
+            "speaker_or_writer": "MILES",
+            "text_exact": "... [2And2] also,"
+          },
+          {
+            "source_line": 87,
+            "speaker_or_writer": "PETE",
+            "text_exact": "[2Mm2]."
+          },
+          {
+            "source_line": 88,
+            "speaker_or_writer": "MILES",
+            "text_exact": ".. they're still growing."
+          },
+          {
+            "source_line": 89,
+            "speaker_or_writer": "MILES",
+            "text_exact": "... And the way= ... bones grow is,"
+          },
+          {
+            "source_line": 90,
+            "speaker_or_writer": "MILES",
+            "text_exact": ".. you make cartilage,"
+          },
+          {
+            "source_line": 91,
+            "speaker_or_writer": "MILES",
+            "text_exact": ".. and then you deposit calcium in it."
+          },
+          {
+            "source_line": 92,
+            "speaker_or_writer": "HAROLD",
+            "text_exact": "Oh,"
+          },
+          {
+            "source_line": 93,
+            "speaker_or_writer": "HAROLD",
+            "text_exact": "and [then that turns into hard bone]."
+          },
+          {
+            "source_line": 94,
+            "speaker_or_writer": "MILES",
+            "text_exact": "[So that's why they always have] ... more flexibility."
+          },
+          {
+            "source_line": 95,
+            "speaker_or_writer": "MILES",
+            "text_exact": "Cause [2as2] they're growing,"
+          },
+          {
+            "source_line": 96,
+            "speaker_or_writer": "PETE",
+            "text_exact": "[2Hm2]."
+          },
+          {
+            "source_line": 97,
+            "speaker_or_writer": "MILES",
+            "text_exact": "... you're making cartilage."
+          },
+          {
+            "source_line": 98,
+            "speaker_or_writer": "MILES",
+            "text_exact": "So it [al- --"
+          },
+          {
+            "source_line": 99,
+            "speaker_or_writer": "PETE",
+            "text_exact": "[Mhm]."
+          },
+          {
+            "source_line": 100,
+            "speaker_or_writer": "MILES",
+            "text_exact": "They] always have that,"
+          }
+        ]
+      },
+      "limitations": [
+        "The biological claims have not been fact-checked; only the language is evidence here.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "Friends build an explanation together in ordinary conversation.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-008",
+      "source_id": "SBC031",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC031:L6-L19",
+      "quote_locator": "SBC031:L12-L19",
+      "source_file": "sources/sbcsae/raw/SBC031.trn",
+      "source_title": "Tastes Very Special",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC031.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "family talking over lunch in a restaurant",
+      "variety": "US English; Pullman, Washington",
+      "bounded_roles": [
+        "concrete_description",
+        "response_evaluation"
+      ],
+      "canonical_function": "Answer what a named thing is by listing its concrete parts.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 12,
+            "speaker_or_writer": "ROSEMARY",
+            "text_exact": "[What in the w]orld is a Philadelphia [2s-2] --"
+          },
+          {
+            "source_line": 13,
+            "speaker_or_writer": "SHERRY",
+            "text_exact": "[2(TSK)2] .. It's [3r=oast3] beef with,"
+          },
+          {
+            "source_line": 14,
+            "speaker_or_writer": "ROSEMARY",
+            "text_exact": "[3(Hx)3]"
+          },
+          {
+            "source_line": 15,
+            "speaker_or_writer": "SHERRY",
+            "text_exact": "... [4melted4] cheese and sauteed onion[5s."
+          },
+          {
+            "source_line": 16,
+            "speaker_or_writer": "ROSEMARY",
+            "text_exact": "[4(Hx)4]"
+          },
+          {
+            "source_line": 17,
+            "speaker_or_writer": "ROSEMARY",
+            "text_exact": "[5Mm."
+          },
+          {
+            "source_line": 18,
+            "speaker_or_writer": "ROSEMARY",
+            "text_exact": "That does sound good5]."
+          },
+          {
+            "source_line": 19,
+            "speaker_or_writer": "SHERRY",
+            "text_exact": "On a hoagie roll5]."
+          }
+        ]
+      },
+      "limitations": [
+        "This is an ordinary practical description, not a formal definition.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A family member asks about an unfamiliar menu item and gets a short direct description.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-009",
+      "source_id": "SBC043",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC043:L472-L496",
+      "quote_locator": "SBC043:L483-L495",
+      "source_file": "sources/sbcsae/raw/SBC043.trn",
+      "source_title": "Try a Couple Spoonfuls",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC043.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "mother and daughter talking at home",
+      "variety": "US English; Boise, Idaho",
+      "bounded_roles": [
+        "sequence",
+        "practical_rationale",
+        "causal_explanation"
+      ],
+      "canonical_function": "Explain a simple recipe and the practical result of doing it that way.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 483,
+            "speaker_or_writer": "ALICE",
+            "text_exact": "we stopped at the store and got the stuff,"
+          },
+          {
+            "source_line": 484,
+            "speaker_or_writer": "ALICE",
+            "text_exact": "... cause all you have to do is brown some hamburger and,"
+          },
+          {
+            "source_line": 485,
+            "speaker_or_writer": "ALICE",
+            "text_exact": "... [onions],"
+          },
+          {
+            "source_line": 486,
+            "speaker_or_writer": "ANNETTE",
+            "text_exact": "[Yeah]."
+          },
+          {
+            "source_line": 487,
+            "speaker_or_writer": "ALICE",
+            "text_exact": "and then toss ca=ns of stuff in,"
+          },
+          {
+            "source_line": 488,
+            "speaker_or_writer": "ALICE",
+            "text_exact": "and spices."
+          },
+          {
+            "source_line": 489,
+            "speaker_or_writer": "ALICE",
+            "text_exact": ".. (H) He says [that'd] good,"
+          },
+          {
+            "source_line": 490,
+            "speaker_or_writer": "ANNETTE",
+            "text_exact": "[(SNIFF)]"
+          },
+          {
+            "source_line": 491,
+            "speaker_or_writer": "ALICE",
+            "text_exact": "and,"
+          },
+          {
+            "source_line": 492,
+            "speaker_or_writer": "ALICE",
+            "text_exact": "... then we wouldn't have to --"
+          },
+          {
+            "source_line": 493,
+            "speaker_or_writer": "ANNETTE",
+            "text_exact": "... To .. cook a lot."
+          },
+          {
+            "source_line": 494,
+            "speaker_or_writer": "ANNETTE",
+            "text_exact": "And you don't end up dirtying a lot of dish[es,"
+          },
+          {
+            "source_line": 495,
+            "speaker_or_writer": "ALICE",
+            "text_exact": "[Yeah."
+          }
+        ]
+      },
+      "limitations": [
+        "Some wording is reported speech; none is read from an outside written source.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A mother recounts how she explained an easy recipe in a private home conversation.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-010",
+      "source_id": "SBC051",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC051:L1512-L1522",
+      "quote_locator": "SBC051:L1519-L1522",
+      "source_file": "sources/sbcsae/raw/SBC051.trn",
+      "source_title": "New Yorkers Anonymous",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC051.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "friends talking before and during dinner at home",
+      "variety": "US English; Laguna Beach, California",
+      "bounded_roles": [
+        "direct_instruction",
+        "sequence"
+      ],
+      "canonical_function": "Give a short sequence of practical actions.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 1519,
+            "speaker_or_writer": "FRAN",
+            "text_exact": "... See what you do is,"
+          },
+          {
+            "source_line": 1520,
+            "speaker_or_writer": "FRAN",
+            "text_exact": "you sort of sidle up to em,"
+          },
+          {
+            "source_line": 1521,
+            "speaker_or_writer": "FRAN",
+            "text_exact": "and you give em a bump."
+          },
+          {
+            "source_line": 1522,
+            "speaker_or_writer": "FRAN",
+            "text_exact": "... And then you get in."
+          }
+        ]
+      },
+      "limitations": [
+        "The advice is humorous; it is evidence for conversational instruction shape only.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A friend jokingly explains how to get into a taxi during dinner conversation.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-011",
+      "source_id": "SBC052",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC052:L905-L916",
+      "quote_locator": "SBC052:L906-L915",
+      "source_file": "sources/sbcsae/raw/SBC052.trn",
+      "source_title": "Oh You Need a Breadbox",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC052.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "family Christmas phone call",
+      "variety": "US English; New Mexico and Texas",
+      "bounded_roles": [
+        "scope_condition",
+        "contrast"
+      ],
+      "canonical_function": "Explain how an offer works, including the requirement and the catch.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 906,
+            "speaker_or_writer": "CINDY",
+            "text_exact": "One thing,"
+          },
+          {
+            "source_line": 907,
+            "speaker_or_writer": "CINDY",
+            "text_exact": "we joined a book club."
+          },
+          {
+            "source_line": 908,
+            "speaker_or_writer": "CINDY",
+            "text_exact": "And I got it for hardly any money,"
+          },
+          {
+            "source_line": 909,
+            "speaker_or_writer": "CINDY",
+            "text_exact": "you know,"
+          },
+          {
+            "source_line": 910,
+            "speaker_or_writer": "CINDY",
+            "text_exact": "they'll send you all these free books,"
+          },
+          {
+            "source_line": 911,
+            "speaker_or_writer": "CINDY",
+            "text_exact": "all you have to do is do postage,"
+          },
+          {
+            "source_line": 912,
+            "speaker_or_writer": "CINDY",
+            "text_exact": "(H) and then supposedly,"
+          },
+          {
+            "source_line": 913,
+            "speaker_or_writer": "CINDY",
+            "text_exact": "you don't have to u=m (Hx),"
+          },
+          {
+            "source_line": 914,
+            "speaker_or_writer": "CINDY",
+            "text_exact": ".. (TSK) (H) buy any more books,"
+          },
+          {
+            "source_line": 915,
+            "speaker_or_writer": "CINDY",
+            "text_exact": "but they want you to (Hx)."
+          }
+        ]
+      },
+      "limitations": [
+        "The account is personal recollection, not verified consumer advice.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "One family member tells another about a book club during a Christmas phone call.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-012",
+      "source_id": "SBC050",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC050:L19-L48",
+      "quote_locator": "SBC050:L41-L48",
+      "source_file": "sources/sbcsae/raw/SBC050.trn",
+      "source_title": "Just Wanna Hang",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC050.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "roommates making plans and talking about their home",
+      "variety": "US English; Burlington, Vermont",
+      "bounded_roles": [
+        "direct_instruction",
+        "response_evaluation"
+      ],
+      "canonical_function": "Ask what something is like, answer briefly, and respond after trying it.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 41,
+            "speaker_or_writer": "DANA",
+            "text_exact": "... You wanna piece of toast?"
+          },
+          {
+            "source_line": 42,
+            "speaker_or_writer": "KELLY",
+            "text_exact": "... (TSK) Sure (Hx)."
+          },
+          {
+            "source_line": 43,
+            "speaker_or_writer": "DANA",
+            "text_exact": "... Here."
+          },
+          {
+            "source_line": 44,
+            "speaker_or_writer": "DANA",
+            "text_exact": "Try some of it first."
+          },
+          {
+            "source_line": 45,
+            "speaker_or_writer": "KELLY",
+            "text_exact": "... (TSK)"
+          },
+          {
+            "source_line": 46,
+            "speaker_or_writer": "KELLY",
+            "text_exact": "... <FOOD It's different."
+          },
+          {
+            "source_line": 47,
+            "speaker_or_writer": "KELLY",
+            "text_exact": "... I like it."
+          },
+          {
+            "source_line": 48,
+            "speaker_or_writer": "KELLY",
+            "text_exact": "... When'd she start making this FOOD>."
+          }
+        ]
+      },
+      "limitations": [
+        "Speech fragments and event tags are preserved in the exact source but need not be copied into prose.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "Roommates talk while eating at home, with no formal or scripted setting.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-013",
+      "source_id": "SBC034",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC034:L25-L50",
+      "quote_locator": "SBC034:L42-L50",
+      "source_file": "sources/sbcsae/raw/SBC034.trn",
+      "source_title": "What Time is it Now?",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC034.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "a married couple talking at home late at night",
+      "variety": "US English; Northampton, Massachusetts",
+      "bounded_roles": [
+        "narrative",
+        "reported_speech",
+        "causal_explanation"
+      ],
+      "canonical_function": "Retell a small problem in time order and include what people said.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 42,
+            "speaker_or_writer": "KAREN",
+            "text_exact": "... (H) These kids were- came in,"
+          },
+          {
+            "source_line": 43,
+            "speaker_or_writer": "KAREN",
+            "text_exact": "and,"
+          },
+          {
+            "source_line": 44,
+            "speaker_or_writer": "KAREN",
+            "text_exact": "... I was .. like,"
+          },
+          {
+            "source_line": 45,
+            "speaker_or_writer": "KAREN",
+            "text_exact": "w- we're closing %."
+          },
+          {
+            "source_line": 46,
+            "speaker_or_writer": "KAREN",
+            "text_exact": "In a few minutes,"
+          },
+          {
+            "source_line": 47,
+            "speaker_or_writer": "KAREN",
+            "text_exact": "they said,"
+          },
+          {
+            "source_line": 48,
+            "speaker_or_writer": "KAREN",
+            "text_exact": "well we'll --"
+          },
+          {
+            "source_line": 49,
+            "speaker_or_writer": "KAREN",
+            "text_exact": "We'll wait until you kick us out."
+          },
+          {
+            "source_line": 50,
+            "speaker_or_writer": "KAREN",
+            "text_exact": "Cause they didn't really want to buy anything,"
+          }
+        ]
+      },
+      "limitations": [
+        "Quoted lines are the speaker's own retelling, not language read from a script or document.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A person tells their partner what happened while closing a store.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-014",
+      "source_id": "SBC003",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC003:L160-L180",
+      "quote_locator": "SBC003:L168-L180",
+      "source_file": "sources/sbcsae/raw/SBC003.trn",
+      "source_title": "Conceptual Pesticides",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC003.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "friends making dinner",
+      "variety": "US English; Southern California",
+      "bounded_roles": [
+        "question_and_response",
+        "causal_explanation"
+      ],
+      "canonical_function": "Ask whether something existed before and give a reason for a guess.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 168,
+            "speaker_or_writer": "ROY",
+            "text_exact": "... Is this= like something you had when you were young,"
+          },
+          {
+            "source_line": 169,
+            "speaker_or_writer": "ROY",
+            "text_exact": "in your own family?"
+          },
+          {
+            "source_line": 170,
+            "speaker_or_writer": "MARILYN",
+            "text_exact": ".. No."
+          },
+          {
+            "source_line": 171,
+            "speaker_or_writer": "MARILYN",
+            "text_exact": ".. It's brand new."
+          },
+          {
+            "source_line": 172,
+            "speaker_or_writer": "MARILYN",
+            "text_exact": "[Oh shit]."
+          },
+          {
+            "source_line": 173,
+            "speaker_or_writer": "PETE",
+            "text_exact": "[Yeah,"
+          },
+          {
+            "source_line": 174,
+            "speaker_or_writer": "PETE",
+            "text_exact": "I don't think] they ever --"
+          },
+          {
+            "source_line": 175,
+            "speaker_or_writer": "PETE",
+            "text_exact": ".. did they actually exist [2back then2]?"
+          },
+          {
+            "source_line": 176,
+            "speaker_or_writer": "MARILYN",
+            "text_exact": "[2<X Hey bud X>2]."
+          },
+          {
+            "source_line": 177,
+            "speaker_or_writer": "MARILYN",
+            "text_exact": "[3X3]."
+          },
+          {
+            "source_line": 178,
+            "speaker_or_writer": "ROY",
+            "text_exact": "[3No3],"
+          },
+          {
+            "source_line": 179,
+            "speaker_or_writer": "ROY",
+            "text_exact": "and they probably didn't have to wash their salads back then,"
+          },
+          {
+            "source_line": 180,
+            "speaker_or_writer": "ROY",
+            "text_exact": "because they didn't know= what was on them."
+          }
+        ]
+      },
+      "limitations": [
+        "The pesticide claim is not fact-checked; the passage supplies language evidence only.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "Friends talk while preparing food and respond to one another without a formal task.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-015",
+      "source_id": "SBC005",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC005:L23-L50",
+      "quote_locator": "SBC005:L31-L50",
+      "source_file": "sources/sbcsae/raw/SBC005.trn",
+      "source_title": "A Book About Death",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC005.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "a couple talking in bed",
+      "variety": "US English; Santa Barbara, California",
+      "bounded_roles": [
+        "comparison_analogy",
+        "contrast",
+        "narrative"
+      ],
+      "canonical_function": "Make a difficult personal experience understandable through an extended comparison.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 31,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "... (H) that the marriage itself=,"
+          },
+          {
+            "source_line": 32,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "I mean as h=ellish as it was,"
+          },
+          {
+            "source_line": 33,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "... % .. it's like it pulled me under,"
+          },
+          {
+            "source_line": 34,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "like a giant octopus,"
+          },
+          {
+            "source_line": 35,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "or a giant,"
+          },
+          {
+            "source_line": 36,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "% ... giant shark."
+          },
+          {
+            "source_line": 37,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "(H) And it pulled me all the way under."
+          },
+          {
+            "source_line": 38,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "And then,"
+          },
+          {
+            "source_line": 39,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "(H) ... and there I was,"
+          },
+          {
+            "source_line": 40,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "it was like the silent scream,"
+          },
+          {
+            "source_line": 41,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "and then,"
+          },
+          {
+            "source_line": 42,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": ".. then I found that .. I% was on my own two feet again."
+          },
+          {
+            "source_line": 43,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "And it r=eally was --"
+          },
+          {
+            "source_line": 44,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "(H) .. (Hx) ... % .. % (Hx) (H) (TSK)"
+          },
+          {
+            "source_line": 45,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "S- what was hell in that .. that marriage became,"
+          },
+          {
+            "source_line": 46,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "... became a way out for me."
+          },
+          {
+            "source_line": 47,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "... It was the flip side."
+          },
+          {
+            "source_line": 48,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "(H) .. It's like sometimes you go through things,"
+          },
+          {
+            "source_line": 49,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "... and you come out the other side of them,"
+          },
+          {
+            "source_line": 50,
+            "speaker_or_writer": "PAMELA",
+            "text_exact": "<WH you WH> .. come out so much better."
+          }
+        ]
+      },
+      "limitations": [
+        "The imagery belongs to this speaker and is not a stock template for explanatory prose.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A person explains her experience to someone she knows in a private conversation.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-016",
+      "source_id": "SBC058",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC058:L28-L57",
+      "quote_locator": "SBC058:L28-L48",
+      "source_file": "sources/sbcsae/raw/SBC058.trn",
+      "source_title": "Swingin' Kid",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC058.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "mother and son talking while making dinner",
+      "variety": "US English; Boise, Idaho",
+      "bounded_roles": [
+        "request_negotiation",
+        "direct_instruction",
+        "sequence",
+        "causal_explanation"
+      ],
+      "canonical_function": "Make a request, break it into actions, negotiate timing, and give a reason.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 28,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "You know what you could do,"
+          },
+          {
+            "source_line": 29,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "that would be just .. really helpful?"
+          },
+          {
+            "source_line": 30,
+            "speaker_or_writer": "STEVEN",
+            "text_exact": "... Say it."
+          },
+          {
+            "source_line": 31,
+            "speaker_or_writer": "SHERI",
+            "text_exact": ".. @ "
+          },
+          {
+            "source_line": 32,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "You could p- take these Coke cans,"
+          },
+          {
+            "source_line": 33,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "... and put them in the bag full of Coke cans that are in your bedroom,"
+          },
+          {
+            "source_line": 34,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "... and then we can do can squish."
+          },
+          {
+            "source_line": 35,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "And squish em."
+          },
+          {
+            "source_line": 36,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "For the recycling bin."
+          },
+          {
+            "source_line": 37,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "... Ok[ay]?"
+          },
+          {
+            "source_line": 38,
+            "speaker_or_writer": "STEVEN",
+            "text_exact": "[Tomorrow] please,"
+          },
+          {
+            "source_line": 39,
+            "speaker_or_writer": "STEVEN",
+            "text_exact": "my feet [2are hurting2]."
+          },
+          {
+            "source_line": 40,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "[2Tomorrow2]?"
+          },
+          {
+            "source_line": 41,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "... (H) Well can you just put em in the bag,"
+          },
+          {
+            "source_line": 42,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "... in there for now,"
+          },
+          {
+            "source_line": 43,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "okay?"
+          },
+          {
+            "source_line": 44,
+            "speaker_or_writer": "STEVEN",
+            "text_exact": "... Ok[ay]."
+          },
+          {
+            "source_line": 45,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "[Cause] I gotta clean up in here,"
+          },
+          {
+            "source_line": 46,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "this .. place is just totally trashed,"
+          },
+          {
+            "source_line": 47,
+            "speaker_or_writer": "SHERI",
+            "text_exact": ".. cause I've done nothing this week but,"
+          },
+          {
+            "source_line": 48,
+            "speaker_or_writer": "SHERI",
+            "text_exact": "... study and be sick."
+          }
+        ]
+      },
+      "limitations": [
+        "This shows ordinary interaction, including repetition and negotiation, not polished writing.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A mother and son deal with a household job while making dinner.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-017",
+      "source_id": "SBC059",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC059:L30-L58",
+      "quote_locator": "SBC059:L33-L58",
+      "source_file": "sources/sbcsae/raw/SBC059.trn",
+      "source_title": "You Baked",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC059.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "family talking at home on Christmas Eve",
+      "variety": "US English; near Beloit, Wisconsin",
+      "bounded_roles": [
+        "narrative",
+        "sequence",
+        "causal_explanation",
+        "inference"
+      ],
+      "canonical_function": "Tell what happened in a game and connect the sequence to its outcome.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 33,
+            "speaker_or_writer": "WESS",
+            "text_exact": "[2Well yeah2]=,"
+          },
+          {
+            "source_line": 34,
+            "speaker_or_writer": "WESS",
+            "text_exact": "because uh,"
+          },
+          {
+            "source_line": 35,
+            "speaker_or_writer": "WESS",
+            "text_exact": "(H) the t- .. the,"
+          },
+          {
+            "source_line": 36,
+            "speaker_or_writer": "WESS",
+            "text_exact": "... Steelers,"
+          },
+          {
+            "source_line": 37,
+            "speaker_or_writer": "WESS",
+            "text_exact": "were on the one yard line,"
+          },
+          {
+            "source_line": 38,
+            "speaker_or_writer": "CAM",
+            "text_exact": "Unhunh?"
+          },
+          {
+            "source_line": 39,
+            "speaker_or_writer": "WESS",
+            "text_exact": "for four downs."
+          },
+          {
+            "source_line": 40,
+            "speaker_or_writer": "WESS",
+            "text_exact": "And [they didn't get in]."
+          },
+          {
+            "source_line": 41,
+            "speaker_or_writer": "CAM",
+            "text_exact": "[Wow=]."
+          },
+          {
+            "source_line": 42,
+            "speaker_or_writer": "WESS",
+            "text_exact": "(H) And then they were on the ten yard line,"
+          },
+          {
+            "source_line": 43,
+            "speaker_or_writer": "WESS",
+            "text_exact": "with fourth down to go,"
+          },
+          {
+            "source_line": 44,
+            "speaker_or_writer": "WESS",
+            "text_exact": "(H) and they had inches to go,"
+          },
+          {
+            "source_line": 45,
+            "speaker_or_writer": "WESS",
+            "text_exact": "(H) the guy didn't even get up to the line of scrimmage,"
+          },
+          {
+            "source_line": 46,
+            "speaker_or_writer": "WESS",
+            "text_exact": "... that was .. had the ball,"
+          },
+          {
+            "source_line": 47,
+            "speaker_or_writer": "CAM",
+            "text_exact": "... Nice."
+          },
+          {
+            "source_line": 48,
+            "speaker_or_writer": "WESS",
+            "text_exact": "But he must've pushed it up there or something,"
+          },
+          {
+            "source_line": 49,
+            "speaker_or_writer": "WESS",
+            "text_exact": "I don't know,"
+          },
+          {
+            "source_line": 50,
+            "speaker_or_writer": "WESS",
+            "text_exact": "how he got it up there."
+          },
+          {
+            "source_line": 51,
+            "speaker_or_writer": "WESS",
+            "text_exact": "(H) But they gave it to them then,"
+          },
+          {
+            "source_line": 52,
+            "speaker_or_writer": "WESS",
+            "text_exact": "(H) then,"
+          },
+          {
+            "source_line": 53,
+            "speaker_or_writer": "WESS",
+            "text_exact": "that'd give em another four down- %,"
+          },
+          {
+            "source_line": 54,
+            "speaker_or_writer": "WESS",
+            "text_exact": "... four ... downs on the ... one yard line,"
+          },
+          {
+            "source_line": 55,
+            "speaker_or_writer": "JO",
+            "text_exact": "... So it's over with."
+          },
+          {
+            "source_line": 56,
+            "speaker_or_writer": "WESS",
+            "text_exact": ".. So it's over with,"
+          },
+          {
+            "source_line": 57,
+            "speaker_or_writer": "CAM",
+            "text_exact": "[<X They X> won]."
+          },
+          {
+            "source_line": 58,
+            "speaker_or_writer": "WESS",
+            "text_exact": "[Green Bay] won twenty-four to nine[2teen2]."
+          }
+        ]
+      },
+      "limitations": [
+        "Sports terms are local to the topic; the passage is useful mainly for sequence and cause.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "Family members discuss a football result at home on Christmas Eve.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-018",
+      "source_id": "SBC060",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC060:L1-L42",
+      "quote_locator": "SBC060:L11-L42",
+      "source_file": "sources/sbcsae/raw/SBC060.trn",
+      "source_title": "Shaggy Dog Story",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC060.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "two friends and coworkers talking during a break",
+      "variety": "US English; Shreveport, Louisiana",
+      "bounded_roles": [
+        "narrative",
+        "time_anchoring",
+        "causal_explanation"
+      ],
+      "canonical_function": "Set up a story, place it in time, and explain how the situation changed.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 11,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "It must've been,"
+          },
+          {
+            "source_line": 12,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "... four to six months after my dad died."
+          },
+          {
+            "source_line": 13,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "That’s how I remember it,"
+          },
+          {
+            "source_line": 14,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "he [died in s]ixty-s=- --"
+          },
+          {
+            "source_line": 15,
+            "speaker_or_writer": "JON",
+            "text_exact": "[Oh God]."
+          },
+          {
+            "source_line": 16,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "... December sixty-seven,"
+          },
+          {
+            "source_line": 17,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "so,"
+          },
+          {
+            "source_line": 18,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "(H)= sometime in sixty-eight we took this trip,"
+          },
+          {
+            "source_line": 19,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "we’d been ... talking about it for a while,"
+          },
+          {
+            "source_line": 20,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "... uh=,"
+          },
+          {
+            "source_line": 21,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "flew down to Mexico City,"
+          },
+          {
+            "source_line": 22,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "... uh we,"
+          },
+          {
+            "source_line": 23,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "(Hx) c- think of the name of my hotel,"
+          },
+          {
+            "source_line": 24,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "which wouldn’t mean anything now,"
+          },
+          {
+            "source_line": 25,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "but we ended up in a ... fabulous hotel,"
+          },
+          {
+            "source_line": 26,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "... uh=,"
+          },
+          {
+            "source_line": 27,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "... first night,"
+          },
+          {
+            "source_line": 28,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "we were <VOX very unhappy VOX> with our rooms,"
+          },
+          {
+            "source_line": 29,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "we got down there,"
+          },
+          {
+            "source_line": 30,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "(H)= and the next morning,"
+          },
+          {
+            "source_line": 31,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "Buddy,"
+          },
+          {
+            "source_line": 32,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "who’s a ... early riser anyhow,"
+          },
+          {
+            "source_line": 33,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "was probably up ... four o'clock,"
+          },
+          {
+            "source_line": 34,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "and he went down there complaining to the manager,"
+          },
+          {
+            "source_line": 35,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "... So,"
+          },
+          {
+            "source_line": 36,
+            "speaker_or_writer": "ALAN",
+            "text_exact": ".. cause it was not w- the accommodation we were supposed to have had,"
+          },
+          {
+            "source_line": 37,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "we checked in about eight o’clock at night or so,"
+          },
+          {
+            "source_line": 38,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "which is,"
+          },
+          {
+            "source_line": 39,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "(H)= in Mexico is like,"
+          },
+          {
+            "source_line": 40,
+            "speaker_or_writer": "ALAN",
+            "text_exact": ".. you know,"
+          },
+          {
+            "source_line": 41,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "... <X the X> --"
+          },
+          {
+            "source_line": 42,
+            "speaker_or_writer": "ALAN",
+            "text_exact": "(H) ... Well we ended up with a .. corner .. suite."
+          }
+        ]
+      },
+      "limitations": [
+        "This is spoken narrative with pauses and repairs, not edited prose.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A person tells a friend a remembered travel story during a work break.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-019",
+      "source_id": "SBC047",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC047:L18-L61",
+      "quote_locator": "SBC047:L34-L61",
+      "source_file": "sources/sbcsae/raw/SBC047.trn",
+      "source_title": "On the Lot",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC047.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "two cousins talking in a private home",
+      "variety": "US English; East Los Angeles, California",
+      "bounded_roles": [
+        "narrative",
+        "sequence",
+        "causal_explanation"
+      ],
+      "canonical_function": "Describe a work problem step by step and explain an entry on a record card.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 34,
+            "speaker_or_writer": "FRED",
+            "text_exact": ".. (H) And on my production card."
+          },
+          {
+            "source_line": 35,
+            "speaker_or_writer": "FRED",
+            "text_exact": "... (TSK) (H) Let's see."
+          },
+          {
+            "source_line": 36,
+            "speaker_or_writer": "FRED",
+            "text_exact": "... The day before yesterday."
+          },
+          {
+            "source_line": 37,
+            "speaker_or_writer": "FRED",
+            "text_exact": ".. I did ice cream."
+          },
+          {
+            "source_line": 38,
+            "speaker_or_writer": "FRED",
+            "text_exact": ".. Right,"
+          },
+          {
+            "source_line": 39,
+            "speaker_or_writer": "FRED",
+            "text_exact": "Balian?"
+          },
+          {
+            "source_line": 40,
+            "speaker_or_writer": "RICHARD",
+            "text_exact": "Unh[unh]."
+          },
+          {
+            "source_line": 41,
+            "speaker_or_writer": "FRED",
+            "text_exact": "[(H)] And you gotta pack those in cases."
+          },
+          {
+            "source_line": 42,
+            "speaker_or_writer": "FRED",
+            "text_exact": "... (H)[2= And2],"
+          },
+          {
+            "source_line": 43,
+            "speaker_or_writer": "RICHARD",
+            "text_exact": "[2Right2]."
+          },
+          {
+            "source_line": 44,
+            "speaker_or_writer": "FRED",
+            "text_exact": "so like,"
+          },
+          {
+            "source_line": 45,
+            "speaker_or_writer": "FRED",
+            "text_exact": "I didn't put that down on my production c[ard]."
+          },
+          {
+            "source_line": 46,
+            "speaker_or_writer": "RICHARD",
+            "text_exact": "[How many] cases you packed."
+          },
+          {
+            "source_line": 47,
+            "speaker_or_writer": "FRED",
+            "text_exact": "(H) I don't know man."
+          },
+          {
+            "source_line": 48,
+            "speaker_or_writer": "FRED",
+            "text_exact": "... I packed two pallets."
+          },
+          {
+            "source_line": 49,
+            "speaker_or_writer": "FRED",
+            "text_exact": "... You know,"
+          },
+          {
+            "source_line": 50,
+            "speaker_or_writer": "FRED",
+            "text_exact": "... I don't know how many .. cases [that is],"
+          },
+          {
+            "source_line": 51,
+            "speaker_or_writer": "RICHARD",
+            "text_exact": "[Unhunh],"
+          },
+          {
+            "source_line": 52,
+            "speaker_or_writer": "FRED",
+            "text_exact": "but,"
+          },
+          {
+            "source_line": 53,
+            "speaker_or_writer": "FRED",
+            "text_exact": "(H)= you know,"
+          },
+          {
+            "source_line": 54,
+            "speaker_or_writer": "FRED",
+            "text_exact": "that,"
+          },
+          {
+            "source_line": 55,
+            "speaker_or_writer": "FRED",
+            "text_exact": ".. that shit was heavy man."
+          },
+          {
+            "source_line": 56,
+            "speaker_or_writer": "FRED",
+            "text_exact": "And like,"
+          },
+          {
+            "source_line": 57,
+            "speaker_or_writer": "FRED",
+            "text_exact": "... and like,"
+          },
+          {
+            "source_line": 58,
+            "speaker_or_writer": "FRED",
+            "text_exact": "... I put down on the card,"
+          },
+          {
+            "source_line": 59,
+            "speaker_or_writer": "FRED",
+            "text_exact": "you know,"
+          },
+          {
+            "source_line": 60,
+            "speaker_or_writer": "FRED",
+            "text_exact": "no cases."
+          },
+          {
+            "source_line": 61,
+            "speaker_or_writer": "FRED",
+            "text_exact": "Because it was lost time."
+          }
+        ]
+      },
+      "limitations": [
+        "Work terms are part of the event being discussed, not institutional prose supplied by the employer.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "Two cousins talk privately about a factory shift in the speaker's own words.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-020",
+      "source_id": "SBC048",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SBC048:L45-L68",
+      "quote_locator": "SBC048:L52-L58",
+      "source_file": "sources/sbcsae/raw/SBC048.trn",
+      "source_title": "Mickey Mouse Watch",
+      "public_page": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+      "raw_source_url": "https://www.linguistics.ucsb.edu/sites/default/files/sitefiles/research/SBC/SBC048.trn",
+      "mode": "spoken",
+      "collection": "sbcsae",
+      "use_group": "private_conversation",
+      "setting": "family exchanging gifts on Christmas morning",
+      "variety": "US English; Fresno, California",
+      "bounded_roles": [
+        "question_and_response",
+        "direct_instruction",
+        "observable_cue"
+      ],
+      "canonical_function": "Ask how to use a device and answer with the visible step to wait for.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 52,
+            "speaker_or_writer": "TIM",
+            "text_exact": "[5%uh,"
+          },
+          {
+            "source_line": 53,
+            "speaker_or_writer": "TIM",
+            "text_exact": "I just5],"
+          },
+          {
+            "source_line": 54,
+            "speaker_or_writer": "TIM",
+            "text_exact": ".. push down on this thing,"
+          },
+          {
+            "source_line": 55,
+            "speaker_or_writer": "TIM",
+            "text_exact": "right?"
+          },
+          {
+            "source_line": 56,
+            "speaker_or_writer": "JUDY",
+            "text_exact": "(H) Yeah,"
+          },
+          {
+            "source_line": 57,
+            "speaker_or_writer": "JUDY",
+            "text_exact": "you wait until you see the green light."
+          },
+          {
+            "source_line": 58,
+            "speaker_or_writer": "JUDY",
+            "text_exact": "... In there."
+          }
+        ]
+      },
+      "limitations": [
+        "The exchange is short and overlapping; use it as wording evidence, not a complete instruction model.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "Family members work out a camera while opening gifts at home.",
+      "rights": "CC BY-ND 3.0 US. Raw files are kept unchanged. Search views are local working aids and are not cleared for republication.",
+      "licence_url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    {
+      "canon_id": "EE-021",
+      "source_id": "SCOTS996",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SCOTS996:L13-L50",
+      "quote_locator": "SCOTS996:L13-L37",
+      "source_file": "sources/scots/raw/SCOTS_996.txt",
+      "source_title": "Conversation 24: Three women chatting in a garden centre",
+      "public_page": "https://scottishcorpus.ac.uk/document/?documentid=996",
+      "raw_source_url": "https://scottishcorpus.ac.uk/download-plaintext/?documentid=996",
+      "mode": "spoken",
+      "collection": "scots",
+      "use_group": "private_conversation",
+      "setting": "friends talking over lunch about ordinary home life",
+      "variety": "Scottish English and Scots; Stirling",
+      "bounded_roles": [
+        "practical_rationale",
+        "contrast",
+        "direct_instruction"
+      ],
+      "canonical_function": "Explain a practical choice, its cost, and why it suits the speaker.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 13,
+            "speaker_or_writer": "F606",
+            "text_exact": "So what would you buy if you had a big garden?"
+          },
+          {
+            "source_line": 14,
+            "speaker_or_writer": "F890",
+            "text_exact": "Small things and let them grow,"
+          },
+          {
+            "source_line": 15,
+            "speaker_or_writer": "F606",
+            "text_exact": "Yeah [laugh]"
+          },
+          {
+            "source_line": 16,
+            "speaker_or_writer": "F889",
+            "text_exact": "Well I've just done mines //Christian.//"
+          },
+          {
+            "source_line": 17,
+            "speaker_or_writer": "F890",
+            "text_exact": "//so that it'll be cheaper.//"
+          },
+          {
+            "source_line": 18,
+            "speaker_or_writer": "F889",
+            "text_exact": "Ah an I've covered it wi stones"
+          },
+          {
+            "source_line": 19,
+            "speaker_or_writer": "F606",
+            "text_exact": "Yeah."
+          },
+          {
+            "source_line": 20,
+            "speaker_or_writer": "F889",
+            "text_exact": "an a big rock an itwis eh, it wis quite expensive, but at the same"
+          },
+          {
+            "source_line": 21,
+            "speaker_or_writer": "F889",
+            "text_exact": "time that's it done forever."
+          },
+          {
+            "source_line": 22,
+            "speaker_or_writer": "F606",
+            "text_exact": "mmhm"
+          },
+          {
+            "source_line": 23,
+            "speaker_or_writer": "F889",
+            "text_exact": "I'm so pleased wi it I keep lookin at it an think, \"Oh that's lovely,"
+          },
+          {
+            "source_line": 24,
+            "speaker_or_writer": "F889",
+            "text_exact": "that's lovely!\" //[laugh]//"
+          },
+          {
+            "source_line": 25,
+            "speaker_or_writer": "F890",
+            "text_exact": "//[laugh]//"
+          },
+          {
+            "source_line": 26,
+            "speaker_or_writer": "F606",
+            "text_exact": "So have you got no plants at all //in it?//"
+          },
+          {
+            "source_line": 27,
+            "speaker_or_writer": "F889",
+            "text_exact": "//Eh// just shrubs, just shrubs, but I canna look after plants"
+          },
+          {
+            "source_line": 28,
+            "speaker_or_writer": "F889",
+            "text_exact": "neither, it's gotta be just be something that lasts forever and"
+          },
+          {
+            "source_line": 29,
+            "speaker_or_writer": "F890",
+            "text_exact": "Yeah."
+          },
+          {
+            "source_line": 30,
+            "speaker_or_writer": "F889",
+            "text_exact": "looks after itself."
+          },
+          {
+            "source_line": 31,
+            "speaker_or_writer": "F606",
+            "text_exact": "mmhm"
+          },
+          {
+            "source_line": 32,
+            "speaker_or_writer": "F889",
+            "text_exact": "I like to see them but I'm no one for that neither, aw the flowers, I"
+          },
+          {
+            "source_line": 33,
+            "speaker_or_writer": "F889",
+            "text_exact": "like the shrubs"
+          },
+          {
+            "source_line": 34,
+            "speaker_or_writer": "F890",
+            "text_exact": "Mm an it's quite simple, if anything's withered //cut it off.//"
+          },
+          {
+            "source_line": 35,
+            "speaker_or_writer": "F889",
+            "text_exact": "//Cut it off// //[inaudible]//"
+          },
+          {
+            "source_line": 36,
+            "speaker_or_writer": "F606",
+            "text_exact": "//Yeah.//"
+          },
+          {
+            "source_line": 37,
+            "speaker_or_writer": "F889",
+            "text_exact": "Cut it off if it's withered, eh?"
+          }
+        ]
+      },
+      "limitations": [
+        "The Scottish forms belong to these speakers and are not silently treated as universal English.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "Three women talk about their gardens over lunch in a garden centre.",
+      "rights": "Local educational/research use under the SCOTS terms. Do not redistribute this collection without checking each holder's permission.",
+      "licence_url": "https://www.scottishcorpus.ac.uk/termsandconditions.html"
+    },
+    {
+      "canon_id": "EE-022",
+      "source_id": "SCOTS1384",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SCOTS1384:L19-L49",
+      "quote_locator": "SCOTS1384:L25-L47",
+      "source_file": "sources/scots/raw/SCOTS_1384.txt",
+      "source_title": "Conversation 26: Two females from Glasgow talking about weddings",
+      "public_page": "https://scottishcorpus.ac.uk/document/?documentid=1384",
+      "raw_source_url": "https://scottishcorpus.ac.uk/download-plaintext/?documentid=1384",
+      "mode": "spoken",
+      "collection": "scots",
+      "use_group": "private_conversation",
+      "setting": "two friends talking about a recent wedding",
+      "variety": "Scottish English and Scots; Glasgow",
+      "bounded_roles": [
+        "narrative",
+        "sequence",
+        "contrast"
+      ],
+      "canonical_function": "Tell how a plan began, was delayed, and became more complicated.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 25,
+            "speaker_or_writer": "F689",
+            "text_exact": "Och, it was just, I never really thought about it, cause erm, I was"
+          },
+          {
+            "source_line": 26,
+            "speaker_or_writer": "F689",
+            "text_exact": "quite happy ploddin along, but we'd said like years ago before Rosalyn was"
+          },
+          {
+            "source_line": 27,
+            "speaker_or_writer": "F689",
+            "text_exact": "even born that we should perhaps get married at some point, [laugh], //so"
+          },
+          {
+            "source_line": 28,
+            "speaker_or_writer": "F689",
+            "text_exact": "it just sort o//"
+          },
+          {
+            "source_line": 29,
+            "speaker_or_writer": "F631",
+            "text_exact": "//Mmhm//"
+          },
+          {
+            "source_line": 30,
+            "speaker_or_writer": "F689",
+            "text_exact": "got put on hold and put on hold. And then what with the movin house"
+          },
+          {
+            "source_line": 31,
+            "speaker_or_writer": "F689",
+            "text_exact": "and stuff. Ehm, so it originally turned out that we'd just go for a really"
+          },
+          {
+            "source_line": 32,
+            "speaker_or_writer": "F689",
+            "text_exact": "really small do."
+          },
+          {
+            "source_line": 33,
+            "speaker_or_writer": "F631",
+            "text_exact": "Mmhm"
+          },
+          {
+            "source_line": 34,
+            "speaker_or_writer": "F689",
+            "text_exact": "And [throat] of course I told Mum and she was like \"Oh, we'll need to"
+          },
+          {
+            "source_line": 35,
+            "speaker_or_writer": "F689",
+            "text_exact": "have a reception\" [laugh] and things like that. //So,//"
+          },
+          {
+            "source_line": 36,
+            "speaker_or_writer": "F631",
+            "text_exact": "//Right.//"
+          },
+          {
+            "source_line": 37,
+            "speaker_or_writer": "F689",
+            "text_exact": "it just started out ehm tryin to keep it as simple an as sort o cheap"
+          },
+          {
+            "source_line": 38,
+            "speaker_or_writer": "F689",
+            "text_exact": "as possible. [laugh]"
+          },
+          {
+            "source_line": 39,
+            "speaker_or_writer": "F631",
+            "text_exact": "Mmhm"
+          },
+          {
+            "source_line": 40,
+            "speaker_or_writer": "F689",
+            "text_exact": "Ehm, but it was quite horrendous tryin to find like a place that"
+          },
+          {
+            "source_line": 41,
+            "speaker_or_writer": "F689",
+            "text_exact": "would accept children, //and stuff like that.//"
+          },
+          {
+            "source_line": 42,
+            "speaker_or_writer": "F631",
+            "text_exact": "//Really?//"
+          },
+          {
+            "source_line": 43,
+            "speaker_or_writer": "F689",
+            "text_exact": "Mmhm, it was like erm, totally, erm, \"You're only allowed kids until"
+          },
+          {
+            "source_line": 44,
+            "speaker_or_writer": "F689",
+            "text_exact": "half past eight and that's it. No exceptions.\" //[laugh] Uh-huh//"
+          },
+          {
+            "source_line": 45,
+            "speaker_or_writer": "F631",
+            "text_exact": "//Up until half eight, right.//"
+          },
+          {
+            "source_line": 46,
+            "speaker_or_writer": "F689",
+            "text_exact": "And, so we tried about four different pubs and phoned other places"
+          },
+          {
+            "source_line": 47,
+            "speaker_or_writer": "F689",
+            "text_exact": "and it was \"no no no no\" //[laugh].//"
+          }
+        ]
+      },
+      "limitations": [
+        "The opening question was prompted for a corpus recording; the answer remains the speaker's own wording.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A woman tells another woman about arranging her wedding in ordinary conversational language.",
+      "rights": "Local educational/research use under the SCOTS terms. Do not redistribute this collection without checking each holder's permission.",
+      "licence_url": "https://www.scottishcorpus.ac.uk/termsandconditions.html"
+    },
+    {
+      "canon_id": "EE-023",
+      "source_id": "SCOTS027",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SCOTS027:L239-L253",
+      "quote_locator": "SCOTS027:L239-L243",
+      "source_file": "sources/scots/raw/SCOTS_27.txt",
+      "source_title": "Conversation 06: Three Ayrshire sisters reminiscing",
+      "public_page": "https://scottishcorpus.ac.uk/document/?documentid=027",
+      "raw_source_url": "https://scottishcorpus.ac.uk/download-plaintext/?documentid=027",
+      "mode": "spoken",
+      "collection": "scots",
+      "use_group": "private_conversation",
+      "setting": "three sisters talking in a family home",
+      "variety": "Scottish English and Scots; Ayrshire",
+      "bounded_roles": [
+        "contrast",
+        "comparison_analogy"
+      ],
+      "canonical_function": "Answer a comparison question by putting the two cases side by side.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 239,
+            "speaker_or_writer": "M608",
+            "text_exact": "What was the difference between the the big school and the junior"
+          },
+          {
+            "source_line": 240,
+            "speaker_or_writer": "M608",
+            "text_exact": "school? I mean what kinda?"
+          },
+          {
+            "source_line": 241,
+            "speaker_or_writer": "F638",
+            "text_exact": "Well then it was like eh movin now. Ye had a different teacher for"
+          },
+          {
+            "source_line": 242,
+            "speaker_or_writer": "F638",
+            "text_exact": "each subject, whereas ye had the same teacher for the the whole year."
+          },
+          {
+            "source_line": 243,
+            "speaker_or_writer": "M608",
+            "text_exact": "Aye, right."
+          }
+        ]
+      },
+      "limitations": [
+        "The question was elicited in a recorded conversation; the answer is not a prepared or academic text.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A speaker explains the remembered difference between two parts of school in her own words.",
+      "rights": "Local educational/research use under the SCOTS terms. Do not redistribute this collection without checking each holder's permission.",
+      "licence_url": "https://www.scottishcorpus.ac.uk/termsandconditions.html"
+    },
+    {
+      "canon_id": "EE-024",
+      "source_id": "SCOTS1570",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SCOTS1570:L14-L53",
+      "quote_locator": "SCOTS1570:L35-L49",
+      "source_file": "sources/scots/raw/SCOTS_1570.txt",
+      "source_title": "Conversation: Buckie - Mother and child 20, recording 1",
+      "public_page": "https://scottishcorpus.ac.uk/document/?documentid=1570",
+      "raw_source_url": "https://scottishcorpus.ac.uk/download-plaintext/?documentid=1570",
+      "mode": "spoken",
+      "collection": "scots",
+      "use_group": "everyday_explanation",
+      "setting": "mother and child getting ready for a birthday party at home",
+      "variety": "Scottish English and Scots; Buckie and Portknockie",
+      "bounded_roles": [
+        "direct_instruction",
+        "sequence",
+        "correction",
+        "scope_condition"
+      ],
+      "canonical_function": "Help a child complete a writing task by giving one concrete step at a time.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 35,
+            "speaker_or_writer": "F1139",
+            "text_exact": "Will I gie you a pencil, so you can rub it oot if you mak a"
+          },
+          {
+            "source_line": 36,
+            "speaker_or_writer": "F1139",
+            "text_exact": "mistake?"
+          },
+          {
+            "source_line": 37,
+            "speaker_or_writer": "F1140",
+            "text_exact": "Aye."
+          },
+          {
+            "source_line": 38,
+            "speaker_or_writer": "F1139",
+            "text_exact": "Haud on till I get a bit o paper. This is \"from\", right? That's an"
+          },
+          {
+            "source_line": 39,
+            "speaker_or_writer": "F1139",
+            "text_exact": "F. And then an R. An O. And then M., but it's a little M., nae a big M."
+          },
+          {
+            "source_line": 40,
+            "speaker_or_writer": "F1139",
+            "text_exact": "like the start o your name. [CENSORED: forename spelt out] And dae some"
+          },
+          {
+            "source_line": 41,
+            "speaker_or_writer": "F1139",
+            "text_exact": "kisses. And then you can maybe try and write [CENSORED: forename] on the"
+          },
+          {
+            "source_line": 42,
+            "speaker_or_writer": "F1139",
+            "text_exact": "envelope."
+          },
+          {
+            "source_line": 43,
+            "speaker_or_writer": "F1140",
+            "text_exact": "Mmhm."
+          },
+          {
+            "source_line": 44,
+            "speaker_or_writer": "F1139",
+            "text_exact": "Okay? Can you write \"from [CENSORED: forename]\" on the card there."
+          },
+          {
+            "source_line": 45,
+            "speaker_or_writer": "F1140",
+            "text_exact": "I canna write [CENSORED: forename]."
+          },
+          {
+            "source_line": 46,
+            "speaker_or_writer": "F1139",
+            "text_exact": "Well, just write \"from [CENSORED: forename]\" just now and I'll write"
+          },
+          {
+            "source_line": 47,
+            "speaker_or_writer": "F1139",
+            "text_exact": "[CENSORED: forename] on the envelope. Oh, you've tae dae yer kisses last,"
+          },
+          {
+            "source_line": 48,
+            "speaker_or_writer": "F1139",
+            "text_exact": "ye neep! [laugh] Right, you write \"from [CENSORED: forename]\" and then you"
+          },
+          {
+            "source_line": 49,
+            "speaker_or_writer": "F1139",
+            "text_exact": "dae yer kisses last. //Will I write \"from\"?//"
+          }
+        ]
+      },
+      "limitations": [
+        "The local Scots forms are kept as evidence from this family, not rewritten as a supposed standard.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A mother and child get a birthday card ready at home in a spontaneous exchange.",
+      "rights": "Local educational/research use under the SCOTS terms. Do not redistribute this collection without checking each holder's permission.",
+      "licence_url": "https://www.scottishcorpus.ac.uk/termsandconditions.html"
+    },
+    {
+      "canon_id": "EE-025",
+      "source_id": "SCOTS394",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SCOTS394:L19-L31",
+      "quote_locator": "SCOTS394:L27-L31",
+      "source_file": "sources/scots/raw/SCOTS_394.txt",
+      "source_title": "Biggam Collection Letter: 01",
+      "public_page": "https://scottishcorpus.ac.uk/document/?documentid=394",
+      "raw_source_url": "https://scottishcorpus.ac.uk/download-plaintext/?documentid=394",
+      "mode": "written",
+      "collection": "scots",
+      "use_group": "private_writing",
+      "setting": "a private letter to a family member, 1945",
+      "variety": "Scottish English; personal letter written from Italy",
+      "bounded_roles": [
+        "personal_update",
+        "inference",
+        "causal_explanation"
+      ],
+      "canonical_function": "Give family news, make a joke, and connect one practical consequence to another.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 27,
+            "speaker_or_writer": "James Taylor",
+            "text_exact": "I'm in complete agreement with you regarding my being home to keep Madge in"
+          },
+          {
+            "source_line": 28,
+            "speaker_or_writer": "James Taylor",
+            "text_exact": "order, but I just can't convince the C-in-C Mediterranean. However, the"
+          },
+          {
+            "source_line": 29,
+            "speaker_or_writer": "James Taylor",
+            "text_exact": "more boys take Madge out, the more money she can save to take me out, and"
+          },
+          {
+            "source_line": 30,
+            "speaker_or_writer": "James Taylor",
+            "text_exact": "that means I can save to take my six machinists out. I haven't seen the pen"
+          },
+          {
+            "source_line": 31,
+            "speaker_or_writer": "James Taylor",
+            "text_exact": "pal since before Christmas, but what tales I can tell when I do."
+          }
+        ]
+      },
+      "limitations": [
+        "This 1945 Scottish letter is one person's ordinary written voice, not a present-day universal model.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A handwritten private letter from one family member to another, not written for publication or instruction.",
+      "rights": "Local educational/research use under the SCOTS terms. Do not redistribute this collection without checking each holder's permission.",
+      "licence_url": "https://www.scottishcorpus.ac.uk/termsandconditions.html"
+    },
+    {
+      "canon_id": "EE-026",
+      "source_id": "SCOTS395",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SCOTS395:L16-L28",
+      "quote_locator": "SCOTS395:L16-L25",
+      "source_file": "sources/scots/raw/SCOTS_395.txt",
+      "source_title": "Biggam Collection Letter: 02",
+      "public_page": "https://scottishcorpus.ac.uk/document/?documentid=395",
+      "raw_source_url": "https://scottishcorpus.ac.uk/download-plaintext/?documentid=395",
+      "mode": "written",
+      "collection": "scots",
+      "use_group": "private_writing",
+      "setting": "a private letter to a friend or family member, 1984",
+      "variety": "Scottish English; Glasgow",
+      "bounded_roles": [
+        "sympathy_support",
+        "personal_update"
+      ],
+      "canonical_function": "Share sympathy and explain recent personal circumstances plainly.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 16,
+            "speaker_or_writer": "May Trotter",
+            "text_exact": "What a shock Alice and I got to hear of the death of Arthur. We did not"
+          },
+          {
+            "source_line": 17,
+            "speaker_or_writer": "May Trotter",
+            "text_exact": "know he was ailing and what a worrying time you must have had. You will"
+          },
+          {
+            "source_line": 18,
+            "speaker_or_writer": "May Trotter",
+            "text_exact": "miss him very much. So many of our friends are slipping away. I am glad"
+          },
+          {
+            "source_line": 19,
+            "speaker_or_writer": "May Trotter",
+            "text_exact": "Chrissie has managed to be with you. Alice and I would like to take a run"
+          },
+          {
+            "source_line": 20,
+            "speaker_or_writer": "May Trotter",
+            "text_exact": "through soon to visit you and we will let you know first."
+          },
+          {
+            "source_line": 22,
+            "speaker_or_writer": "May Trotter",
+            "text_exact": "I have been attending the hospital for 6 months now for treatment to my"
+          },
+          {
+            "source_line": 23,
+            "speaker_or_writer": "May Trotter",
+            "text_exact": "right eye. A blockage was discovered and I have lost the sight of the eye."
+          },
+          {
+            "source_line": 24,
+            "speaker_or_writer": "May Trotter",
+            "text_exact": "How worried I was but fortuneately my left eye is able to function and I"
+          },
+          {
+            "source_line": 25,
+            "speaker_or_writer": "May Trotter",
+            "text_exact": "get along not so bad. We don't get out so much at night now. Too many"
+          }
+        ]
+      },
+      "limitations": [
+        "The topic is personal and the wording is from 1984 Scottish English.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A handwritten private letter to someone the writer knows.",
+      "rights": "Local educational/research use under the SCOTS terms. Do not redistribute this collection without checking each holder's permission.",
+      "licence_url": "https://www.scottishcorpus.ac.uk/termsandconditions.html"
+    },
+    {
+      "canon_id": "EE-027",
+      "source_id": "SCOTS397",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SCOTS397:L15-L38",
+      "quote_locator": "SCOTS397:L15-L30",
+      "source_file": "sources/scots/raw/SCOTS_397.txt",
+      "source_title": "Biggam Collection Letter: 04",
+      "public_page": "https://scottishcorpus.ac.uk/document/?documentid=397",
+      "raw_source_url": "https://scottishcorpus.ac.uk/download-plaintext/?documentid=397",
+      "mode": "written",
+      "collection": "scots",
+      "use_group": "private_writing",
+      "setting": "a private letter about a family member's health",
+      "variety": "Scottish English; Glasgow",
+      "bounded_roles": [
+        "personal_update",
+        "causal_explanation",
+        "scope_condition"
+      ],
+      "canonical_function": "Give a detailed family health update and explain day-to-day consequences.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 15,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "Thank you very much for the money you shouldn't have Jimmy isn't alowd"
+          },
+          {
+            "source_line": 16,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "sweets at the moment his food has to be liquidized because of his throat he"
+          },
+          {
+            "source_line": 17,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "can't even get porridge in the morning he has to get thickener in his"
+          },
+          {
+            "source_line": 18,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "drinks so if its alright with you I'll get him a couple of Light Weight"
+          },
+          {
+            "source_line": 19,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "Trousers with the money. He still cant talk but he knows everything your"
+          },
+          {
+            "source_line": 20,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "saying to him. I took your letter up and says did you get one and he took"
+          },
+          {
+            "source_line": 21,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "your letter out his pocket and gave me it home with me. Anna asked to get"
+          },
+          {
+            "source_line": 22,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "him out last Saturday for a couple of hours to my house so he was as happy"
+          },
+          {
+            "source_line": 23,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "as Larry but Anna and Loraine took him back at night so he seems a bit more"
+          },
+          {
+            "source_line": 24,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "content now. I says to him once he finishes treatment hell get home for"
+          },
+          {
+            "source_line": 25,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "good and he gave me a wink and started laughing. When he was home he was"
+          },
+          {
+            "source_line": 26,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "watching the racing on TV and pressed the remote controll and lost the"
+          },
+          {
+            "source_line": 27,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "picture so he was shouting YO YO YO and I rushed in and it was the picture"
+          },
+          {
+            "source_line": 28,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "he lost and didnt know how to get it back. He can go to the toilet himself"
+          },
+          {
+            "source_line": 29,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "but thats about all need help to dress and other things so it might come"
+          },
+          {
+            "source_line": 30,
+            "speaker_or_writer": "Catherine O'Rourke",
+            "text_exact": "back out of the Blue you never know he's such a good man doesnt deserve"
+          }
+        ]
+      },
+      "limitations": [
+        "The medical account is not medical advice; the passage is language evidence only.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A handwritten private letter whose spelling and punctuation are preserved exactly.",
+      "rights": "Local educational/research use under the SCOTS terms. Do not redistribute this collection without checking each holder's permission.",
+      "licence_url": "https://www.scottishcorpus.ac.uk/termsandconditions.html"
+    },
+    {
+      "canon_id": "EE-028",
+      "source_id": "SCOTS399",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SCOTS399:L18-L42",
+      "quote_locator": "SCOTS399:L18-L25",
+      "source_file": "sources/scots/raw/SCOTS_399.txt",
+      "source_title": "Biggam Collection Letter: 06",
+      "public_page": "https://scottishcorpus.ac.uk/document/?documentid=399",
+      "raw_source_url": "https://scottishcorpus.ac.uk/download-plaintext/?documentid=399",
+      "mode": "written",
+      "collection": "scots",
+      "use_group": "private_writing",
+      "setting": "a private letter to a friend or family member, 1995",
+      "variety": "Scottish English; Glasgow",
+      "bounded_roles": [
+        "narrative",
+        "personal_update",
+        "sympathy_support"
+      ],
+      "canonical_function": "Explain a failed phone call and give personal news and support.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 18,
+            "speaker_or_writer": "Alice Trotter",
+            "text_exact": "I was so very nice to hear your voice but we somehow got cut off. I phoned"
+          },
+          {
+            "source_line": 19,
+            "speaker_or_writer": "Alice Trotter",
+            "text_exact": "your old number and got a very nice man who answered. I explained that I"
+          },
+          {
+            "source_line": 20,
+            "speaker_or_writer": "Alice Trotter",
+            "text_exact": "was trying to get you and he seemed to know about you but he couldn't give"
+          },
+          {
+            "source_line": 21,
+            "speaker_or_writer": "Alice Trotter",
+            "text_exact": "me your new number."
+          },
+          {
+            "source_line": 23,
+            "speaker_or_writer": "Alice Trotter",
+            "text_exact": "I was very sorry to hear about Madge. Our circle is beginning to become"
+          },
+          {
+            "source_line": 24,
+            "speaker_or_writer": "Alice Trotter",
+            "text_exact": "very small now-a-days. It is great to have someone you can say \"Do you"
+          },
+          {
+            "source_line": 25,
+            "speaker_or_writer": "Alice Trotter",
+            "text_exact": "remember?\" However we have our good times to look back on."
+          }
+        ]
+      },
+      "limitations": [
+        "The writer sometimes uses words that may sound more formal today. Inclusion records real use; it does not endorse every choice.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A handwritten private letter between people who know one another.",
+      "rights": "Local educational/research use under the SCOTS terms. Do not redistribute this collection without checking each holder's permission.",
+      "licence_url": "https://www.scottishcorpus.ac.uk/termsandconditions.html"
+    },
+    {
+      "canon_id": "EE-029",
+      "source_id": "SCOTS1458",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SCOTS1458:L15-L31",
+      "quote_locator": "SCOTS1458:L25-L31",
+      "source_file": "sources/scots/raw/SCOTS_1458.txt",
+      "source_title": "Letter from Frances Gardner 04 - 11/10/89",
+      "public_page": "https://scottishcorpus.ac.uk/document/?documentid=1458",
+      "raw_source_url": "https://scottishcorpus.ac.uk/download-plaintext/?documentid=1458",
+      "mode": "written",
+      "collection": "scots",
+      "use_group": "private_writing",
+      "setting": "a private letter from a mother to her daughter, 1989",
+      "variety": "Scottish English; Edinburgh",
+      "bounded_roles": [
+        "personal_update",
+        "direct_request",
+        "practical_rationale"
+      ],
+      "canonical_function": "Give a family update and ask for confirmation about a practical matter.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 25,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "Spring. I hope all is well with you and that you are now nicely esconced in"
+          },
+          {
+            "source_line": 26,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "your new home. I am looking forward to having more details from you. Also,"
+          },
+          {
+            "source_line": 27,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "can you please confirm that you have received Dad's money and our flowers."
+          },
+          {
+            "source_line": 28,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "I understand they had difficulty in delivering the latter and I eventually"
+          },
+          {
+            "source_line": 29,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "gave them your work phone number. Obviously, it will be better to send any"
+          },
+          {
+            "source_line": 30,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "parcels etc to you at the University. I did think the caretaker might have"
+          },
+          {
+            "source_line": 31,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "taken in messages. "
+          }
+        ]
+      },
+      "limitations": [
+        "The writer uses several more formal connectives. This is evidence that private writing varies, not a reason to copy them by default.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A typed private letter from a mother to her daughter, not a published essay or institutional text.",
+      "rights": "Local educational/research use under the SCOTS terms. Do not redistribute this collection without checking each holder's permission.",
+      "licence_url": "https://www.scottishcorpus.ac.uk/termsandconditions.html"
+    },
+    {
+      "canon_id": "EE-030",
+      "source_id": "SCOTS1458",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "SCOTS1458:L45-L59",
+      "quote_locator": "SCOTS1458:L45-L59",
+      "source_file": "sources/scots/raw/SCOTS_1458.txt",
+      "source_title": "Letter from Frances Gardner 04 - 11/10/89",
+      "public_page": "https://scottishcorpus.ac.uk/document/?documentid=1458",
+      "raw_source_url": "https://scottishcorpus.ac.uk/download-plaintext/?documentid=1458",
+      "mode": "written",
+      "collection": "scots",
+      "use_group": "private_writing",
+      "setting": "a private letter from a mother to her daughter, 1989",
+      "variety": "Scottish English; Edinburgh",
+      "bounded_roles": [
+        "personal_update",
+        "afterthought"
+      ],
+      "canonical_function": "Share ordinary daily details and add practical afterthoughts.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 45,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "Well its lunch time now. Soup and a roll as usual. mince and potatoes for"
+          },
+          {
+            "source_line": 46,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "tea to-night. What a lot more rubbish you can write when you get going on"
+          },
+          {
+            "source_line": 47,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "the type writer. "
+          },
+          {
+            "source_line": 49,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "Much love, "
+          },
+          {
+            "source_line": 51,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "Mum xxx"
+          },
+          {
+            "source_line": 53,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "PS. Uncle Bill could only be persuaded to take your dressing gown! He was"
+          },
+          {
+            "source_line": 54,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "quite flustered about his luggage and it was only with difficulty that I"
+          },
+          {
+            "source_line": 55,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "could persuade him to take a very small packet of Edinburgh Rock to Sheila"
+          },
+          {
+            "source_line": 56,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "& co!!"
+          },
+          {
+            "source_line": 58,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "Also you will be pleased to know that I put up your net curtain in the back"
+          },
+          {
+            "source_line": 59,
+            "speaker_or_writer": "Frances Gardner",
+            "text_exact": "porch - what an improvement on the torn rag that was there!!"
+          }
+        ]
+      },
+      "limitations": [
+        "This passage is evidence for informal personal writing, not explanatory mathematics.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "The end and postscript of a private family letter contain unpolished day-to-day writing.",
+      "rights": "Local educational/research use under the SCOTS terms. Do not redistribute this collection without checking each holder's permission.",
+      "licence_url": "https://www.scottishcorpus.ac.uk/termsandconditions.html"
+    },
+    {
+      "canon_id": "EE-031",
+      "source_id": "COOK116793",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "COOK116793:L14",
+      "quote_locator": "COOK116793:L14",
+      "source_file": "sources/stackexchange/raw/COOK_116793.txt",
+      "source_title": "What is ‘layering flavors’? — answer 116793 excerpt",
+      "public_page": "https://cooking.stackexchange.com/a/116793",
+      "raw_source_url": "https://api.stackexchange.com/2.3/answers/116793?site=cooking&filter=withbody",
+      "mode": "written",
+      "collection": "stackexchange",
+      "use_group": "public_nonacademic_explanation",
+      "setting": "a person explaining the order and reason for two cooking steps",
+      "variety": "Online English; the post does not establish the author's regional variety",
+      "bounded_roles": [
+        "sequence",
+        "causal_explanation",
+        "practical_rationale"
+      ],
+      "canonical_function": "State the order of two actions and give the practical difference that explains the order.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 14,
+            "speaker_or_writer": "AnoE",
+            "text_exact": "The reason why onions are added first, and then the garlic, is that onions can and should be heated much longer than garlic."
+          }
+        ]
+      },
+      "limitations": [
+        "One short online answer is not private conversation, does not establish a regional variety, and does not make every phrase broadly familiar. The cooking claim is not technical authority for mathematics.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A named individual answers another person's practical question in public, connected, non-academic prose. The post and this revision predate public ChatGPT.",
+      "rights": "Selected user-contributed excerpt only. Attribution, post identity, revision dates, and the post's stated CC BY-SA version are retained in the raw excerpt record.",
+      "licence_url": "https://stackoverflow.com/help/licensing",
+      "source_version": "Seasoned Advice answer 116793, last edited 2021-08-11T07:55:40Z, CC BY-SA 4.0"
+    },
+    {
+      "canon_id": "EE-032",
+      "source_id": "COOK40170",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "COOK40170:L14",
+      "quote_locator": "COOK40170:L14",
+      "source_file": "sources/stackexchange/raw/COOK_40170.txt",
+      "source_title": "First onion or first minced meat? — answer 40170 excerpt",
+      "public_page": "https://cooking.stackexchange.com/a/40170",
+      "raw_source_url": "https://api.stackexchange.com/2.3/answers/40170?site=cooking&filter=withbody",
+      "mode": "written",
+      "collection": "stackexchange",
+      "use_group": "public_nonacademic_explanation",
+      "setting": "a person explaining a practical cooking choice to another user",
+      "variety": "Online English; the post does not establish the author's regional variety",
+      "bounded_roles": [
+        "causal_explanation",
+        "inference"
+      ],
+      "canonical_function": "Give a cause and its immediate practical consequence in one connected sentence.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 14,
+            "speaker_or_writer": "SAJ14SAJ",
+            "text_exact": "The onions would express water, which would lower the temperature to simmer or steam, preventing the beef from browning."
+          }
+        ]
+      },
+      "limitations": [
+        "This public specialist forum is not a sample of ordinary private writing or worldwide English. The passage supports a causal construction, not the factual accuracy of every cooking claim.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A named individual explains a practical choice to another user in public, non-academic prose. The answer was posted in 2013 and has no later edit.",
+      "rights": "Selected user-contributed excerpt only. Attribution, post identity, revision dates, and the post's stated CC BY-SA version are retained in the raw excerpt record.",
+      "licence_url": "https://stackoverflow.com/help/licensing",
+      "source_version": "Seasoned Advice answer 40170, created 2013-12-11T18:27:54Z, CC BY-SA 3.0"
+    },
+    {
+      "canon_id": "EE-033",
+      "source_id": "MSE1087517",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "MSE1087517:L14",
+      "quote_locator": "MSE1087517:L14",
+      "source_file": "sources/stackexchange/raw/MSE_1087517.txt",
+      "source_title": "What is a function? — answer 1087517 excerpt",
+      "public_page": "https://math.stackexchange.com/a/1087517",
+      "raw_source_url": "https://api.stackexchange.com/2.3/answers/1087517?site=math&filter=withbody",
+      "mode": "written",
+      "collection": "stackexchange",
+      "use_group": "public_mathematical_explanation",
+      "setting": "a person answering a learner's question about functions",
+      "variety": "Online English; the post does not establish the author's regional variety",
+      "bounded_roles": [
+        "definition"
+      ],
+      "canonical_function": "State the defining input-output condition for a function in a direct sentence while retaining the notation and technical name.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 14,
+            "speaker_or_writer": "Clive Newstead",
+            "text_exact": "What it means to be a function $f : A \\to B$ is this: $f$ assigns to each element of $A$ exactly one element of $B$."
+          }
+        ]
+      },
+      "limitations": [
+        "A Mathematics Stack Exchange contributor is a self-selected mathematically experienced writer, not a representative sample of everyday English. This passage supports one explanatory construction only; the frozen mathematical source remains the authority for the project.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A named person answers a learner's question in public mathematical writing that keeps the exact condition visible without an academic lead-in. The answer and its last edit predate public ChatGPT.",
+      "rights": "Selected user-contributed excerpt only. Attribution, post identity, revision dates, and the post's stated CC BY-SA version are retained in the raw excerpt record.",
+      "licence_url": "https://stackoverflow.com/help/licensing",
+      "source_version": "Mathematics Stack Exchange answer 1087517, last edited 2022-06-21T01:45:29Z, CC BY-SA 4.0",
+      "mathematical_check": "The sentence requires one output in B for every input in A, matching the total single-valued condition in frozen function-basics.tex:29-30. It does not supply the later domain, codomain, range, or extensionality details."
+    },
+    {
+      "canon_id": "EE-034",
+      "source_id": "MSE3427924",
+      "selection_basis": {
+        "in_checked_canon_manifest": true,
+        "source_pool_status": "included",
+        "verified_direct_human_language": true,
+        "positive_reference_layer_member": true
+      },
+      "source_locator": "MSE3427924:L14",
+      "quote_locator": "MSE3427924:L14",
+      "source_file": "sources/stackexchange/raw/MSE_3427924.txt",
+      "source_title": "Trouble understanding injection problem — answer 3427924 excerpt",
+      "public_page": "https://math.stackexchange.com/a/3427924",
+      "raw_source_url": "https://api.stackexchange.com/2.3/answers/3427924?site=math&filter=withbody",
+      "mode": "written",
+      "collection": "stackexchange",
+      "use_group": "public_mathematical_explanation",
+      "setting": "a person correcting a learner's confusion about injectivity",
+      "variety": "Online English; the post does not establish the author's regional variety",
+      "bounded_roles": [
+        "definition",
+        "equivalent_restatement"
+      ],
+      "canonical_function": "Put two equivalent readings of injectivity side by side in ordinary input-output language.",
+      "quote": {
+        "kind": "verbatim text_exact lines from the accepted exact record",
+        "lines": [
+          {
+            "source_line": 14,
+            "speaker_or_writer": "Arturo Magidin",
+            "text_exact": "Remember what injectivity means: either “different inputs yield different outputs” or “if ‘two’ inputs yield the same output, then they are actually the same input.”"
+          }
+        ]
+      },
+      "limitations": [
+        "The public mathematics forum and its contributors are not representative of all English users. The excerpt assumes the surrounding function and its domain; it is language evidence, not an independent proof that a target passage is correct.",
+        "This is attestation for the named language move in the named source and setting only; it does not establish universal comprehension, corpus-wide frequency, or mathematical authority."
+      ],
+      "why_included": "A named person directly corrects a learner's confusion and keeps both directions of the comparison visible. The answer and edit predate public ChatGPT.",
+      "rights": "Selected user-contributed excerpt only. Attribution, post identity, revision dates, and the post's stated CC BY-SA version are retained in the raw excerpt record.",
+      "licence_url": "https://stackoverflow.com/help/licensing",
+      "source_version": "Mathematics Stack Exchange answer 3427924, last edited 2019-11-09T02:20:42Z, CC BY-SA 4.0",
+      "mathematical_check": "For a function, ‘different inputs give different outputs’ is equivalent by contraposition to ‘equal outputs came from equal inputs’; this matches the two injectivity tests in frozen function-kinds.tex:64-73."
+    }
+  ]
+}

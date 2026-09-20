@@ -1,0 +1,110 @@
+127.0.0.1 - - [20/Sep/2026 23:06:28] "GET /html/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:06:28] "GET /html/accessibility.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:06:30] code 404, message File not found
+127.0.0.1 - - [20/Sep/2026 23:06:30] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Sep/2026 23:09:32] "GET /html/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [20/Sep/2026 23:09:32] "GET /html/accessibility.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/accessibility.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/assets/figures/figure-1.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/assets/figures/figure-2.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/accessibility.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/assets/illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/accessibility.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/assets/figures/figure-3.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/assets/figures/figure-1.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/assets/figures/figure-1.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/assets/figures/figure-2.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/assets/figures/figure-4.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/assets/figures/figure-5.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:19] "GET /html/assets/figures/figure-6.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:20] code 404, message File not found
+127.0.0.1 - - [20/Sep/2026 23:10:20] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Sep/2026 23:10:21] code 404, message File not found
+127.0.0.1 - - [20/Sep/2026 23:10:21] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Sep/2026 23:10:21] code 404, message File not found
+127.0.0.1 - - [20/Sep/2026 23:10:21] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Sep/2026 23:10:36] "GET /html/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:36] "GET /html/accessibility.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:36] "GET /html/assets/figures/figure-1.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:36] "GET /html/assets/figures/figure-2.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:36] "GET /html/assets/illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:36] "GET /html/assets/figures/figure-3.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:36] "GET /html/assets/figures/figure-4.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:36] "GET /html/assets/figures/figure-5.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:36] "GET /html/assets/figures/figure-6.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:37] code 404, message File not found
+127.0.0.1 - - [20/Sep/2026 23:10:37] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Sep/2026 23:10:38] "GET /html/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:38] "GET /html/accessibility.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:38] "GET /html/assets/figures/figure-1.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:38] "GET /html/assets/figures/figure-2.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:38] "GET /html/assets/illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:38] "GET /html/assets/figures/figure-4.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:38] "GET /html/assets/figures/figure-3.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:38] "GET /html/assets/figures/figure-5.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:38] "GET /html/assets/figures/figure-6.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:39] code 404, message File not found
+127.0.0.1 - - [20/Sep/2026 23:10:39] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Sep/2026 23:10:41] "GET /html/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:41] "GET /html/accessibility.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:41] "GET /html/assets/figures/figure-1.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:41] "GET /html/assets/figures/figure-2.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:41] "GET /html/assets/illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:41] "GET /html/assets/figures/figure-3.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:41] "GET /html/assets/figures/figure-4.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:41] "GET /html/assets/figures/figure-5.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:41] "GET /html/assets/figures/figure-6.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:10:42] code 404, message File not found
+127.0.0.1 - - [20/Sep/2026 23:10:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Sep/2026 23:11:02] "GET /html/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:02] "GET /html/accessibility.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:02] "GET /html/assets/figures/figure-1.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:02] "GET /html/assets/figures/figure-2.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:02] "GET /html/assets/illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:02] "GET /html/assets/figures/figure-3.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:02] "GET /html/assets/figures/figure-4.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:02] "GET /html/assets/figures/figure-5.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:02] "GET /html/assets/figures/figure-6.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:05] code 404, message File not found
+127.0.0.1 - - [20/Sep/2026 23:11:05] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Sep/2026 23:11:07] "GET /html/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:07] "GET /html/accessibility.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:07] "GET /html/assets/figures/figure-2.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:07] "GET /html/assets/figures/figure-1.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:07] "GET /html/assets/illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:07] "GET /html/assets/figures/figure-3.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:07] "GET /html/assets/figures/figure-4.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:07] "GET /html/assets/figures/figure-5.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:07] "GET /html/assets/figures/figure-6.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:10] code 404, message File not found
+127.0.0.1 - - [20/Sep/2026 23:11:10] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Sep/2026 23:11:12] "GET /html/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:12] "GET /html/accessibility.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:12] "GET /html/assets/figures/figure-1.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:12] "GET /html/assets/figures/figure-2.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:12] "GET /html/assets/illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:12] "GET /html/assets/figures/figure-3.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:12] "GET /html/assets/figures/figure-4.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:12] "GET /html/assets/figures/figure-5.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:12] "GET /html/assets/figures/figure-6.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:11:15] code 404, message File not found
+127.0.0.1 - - [20/Sep/2026 23:11:15] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Sep/2026 23:12:40] "GET /html/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:12:40] "GET /html/accessibility.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:12:42] code 404, message File not found
+127.0.0.1 - - [20/Sep/2026 23:12:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Sep/2026 23:19:27] "GET /html/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:19:27] "GET /html/accessibility.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:19:28] code 404, message File not found
+127.0.0.1 - - [20/Sep/2026 23:19:28] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/Sep/2026 23:19:30] "GET /html/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [20/Sep/2026 23:19:31] "GET /html/accessibility.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Sep/2026 23:19:34] "GET /html/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [20/Sep/2026 23:19:34] "GET /html/accessibility.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Sep/2026 23:35:47] "GET /html/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:35:47] "GET /html/accessibility.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 23:35:48] code 404, message File not found
+127.0.0.1 - - [20/Sep/2026 23:35:48] "GET /favicon.ico HTTP/1.1" 404 -

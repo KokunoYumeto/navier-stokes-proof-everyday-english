@@ -1,0 +1,98 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ee-web}[2026/09/20 Semantic web build for the Everyday English Edition]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{amsmath,amssymb,amsthm,mathtools}
+\RequirePackage{mathrsfs}
+\RequirePackage{xcolor}
+\RequirePackage{enumitem}
+\RequirePackage[hypertexnames=false]{hyperref}
+\RequirePackage[nameinlink,noabbrev]{cleveref}
+
+\hypersetup{
+  pdftitle={Everyday English Edition of the Navier--Stokes Proof},
+  pdfsubject={Semantic web source for the complete mathematics-preserving edition},
+  pdfcreator={Independent Everyday English Edition build pipeline}
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{construction}[theorem]{Construction}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{notation}[theorem]{Notation}
+
+\newcounter{nssourcepage}
+\newcounter{nsformulaanchor}
+\newcommand{\NSPage}[1]{%
+  \par
+  \stepcounter{nssourcepage}%
+  \setcounter{page}{#1}%
+  \hypertarget{source-page-#1}{}%
+  \ifdefined\HCode
+    \HCode{<span class="source-page-marker" data-source-page="#1" aria-hidden="true"></span>}%
+  \fi
+}
+
+\newcommand{\NSi}[2]{%
+  \hypertarget{formula-#1}{}%
+  \ensuremath{#2}%
+}
+
+\newcommand{\NSFormula}[3]{%
+  \stepcounter{nsformulaanchor}%
+  \hypertarget{formula-#1}{}%
+}
+
+\newenvironment{EESegment}[1]{%
+  \par
+  \hypertarget{#1}{}%
+  \ifdefined\HCode
+    \HCode{<span class="ee-segment-anchor" data-segment-id="#1" aria-hidden="true"></span>}%
+  \fi
+}{\par}
+
+\newenvironment{EEAddition}[2]{%
+  \par
+  \hypertarget{#1}{}%
+  \ifdefined\HCode
+    \HCode{<aside class="ee-addition" role="note">}%
+  \fi
+  \noindent\textbf{Everyday English note: #2}\par
+}{%
+  \ifdefined\HCode
+    \HCode{</aside>}%
+  \fi
+  \par
+}
+
+\makeatletter
+\newcommand{\NSDeclareFigure}[2]{\expandafter\def\csname nsfig@#1\endcsname{#2}}
+\renewcommand{\@biblabel}[1]{#1.}
+\newcommand{\NSFigurePlaceholder}[1]{%
+  \ifdefined\HCode
+    \HCode{<span class="ns-figure-placeholder" data-figure-id="#1"></span>}%
+  \else
+    \fbox{\texttt{#1}}%
+  \fi
+}
+\makeatother
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\divergence}{\operatorname{div}}
+\newcommand{\curl}{\operatorname{curl}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\Id}{\operatorname{Id}}
+
+\numberwithin{equation}{section}
+

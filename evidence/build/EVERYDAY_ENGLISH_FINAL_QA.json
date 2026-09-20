@@ -1,0 +1,121 @@
+{
+  "accepted_at": "2026-09-20T23:36:55.412522+02:00",
+  "artifacts": {
+    "epub": {
+      "bytes": 2269611,
+      "path": "output/everyday-english/epub/everyday-english-edition.epub",
+      "sha256": "da3cf6071a690d8bcbeee044daa1e40bf1697f987e91a8c953b247c367e7d821"
+    },
+    "html": {
+      "bytes": 3865657,
+      "direct_index_path": "docs/index.html",
+      "path": "output/everyday-english/html/index.html",
+      "sha256": "56efba577998bd5ff80503b4779587ed659c15b44d6ccf5ec4ce1852bad9f6c3",
+      "validator_status": "pass"
+    },
+    "pdf": {
+      "bytes": 5108345,
+      "page_count": 168,
+      "path": "output/everyday-english/pdf/everyday-english-edition.pdf",
+      "sha256": "e8d8a06d53be4fd6e2408485f1be5b97ddef440f98fcabcabcfbf4a04750f55f"
+    }
+  },
+  "edition": "Everyday English Edition of the Navier–Stokes Proof",
+  "epubcheck": {
+    "dependencies_receipt": {
+      "bytes": 4137,
+      "path": "output/everyday-english/receipts/dependencies.json",
+      "sha256": "5873028dffde9a06a27e7319ad11bccc8acd04c08806ff12dcbc85a02b5d0925"
+    },
+    "epub_receipt": {
+      "bytes": 4392,
+      "path": "output/everyday-english/receipts/epub-build.json",
+      "sha256": "93efdf32a19f4c5d7f1513acae7a7984d5df751b541dcfa4a123b945c3b7d0ff"
+    },
+    "lock": {
+      "bytes": 488,
+      "path": "everyday/epubcheck-lock.json",
+      "sha256": "4c4a4ab0e97b495f4427ec71b1ac9c8c73e794ec9e628bac6a29e6096ed1e766"
+    },
+    "runtime_jar_sha256": "2146665a124998dc6c908010ffe0d09dc4f4c8014f2c8fd6a1aa11f64c40ac93",
+    "status": "pass",
+    "version": "5.4.0"
+  },
+  "everyday_audit": {
+    "failed_ranges": 0,
+    "pending_ranges": 0,
+    "range_count": 29,
+    "receipt": {
+      "bytes": 16354,
+      "path": "output/everyday-english/receipts/logs/content-audit.json",
+      "sha256": "abfbf248f425e5c3c001c32a4efb994aba8ecbe2fc164078a0955c3dae13987d"
+    },
+    "status": "pass"
+  },
+  "final_build": {
+    "profile": "final",
+    "receipt": {
+      "bytes": 1844,
+      "path": "output/everyday-english/receipts/build-receipt.json",
+      "sha256": "15c158967dc8d1f9e84aa39ee8fc70f0ac95e611e20fa075a722dc8839c6defd"
+    },
+    "status": "pass"
+  },
+  "html_validation": {
+    "receipt": {
+      "bytes": 1772,
+      "path": "output/everyday-english/receipts/checks.json",
+      "sha256": "bc5b217f1feebdacd5a7049c9a9ad30e0f6f43adb29767d0c648126c02687c06"
+    },
+    "status": "pass"
+  },
+  "publication_performed": false,
+  "receipt_id": "NS-VQA-20260920-006",
+  "scans": {
+    "authorial_we": {
+      "matches": 0,
+      "status": "pass"
+    },
+    "disallowed_token": {
+      "matches": 0,
+      "status": "pass"
+    },
+    "local_path_leaks": {
+      "matches": 0,
+      "status": "pass"
+    },
+    "receipt": {
+      "bytes": 122672,
+      "path": "evidence/build/EVERYDAY_ENGLISH_RELEASE_SCANS.json",
+      "sha256": "3b24cba7942d0a5fddd7e78bb32424638c9f2bc57e74f248a450eb09e052fe34"
+    }
+  },
+  "schema": "navier-stokes-everyday-final-qa/v1",
+  "status": "pass",
+  "structure": {
+    "checks_receipt": {
+      "bytes": 1772,
+      "path": "output/everyday-english/receipts/checks.json",
+      "sha256": "bc5b217f1feebdacd5a7049c9a9ad30e0f6f43adb29767d0c648126c02687c06"
+    },
+    "overfull_boxes": 0,
+    "pdf_receipt": {
+      "bytes": 12853,
+      "path": "output/everyday-english/receipts/pdf-build.json",
+      "sha256": "9ca2ffe83df405ba48b95e00561291018b3af2d910d65faac49b3d851a59805a"
+    },
+    "unresolved_citations": 0,
+    "unresolved_references": 0
+  },
+  "visual_qa": {
+    "inspected_pages": 168,
+    "ledger": {
+      "bytes": 550827,
+      "path": "evidence/ledgers/visual_qa.jsonl",
+      "sha256": "df677aeb2ed1f904899bb92c25b4321e89bc152afd67fe581b86ee642d0bd5b0"
+    },
+    "record_id": "NS-VQA-20260920-006",
+    "scope": "every-page",
+    "status": "pass"
+  }
+}

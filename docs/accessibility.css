@@ -1,0 +1,211 @@
+:root {
+  color-scheme: light;
+  --ink: #17202a;
+  --paper: #ffffff;
+  --muted: #4b5563;
+  --link: #0645ad;
+  --focus: #8b5a00;
+  --note-bg: #eef6ff;
+  --note-edge: #22577a;
+  --status-bg: #fff4ce;
+  --status-edge: #7a5200;
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Charter, "Bitstream Charter", Georgia, serif;
+  font-size: 100%;
+  line-height: 1.58;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+body > header,
+body > main,
+body > footer {
+  box-sizing: border-box;
+  margin-inline: auto;
+  max-width: 78rem;
+  padding-inline: clamp(1rem, 4vw, 4rem);
+}
+
+body > header {
+  padding-block: 2rem 1rem;
+}
+
+body > main {
+  padding-block: 1rem 4rem;
+}
+
+body > footer {
+  border-top: 1px solid #cbd5e1;
+  color: var(--muted);
+  padding-block: 1.25rem 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin-block: 1.65em 0.55em;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  margin-block-start: 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 0.09em;
+  text-underline-offset: 0.13em;
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 0.2rem solid var(--focus);
+  outline-offset: 0.2rem;
+}
+
+.skip-link {
+  background: var(--paper);
+  border: 2px solid var(--focus);
+  left: 0.5rem;
+  padding: 0.65rem 0.9rem;
+  position: fixed;
+  top: -10rem;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+.build-status {
+  background: var(--status-bg);
+  border-inline-start: 0.35rem solid var(--status-edge);
+  padding: 0.75rem 1rem;
+}
+
+.ee-addition {
+  background: var(--note-bg);
+  border-inline-start: 0.35rem solid var(--note-edge);
+  margin-block: 1.25rem;
+  padding: 0.85rem 1rem;
+}
+
+figure {
+  margin: 2rem auto;
+  max-width: 68rem;
+}
+
+figure img {
+  display: block;
+  height: auto;
+  margin-inline: auto;
+  max-width: 100%;
+}
+
+figcaption,
+.caption {
+  color: var(--muted);
+  margin-block-start: 0.75rem;
+}
+
+math[display="block"],
+.math-display {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-block: 0.3rem;
+}
+
+.equation-block {
+  align-items: center;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.equation-block math[display="block"] {
+  margin-inline: auto;
+  min-width: 0;
+}
+
+.equation-number {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+table {
+  border-collapse: collapse;
+  display: block;
+  margin-block: 1.25rem;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+th,
+td {
+  border-block-end: 1px solid #cbd5e1;
+  padding: 0.45rem 0.65rem;
+  text-align: start;
+  vertical-align: top;
+}
+
+th {
+  background: #f1f5f9;
+  font-weight: 700;
+}
+
+.source-page-marker,
+.ee-segment-anchor,
+.formula-anchor,
+.cross-reference-anchor {
+  block-size: 0;
+  display: block;
+  inline-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 45rem) {
+  html {
+    font-size: 95%;
+  }
+
+  body > header,
+  body > main,
+  body > footer {
+    padding-inline: 1rem;
+  }
+
+  .equation-block {
+    display: block;
+  }
+
+  .equation-number {
+    display: block;
+    text-align: end;
+  }
+}
+
+@media print {
+  .skip-link,
+  .build-status {
+    display: none;
+  }
+
+  a {
+    color: inherit;
+  }
+}

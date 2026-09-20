@@ -1,0 +1,600 @@
+{
+  "expected_ranges": 29,
+  "global_counts": {
+    "ee_addition_ids": 0,
+    "ee_segment_ids": 1370,
+    "first_use_candidates_live": 113,
+    "record_ids": 4044
+  },
+  "global_issues": [],
+  "global_pending": [],
+  "range_status_counts": {
+    "fail": 0,
+    "pass": 29,
+    "pending": 0
+  },
+  "ranges": [
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 35,
+        "ee_additions": 0,
+        "ee_segments": 35,
+        "first_use_candidates_live": 5,
+        "mathematics_records_live": 35,
+        "segment_records_live": 35,
+        "source_ns_markers": 69,
+        "source_pages": 6,
+        "target_ns_markers": 69,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp001-006",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 35,
+        "ee_additions": 0,
+        "ee_segments": 35,
+        "first_use_candidates_live": 12,
+        "mathematics_records_live": 35,
+        "segment_records_live": 35,
+        "source_ns_markers": 144,
+        "source_pages": 6,
+        "target_ns_markers": 144,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp007-012",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 38,
+        "ee_additions": 0,
+        "ee_segments": 38,
+        "first_use_candidates_live": 8,
+        "mathematics_records_live": 38,
+        "segment_records_live": 38,
+        "source_ns_markers": 168,
+        "source_pages": 6,
+        "target_ns_markers": 168,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp013-018",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 12,
+        "ee_additions": 0,
+        "ee_segments": 12,
+        "first_use_candidates_live": 17,
+        "mathematics_records_live": 12,
+        "segment_records_live": 12,
+        "source_ns_markers": 184,
+        "source_pages": 6,
+        "target_ns_markers": 184,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp019-024",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 59,
+        "ee_additions": 0,
+        "ee_segments": 59,
+        "first_use_candidates_live": 10,
+        "mathematics_records_live": 59,
+        "segment_records_live": 59,
+        "source_ns_markers": 244,
+        "source_pages": 6,
+        "target_ns_markers": 244,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp025-030",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 69,
+        "ee_additions": 0,
+        "ee_segments": 72,
+        "first_use_candidates_live": 2,
+        "mathematics_records_live": 72,
+        "segment_records_live": 72,
+        "source_ns_markers": 281,
+        "source_pages": 6,
+        "target_ns_markers": 281,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp031-036",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 62,
+        "ee_additions": 0,
+        "ee_segments": 62,
+        "first_use_candidates_live": 0,
+        "mathematics_records_live": 62,
+        "segment_records_live": 62,
+        "source_ns_markers": 280,
+        "source_pages": 6,
+        "target_ns_markers": 280,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp037-042",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 6,
+        "ee_additions": 0,
+        "ee_segments": 65,
+        "first_use_candidates_live": 2,
+        "mathematics_records_live": 6,
+        "segment_records_live": 65,
+        "source_ns_markers": 234,
+        "source_pages": 6,
+        "target_ns_markers": 234,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp043-048",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 6,
+        "ee_additions": 0,
+        "ee_segments": 35,
+        "first_use_candidates_live": 0,
+        "mathematics_records_live": 6,
+        "segment_records_live": 35,
+        "source_ns_markers": 206,
+        "source_pages": 6,
+        "target_ns_markers": 206,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp049-054",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 37,
+        "ee_additions": 0,
+        "ee_segments": 37,
+        "first_use_candidates_live": 1,
+        "mathematics_records_live": 37,
+        "segment_records_live": 37,
+        "source_ns_markers": 288,
+        "source_pages": 6,
+        "target_ns_markers": 288,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp055-060",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 51,
+        "ee_additions": 0,
+        "ee_segments": 51,
+        "first_use_candidates_live": 3,
+        "mathematics_records_live": 51,
+        "segment_records_live": 51,
+        "source_ns_markers": 200,
+        "source_pages": 6,
+        "target_ns_markers": 200,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp061-066",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 61,
+        "ee_additions": 0,
+        "ee_segments": 61,
+        "first_use_candidates_live": 0,
+        "mathematics_records_live": 61,
+        "segment_records_live": 61,
+        "source_ns_markers": 197,
+        "source_pages": 6,
+        "target_ns_markers": 197,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp067-072",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 56,
+        "ee_additions": 0,
+        "ee_segments": 56,
+        "first_use_candidates_live": 4,
+        "mathematics_records_live": 56,
+        "segment_records_live": 56,
+        "source_ns_markers": 254,
+        "source_pages": 6,
+        "target_ns_markers": 254,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp073-078",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 62,
+        "ee_additions": 0,
+        "ee_segments": 62,
+        "first_use_candidates_live": 9,
+        "mathematics_records_live": 62,
+        "segment_records_live": 62,
+        "source_ns_markers": 248,
+        "source_pages": 6,
+        "target_ns_markers": 248,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp079-084",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 49,
+        "ee_additions": 0,
+        "ee_segments": 49,
+        "first_use_candidates_live": 15,
+        "mathematics_records_live": 49,
+        "segment_records_live": 49,
+        "source_ns_markers": 209,
+        "source_pages": 6,
+        "target_ns_markers": 209,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp085-090",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 53,
+        "ee_additions": 0,
+        "ee_segments": 53,
+        "first_use_candidates_live": 2,
+        "mathematics_records_live": 53,
+        "segment_records_live": 53,
+        "source_ns_markers": 237,
+        "source_pages": 6,
+        "target_ns_markers": 237,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp091-096",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 51,
+        "ee_additions": 0,
+        "ee_segments": 51,
+        "first_use_candidates_live": 2,
+        "mathematics_records_live": 51,
+        "segment_records_live": 51,
+        "source_ns_markers": 179,
+        "source_pages": 6,
+        "target_ns_markers": 179,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp097-102",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 61,
+        "ee_additions": 0,
+        "ee_segments": 61,
+        "first_use_candidates_live": 2,
+        "mathematics_records_live": 61,
+        "segment_records_live": 61,
+        "source_ns_markers": 159,
+        "source_pages": 6,
+        "target_ns_markers": 159,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp103-108",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 49,
+        "ee_additions": 0,
+        "ee_segments": 49,
+        "first_use_candidates_live": 1,
+        "mathematics_records_live": 49,
+        "segment_records_live": 49,
+        "source_ns_markers": 204,
+        "source_pages": 6,
+        "target_ns_markers": 204,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp109-114",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 58,
+        "ee_additions": 0,
+        "ee_segments": 58,
+        "first_use_candidates_live": 1,
+        "mathematics_records_live": 58,
+        "segment_records_live": 58,
+        "source_ns_markers": 225,
+        "source_pages": 6,
+        "target_ns_markers": 225,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp115-120",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 26,
+        "ee_additions": 0,
+        "ee_segments": 26,
+        "first_use_candidates_live": 3,
+        "mathematics_records_live": 26,
+        "segment_records_live": 26,
+        "source_ns_markers": 217,
+        "source_pages": 6,
+        "target_ns_markers": 217,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp121-126",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 32,
+        "ee_additions": 0,
+        "ee_segments": 32,
+        "first_use_candidates_live": 1,
+        "mathematics_records_live": 32,
+        "segment_records_live": 32,
+        "source_ns_markers": 315,
+        "source_pages": 6,
+        "target_ns_markers": 315,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp127-132",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 56,
+        "ee_additions": 0,
+        "ee_segments": 56,
+        "first_use_candidates_live": 3,
+        "mathematics_records_live": 56,
+        "segment_records_live": 56,
+        "source_ns_markers": 288,
+        "source_pages": 6,
+        "target_ns_markers": 288,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp133-138",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 63,
+        "ee_additions": 0,
+        "ee_segments": 63,
+        "first_use_candidates_live": 2,
+        "mathematics_records_live": 63,
+        "segment_records_live": 63,
+        "source_ns_markers": 247,
+        "source_pages": 6,
+        "target_ns_markers": 247,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp139-144",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 65,
+        "ee_additions": 0,
+        "ee_segments": 65,
+        "first_use_candidates_live": 5,
+        "mathematics_records_live": 65,
+        "segment_records_live": 65,
+        "source_ns_markers": 276,
+        "source_pages": 6,
+        "target_ns_markers": 276,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp145-150",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 56,
+        "ee_additions": 0,
+        "ee_segments": 56,
+        "first_use_candidates_live": 1,
+        "mathematics_records_live": 56,
+        "segment_records_live": 56,
+        "source_ns_markers": 295,
+        "source_pages": 6,
+        "target_ns_markers": 295,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp151-156",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 49,
+        "ee_additions": 0,
+        "ee_segments": 49,
+        "first_use_candidates_live": 2,
+        "mathematics_records_live": 49,
+        "segment_records_live": 49,
+        "source_ns_markers": 245,
+        "source_pages": 6,
+        "target_ns_markers": 245,
+        "target_pages": 6
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp157-162",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 20,
+        "ee_additions": 0,
+        "ee_segments": 20,
+        "first_use_candidates_live": 0,
+        "mathematics_records_live": 20,
+        "segment_records_live": 20,
+        "source_ns_markers": 66,
+        "source_pages": 2,
+        "target_ns_markers": 66,
+        "target_pages": 2
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp163-164",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "addition_records_live": 0,
+        "change_records_live": 2,
+        "ee_additions": 0,
+        "ee_segments": 2,
+        "first_use_candidates_live": 0,
+        "mathematics_records_live": 2,
+        "segment_records_live": 2,
+        "source_ns_markers": 16,
+        "source_pages": 2,
+        "target_ns_markers": 16,
+        "target_pages": 2
+      },
+      "issues": [],
+      "pending": [],
+      "range": "pp165-166",
+      "schema": "navier-stokes-everyday-range-audit/v1",
+      "status": "pass"
+    }
+  ],
+  "schema": "navier-stokes-everyday-all-audit/v1",
+  "status": "pass"
+}

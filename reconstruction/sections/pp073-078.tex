@@ -1,0 +1,438 @@
+\NSPage{073}%
+correction cycle of Proposition~\ref{prop:9.6} preserves containment in these prescribed supports; its
+estimates require no divisibility by the original cutoff factors.
+
+\section{Oscillatory realization and correction of the residual stress}\label{sec:7}
+
+We fix the background \NSi{NS-F-P073-001}{(u_B,p_B)} of Proposition~\ref{prop:5.5} and the charts, slow cutoffs, and
+auxiliary rectangles of Equations~\eqref{eq:6.1}, \eqref{eq:6.9} and \eqref{eq:6.10}. We construct waves whose averaged
+quadratic velocity products supply the prescribed radial fluxes of azimuthal and axial
+momentum in the leading stress \NSi{NS-F-P073-002}{\mathcal T_0}, with the physical normalization in \eqref{eq:7.30}. Their principal
+linearized evolution must also agree with the background shear and viscous diffusion in
+\eqref{eq:7.5}. The supports allow us to solve these problems locally and sum the waves without cross
+terms between distinct labels, by Lemma~\ref{lem:6.1}. For subsequent corrections, we solve the same
+amplitude equation with a prescribed harmonic source using the inverse in Proposition~\ref{prop:7.2}.
+A second linear operator, \NSi{NS-F-P073-003}{\mathcal L} in Proposition~\ref{prop:7.6}, prescribes a signed change in the leading
+covariance.
+
+The common ingredient is a linear amplitude equation determined by the background
+shear and viscosity. We choose phases for which the homogeneous solution \NSi{NS-F-P073-004}{t^{\mathrm h}_{\sigma}} in Lemma~\ref{lem:7.4}
+grows and then decays. Its Gaussian bound \eqref{eq:7.16} makes the solution exponentially small
+near both ends of its interval. We call this solution a \emph{pulse}. We compute the covariance
+of two pulses with different phase gradients and choose their amplitudes to match the
+stress. The strict cone condition \eqref{eq:7.1} permits positive squared amplitudes in Proposition~\ref{prop:7.5};
+linearizing at those fixed amplitudes permits subsequent stress increments of either sign.
+Finally, we take curls of supported vector potentials to enforce exact incompressibility in
+Lemma~\ref{lem:7.7}. The additional velocity terms and cutoff errors remain in the covariance estimate
+of Corollary~\ref{cor:7.8} and the residual identity \eqref{eq:7.40}.
+
+All calculations use normalized chart representatives until physical factors are displayed.
+A band, its representative, its discrete labels, and its integer frequencies are fixed before
+differentiation. Constants for derivatives of any fixed order may depend on the fixed profiles
+and that order; in applications they may also depend on the finite correction stage. They
+remain uniform over bands, labels, and rectangle copies.
+
+\subsection{Phase construction and a frame orthogonal to its gradient}\label{sec:7.1}
+We first construct the phase
+\NSi{NS-F-P073-005}{\Phi} in \eqref{eq:7.3} that approximately follows transport by the background, controlling the defect in
+the leading transport terms as in \eqref{eq:7.9}. For a harmonic \NSi{NS-F-P073-006}{e^{ikm\Phi}}, the leading incompressibility
+condition on its amplitude \NSi{NS-F-P073-007}{t_m} is \NSi{NS-F-P073-008}{\nabla_*\Phi\cdot t_m=0}. The frame \NSi{NS-F-P073-009}{B} in \eqref{eq:7.8} for this two-dimensional
+plane will compare the undamped principal equation with a diagonal system having one
+positive and one negative eigenvalue, as in \eqref{eq:7.10}.
+
+Fix a label \NSi{NS-F-P073-010}{\gamma=(\ell,a,\sigma)} from \eqref{eq:6.8}. On each of its lifted rectangles we use the slow
+point \NSi{NS-F-P073-011}{x_*=(R,Z,T)}, transverse coordinate \NSi{NS-F-P073-012}{\xi_g}, and pulse coordinate \NSi{NS-F-P073-013}{v\in[0,L_s]}, where
+\NSi{NS-F-P073-014}{L_s=2r_0/c_i\asymp S_*}, as in \eqref{eq:6.11}. Recall \NSi{NS-F-P073-015}{Q=2^{-\ell}}, \NSi{NS-F-P073-016}{\varepsilon=Q^h}, and \NSi{NS-F-P073-017}{S_*=\ell^2} from \eqref{eq:6.1}. The
+normalized spatial derivatives are those in \eqref{eq:6.6}; write \NSi{NS-F-P073-018}{\nabla_*f=(D_rf,R^{-1}\partial_\theta f,D_zf)}. A prime
+means \NSi{NS-F-P073-019}{\partial_v}, with \NSi{NS-F-P073-020}{x_*} and \NSi{NS-F-P073-021}{\xi_g} fixed. In coefficient estimates, \NSi{NS-F-P073-022}{D^I} denotes ordinary derivatives
+in the listed slow and auxiliary coordinates; the individual operators \NSi{NS-F-P073-023}{D_r,D_z} retain their
+normalized meanings.
+
+We write the chart base velocity as \NSi{NS-F-P073-024}{be_r+Ve_\theta+Ge_z}, and set \NSi{NS-F-P073-025}{F=V/R} and \NSi{NS-F-P073-026}{g=(RF_R,G_R)}.
+Thus \NSi{NS-F-P073-027}{F} is angular velocity, and \NSi{NS-F-P073-028}{g} is the radial shear in the tangential component order \NSi{NS-F-P073-029}{(\theta,z)}.
+We identify a tangential two-vector with the vector in \NSi{NS-F-P073-030}{\operatorname{span}(e_\theta,e_z)} having those components.
+By \eqref{eq:5.42}, \NSi{NS-F-P073-031}{b=O(\varepsilon)} and the tangential velocity differs from its order-zero value by \NSi{NS-F-P073-032}{O(\varepsilon^2)}, in
+\NSPage{074}
+every fixed slow derivative. A subscript \NSi{NS-F-P074-001}{0} denotes an order-zero quantity evaluated at the
+chosen representative \NSi{NS-F-P074-002}{x^0_{\ell,a}}.
+
+The positive lower bounds in Theorem~\ref{thm:4.6}(iii) allow us to define the following tangential
+frame and growth parameters:
+\NSFormula{NS-F-P074-003}{display}{none}
+\[
+N=\frac{g_0}{|g_0|},\qquad K=N^\perp,\qquad
+\lambda_0^2=-2F_0N_\theta(2F_0N_\theta+|g_0|)>0,\qquad
+c_0=\frac{\lambda_0}{2F_0N_\theta}<0.
+\]
+We use the quarter turn \NSi{NS-F-P074-004}{K=(-N_z,N_\theta)}, so \NSi{NS-F-P074-005}{N,K} are an orthonormal pair in the tangential
+plane, and take \NSi{NS-F-P074-006}{\lambda_0>0}. The definitions of \NSi{NS-F-P074-007}{a,b_s,v_s} in Equations~\eqref{eq:4.11} and \eqref{eq:4.20} give
+\NSi{NS-F-P074-008}{g_0=F_0(-a,b_s)} and \NSi{NS-F-P074-009}{\lambda_0^2=2aF_0^2(1-2/v_s)}. In particular, \NSi{NS-F-P074-010}{\lambda_0^2>0} and \NSi{NS-F-P074-011}{c_0<0} follow from the
+profile bounds; they are not additional choices.
+
+The phase choice must also retain the stress directions allowed by Lemma~\ref{lem:4.5}. Before
+freezing \NSi{NS-F-P074-012}{N,K,c_0}, that pointwise condition is equivalently
+\NSFormula{NS-F-P074-013}{display}{7.1}
+\begin{equation}
+\mathcal T_{0,*}\cdot N<0,\qquad
+\left|c_0\frac{\mathcal T_{0,*}\cdot K}{\mathcal T_{0,*}\cdot N}\right|<1,\qquad
+\mathcal T_{0,*}=(Q/q)^{A+1/2}\mathcal T_0.
+\tag{7.1}\label{eq:7.1}
+\end{equation}
+For this equivalence, the frame, \NSi{NS-F-P074-014}{c_0}, and target are evaluated at the same point. Indeed,
+\NSi{NS-F-P074-015}{c_0^2=(v_s-2)/2}, while the absolute quotient without \NSi{NS-F-P074-016}{c_0} equals \NSi{NS-F-P074-017}{|J_c|/(P_c-v_s)}. At an annulus
+boundary the stress vanishes; there the quotient means the one-sided limit obtained from
+the smooth unit stress direction in Theorem~\ref{thm:4.6}(iii).
+
+The strict margin on the closed annulus permits us to choose one \NSi{NS-F-P074-018}{u_*>0} such that
+\NSi{NS-F-P074-019}{u_*/\sqrt{1+u_*^2}} exceeds the supremum of \NSi{NS-F-P074-020}{|c_0(\mathcal T_{0,*}\cdot K)/(\mathcal T_{0,*}\cdot N)|}, with this interpretation at the
+edges. We now freeze \NSi{NS-F-P074-021}{N,K,c_0} at each representative. Uniform continuity of the leading stress
+direction preserves the strict inequalities, with a uniform margin, throughout sufficiently
+small slow boxes. The frequency and shear bounds, the positive lower bound for \NSi{NS-F-P074-022}{\lambda_0}, and
+the frame bounds also hold on fixed small enlargements of the active slow supports. We
+take these slow neighborhoods to be enlargements of the mesh boxes by one fixed factor,
+relative to \NSi{NS-F-P074-023}{\tau\geq0}, so every point remains within \NSi{NS-F-P074-024}{CS_*^{-3}} of its representative. Derivatives at
+\NSi{NS-F-P074-025}{\tau=0} are understood one-sidedly. The uniform cone margin persists on each neighborhood's
+intersection with the closed active annulus, using the limiting stress direction at its radial
+edges. All these bounds and margins are uniform over bands and labels.
+
+The stress has two components, so we use two phases with different covariance directions
+in each slow box. The phase gradient will change along the pulse until viscous damping
+exceeds shear amplification. On the rectangle of sign \NSi{NS-F-P074-026}{\sigma\in\{+1,-1\}}, we define
+\NSFormula{NS-F-P074-027}{display}{7.2}
+\begin{equation}
+k=\left\lceil\varepsilon^{-1/2}\right\rceil,\qquad
+B_s^2=\frac{2\lambda_0}{\varepsilon k^2(1+u_*^2)^{3/2}},\qquad
+s(v)=\sigma\left(\frac{u_*}{2}+\frac{u_*v}{L_s}\right).
+\tag{7.2}\label{eq:7.2}
+\end{equation}
+We take \NSi{NS-F-P074-028}{B_s>0}. The carrier frequency \NSi{NS-F-P074-029}{k} keeps \NSi{NS-F-P074-030}{\varepsilon k^2} of order one, so viscosity remains in the
+leading amplitude equation. To choose the angular and axial wave numbers \NSi{NS-F-P074-031}{p,p_z}, we first set
+\NSFormula{NS-F-P074-032}{display}{none}
+\[
+(\widetilde p/R_0,p_z)=B_s\left(K-\frac{\sigma u_*g_0}{L_s|g_0|^2}\right).
+\]
+Angular periodicity requires \NSi{NS-F-P074-033}{kp} to be an integer. We take \NSi{NS-F-P074-034}{kp} to be a nearest nonzero integer
+to \NSi{NS-F-P074-035}{k\widetilde p}, with a fixed rule at ties, and leave \NSi{NS-F-P074-036}{p_z} unchanged. All these wave numbers are constants
+for the label. With \NSi{NS-F-P074-037}{x_0=\sigma B_su_*/2}, we define the phase on a lifted rectangle by
+\NSFormula{NS-F-P074-038}{display}{7.3}
+\begin{equation}
+\Phi=p\theta+p_zZ/\varepsilon+x_0R-v(pF+p_zG),
+\tag{7.3}\label{eq:7.3}
+\end{equation}
+\NSFormula{NS-F-P074-039}{display}{7.4}
+\begin{equation}
+n_\Phi:=\nabla_*\Phi=\bigl(x_0-v(pF_R+p_zG_R),\ p/R,\ p_z-\varepsilon v(pF_Z+p_zG_Z)\bigr).
+\tag{7.4}\label{eq:7.4}
+\end{equation}
+\NSPage{075}
+For a source coefficient \NSi{NS-F-P075-001}{f_m\in\mathbb C^3} and a nonzero integer \NSi{NS-F-P075-002}{m}, the principal amplitude problem
+is to find \NSi{NS-F-P075-003}{t_m\in\mathbb C^3} and a pressure coefficient \NSi{NS-F-P075-004}{\pi_m\in\mathbb C} satisfying \NSi{NS-F-P075-005}{n_\Phi\cdot t_m=0} and
+\NSFormula{NS-F-P075-006}{display}{7.5}
+\begin{equation}
+t_m'+\mathcal Kt_m+m^2dt_m+ikmn_\Phi\pi_m=-f_m,
+\qquad d=\varepsilon k^2|n_\Phi|^2.
+\tag{7.5}\label{eq:7.5}
+\end{equation}
+Here \NSi{NS-F-P075-007}{\mathcal K} is defined below. This equation retains transport in the pulse coordinate, the base
+tangential velocity and radial shear, and the viscous term in which both derivatives act on the
+exponential. The two factors \NSi{NS-F-P075-008}{2F} in \NSi{NS-F-P075-009}{\mathcal K} include the cylindrical connection terms: radial motion
+changes the tangential frame as well as the base swirl. Eliminating the normal pressure term
+while differentiating \NSi{NS-F-P075-010}{n_\Phi\cdot t_m=0} gives the projected evolution operator \NSi{NS-F-P075-011}{\mathcal A_\Phi}:
+\NSFormula{NS-F-P075-012}{display}{7.6}
+\begin{equation}
+\mathcal K=
+\begin{pmatrix}
+0&-2F&0\\
+2F+RF_R&0&0\\
+G_R&0&0
+\end{pmatrix},
+\qquad
+\mathcal A_\Phi=-\mathcal K+
+\frac{n_\Phi\bigl(n_\Phi^T\mathcal K-(n_\Phi')^T\bigr)}{|n_\Phi|^2}.
+\tag{7.6}\label{eq:7.6}
+\end{equation}
+The slow transport, the error in phase transport, and the remaining viscous terms occur in
+the residual beyond \eqref{eq:7.5}; Proposition~\ref{prop:9.1} estimates them. For later use, we fix the geometric
+coordinates and frame explicitly. Write \NSi{NS-F-P075-013}{n_{\Phi,\mathrm{tan}}=(n_{\Phi,\theta},n_{\Phi,z})}. Since \NSi{NS-F-P075-014}{kp\in\mathbb Z\setminus\{0\}} and \NSi{NS-F-P075-015}{R>0},
+the component \NSi{NS-F-P075-016}{n_{\Phi,\theta}=p/R} is nonzero. We may therefore define
+\NSFormula{NS-F-P075-017}{display}{7.7}
+\begin{equation}
+K_a=\frac{n_{\Phi,\mathrm{tan}}}{|n_{\Phi,\mathrm{tan}}|},\qquad
+N_a=((K_a)_z,-(K_a)_\theta),\qquad
+s_a=\frac{n_{\Phi,r}}{|n_{\Phi,\mathrm{tan}}|}.
+\tag{7.7}\label{eq:7.7}
+\end{equation}
+The corresponding basis of \NSi{NS-F-P075-018}{n_\Phi^\perp} and frame are
+\NSFormula{NS-F-P075-019}{display}{7.8}
+\begin{equation}
+U=[e_r-s_aK_a,N_a],\qquad
+B=U
+\begin{pmatrix}
+1&1\\
+c_0\sqrt{1+s^2}&-c_0\sqrt{1+s^2}
+\end{pmatrix}.
+\tag{7.8}\label{eq:7.8}
+\end{equation}
+The next lemma compares the actual phase normal and projected operator with their
+reference values. In the resulting coordinates, the amplitude equation has two scalar reference
+growth rates and a small matrix error.
+
+\begin{lemma}\label{lem:7.1}
+For the labels and phases in Equations~\eqref{eq:6.8}, \eqref{eq:7.2} and \eqref{eq:7.3}, there exists a sufficiently
+small \NSi{NS-F-P075-020}{q_*>0}, common to all labels and fixed derivative orders, such that every rectangle on \NSi{NS-F-P075-021}{0<q<q_*}
+has the following properties. Every \NSi{NS-F-P075-022}{e^{ikm\Phi},\ m\in\mathbb Z\setminus\{0\}}, is single-valued in \NSi{NS-F-P075-023}{\theta}, with nonzero angular
+frequency. On the rectangle \NSi{NS-F-P075-024}{0\leq v\leq L_s},
+\NSFormula{NS-F-P075-025}{display}{7.9}
+\begin{equation}
+|n_\Phi-B_s(s(v),K)|+|n_\Phi'|\leq C/S_*,
+\qquad
+E_{\mathrm{ik}}:=(\mathfrak t_*+bD_r+F\partial_\theta+GD_z)\Phi=O(\varepsilon S_*^C).
+\tag{7.9}\label{eq:7.9}
+\end{equation}
+The estimate for \NSi{NS-F-P075-026}{E_{\mathrm{ik}}} in \eqref{eq:7.9} holds in every fixed coefficient derivative, with a corresponding polynomial
+degree. The coefficients extend smoothly to the fixed enlargement. All fixed mixed derivatives in the
+slow, transverse, and pulse coordinates of \NSi{NS-F-P075-027}{n_\Phi}, and of the frames used here, have polynomial bounds in
+\NSi{NS-F-P075-028}{S_*}.
+
+The real \NSi{NS-F-P075-029}{3\times2} matrix \NSi{NS-F-P075-030}{B} in \eqref{eq:7.8} has columns forming a basis of \NSi{NS-F-P075-031}{n_\Phi^\perp}, and is also viewed as a map
+\NSi{NS-F-P075-032}{\mathbb C^2\longrightarrow\{t\in\mathbb C^3:n_\Phi\cdot t=0\}}. It has a uniformly bounded left inverse \NSi{NS-F-P075-033}{B^\ell} and satisfies
+\NSFormula{NS-F-P075-034}{display}{7.10}
+\begin{equation}
+B^\ell(\mathcal A_\Phi B-B')=\operatorname{diag}(\lambda,-\lambda)+E,
+\qquad
+\lambda(v)=\frac{\lambda_0}{\sqrt{1+s(v)^2}},
+\qquad
+|E|\leq C/S_*.
+\tag{7.10}\label{eq:7.10}
+\end{equation}
+For the damping coefficient \NSi{NS-F-P075-035}{d} in \eqref{eq:7.5}, put \NSi{NS-F-P075-036}{d_{\mathrm{ref}}=\varepsilon k^2B_s^2(1+s^2)}. Then
+\NSFormula{NS-F-P075-037}{display}{7.11}
+\begin{equation}
+|d-d_{\mathrm{ref}}|\leq C/S_*.
+\tag{7.11}\label{eq:7.11}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+\textbf{Step 1: periodicity and estimates for the phase.}
+Because \NSi{NS-F-P075-038}{kp\in\mathbb Z\setminus\{0\}}, the angular
+frequency \NSi{NS-F-P075-039}{kmp} is a nonzero integer for every \NSi{NS-F-P075-040}{m\neq0}. This proves the periodicity assertion.
+\NSPage{076}
+Write \NSi{NS-F-P076-001}{H_\Phi=pF+p_zG}. Since \NSi{NS-F-P076-002}{D_rv=D_zv=0} and the base is independent of the auxiliary
+variable,
+\NSFormula{NS-F-P076-003}{display}{none}
+\[
+D_r\Phi=x_0-v(H_\Phi)_R,\qquad
+R^{-1}\partial_\theta\Phi=p/R,\qquad
+D_z\Phi=p_z-\varepsilon v(H_\Phi)_Z.
+\]
+These are precisely the three entries of \NSi{NS-F-P076-004}{n_\Phi}. Before rounding, \NSi{NS-F-P076-005}{(p/R_0,p_z)\cdot g_0=-\sigma B_su_*/L_s}.
+The slow box has diameter \NSi{NS-F-P076-006}{O(S_*^{-3})}, the base comparison contributes \NSi{NS-F-P076-007}{O(\varepsilon^2)}, and rounding
+contributes \NSi{NS-F-P076-008}{O(k^{-1})}. Consequently the error in \NSi{NS-F-P076-009}{pF_R+p_zG_R} is \NSi{NS-F-P076-010}{O(S_*^{-3}+\varepsilon^2+k^{-1})}. Multiplication by \NSi{NS-F-P076-011}{v=O(S_*)}, together with the tangential error \NSi{NS-F-P076-012}{O(S_*^{-1}+\varepsilon S_*)}, proves the first estimate
+in \eqref{eq:7.9} after one choice of \NSi{NS-F-P076-013}{q_*}. Differentiation in the pulse coordinate gives \NSi{NS-F-P076-014}{|n_\Phi'|\leq C/S_*}.
+Differentiating any fixed number of times introduces only powers of \NSi{NS-F-P076-015}{S_*}; the discrete rounding
+is not differentiated. For the phase transport we compute each term:
+\NSFormula{NS-F-P076-016}{display}{none}
+\[
+\mathfrak t_*\Phi=-H_\Phi+\varepsilon v(H_\Phi)_T,
+\qquad
+F\partial_\theta\Phi+GD_z\Phi=H_\Phi-\varepsilon vG(H_\Phi)_Z.
+\]
+Consequently
+\NSFormula{NS-F-P076-017}{display}{none}
+\[
+E_{\mathrm{ik}}=\varepsilon v\bigl((H_\Phi)_T-G(H_\Phi)_Z\bigr)+bn_{\Phi,r}.
+\]
+Every term has a factor \NSi{NS-F-P076-018}{\varepsilon} or \NSi{NS-F-P076-019}{b=O(\varepsilon)}, and the remaining derivatives of fixed order have
+polynomial bounds in \NSi{NS-F-P076-020}{S_*}. This proves the differentiated phase-defect estimates as well as
+the value estimate. Since \NSi{NS-F-P076-021}{\varepsilon k^2\asymp1} and \NSi{NS-F-P076-022}{B_s} is bounded above and below, \eqref{eq:7.11} follows.
+
+\textbf{Step 2: coordinates on the moving plane.}
+It remains to bound the frame \eqref{eq:7.8} and express
+the projected evolution in its coordinates. The phase comparison and the lower bound on \NSi{NS-F-P076-023}{B_s}
+bound \NSi{NS-F-P076-024}{|n_{\Phi,\mathrm{tan}}|} away from zero. The vector \NSi{NS-F-P076-025}{N_a} in \eqref{eq:7.7} is the perpendicular close to \NSi{NS-F-P076-026}{N}. Let \NSi{NS-F-P076-027}{M}
+be the \NSi{NS-F-P076-028}{2\times2} matrix in \eqref{eq:7.8}. Then
+\NSFormula{NS-F-P076-029}{display}{none}
+\[
+B^\ell=M^{-1}
+\begin{pmatrix}e_r^T\\N_a^T\end{pmatrix},
+\qquad
+\begin{pmatrix}e_r^T\\N_a^T\end{pmatrix}U=I_2.
+\]
+The matrices \NSi{NS-F-P076-030}{U,M,B} and these left inverses are uniformly bounded.
+
+\textbf{Step 3: diagonalization at the reference normal.}
+For \NSi{NS-F-P076-031}{n_{\mathrm{ref}}=B_s(s,K)}, write \NSi{NS-F-P076-032}{t=x(e_r-sK)+yN\in n_{\mathrm{ref}}^\perp}, and form \NSi{NS-F-P076-033}{\mathcal K_0} from the reference coefficients. Since \NSi{NS-F-P076-034}{g_0=|g_0|N},
+\NSFormula{NS-F-P076-035}{display}{none}
+\begin{align*}
+(\mathcal K_0t)_r&=2F_0sK_\theta x-2F_0N_\theta y,\\
+n_{\mathrm{ref}}\cdot\mathcal K_0t&=2B_sF_0\{K_\theta(1+s^2)x-sN_\theta y\}.
+\end{align*}
+Let \NSi{NS-F-P076-036}{e=e_r-sK}. The vectors \NSi{NS-F-P076-037}{e,N} are orthogonal, with squared lengths \NSi{NS-F-P076-038}{1+s^2,1}. Directly,
+\NSFormula{NS-F-P076-039}{display}{none}
+\[
+-\mathcal K_0e=(-2F_0sK_\theta,-2F_0e_\theta-g_0),
+\qquad
+-\mathcal K_0N=(2F_0N_\theta,0),
+\]
+where each ordered pair gives the radial and tangential parts. Therefore
+\NSFormula{NS-F-P076-040}{display}{none}
+\[
+e\cdot(-\mathcal K_0e)=sK\cdot g_0=0,\qquad
+e\cdot(-\mathcal K_0N)=2F_0N_\theta,\qquad
+N\cdot(-\mathcal K_0e)=-(2F_0N_\theta+|g_0|).
+\]
+Dividing the first coordinate by \NSi{NS-F-P076-041}{1+s^2} gives the reference undamped matrix in \NSi{NS-F-P076-042}{(x,y)}:
+\NSFormula{NS-F-P076-043}{display}{none}
+\[
+\begin{pmatrix}
+0&2F_0N_\theta/(1+s^2)\\
+-(2F_0N_\theta+|g_0|)&0
+\end{pmatrix}.
+\]
+Its eigenvectors are the columns of \NSi{NS-F-P076-044}{M}, with eigenvalues \NSi{NS-F-P076-045}{\lambda,-\lambda}. To compare this matrix with
+the actual evolution, first use the value estimates for the base coefficients and \NSi{NS-F-P076-046}{n_\Phi-n_{\mathrm{ref}}}. They
+change the algebraic projection \NSi{NS-F-P076-047}{-\mathcal K+n_\Phi n_\Phi^T\mathcal K/|n_\Phi|^2} by \NSi{NS-F-P076-048}{O(S_*^{-1})}. Also \NSi{NS-F-P076-049}{K_a-K} and \NSi{NS-F-P076-050}{s_a-s} are
+\NSi{NS-F-P076-051}{O(S_*^{-1})}, so the actual frame and its left inverse differ from their reference values by that
+order. Expressing the algebraic projection in these frames therefore changes the reference
+matrix by \NSi{NS-F-P076-052}{O(S_*^{-1})}. The moving-normal term \NSi{NS-F-P076-053}{-n_\Phi(n_\Phi')^T/|n_\Phi|^2} has the same bound, since
+\NSi{NS-F-P076-054}{|n_\Phi'|=O(S_*^{-1})} and \NSi{NS-F-P076-055}{|n_\Phi|} is bounded below. Also \NSi{NS-F-P076-056}{s'=O(S_*^{-1})}, so the definitions of \NSi{NS-F-P076-057}{U,M} give
+\NSPage{077}
+\NSi{NS-F-P077-001}{U',M'=O(S_*^{-1})}. Hence \NSi{NS-F-P077-002}{B'=U'M+UM'=O(S_*^{-1})}, and multiplication by the bounded
+\NSi{NS-F-P077-003}{B^\ell} gives \NSi{NS-F-P077-004}{-B^\ell B'=O(S_*^{-1})}. These contributions give the error \NSi{NS-F-P077-005}{E} in \eqref{eq:7.10}.
+
+We now specify why this choice of \NSi{NS-F-P077-006}{q_*} works for every fixed derivative order. The value
+comparisons in Step 1 require only finitely many smallness conditions. For example, we can
+require
+\NSFormula{NS-F-P077-007}{display}{none}
+\[
+S_*^2(\varepsilon+\varepsilon^2+k^{-1})\leq1
+\]
+to bound the errors multiplied by \NSi{NS-F-P077-008}{v=O(S_*)} by \NSi{NS-F-P077-009}{C/S_*}. Since \NSi{NS-F-P077-010}{\varepsilon=2^{-h\ell}}, \NSi{NS-F-P077-011}{k^{-1}\leq\varepsilon^{1/2}}, and
+\NSi{NS-F-P077-012}{S_*=\ell^2}, this holds for all sufficiently large band indices. The bound \NSi{NS-F-P077-013}{1\leq\varepsilon k^2\leq4} for \NSi{NS-F-P077-014}{\varepsilon\leq1}
+gives fixed positive upper and lower bounds for \NSi{NS-F-P077-015}{B_s}. We make the phase-normal error smaller
+than half this lower bound. The estimate \NSi{NS-F-P077-016}{|n_{\Phi,\mathrm{tan}}|\geq B_s-C/S_*} then keeps the tangential
+phase normal uniformly nonzero; the same lower bound applies to \NSi{NS-F-P077-017}{|n_\Phi|}. The formula
+\NSi{NS-F-P077-018}{\det M=-2c_0\sqrt{1+s^2}} and the fixed lower bound for \NSi{NS-F-P077-019}{|c_0|} likewise bound \NSi{NS-F-P077-020}{|\det M|} away from
+zero. Thus one lower bound on the band index, or equivalently one upper bound \NSi{NS-F-P077-021}{q_*} on \NSi{NS-F-P077-022}{q},
+makes every denominator in the frame and its left inverse uniformly nonzero.
+
+With that domain fixed, any prescribed number of coefficient derivatives of the base
+coefficients and the phase normal \NSi{NS-F-P077-023}{n_\Phi} has a bound \NSi{NS-F-P077-024}{C_I S_*^{b_I}}. Applying the product and quotient
+rules to the displayed frame formulas gives bounds of the same form for \NSi{NS-F-P077-025}{U,M,B,B^\ell} and
+their pulse derivatives, using the lower bounds just established. Differentiating the phase
+defect retains its factor \NSi{NS-F-P077-026}{\varepsilon}: the band is fixed, and every fixed derivative of \NSi{NS-F-P077-027}{b} is \NSi{NS-F-P077-028}{O(\varepsilon)}. These
+arguments require bounds on the higher derivatives, with constants and polynomial degrees
+allowed to depend on \NSi{NS-F-P077-029}{I}; they impose no further smallness condition on those derivatives.
+Consequently they use the same \NSi{NS-F-P077-030}{q_*}.
+\end{proof}
+
+\subsection{Solving the pulse equation and controlling derivatives}\label{sec:7.2}
+The frame \NSi{NS-F-P077-031}{B} from Lemma~\ref{lem:7.1}
+reduces \eqref{eq:7.5} to an ordinary differential equation along each pulse. In this subsection we
+will first solve it with zero initial amplitude and a prescribed source \NSi{NS-F-P077-032}{f_m}, obtaining the
+linear inverse used to remove later harmonics in Proposition~\ref{prop:7.2}. We will then solve the
+zero-source equation with a specified nonzero initial amplitude to produce the pulses for
+the leading covariance in Lemma~\ref{lem:7.4}. Localizing both solutions requires decay at both ends
+of the interval. Subtracting the reference damping from the growing eigenvalue defines the
+common envelope
+\NSFormula{NS-F-P077-033}{display}{7.12}
+\begin{equation}
+P(v)=\exp\left(\int_{L_s/2}^{v}(\lambda(w)-d_{\mathrm{ref}}(w))\,dw\right).
+\tag{7.12}\label{eq:7.12}
+\end{equation}
+We also write \NSi{NS-F-P077-034}{P_v=P(v)}, as in the coefficient class \eqref{eq:6.29}. The estimates \eqref{eq:7.14} below show
+that a source bounded by this envelope has a response with the same envelope, at the cost
+of polynomial factors in \NSi{NS-F-P077-035}{S_*}. Multiplying a solution by \NSi{NS-F-P077-036}{\psi} will therefore change its principal
+equation only where the solution and source are exponentially small, as shown after \eqref{eq:7.40}.
+
+\begin{proposition}\label{prop:7.2}
+Fix \NSi{NS-F-P077-037}{\alpha\in\mathbb R}, a finite set of harmonics \NSi{NS-F-P077-038}{0<|m|\leq M}, and a label at level \NSi{NS-F-P077-039}{i} on a
+common torus \NSi{NS-F-P077-040}{H=Y_{i_0}}, with \NSi{NS-F-P077-041}{i-i_0} bounded as in Lemma~\ref{lem:6.2}. For each harmonic, let \NSi{NS-F-P077-042}{f_m(x_*,H)\in\mathbb C^3}
+be a coefficient descending to \NSi{NS-F-P077-043}{H}, smooth on the fixed enlargement of that label's rectangles. Assume
+that it has a fixed closed slow support contained in the label's slow support, a compact transverse
+support contained in \NSi{NS-F-P077-044}{\supp\chi_g}, and support in the closed active shell \NSi{NS-F-P077-045}{X_a\leq X\leq X_b}, with smooth zero
+extension across all these support boundaries. Assume also that on \NSi{NS-F-P077-046}{X_a<X<X_b} and \NSi{NS-F-P077-047}{0\leq v\leq L_s},
+for every fixed multi-index \NSi{NS-F-P077-048}{I} of derivatives in \NSi{NS-F-P077-049}{(R,Z,T,H)},
+\NSFormula{NS-F-P077-050}{display}{none}
+\[
+|D^If_m|\leq C_I\varepsilon^\alpha S_*^{b_I}\sqrt{\zeta}\,\delta^{-a_I}P(v).
+\]
+\NSPage{078}
+On the domain \NSi{NS-F-P078-001}{0<q<q_*} fixed in Lemma~\ref{lem:7.1}, there is a unique amplitude \NSi{NS-F-P078-002}{t_m} satisfying \NSi{NS-F-P078-003}{n_\Phi\cdot t_m=0},
+with zero initial data, and a pressure coefficient \NSi{NS-F-P078-004}{\pi_m} such that \eqref{eq:7.5} holds. They are given by
+\NSFormula{NS-F-P078-005}{display}{7.13}
+\begin{equation}
+\begin{aligned}
+t_m'&=\mathcal A_\Phi t_m-m^2dt_m-\operatorname{proj}_{n_\Phi^\perp}f_m,
+&\qquad t_m(0)&=0,\\
+\pi_m&=\frac{i}{km}\,
+\frac{n_\Phi\cdot\mathcal Kt_m-n_\Phi'\cdot t_m+n_\Phi\cdot f_m}{|n_\Phi|^2}.
+\end{aligned}
+\tag{7.13}\label{eq:7.13}
+\end{equation}
+Here \NSi{NS-F-P078-006}{\operatorname{proj}_{n_\Phi^\perp}f=f-n_\Phi(n_\Phi\cdot f)/|n_\Phi|^2} is orthogonal projection. The source is evaluated along the
+path \NSi{NS-F-P078-007}{H_w} in Equation~\eqref{eq:6.21}, with \NSi{NS-F-P078-008}{x_*=(R,Z,T)} and the transverse coordinate fixed. The coefficients
+descend to the same common torus and preserve the specified slow, transverse, and shell supports,
+including smooth zero extension there. The solution is defined on the entire closed pulse interval
+\NSi{NS-F-P078-009}{0\leq v\leq L_s}. On \NSi{NS-F-P078-010}{X_a<X<X_b}, for every fixed \NSi{NS-F-P078-011}{I},
+\NSFormula{NS-F-P078-012}{display}{7.14}
+\begin{equation}
+|D^It_m|\leq C_I'\varepsilon^\alpha S_*^{b_I'}\sqrt{\zeta}\,\delta^{-a_I'}P(v),
+\tag{7.14}\label{eq:7.14}
+\end{equation}
+\NSFormula{NS-F-P078-013}{display}{7.15}
+\begin{equation}
+|D^I\pi_m|\leq C_I'\varepsilon^{\alpha+1/2}S_*^{b_I'}\sqrt{\zeta}\,\delta^{-a_I'}P(v).
+\tag{7.15}\label{eq:7.15}
+\end{equation}
+Constants and degrees may depend on \NSi{NS-F-P078-014}{M,I}, and the prescribed source bounds. The threshold \NSi{NS-F-P078-015}{q_*}
+does not depend on \NSi{NS-F-P078-016}{M,\alpha}, or the correction stage. If the source has uniform one-sided derivatives in
+the slow variables at \NSi{NS-F-P078-017}{\tau=0} on compact sets with \NSi{NS-F-P078-018}{q>0}, the solution and pressure have the same
+one-sided derivatives.
+\end{proposition}
+
+Only descent to the common torus \NSi{NS-F-P078-019}{H} is required in Proposition~\ref{prop:7.2}: the source may take
+different values at distinct preimages of a band-torus point. No orthogonality to \NSi{NS-F-P078-020}{n_\Phi} or
+divisibility by either rectangle cutoff is assumed. The support conclusion concerns the slow,
+transverse, and shell variables; no temporal zero extension is asserted before multiplication
+by \NSi{NS-F-P078-021}{\psi}.
+
+\begin{proof}
+The moving frame gives a two-dimensional equation. We first bound its forward
+propagator by \NSi{NS-F-P078-022}{P(v)/P(w)}, then use the resulting Duhamel formula for values and derivatives.
+Finally, we check support, descent, and the normal pressure equation.
+
+\textbf{Step 1: the envelope and forward propagator.}
+The scalar reference growth rate is
+\NSFormula{NS-F-P078-023}{display}{none}
+\[
+a_{\mathrm{net}}(y)=\frac{\lambda_0}{\sqrt{1+y^2}}
+-\frac{\lambda_0(1+y^2)}{(1+u_*^2)^{3/2}},
+\qquad y=|s(v)|.
+\]
+It vanishes at \NSi{NS-F-P078-024}{y=u_*}, and its derivative in the pulse coordinate is
+\NSFormula{NS-F-P078-025}{display}{none}
+\[
+\frac{d}{dv}a_{\mathrm{net}}(|s(v)|)
+=-\frac{u_*\lambda_0|s(v)|}{L_s}
+\left((1+s(v)^2)^{-3/2}+2(1+u_*^2)^{-3/2}\right).
+\]
+Because \NSi{NS-F-P078-026}{u_*/2\leq|s(v)|\leq3u_*/2}, this derivative lies between \NSi{NS-F-P078-027}{-C/L_s} and \NSi{NS-F-P078-028}{-c/L_s}. By \eqref{eq:7.12},
+\NSi{NS-F-P078-029}{(\log P)'=a_{\mathrm{net}}(|s(v)|)}, and both \NSi{NS-F-P078-030}{\log P} and its first derivative vanish at \NSi{NS-F-P078-031}{v=L_s/2}. Integrating
+these derivative bounds twice from the midpoint gives
+\NSFormula{NS-F-P078-032}{display}{7.16}
+\begin{equation}
+e^{-C(v-L_s/2)^2/L_s}\leq P(v)\leq e^{-c(v-L_s/2)^2/L_s}\leq1.
+\tag{7.16}\label{eq:7.16}
+\end{equation}
+The envelope therefore decays on both sides of the midpoint. To show that the sourced
+amplitude \NSi{NS-F-P078-033}{t_m} has the same decay, we write \NSi{NS-F-P078-034}{t_m=Bz_m} using the actual moving frame. The
+coordinate vector \NSi{NS-F-P078-035}{z_m} satisfies
+\NSFormula{NS-F-P078-036}{display}{7.17}
+\begin{equation}
+z_m'=A_mz_m+g_m,
+\qquad A_m=\operatorname{diag}(\lambda,-\lambda)+E-m^2dI_2,
+\qquad g_m=-B^\ell\operatorname{proj}_{n_\Phi^\perp}f_m.
+\tag{7.17}\label{eq:7.17}
+\end{equation}

@@ -1,0 +1,165 @@
+{
+  "entries": [
+    {
+      "bytes": 2269611,
+      "path": "epub/everyday-english-edition.epub",
+      "sha256": "da3cf6071a690d8bcbeee044daa1e40bf1697f987e91a8c953b247c367e7d821"
+    },
+    {
+      "bytes": 3154,
+      "path": "html/accessibility.css",
+      "sha256": "a84e2d4dd61b72dd9425ee0cba310eb5b9b3e1bfda823ee8bdf978071836c738"
+    },
+    {
+      "bytes": 3758644,
+      "path": "html/assets/figures/figure-1.svg",
+      "sha256": "c938c5512dc3f00d29f91c89d7ae81f77508f1596b1efde6bcea94e03c79af04"
+    },
+    {
+      "bytes": 3984767,
+      "path": "html/assets/figures/figure-2.svg",
+      "sha256": "38155f155c7245a4bb8de1b99f3005cb118fee05185a80901fadbe229c427481"
+    },
+    {
+      "bytes": 669646,
+      "path": "html/assets/figures/figure-3.svg",
+      "sha256": "a62eecbd48f43e78c27d8b22c77b0c707b4d41488dacda164b2263e2234414e6"
+    },
+    {
+      "bytes": 376747,
+      "path": "html/assets/figures/figure-4.svg",
+      "sha256": "134d9f78ca6fa7026470fe24b3e5294719229f7e4314e12d2de4cf185a8d6665"
+    },
+    {
+      "bytes": 320530,
+      "path": "html/assets/figures/figure-5.svg",
+      "sha256": "78f66ddae8783ff1a054a328979c8c522959cab4f4cd4afa70c4c728fd45d546"
+    },
+    {
+      "bytes": 360884,
+      "path": "html/assets/figures/figure-6.svg",
+      "sha256": "df0ef562db7795890a91fa55be21c41ab44ef7029daafeb3108a928d802ca6dd"
+    },
+    {
+      "bytes": 209585,
+      "path": "html/assets/illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg",
+      "sha256": "fba18974466fdecad7734538e895144f675927312a6d1d8ca82db65aeca50070"
+    },
+    {
+      "bytes": 3865657,
+      "path": "html/index.html",
+      "sha256": "56efba577998bd5ff80503b4779587ed659c15b44d6ccf5ec4ce1852bad9f6c3"
+    },
+    {
+      "bytes": 5108345,
+      "path": "pdf/everyday-english-edition.pdf",
+      "sha256": "e8d8a06d53be4fd6e2408485f1be5b97ddef440f98fcabcabcfbf4a04750f55f"
+    },
+    {
+      "bytes": 1844,
+      "path": "receipts/build-receipt.json",
+      "sha256": "15c158967dc8d1f9e84aa39ee8fc70f0ac95e611e20fa075a722dc8839c6defd"
+    },
+    {
+      "bytes": 1772,
+      "path": "receipts/checks.json",
+      "sha256": "bc5b217f1feebdacd5a7049c9a9ad30e0f6f43adb29767d0c648126c02687c06"
+    },
+    {
+      "bytes": 4137,
+      "path": "receipts/dependencies.json",
+      "sha256": "5873028dffde9a06a27e7319ad11bccc8acd04c08806ff12dcbc85a02b5d0925"
+    },
+    {
+      "bytes": 4392,
+      "path": "receipts/epub-build.json",
+      "sha256": "93efdf32a19f4c5d7f1513acae7a7984d5df751b541dcfa4a123b945c3b7d0ff"
+    },
+    {
+      "bytes": 0,
+      "path": "receipts/final-build.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1386,
+      "path": "receipts/final-build.stdout.txt",
+      "sha256": "b3f4b5d6922433436ab3006f8f99888494a94515d6ffc7086792063b603745b6"
+    },
+    {
+      "bytes": 16216,
+      "path": "receipts/html-build.json",
+      "sha256": "6c7eb4f05b7b2351918142206b2ecf3d8a6e537dbbf356652e766542e3bcc65c"
+    },
+    {
+      "bytes": 16354,
+      "path": "receipts/logs/content-audit.json",
+      "sha256": "abfbf248f425e5c3c001c32a4efb994aba8ecbe2fc164078a0955c3dae13987d"
+    },
+    {
+      "bytes": 2962,
+      "path": "receipts/logs/epub-pass-a.console.txt",
+      "sha256": "e77201e111b4600a757b0e27d22cf7be80441829963c05178dfa91899ae9c4af"
+    },
+    {
+      "bytes": 2962,
+      "path": "receipts/logs/epub-pass-b.console.txt",
+      "sha256": "e77201e111b4600a757b0e27d22cf7be80441829963c05178dfa91899ae9c4af"
+    },
+    {
+      "bytes": 147,
+      "path": "receipts/logs/epubcheck.console.txt",
+      "sha256": "a0ccb9442db4808c4a4f1d51310a27603a09f8c0b0a35c49073cc63fb18fcb86"
+    },
+    {
+      "bytes": 2905,
+      "path": "receipts/logs/html-pass-a.console.txt",
+      "sha256": "5b8d98d4b0146daa48702b27266df198016054c59e6d0ed265bd95c5eacfccf7"
+    },
+    {
+      "bytes": 2905,
+      "path": "receipts/logs/html-pass-b.console.txt",
+      "sha256": "5b8d98d4b0146daa48702b27266df198016054c59e6d0ed265bd95c5eacfccf7"
+    },
+    {
+      "bytes": 205878,
+      "path": "receipts/logs/pdf-pass-a.console.txt",
+      "sha256": "61f946f5a66fe3ccef3d7bc770a51848fe9dd990e16754da56aa731ce4d19c45"
+    },
+    {
+      "bytes": 55147,
+      "path": "receipts/logs/pdf-pass-a.log",
+      "sha256": "07ec5393e90fe055c14dc0593fb9df3d15adb8975dfa36c43e5e7e5cf55ee947"
+    },
+    {
+      "bytes": 205878,
+      "path": "receipts/logs/pdf-pass-b.console.txt",
+      "sha256": "17c0b252101d011f5644d66bd6849218c84f5e7418ab227a54bc1b199b0ac015"
+    },
+    {
+      "bytes": 55147,
+      "path": "receipts/logs/pdf-pass-b.log",
+      "sha256": "ca7c8031f74dfb7120a3c0e15c4cf9752a4c49ccfc4ac3cfee229e8bcb4a188a"
+    },
+    {
+      "bytes": 762,
+      "path": "receipts/logs/pdfinfo-check.txt",
+      "sha256": "ea1636c84285d9957ecbfb92fb61518fcebfbf007875039d41e718f701ce0d25"
+    },
+    {
+      "bytes": 762,
+      "path": "receipts/logs/pdfinfo.txt",
+      "sha256": "ea1636c84285d9957ecbfb92fb61518fcebfbf007875039d41e718f701ce0d25"
+    },
+    {
+      "bytes": 12853,
+      "path": "receipts/pdf-build.json",
+      "sha256": "9ca2ffe83df405ba48b95e00561291018b3af2d910d65faac49b3d851a59805a"
+    }
+  ],
+  "root": "output/everyday-english",
+  "schema": "navier-stokes-everyday-exact-byte-manifest/v1",
+  "self_exclusions": [
+    "receipts/MANIFEST.json",
+    "receipts/MANIFEST.sha256"
+  ]
+}

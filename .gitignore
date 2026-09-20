@@ -1,0 +1,15 @@
+# Local build workspace and downloaded tools.
+/tmp/
+
+# LaTeX files made by an ordinary build in the source directories.
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Keep the checked release files under output/ and docs/.
+!/output/
+!/docs/

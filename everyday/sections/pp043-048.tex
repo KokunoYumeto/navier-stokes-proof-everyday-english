@@ -1,0 +1,695 @@
+\NSPage{043}%
+\begin{EESegment}{EE-TGT-P043-001}
+and their inverses depend smoothly on \NSi{NS-F-P043-001}{\eta}. The inverse bounds are finite
+because \NSi{NS-F-P043-002}{\lambda}, the radii, and all the bump functions were fixed before
+\NSi{NS-F-P043-003}{N}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P043-002}
+Let \NSi{NS-F-P043-004}{\nu_k} be the norm of multiplication by
+\NSi{NS-F-P043-005}{B^{-1}} on
+\NSi{NS-F-P043-006}{C^k([-1,1])}. As in Lemma~\ref{lem:4.7}, let
+\NSi{NS-F-P043-007}{q_k} be the bilinear norm of
+\NSi{NS-F-P043-008}{\mathcal Q:C^k\times C^k\to C^k}. Since
+\NSi{NS-F-P043-009}{\lVert d_N\rVert_{C^k}\le D_k/N}, it is enough to choose
+\end{EESegment}
+\NSFormula{NS-F-P043-010}{display}{none}
+\[
+N\ge 8\max_{k=0,2}\nu_k^2q_kD_k
+\]
+\begin{EESegment}{EE-TGT-P043-003}
+to get a smooth solution of \eqref{eq:4.42} with
+\NSi{NS-F-P043-011}{\lVert c\rVert_{C^2}\le 2\nu_2D_2/N}. Because the bump shapes are fixed,
+this solution also satisfies
+\end{EESegment}
+\NSFormula{NS-F-P043-012}{display}{none}
+\[
+\max_{r\le 1}\lVert \partial_X^r(u_c,e_c)\rVert_2\le C/N.
+\]
+\begin{EESegment}{EE-TGT-P043-004}
+When the five correction integrands in \eqref{eq:4.42} are integrated only up to
+\NSi{NS-F-P043-013}{X\in[Y_0,Y_1]}, the result is
+\end{EESegment}
+\NSFormula{NS-F-P043-014}{display}{none}
+\[
+\max_{0\le j\le 2}\ \sup_{[Y_0,Y_1]\times[-1,1]}
+\left|\partial_\eta^j(\mathfrak m_f-\mathfrak m_N)\right|\le C/N.
+\]
+\begin{EESegment}{EE-TGT-P043-005}
+The shear formulas and Lemma~\ref{lem:4.4}\textup{(ii)} show that increasing
+\NSi{NS-F-P043-015}{N}, if needed, gives
+\end{EESegment}
+\NSFormula{NS-F-P043-016}{display}{none}
+\[
+E_f\ge \frac12\min_{[Y_0,Y_1]\times[-1,1]}E_0,
+\qquad
+\lVert a_f-a_N,b_f-b_N,p_f-p_N\rVert_0
+\le C_{\mathrm{rep}}/N.
+\]
+\begin{EESegment}{EE-TGT-P043-006}
+Here \NSi{NS-F-P043-017}{C_{\mathrm{rep}}} does not depend on
+\NSi{NS-F-P043-018}{N}. Increase \NSi{NS-F-P043-019}{N} until the final triples stay in the
+fixed compact neighborhood used to define \NSi{NS-F-P043-020}{C_\Psi}. The inequality in
+\eqref{eq:4.41} then stays strict on the repair interval. More exactly, if
+\NSi{NS-F-P043-021}{N\ge 4C_\Psi C_{\mathrm{rep}}/\mu_R}, then
+\end{EESegment}
+\NSFormula{NS-F-P043-022}{display}{none}
+\[
+\Psi_i(a_f,b_f,p_f)\ge \mu_R/2-C_\Psi C_{\mathrm{rep}}/N
+\ge \mu_R/4>0.
+\]
+\begin{EESegment}{EE-TGT-P043-007}
+This correction changes no profile and no cumulative integral before
+\NSi{NS-F-P043-023}{Y_0}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P043-008}
+Equations~\eqref{eq:4.42} give
+\NSi{NS-F-P043-024}{\mathfrak m_f(Y_1)=\mathfrak m_0(Y_1)}. All the changes to the profiles are
+supported in \NSi{NS-F-P043-025}{(X_-,Y_1)}, so
+\end{EESegment}
+\NSFormula{NS-F-P043-026}{display}{4.43}
+\begin{equation}
+\label{eq:4.43}
+\begin{aligned}
+(U_f,E_f)&=(U_0,E_0) &&\text{for }X\le X_-\text{ and }X\ge Y_1,\\
+\mathfrak m_f(X)&=\mathfrak m_0(X) &&\text{for }X\ge Y_1,\\
+(\Pi_f,V_f,Q_{s,f},N_{s,f},p_f,\mathcal T_{0,f})
+&=(\Pi_0^{\mathrm{prof}},V_0,Q_{s,0},N_{s,0},p_0,
+\mathcal T_{0,0})
+&&\text{for }X\ge Y_1.
+\end{aligned}
+\tag{4.43}
+\end{equation}
+\begin{EESegment}{EE-TGT-P043-009}
+The last two equalities come from Lemma~\ref{lem:4.4}\textup{(i)}. Here
+\NSi{NS-F-P043-027}{V_f\text{ and }V_0} are the radial-velocity profiles calculated from the final
+and joined pairs. Every lower bound on \NSi{NS-F-P043-028}{N} used above is finite and depends
+only on data that has already been fixed. One finite integer can therefore meet all of them at
+once. From now on, write \NSi{NS-F-P043-029}{(U,E,\Pi)} for the final profiles and
+\NSi{NS-F-P043-030}{\mathcal T_0} for their stress.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P043-010}
+\textbf{Step 4: verify the six conclusions.} The final profiles satisfy the cone inequalities,
+and beyond the correction interval their five cumulative integrals agree exactly with those of the
+joined pair. These two facts now give the regularity, support, and endpoint estimates in the
+theorem. For the regularity in part~\textup{(i)}, the changes in Steps 2--3 have compact support
+above \NSi{NS-F-P043-031}{X_{\mathrm{an}}}. They therefore leave the analytic axis rectangle from
+Proposition~\ref{prop:4.10} unchanged. Every other profile piece and every join between pieces is
+smooth. Positivity of \NSi{NS-F-P043-032}{E} follows from positivity of
+\NSi{NS-F-P043-033}{E_0}, the exponential in \eqref{eq:4.38}, and the bound for
+\NSi{NS-F-P043-034}{E_f} on the repair interval. Near the axis,
+\NSi{NS-F-P043-035}{E=\sqrt{2X}\phi/\mathsf C}. On that neighborhood,
+\NSi{NS-F-P043-036}{F=\phi/\mathsf C, U, \Pi, V_0/X} have the regularity stated in
+part~\textup{(i)}. This gives finite bounds for every fixed mixed derivative on every finite
+rectangle.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P043-011}
+The preserved pressure increment satisfies
+\NSi{NS-F-P043-037}{C_p(\infty,\eta)=-\Pi_0(\eta)}. It follows that
+\end{EESegment}
+\NSFormula{NS-F-P043-038}{display}{none}
+\[
+\Pi(X,\eta)=\Pi_0(\eta)+C_p(X,\eta)
+=C_p(X,\eta)-C_p(\infty,\eta)
+=-\int_X^\infty\frac{E(x,\eta)^2}{2x}\,dx.
+\]
+\begin{EESegment}{EE-TGT-P043-012}
+This proves both the pressure normalization in part~\textup{(i)} and the radial balance in
+part~\textup{(ii)}. In particular,
+\NSi{NS-F-P043-039}{\Pi_X=E^2/(2X)=F^2} extends smoothly to the axis.
+Proposition~\ref{prop:4.2} gives the exact
+\end{EESegment}
+\NSPage{044}%
+\begin{EESegment}{EE-TGT-P044-001}
+tangential residual identities. The first edge has not changed, so the stress is zero for
+\NSi{NS-F-P044-001}{X\le X_a}, and \eqref{eq:4.13} holds there. By \eqref{eq:4.43}, the outer
+stress has not changed either, and it is zero for
+\NSi{NS-F-P044-002}{X\ge X_b}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P044-002}
+The cone condition holds when \NSi{NS-F-P044-003}{X_a<X<X_b}. It was kept near both edges and
+beyond \NSi{NS-F-P044-004}{Y_1}, and Steps 2--3 proved it on
+\NSi{NS-F-P044-005}{[X_-,Y_1]}. In particular, \eqref{eq:4.23} gives
+\end{EESegment}
+\NSFormula{NS-F-P044-006}{display}{none}
+\[
+\mathcal T_{0,\theta}+t_s\mathcal T_{0,z}=F(P_c-v_s)>0.
+\]
+\begin{EESegment}{EE-TGT-P044-003}
+The stress is therefore nonzero at every interior point, which finishes part~\textup{(ii)}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P044-004}
+Next come the uniform claims in part~\textup{(iii)}. Set
+\NSi{NS-F-P044-007}{y_a=\log(X/X_a),\ y_b=\log(X_b/X)}. The factorizations
+\eqref{eq:4.33} and \eqref{eq:4.32} extend
+\NSi{NS-F-P044-008}{n=\mathcal T_0/|\mathcal T_0|} to the edges as follows:
+\end{EESegment}
+\NSFormula{NS-F-P044-009}{display}{none}
+\[
+n=\frac{B_a}{|B_a|}\quad\text{near }X_a,
+\qquad
+n=\frac{(b_\theta,y_b^6b_z)}{\sqrt{b_\theta^2+y_b^{12}b_z^2}}
+\quad\text{near }X_b.
+\]
+\begin{EESegment}{EE-TGT-P044-005}
+Their denominators stay positive on smaller collars. Since
+\NSi{NS-F-P044-010}{B_a(0,\eta)=F(X_a,\eta)\mathfrak s(X_a,\eta)},
+\end{EESegment}
+\NSFormula{NS-F-P044-011}{display}{none}
+\[
+n(X_a,\eta)=\frac{(1,t_s)}{\sqrt{1+t_s^2}},
+\qquad n(X_b,\eta)=(1,0),
+\qquad t_s(X_b,\eta)=0.
+\]
+\begin{EESegment}{EE-TGT-P044-006}
+The smooth functions \NSi{NS-F-P044-012}{F,a,v_s-2} are positive in the interior. The endpoint
+bounds from Lemma~\ref{lem:4.9} and Proposition~\ref{prop:4.10} make them positive at
+\NSi{NS-F-P044-013}{X_a,X_b} as well. Each one therefore has a positive minimum on the closed
+annulus.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P044-007}
+On that rectangle, define
+\end{EESegment}
+\NSFormula{NS-F-P044-014}{display}{none}
+\[
+A_n=n_\theta+t_sn_z,
+\qquad B_n=n_z-t_sn_\theta.
+\]
+\begin{EESegment}{EE-TGT-P044-008}
+Inside the annulus, \eqref{eq:4.23} gives
+\end{EESegment}
+\NSFormula{NS-F-P044-015}{display}{none}
+\[
+A_n=\frac{P_c-v_s}{|p_s-\mathfrak s|}>0.
+\]
+\begin{EESegment}{EE-TGT-P044-009}
+At both edges, \NSi{NS-F-P044-016}{B_n=0}. Also,
+\NSi{NS-F-P044-017}{A_n=\sqrt{1+t_s^2}} at \NSi{NS-F-P044-018}{X_a}, while
+\NSi{NS-F-P044-019}{A_n=1} at \NSi{NS-F-P044-020}{X_b}. It follows that
+\NSi{NS-F-P044-021}{A_n>0} everywhere on the closed rectangle, so define
+\end{EESegment}
+\NSFormula{NS-F-P044-022}{display}{none}
+\[
+G_n=2-(v_s-2)B_n^2/A_n^2.
+\]
+\begin{EESegment}{EE-TGT-P044-010}
+Equation~\eqref{eq:4.22} gives
+\end{EESegment}
+\NSFormula{NS-F-P044-023}{display}{none}
+\[
+G_n=2-(v_s-2)J_c^2/(P_c-v_s)^2>0
+\]
+\begin{EESegment}{EE-TGT-P044-011}
+in the interior, while \NSi{NS-F-P044-024}{G_n=2} at both edges. The functions
+\NSi{NS-F-P044-025}{A_n,G_n} are therefore smooth and positive everywhere. Taking
+\end{EESegment}
+\NSFormula{NS-F-P044-026}{display}{none}
+\[
+\kappa=\min\left\{1,
+\min_{[X_a,X_b]\times[-1,1]}A_n,
+\min_{[X_a,X_b]\times[-1,1]}G_n\right\}>0
+\]
+\begin{EESegment}{EE-TGT-P044-012}
+gives \eqref{eq:4.26}, with \NSi{NS-F-P044-027}{\kappa<2}. This proves part~\textup{(iii)},
+including the directions at the endpoints.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P044-013}
+For part~\textup{(iv)}, let \NSi{NS-F-P044-028}{c_a=t_1^2>0} be the inner exponential constant
+from \eqref{eq:4.33}, and put
+\end{EESegment}
+\NSFormula{NS-F-P044-029}{display}{none}
+\[
+\zeta(X)=\exp(-c_a/y_a^2-4/y_b^2)\quad(X_a<X<X_b),
+\qquad \zeta=0\quad\text{otherwise}.
+\]
+\begin{EESegment}{EE-TGT-P044-014}
+This function is smooth, and it is flat at both edges. On a fixed inner collar, the ratio
+\NSi{NS-F-P044-030}{\zeta/e^{-c_a/y_a^2}} stays between two positive constants. On a fixed outer
+collar, the same is true of \NSi{NS-F-P044-031}{\zeta/e^{-4/y_b^2}}. The smooth, nonzero factors
+in \eqref{eq:4.33} and \eqref{eq:4.32} then give
+\end{EESegment}
+\NSFormula{NS-F-P044-032}{display}{none}
+\begin{align*}
+|\mathcal T_0|&\ge c\zeta,& |\partial^\alpha\mathcal T_0|&\le C_\alpha\zeta y_a^{-m_\alpha}
+&&\text{on the inner collar},\\
+|\mathcal T_0|&\ge c\zeta,& |\partial^\alpha\mathcal T_0|&\le C_\alpha\zeta y_b^{-m_\alpha}
+&&\text{on the outer collar}.
+\end{align*}
+\begin{EESegment}{EE-TGT-P044-015}
+Each derivative of an exponential factor contributes only finitely many inverse powers of
+\NSi{NS-F-P044-033}{y_a\text{ or }y_b}. On the compact interval between the collars,
+\NSi{NS-F-P044-034}{\zeta>0}, \NSi{NS-F-P044-035}{|\mathcal T_0|>0}, and every fixed derivative
+is bounded. With \NSi{NS-F-P044-036}{\delta=\min\{1,y_a,y_b\}}, these bounds combine to give
+\eqref{eq:4.27}, which proves part~\textup{(iv)}.
+\end{EESegment}
+\NSPage{045}%
+\begin{EESegment}{EE-TGT-P045-001}
+Finally, both exact connections leave the total moment identities in part~\textup{(v)} unchanged.
+For the last correction, this follows directly from
+\end{EESegment}
+\NSFormula{NS-F-P045-001}{display}{none}
+\begin{align*}
+(M,J,S)_f(\infty)&=(M,J,S)_0(\infty)=(0,0,0),\\
+\int_0^\infty(H_f-H_0)\,dX&=I_f(Y_1)-I_0(Y_1)=0.
+\end{align*}
+\begin{EESegment}{EE-TGT-P045-002}
+Together with Step 1, these equalities give \eqref{eq:4.28}. The exterior pair is still the heat
+profile from Lemma~\ref{lem:4.8}, with the same
+\NSi{NS-F-P045-002}{c_\infty}. The identity
+\end{EESegment}
+\NSFormula{NS-F-P045-003}{display}{none}
+\[
+q^{-A}c_\infty X^{-A}\mathcal H(2d/X)
+=c_\infty s^{-A}\mathcal H(2\tau/s)
+\]
+\begin{EESegment}{EE-TGT-P045-003}
+proves the formula for the physical exterior. Since
+\NSi{NS-F-P045-004}{Y_1<\sup\mathcal I_4<X_v}, equation \eqref{eq:4.43} keeps
+\NSi{NS-F-P045-005}{U=M=J=0} for
+\NSi{NS-F-P045-006}{X\ge X_v}, with the same \NSi{NS-F-P045-007}{X_v} as in
+Lemma~\ref{lem:4.8}. Equation~\eqref{eq:4.7} then gives
+\end{EESegment}
+\NSFormula{NS-F-P045-008}{display}{none}
+\[
+V_0=\frac{2\eta XU-2D\eta M-dM_\eta}{L}=0.
+\]
+\begin{EESegment}{EE-TGT-P045-004}
+The radius \NSi{NS-F-P045-009}{X_v} comes before the last collar and after all four reserved
+intervals. This proves part~\textup{(v)}. For part~\textup{(vi)}, the heat compensation used
+\NSi{NS-F-P045-010}{\mathcal I_2}, while Step 3 used only
+\NSi{NS-F-P045-011}{\mathcal I_1}. The intervals
+\NSi{NS-F-P045-012}{\mathcal I_{\mathrm{pos}}=\mathcal I_3} and
+\NSi{NS-F-P045-013}{\mathcal I_{\mathrm{mean}}=\mathcal I_4} therefore keep the exact profile
+\eqref{eq:4.30}, proving part~\textup{(vi)}. Every choice was made in profile coordinates before
+the physical \NSi{NS-F-P045-014}{q} or any later correction stage was introduced, as required.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P045-005}
+The profiles now produce the leading field from Section~\ref{sec:3}, with its stress supported in
+the prescribed annulus. The next section corrects the higher-order residual terms found after
+\eqref{eq:4.7}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P045-006}
+\section{Correcting the base flow to every order}
+\label{sec:5}
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P045-007}
+Near the axis, the leading profiles
+\NSi{NS-F-P045-015}{(E,U,V_0,\Pi)} from Theorem~\ref{thm:4.6} satisfy the balances in
+Equations~\eqref{eq:4.7} and \eqref{eq:4.13}. Axial viscosity and the remaining radial terms still
+appear in the residual, however. Add axisymmetric corrections to obtain the background
+\NSi{NS-F-P045-016}{(u_B,p_B)} described in Section~\ref{sec:3} and
+Proposition~\ref{prop:5.5}. The velocity \NSi{NS-F-P045-017}{u_B} is exactly divergence-free.
+Its momentum residual is the negative cylindrical divergence of the physical annular stress
+\NSi{NS-F-P045-018}{\mathcal T_{\mathrm{phys}}}, as in \eqref{eq:5.41}, plus an error
+\NSi{NS-F-P045-019}{\mathcal E_B} that is bounded by every power of
+\NSi{NS-F-P045-020}{q} as \NSi{NS-F-P045-021}{q\downarrow0}. The same bounds hold for every fixed
+physical derivative on each compact range of profile coordinates. The annular stress becomes the
+input to the wave construction in Section~\ref{sec:7}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P045-008}
+These remaining terms appear at successive powers of
+\NSi{NS-F-P045-022}{q^{2h}} in Equations~\eqref{eq:5.3}--\eqref{eq:5.6}. At each order,
+Lemma~\ref{lem:5.1} solves for a correction near the axis. Lemma~\ref{lem:5.2} then extends that
+correction in the radial direction and imposes the five integral conditions that keep its stress
+supported in the prescribed annulus. The induction in Proposition~\ref{prop:5.3} finishes the current
+order before using its coefficients to build the next one.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P045-009}
+The leading profiles and all constants used to construct them stay fixed throughout. The resulting
+sequence of coefficients is the formal expansion \eqref{eq:5.1}; this does not assert that the
+unmodified infinite series converges. After this sequence is built, Lemma~\ref{lem:5.4}
+produces smooth fields for \NSi{NS-F-P045-023}{q>0} with the same asymptotic coefficients. The
+proof of Proposition~\ref{prop:5.5} checks that this summation keeps incompressibility, the exterior
+velocity, and the required bounds on the residual.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P045-010}
+\subsection{Higher coefficients near the axis.}
+\label{sec:5.1}
+\end{EESegment}
+\begin{EESegment}{EE-TGT-P045-011}
+First solve the coefficient equations \eqref{eq:5.2}--\eqref{eq:5.6} near the axis, where the
+stress must remain zero. For \NSi{NS-F-P045-024}{n\ge0}, set
+\NSi{NS-F-P045-025}{\lambda_n=2nh}, \NSi{NS-F-P045-026}{E_0=E},
+\NSi{NS-F-P045-027}{U_0=U}, and \NSi{NS-F-P045-028}{\Pi_0=\Pi}. Every coefficient profile is a
+function of \NSi{NS-F-P045-029}{(X,\eta)}. Here the subscript zero now marks the order in the
+expansion. In particular, \NSi{NS-F-P045-030}{\Pi_0(X,\eta)} is the whole leading pressure
+profile, and its trace
+\end{EESegment}
+\NSPage{046}%
+\begin{EESegment}{EE-TGT-P046-001}
+\NSi{NS-F-P046-001}{\Pi_0(0,\eta)} is the axis pressure function defined in
+\eqref{eq:4.31}. Use the similarity variables from \eqref{eq:4.1}, and write the physical
+coefficients as
+\end{EESegment}
+\NSFormula{NS-F-P046-002}{display}{5.1}
+\begin{equation}
+\label{eq:5.1}
+\begin{aligned}
+u_{\theta,n}&=q^{-A+\lambda_n}E_n
+=rq^{-A-1/2+\lambda_n}\phi_n/\mathsf C,
+& E_n&=\sqrt{2X}\phi_n/\mathsf C,\\
+u_{z,n}&=q^{-A+\lambda_n}U_n,
+& ru_{r,n}&=q^{\lambda_n}V_n,
+& p_n&=q^{-2A+\lambda_n}\Pi_n.
+\end{aligned}
+\tag{5.1}
+\end{equation}
+\begin{EESegment}{EE-TGT-P046-002}
+Here \NSi{NS-F-P046-003}{\phi_n}, rather than \NSi{NS-F-P046-004}{E_n}, is the azimuthal
+coefficient that is smooth at \NSi{NS-F-P046-005}{X=0}. The radial average is the operator
+from \eqref{eq:4.6}, applied with \NSi{NS-F-P046-006}{\eta} held fixed:
+\NSi{NS-F-P046-007}{\mathcal A_X(U_n)(X,\eta)
+=X^{-1}\int_0^XU_n(x,\eta)\,dx}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P046-003}
+The gap \NSi{NS-F-P046-008}{2h} between successive powers in \eqref{eq:5.1} accounts for the two
+lower-order effects identified after \eqref{eq:4.7}. Recall from \eqref{eq:4.1} that
+\NSi{NS-F-P046-009}{A=\tfrac12+h\text{ and }D=\tfrac12-h}, so
+\NSi{NS-F-P046-010}{1-2D=2A-1=2h}. For the first effect, the axial derivative identity in
+\eqref{eq:4.2} contributes the factor
+\NSi{NS-F-P046-011}{q^{-2D}=q^{-1}q^{2h}} when two axial derivatives are taken. The radial
+relation \NSi{NS-F-P046-012}{X=r^2/(2q)} in \eqref{eq:4.1} contributes
+\NSi{NS-F-P046-013}{q^{-1}} when two radial derivatives are taken. This is why axial viscosity
+applied to order \NSi{NS-F-P046-014}{n-1} appears in the angular and axial equations at order
+\NSi{NS-F-P046-015}{n}. These are the \NSi{NS-F-P046-016}{\text{order-}n-1} viscous terms in
+Equations~\eqref{eq:5.3} and \eqref{eq:5.4} below.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P046-004}
+For the second effect, recall that the leading radial balance
+\NSi{NS-F-P046-017}{r\partial_rp^{(0)}=(u_\theta^{(0)})^2} is the balance behind the pressure
+identity in \eqref{eq:4.7}. The physical powers in \eqref{eq:4.3} give both sides the power
+\NSi{NS-F-P046-018}{q^{-2A}}. After the other terms in the radial momentum equation are
+multiplied by \NSi{NS-F-P046-019}{r}, they begin at
+\NSi{NS-F-P046-020}{q^{-1}=q^{-2A}q^{2h}}, as noted after \eqref{eq:4.7}. This accounts for the
+shift by one order in the pressure equation \eqref{eq:5.5}. The remaining radial terms are
+collected in \eqref{eq:5.6} and enter one order later.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P046-005}
+To include derivatives of the powers of \NSi{NS-F-P046-021}{q}, recall the operators
+\NSi{NS-F-P046-022}{T_a,Z_a} from \eqref{eq:4.2}, and abbreviate
+\end{EESegment}
+\NSFormula{NS-F-P046-023}{display}{none}
+\[
+T_{a,n}=T_{a+\lambda_n},
+\qquad Z_{a,n}=Z_{a+\lambda_n},
+\qquad Z_{a,n}^{[2]}=Z_{a+\lambda_n-D}Z_{a+\lambda_n}.
+\]
+\begin{EESegment}{EE-TGT-P046-006}
+The order of composition in the last expression keeps track of the change in the power after the
+first axial derivative. Any field with a negative index is taken to be zero. With the integration
+constant fixed by regularity at the axis, incompressibility is exactly the pair of identities
+\end{EESegment}
+\NSFormula{NS-F-P046-024}{display}{5.2}
+\begin{equation}
+\label{eq:5.2}
+\partial_XV_n=-Z_{-A,n}U_n,
+\qquad
+\frac{V_n}{X}
+=\frac{2\eta U_n-2\eta(D+\lambda_n)\mathcal A_X(U_n)
+-d\partial_\eta\mathcal A_X(U_n)}{L}.
+\tag{5.2}
+\end{equation}
+\begin{EESegment}{EE-TGT-P046-007}
+Fix \NSi{NS-F-P046-025}{n\ge1}. At this point every coefficient of order
+\NSi{NS-F-P046-026}{j<n} is known, including its radial cutoffs and the integral corrections from
+Lemma~\ref{lem:5.2}. On one common inner interval, solve for
+\NSi{NS-F-P046-027}{\phi_n,U_n,\Pi_n}. Equation~\eqref{eq:5.2} then determines
+\NSi{NS-F-P046-028}{V_n} from \NSi{NS-F-P046-029}{U_n}. The pressure coefficient
+\NSi{NS-F-P046-030}{\Pi_n} has to be solved at the same time as
+\NSi{NS-F-P046-031}{\phi_n,U_n}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P046-008}
+Set \NSi{NS-F-P046-032}{b=-A-\tfrac12} and \NSi{NS-F-P046-033}{c=-A}. In the system below,
+primes mean \NSi{NS-F-P046-034}{\partial_X}, with
+\NSi{NS-F-P046-035}{\eta} held fixed. The following equations cancel the momentum residual of
+order \NSi{NS-F-P046-036}{n} on the inner interval:
+\end{EESegment}
+\NSFormula{NS-F-P046-037}{display}{5.3}
+\begin{equation}
+\label{eq:5.3}
+2(X\phi_n''+2\phi_n')
+=T_{b,n}\phi_n
++\sum_{i+j=n}\left\{V_i(\phi_j'+\phi_j/X)+U_iZ_{b,j}\phi_j\right\}
+-Z_{b,n-1}^{[2]}\phi_{n-1},
+\tag{5.3}
+\end{equation}
+\NSFormula{NS-F-P046-038}{display}{5.4}
+\begin{equation}
+\label{eq:5.4}
+2(XU_n''+U_n')
+=T_{c,n}U_n
++\sum_{i+j=n}\left\{V_iU_j'+U_iZ_{c,j}U_j\right\}
++Z_{-2A,n}\Pi_n-Z_{c,n-1}^{[2]}U_{n-1},
+\tag{5.4}
+\end{equation}
+\NSFormula{NS-F-P046-039}{display}{5.5}
+\begin{equation}
+\label{eq:5.5}
+\Pi_n'=\mathsf C^{-2}\sum_{i+j=n}\phi_i\phi_j-\frac{\Omega_{n-1}}{2X},
+\tag{5.5}
+\end{equation}
+\NSFormula{NS-F-P046-040}{display}{5.6}
+\begin{equation}
+\label{eq:5.6}
+\Omega_k=T_{0,k}V_k
++\sum_{i+j=k}\left\{V_i(V_j'-V_j/(2X))+U_iZ_{0,j}V_j\right\}
+-2XV_k''-Z_{0,k-1}^{[2]}V_{k-1}.
+\tag{5.6}
+\end{equation}
+\NSPage{047}%
+\begin{EESegment}{EE-TGT-P047-001}
+Every \NSi{NS-F-P047-001}{\Omega_{n-1},\phi_{n-1},\text{ or }U_{n-1}} that appears on the
+right-hand sides uses coefficients already constructed. For example, the pressure equation can be
+written as
+\end{EESegment}
+\NSFormula{NS-F-P047-002}{display}{none}
+\[
+\Pi_n'=2\mathsf C^{-2}\phi_0\phi_n
++\mathsf C^{-2}\sum_{i=1}^{n-1}\phi_i\phi_{n-i}
+-\frac{\Omega_{n-1}}{2X}.
+\]
+\begin{EESegment}{EE-TGT-P047-002}
+When \NSi{NS-F-P047-003}{n=1}, the sum is empty. Every term in that sum and
+\NSi{NS-F-P047-004}{\Omega_{n-1}} is already known, while the first term is linear in the current
+unknown. The same point applies to the other equations after their transport sums are split into
+the cases \NSi{NS-F-P047-005}{(i,j)=(0,n),(n,0)} and
+\NSi{NS-F-P047-006}{1\le i,j<n}. The system is therefore linear at every positive order. The
+pressure equation will also be enforced when the current profiles are extended beyond the inner
+interval.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P047-003}
+Here is how the powers of \NSi{NS-F-P047-007}{q} and the terms from the cylindrical basis arise.
+For \NSi{NS-F-P047-008}{rq^{b+\lambda_n}\phi_n/\mathsf C}, angular radial transport contains
+\NSi{NS-F-P047-009}{u_r(\partial_r+r^{-1})u_\theta}, which gives
+\NSi{NS-F-P047-010}{V_i(\partial_X\phi_j+\phi_j/X)}. The angular vector Laplacian gives
+\NSi{NS-F-P047-011}{2(X\partial_{XX}\phi_n+2\partial_X\phi_n)} after the factor
+\NSi{NS-F-P047-012}{rq^{b-1+\lambda_n}/\mathsf C} is removed. The corresponding axial scalar
+Laplacian is \NSi{NS-F-P047-013}{2(X\partial_{XX}U_n+\partial_XU_n)}. Every transport product
+has the same power because \NSi{NS-F-P047-014}{A+D=1}. Axial viscosity moves one step forward in
+the \NSi{NS-F-P047-015}{q^{2h}} expansion because
+\NSi{NS-F-P047-016}{1-2D=2h}. In the radial equation, multiplying by
+\NSi{NS-F-P047-017}{r} puts pressure and centrifugal acceleration at the power
+\NSi{NS-F-P047-018}{q^{-2A+\lambda_n}}. The other radial terms begin at
+\NSi{NS-F-P047-019}{q^{-1+\lambda_k}}, so \NSi{NS-F-P047-020}{k=n-1}. Finally, applying the
+radial operator \NSi{NS-F-P047-021}{\partial_{rr}+r^{-1}\partial_r-r^{-2}} to
+\NSi{NS-F-P047-022}{V(X)/r} gives
+\NSi{NS-F-P047-023}{2X\partial_{XX}V/(qr)}, which gives the last two terms in \eqref{eq:5.6}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P047-004}
+Equation~\eqref{eq:5.2} gives \NSi{NS-F-P047-024}{V_j=Xv_j} with a smooth function
+\NSi{NS-F-P047-025}{v_j}. It follows that every term in
+\NSi{NS-F-P047-026}{\Omega_k} is divisible by \NSi{NS-F-P047-027}{X}. For example,
+\NSi{NS-F-P047-028}{V_i(\partial_XV_j-V_j/(2X))
+=Xv_i(v_j/2+X\partial_Xv_j)}. Thus \NSi{NS-F-P047-029}{\Omega_k/X} is regular at the axis,
+including after any fixed number of parameter derivatives.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P047-005}
+The linear equations must be solvable on the same radial interval at every order. For that to work,
+the recursion needs bounds on its \NSi{NS-F-P047-030}{\eta}-derivatives even as the coefficient
+bounds grow. The analytic dependence of the leading inner profile gives those bounds.
+\end{EESegment}
+
+\begin{lemma}
+\label{lem:5.1}
+\begin{EESegment}{EE-TGT-P047-006}
+There is an interval \NSi{NS-F-P047-031}{0\le\xi\le a}, where
+\NSi{NS-F-P047-032}{\xi=\sqrt X}, that starts at the axis and extends into the inner collar from
+Theorem~\ref{thm:4.6}\textup{(i)}. The stress cone inequalities hold there with one uniform
+positive margin. On this interval, every positive order has exactly one solution of
+Equations~\eqref{eq:5.2}--\eqref{eq:5.6} with
+\NSi{NS-F-P047-033}{\phi_n(0,\eta)=U_n(0,\eta)=\Pi_n(0,\eta)=0}. The profiles are smooth in
+\NSi{NS-F-P047-034}{X}. For each fixed radial derivative, they are holomorphic on a neighborhood
+of \NSi{NS-F-P047-035}{[-1,1]} in the parameter \NSi{NS-F-P047-036}{\eta}, which means that they
+have a complex derivative at every point of that neighborhood. The neighborhood and
+its bounds may depend on the order and the radial derivative, but
+\NSi{NS-F-P047-037}{a} does not. The uniqueness statement applies among solutions whose profiles
+extend holomorphically in \NSi{NS-F-P047-038}{\eta} to a neighborhood of
+\NSi{NS-F-P047-039}{[-1,1]}, with bounds uniform for
+\NSi{NS-F-P047-040}{0\le\xi\le a}.
+\end{EESegment}
+\end{lemma}
+
+\begin{EESegment}{EE-TGT-P047-007}
+Because every positive-order coefficient is zero at the axis, the leading traces of
+\NSi{NS-F-P047-041}{\phi,U,\text{ and }\Pi} stay unchanged.
+\end{EESegment}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P047-008}
+\textbf{Step 1: write a linear system on the fixed inner interval.} The analytic axis solution and
+its first collar, supplied by Proposition~\ref{prop:B.2} and Theorem~\ref{thm:4.6}, have the stated
+parameter regularity on one fixed radial rectangle. Choose \NSi{NS-F-P047-042}{a} inside this
+rectangle and beyond the shorter collar that will remain uncut. At order
+\NSi{NS-F-P047-043}{n}, use the lower-order coefficients already constructed, including their
+cutoffs and moment corrections. The corrections are supported to the right of this rectangle, and
+the radial cutoffs keep their analytic dependence on the parameter. A small enough complex
+neighborhood \NSi{NS-F-P047-044}{S_\rho=\{\eta\in\mathbb C:
+\operatorname{dist}(\eta,[-1,1])<\rho\}} therefore contains no zero of
+\NSi{NS-F-P047-045}{L} and gives bounded holomorphic coefficients and source terms everywhere on
+\NSi{NS-F-P047-046}{0\le\xi\le a}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P047-009}
+Introduce the extra variable \NSi{NS-F-P047-047}{K_n} and the vector
+\NSi{NS-F-P047-048}{W_n} so that the system can be written as
+\end{EESegment}
+\NSFormula{NS-F-P047-049}{display}{5.7}
+\begin{equation}
+\label{eq:5.7}
+\begin{aligned}
+K_n&=\mathcal A_X(U_n)-U_n,
+&W_n&=(\phi_n,U_n,K_n,\Pi_n,\partial_\xi\phi_n,\partial_\xi U_n)^{\mathsf T},\\
+\partial_\xi W_n+\xi^{-1}\operatorname{diag}(0,0,2,0,3,1)W_n
+&=A_0W_n+A_1\partial_\eta W_n+f_n,
+&W_n(0)&=0.
+\end{aligned}
+\tag{5.7}
+\end{equation}
+\NSPage{048}%
+\begin{EESegment}{EE-TGT-P048-001}
+The matrices \NSi{NS-F-P048-001}{A_0,A_1} are
+\NSi{NS-F-P048-002}{6\times6} matrices of coefficients in
+\NSi{NS-F-P048-003}{(\xi,\eta)}, with \NSi{NS-F-P048-004}{n} fixed. The known source
+\NSi{NS-F-P048-005}{f_n} has six components and is built from the lower-order profiles. The
+extra unknown \NSi{NS-F-P048-006}{K_n} replaces the radial average with a first-order equation,
+so no radial integral of a current unknown is left unevaluated in the system. In fact,
+\NSi{NS-F-P048-007}{\partial_\xi K_n+2K_n/\xi=-\partial_\xi U_n}, and the two second-order radial
+operators become \NSi{NS-F-P048-008}{(\partial_{\xi\xi}+3\xi^{-1}\partial_\xi)/2} and
+\NSi{NS-F-P048-009}{(\partial_{\xi\xi}+\xi^{-1}\partial_\xi)/2}. At every positive order, every
+term that contains an unknown of order \NSi{NS-F-P048-010}{n} is linear. The pressure row is
+\NSi{NS-F-P048-011}{\partial_\xi\Pi_n=4\xi\phi_0\phi_n/\mathsf C^2+
+\text{known terms}}. Use the same row for
+\NSi{NS-F-P048-012}{X\partial_X\Pi_n} in the axial equation. With this form, every apparent
+division by \NSi{NS-F-P048-013}{X} is regular.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P048-002}
+\textbf{Step 2: solve without shrinking the radial interval.} Iterating the system takes
+derivatives in \NSi{NS-F-P048-014}{\eta}. First control how many of these derivatives can appear,
+and only then estimate the repeated radial integrals. The coefficient of
+\NSi{NS-F-P048-015}{\partial_\eta} has the following sparse block form. Set
+\NSi{NS-F-P048-016}{H_c=D\eta+dU_0}. Its only entries that may be nonzero are
+\end{EESegment}
+\NSFormula{NS-F-P048-017}{display}{none}
+\begin{align*}
+(A_1)_{51}&=2H_c/L,
+& (A_1)_{52}=(A_1)_{53}&=-2d(\phi_0+X\partial_X\phi_0)/L,\\
+(A_1)_{62}&=2(H_c-dX\partial_XU_0)/L,
+& (A_1)_{63}&=-2dX\partial_XU_0/L,
+& (A_1)_{64}&=2d/L.
+\end{align*}
+\begin{EESegment}{EE-TGT-P048-003}
+Thus \NSi{NS-F-P048-018}{A_1}, at every radius and after any number of parameter derivatives,
+maps the first four coordinates into the last two and sends the last two coordinates to zero.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P048-004}
+For \NSi{NS-F-P048-019}{c_i=(0,0,2,0,3,1)_i}, invert the diagonal part of \eqref{eq:5.7},
+with zero data at the axis, by using the integral operator
+\end{EESegment}
+\NSFormula{NS-F-P048-020}{display}{none}
+\[
+(Gg)_i(\xi)=\int_0^\xi(s/\xi)^{c_i}g_i(s)\,ds,
+\qquad \mathcal K=G(A_0+A_1\partial_\eta).
+\]
+\begin{EESegment}{EE-TGT-P048-005}
+The kernels of this operator do not depend on \NSi{NS-F-P048-021}{\eta}, and they keep the two
+coordinate subspaces just described separate. If \NSi{NS-F-P048-022}{D_0} is any diagonal kernel
+that occurs between two factors, then
+\end{EESegment}
+\NSFormula{NS-F-P048-023}{display}{none}
+\[
+A_1(\xi)D_0A_1(s)=0,
+\qquad A_1(\xi)D_0\partial_\eta A_1(s)=0.
+\]
+\begin{EESegment}{EE-TGT-P048-006}
+So two neighboring derivative operators give zero even when the derivative on the left lands on a
+variable matrix coefficient. Any nonzero product of \NSi{NS-F-P048-024}{k} factors can therefore
+contain at most \NSi{NS-F-P048-025}{p_k=\lceil k/2\rceil} parameter derivatives.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P048-007}
+Bound \NSi{NS-F-P048-026}{A_0,A_1,f_n} on the larger neighborhood
+\NSi{NS-F-P048-027}{S_\rho}, uniformly across the whole radial interval. On
+\NSi{NS-F-P048-028}{S_{\rho'}}, where \NSi{NS-F-P048-029}{0<\rho'<\rho}, Cauchy's estimate bounds
+each parameter derivative by using the distance from the smaller complex neighborhood to the edge
+of the larger one. The available loss in radius is
+\NSi{NS-F-P048-030}{\Delta=\rho-\rho'}, and it is divided among the at most
+\NSi{NS-F-P048-031}{p_k} derivatives. The diagonal kernels have norm at most one. The nested radial
+integrals are ordered so that every new integration variable is no larger than the preceding one.
+Their region is an ordered simplex, whose volume is
+\NSi{NS-F-P048-032}{a^{k+1}/(k+1)!}. Adding the at most
+\NSi{NS-F-P048-033}{2^k} compositions gives
+\end{EESegment}
+\NSFormula{NS-F-P048-034}{display}{5.8}
+\begin{equation}
+\label{eq:5.8}
+\lVert\mathcal K^kGf_n\rVert_{S_{\rho'}}
+\le \frac{C_n^{k+1}a^{k+1}}{(k+1)!}
+\left(\max\{1,p_k/\Delta\}\right)^{p_k}.
+\tag{5.8}
+\end{equation}
+\begin{EESegment}{EE-TGT-P048-008}
+The \NSi{NS-F-P048-035}{k}th root of the right-hand side of \eqref{eq:5.8} tends to zero. The
+Picard series \NSi{NS-F-P048-036}{W_n=\sum_{k\ge0}\mathcal K^kGf_n} therefore converges on
+\NSi{NS-F-P048-037}{S_{\rho'}} for every finite \NSi{NS-F-P048-038}{a}, no matter how large
+\NSi{NS-F-P048-039}{C_n} is. Apply the same bound after iterating the homogeneous equation for the
+difference of two solutions; this proves uniqueness. In particular, the radial interval does not
+depend on the size of the coefficient bounds at later orders.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P048-009}
+\textbf{Step 3: recover smooth profiles at the axis.} Radial smoothness follows without
+differentiating a singular expression:
+\end{EESegment}
+\NSFormula{NS-F-P048-040}{display}{none}
+\[
+(Gg)_i=\xi\int_0^1t^{c_i}g_i(t\xi)\,dt,
+\qquad
+\partial_\xi(Gg)_i=g_i(\xi)-c_i\int_0^1t^{c_i}g_i(t\xi)\,dt.
+\]
+\begin{EESegment}{EE-TGT-P048-010}
+The second identity is continuous at zero. Repeating this argument, and using a smaller
+neighborhood of the parameter when needed, gives every fixed radial derivative. Extend the integral
+\end{EESegment}

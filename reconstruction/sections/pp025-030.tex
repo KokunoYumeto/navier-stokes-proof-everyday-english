@@ -1,0 +1,626 @@
+\NSPage{025}%
+determine a unique \NSi{NS-F-P025-001}{q>|z|^{1/D}}. Indeed,
+\NSi{NS-F-P025-002}{q-z^2q^{2h}} is zero at that lower endpoint, tends to
+infinity, and has derivative
+\NSi{NS-F-P025-003}{1-2hz^2q^{2h-1}=L\geq 1-2h>0} on the indicated interval.
+Thus \NSi{NS-F-P025-004}{|\eta|<1}; the parameter endpoints
+\NSi{NS-F-P025-005}{\eta=\pm1} describe one-sided limits. Throughout the
+profile construction, we write
+\NSi{NS-F-P025-006}{\mathcal D_Xf=X\partial_Xf} for differentiation in the logarithmic
+radial coordinate, with \NSi{NS-F-P025-007}{\eta} held fixed. To compute the
+residual of the field described in Section~\ref{sec:3.1}, we now derive the
+operators converting time and axial derivatives into derivatives in
+\NSi{NS-F-P025-008}{(X,\eta)}.
+
+\begin{lemma}\label{lem:4.1}
+For a smooth profile \NSi{NS-F-P025-009}{f} and any real
+\NSi{NS-F-P025-010}{b},
+\NSFormula{NS-F-P025-011}{display}{4.2}
+\begin{equation}
+\begin{gathered}
+ \partial_t(q^bf)=q^{b-1}T_bf,\qquad
+ \partial_z(q^bf)=q^{b-D}Z_bf,\qquad
+ \left\{
+ \begin{aligned}
+ T_bf&=L^{-1}(-bf+D\eta f_\eta+\mathcal D_Xf),\\
+ Z_bf&=L^{-1}(2b\eta f+df_\eta-2\eta \mathcal D_Xf).
+ \end{aligned}
+ \right.
+\end{gathered}
+\tag{4.2}\label{eq:4.2}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Differentiating the equation for \NSi{NS-F-P025-012}{q}, followed by
+\NSi{NS-F-P025-013}{\eta=zq^{-D}} and
+\NSi{NS-F-P025-014}{X=s/q}, gives
+\NSFormula{NS-F-P025-015}{display}{none}
+\[
+\begin{aligned}
+ q_t&=-L^{-1},& \eta_t&=D\eta/(qL),& X_t&=X/(qL),\\
+ q_z&=2\eta q^{1-D}/L,& \eta_z&=d/(q^DL),& X_z&=-2\eta X/(q^DL).
+\end{aligned}
+\]
+The middle entry in the second row uses
+\NSi{NS-F-P025-016}{L-2D\eta^2=d}. The chain rule proves the claim.
+\end{proof}
+
+To construct the leading field of Section~\ref{sec:3.1} smoothly across the
+axis, we factor out the linear radial vanishing of its azimuthal component. We
+introduce a fixed amplitude normalization \NSi{NS-F-P025-017}{\mathsf C>1} and a
+smooth scalar \NSi{NS-F-P025-018}{\phi}, and write
+\NSFormula{NS-F-P025-019}{display}{4.3}
+\begin{equation}
+ u_\theta^{(0)}=q^{-A}E,\qquad
+ u_z^{(0)}=q^{-A}U,\qquad
+ ru_r^{(0)}=V_0,\qquad
+ p^{(0)}=q^{-2A}\Pi,\qquad
+ E=\mathsf C^{-1}\sqrt{2X}\,\phi.
+\tag{4.3}\label{eq:4.3}
+\end{equation}
+The normalization \NSi{NS-F-P025-020}{\mathsf C} is chosen in the proof of
+Theorem~\ref{thm:4.6}. As in Section~\ref{sec:3.1},
+\NSi{NS-F-P025-021}{E,U,V_0,\Pi} are functions of
+\NSi{NS-F-P025-022}{(X,\eta)}. The factor
+\NSi{NS-F-P025-023}{\sqrt{2X}} accounts for the vanishing of the azimuthal
+velocity at the axis; smoothness is imposed on
+\NSi{NS-F-P025-024}{\phi}. For the profiles constructed here, regularity at
+the axis in the sense of Definition~\ref{def:3.2} follows from the conditions
+\NSFormula{NS-F-P025-025}{display}{4.4}
+\begin{equation}
+ E=\sqrt{2X}\,F,\qquad V_0=Xv_0,\qquad
+ F=\phi/\mathsf C,\qquad
+ U,v_0,\Pi\in C^\infty([0,X_c]\times[-1,1])
+\tag{4.4}\label{eq:4.4}
+\end{equation}
+for some \NSi{NS-F-P025-026}{X_c>0}. Smoothness on this closed rectangle
+means that all mixed \NSi{NS-F-P025-027}{X,\eta} derivatives have continuous
+one-sided extensions to its boundary. To see the Cartesian smoothness, write
+\NSi{NS-F-P025-028}{x_1=r\cos\theta,\ x_2=r\sin\theta}, so that
+\NSi{NS-F-P025-029}{X=(x_1^2+x_2^2)/(2q)}. Then
+\NSFormula{NS-F-P025-030}{display}{4.5}
+\begin{equation}
+\begin{aligned}
+ u_1^{(0)}&=\frac{v_0}{2q}x_1-q^{-A-1/2}Fx_2,
+ &u_2^{(0)}&=\frac{v_0}{2q}x_2+q^{-A-1/2}Fx_1,\\
+ u_3^{(0)}&=q^{-A}U,
+ &p^{(0)}&=q^{-2A}\Pi.
+\end{aligned}
+\tag{4.5}\label{eq:4.5}
+\end{equation}
+Here all profiles are evaluated at \NSi{NS-F-P025-031}{(X,\eta)}, and
+\NSi{NS-F-P025-032}{q,\eta} are smooth functions of
+\NSi{NS-F-P025-033}{(t,z)} with \NSi{NS-F-P025-034}{q>0} for
+\NSi{NS-F-P025-035}{t<1}. Thus the coefficients in \eqref{eq:4.5} are smooth
+functions of \NSi{NS-F-P025-036}{(x_1,x_2,z,t)}. In particular,
+\NSi{NS-F-P025-037}{E} itself contains a \NSi{NS-F-P025-038}{\sqrt X} factor;
+smoothness at \NSi{NS-F-P025-039}{X=0} is imposed on
+\NSi{NS-F-P025-040}{F}.
+
+We choose \NSi{NS-F-P025-041}{E,U}; incompressibility determines
+\NSi{NS-F-P025-042}{V_0}, and the leading radial momentum balance determines
+\NSi{NS-F-P025-043}{\Pi} once its axis value is fixed. For a smooth radial
+scalar, recall the radial average from the notation paragraph at the end of
+Section~\ref{sec:3}; we specify its smooth extension to the axis by
+\NSFormula{NS-F-P025-044}{display}{4.6}
+\begin{equation}
+ \mathcal A_X(f)(X,\eta)=\frac1X\int_0^X f(x,\eta)\,dx,
+ \qquad
+ \mathcal A_X(f)(0,\eta)=f(0,\eta).
+\tag{4.6}\label{eq:4.6}
+\end{equation}
+
+\NSPage{026}%
+The incompressibility and centrifugal-pressure balances stated in
+Section~\ref{sec:3.1} give the following explicit profile identities:
+\NSFormula{NS-F-P026-001}{display}{4.7}
+\begin{equation}
+ V_0=\frac{X}{L}\bigl(2\eta U-2D\eta\mathcal A_X(U)
+      -d\partial_\eta\mathcal A_X(U)\bigr),
+ \qquad
+ \Pi_X=\frac{E^2}{2X}.
+\tag{4.7}\label{eq:4.7}
+\end{equation}
+To see the first identity, use \NSi{NS-F-P026-002}{A+D=1} in
+\NSi{NS-F-P026-003}{\partial_s(ru_r^{(0)})+\partial_z u_z^{(0)}=0}. It gives
+\NSi{NS-F-P026-004}{(V_0)_X=L^{-1}(2A\eta U-dU_\eta+2\eta XU_X)};
+integration with zero axis value gives the displayed formula. For the second
+identity, the coefficients of \NSi{NS-F-P026-005}{\partial_rp^{(0)}} and
+\NSi{NS-F-P026-006}{(u_\theta^{(0)})^2/r} are respectively
+\NSi{NS-F-P026-007}{\sqrt{2X}\Pi_X} and
+\NSi{NS-F-P026-008}{E^2/\sqrt{2X}}, with common power
+\NSi{NS-F-P026-009}{q^{-2A-1/2}}. The remaining radial terms, and axial
+viscosity relative to radial viscosity in the tangential equations, carry an
+additional factor at least \NSi{NS-F-P026-010}{q^{2h}}. This viscosity
+comparison explains the powers \NSi{NS-F-P026-011}{q^{2nh}} used in the
+background corrections of Section~\ref{sec:3}. Here these are comparisons at
+fixed profile coordinates; physical derivative bounds will be proved
+separately for the completed fields. The higher-order terms just identified
+are retained in the full residual and treated in Section~\ref{sec:5}.
+
+With incompressibility and the leading radial balance imposed, it remains to
+express the tangential residual as a radial stress divergence, as required in
+Section~\ref{sec:3}. We first integrate its inviscid terms, denoting the
+resulting scalar profiles by \NSi{NS-F-P026-012}{Q_s,N_s}, and then add the
+contribution from radial viscosity. The definitions below depend only on
+\NSi{NS-F-P026-013}{E,U,\Pi}; Proposition~\ref{prop:4.2} verifies the resulting
+stress identity.
+
+For profiles satisfying \eqref{eq:4.7}, with
+\NSi{NS-F-P026-014}{\phi,U,\Pi} smooth at the axis and
+\NSi{NS-F-P026-015}{\phi>0}, we set
+\NSFormula{NS-F-P026-016}{display}{4.8}
+\begin{equation}
+\begin{gathered}
+ H=\sqrt{2X}E,\qquad F=\frac{E}{\sqrt{2X}},\qquad l=\mathcal D_X\log H,\\
+ W=1-2D\eta\mathcal A_X(U)-d\partial_\eta\mathcal A_X(U),
+ \qquad H_c=D\eta+dU.
+\end{gathered}
+\tag{4.8}\label{eq:4.8}
+\end{equation}
+Here \NSi{NS-F-P026-017}{H} is the profile of angular momentum
+\NSi{NS-F-P026-018}{ru_\theta^{(0)}},
+\NSi{NS-F-P026-019}{F} removes the factor
+\NSi{NS-F-P026-020}{\sqrt{2X}} from \NSi{NS-F-P026-021}{E}, and
+\NSi{NS-F-P026-022}{l} measures the logarithmic radial slope of
+\NSi{NS-F-P026-023}{H}. The coefficients
+\NSi{NS-F-P026-024}{W,H_c} collect the transport terms in \eqref{eq:4.14}.
+We define \NSi{NS-F-P026-025}{Q_s,N_s} by the following radial equations,
+selecting the solutions that extend smoothly to \NSi{NS-F-P026-026}{X=0}:
+\NSFormula{NS-F-P026-027}{display}{4.9}
+\begin{equation}
+\begin{aligned}
+ \mathcal D_XQ_s+(1+l)Q_s&=S_q,& \mathcal D_XN_s+N_s&=S_n,\\
+ S_q&=-Wl-h(1-2\eta U)-H_c(\log E)_\eta,\\
+ S_n&=-W\mathcal D_XU-A(1-2\eta U)U-H_cU_\eta
+      -d\Pi_\eta+4A\eta\Pi+2\eta \mathcal D_X\Pi.
+\end{aligned}
+\tag{4.9}\label{eq:4.9}
+\end{equation}
+The integrating factors are \NSi{NS-F-P026-028}{XH} and
+\NSi{NS-F-P026-029}{X}, respectively. Thus the integration constants, which
+may a priori depend on \NSi{NS-F-P026-030}{\eta}, enter as
+\NSFormula{NS-F-P026-031}{display}{4.10}
+\begin{equation}
+ Q_s=\frac{C_Q(\eta)+\int_0^X H(x,\eta)S_q(x,\eta)\,dx}{XH(X,\eta)},
+ \qquad
+ N_s=\frac{C_N(\eta)+\int_0^X S_n(x,\eta)\,dx}{X}.
+\tag{4.10}\label{eq:4.10}
+\end{equation}
+The required smooth extensions select
+\NSi{NS-F-P026-032}{C_Q=C_N=0}. Indeed,
+\NSi{NS-F-P026-033}{H=2X\phi/\mathsf C} near the axis, a nonzero constant would
+produce an \NSi{NS-F-P026-034}{X^{-2}} singularity in
+\NSi{NS-F-P026-035}{Q_s}, or an \NSi{NS-F-P026-036}{X^{-1}} singularity in
+\NSi{NS-F-P026-037}{N_s}. With both constants zero, changing variables
+\NSi{NS-F-P026-038}{x=sX} gives
+\NSFormula{NS-F-P026-039}{display}{none}
+\[
+ Q_s=\frac{1}{F(X,\eta)}\int_0^1 sF(sX,\eta)S_q(sX,\eta)\,ds,
+ \qquad
+ N_s=\int_0^1 S_n(sX,\eta)\,ds.
+\]
+The sources are smooth at \NSi{NS-F-P026-040}{X=0}, since
+\NSi{NS-F-P026-041}{l=1+XF_X/F} and
+\NSi{NS-F-P026-042}{(\log E)_\eta=F_\eta/F}. These formulas give the smooth
+extensions \NSi{NS-F-P026-043}{Q_s(0,\eta)=S_q(0,\eta)/2} and
+\NSi{NS-F-P026-044}{N_s(0,\eta)=S_n(0,\eta)}. We define the two
+\NSPage{027}%
+stress coefficients in the order \NSi{NS-F-P027-001}{(r\theta,rz)} by
+\NSFormula{NS-F-P027-002}{display}{4.11}
+\begin{equation}
+\begin{gathered}
+ \mathcal T_0=F(p_s-\mathfrak{s}),
+ \qquad
+ p_s=\left(\frac{XQ_s}{L},\frac{XN_s}{LE}\right),\\
+ \mathfrak{s}=(a,-b_s),
+ \qquad
+ a=1-2\mathcal D_X\log E=2-2l,
+ \qquad
+ b_s=\frac{2\mathcal D_XU}{E}.
+\end{gathered}
+\tag{4.11}\label{eq:4.11}
+\end{equation}
+Thus \NSi{NS-F-P027-003}{p_s} is a two-component vector of integrated inviscid
+contributions, distinct from the pressure \NSi{NS-F-P027-004}{p^{(0)}}. The
+vector \NSi{NS-F-P027-005}{\mathfrak{s}=(a,-b_s)} records the cylindrical
+radial shear, with its normalization specified by
+\NSFormula{NS-F-P027-006}{display}{none}
+\[
+ \left(\partial_ru_\theta^{(0)}-\frac{u_\theta^{(0)}}{r},
+       \partial_ru_z^{(0)}\right)
+ =-q^{-A-1/2}F\mathfrak{s}.
+\]
+In \eqref{eq:4.11}, \NSi{NS-F-P027-007}{Fp_s} is the inviscid contribution
+and \NSi{NS-F-P027-008}{-F\mathfrak{s}} is the radial-viscosity contribution,
+as the calculation below shows. In the notation of Section~\ref{sec:3}, the
+physical stress representation to be proved is
+\NSi{NS-F-P027-009}{T=q^{-A-1/2}\mathcal T_0}. Its two components are the
+required \NSi{NS-F-P027-010}{r\theta} and \NSi{NS-F-P027-011}{rz} entries of the wave
+covariance, the tensor of averaged quadratic velocity products constructed in
+Proposition~\ref{prop:7.5}. To verify the stress identity used in
+Section~\ref{sec:3}, we must separate the tangential terms at the leading
+order from axial viscosity. Define the \emph{leading tangential residuals} by
+\NSFormula{NS-F-P027-012}{display}{4.12}
+\begin{equation}
+ R_j^{(0)}=\mathscr R(u^{(0)},p^{(0)})\mathbin{\cdot}e_j
+            +\partial_z^2u_j^{(0)},
+ \qquad j\in\{\theta,z\},
+\tag{4.12}\label{eq:4.12}
+\end{equation}
+where \NSi{NS-F-P027-013}{e_\theta,e_z} are the cylindrical unit vectors and
+\NSi{NS-F-P027-014}{\mathscr R} is the full momentum residual defined in the
+introduction. Adding \NSi{NS-F-P027-015}{\partial_z^2u_j^{(0)}} removes axial
+viscosity from that residual; radial viscosity is retained.
+
+\begin{proposition}\label{prop:4.2}
+The residuals \NSi{NS-F-P027-016}{R_\theta^{(0)},R_z^{(0)}} in
+\eqref{eq:4.12} are minus the cylindrical divergences
+\NSi{NS-F-P027-017}{\partial_r+2/r} and
+\NSi{NS-F-P027-018}{\partial_r+1/r} of
+\NSi{NS-F-P027-019}{q^{-A-1/2}\mathcal T_0}. In particular the equations for
+vanishing leading residual stress are
+\NSFormula{NS-F-P027-020}{display}{4.13}
+\begin{equation}
+ -2L\frac{X\phi_{XX}+2\phi_X}{\phi}=S_q,
+ \qquad
+ -2L(XU_{XX}+U_X)=S_n.
+\tag{4.13}\label{eq:4.13}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+The angular equation is simplest in angular momentum
+\NSi{NS-F-P027-021}{ru_\theta^{(0)}=q^{-h}H}. Equations \eqref{eq:4.2} and
+\eqref{eq:4.7} give
+\NSFormula{NS-F-P027-022}{display}{4.14}
+\begin{equation}
+\begin{split}
+ &(\partial_t+u_r^{(0)}\partial_r+u_z^{(0)}\partial_z)(q^{-h}H)\\
+ &\qquad=\frac{q^{-h-1}}{L}
+   \{W\mathcal D_XH+H_cH_\eta+h(1-2\eta U)H\}
+   =-\frac{q^{-h-1}}{L}HS_q.
+\end{split}
+\tag{4.14}\label{eq:4.14}
+\end{equation}
+The axial material derivative plus the pressure gradient is similarly
+\NSi{NS-F-P027-023}{-q^{-A-1}S_n/L}. The integrating factors for the two
+radial divergences are \NSi{NS-F-P027-024}{r^2} and
+\NSi{NS-F-P027-025}{r}. Integrating the negative inviscid residual from the
+axis therefore produces the coefficients \NSi{NS-F-P027-026}{FXQ_s/L} and
+\NSi{NS-F-P027-027}{FXN_s/(LE)}. Radial viscosity contributes
+\NSFormula{NS-F-P027-028}{display}{none}
+\[
+ \partial_ru_\theta^{(0)}-u_\theta^{(0)}/r=-q^{-A-1/2}Fa,
+ \qquad
+ \partial_ru_z^{(0)}=q^{-A-1/2}Fb_s.
+\]
+Adding these viscous contributions to the radially integrated inviscid
+residual proves \eqref{eq:4.11}, including its sign. If that stress is zero
+then \NSi{NS-F-P027-029}{XQ_s/L=a,\ N_s/L=-2U_X}; inserting these relations
+in \eqref{eq:4.9} proves \eqref{eq:4.13}. At the axis
+\NSi{NS-F-P027-030}{l=1+X\phi_X/\phi} and
+\NSi{NS-F-P027-031}{(\log E)_\eta=\phi_\eta/\phi} are smooth, so
+\NSi{NS-F-P027-032}{Q_s,N_s} are regular at the axis in the scalar-profile
+sense of Definition~\ref{def:3.2}.
+\end{proof}
+
+\NSPage{028}%
+\subsection{The cumulative radial integrals}\label{sec:4.2}
+
+Note that the stress profile \NSi{NS-F-P028-001}{\mathcal T_0} in
+\eqref{eq:4.11} depends on the profiles \NSi{NS-F-P028-002}{E,U} at every
+smaller radius through the integrals in \eqref{eq:4.10}. To join an inner
+profile to a prescribed outer one, as in Section~\ref{sec:3}, we must therefore
+match the accumulated integrals as well as the profile values. Five integrals
+suffice to preserve the outer pressure, radial velocity, and stress
+(Lemma~\ref{lem:4.4}). Integrating \eqref{eq:4.9} expresses
+\NSi{NS-F-P028-003}{Q_s,N_s} in terms of these quantities:
+\NSFormula{NS-F-P028-004}{display}{4.15}
+\begin{equation}
+\begin{gathered}
+ M=\int_0^X U\,dx,\qquad
+ I=\int_0^X H\,dx,\qquad
+ J=\int_0^X UH\,dx,\\
+ S=\int_0^X(U^2-E^2/2)\,dx,\qquad
+ C_p=\int_0^X\frac{E^2}{2x}\,dx,\qquad
+ \Pi=\Pi(0,\eta)+C_p.
+\end{gathered}
+\tag{4.15}\label{eq:4.15}
+\end{equation}
+Each integral is a function of \NSi{NS-F-P028-005}{(X,\eta)}; at a fixed
+matching radius it is a scalar function of \NSi{NS-F-P028-006}{\eta}. Here
+\NSi{NS-F-P028-007}{C_p} is the pressure increment from the axis to
+\NSi{NS-F-P028-008}{X}, and \NSi{NS-F-P028-009}{\Pi(0,\eta)} is the
+prescribed value of the pressure at \NSi{NS-F-P028-010}{X=0}.
+
+\begin{lemma}\label{lem:4.3}
+For the solutions of \eqref{eq:4.9} with
+\NSi{NS-F-P028-011}{C_Q=C_N=0},
+\NSFormula{NS-F-P028-012}{display}{4.16}
+\begin{equation}
+\begin{aligned}
+ Q_s&=-W+\frac{(1-h)I-D\eta I_\eta-dJ_\eta+2(h-D)\eta J}{XH},\\
+ N_s&=-WU+\frac{D(M-\eta M_\eta)+4h\eta S-dS_\eta}{X}
+             +4A\eta\Pi-d\Pi_\eta.
+\end{aligned}
+\tag{4.16}\label{eq:4.16}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Use \NSi{NS-F-P028-013}{\partial_X(XW)=1-2D\eta U-dU_\eta} to integrate the
+terms \NSi{NS-F-P028-014}{-W\mathcal D_XH} and
+\NSi{NS-F-P028-015}{-W\mathcal D_XU}. The angular terms
+\NSi{NS-F-P028-016}{-dU_\eta H-dUH_\eta} combine to
+\NSi{NS-F-P028-017}{-d(UH)_\eta}. For the pressure contribution, integration
+by parts in \NSi{NS-F-P028-018}{\Pi_X=E^2/(2X)} gives
+\NSi{NS-F-P028-019}{\int_0^X\Pi\,dx=X\Pi-\int_0^XE^2/2\,dx}.
+Consequently the source integrals are
+\NSFormula{NS-F-P028-020}{display}{none}
+\[
+\begin{aligned}
+ \int_0^XHS_q\,dx
+   &=-XWH+(1-h)I-D\eta I_\eta-dJ_\eta+2(h-D)\eta J,\\
+ \int_0^XS_n\,dx
+   &=-XWU+D(M-\eta M_\eta)+4h\eta S-dS_\eta
+      +X(4A\eta\Pi-d\Pi_\eta).
+\end{aligned}
+\]
+Division by \NSi{NS-F-P028-021}{XH} and \NSi{NS-F-P028-022}{X} gives the result.
+\end{proof}
+
+When two profiles agree beyond a joining radius, matching the five cumulative
+integrals there also preserves the quantities obtained by radial integration.
+Their common pressure value at the axis is held fixed. Small changes in the
+profiles, integrals, and their parameter derivatives also give small changes
+in \NSi{NS-F-P028-023}{Q_s,N_s,p_s}, without requiring radial derivatives of
+the profiles to be close. We use the exact identity to join profiles and the
+estimate to alter their shear.
+
+\begin{lemma}\label{lem:4.4}
+Fix \NSi{NS-F-P028-024}{h\in(0,1/2)}. For
+\NSi{NS-F-P028-025}{i=1,2}, let \NSi{NS-F-P028-026}{(U_i,E_i)} be smooth on
+\NSi{NS-F-P028-027}{(0,\infty)\times[-1,1]}, with
+\NSi{NS-F-P028-028}{E_i>0}, and suppose the five integrals in
+\eqref{eq:4.15} define smooth functions there, including one-sided
+\NSi{NS-F-P028-029}{\eta}-derivatives at
+\NSi{NS-F-P028-030}{\eta=\pm1}. Write
+\NSFormula{NS-F-P028-031}{display}{none}
+\[
+ H_i=\sqrt{2X}E_i,\qquad
+ \mathfrak m_i=(M_i,I_i,J_i,S_i,C_{p,i}).
+\]
+Fix one smooth function \NSi{NS-F-P028-032}{\Pi_{\mathrm{ax}}(\eta)} on
+\NSi{NS-F-P028-033}{[-1,1]} and set
+\NSFormula{NS-F-P028-034}{display}{none}
+\[
+ \Pi_i(X,\eta)=\Pi_{\mathrm{ax}}(\eta)+C_{p,i}(X,\eta),
+ \qquad
+ \Pi_i(0,\eta)=\Pi_{\mathrm{ax}}(\eta),
+ \qquad i=1,2.
+\]
+Thus the pressures have the same integration constant at the axis; the
+velocity profiles need not agree near the axis. Define
+\NSi{NS-F-P028-035}{V_{0,i}} by \eqref{eq:4.7},
+\NSi{NS-F-P028-036}{Q_{s,i},N_{s,i}} by \eqref{eq:4.16}, and
+\NSi{NS-F-P028-037}{p_{s,i},a_i,b_{s,i},\mathcal T_{0,i}} by
+\eqref{eq:4.11}. We use the explicit formulas \eqref{eq:4.16}, previously
+derived with \NSi{NS-F-P028-038}{C_Q=C_N=0}. For any of these quantities
+\NSi{NS-F-P028-039}{f}, let
+\NSi{NS-F-P028-040}{\Delta f=f_2-f_1}. Then the following two conclusions
+hold.
+\NSPage{029}%
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=2.5em]
+\item Suppose that for some \NSi{NS-F-P029-001}{X_h>0},
+\NSFormula{NS-F-P029-002}{display}{none}
+\[
+ (U_1,E_1)=(U_2,E_2)\quad\text{for }X\geq X_h,
+ \qquad
+ \Delta\mathfrak m(X_h,\eta)=0\quad(-1\leq\eta\leq1).
+\]
+Then \NSi{NS-F-P029-003}{\mathfrak m_1=\mathfrak m_2}, and the corresponding
+quantities
+\NSi{NS-F-P029-004}{\Pi_i,V_{0,i},Q_{s,i},N_{s,i},p_{s,i},a_i,b_{s,i},
+\mathcal T_{0,i}} agree for all \NSi{NS-F-P029-005}{X\geq X_h} and
+\NSi{NS-F-P029-006}{\eta\in[-1,1]}.
+
+\item Fix \NSi{NS-F-P029-007}{0<X_0<X_1<\infty}, an integer
+\NSi{NS-F-P029-008}{k\geq0}, and \NSi{NS-F-P029-009}{e_{\min}>0}. On
+\NSi{NS-F-P029-010}{\mathcal R=[X_0,X_1]\times[-1,1]}, put
+\NSFormula{NS-F-P029-011}{display}{none}
+\[
+ \|f\|_j:=\max_{0\leq r\leq j}
+           \sup_{(X,\eta)\in\mathcal R}|\partial_\eta^rf(X,\eta)|,
+ \qquad j\geq0,
+\]
+using the maximum of the component norms for tuples. If
+\NSi{NS-F-P029-012}{E_i\geq e_{\min}} on
+\NSi{NS-F-P029-013}{\mathcal R}, then
+\NSFormula{NS-F-P029-014}{display}{4.17}
+\begin{equation}
+ \|\Delta(Q_s,N_s,p_s)\|_k
+ \leq C_k\bigl(\|\Delta(U,E)\|_{k+1}
+                 +\|\Delta\mathfrak m\|_{k+1}\bigr).
+\tag{4.17}\label{eq:4.17}
+\end{equation}
+The constant \NSi{NS-F-P029-015}{C_k} depends only on
+\NSi{NS-F-P029-016}{k,h,X_0,X_1,e_{\min}}, the
+\NSi{NS-F-P029-017}{C^{k+1}}-norm of
+\NSi{NS-F-P029-018}{\Pi_{\mathrm{ax}}}, and a common bound for
+\NSi{NS-F-P029-019}{\|(U_i,E_i,\mathfrak m_i)\|_{k+1}},
+\NSi{NS-F-P029-020}{i=1,2}. No radial derivative of a difference occurs in
+this estimate.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+By the definitions of the five cumulative integrals,
+\NSFormula{NS-F-P029-021}{display}{4.18}
+\begin{equation}
+\begin{aligned}
+ \Delta M&=\int_0^X(U_2-U_1)\,dx,\\
+ \Delta I&=\int_0^X(H_2-H_1)\,dx,\\
+ \Delta J&=\int_0^X(U_2H_2-U_1H_1)\,dx,\\
+ \Delta S&=\int_0^X\bigl(U_2^2-U_1^2-(E_2^2-E_1^2)/2\bigr)\,dx,\\
+ \Delta C_p&=\int_0^X\frac{E_2^2-E_1^2}{2x}\,dx.
+\end{aligned}
+\tag{4.18}\label{eq:4.18}
+\end{equation}
+The quantities on the left are evaluated at
+\NSi{NS-F-P029-022}{(X,\eta)}, and each integrand on the right at
+\NSi{NS-F-P029-023}{(x,\eta)}. For part~\textup{(i)}, agreement of
+\NSi{NS-F-P029-024}{U_i,E_i} on \NSi{NS-F-P029-025}{X\geq X_h} makes each
+integrand in \eqref{eq:4.18} zero there. Consequently
+\NSFormula{NS-F-P029-026}{display}{none}
+\[
+ \Delta\mathfrak m(X,\eta)=\Delta\mathfrak m(X_h,\eta)=0
+ \qquad(X\geq X_h,\ -1\leq\eta\leq1).
+\]
+This is an identity of functions of \NSi{NS-F-P029-027}{\eta}, so their
+\NSi{NS-F-P029-028}{\eta}-derivatives agree as well. The common pressure datum
+gives \NSi{NS-F-P029-029}{\Delta\Pi=\Delta C_p=0}. Equation \eqref{eq:4.7}
+then gives \NSi{NS-F-P029-030}{\Delta V_0=0}, and \eqref{eq:4.16} gives
+\NSi{NS-F-P029-031}{\Delta Q_s=\Delta N_s=0}. The profiles agree on a radial
+interval, so their radial derivatives also agree. The definitions in
+\eqref{eq:4.11} therefore give equality of
+\NSi{NS-F-P029-032}{p_s,a,b_s,\mathcal T_0}.
+
+For part~\textup{(ii)}, the quantities entering \eqref{eq:4.16} can be written
+as
+\NSFormula{NS-F-P029-033}{display}{none}
+\[
+ H_i=\sqrt{2X}E_i,
+ \qquad
+ W_i=1-\frac{2D\eta M_i+d\partial_\eta M_i}{X},
+ \qquad
+ \Pi_i=\Pi_{\mathrm{ax}}+C_{p,i}.
+\]
+It follows that
+\NSFormula{NS-F-P029-034}{display}{none}
+\[
+ \Delta H=\sqrt{2X}\Delta E,
+ \qquad
+ \Delta W=-\frac{2D\eta\Delta M+d\partial_\eta\Delta M}{X},
+ \qquad
+ \Delta\Pi=\Delta C_p.
+\]
+The last identity is the use of the common axis pressure datum. On
+\NSi{NS-F-P029-035}{\mathcal R}, the denominators satisfy
+\NSi{NS-F-P029-036}{X\geq X_0},
+\NSi{NS-F-P029-037}{L\geq1-2h>0}, and
+\NSi{NS-F-P029-038}{H_i\geq\sqrt{2X_0}e_{\min}}. For example,
+\NSFormula{NS-F-P029-039}{display}{none}
+\[
+ \Delta(H^{-1})=-\frac{\Delta H}{H_1H_2},
+ \qquad
+ \Delta(E^{-1})=-\frac{\Delta E}{E_1E_2}.
+\]
+Apply the product rule and these reciprocal identities to \eqref{eq:4.16},
+and then to the formula for \NSi{NS-F-P029-040}{p_s} in \eqref{eq:4.11}.
+After at most \NSi{NS-F-P029-041}{k}
+\NSi{NS-F-P029-042}{\eta}-derivatives, each term contains a difference of
+\NSi{NS-F-P029-043}{U,E}, or of
+\NSPage{030}%
+a component of \NSi{NS-F-P030-001}{\mathfrak m}, through order at most
+\NSi{NS-F-P030-002}{k+1}. The remaining factors are controlled by the stated
+common bounds. This proves \eqref{eq:4.17} and the dependence of its constant.
+These formulas contain no radial derivatives of the inputs.
+\end{proof}
+
+Part~\textup{(ii)} applies to the radial modulation in
+Proposition~\ref{prop:C.2}. The profiles \NSi{NS-F-P030-003}{U,E}, the five
+integrals \NSi{NS-F-P030-004}{\mathfrak m}, and their
+\NSi{NS-F-P030-005}{\eta}-derivatives remain close, even though the radial
+shears \NSi{NS-F-P030-006}{a,b_s} change substantially. The estimate controls
+\NSi{NS-F-P030-007}{p_s}; the full stress
+\NSi{NS-F-P030-008}{\mathcal T_0=F(p_s-\mathfrak{s})} also depends on those
+shears.
+
+To use this comparison at a large joining radius
+\NSi{NS-F-P030-009}{\rho}, we set
+\NSi{NS-F-P030-010}{\widehat U(x,\eta)=U(\rho x,\eta)} and
+\NSi{NS-F-P030-011}{\widehat E(x,\eta)=E(\rho x,\eta)}, and define the
+remaining hatted quantities by
+\NSFormula{NS-F-P030-012}{display}{4.19}
+\begin{equation}
+ X=\rho x,\qquad H=\sqrt\rho\,\widehat H,\qquad
+ (M,I,J,S,C_p)
+   =(\rho\widehat M,\rho^{3/2}\widehat I,\rho^{3/2}\widehat J,
+     \rho\widehat S,\widehat C_p).
+\tag{4.19}\label{eq:4.19}
+\end{equation}
+Here unhatted functions are evaluated at
+\NSi{NS-F-P030-013}{(\rho x,\eta)}, and hatted functions at
+\NSi{NS-F-P030-014}{(x,\eta)}. We put
+\NSFormula{NS-F-P030-015}{display}{none}
+\[
+\begin{gathered}
+ \widehat{\mathfrak m}
+   =(\widehat M,\widehat I,\widehat J,\widehat S,\widehat C_p),\\
+ (\widehat Q_s,\widehat N_s)(x,\eta)=(Q_s,N_s)(\rho x,\eta),\\
+ \widehat p_s(x,\eta)=\rho^{-1}p_s(\rho x,\eta).
+\end{gathered}
+\]
+Substitution into \eqref{eq:4.16} and \eqref{eq:4.11} gives the same formulas
+for \NSi{NS-F-P030-016}{\widehat Q_s,\widehat N_s,\widehat p_s} with
+\NSi{NS-F-P030-017}{X} replaced by \NSi{NS-F-P030-018}{x}. Thus on a fixed
+rectangle \NSi{NS-F-P030-019}{[x_0,x_1]\times[-1,1]}, with
+\NSi{NS-F-P030-020}{0<x_0<x_1},
+\NSFormula{NS-F-P030-021}{display}{none}
+\[
+ \|\Delta(\widehat Q_s,\widehat N_s,\widehat p_s)\|_k
+ \leq C_k\bigl(\|\Delta(\widehat U,\widehat E)\|_{k+1}
+                 +\|\Delta\widehat{\mathfrak m}\|_{k+1}\bigr),
+\]
+where the norms use this fixed \NSi{NS-F-P030-022}{x}-rectangle. The constant
+is independent of \NSi{NS-F-P030-023}{\rho} provided the positive lower bound
+for \NSi{NS-F-P030-024}{\widehat E_i}, the bounds for
+\NSi{NS-F-P030-025}{\|(\widehat U_i,\widehat E_i,
+\widehat{\mathfrak m}_i)\|_{k+1}}, and the
+\NSi{NS-F-P030-026}{C^{k+1}}-bound for the common
+\NSi{NS-F-P030-027}{\Pi_{\mathrm{ax}}} are independent of
+\NSi{NS-F-P030-028}{\rho}, with \NSi{NS-F-P030-029}{h} fixed.
+
+The moment corrections used below add finite linear combinations of smooth
+functions supported on short radial intervals. Their changes to
+\NSi{NS-F-P030-030}{\mathfrak m} are linear or quadratic in the coefficients.
+The invertibility of the moment matrices and the solution of these finite
+systems are proved in Lemmas~\ref{lem:A.1} and~\ref{lem:A.2}; at each
+application we verify the required bounds for the moment discrepancies and
+inverses.
+
+Moment conditions at infinity serve a separate purpose. The quantities
+\NSi{NS-F-P030-031}{M,J,S} control, respectively, the radially integrated
+axial momentum, the axial transport of angular momentum, and the axial
+momentum flux including pressure. The angular moment
+\NSi{NS-F-P030-032}{I} is made convergent by subtracting the prescribed
+exterior power \NSi{NS-F-P030-033}{H_{\mathrm{pow}}} before integration, as
+in \eqref{eq:4.28}. The resulting total identities make the two weighted
+integrals of the tangential residuals vanish. Without them, a zero exterior
+residual could leave stresses proportional to \NSi{NS-F-P030-034}{r^{-2}}
+and \NSi{NS-F-P030-035}{r^{-1}} in the angular and axial components: the
+integrated inner residual may remain nonzero. Lemma~\ref{lem:A.8} uses the
+total moment identities to remove these tails and prove that the stress
+vanishes in the exterior.
+
+\subsection{The cone imposed on the leading stress}\label{sec:4.3}
+
+Since the annular stress \NSi{NS-F-P030-036}{\mathcal T_0} must be produced
+by the chosen waves with real amplitudes, it must lie in the positive span of
+their covariance directions (Proposition~\ref{prop:7.5}). We now express the
+required cone condition in the profile variables; Lemma~\ref{lem:4.5} gives
+the equivalent inequalities. At each \NSi{NS-F-P030-037}{(X,\eta)}, the
+relevant profile data are the radial shear
+\NSi{NS-F-P030-038}{(a,-b_s)} and the integrated inviscid contribution
+\NSi{NS-F-P030-039}{p_s=(p_{s,1},p_{s,2})} from \eqref{eq:4.11}. Where
+\NSi{NS-F-P030-040}{a>0}, we set
+\NSFormula{NS-F-P030-041}{display}{4.20}
+\begin{equation}
+ t_s=-\frac{b_s}{a},\qquad
+ v_s=a(1+t_s^2),\qquad
+ P_c=p_{s,1}+t_sp_{s,2},\qquad
+ J_c=p_{s,2}-t_sp_{s,1}.
+\tag{4.20}\label{eq:4.20}
+\end{equation}

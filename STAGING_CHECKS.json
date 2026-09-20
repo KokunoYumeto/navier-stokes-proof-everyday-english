@@ -1,0 +1,42 @@
+{
+  "authored_text_scan": {
+    "checked_text_files": 34,
+    "findings": []
+  },
+  "final_build": {
+    "bytes": 1844,
+    "path": "output/everyday-english/receipts/build-receipt.json",
+    "sha256": "15c158967dc8d1f9e84aa39ee8fc70f0ac95e611e20fa075a722dc8839c6defd"
+  },
+  "final_qa": {
+    "bytes": 3812,
+    "path": "evidence/build/EVERYDAY_ENGLISH_FINAL_QA.json",
+    "sha256": "3adda303f665ec4945235801ef9fcba0da8217d41f9e4d6aca4592ccb126e9f7"
+  },
+  "github_pages": {
+    "index": "docs/index.html",
+    "matches_checked_html": true,
+    "sha256": "56efba577998bd5ff80503b4779587ed659c15b44d6ccf5ec4ce1852bad9f6c3"
+  },
+  "local_path_scan": {
+    "checked_text_files": 425,
+    "findings": []
+  },
+  "output_manifest": {
+    "entries": 32,
+    "machine": {
+      "bytes": 5394,
+      "path": "output/everyday-english/receipts/MANIFEST.json",
+      "sha256": "7b04a702e5edbd7a4b1ec6c788a52c44e33cad9191d0e3032ce6097ceb397655"
+    },
+    "text": {
+      "bytes": 3380,
+      "path": "output/everyday-english/receipts/MANIFEST.sha256",
+      "sha256": "554ddf5d3ed56dbd3af9d9920a9929fa5c123e5b66e04bbaa85f879d5517f8b0"
+    }
+  },
+  "publication_performed": false,
+  "schema": "navier-stokes-everyday-repository-staging/v1",
+  "source_file_count": 386,
+  "status": "pass"
+}

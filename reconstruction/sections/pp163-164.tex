@@ -1,0 +1,199 @@
+\NSPage{163}%
+moment functions have the same \NSi{NS-F-P163-001}{O_m(N^{-1})} bounds by
+integration, so \eqref{eq:C.16} remains valid inside the correction interval. Thus
+the admissible stress cone persists throughout it.
+
+At the correction interval's right endpoint
+\NSi{NS-F-P163-002}{X_{\mathrm{rep}}}, the corrected profiles satisfy
+\NSFormula{NS-F-P163-003}{display}{C.17}
+\begin{equation}
+  \widetilde{\mathfrak m}(X_{\mathrm{rep}},\eta)
+    =\mathfrak m(X_{\mathrm{rep}},\eta),
+  \qquad
+  (\widetilde E,\widetilde U)=(E,U)
+  \quad\text{for }X\geq X_{\mathrm{rep}}.
+  \tag{C.17}\label{eq:C.17}
+\end{equation}
+Equality of the five radial moment functions then propagates by integration.
+Lemma~\ref{lem:4.4} gives equality of the complete pressure and the functions
+\NSi{NS-F-P163-004}{Q_s,N_s} for all
+\NSi{NS-F-P163-005}{X\geq X_{\mathrm{rep}}}, including their parameter
+derivatives. This equality preserves the terminal compensation already included
+in the input moment vector \NSi{NS-F-P163-006}{\mathfrak m}. The exterior moments
+and pressure normalized to vanish at radial infinity are consequently retained.
+The first collar is unchanged because both modifications are supported later and
+pressure was integrated from the unchanged axis datum. The last collar is
+unchanged by the exact radial moment restoration. The two unused correction
+patches retain their prescribed reference power law and
+\NSi{NS-F-P163-007}{U=0}.
+
+Finally fix one such finite \NSi{NS-F-P163-008}{N}. Every mixed radial and
+parameter derivative of the resulting profiles is finite, with constants allowed
+to depend on this \NSi{NS-F-P163-009}{N}. This choice is made before any limit in
+the physical scale \NSi{NS-F-P163-010}{q} or any later dyadic band or correction
+stage.
+\end{proof}
+
+\subsection{The two edges and the completed profile.}\label{sec:C.3}
+
+In this subsection, we write \NSi{NS-F-P163-011}{E,U,\Pi} for the corrected
+profiles of Proposition~\ref{prop:C.2} and form all associated quantities from
+them. The interior cone inequalities and exact radial moments are now in place by
+Proposition~\ref{prop:C.2}. In this subsection, we will prove
+Proposition~\ref{prop:C.3} by verifying the remaining assertions at the annular
+edges, where the stress \NSi{NS-F-P163-012}{\mathcal T_0} vanishes. Its direction
+\NSi{NS-F-P163-013}{n} must extend smoothly and retain a strict cone margin, and
+the derivatives of \NSi{NS-F-P163-014}{\mathcal T_0} must satisfy the common
+exponential weight \NSi{NS-F-P163-015}{\zeta} in
+Theorem~\ref{thm:4.6}. Both endpoint collars were preserved, so we can deduce
+these properties from their original stress factorizations \eqref{eq:B.30} and
+Equations~\eqref{eq:A.48} to~\eqref{eq:A.49}. In the weight below,
+\NSi{NS-F-P163-016}{t_1>0} is the fixed activation width in
+\NSi{NS-F-P163-017}{\log(X/X_a)} from Proposition~\ref{prop:4.10}.
+
+\begin{proposition}\label{prop:C.3}
+The profiles of Proposition~\ref{prop:C.2} satisfy all conclusions of
+Theorem~\ref{thm:4.6}, with the weight
+\NSFormula{NS-F-P163-018}{display}{C.18}
+\begin{equation}
+\begin{gathered}
+  y_a=\log(X/X_a),
+  \qquad y_b=\log(X_b/X),
+  \qquad \delta=\min\{1,y_a,y_b\},\\
+  \zeta=\exp\!\left(-\frac{t_1^2}{y_a^2}-\frac{4}{y_b^2}\right)
+  \qquad (X_a<X<X_b),
+\end{gathered}
+\tag{C.18}\label{eq:C.18}
+\end{equation}
+extended by zero for \NSi{NS-F-P163-019}{X\leq X_a} and
+\NSi{NS-F-P163-020}{X\geq X_b}.
+\end{proposition}
+
+\begin{proof}
+The stress is zero up to \NSi{NS-F-P163-021}{X_a} by the analytic axis profile
+and Proposition~\ref{prop:B.5}, and beyond \NSi{NS-F-P163-022}{X_b} by
+Lemma~\ref{lem:A.8}. Proposition~\ref{prop:C.2} preserves these regions and makes
+the admissible stress cone inequalities hold everywhere between them. If the
+stress vanished at an interior point, the identity \eqref{eq:4.11} would give
+\NSi{NS-F-P163-023}{p_s=(a,-b_s)}, hence
+\NSi{NS-F-P163-024}{P_{\mathrm c}=v_s}, contradicting the strict quadratic cone test. This
+proves the stress-support assertion in part~\textup{(ii)} of
+Theorem~\ref{thm:4.6}; the unchanged axis profile also satisfies \eqref{eq:4.13}
+for \NSi{NS-F-P163-025}{X\leq X_a}.
+
+For the cone assertions in part~\textup{(iii)}, set
+\NSi{NS-F-P163-026}{n=\mathcal T_0/|\mathcal T_0|} on
+\NSi{NS-F-P163-027}{X_a<X<X_b}. The bounds
+\NSi{NS-F-P163-028}{F>0}, \NSi{NS-F-P163-029}{a>0}, and
+\NSi{NS-F-P163-030}{v_s>2} follow in the interior from the positive profile
+construction and the admissible stress cone. At the inner endpoint
+\NSi{NS-F-P163-031}{a=p_{1,\mathrm r}>0}, while Proposition~\ref{prop:B.5} gives
+\NSi{NS-F-P163-032}{v_s>2+c} there and the analytic axis profile has
+\NSi{NS-F-P163-033}{F>0}. At the outer endpoint they follow from
+\eqref{eq:A.56}, with \NSi{NS-F-P163-034}{b_s=0}, and positivity of the heat
+factor. Continuity and compactness give the asserted positive lower bounds on the
+closed annulus.
+
+The inner edge has the preserved factorization
+\NSi{NS-F-P163-035}{\mathcal T_0=e_aB_0} in \eqref{eq:B.30}, with
+\NSi{NS-F-P163-036}{e_a=e^{-t_1^2/y_a^2}g_a(y_a)},
+\NSi{NS-F-P163-037}{g_a(0)>0}, and
+\NSi{NS-F-P163-038}{B_0(0,\eta)=Fp_{s,\mathrm r}\neq0}. Its direction is therefore
+smooth, and at the edge it is a
+
+\NSPage{164}%
+positive scalar multiple of the limiting shear
+\NSi{NS-F-P164-001}{(a,-b_s)=a(1,t_s)}. In particular
+\NSi{NS-F-P164-002}{n_z-t_sn_\theta=0} and
+\NSi{NS-F-P164-003}{n_\theta+t_sn_z>0} there. At the outer edge, the preserved
+factors of Proposition~\ref{prop:A.10} give
+\NSFormula{NS-F-P164-004}{display}{none}
+\[
+  n=\frac{(b_\theta,y_b^6b_z)}
+          {\sqrt{b_\theta^2+y_b^{12}b_z^2}},
+  \qquad b_\theta(0,\eta)>0.
+\]
+Thus the outer limiting direction is \NSi{NS-F-P164-005}{(1,0)}, and the
+limiting shear ratio is \NSi{NS-F-P164-006}{t_s=0}. All these statements are
+smooth through \NSi{NS-F-P164-007}{\eta=\pm1}; the heat factor is evaluated only
+on its nonnegative argument domain.
+
+The edge limits allow the interior cone inequalities to be made uniform on the
+closed annulus. In the interior, \eqref{eq:4.11} implies
+\NSFormula{NS-F-P164-008}{display}{none}
+\[
+  n_\theta+t_sn_z
+    =\frac{P_{\mathrm c}-v_s}{|p_s-(a,-b_s)|}>0,
+  \qquad
+  n_z-t_sn_\theta
+    =\frac{J_{\mathrm c}}{|p_s-(a,-b_s)|}.
+\]
+The admissible stress cone makes
+\NSi{NS-F-P164-009}{2-(v_s-2)(n_z-t_sn_\theta)^2/(n_\theta+t_sn_z)^2}
+positive there. Both this expression and its positive denominator extend
+continuously to the two edges; the former has value two at either edge by the
+factorizations just proved. Their compact positive minima yield, for a single
+\NSi{NS-F-P164-010}{0<\kappa<2},
+\NSFormula{NS-F-P164-011}{display}{none}
+\[
+  n_\theta+t_sn_z\geq\kappa,
+  \qquad
+  (v_s-2)(n_z-t_sn_\theta)^2
+    \leq(2-\kappa)(n_\theta+t_sn_z)^2.
+\]
+Together with the endpoint directions and positive lower bounds above, this
+proves part~\textup{(iii)} of Theorem~\ref{thm:4.6}.
+
+For part~\textup{(iv)}, it remains to prove the weighted estimates
+\NSFormula{NS-F-P164-012}{display}{C.19}
+\begin{equation}
+  |\mathcal T_0|\geq c\zeta,
+  \qquad
+  |\partial^I\mathcal T_0|\leq C_I\zeta\delta^{-m_I}
+  \qquad (X_a<X<X_b,\ -1\leq\eta\leq1)
+  \tag{C.19}\label{eq:C.19}
+\end{equation}
+for every fixed mixed profile derivative
+\NSi{NS-F-P164-013}{\partial^I}, with finite constants independent of physical
+\NSi{NS-F-P164-014}{q}.
+
+On an inner collar \NSi{NS-F-P164-015}{\zeta} differs from
+\NSi{NS-F-P164-016}{e^{-t_1^2/y_a^2}} by a smooth positive factor bounded above
+and below; the bounds \eqref{eq:B.31} therefore imply \eqref{eq:C.19} there. On
+an outer collar it differs from \NSi{NS-F-P164-017}{e^{-4/y_b^2}} in the same
+way. The angular factor
+\NSi{NS-F-P164-018}{e^{-4/y_b^2}y_b^{-3}b_\theta}, with
+\NSi{NS-F-P164-019}{b_\theta} bounded below, proves the lower bound, and
+\eqref{eq:A.51} proves every fixed derivative upper bound. On the remaining
+compact interior interval, both \NSi{NS-F-P164-020}{\zeta} and
+\NSi{NS-F-P164-021}{|\mathcal T_0|} have positive minima and all
+fixed derivatives are bounded. Combining the three regions proves
+\eqref{eq:C.19}. The exponential factors also show that extension of the stress
+by zero across both edges is smooth. The definition \eqref{eq:C.18} also makes
+\NSi{NS-F-P164-022}{\zeta} positive in the interior and flat at both edges,
+completing part~\textup{(iv)} of Theorem~\ref{thm:4.6}.
+
+For the regularity in part~\textup{(i)}, Proposition~\ref{prop:B.2} supplies the
+smooth axis profiles with \NSi{NS-F-P164-023}{F>0}, and
+Corollary~\ref{cor:B.6} preserves the common analytic rectangle
+\NSi{NS-F-P164-024}{[0,X_{\mathrm{an}}]\times[-1,1]}. The factors give Cartesian
+smoothness across the axis by Equations~\eqref{eq:4.4} to~\eqref{eq:4.5}. The
+later modifications in Proposition~\ref{prop:C.2} are smooth and preserve
+positivity, with finite mixed derivative bounds on each fixed radial interval.
+The inner directional margin is part~\textup{(iii)}, proved above. The heat
+profile is smooth through \NSi{NS-F-P164-025}{\eta=\pm1} by
+Lemma~\ref{lem:A.6}; no analyticity of its factor at zero is needed. The pressure
+normalization \eqref{eq:4.25} follows from Lemma~\ref{lem:A.5} and
+Propositions~\ref{prop:A.7} and~\ref{prop:B.8} and is retained by
+\eqref{eq:C.17}. This completes part~\textup{(i)}. Differentiating this pressure
+formula gives \NSi{NS-F-P164-026}{\Pi_X=E^2/(2X)=F^2}, with its smooth extension
+at \NSi{NS-F-P164-027}{X=0}. The exact tangential residual identities follow
+from Proposition~\ref{prop:4.2}; together with the support and axis checks above,
+they complete part~\textup{(ii)}.
+
+For part~\textup{(v)}, the exact exterior moments \eqref{eq:4.28} are supplied by
+Propositions~\ref{prop:A.7} and~\ref{prop:B.8} and retained by
+\eqref{eq:C.17}. The same restoration preserves the heat exterior
+\eqref{eq:4.29}, whose exact heat evolution and smoothness are proved in
+Lemma~\ref{lem:A.6}. We take
+\NSi{NS-F-P164-028}{X_{\mathrm v}=X_{\mathrm{end}}\in(X_a,X_b)},

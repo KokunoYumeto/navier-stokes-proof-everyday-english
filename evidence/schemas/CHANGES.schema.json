@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/navier-stokes-everyday/CHANGES.schema.json",
+  "title": "Everyday English range change record",
+  "description": "One record for a retained or changed prose block, including splits, merges, moves, and logical punctuation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "record_type",
+    "status",
+    "pdf_pages",
+    "source_segment_ids",
+    "target_segment_ids",
+    "change_kind",
+    "exact_change",
+    "reason",
+    "rejected_alternatives",
+    "canon_support",
+    "canon_gap",
+    "mathematical_risk",
+    "validation_outcome",
+    "supersession"
+  ],
+  "properties": {
+    "id": { "$ref": "#/$defs/recordId" },
+    "record_type": { "const": "change" },
+    "status": { "$ref": "#/$defs/status" },
+    "pdf_pages": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/pdfPage" }
+    },
+    "source_segment_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/nonemptyString" }
+    },
+    "target_segment_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/targetSegmentId" }
+    },
+    "change_kind": {
+      "enum": [
+        "translated",
+        "retained",
+        "split",
+        "merged",
+        "moved_referent",
+        "logical_punctuation",
+        "moved_inline_mathematics",
+        "other"
+      ]
+    },
+    "exact_change": { "$ref": "#/$defs/nonemptyString" },
+    "reason": { "$ref": "#/$defs/nonemptyString" },
+    "rejected_alternatives": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["alternative", "rejection_reason"],
+        "properties": {
+          "alternative": { "$ref": "#/$defs/nonemptyString" },
+          "rejection_reason": { "$ref": "#/$defs/nonemptyString" }
+        }
+      }
+    },
+    "canon_support": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/canonSupport" }
+    },
+    "canon_gap": { "type": ["string", "null"] },
+    "mathematical_risk": { "$ref": "#/$defs/nonemptyString" },
+    "validation_outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["overall", "same_meaning", "notation", "definition", "formula", "cross_reference", "proof_dependency"],
+      "properties": {
+        "overall": { "$ref": "#/$defs/requiredCheck" },
+        "same_meaning": { "$ref": "#/$defs/requiredCheck" },
+        "notation": { "$ref": "#/$defs/check" },
+        "definition": { "$ref": "#/$defs/check" },
+        "formula": { "$ref": "#/$defs/check" },
+        "cross_reference": { "$ref": "#/$defs/check" },
+        "proof_dependency": { "$ref": "#/$defs/check" }
+      }
+    },
+    "supersession": { "$ref": "#/$defs/supersession" }
+  },
+  "$defs": {
+    "nonemptyString": { "type": "string", "minLength": 1 },
+    "recordId": { "type": "string", "minLength": 1, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$" },
+    "targetSegmentId": { "type": "string", "pattern": "^EE-TGT-P[0-9]{3}-[0-9]{3}$" },
+    "status": { "enum": ["pass", "pending", "fail", "superseded"] },
+    "pdfPage": { "type": "integer", "minimum": 1, "maximum": 166 },
+    "canonSupport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passage_id", "supports", "why_fit", "evidence_limits"],
+      "properties": {
+        "passage_id": { "type": "string", "pattern": "^EE-[0-9]{3}$" },
+        "supports": { "$ref": "#/$defs/nonemptyString" },
+        "why_fit": { "$ref": "#/$defs/nonemptyString" },
+        "evidence_limits": { "$ref": "#/$defs/nonemptyString" }
+      }
+    },
+    "requiredCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["result", "evidence"],
+      "properties": {
+        "result": { "enum": ["pass", "pending", "fail"] },
+        "evidence": { "$ref": "#/$defs/nonemptyString" }
+      }
+    },
+    "check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["result", "evidence"],
+      "properties": {
+        "result": { "enum": ["pass", "pending", "fail", "not_applicable"] },
+        "evidence": { "$ref": "#/$defs/nonemptyString" }
+      }
+    },
+    "supersession": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supersedes", "superseded_by"],
+      "properties": {
+        "supersedes": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/recordId" } },
+        "superseded_by": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/recordId" } }
+      }
+    }
+  }
+}

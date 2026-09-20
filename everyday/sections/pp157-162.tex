@@ -1,0 +1,542 @@
+\NSPage{157}%
+\begin{EESegment}{EE-TGT-P157-001}
+Corollary~\ref{cor:A.3} shows that this matrix has an inverse everywhere on the compact parameter interval, with one uniform bound on that inverse. The
+nonlinear terms are exactly quadratic. Lemma~\ref{lem:A.2} therefore solves the five equations with
+smooth coefficients whose prescribed finite set of \NSi{NS-F-P157-001}{\eta}-derivatives satisfy the required smallness
+bounds. Every other fixed higher derivative also exists and has its own finite bound. To prove \eqref{eq:B.36},
+first fix the radius of the small-discrepancy neighborhood using the outer profile data, and then use that radius in the estimates above. The bumps sit strictly inside their
+patch, so the fields equal the ideal near the patch's right endpoint. All five rows use the same
+\NSi{NS-F-P157-002}{\Pi_0}, and \eqref{eq:B.35} then gives them the same pressure and the same functions \NSi{NS-F-P157-003}{Q_s,N_s}. Lemma~\ref{lem:4.4} carries this
+equality along the outer radial profile.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P157-002}
+\subsection{The order of the choices and the completed connection.}\label{sec:B.9}
+This subsection puts all the
+parameter choices in order and states the completed connection. The matching tolerance in \eqref{eq:B.36}
+depends only on the outer data. Lemma~\ref{lem:B.7} bounds the radial transition length \NSi{NS-F-P157-004}{T_{\mathrm{sh}}} in \eqref{eq:B.33}
+without using the final amplitude \NSi{NS-F-P157-005}{\mathsf C}. Because of these two facts, the amplitude can be chosen to reduce the moment discrepancies before the last transition widths
+are fixed. The full order is shown in \eqref{eq:B.40}.
+\end{EESegment}
+
+\begin{remark}\label{rem:B.9}
+\begin{EESegment}{EE-TGT-P157-003}
+Fix any finite list of \NSi{NS-F-P157-006}{\eta}-derivative orders whose bounds are needed to preserve
+the profile inequalities and solve the finite moment equations. Include the extra parameter
+derivative in \eqref{eq:B.35}. The choices made above and in Section~\ref{sec:A} can then be made in this order.
+\end{EESegment}
+\NSFormula{NS-F-P157-007}{display}{B.40}
+\begin{equation}
+\begin{aligned}
+ M_d,\ T_d,\ P_*,\ \lambda,\ h
+ &\longrightarrow \text{ tolerance for matching moments},\ j_0
+ \longrightarrow \delta_*,\sigma_*,\Lambda\\
+ &\longrightarrow (\mathcal B_k),\ T_{\mathrm{sh}}
+ \longrightarrow \mathsf C,\ X_R
+ \longrightarrow \kappa_0,\ t_1,\ \text{ widths of final transitions}.
+\end{aligned}
+\tag{B.40}\label{eq:B.40}
+\end{equation}
+\begin{EESegment}{EE-TGT-P157-004}
+First choose the outer profile so that
+\NSi{NS-F-P157-008}{C_{\mathrm{pre}}\sqrt{\lambda}(1+\log(1/\lambda))} is small. Then choose
+\NSi{NS-F-P157-009}{h\ll\lambda} and
+\NSi{NS-F-P157-010}{h\ll e^{-T_d}}, after \NSi{NS-F-P157-011}{C_{\mathrm{pre}}} has already been fixed. The exterior-profile data set the tolerance for matching the moments, as \eqref{eq:B.37} shows. The choices of \NSi{NS-F-P157-012}{j_0} and \NSi{NS-F-P157-013}{\Lambda} make the two contributions
+\NSi{NS-F-P157-014}{j_0} and \NSi{NS-F-P157-015}{C^{\mathrm{nat}}_{k_{\mathrm{nat}}}/\Lambda} to the
+axial matching error small enough. Lemma~\ref{lem:B.7} fixes \NSi{NS-F-P157-016}{T_{\mathrm{sh}}} before the final amplitude is chosen. Then
+choose the amplitude to ensure
+\NSi{NS-F-P157-017}{p_{1,\mathrm r}+p_{2,\mathrm r}^2/p_{1,\mathrm r}>2+c}, make the outer profile obey the cone inequalities at
+large radius, put \NSi{NS-F-P157-018}{X_{\mathrm{sep}}/X_R<e^{-8}}, and give the inner-interval contributions in \eqref{eq:B.39} the required bounds.
+The last narrow transitions give the activation comparisons and control the errors that remain at
+\NSi{NS-F-P157-019}{X=X_i}, without losing the bound already proved. Choose the radial frequency used to realize the admissible stress cone only after all these finite choices have been made. Only the prescribed finite set of \NSi{NS-F-P157-020}{\eta}-derivative bounds needs to be small. Once the choices are made, derivatives of every other
+fixed order still have finite bounds, though radial cutoff derivatives may
+contain inverse powers of the final widths.
+\end{EESegment}
+\end{remark}
+
+\begin{corollary}\label{cor:B.10}
+\begin{EESegment}{EE-TGT-P157-005}
+The analytic axis profile from Proposition~\ref{prop:B.2} has a smooth continuation with
+\NSi{NS-F-P157-021}{E>0} for \NSi{NS-F-P157-022}{X>0}. At
+\NSi{NS-F-P157-023}{\log(X/X_R)=-5}, it matches the reference outer radial profile, including the exact fields,
+pressure, and radial moment functions. Its leading residual stress is zero through
+\NSi{NS-F-P157-024}{X_0}. This is followed
+by an inner collar where the profile remains analytic in \NSi{NS-F-P157-025}{\eta}, obeys the admissible stress cone
+condition, and has the flat factor in \eqref{eq:B.30}. From there to the matching point, it obeys the strict inequalities of the relaxed cone condition. Its finite parameters can be chosen in the order shown in \eqref{eq:B.40}.
+\end{EESegment}
+\end{corollary}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P157-006}
+Combine Propositions~\ref{prop:B.5} and~\ref{prop:B.8}, the fact that
+\NSi{NS-F-P157-026}{p_1>2} remains true along the profile \eqref{eq:B.34},
+and Corollary~\ref{cor:B.6}.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P157-007}
+\section{Realizing the admissible stress cone}\label{sec:C}
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P157-008}
+Corollary~\ref{cor:B.10} joins the inner and outer profiles \NSi{NS-F-P157-027}{E,U,\Pi} with the required pressure datum
+and radial moments. One condition is still missing on part of the joining interval.
+\end{EESegment}
+\NSPage{158}%
+\begin{EESegment}{EE-TGT-P158-001}
+There, the shear
+\NSi{NS-F-P158-001}{(a,-b_s)} obeys only the relaxed cone condition \eqref{eq:4.21}. The wave construction also needs the
+inequality \NSi{NS-F-P158-002}{v_s>2} from Lemma~\ref{lem:4.5}. This appendix makes that inequality hold by changing the shear rapidly in the radial direction, with the change kept away from the axis and the exterior.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P158-002}
+The shear is determined by radial derivatives in \eqref{eq:4.11}, while the cumulative moments
+\NSi{NS-F-P158-003}{\mathfrak m=(M,I,J,S,C_p)} are determined by profile values in \eqref{eq:4.15}. That difference makes it possible to change the shear by order one while changing the profiles and their moments only a little. First prescribe a periodic family of admissible shears \NSi{NS-F-P158-004}{(a_L,-b_L)} whose mean is the original shear, as in Lemma~\ref{lem:C.1}. Then integrate that family at high radial frequency. A correction on the next reserved
+interval listed after \eqref{eq:A.9} restores all five moments exactly, and this keeps the exterior
+fields unchanged, as Proposition~\ref{prop:C.2} proves.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P158-003}
+Take the profile supplied by Corollary~\ref{cor:B.10}, Proposition~\ref{prop:A.4}, and Proposition~\ref{prop:A.7}.
+Proposition~\ref{prop:B.8} matches the axis profile's radial moments to the reference outer profile's moments. That match supplies the regular axis and exact moments required in Lemma~\ref{lem:A.8}. Together, these results fix the input profile \NSi{NS-F-P158-005}{E,U,\Pi} used below. This profile and all its parameters stay fixed while the shear is modulated and the moments are corrected in this appendix. Its leading residual stress \NSi{NS-F-P158-006}{\mathcal T_0} is nonzero exactly on
+\NSi{NS-F-P158-007}{(X_a,X_b)}, whose endpoints do not depend on \NSi{NS-F-P158-008}{\eta}. The profile obeys the strict inequalities of the relaxed cone condition
+throughout that interval. It obeys the full admissible stress cone condition on an inner collar and again from the intermediate power-law interval onward, by Propositions~\ref{prop:A.4}, \ref{prop:A.7} and~\ref{prop:A.10}. The two
+edge factorizations are \eqref{eq:B.30} and Equations~\eqref{eq:A.48} to~\eqref{eq:A.49}. Choose a compact interval
+\NSi{NS-F-P158-009}{\mathcal I=[X_-,X_+]\Subset(X_a,X_b)} that contains every point where the admissible stress cone condition
+may fail. It starts inside the first collar where that condition holds and ends in the intermediate power-law interval before its first reserved patch. Shorter
+collars at \NSi{NS-F-P158-010}{X_a} and \NSi{NS-F-P158-011}{X_b} remain unchanged. Also fix the rectangle near the axis from
+Corollary~\ref{cor:B.6}, where \NSi{NS-F-P158-012}{E/\sqrt{2X},U,V_0/X,\Pi} are smooth in
+\NSi{NS-F-P158-013}{X,\eta} and analytic in \NSi{NS-F-P158-014}{\eta} on the same
+complex neighborhood. Choose the rectangle's radial endpoint inside the shorter inner collar and before \NSi{NS-F-P158-015}{X_-}. Call this endpoint \NSi{NS-F-P158-016}{X_{\mathrm{an}}}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P158-004}
+\subsection{A loop with the prescribed mean.}\label{sec:C.1}
+At every profile point, this subsection constructs a family
+\NSi{NS-F-P158-017}{(a_L,-b_L)} of shear vectors while keeping the integrated residual coefficient
+\NSi{NS-F-P158-018}{p_s}
+fixed, as stated in Lemma~\ref{lem:C.1}. The family's average must be \NSi{NS-F-P158-019}{(a,-b_s)}. Its difference from that original shear then has mean zero, so it has a periodic antiderivative, a periodic function whose derivative is that difference. Proposition~\ref{prop:C.2} integrates this difference into a
+small change of the profiles. The family must change smoothly with \NSi{NS-F-P158-020}{(X,\eta)} and must still equal
+the original shear near the radial boundaries, where nothing needs to change.
+\end{EESegment}
+
+\begin{lemma}\label{lem:C.1}
+\begin{EESegment}{EE-TGT-P158-005}
+Let \NSi{NS-F-P158-021}{a,b_s,p_s} be smooth on \NSi{NS-F-P158-022}{\mathcal I\times[-1,1]}, with
+\NSi{NS-F-P158-023}{a>0}, and set
+\NSi{NS-F-P158-024}{t_s=-b_s/a}, \NSi{NS-F-P158-025}{v_s=a(1+t_s^2)}.
+Suppose the strict inequalities of the relaxed cone condition in \eqref{eq:4.21} hold everywhere, and suppose the
+admissible stress cone holds near both radial boundary components. Then there is a
+smooth loop \NSi{NS-F-P158-026}{(a_L,-b_L)(X,\eta,\varphi)}, with period one in \NSi{NS-F-P158-027}{\varphi} and
+\NSi{NS-F-P158-028}{a_L>0}, whose mean is the original shear.
+\end{EESegment}
+\NSFormula{NS-F-P158-029}{display}{C.1}
+\begin{equation}
+ \int_0^1 (a_L,-b_L)\,d\varphi=(a,-b_s).
+\tag{C.1}\label{eq:C.1}
+\end{equation}
+\begin{EESegment}{EE-TGT-P158-006}
+Let \NSi{NS-F-P158-030}{\Psi} be the vector of cone gaps in \eqref{eq:4.35}. There are constants
+\NSi{NS-F-P158-031}{\kappa_L,\delta_\partial>0}, depending on the fixed data
+\NSi{NS-F-P158-032}{a,b_s,p_s,\mathcal I}, for which every cone gap has the following uniform lower bound.
+\end{EESegment}
+\NSFormula{NS-F-P158-033}{display}{C.2}
+\begin{equation}
+\begin{gathered}
+ \Psi_j\bigl(a_L(X,\eta,\varphi),b_L(X,\eta,\varphi),p_s(X,\eta)\bigr)\geq\kappa_L,\\
+ (X,\eta,\varphi)\in\mathcal I\times[-1,1]\times(\R/\Z),
+ \qquad j=1,2,3,4.
+\end{gathered}
+\tag{C.2}\label{eq:C.2}
+\end{equation}
+\NSPage{159}%
+\begin{EESegment}{EE-TGT-P159-001}
+On the radial boundary collars, the loop is exactly the original shear.
+\end{EESegment}
+\NSFormula{NS-F-P159-001}{display}{C.3}
+\begin{equation}
+\begin{gathered}
+ (a_L,-b_L)(X,\eta,\varphi)=(a,-b_s)(X,\eta),\\
+ X\in\mathcal I,\qquad \operatorname{dist}(X,\partial\mathcal I)<\delta_\partial,
+ \qquad (\eta,\varphi)\in[-1,1]\times(\R/\Z).
+\end{gathered}
+\tag{C.3}\label{eq:C.3}
+\end{equation}
+\begin{EESegment}{EE-TGT-P159-002}
+Every smoothness statement here includes the endpoints of the parameter interval
+\NSi{NS-F-P159-002}{-1\leq\eta\leq1}.
+\end{EESegment}
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P159-003}
+Write each shear vector as a positive multiple of \NSi{NS-F-P159-003}{(1,t)}. Vary the ratio \NSi{NS-F-P159-004}{t} while keeping its
+mean equal to \NSi{NS-F-P159-005}{t_s}, choose a scalar \NSi{NS-F-P159-006}{v>2}, and look for admissible vectors of the form
+\NSi{NS-F-P159-007}{v(1,t)/(1+t^2)}. The
+variance of \NSi{NS-F-P159-008}{t} sets \NSi{NS-F-P159-009}{v}. Reparametrizing the loop then gives these
+vectors the required mean \NSi{NS-F-P159-010}{(a,-b_s)}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P159-004}
+Use an auxiliary angle \NSi{NS-F-P159-011}{\theta'}, and write
+\NSi{NS-F-P159-012}{\langle f\rangle_{\theta'}=(2\pi)^{-1}\int_0^{2\pi}f(\theta')\,d\theta'} for its average. This is not the physical angular average or the auxiliary-torus average. Put
+\NSi{NS-F-P159-013}{P_{\mathrm c}(t)=p_{s,1}+p_{s,2}t} and
+\NSi{NS-F-P159-014}{J_{\mathrm c}(t)=p_{s,2}-p_{s,1}t}. Choose
+\NSi{NS-F-P159-015}{0<d_0<\tfrac12\min(P_{\mathrm c}(t_s)-2)}, and define
+\end{EESegment}
+\NSFormula{NS-F-P159-016}{display}{C.4}
+\begin{equation}
+ M_e(z)=\bigl\langle e^{z\sin\theta'}\bigr\rangle_{\theta'},
+\tag{C.4}\label{eq:C.4}
+\end{equation}
+\NSFormula{NS-F-P159-017}{display}{C.5}
+\begin{equation}
+ t(\theta';\mu)=t_s+d_0
+ \frac{e^{\mu p_{s,2}\sin\theta'}/M_e(\mu p_{s,2})-1}{p_{s,2}},
+ \qquad \mu\geq0.
+\tag{C.5}\label{eq:C.5}
+\end{equation}
+\begin{EESegment}{EE-TGT-P159-005}
+The formula looks singular when \NSi{NS-F-P159-018}{p_{s,2}=0}, but that singularity is removable. For a smooth numerator
+\NSi{NS-F-P159-019}{G(p)} with
+\NSi{NS-F-P159-020}{G(0)=0}, the identity
+\NSi{NS-F-P159-021}{G(p)/p=\int_0^1G'(up)\,du} removes the division by zero. Applying it to \eqref{eq:C.5} shows that the family is smooth jointly in
+all its variables and gives the value \NSi{NS-F-P159-022}{t=t_s+d_0\mu\sin\theta'} when
+\NSi{NS-F-P159-023}{p_{s,2}=0}. The family also obeys
+\end{EESegment}
+\NSFormula{NS-F-P159-024}{display}{none}
+\begin{gather*}
+ \langle t\rangle_{\theta'}=t_s,
+ \qquad P_{\mathrm c}(t)\geq P_{\mathrm c}(t_s)-d_0>2,\\
+ V(\mu,p_{s,2}):=\bigl\langle(t-t_s)^2\bigr\rangle_{\theta'}
+ =\frac{d_0^2}{p_{s,2}^2}
+ \left[\frac{M_e(2\mu p_{s,2})}{M_e(\mu p_{s,2})^2}-1\right].
+\end{gather*}
+\begin{EESegment}{EE-TGT-P159-006}
+When \NSi{NS-F-P159-025}{p_{s,2}=0}, the last expression is \NSi{NS-F-P159-026}{d_0^2\mu^2/2}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P159-007}
+A prescribed finite variance can be reached uniformly over the compact
+range of \NSi{NS-F-P159-027}{p_{s,2}}, including the point \NSi{NS-F-P159-028}{p_{s,2}=0}. To see this, let
+\NSi{NS-F-P159-029}{g=\log M_e}. Its second derivative is the variance of
+\NSi{NS-F-P159-030}{\sin\theta'}
+under the strictly positive tilted probability density. This density weights each angle by the exponential in \eqref{eq:C.4} and divides by the average of those weights. Therefore \NSi{NS-F-P159-031}{g''>0}. For
+\NSi{NS-F-P159-032}{p\neq0} and \NSi{NS-F-P159-033}{\mu>0},
+\end{EESegment}
+\NSFormula{NS-F-P159-034}{display}{C.6}
+\begin{equation}
+ \partial_\mu\{g(2\mu p)-2g(\mu p)\}
+ =2p\{g'(2\mu p)-g'(\mu p)\}>0.
+\tag{C.6}\label{eq:C.6}
+\end{equation}
+\begin{EESegment}{EE-TGT-P159-008}
+So \NSi{NS-F-P159-035}{V} rises strictly as \NSi{NS-F-P159-036}{\mu>0} rises, including when
+\NSi{NS-F-P159-037}{p=0}. Near the maximum of
+\NSi{NS-F-P159-038}{\sin\theta'}, matching quadratics bound the function above and below. Away from that maximum, the function stays below it by a uniform gap. Together these facts give
+\NSi{NS-F-P159-039}{M_e(z)\asymp e^{|z|}/\sqrt{|z|}} for \NSi{NS-F-P159-040}{|z|\geq1}. As a result,
+\NSi{NS-F-P159-041}{M_e(2z)/M_e(z)^2\asymp\sqrt{|z|}}, and
+\NSi{NS-F-P159-042}{V(\mu,p)\to\infty} for
+every fixed \NSi{NS-F-P159-043}{p}, including zero. The range of \NSi{NS-F-P159-044}{p_{s,2}} is compact. Continuity, strict increase, and a finite cover of that range therefore give one finite \NSi{NS-F-P159-045}{\mu_{\max}} such that
+\end{EESegment}
+\NSFormula{NS-F-P159-046}{display}{C.7}
+\begin{equation}
+ V(\mu_{\max},p_{s,2})>3/\min a
+ \qquad\text{throughout }\mathcal I\times[-1,1].
+\tag{C.7}\label{eq:C.7}
+\end{equation}
+
+\begin{EESegment}{EE-TGT-P159-009}
+This makes it possible to choose the variance of \NSi{NS-F-P159-047}{t} everywhere on the compact parameter set. Next, bound the allowed value of \NSi{NS-F-P159-048}{v} so that every resulting shear vector stays inside the cone.
+For \NSi{NS-F-P159-049}{0\leq\mu\leq\mu_{\max}}, the functions
+\NSi{NS-F-P159-050}{t(\theta';\mu)} form a compact family with
+\NSi{NS-F-P159-051}{P_{\mathrm c}(t)>2}. The upper
+admissible bound \NSi{NS-F-P159-052}{\mathcal U} for \NSi{NS-F-P159-053}{v} in \eqref{eq:4.21} is the smaller root in
+\NSi{NS-F-P159-054}{v} of
+\NSi{NS-F-P159-055}{2(P_{\mathrm c}-v)^2=(v-2)J_{\mathrm c}^2}. This root changes continuously across the family and stays strictly above two. Choose \NSi{NS-F-P159-056}{0<\delta_L<1} small enough that
+\end{EESegment}
+\NSFormula{NS-F-P159-057}{display}{C.8}
+\begin{equation}
+ \mathcal U(P_{\mathrm c}(t),J_{\mathrm c}(t))>2+\delta_L
+ \qquad(0\leq\mu\leq\mu_{\max}).
+\tag{C.8}\label{eq:C.8}
+\end{equation}
+\begin{EESegment}{EE-TGT-P159-010}
+Make \NSi{NS-F-P159-058}{\delta_L} smaller again, if needed, so that it lies below the positive minimum of \NSi{NS-F-P159-059}{v_s-2} on smaller neighborhoods of the
+radial boundaries. Choose \NSi{NS-F-P159-060}{\delta_L} only after \NSi{NS-F-P159-061}{\mu_{\max}} has been fixed.
+\end{EESegment}
+
+\NSPage{160}%
+\begin{EESegment}{EE-TGT-P160-001}
+Only the region where \NSi{NS-F-P160-001}{v_s} is near or below two needs nonzero variance. Leave the
+admissible boundary data unchanged. Let \NSi{NS-F-P160-002}{\zeta_L} be a smooth nonnegative function of
+\NSi{NS-F-P160-003}{v_s}, no larger than one, equal to one when \NSi{NS-F-P160-004}{v_s\leq2+\delta_L/8}, and equal to zero when
+\NSi{NS-F-P160-005}{v_s\geq2+\delta_L/4}. Set
+\end{EESegment}
+\NSFormula{NS-F-P160-006}{display}{C.9}
+\begin{equation}
+ v_*=2+\delta_L/2,
+ \qquad \rho=\zeta_L(v_s)^2(v_*-v_s),
+ \qquad v=v_s+\rho,
+\tag{C.9}\label{eq:C.9}
+\end{equation}
+\begin{EESegment}{EE-TGT-P160-002}
+where \NSi{NS-F-P160-007}{\rho} is zero outside the support of the cutoff. Its nonnegative square root
+is smooth. Wherever the cutoff can be nonzero, \NSi{NS-F-P160-008}{v_*-v_s\geq\delta_L/4}, so that square root is
+\NSi{NS-F-P160-009}{\zeta_L(v_s)\sqrt{v_*-v_s}}, extended by zero. Also \NSi{NS-F-P160-010}{0\leq\rho<3}. Solve
+\end{EESegment}
+\NSFormula{NS-F-P160-011}{display}{C.10}
+\begin{equation}
+ V(\mu,p_{s,2})=\rho/a,
+ \qquad 0\leq\mu<\mu_{\max}.
+\tag{C.10}\label{eq:C.10}
+\end{equation}
+\begin{EESegment}{EE-TGT-P160-003}
+Equation~\eqref{eq:C.7} and strict monotonicity give existence and uniqueness. Smooth dependence still has to be checked where \NSi{NS-F-P160-012}{\rho=0}. The expansion of \eqref{eq:C.4}, uniform for bounded
+\NSi{NS-F-P160-013}{p}, is
+\end{EESegment}
+\NSFormula{NS-F-P160-014}{display}{none}
+\[
+ V(\mu,p)=\tfrac12d_0^2\mu^2+O(\mu^4p^2).
+\]
+\begin{EESegment}{EE-TGT-P160-004}
+The signed square root of \NSi{NS-F-P160-015}{V} is smooth and odd near \NSi{NS-F-P160-016}{\mu=0}, and its derivative there is
+\NSi{NS-F-P160-017}{d_0/\sqrt2}. Apply the
+implicit function theorem to this square root and to the smooth right side
+\NSi{NS-F-P160-018}{\sqrt\rho/\sqrt a}. This proves smoothness through \NSi{NS-F-P160-019}{\rho=0}. Away from zero, smoothness follows from \eqref{eq:C.6}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P160-005}
+The definition of \NSi{NS-F-P160-020}{\rho} also gives
+\end{EESegment}
+\NSFormula{NS-F-P160-021}{display}{none}
+\[
+ v=(1-\zeta_L(v_s)^2)v_s+\zeta_L(v_s)^2v_*.
+\]
+\begin{EESegment}{EE-TGT-P160-006}
+Since \NSi{NS-F-P160-022}{0\leq\zeta_L\leq1}, the three cutoff regimes are
+\end{EESegment}
+\NSFormula{NS-F-P160-023}{display}{none}
+\[
+\begin{aligned}
+ v&=v_* &&\text{if }v_s\leq2+\delta_L/8,\\
+ 2<v_s\leq v&\leq v_* &&\text{if }2+\delta_L/8<v_s<2+\delta_L/4,\\
+ v&=v_s>2 &&\text{if }v_s\geq2+\delta_L/4.
+\end{aligned}
+\]
+\begin{EESegment}{EE-TGT-P160-007}
+Thus \NSi{NS-F-P160-024}{v>2} everywhere, and \NSi{NS-F-P160-025}{v\leq v_*} wherever the cutoff is nonzero. Wherever the cutoff
+is zero, \NSi{NS-F-P160-026}{\mu=0} and \NSi{NS-F-P160-027}{v=v_s>2}, so the given data \NSi{NS-F-P160-028}{a,b_s,p_s} obey the strict inequalities of the relaxed cone condition. Equation~\eqref{eq:C.8} now shows that every proposed state satisfies
+\NSi{NS-F-P160-029}{2<v<\mathcal U(P_{\mathrm c}(t),J_{\mathrm c}(t))}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P160-008}
+The vectors now lie in the admissible cone. Their average still depends on how long the loop
+spends at each value of \NSi{NS-F-P160-030}{t}. To give both shear components their prescribed averages, reparametrize
+\NSi{NS-F-P160-031}{\theta'} by a
+lifted angle \NSi{NS-F-P160-032}{\varphi}, starting from \NSi{NS-F-P160-033}{\theta'=0}, according to
+\end{EESegment}
+\NSFormula{NS-F-P160-034}{display}{none}
+\[
+ \frac{d\varphi}{d\theta'}=\frac{a(1+t^2)}{2\pi v},
+ \qquad (a_L,-b_L)=\frac{v(1,t)}{1+t^2}.
+\]
+\begin{EESegment}{EE-TGT-P160-009}
+Because \NSi{NS-F-P160-035}{a\langle1+t^2\rangle_{\theta'}=v_s+aV=v}, the lift obeys
+\NSi{NS-F-P160-036}{\varphi(\theta'+2\pi)=\varphi(\theta')+1}. Its derivative has a
+positive lower bound across the compact family. It therefore gives a circle diffeomorphism, a smooth one-to-one change of angle whose inverse also depends smoothly on the parameters. Changing variables gives
+\end{EESegment}
+\NSFormula{NS-F-P160-037}{display}{none}
+\[
+ \int_0^1a_L\,d\varphi=a,
+ \qquad
+ \int_0^1(-b_L)\,d\varphi=a\langle t\rangle_{\theta'}=at_s=-b_s.
+\]
+\begin{EESegment}{EE-TGT-P160-010}
+The loop obeys \NSi{NS-F-P160-038}{-b_L/a_L=t} and \NSi{NS-F-P160-039}{a_L(1+t^2)=v}, so the scalar inequalities just proved give the admissible stress cone inequalities. On the boundary neighborhoods the cutoff
+vanishes, so the loop equals the original shear \NSi{NS-F-P160-040}{(a,-b_s)}. Compactness gives the uniform
+margins in \eqref{eq:C.2} for \NSi{NS-F-P160-041}{a_L}, \NSi{NS-F-P160-042}{v-2}, and the two strict inequalities of the quadratic cone test. The fixed
+boundary neighborhoods give \eqref{eq:C.3}.
+\end{EESegment}
+\end{proof}
+
+\NSPage{161}%
+\begin{EESegment}{EE-TGT-P161-001}
+\subsection{Radial modulation and exact restoration of the radial moment functions.}\label{sec:C.2}
+Lemma~\ref{lem:C.1} built the loop while keeping \NSi{NS-F-P161-001}{p_s} fixed. This subsection inserts that loop into the
+profiles \NSi{NS-F-P161-002}{E,U} and controls the resulting change in \NSi{NS-F-P161-003}{p_s}, which is determined by their radial moments
+through \eqref{eq:4.16}. Evaluate periodic antiderivatives at \NSi{NS-F-P161-004}{N\log X} and divide them by \NSi{NS-F-P161-005}{N}. Then the profile values change by \NSi{NS-F-P161-006}{O(N^{-1})}, while the shear changes by order one. The proof of
+Proposition~\ref{prop:C.2} proves these estimates, bounds the resulting moment errors by
+\NSi{NS-F-P161-007}{O(N^{-1})},
+and removes the errors on the reserved correction interval. The comparison with the fixed input
+profile \NSi{NS-F-P161-008}{E,U,\Pi} in the next proposition does not say that the radial derivatives are small.
+\end{EESegment}
+
+\begin{proposition}\label{prop:C.2}
+\begin{EESegment}{EE-TGT-P161-002}
+Start with the fixed input profile \NSi{NS-F-P161-009}{E,U,\Pi} chosen at the beginning of this appendix. A sufficiently large finite integer \NSi{NS-F-P161-010}{N}, together with a correction supported in the first reserved patch in the
+intermediate power-law interval, gives smooth profiles \NSi{NS-F-P161-011}{\widetilde E,\widetilde U,\widetilde\Pi} with
+\NSi{NS-F-P161-012}{\widetilde E>0} for \NSi{NS-F-P161-013}{X>0}. These profiles obey
+the admissible stress cone everywhere in \NSi{NS-F-P161-014}{(X_a,X_b)}. Both endpoint collars, the rectangle near the axis
+described above, and the two patches reserved for higher-order and mean corrections stay unchanged.
+Define \NSi{NS-F-P161-015}{\widetilde{\mathfrak m},\widetilde Q_s,\widetilde N_s} from these profiles by \eqref{eq:4.15} and \eqref{eq:4.16}. Then
+\end{EESegment}
+\NSFormula{NS-F-P161-016}{display}{none}
+\[
+ (\widetilde{\mathfrak m},\widetilde\Pi,\widetilde Q_s,\widetilde N_s)
+ =(\mathfrak m,\Pi,Q_s,N_s)
+ \qquad\text{beyond the first correction patch}.
+\]
+\begin{EESegment}{EE-TGT-P161-003}
+Before that point, the profile values and any fixed number of \NSi{NS-F-P161-017}{\eta}-derivatives differ from those of the input
+profile by \NSi{NS-F-P161-018}{O(N^{-1})}.
+\end{EESegment}
+\end{proposition}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P161-004}
+The loop has the same prescribed averages as the original shear, so their differences have mean zero in the periodic variable. Let \NSi{NS-F-P161-019}{\mathscr A,\mathscr B} be the unique zero-mean periodic
+antiderivatives
+\end{EESegment}
+\NSFormula{NS-F-P161-020}{display}{C.11}
+\begin{equation}
+ \partial_\varphi\mathscr A=-\tfrac12(a_L-a),
+ \qquad
+ \partial_\varphi\mathscr B=\tfrac12E(b_L-b_s).
+\tag{C.11}\label{eq:C.11}
+\end{equation}
+\begin{EESegment}{EE-TGT-P161-005}
+They exist because of \eqref{eq:C.1}, are smooth, and are identically zero on the boundary neighborhoods of
+\NSi{NS-F-P161-021}{\mathcal I}.
+Extend them by zero in the radial direction and set
+\end{EESegment}
+\NSFormula{NS-F-P161-022}{display}{C.12}
+\begin{equation}
+ E_N=E\exp\!\left(\frac{\mathscr A(X,\eta,N\log X)}{N}\right),
+ \qquad
+ U_N=U+\frac{\mathscr B(X,\eta,N\log X)}{N}.
+\tag{C.12}\label{eq:C.12}
+\end{equation}
+\begin{EESegment}{EE-TGT-P161-006}
+This extension joins smoothly to the input profiles \NSi{NS-F-P161-023}{E,U}. In the next identity,
+\NSi{NS-F-P161-024}{\mathcal D_X=X\partial_X}
+differentiates a function of \NSi{NS-F-P161-025}{(X,\eta,\varphi)} while \NSi{NS-F-P161-026}{\varphi} is held fixed. Every resulting term is then evaluated at
+\NSi{NS-F-P161-027}{\varphi=N\log X}. The exact shears of \eqref{eq:C.12} are
+\end{EESegment}
+\NSFormula{NS-F-P161-028}{display}{C.13}
+\begin{equation}
+ a_N=a_L-\frac{2\mathcal D_X\mathscr A}{N},
+ \qquad
+ b_N=e^{-\mathscr A/N}\left(b_L+\frac{2\mathcal D_X\mathscr B}{NE}\right).
+\tag{C.13}\label{eq:C.13}
+\end{equation}
+\begin{EESegment}{EE-TGT-P161-007}
+After the substitution, \NSi{NS-F-P161-029}{X\partial_X} becomes
+\NSi{NS-F-P161-030}{\mathcal D_X+N\partial_\varphi}. Insert \eqref{eq:C.11} into
+\NSi{NS-F-P161-031}{a_N=1-2X\partial_X\log E_N} and
+\NSi{NS-F-P161-032}{b_N=2X\partial_XU_N/E_N}. This gives both formulas, including the exponential denominator in the axial
+shear.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P161-008}
+On the fixed compact radial range from \NSi{NS-F-P161-033}{X_-} through the first correction interval,
+\NSi{NS-F-P161-034}{X,E,H,L}
+all have positive lower bounds. For each fixed \NSi{NS-F-P161-035}{m\geq0}, the phase in \eqref{eq:C.12} does not depend on
+\NSi{NS-F-P161-036}{\eta}, so
+\end{EESegment}
+\NSFormula{NS-F-P161-037}{display}{C.14}
+\begin{equation}
+ \sup_X\sum_{j=0}^m
+ \left(\left|\partial_\eta^j(E_N-E)\right|
+       +\left|\partial_\eta^j(U_N-U)\right|\right)
+ \leq C_mN^{-1}.
+\tag{C.14}\label{eq:C.14}
+\end{equation}
+\begin{EESegment}{EE-TGT-P161-009}
+The differences between the shears in \eqref{eq:C.13} and their loop values obey the same estimate. The derivative \NSi{NS-F-P161-038}{X\partial_X(E_N-E)} can still have order one. More generally, for fixed
+\NSi{NS-F-P161-039}{r\geq1} and \NSi{NS-F-P161-040}{m\geq0},
+radially differentiating \eqref{eq:C.12} gives the bound \NSi{NS-F-P161-041}{C_{r,m}N^{r-1}} for the mixed derivatives of the profile
+difference. Checking the cone condition for the modified profiles also requires control of \NSi{NS-F-P161-042}{p_s}, not only of the shear. Its radial integral formulas use profile values and parameter derivatives. The estimates just proved are therefore enough, even though the radial derivatives do not have to be small.
+\end{EESegment}
+
+\NSPage{162}%
+\begin{EESegment}{EE-TGT-P162-001}
+Let \NSi{NS-F-P162-001}{\mathfrak m=(M,I,J,S,C_p)} and \NSi{NS-F-P162-002}{\mathfrak m_N} be the five radial moment functions in \eqref{eq:4.15} for
+\NSi{NS-F-P162-003}{E,U}
+and \NSi{NS-F-P162-004}{E_N,U_N}, respectively. Keep the same pressure value \NSi{NS-F-P162-005}{\Pi_0(\eta)} at the axis, so that
+\NSi{NS-F-P162-006}{\Pi_N=\Pi_0+C_{p,N}}.
+Integrate \eqref{eq:C.14} across this fixed radial range. The weights in the radial moment definitions are bounded there, so the result is
+\end{EESegment}
+\NSFormula{NS-F-P162-007}{display}{C.15}
+\begin{equation}
+ \sup_X\sum_{j=0}^m\left|\partial_\eta^j(\mathfrak m_N-\mathfrak m)\right|
+ +\sup_X\sum_{j=0}^m\left|\partial_\eta^j(\Pi_N-\Pi)\right|
+ \leq C_mN^{-1}.
+\tag{C.15}\label{eq:C.15}
+\end{equation}
+\begin{EESegment}{EE-TGT-P162-002}
+The formulas for \NSi{NS-F-P162-008}{Q_s,N_s} in \eqref{eq:4.16} use these radial moment functions and their first
+parameter derivatives, together with the profile values. Their denominators stay bounded away
+from zero on this range. Therefore
+\end{EESegment}
+\NSFormula{NS-F-P162-009}{display}{C.16}
+\begin{equation}
+ \sup_X\sum_{j=0}^m\left|\partial_\eta^j(p_{s,N}-p_s)\right|
+ \leq C_mN^{-1}.
+\tag{C.16}\label{eq:C.16}
+\end{equation}
+\begin{EESegment}{EE-TGT-P162-003}
+The estimate at order \NSi{NS-F-P162-010}{m} uses the profile and radial moment estimates through order
+\NSi{NS-F-P162-011}{m+1} in \NSi{NS-F-P162-012}{\eta}.
+It does not compare radial derivatives. Lemma~\ref{lem:C.1} gives uniform positive lower bounds in the cone
+inequalities. Equations~\eqref{eq:C.13} and \eqref{eq:C.16} then preserve the admissible stress cone on
+\NSi{NS-F-P162-013}{\mathcal I} once
+\NSi{NS-F-P162-014}{N} is large enough. Between \NSi{NS-F-P162-015}{\mathcal I} and the first correction interval, the fields are still
+\NSi{NS-F-P162-016}{E,U}, while \NSi{NS-F-P162-017}{p_{s,N}-p_s} obeys
+\eqref{eq:C.16}. The uniform positive lower bounds in the input profile's admissible stress cone
+inequalities therefore remain positive there as well.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P162-004}
+The modified profiles now obey the cone inequalities all the way through the joining interval. Their
+moments still have errors of order \NSi{NS-F-P162-018}{N^{-1}}, and those errors must be removed before the profile reaches the exterior.
+Make the correction on the first patch listed after \eqref{eq:A.9}. This patch comes before the terminal compensation
+patch and the two later correction patches. On it, the input profiles obey
+\NSi{NS-F-P162-019}{U=0} and
+\NSi{NS-F-P162-020}{E=K(\eta)X^{-1/2-\lambda}}, where \NSi{NS-F-P162-021}{K} is smooth and has a positive lower bound. Add two fixed
+compact bumps to \NSi{NS-F-P162-022}{U} and three to \NSi{NS-F-P162-023}{E}, with coefficients that depend smoothly on
+\NSi{NS-F-P162-024}{\eta}. List the
+five radial moment functions at the patch's right endpoint in the order \NSi{NS-F-P162-025}{(M,J;I,S,C_p)}. When all coefficients are zero,
+their differential separates into two independent blocks at first order, with the following weights.
+\end{EESegment}
+\NSFormula{NS-F-P162-026}{display}{none}
+\[
+\begin{array}{c|c|c}
+ \text{rows} & \text{weights in }dX & \text{powers of }X\\ \hline
+ M,J & 1,H & 0,-\lambda\\
+ I,S,C_p & \sqrt{2X},-E,E/X & 1/2,-1/2-\lambda,-3/2-\lambda.
+\end{array}
+\]
+\begin{EESegment}{EE-TGT-P162-005}
+The exponents are distinct because \NSi{NS-F-P162-027}{\lambda>0} has already been fixed. Choose bumps with ordered,
+disjoint supports inside each block. Lemma~\ref{lem:A.1}, or its five-moment specialization in Corollary~\ref{cor:A.3}, then gives an invertible matrix whose inverse is uniformly bounded on
+\NSi{NS-F-P162-028}{[-1,1]}. That
+bound may depend on \NSi{NS-F-P162-029}{\lambda} and on the fixed patch scales. The two
+\NSi{NS-F-P162-030}{U}-weights merge as \NSi{NS-F-P162-031}{\lambda\to0}, so no uniform bound in that limit is claimed.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P162-006}
+The map from the correction coefficients to the changes in \NSi{NS-F-P162-032}{(M,J,I,S,C_p)} is this linear map
+plus quadratic terms. The function \NSi{NS-F-P162-033}{J} contains the product of the two field changes, while
+\NSi{NS-F-P162-034}{S,C_p} contain
+their squares. By \eqref{eq:C.15}, the discrepancy accumulated before this correction is \NSi{NS-F-P162-035}{O_m(N^{-1})}.
+Lemma~\ref{lem:A.2} therefore gives a smooth solution for coefficients near zero that cancels the
+discrepancy. For every fixed parameter order, these coefficients are \NSi{NS-F-P162-036}{O_m(N^{-1})}. Choose
+\NSi{NS-F-P162-037}{N} after \NSi{NS-F-P162-038}{\lambda},
+the patch scales, and every choice used in the fixed input profile. Choose it large enough that the discrepancy lies in
+the neighborhood where the solution is defined and that its derivatives through the finitely many
+\NSi{NS-F-P162-039}{\eta}-orders needed for positivity and the cone inequalities meet their tolerances. Differentiating
+the implicit equation gives finite bounds for every further fixed \NSi{NS-F-P162-040}{\eta}-derivative order. The derivatives do not all have to be small at once. The fixed bump shapes
+also keep the correction small in the radial derivatives used by the shear.
+\end{EESegment}

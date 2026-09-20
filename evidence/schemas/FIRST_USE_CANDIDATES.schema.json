@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/navier-stokes-everyday/FIRST_USE_CANDIDATES.schema.json",
+  "title": "Everyday English first-use candidate record",
+  "description": "A range-local technical-concept candidate; only the root aggregate audit may confirm global first use.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "record_type",
+    "status",
+    "pdf_pages",
+    "concept",
+    "local_first_target_id",
+    "source_locator",
+    "prerequisite_concepts",
+    "earlier_occurrence_check",
+    "proposed_addition_id",
+    "later_reuse_ids",
+    "global_resolution",
+    "supersession"
+  ],
+  "properties": {
+    "id": { "$ref": "#/$defs/recordId" },
+    "record_type": { "const": "first_use_candidate" },
+    "status": { "$ref": "#/$defs/status" },
+    "pdf_pages": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/pdfPage" }
+    },
+    "concept": { "$ref": "#/$defs/nonemptyString" },
+    "local_first_target_id": { "$ref": "#/$defs/targetSegmentId" },
+    "source_locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pdf_page", "path", "file_sha256", "line_start", "line_end", "span_sha256", "exact_text"],
+      "properties": {
+        "pdf_page": { "$ref": "#/$defs/pdfPage" },
+        "path": { "$ref": "#/$defs/relativePath" },
+        "file_sha256": { "$ref": "#/$defs/sha256" },
+        "line_start": { "type": "integer", "minimum": 1 },
+        "line_end": { "type": "integer", "minimum": 1 },
+        "span_sha256": { "$ref": "#/$defs/sha256" },
+        "exact_text": { "$ref": "#/$defs/nonemptyString" }
+      }
+    },
+    "prerequisite_concepts": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/nonemptyString" }
+    },
+    "earlier_occurrence_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["result", "evidence"],
+      "properties": {
+        "result": { "enum": ["yes", "no", "unresolved"] },
+        "evidence": { "$ref": "#/$defs/nonemptyString" }
+      }
+    },
+    "proposed_addition_id": {
+      "oneOf": [
+        { "$ref": "#/$defs/additionId" },
+        { "type": "null" }
+      ]
+    },
+    "inline_articulation": {
+      "description": "Exact evidence that the normal EESegment sentence itself explains this first use. A teaching addition may still be used instead.",
+      "oneOf": [
+        { "$ref": "#/$defs/inlineArticulation" },
+        { "type": "null" }
+      ]
+    },
+    "later_reuse_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/targetSegmentId" }
+    },
+    "global_resolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "resolved_by", "evidence"],
+      "properties": {
+        "status": { "enum": ["unresolved", "confirmed_first", "not_first"] },
+        "resolved_by": { "type": ["string", "null"] },
+        "evidence": { "$ref": "#/$defs/nonemptyString" }
+      }
+    },
+    "supersession": { "$ref": "#/$defs/supersession" }
+  },
+  "$defs": {
+    "nonemptyString": { "type": "string", "minLength": 1 },
+    "recordId": { "type": "string", "minLength": 1, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$" },
+    "targetSegmentId": { "type": "string", "pattern": "^EE-TGT-P[0-9]{3}-[0-9]{3}$" },
+    "additionId": { "type": "string", "pattern": "^EE-ADD-P[0-9]{3}-[0-9]{3}$" },
+    "status": { "enum": ["pass", "pending", "fail", "superseded"] },
+    "pdfPage": { "type": "integer", "minimum": 1, "maximum": 166 },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "relativePath": { "type": "string", "minLength": 1, "pattern": "^(?![A-Za-z]:)(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$" },
+    "coverageCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["result", "evidence"],
+      "properties": {
+        "result": { "enum": ["pass", "pending", "fail", "not_applicable"] },
+        "evidence": { "$ref": "#/$defs/nonemptyString" }
+      }
+    },
+    "inlineArticulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "target", "coverage"],
+      "properties": {
+        "kind": { "const": "inline_articulation" },
+        "target": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "file_sha256", "target_id", "body_sha256", "exact_quote", "exact_quote_sha256"],
+          "properties": {
+            "path": { "$ref": "#/$defs/relativePath" },
+            "file_sha256": { "$ref": "#/$defs/sha256" },
+            "target_id": { "$ref": "#/$defs/targetSegmentId" },
+            "body_sha256": { "$ref": "#/$defs/sha256" },
+            "exact_quote": { "$ref": "#/$defs/nonemptyString" },
+            "exact_quote_sha256": { "$ref": "#/$defs/sha256" }
+          }
+        },
+        "coverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["meaning", "notation", "proof_job", "prerequisites"],
+          "properties": {
+            "meaning": { "$ref": "#/$defs/coverageCheck" },
+            "notation": { "$ref": "#/$defs/coverageCheck" },
+            "proof_job": { "$ref": "#/$defs/coverageCheck" },
+            "prerequisites": { "$ref": "#/$defs/coverageCheck" }
+          }
+        }
+      }
+    },
+    "supersession": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supersedes", "superseded_by"],
+      "properties": {
+        "supersedes": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/recordId" } },
+        "superseded_by": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/recordId" } }
+      }
+    }
+  }
+}

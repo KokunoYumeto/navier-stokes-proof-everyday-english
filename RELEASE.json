@@ -1,0 +1,53 @@
+{
+  "artifacts": {
+    "epub": {
+      "bytes": 2269611,
+      "path": "output/everyday-english/epub/everyday-english-edition.epub",
+      "sha256": "da3cf6071a690d8bcbeee044daa1e40bf1697f987e91a8c953b247c367e7d821"
+    },
+    "html": {
+      "bytes": 3865657,
+      "direct_index_path": "docs/index.html",
+      "path": "output/everyday-english/html/index.html",
+      "sha256": "56efba577998bd5ff80503b4779587ed659c15b44d6ccf5ec4ce1852bad9f6c3",
+      "validator_status": "pass"
+    },
+    "pdf": {
+      "bytes": 5108345,
+      "page_count": 168,
+      "path": "output/everyday-english/pdf/everyday-english-edition.pdf",
+      "sha256": "e8d8a06d53be4fd6e2408485f1be5b97ddef440f98fcabcabcfbf4a04750f55f"
+    }
+  },
+  "direct_reading_url": "https://kokunoyumeto.github.io/navier-stokes-proof-everyday-english/",
+  "final_build": {
+    "bytes": 1844,
+    "path": "output/everyday-english/receipts/build-receipt.json",
+    "sha256": "15c158967dc8d1f9e84aa39ee8fc70f0ac95e611e20fa075a722dc8839c6defd"
+  },
+  "final_qa": {
+    "bytes": 3812,
+    "path": "evidence/build/EVERYDAY_ENGLISH_FINAL_QA.json",
+    "sha256": "3adda303f665ec4945235801ef9fcba0da8217d41f9e4d6aca4592ccb126e9f7"
+  },
+  "github_pages_index": "docs/index.html",
+  "official_paper": "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf",
+  "output_manifest": {
+    "entries": 32,
+    "machine": {
+      "bytes": 5394,
+      "path": "output/everyday-english/receipts/MANIFEST.json",
+      "sha256": "7b04a702e5edbd7a4b1ec6c788a52c44e33cad9191d0e3032ce6097ceb397655"
+    },
+    "text": {
+      "bytes": 3380,
+      "path": "output/everyday-english/receipts/MANIFEST.sha256",
+      "sha256": "554ddf5d3ed56dbd3af9d9920a9929fa5c123e5b66e04bbaa85f879d5517f8b0"
+    }
+  },
+  "publication_performed_by_staging": false,
+  "repository": "https://github.com/KokunoYumeto/navier-stokes-proof-everyday-english",
+  "schema": "navier-stokes-everyday-public-release/v1",
+  "source_faithful_repository": "https://github.com/KokunoYumeto/openai-navier-stokes-latex",
+  "title": "Everyday English Edition of the Navier–Stokes Proof"
+}

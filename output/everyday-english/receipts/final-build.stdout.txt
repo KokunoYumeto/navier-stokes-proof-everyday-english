@@ -1,0 +1,43 @@
+{
+  "aggregate": "pass",
+  "checks": "pass",
+  "epub": {
+    "bytes": 2267608,
+    "path": "output/everyday-english/epub/everyday-english-edition.epub",
+    "sha256": "d2014b67e2cfa5c796ad7941c74563098f6c44d2b21706d5b319113cddca2f69"
+  },
+  "html": {
+    "bytes": 3845949,
+    "path": "output/everyday-english/html/index.html",
+    "sha256": "1a48ecdf6cffb7375b538b1bbd6d94084c2d291048a2973a957e064461bfae55"
+  },
+  "manifest": {
+    "entries": 32,
+    "machine_manifest": {
+      "bytes": 5391,
+      "path": "output/everyday-english/receipts/MANIFEST.json",
+      "sha256": "bd94c2bbc0925f827d149fb030a30f94999efa9b365455cc543f5087720becad"
+    },
+    "manifest": {
+      "bytes": 3377,
+      "path": "output/everyday-english/receipts/MANIFEST.sha256",
+      "sha256": "631a66cf3ab4410d918347509c60a015f86542db9c6446d5f59c3e2f96e2c222"
+    },
+    "verification": {
+      "checked": 32,
+      "issues": [],
+      "status": "pass"
+    }
+  },
+  "pdf": {
+    "bytes": 5108345,
+    "path": "output/everyday-english/pdf/everyday-english-edition.pdf",
+    "sha256": "e8d8a06d53be4fd6e2408485f1be5b97ddef440f98fcabcabcfbf4a04750f55f"
+  },
+  "profile": "final",
+  "receipt": {
+    "bytes": 1844,
+    "path": "output/everyday-english/receipts/build-receipt.json",
+    "sha256": "863df191e11f5249520958857de2de3dafaebd0edf16dcad9d4cae66965f0794"
+  }
+}

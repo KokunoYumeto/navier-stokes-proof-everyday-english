@@ -1,0 +1,667 @@
+\NSPage{127}%
+\begin{proof}
+\begin{EESegment}{EE-TGT-P127-001}
+A nonzero linear combination of \NSi{NS-F-P127-001}{m} distinct powers can have at
+most \NSi{NS-F-P127-002}{m-1} distinct positive zeros. To see this, divide by the
+smallest power. If the quotient had \NSi{NS-F-P127-003}{m} zeros, Rolle's theorem
+would give \NSi{NS-F-P127-004}{m-1} zeros of its derivative. That would contradict the
+induction hypothesis for the other \NSi{NS-F-P127-005}{m-1} powers. It follows that
+\NSi{NS-F-P127-006}{\det[x_j^{\alpha_i}]} is nonzero whenever
+\NSi{NS-F-P127-007}{0<x_1<\cdots<x_m}, and its sign stays the same throughout that
+connected set. Since the determinant is multilinear,
+\NSFormula{NS-F-P127-008}{display}{none}
+\[
+\det B
+=\int_{I_1\times\cdots\times I_m}\det[x_j^{\alpha_i}]
+  \prod_j\beta_j(x_j)\,dx_1\cdots dx_m\ne0.
+\]
+The integrand has one sign, and it is nonzero on a set of positive measure. The change of
+variables \NSi{NS-F-P127-009}{x=e^y} proves the logarithmic version. Compactness,
+together with differentiation of \NSi{NS-F-P127-010}{B^{-1}B=\Id}, proves the final
+statement. That statement does not give a uniform bound for the inverse when two exponents
+approach each other.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P127-002}
+Some moment weights approach each other as \NSi{NS-F-P127-011}{\lambda} tends to
+zero. The corrections have to stay small enough to preserve the cone, so the proof needs to
+know how much this costs in the inverse bound. Take identical translated bumps
+\NSi{NS-F-P127-012}{\beta(y-c_1)} and
+\NSi{NS-F-P127-013}{\beta(y-c_2)}, and set
+\NSi{NS-F-P127-014}{\Delta=c_2-c_1>0} and
+\NSi{NS-F-P127-015}{b(s)=\int e^{st}\beta(t)\,dt}. Dividing row
+\NSi{NS-F-P127-016}{i} by \NSi{NS-F-P127-017}{e^{s_i c_1}} gives
+\NSFormula{NS-F-P127-018}{display}{A.1}
+\begin{equation}
+B=
+\begin{pmatrix}
+b(s_1)&e^{s_1\Delta}b(s_1)\\
+b(s_2)&e^{s_2\Delta}b(s_2)
+\end{pmatrix},
+\qquad
+\det B=b(s_1)b(s_2)(e^{s_2\Delta}-e^{s_1\Delta}).
+\tag{A.1}\label{eq:A.1}
+\end{equation}
+Fix the bump and fix \NSi{NS-F-P127-019}{\Delta>0}. Then
+\NSi{NS-F-P127-020}{\lVert B^{-1}\rVert=O(\lambda^{-1})} when
+\NSi{NS-F-P127-021}{s_1-s_2=\lambda} and the slopes stay in a fixed compact interval.
+The inverse stays
+bounded if the limiting separation of the slopes is nonzero. The same
+\NSi{NS-F-P127-022}{O(\lambda^{-1})} bound holds for moment matrices with weights
+\NSi{NS-F-P127-023}{1,x^{-\lambda}} and bumps on ordered disjoint intervals. This
+follows by expanding
+\NSi{NS-F-P127-024}{x^{-\lambda}=1-\lambda\log x+O(\lambda^2)}, because the two
+bump averages of \NSi{NS-F-P127-025}{\log x} stay strictly separated.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P127-003}
+The rank calculation handles the linearized moment map. The actual moments are quadratic
+in the velocity profiles, so the correction coefficients have to solve a finite system with a
+quadratic remainder. The next estimate gives a small solution and also controls its
+parameter derivatives. It does not require all orders of derivatives to be small at the same
+time.
+\end{EESegment}
+
+\begin{lemma}\label{lem:A.2}
+\begin{EESegment}{EE-TGT-P127-004}
+Let \NSi{NS-F-P127-026}{K=[-1,1]}. Suppose a finite family of correction coefficients
+\NSi{NS-F-P127-027}{c\in\R^m} changes the required moments in the following way. First
+take the specified linear combinations of the moments, and divide each resulting component
+by its specified nonzero factor. The change is then
+\NSFormula{NS-F-P127-028}{display}{A.2}
+\begin{equation}
+F_\eta(c)=B(\eta)c+\mathcal Q_\eta(c,c),
+\qquad \eta\in K.
+\tag{A.2}\label{eq:A.2}
+\end{equation}
+Here \NSi{NS-F-P127-029}{B} and the bilinear map
+\NSi{NS-F-P127-030}{\mathcal Q} are smooth,
+\NSi{NS-F-P127-031}{B} is invertible on \NSi{NS-F-P127-032}{K}, and the given
+moment discrepancy is \NSi{NS-F-P127-033}{d\in C^\infty(K;\R^m)}. Write
+\NSi{NS-F-P127-034}{\beta_0=\sup_K\lVert B^{-1}\rVert},
+\NSi{NS-F-P127-035}{\kappa_0=\sup_K\lVert\mathcal Q\rVert}, and
+\NSi{NS-F-P127-036}{d_0=\lVert d\rVert_{C^0(K)}}. If
+\NSFormula{NS-F-P127-037}{display}{none}
+\[
+8\beta_0^2\kappa_0d_0\le1,
+\]
+there is exactly one solution of \NSi{NS-F-P127-038}{F_\eta(c)=d(\eta)} in the ball
+\NSi{NS-F-P127-039}{\lVert c\rVert_{C^0}\le2\beta_0d_0}. This solution is smooth in
+\NSi{NS-F-P127-040}{\eta}, and iterating
+\NSi{NS-F-P127-041}{c\mapsto B(\eta)^{-1}(d(\eta)-\mathcal Q_\eta(c,c))} from zero
+selects it. If \NSi{NS-F-P127-042}{\mathcal Q=0}, no smallness condition is needed.
+
+Now choose any finite \NSi{NS-F-P127-043}{k} in advance. Let
+\NSi{NS-F-P127-044}{\beta_k} be the operator norm for multiplication by
+\NSi{NS-F-P127-045}{B^{-1}} on \NSi{NS-F-P127-046}{C^k(K)}, and let
+\NSi{NS-F-P127-047}{\kappa_k} be the corresponding bilinear norm of
+\NSi{NS-F-P127-048}{\mathcal Q}. If
+\NSi{NS-F-P127-049}{8\beta_k^2\kappa_k\lVert d\rVert_{C^k}\le1} as well, the same
+solution branch satisfies
+\NSFormula{NS-F-P127-050}{display}{A.3}
+\begin{equation}
+\lVert c\rVert_{C^k}\le2\beta_k\lVert d\rVert_{C^k}.
+\tag{A.3}\label{eq:A.3}
+\end{equation}
+\end{EESegment}
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P127-005}
+Set \NSi{NS-F-P127-051}{r=2\beta_0d_0}. The map
+\NSi{NS-F-P127-052}{c\mapsto B^{-1}(d-\mathcal Q(c,c))} takes the closed
+\NSi{NS-F-P127-053}{C^0} ball of radius \NSi{NS-F-P127-054}{r} into itself. Its
+Lipschitz constant on that ball is at most
+\NSi{NS-F-P127-055}{2\beta_0\kappa_0r\le1/2}. The same inequality makes
+\NSi{NS-F-P127-056}{B+D_c\mathcal Q(c,c)} invertible. The pointwise implicit function
+ theorem then gives smoothness, including one-sided derivatives at the endpoints. Apply the
+ same contraction argument to
+\end{EESegment}
+\NSPage{128}%
+\begin{EESegment}{EE-TGT-P128-001}
+\NSi{NS-F-P128-001}{C^k(K)}, the space of functions on the compact interval whose derivatives through the stated order
+are continuous. This space is complete in its usual norm, and pointwise multiplication makes it an algebra. That is the
+Banach algebra used here, and the argument gives \eqref{eq:A.3}. The iterations are the same ones as
+in \NSi{NS-F-P128-002}{C^0}, so they have the same limit. Every other fixed derivative
+is finite by implicit differentiation, with a constant that may depend on the corresponding
+data. Any extra parameter in a fixed compact set, such as the pulse amplitude below, is
+handled in exactly the same way.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P128-002}
+The size of these correction estimates depends on the radial scale of the support. For
+example, if \NSi{NS-F-P128-003}{\delta V=v_*\sum_j c_j(\eta)\beta_j(X/\rho)}, then
+\NSFormula{NS-F-P128-004}{display}{none}
+\[
+\lVert\partial_X^r\partial_\eta^k\delta V\rVert_\infty
+\le C_rv_*\rho^{-r}\lVert c\rVert_{C^k}.
+\]
+For bumps whose width in \NSi{NS-F-P128-005}{\log X} stays fixed, the matching estimate
+uses \NSi{NS-F-P128-006}{(X\partial_X)^r}. Small coefficients therefore preserve any
+fixed finite collection of strict inequalities involving field derivatives on that patch. This
+estimate applies to the moment-correction bumps. The rapid modulation that comes before a
+correction has separate estimates for its radial derivatives.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P128-003}
+For the five cumulative integrals in \eqref{eq:4.15}, the linearized system on a power-law
+interval splits into two axial corrections and three azimuthal corrections. The next
+corollary identifies their weights so that the rank calculation and the small-solution result
+above can be applied.
+\end{EESegment}
+
+\begin{corollary}\label{cor:A.3}
+\begin{EESegment}{EE-TGT-P128-004}
+Use the five radial moment functions \NSi{NS-F-P128-007}{(M,I,J,S,C_p)} from
+\eqref{eq:4.15}, where \NSi{NS-F-P128-008}{C_p} is the pressure increment. Under the
+rescaling \NSi{NS-F-P128-009}{X=\rho x}, their normalizing factors are
+\NSFormula{NS-F-P128-010}{display}{A.4}
+\begin{equation}
+(\rho,\rho^{3/2},\rho^{3/2},\rho,1),
+\qquad H=\rho^{1/2}\sqrt{2x}E.
+\tag{A.4}\label{eq:A.4}
+\end{equation}
+On a fixed correction interval, suppose
+\NSi{NS-F-P128-011}{U_0=u_c(\eta)} and
+\NSi{NS-F-P128-012}{E_0=e_*f_*(\eta)x^\alpha}, with
+\NSi{NS-F-P128-013}{e_*>0} and smooth \NSi{NS-F-P128-014}{f_*>0}. Two additive
+\NSi{NS-F-P128-015}{U} bumps and three additive \NSi{NS-F-P128-016}{E} bumps give an
+invertible Jacobian for the normalized five-moment map as long as
+\NSi{NS-F-P128-017}{\alpha\notin\{-1/2,1/2,3/2\}}. The moment changes have the exact
+quadratic form \eqref{eq:A.2}. When \NSi{NS-F-P128-018}{U_0=0}, the three corrections
+to \NSi{NS-F-P128-019}{E} can prescribe changes in
+\NSi{NS-F-P128-020}{(I,S,C_p)} while leaving \NSi{NS-F-P128-021}{M,J} unchanged.
+\end{EESegment}
+\end{corollary}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P128-005}
+In the normalized rows, replace \NSi{NS-F-P128-022}{J} by
+\NSi{NS-F-P128-023}{J-u_cI} and \NSi{NS-F-P128-024}{S} by
+\NSi{NS-F-P128-025}{S-2u_cM}, keeping \NSi{NS-F-P128-026}{u_c} fixed at its base
+value. The differential of \NSi{NS-F-P128-027}{J-u_cI} is
+\NSi{NS-F-P128-028}{\int\sqrt{2x}E_0\,\delta U\,dx}, and the differential of
+\NSi{NS-F-P128-029}{S-2u_cM} is
+\NSi{NS-F-P128-030}{-\int E_0\,\delta E\,dx}. Together with the other three rows, these
+give a matrix with two blocks. Apart from nonzero normalizing factors, their weights are
+\NSFormula{NS-F-P128-031}{display}{none}
+\[
+\begin{array}{c|ccc}
+U\text{ block}&1,&x^{\alpha+1/2}&\\
+E\text{ block}&x^{1/2},&x^\alpha,&x^{\alpha-1}.
+\end{array}
+\]
+The factors \NSi{NS-F-P128-032}{e_*,f_*} and
+\NSi{NS-F-P128-033}{\sqrt2} remain in the normalization of the moment components. Their
+inverses and every fixed parameter derivative stay bounded. The condition on
+\NSi{NS-F-P128-034}{\alpha} says exactly that the powers in each block are distinct, so
+Lemma~\ref{lem:A.1} applies. The original functionals have degree at most two in
+\NSi{NS-F-P128-035}{U,E}, which makes every remaining term quadratic. In particular,
+the row operations do not assume that the corrected \NSi{NS-F-P128-036}{U} stays
+constant.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P128-006}
+For the axis moment correction \NSi{NS-F-P128-037}{\alpha=1/10}, the two blocks use
+the powers \NSi{NS-F-P128-038}{(0,3/5)} and
+\NSi{NS-F-P128-039}{(1/2,1/10,-9/10)}. On the intermediate power-law interval,
+\NSi{NS-F-P128-040}{\alpha=-1/2-\lambda} gives
+\NSi{NS-F-P128-041}{(0,-\lambda)} and
+\NSi{NS-F-P128-042}{(1/2,-1/2-\lambda,-3/2-\lambda)}. The first of these last two
+blocks can bring in an inverse bound of \NSi{NS-F-P128-043}{\lambda^{-1}}. The value of
+\NSi{NS-F-P128-044}{\lambda} is fixed before the later radial frequency is chosen. These
+normalized inverse bounds, together with the exact restoration of matching data in
+Lemma~\ref{lem:4.4}, are what both corrections use.
+\end{EESegment}
+
+\NSPage{129}%
+\begin{EESegment}{EE-TGT-P129-001}
+\subsection{Constructing and matching the outer radial profile.}\label{sec:A.2}
+This subsection gives a profile that connects an inner reference power law to a purely
+azimuthal exterior power law \NSi{NS-F-P129-001}{E_{\mathrm{pow}}}. Its inner data will
+be prescribed in \eqref{eq:A.7}. The intervals in between will set the required total
+moments in \eqref{eq:A.8} while keeping the stress-cone inequalities. Four subintervals
+will be kept free for the later profile, heat, background, and mean corrections; they are
+listed after \eqref{eq:A.9}. First come the radial pieces. Their free amplitudes are chosen
+and their stated properties checked afterward, in Sections~\ref{sec:A.3} and
+\ref{sec:A.5}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P129-002}
+Fix, once and for all, the smooth step
+\NSFormula{NS-F-P129-002}{display}{A.5}
+\begin{equation}
+\sigma(y)=\frac{e^{-1/y^2}}{e^{-1/y^2}+e^{-1/(1-y)^2}}
+\quad(0<y<1),
+\qquad \sigma=0\ (y\le0),
+\qquad \sigma=1\ (y\ge1).
+\tag{A.5}\label{eq:A.5}
+\end{equation}
+The positive moment-correction bumps are rescaled copies of
+\NSi{NS-F-P129-003}{\sigma'} placed on ordered, disjoint subintervals of the chosen
+patch. Each stage uses its own logarithmic radial coordinate
+\NSi{NS-F-P129-004}{y}. Its origin is the start of that stage, and
+\NSi{NS-F-P129-005}{d/dy=\mathcal D_X=X\partial_X}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P129-003}
+The parameters for the next profile are fixed in this order:
+\NSFormula{NS-F-P129-006}{display}{A.6}
+\begin{equation}
+M_d,
+\qquad T_d=e^{M_d}+10,
+\qquad P_*>e^{T_d},
+\qquad 0<\lambda\ll1,
+\qquad 0<h\ll\min\{\lambda,e^{-T_d}\}
+\tag{A.6}\label{eq:A.6}
+\end{equation}
+Here \NSi{NS-F-P129-007}{\ll} has the smallness meaning from
+Definition~\ref{def:3.3}: choose \NSi{NS-F-P129-008}{\lambda} small enough after
+fixing \NSi{NS-F-P129-009}{M_d,T_d,P_*}, and after that choose
+\NSi{NS-F-P129-010}{h} small enough compared with both
+\NSi{NS-F-P129-011}{\lambda} and \NSi{NS-F-P129-012}{e^{-T_d}}. The large radius
+\NSi{NS-F-P129-013}{X_R} is chosen after all of them.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P129-004}
+On the reference inner interval, write \NSi{NS-F-P129-014}{x=X/X_R} and
+\NSi{NS-F-P129-015}{y=\log x}, and prescribe
+\NSFormula{NS-F-P129-016}{display}{A.7}
+\begin{equation}
+U=4\eta,
+\qquad E=P_*f(\eta)e^{y/10},
+\qquad f=(1+\eta^2)^{-1}=e^{-J_0},
+\qquad J_0=\log(1+\eta^2),
+\qquad y\le0.
+\tag{A.7}\label{eq:A.7}
+\end{equation}
+This ideal region is only a temporary choice for the outer radial profile; Section~\ref{sec:B}
+replaces its inner part with a regular axis. The goal outside is the power
+\NSi{NS-F-P129-017}{E_{\mathrm{pow}}=c_\infty X^{-A}}, where
+\NSi{NS-F-P129-018}{c_\infty>0} does not depend on
+\NSi{NS-F-P129-019}{\eta}, together with the moment identities
+\NSFormula{NS-F-P129-020}{display}{A.8}
+\begin{equation}
+\int_0^\infty(U^2-E^2/2)\,dX=0,
+\qquad
+\int_0^\infty(H-H_{\mathrm{pow}})\,dX=0,
+\qquad
+H_{\mathrm{pow}}=\sqrt{2X}E_{\mathrm{pow}}.
+\tag{A.8}\label{eq:A.8}
+\end{equation}
+These two identities remove the two integration constants that would otherwise remain in
+the exterior stress. The profile is now built one stage at a time.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P129-005}
+Recall that \NSi{NS-F-P129-021}{l=X\partial_X\log H}. Choosing
+\NSi{NS-F-P129-022}{l} is therefore the same as choosing
+\NSi{NS-F-P129-023}{(\log E)'=l-1/2} and integrating it.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P129-006}
+\noindent\textbf{Reducing the axial component to zero.} Start at
+\NSi{NS-F-P129-024}{x=1}. Keep \NSi{NS-F-P129-025}{U=4\eta}, and for one unit of
+logarithmic radial length use \NSi{NS-F-P129-026}{l=(3/5)(1-\sigma(y))}. On the next
+interval, set
+\NSFormula{NS-F-P129-027}{display}{none}
+\[
+l=0,
+\qquad U=k(y)\eta,
+\qquad k(y)=4[1-\sigma(\log(1+y)/M_d)],
+\qquad 0\le y\le T_d.
+\]
+Here \NSi{NS-F-P129-028}{|k'|\le e_d/(1+y)}, where
+\NSi{NS-F-P129-029}{e_d=4\lVert\sigma'\rVert_\infty/M_d}. The function
+\NSi{NS-F-P129-030}{k} is zero for the last eleven units of this stage. Let
+\NSi{NS-F-P129-031}{P_1\asymp P_*} be the value of
+\NSi{NS-F-P129-032}{E/f} at the start of the axial transition. Then
+\NSi{NS-F-P129-033}{E=P_1fe^{-y/2}} throughout that interval.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P129-007}
+\noindent\textbf{The intermediate power-law interval.} Set
+\NSi{NS-F-P129-034}{U=0}. Use \NSi{NS-F-P129-035}{l=-\lambda\sigma(y)} on a unit
+interval, then keep \NSi{NS-F-P129-036}{l=-\lambda} for
+\NSFormula{NS-F-P129-037}{display}{A.9}
+\begin{equation}
+T_w=60\log(1/\lambda).
+\tag{A.9}\label{eq:A.9}
+\end{equation}
+In the local logarithmic radial coordinate on this interval, reserve
+\NSi{NS-F-P129-038}{(T_w-25,T_w-20)},
+\NSi{NS-F-P129-039}{(T_w-20,T_w-15)},
+\NSi{NS-F-P129-040}{(T_w-14,T_w-9)}, and
+\NSi{NS-F-P129-041}{(T_w-8,T_w-3)}. In that order, they will hold the correction after
+the cone is realized, the heat compensation, the moment conditions for higher-order
+background corrections, and the moment conditions for the phase-averaged corrections.
+Choose \NSi{NS-F-P129-042}{\lambda} small enough that all four patches lie inside this
+interval.
+\end{EESegment}
+
+\NSPage{130}%
+\begin{EESegment}{EE-TGT-P130-001}
+\noindent\textbf{The axial pulse.} An axial pulse provides the adjustable contribution to
+the total \NSi{NS-F-P130-001}{S}-moment. Two smaller corrections at the end of the
+pulse set \NSi{NS-F-P130-002}{M=J=0}. Let \NSi{NS-F-P130-003}{X_{\mathrm p}} be the
+radius at the end of the intermediate power-law interval, and write
+\NSi{NS-F-P130-004}{E(X_{\mathrm p},\eta)=e_bf}. For
+\NSi{NS-F-P130-005}{0\le y\le13/\lambda}, keep \NSi{NS-F-P130-006}{l=-\lambda}
+and set \NSi{NS-F-P130-007}{U=ER_b}. With
+\NSi{NS-F-P130-008}{\zeta_b=\lambda y}, define
+\NSFormula{NS-F-P130-009}{display}{none}
+\[
+\begin{aligned}
+\phi_b(\zeta_b)&=\int_0^{\zeta_b}\sigma(v/.02)\,dv
+  &&(\zeta_b\ge0),
+&R_0(\zeta_b)&=\phi_b(\zeta_b)[1-\sigma(\zeta_b-10)],\\
+R_b&=\operatorname{Amp}(\eta)R_0(\zeta_b)+c_1\beta_1(y)+c_2\beta_2(y).
+\end{aligned}
+\]
+Extend \NSi{NS-F-P130-010}{\phi_b} by zero when
+\NSi{NS-F-P130-011}{\zeta_b<0}. The bumps \NSi{NS-F-P130-012}{\beta_1,\beta_2} are
+identical translates of width \NSi{NS-F-P130-013}{.3}, centered at
+\NSi{NS-F-P130-014}{13/\lambda-3} and \NSi{NS-F-P130-015}{13/\lambda-1}. Their
+coefficients \NSi{NS-F-P130-016}{c_1,c_2} set \NSi{NS-F-P130-017}{M=J=0} at the
+end of the pulse. These coefficients are affine functions of
+\NSi{NS-F-P130-018}{\operatorname{Amp}}. The first equality in \eqref{eq:A.8} will
+determine that amplitude.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P130-002}
+\noindent\textbf{Profile interpolation and the angular moment correction.} Next, remove
+the parameter dependence from the azimuthal profile and adjust its angular moment without
+changing the pressure integral. Set \NSi{NS-F-P130-019}{U=0} from this point on. Let
+\NSi{NS-F-P130-020}{X_{\mathrm{end}}} be the radius at the end of the pulse, and write
+\NSi{NS-F-P130-021}{E(X_{\mathrm{end}},\eta)=e_{\mathrm{end}}f}. Set
+\NSFormula{NS-F-P130-022}{display}{A.10}
+\begin{equation}
+\log E=\log e_{\mathrm{end}}-(1/2+\lambda)y-\vartheta_f(y)J_0
+ -(1-\vartheta_f(y))\log2,
+\qquad
+\vartheta_f(y)=1-\sigma(y/T_f).
+\tag{A.10}\label{eq:A.10}
+\end{equation}
+Choose a fixed, sufficiently large \NSi{NS-F-P130-023}{T_f}. Then
+\NSi{NS-F-P130-024}{-\lambda-.1\le l\le-\lambda}. The factor that depends on
+\NSi{NS-F-P130-025}{\eta} decreases to the constant
+\NSi{NS-F-P130-026}{1/2}, so the amplitude cannot grow. Next, keep the resulting
+\NSi{NS-F-P130-027}{\eta}-independent exponential for
+\NSi{NS-F-P130-028}{30\log(1/\lambda)}. Place two relative
+\NSi{NS-F-P130-029}{E} bumps of width \NSi{NS-F-P130-030}{.3}, centered three units
+and one unit before the end of this interval. They impose
+\NSFormula{NS-F-P130-031}{display}{A.11}
+\begin{equation}
+I=\frac{XH}{1-\lambda}\quad\text{at the end},
+\qquad
+\int_{\text{two bumps}}(E^2-E_{\mathrm{unedited}}^2)\,dy=0.
+\tag{A.11}\label{eq:A.11}
+\end{equation}
+The value of \NSi{NS-F-P130-032}{E} at both endpoints stays unchanged. This part of
+the construction uses only \NSi{NS-F-P130-033}{E} and does not depend on
+\NSi{NS-F-P130-034}{\operatorname{Amp}}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P130-003}
+\noindent\textbf{Transition to the exterior power law.} Let
+\NSi{NS-F-P130-035}{X_{\mathrm{rel}}} be the radius where the exterior transition starts,
+and let \NSi{NS-F-P130-036}{e_{\mathrm{rel}}} be the unchanged, uniform value of
+\NSi{NS-F-P130-037}{E} there. Over a unit interval, vary
+\NSi{NS-F-P130-038}{l} smoothly from \NSi{NS-F-P130-039}{-\lambda} to
+\NSi{NS-F-P130-040}{-1}. Keep \NSi{NS-F-P130-041}{l=-1} for
+\NSi{NS-F-P130-042}{4\log(1/h)}, then vary it from \NSi{NS-F-P130-043}{-1} to
+\NSi{NS-F-P130-044}{-h} over another unit interval. Each transition uses
+\NSi{NS-F-P130-045}{\sigma}. On the last radial interval
+\NSi{NS-F-P130-046}{0\le y\le3}, set
+\NSFormula{NS-F-P130-047}{display}{A.12}
+\begin{equation}
+\psi_o(y)=1-\sigma((y-1)/2),
+\qquad
+f_o(y)=1-\rho_o\psi_o(y),
+\qquad
+\rho_o=c_oh,
+\qquad
+l=-h+\frac{f_o'}{f_o},
+\tag{A.12}\label{eq:A.12}
+\end{equation}
+where \NSi{NS-F-P130-048}{c_o>0} is fixed small enough that
+\NSi{NS-F-P130-049}{0\le f_o'/f_o<h/4}. Extend \NSi{NS-F-P130-050}{f_o} as a
+constant to the left of this interval, and extend it by \NSi{NS-F-P130-051}{1} to the
+right. Define
+\NSFormula{NS-F-P130-052}{display}{A.13}
+\begin{equation}
+Q_p=\int_0^3\exp\left(\int_0^v(1+l(s))\,ds\right)\frac{f_o'(v)}{f_o(v)}\,dv.
+\tag{A.13}\label{eq:A.13}
+\end{equation}
+After the transition to \NSi{NS-F-P130-053}{-h}, keep
+\NSi{NS-F-P130-054}{l=-h} until the solution of
+\NSi{NS-F-P130-055}{Q'+(1+l)Q=-l-h}, which starts at
+\NSi{NS-F-P130-056}{Q=(\lambda-h)/(1-\lambda)} when the exterior transition begins,
+has decreased to \NSi{NS-F-P130-057}{Q_p}. Run the final transition over three units of
+logarithmic radial length, then keep \NSi{NS-F-P130-058}{l=-h} at every larger radius.
+On and after that interval, \NSi{NS-F-P130-059}{E=E_{\mathrm{pow}}f_o}.
+\end{EESegment}
+
+\begin{proposition}\label{prop:A.4}
+\begin{EESegment}{EE-TGT-P130-004}
+There are finite choices, made in the order \eqref{eq:A.6}, for which the profile from
+Section~\ref{sec:A.2} defines smooth \NSi{NS-F-P130-060}{U,E} for
+\NSi{NS-F-P130-061}{X>0} and \NSi{NS-F-P130-062}{\eta\in[-1,1]}, with
+\NSi{NS-F-P130-063}{E>0}, and satisfies \eqref{eq:A.8}. Every stage boundary divided
+by \NSi{NS-F-P130-064}{X_R} is independent of both
+\NSi{NS-F-P130-065}{X_R} and \NSi{NS-F-P130-066}{\eta}. After the compact axial
+pulse, \NSi{NS-F-P130-067}{U=M=J=0}. After the final interval,
+\NSi{NS-F-P130-068}{E=E_{\mathrm{pow}}}. There are four disjoint, unchanged patches,
+listed after \eqref{eq:A.9}, where \NSi{NS-F-P130-069}{U=0} and
+\NSi{NS-F-P130-070}{E} is a positive multiple of
+\NSi{NS-F-P130-071}{fX^{-1/2-\lambda}}. For every fixed
+\end{EESegment}
+\NSPage{131}%
+\begin{EESegment}{EE-TGT-P131-001}
+\NSi{NS-F-P131-001}{x_-\in(0,1]}, a sufficiently large
+\NSi{NS-F-P131-002}{X_R}, which may depend on \NSi{NS-F-P131-003}{x_-}, makes the
+reference profile meet the strict relaxed cone condition from
+\NSi{NS-F-P131-004}{x=x_-} through the first half-unit of its final tail. It meets the
+admissible stress-cone condition throughout the
+intermediate power-law interval, the axial pulse, the profile interpolation, and the exterior
+transition. It also meets that condition as soon as \NSi{NS-F-P131-005}{l<0} during the
+transition into the constant-slope interval. These statements cover a finite logarithmic
+interval ending at tail coordinate \NSi{NS-F-P131-006}{1/2}. The heat construction below
+handles the rest of the endpoint collar.
+\end{EESegment}
+\end{proposition}
+
+\begin{EESegment}{EE-TGT-P131-002}
+\subsection{Closing the moment integrals.}\label{sec:A.3}
+Section~\ref{sec:A.2} fixed the radial pieces but left the amplitudes in the axial pulse
+and the moment-correction bumps open. This subsection chooses those amplitudes so that the
+moment identities in Proposition~\ref{prop:A.4} hold. The same estimates control the size
+of the corrections and their parameter derivatives, which will be needed to check the
+stress-cone inequalities in Section~\ref{sec:A.5}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P131-003}
+Write \NSi{NS-F-P131-007}{C_{\mathrm{pre}}} for constants that may depend on the fixed
+choices \NSi{NS-F-P131-008}{M_d,T_d,P_*} and on the fixed steps. They are uniform for
+small \NSi{NS-F-P131-009}{\lambda}, followed by sufficiently small
+\NSi{NS-F-P131-010}{h}. Taking any prescribed finite number of parameter derivatives
+may change these constants. None of them depends on the later radius
+\NSi{NS-F-P131-011}{X_R} or on the normalization
+\NSi{NS-F-P131-012}{\mathsf C}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P131-004}
+Directly integrating the axial transition and the intermediate power-law interval gives, at
+the start of the pulse,
+\NSFormula{NS-F-P131-013}{display}{A.14}
+\begin{equation}
+e_b\le C_{\mathrm{pre}}\lambda^{30},
+\qquad
+\left\lVert\frac{\mathcal A_X(U)}{E}\right\rVert_{C_\eta^1}
+ \le C_{\mathrm{pre}}\lambda^{29},
+\qquad
+\left\lVert\frac{S(X_{\mathrm p})}{X_{\mathrm p}e_b^2f^2}\right\rVert_{C_\eta^1}
+ \le C_{\mathrm{pre}}(1+\log(1/\lambda)).
+\tag{A.14}\label{eq:A.14}
+\end{equation}
+Here is why these bounds hold. The moment \NSi{NS-F-P131-014}{M} stays constant after
+the axial transition, while \NSi{NS-F-P131-015}{XE} grows at rate
+\NSi{NS-F-P131-016}{1/2-\lambda} on the intermediate power-law interval. The
+denominator \NSi{NS-F-P131-017}{XHE} for the
+\NSi{NS-F-P131-018}{J} radial moment grows at rate
+\NSi{NS-F-P131-019}{1/2-2\lambda}, which
+gives the same kind of small bound for its moment discrepancy. Also,
+\NSi{NS-F-P131-020}{XE^2} is constant during the axial transition and changes by the
+factor \NSi{NS-F-P131-021}{e^{-2\lambda y}} on the intermediate power-law interval.
+That factor stays bounded above and below for \NSi{NS-F-P131-022}{0\le y\le T_w}.
+Integrating over the logarithmic length proves the last bound, including the fixed reference
+profile on the inner interval. The function \NSi{NS-F-P131-023}{f} and its reciprocal
+have bounded fixed derivatives on \NSi{NS-F-P131-024}{[-1,1]}, so differentiating these
+integrals gives the stated parameter bounds.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P131-005}
+For the two pulse corrections, divide by the matching normalizing factors
+\NSi{NS-F-P131-025}{X_{\mathrm p}e_bf} and
+\NSi{NS-F-P131-026}{X_{\mathrm p}H(X_{\mathrm p})e_bf} from
+\NSi{NS-F-P131-027}{M,J}. In the \NSi{NS-F-P131-028}{dy} coordinate, the weights are
+\NSi{NS-F-P131-029}{e^{s_1y},e^{s_2y}}, where
+\NSi{NS-F-P131-030}{s_1=1/2-\lambda} and
+\NSi{NS-F-P131-031}{s_2=1/2-2\lambda}. Normalize each weight at the first bump center.
+The main pulse ends at \NSi{NS-F-P131-032}{11/\lambda}, which is at least
+\NSi{NS-F-P131-033}{2/\lambda-3} before that center, and both slopes are larger than
+\NSi{NS-F-P131-034}{.4}. The normalized moment discrepancy from the main pulse is
+therefore at most
+\NSi{NS-F-P131-035}{C(1+|\operatorname{Amp}|)e^{-c/\lambda}}. The contribution from
+before the pulse picks up the factor
+\NSi{NS-F-P131-036}{e^{-s_i(13/\lambda-3)}} in addition to the bounds just proved.
+Formula~\eqref{eq:A.1} bounds the inverse matrix by
+\NSi{NS-F-P131-037}{O(\lambda^{-1})}. The exponential absorbs that loss, giving
+\NSFormula{NS-F-P131-038}{display}{A.15}
+\begin{equation}
+\lVert c_i\rVert_{C_\eta^1}
+ \le C_{\mathrm{pre}}e^{-c/\lambda}(1+|\operatorname{Amp}|),
+\qquad
+M=J=0\quad\text{after the pulse}.
+\tag{A.15}\label{eq:A.15}
+\end{equation}
+Both here and in the amplitude calculation, this estimate says that the affine coefficients
+of \NSi{NS-F-P131-039}{1} and \NSi{NS-F-P131-040}{\operatorname{Amp}} have the
+stated parameter bounds. Every fixed \NSi{NS-F-P131-041}{y} derivative has the same
+bound. Every fixed \NSi{NS-F-P131-042}{\zeta_b} derivative brings in only a power of
+\NSi{NS-F-P131-043}{\lambda^{-1}}, so it is still exponentially small.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P131-006}
+The axial corrections now fix \NSi{NS-F-P131-044}{M} and
+\NSi{NS-F-P131-045}{J} for each trial pulse amplitude. Next, set the angular moment
+needed at the start of the exterior transition. Put
+\NSi{NS-F-P131-046}{r_I=I/(XH)}. It satisfies
+\NSFormula{NS-F-P131-047}{display}{none}
+\[
+r_I'+(1+l)r_I=1.
+\]
+Before the exterior transition, \NSi{NS-F-P131-048}{1+l} stays bounded below, and the
+explicit shapes give a \NSi{NS-F-P131-049}{C_\eta^1} bound
+\NSi{NS-F-P131-050}{C_{\mathrm{pre}}} at the end of the profile interpolation. On the
+interval with uniform profile, \NSi{NS-F-P131-051}{r_I-}
+\end{EESegment}
+\NSPage{132}%
+\begin{EESegment}{EE-TGT-P132-001}
+\NSi{NS-F-P132-001}{(1-\lambda)^{-1}} decays at rate
+\NSi{NS-F-P132-002}{1-\lambda}. The moment discrepancy at the first correction center
+is therefore \NSi{NS-F-P132-003}{O_{C_\eta^1}(C_{\mathrm{pre}}\lambda^{28})}. Make a
+relative change \NSi{NS-F-P132-004}{E\mapsto E(1+c_1\beta_1+c_2\beta_2)}. The
+\NSi{NS-F-P132-005}{I} row is linear with slope
+\NSi{NS-F-P132-006}{1-\lambda}, and the linearized pressure row has slope
+\NSi{NS-F-P132-007}{-1-2\lambda} in \NSi{NS-F-P132-008}{y}. Divide these rows by
+\NSi{NS-F-P132-009}{XH} and \NSi{NS-F-P132-010}{E^2}, respectively, at the first
+center. Equation~\eqref{eq:A.1} gives an inverse that stays bounded. The quadratic
+pressure increment is the only nonlinear term. Lemma~\ref{lem:A.2} gives coefficients
+\NSi{NS-F-P132-011}{O_{C_\eta^1}(C_{\mathrm{pre}}\lambda^{28})} and the exact
+conditions in \eqref{eq:A.11}. The \NSi{NS-F-P132-012}{y} derivatives of these
+corrections are much smaller than \NSi{NS-F-P132-013}{\lambda}, so
+\NSi{NS-F-P132-014}{E>0} and \NSi{NS-F-P132-015}{l\le-\lambda/2} both remain true.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P132-002}
+At the start of the exterior transition,
+\NSi{NS-F-P132-016}{U=M=J=0} and
+\NSi{NS-F-P132-017}{I=XH/(1-\lambda)} does not depend on
+\NSi{NS-F-P132-018}{\eta}. The integral formula \eqref{eq:4.16} for
+\NSi{NS-F-P132-019}{Q_s} gives
+\NSi{NS-F-P132-020}{Q_s=(\lambda-h)/(1-\lambda)} exactly. The source
+\NSi{NS-F-P132-021}{-l-h} is nonnegative from there until the final interval. During the
+first transition, that solution keeps the lower bound
+\NSi{NS-F-P132-022}{c\lambda}. On
+the constant-slope interval with
+\NSi{NS-F-P132-023}{l=-1}, \NSi{NS-F-P132-024}{Q_s'=1-h}, so the value at the end is
+comparable to \NSi{NS-F-P132-025}{\log(1/h)}. The next transition changes that size by
+only bounded factors. By contrast, \NSi{NS-F-P132-026}{Q_p\asymp\rho_o\asymp h}, as
+\eqref{eq:A.13} shows on a fixed interval. The constant-slope interval in between, where
+\NSi{NS-F-P132-027}{l=-h}, therefore has a positive, finite logarithmic radial length.
+On the final interval, the exact solution is
+\NSFormula{NS-F-P132-028}{display}{A.16}
+\begin{equation}
+Q_s(y)=\int_y^3\exp\left(\int_y^v(1+l(s))\,ds\right)\frac{f_o'(v)}{f_o(v)}\,dv.
+\tag{A.16}\label{eq:A.16}
+\end{equation}
+It reaches zero at the endpoint and stays zero afterward. Throughout the exterior
+transition, \NSi{NS-F-P132-029}{I} does not depend on
+\NSi{NS-F-P132-030}{\eta}, and after that
+\NSi{NS-F-P132-031}{Q_s=-1+(1-h)I/(XH)}. It follows that
+\NSFormula{NS-F-P132-032}{display}{none}
+\[
+I=\frac{XH}{1-h}\quad\text{beyond the tail},
+\qquad
+\int_0^\infty(H-H_{\mathrm{pow}})\,dX=0.
+\]
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P132-003}
+The subtracted moment is integrable at zero because
+\NSi{NS-F-P132-033}{H_{\mathrm{pow}}\propto X^{-h}} and
+\NSi{NS-F-P132-034}{h<1}. Far enough out, its integrand is identically zero. The
+angular correction, its endpoint, and all the lengths in the exterior transition depend only
+on \NSi{NS-F-P132-035}{E}, so they do not depend on the axial amplitude.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P132-004}
+The angular moment has now been fixed independently of the pulse amplitude. The one scalar
+condition left is \NSi{NS-F-P132-036}{S(\infty)=0}. Before solving it, bound the part
+that comes from the transition to the exterior profile. Since
+\NSi{NS-F-P132-037}{(XE^2)'=2lXE^2}, the interval with constant slope
+\NSi{NS-F-P132-038}{l=-1} gives the exact factors
+\NSFormula{NS-F-P132-039}{display}{A.17}
+\begin{equation}
+\frac{(XE^2)_{\mathrm{hold\ end}}}{(XE^2)_{\mathrm{hold\ start}}}=h^8,
+\qquad
+\frac{E_{\mathrm{hold\ end}}}{E_{\mathrm{hold\ start}}}=h^6.
+\tag{A.17}\label{eq:A.17}
+\end{equation}
+Here ``hold start'' and ``hold end'' are the two endpoints of the constant-slope interval
+where \NSi{NS-F-P132-040}{l=-1}. The label ``release'' in the next integral means the
+whole transition to the exterior power law. The first transition and the constant-slope
+interval contribute at most
+\NSi{NS-F-P132-041}{CX_{\mathrm{rel}}e_{\mathrm{rel}}^2} to
+\NSi{NS-F-P132-042}{\int XE^2\,dy}. From the end of the constant-slope interval onward,
+\NSi{NS-F-P132-043}{l\le-3h/4}, so the rest of the integral is at most
+\NSi{NS-F-P132-044}{CX_{\mathrm{rel}}e_{\mathrm{rel}}^2h^8/h}. Therefore
+\NSFormula{NS-F-P132-045}{display}{A.18}
+\begin{equation}
+\int_{\mathrm{release}}XE^2\,dy\le CX_{\mathrm{rel}}e_{\mathrm{rel}}^2
+\tag{A.18}\label{eq:A.18}
+\end{equation}
+with a constant that is uniform in \NSi{NS-F-P132-046}{h}. The
+\NSi{NS-F-P132-047}{h^8} estimate controls this integral. The separate
+\NSi{NS-F-P132-048}{h^6} estimate will later control the ratio
+\NSi{NS-F-P132-049}{w=N_s/(EQ_s)} near the outer endpoint. The profile interpolation
+and the constant-slope interval after it contribute at most
+\NSi{NS-F-P132-050}{C(1+\log(1/\lambda))X_{\mathrm{end}}e_{\mathrm{end}}^2}. The first
+\NSi{NS-F-P132-051}{\eta} derivatives satisfy the same bounds because the exterior
+transition is uniform and the earlier logarithmic shapes have bounded derivatives.
+\end{EESegment}
+\par

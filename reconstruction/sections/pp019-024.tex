@@ -1,0 +1,324 @@
+\NSPage{019}%
+\begingroup
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.05}
+
+\refstepcounter{table}\label{tab:1}%
+\begin{center}
+Table \thetable: Guide to the principal symbols.
+\end{center}
+\noindent
+\begin{tabular}{@{}p{0.24\linewidth}p{0.51\linewidth}p{0.19\linewidth}@{}}
+\hline
+Symbol & Meaning and role & Definition \\
+\hline
+\multicolumn{3}{@{}l}{\textbf{Physical fields and the background construction}}\\
+\NSi{NS-F-P019-001}{u,p,f,\nu}
+& Velocity, pressure, external force, and physical viscosity in the Navier--Stokes equation. The local construction uses \NSi{NS-F-P019-002}{\nu=1}.
+& \eqref{eq:1.1}; Section~\ref{sec:3} \\
+\NSi{NS-F-P019-003}{\mathscr R(u,p)}
+& Momentum residual at viscosity one, \NSi{NS-F-P019-004}{\partial_tu+(u\mathbin{\cdot}\nabla)u-\Delta u+\nabla p}.
+& \eqref{eq:3.1} \\
+\NSi{NS-F-P019-005}{u^{(0)},p^{(0)}}
+& Leading axisymmetric velocity and pressure, including radial, azimuthal, and axial flow. The swirl is \NSi{NS-F-P019-006}{u_\theta^{(0)}}.
+& \eqref{eq:4.3} \\
+\NSi{NS-F-P019-007}{E,U,V_0,\Pi}
+& Leading profiles of swirl, axial velocity, radial flux \NSi{NS-F-P019-008}{ru_r^{(0)}}, and pressure, respectively.
+& \eqref{eq:4.3}, \eqref{eq:4.7} \\
+\NSi{NS-F-P019-009}{\phi,F,H}\ in the profiles
+& Smooth swirl profile \NSi{NS-F-P019-010}{F=E/\sqrt{2X}=\phi/\mathsf C}, and angular-momentum profile \NSi{NS-F-P019-011}{H=\sqrt{2X}E}. The normalization \NSi{NS-F-P019-012}{\mathsf C>1} is fixed.
+& \eqref{eq:4.4}, \eqref{eq:4.8} \\
+\NSi{NS-F-P019-013}{\mathfrak m,(M,I,J,S,C_p)}
+& Five cumulative radial integrals preserving pressure, radial velocity, and stress across profile joins; \NSi{NS-F-P019-014}{C_p} is the pressure increment from the axis.
+& \eqref{eq:4.15}; Lemma~\ref{lem:4.4} \\
+\NSi{NS-F-P019-015}{Q_s,N_s}
+& Normalized radial primitives of the inviscid azimuthal and axial momentum residuals, used to form the stress vector \NSi{NS-F-P019-016}{p_s}.
+& \eqref{eq:4.9}, \eqref{eq:4.16}, \eqref{eq:4.11} \\
+\NSi{NS-F-P019-017}{\mathfrak s=(a,-b_s),p_s}
+& Normalized radial shear and integrated inviscid-stress vector, with \NSi{NS-F-P019-018}{\mathcal T_0=F(p_s-\mathfrak s)}. Here \NSi{NS-F-P019-019}{p_s} is a two-component stress quantity.
+& \eqref{eq:4.11} \\
+\NSi{NS-F-P019-020}{t_s,v_s,P_c,J_c}
+& Shear direction and strength parameters, and unnormalized components of \NSi{NS-F-P019-021}{p_s} along and across that direction; these specify the positive covariance cone.
+& \eqref{eq:4.20}; Equation~\eqref{eq:4.21} \\
+\NSi{NS-F-P019-022}{E_n,U_n,V_n,\Pi_n,\lambda_n=2nh}
+& Formal background coefficient profiles at order \NSi{NS-F-P019-023}{q^{2nh}}. The index \NSi{NS-F-P019-024}{n} counts background expansion orders.
+& \eqref{eq:5.1}, \eqref{eq:5.2} \\
+\NSi{NS-F-P019-025}{u_B,p_B}
+& Smooth corrected axisymmetric background, obtained by summing the coefficients with cutoffs on vector potentials, direct swirl terms, and pressures.
+& Proposition~\ref{prop:5.5}; \eqref{eq:5.41} \\
+\NSi{NS-F-P019-026}{(b,V,G)}
+& Radial, azimuthal (swirl), and axial components of the fixed background in normalized chart coordinates.
+& \eqref{eq:8.1}, \eqref{eq:9.7} \\
+\NSi{NS-F-P019-027}{\mathcal T_0,T=q^{-A-1/2}\mathcal T_0}
+& Leading stress profile and physical stress pair, in \NSi{NS-F-P019-028}{(r\theta,rz)} order. The negative cylindrical divergence of \NSi{NS-F-P019-029}{T} gives the leading tangential residual, retaining radial viscosity and omitting axial viscosity.
+& \eqref{eq:4.11}; Proposition~\ref{prop:4.2} \\
+\hline
+\end{tabular}
+\par\smallskip
+\hfill\emph{Continued on the next page.}
+
+\NSPage{020}%
+\par\medskip
+\noindent\emph{Guide to the principal symbols (continued).}
+\par\smallskip
+\noindent
+\begin{tabular}{@{}p{0.24\linewidth}p{0.51\linewidth}p{0.19\linewidth}@{}}
+\hline
+Symbol & Meaning and role & Definition \\
+\hline
+\NSi{NS-F-P020-001}{\mathcal T_{\mathrm{phys}},\mathcal E_B}
+& Summed annular background stress and the flat residual remaining after its negative divergence is removed.
+& \eqref{eq:5.41}; Proposition~\ref{prop:5.5} \\
+\NSi{NS-F-P020-002}{\Sigma_\theta,\Sigma_z}
+& Fixed base stress components in chart units: \NSi{NS-F-P020-003}{\Sigma_a=Q^{2A}\mathcal T_{\mathrm{phys},a},\ a=\theta,z}.
+& Proposition~\ref{prop:8.1} \\
+\NSi{NS-F-P020-004}{\mathcal S_n,\mathcal A_n}
+& Physical background Stokes streamfunction and its azimuthal vector potential \NSi{NS-F-P020-005}{\mathcal A_n=(\mathcal S_n/r)e_\theta}. Taking its curl gives radial and axial velocity.
+& \eqref{eq:5.27} \\
+\NSi{NS-F-P020-006}{K(r,\tau),\mathcal H_{\mathrm{ext}}}
+& Exterior swirl heat velocity and its profile: \NSi{NS-F-P020-007}{K=r^{-1-2h}\mathcal H_{\mathrm{ext}}(\tau/r^2)}. The exterior velocity is \NSi{NS-F-P020-008}{Ke_\theta}.
+& \eqref{eq:3.5} \\
+\NSi{NS-F-P020-009}{u^{[j]},p^{[j]}}
+& Full fields at finite correction stage \NSi{NS-F-P020-010}{j}: the fixed background, waves, and mean corrections. Square brackets count correction cycles.
+& \eqref{eq:9.7}; Definition~\ref{def:9.4} \\
+\NSi{NS-F-P020-011}{Z_j=(A_j,B_j,p_j)}\ in summation
+& Physical correction tuple from stage \NSi{NS-F-P020-012}{j-1}\ to \NSi{NS-F-P020-013}{j}, \NSi{NS-F-P020-014}{j\geq1}: vector potential \NSi{NS-F-P020-015}{A_j}, direct azimuthal velocity vector \NSi{NS-F-P020-016}{B_j}, and pressure increment \NSi{NS-F-P020-017}{p_j=p^{[j]}-p^{[j-1]}}. Its velocity increment is \NSi{NS-F-P020-018}{\Delta u_j=\curl A_j+B_j}.
+& \eqref{eq:9.15}, \eqref{eq:9.16} \\
+\NSi{NS-F-P020-019}{\mathcal A,\mathcal B,u_{\mathrm{loc}},p_{\mathrm{loc}}}
+& Summed local fields and their potential representation \NSi{NS-F-P020-020}{u_{\mathrm{loc}}=\curl\mathcal A+\mathcal B e_\theta}; \NSi{NS-F-P020-021}{\mathcal B} is an axisymmetric scalar. The local pair is written \NSi{NS-F-P020-022}{(u,p)} in Theorem~\ref{thm:3.1}.
+& \eqref{eq:3.3}, \eqref{eq:9.21} \\
+\NSi{NS-F-P020-023}{u,p}\ after localization
+& Whole-space velocity and pressure obtained by applying spatial and time cutoffs to the local potential representation. Their residual supplies \NSi{NS-F-P020-024}{f}.
+& \eqref{eq:10.4}, \eqref{eq:10.5} \\
+\multicolumn{3}{@{}l}{\textbf{Coordinates, scales, and auxiliary variables}}\\
+\NSi{NS-F-P020-025}{(r,\theta,z),t,(e_r,e_\theta,e_z)}
+& Physical cylindrical coordinates, time, and unit vectors. The directions tangent to a cylinder are azimuthal and axial.
+& Section~\ref{sec:3.1} \\
+\NSi{NS-F-P020-026}{\tau,q}
+& Remaining time \NSi{NS-F-P020-027}{\tau=1-t} and concentration scale \NSi{NS-F-P020-028}{q=q(z,t)}, determined by \NSi{NS-F-P020-029}{\tau=q(1-\eta^2)}, \NSi{NS-F-P020-030}{z=q^D\eta}.
+& \eqref{eq:4.1}; Lemma~\ref{lem:4.1} \\
+\NSi{NS-F-P020-031}{s,X,\eta}
+& Squared radial variable \NSi{NS-F-P020-032}{s=r^2/2}, radial similarity variable \NSi{NS-F-P020-033}{X=s/q}, and axial similarity variable \NSi{NS-F-P020-034}{\eta=z/q^D}.
+& \eqref{eq:4.1} \\
+\NSi{NS-F-P020-035}{h,A,D}
+& Fixed small exponent \NSi{NS-F-P020-036}{h}, tangential velocity growth exponent \NSi{NS-F-P020-037}{A=1/2+h}, and axial length exponent \NSi{NS-F-P020-038}{D=1/2-h}.
+& \eqref{eq:4.1}, \eqref{eq:4.3} \\
+\NSi{NS-F-P020-039}{\lambda}
+& Fixed radial decay exponent in the reserved power-law profile, \NSi{NS-F-P020-040}{E\propto X^{-1/2-\lambda}}.
+& \eqref{eq:4.30} \\
+\hline
+\end{tabular}
+\par\smallskip
+\hfill\emph{Continued on the next page.}
+
+\NSPage{021}%
+\par\medskip
+\noindent\emph{Guide to the principal symbols (continued).}
+\par\smallskip
+\noindent
+\begin{tabular}{@{}p{0.24\linewidth}p{0.51\linewidth}p{0.19\linewidth}@{}}
+\hline
+Symbol & Meaning and role & Definition \\
+\hline
+\NSi{NS-F-P021-001}{\ell,Q,\varepsilon,S_*}\ in charts
+& Dyadic band index, fixed band scale \NSi{NS-F-P021-002}{Q=2^{-\ell}}, small parameter \NSi{NS-F-P021-003}{\varepsilon=Q^h}, and slow scale \NSi{NS-F-P021-004}{S_*=\ell^2}. On a band, \NSi{NS-F-P021-005}{q\asymp Q}; these chart parameters are held fixed in derivatives.
+& \eqref{eq:6.1} \\
+\NSi{NS-F-P021-006}{R}\ in profiles; \NSi{NS-F-P021-007}{(R,Z,T)}\ in charts
+& The profile radius is \NSi{NS-F-P021-008}{R=\sqrt{2X}=r/\sqrt q}. In a dyadic chart, \NSi{NS-F-P021-009}{(R,Z,T)=(r/\sqrt Q,z/Q^D,\tau/Q)}.
+& \eqref{eq:6.1} and following prose \\
+\NSi{NS-F-P021-010}{u_*,p_*,g_*}
+& Normalized physical velocity, pressure, and residual/source: multiplication by \NSi{NS-F-P021-011}{Q^A,Q^{2A},Q^{2A+1/2}}, respectively. Moment normalizations also include radial integration.
+& \eqref{eq:8.11}, \eqref{eq:6.26} \\
+\NSi{NS-F-P021-012}{Y,J_g,v_r,v_t,d_r}
+& Absolute auxiliary torus variable, its integer covering matrix, radial/time eigendirections, and radial phase exponent. Physical fields are evaluated at \NSi{NS-F-P021-013}{Y=v_rr^{d_r}+v_tt\pmod{\mathbb Z^2}}.
+& \eqref{eq:6.2}, \eqref{eq:6.3} \\
+\NSi{NS-F-P021-014}{Y_i,H,y}\ on auxiliary tori
+& Band coordinate \NSi{NS-F-P021-015}{Y_i=J_g^iY} and common coordinate \NSi{NS-F-P021-016}{H=Y_{i_0}} for overlapping bands. The mean construction calls that common coordinate \NSi{NS-F-P021-017}{y}.
+& \eqref{eq:6.5}, \eqref{eq:6.17}, \eqref{eq:8.5} \\
+\NSi{NS-F-P021-018}{\mathfrak r,\mathfrak t;D_r,D_z,D_\theta,\mathfrak t_*}
+& Physical radial/time derivatives represented on extended fields before auxiliary evaluation, and their normalized spatial/time counterparts in the wave and mean equations.
+& \eqref{eq:6.4}, \eqref{eq:6.6} \\
+\NSi{NS-F-P021-019}{\nabla_*,\operatorname{div}_*,\operatorname{curl}_*}
+& Normalized gradient, divergence, and curl, including cylindrical frame terms and differentiation of the auxiliary phase map.
+& \eqref{eq:3.11} \\
+\NSi{NS-F-P021-020}{X_a,X_b}
+& Edges of the active stress annulus \NSi{NS-F-P021-021}{X_a<X<X_b}, corresponding to \NSi{NS-F-P021-022}{\sqrt{2qX_a}<r<\sqrt{2qX_b}} at a physical slow point.
+& Theorem~\ref{thm:4.6}\textup{(ii)} \\
+\NSi{NS-F-P021-023}{\mathcal I_{\mathrm{pos}},\mathcal I_{\mathrm{mean}}}
+& Disjoint fixed intervals inside the active annulus reserved for positive-order background corrections and mean-velocity corrections, respectively. They are intervals in \NSi{NS-F-P021-024}{X}.
+& Theorem~\ref{thm:4.6}\textup{(vi)}; \eqref{eq:4.30} \\
+\NSi{NS-F-P021-025}{\mathcal J_{\mathrm{pos}},I_m}
+& The same two patches expressed in \NSi{NS-F-P021-026}{r/\sqrt q}: the images of \NSi{NS-F-P021-027}{\mathcal I_{\mathrm{pos}}}\ and \NSi{NS-F-P021-028}{\mathcal I_{\mathrm{mean}}}\ under \NSi{NS-F-P021-029}{X\mapsto\sqrt{2X}}.
+& Lemma~\ref{lem:5.2}, Proposition~\ref{prop:8.3} and preceding definition \\
+\NSi{NS-F-P021-030}{\mathcal C_a(\varepsilon),\mathcal C_b(\varepsilon)}
+& Fixed profile collars at the two radial annular edges. Here \NSi{NS-F-P021-031}{\varepsilon} denotes their logarithmic width, independent of the physical scale \NSi{NS-F-P021-032}{q}.
+& \eqref{eq:4.24} \\
+\multicolumn{3}{@{}l}{\textbf{Waves, amplitudes, and momentum flux}}\\
+\NSi{NS-F-P021-033}{\gamma=(\ell,a,\sigma)\in\Gamma}
+& Wave label specifying a band, slow box, and one of two wave families. This label is distinct from the axial mean-velocity component \NSi{NS-F-P021-034}{\gamma} below.
+& \eqref{eq:6.8} \\
+\hline
+\end{tabular}
+\par\smallskip
+\hfill\emph{Continued on the next page.}
+
+\NSPage{022}%
+\par\medskip
+\noindent\emph{Guide to the principal symbols (continued).}
+\par\smallskip
+\noindent
+\begin{tabular}{@{}p{0.24\linewidth}p{0.51\linewidth}p{0.19\linewidth}@{}}
+\hline
+Symbol & Meaning and role & Definition \\
+\hline
+\NSi{NS-F-P022-001}{\eta_\gamma,K_\gamma,\mathcal R_\gamma}
+& Slow localization cutoff, its support in physical \NSi{NS-F-P022-002}{(r,z,t)}, and the auxiliary support rectangle on the band torus.
+& \eqref{eq:6.9}, \eqref{eq:6.10} \\
+\NSi{NS-F-P022-003}{k,m,\Phi,n_\Phi}
+& Carrier frequency \NSi{NS-F-P022-004}{k=\lceil\varepsilon^{-1/2}\rceil}, nonzero integer harmonic, label phase, and its normalized spatial gradient.
+& \eqref{eq:7.2}, \eqref{eq:7.3}, \eqref{eq:7.4} \\
+\NSi{NS-F-P022-005}{t_m,\pi_m,f_m}
+& Principal transverse velocity amplitude, pressure amplitude, and prescribed source for a harmonic; \NSi{NS-F-P022-006}{n_\Phi\mathbin{\cdot}t_m=0}.
+& \eqref{eq:7.5}, \eqref{eq:7.13} \\
+\NSi{NS-F-P022-007}{B,B^\ell,\mathcal K,\mathcal A_\Phi}
+& A \NSi{NS-F-P022-008}{3\times2} frame matrix for \NSi{NS-F-P022-009}{n_\Phi^\perp} and its left inverse; the background shear/rotation matrix and the projected inviscid evolution operator on that moving plane.
+& \eqref{eq:7.8}, \eqref{eq:7.6}, \eqref{eq:7.10} \\
+\NSi{NS-F-P022-010}{d,d_{\mathrm{ref}},\lambda(v)}\ in pulses
+& Viscous damping coefficient \NSi{NS-F-P022-011}{d=\varepsilon k^2\lvert n_\Phi\rvert^2}, its reference approximation, and the positive reference growth rate in the frame \NSi{NS-F-P022-012}{B}, with diagonal reference rates \NSi{NS-F-P022-013}{\pm\lambda}.
+& \eqref{eq:7.5}, \eqref{eq:7.11}, \eqref{eq:7.10} \\
+\NSi{NS-F-P022-014}{P_v=P(v),v}\ in pulses
+& Pulse envelope and its auxiliary time coordinate. The coordinate \NSi{NS-F-P022-015}{v} advances at unit speed under \NSi{NS-F-P022-016}{\mathfrak t_*}.
+& \eqref{eq:7.12}, \eqref{eq:6.11}, \eqref{eq:6.12} \\
+\NSi{NS-F-P022-017}{\mathsf H,\boldsymbol y,a_\sigma,W_0}
+& Covariance matrix, positive squared pulse weights, their square-root amplitudes, and the local leading wave before taking curls.
+& Proposition~\ref{prop:7.5}; \eqref{eq:7.24} \\
+\NSi{NS-F-P022-018}{C_m,A_m,r_m,a_m}
+& Wave-potential coefficient, oscillating vector potential, curl remainder, and full harmonic velocity amplitude \NSi{NS-F-P022-019}{a_m=t_m+r_m}.
+& \eqref{eq:7.38}, \eqref{eq:7.39} \\
+\NSi{NS-F-P022-020}{W_0^{\mathrm{as}}=w_0^{\mathrm{tan}},w}
+& Assembled leading wave transverse to the phase normal, and the actual wave velocity formed by curls, including their remainders and later wave corrections.
+& \eqref{eq:7.36}, \eqref{eq:9.7}; Definition~\ref{def:9.4} \\
+\NSi{NS-F-P022-021}{W_{ab}=\langle w_aw_b\rangle_\theta}
+& Full angularly averaged wave covariance in cylindrical components; its radial off-diagonal entries transport azimuthal and axial momentum.
+& \eqref{eq:8.1}, \eqref{eq:8.3} \\
+\NSi{NS-F-P022-022}{\mathcal C(w),\mathcal B(w,v)}
+& Doubly averaged radial momentum-flux pair and its symmetric cross term, used to prescribe covariance changes.
+& \eqref{eq:7.23} \\
+\NSi{NS-F-P022-023}{\Sigma,\mathcal L\Sigma}\ in the wave correction
+& Prescribed signed covariance increment and its linearized principal-wave correction. The base stresses are \NSi{NS-F-P022-024}{\Sigma_a} above.
+& \eqref{eq:7.31}, \eqref{eq:7.34} \\
+\multicolumn{3}{@{}l}{\textbf{Mean velocity and its compatibility conditions}}\\
+\NSi{NS-F-P022-025}{(\beta,v,\gamma)}
+& Angularly invariant radial, azimuthal, and axial velocity corrections. They may depend on the auxiliary torus.
+& \eqref{eq:8.1} \\
+\NSi{NS-F-P022-026}{p_m,p_w}
+& Angular mean pressure correction and nonzero-harmonic pressure correction, respectively.
+& \eqref{eq:8.12}, \eqref{eq:9.7} \\
+\hline
+\end{tabular}
+\par\smallskip
+\hfill\emph{Continued on the next page.}
+
+\NSPage{023}%
+\par\medskip
+\noindent\emph{Guide to the principal symbols (continued).}
+\par\smallskip
+\noindent
+\begin{tabular}{@{}p{0.24\linewidth}p{0.51\linewidth}p{0.19\linewidth}@{}}
+\hline
+Symbol & Meaning and role & Definition \\
+\hline
+\NSi{NS-F-P023-001}{g_r,E_\theta,E_z}
+& Radial pressure source and exact azimuthal/axial mean residuals. The radial mean residual is \NSi{NS-F-P023-002}{D_rp_m-g_r}.
+& \eqref{eq:8.3} \\
+\NSi{NS-F-P023-003}{\mathcal P,\mathcal J_\theta,\mathcal J_z}
+& Three slow compatibility defects: the radial source integral and two momentum-flux integrals corrected by the five-equation map.
+& \eqref{eq:8.12}, \eqref{eq:8.15}, \eqref{eq:8.25} \\
+\NSi{NS-F-P023-004}{M_\theta,M_z}
+& Angular-momentum and axial-flux moments of the auxiliary-averaged mean correction. Both are constrained to vanish.
+& \eqref{eq:8.2} \\
+\NSi{NS-F-P023-005}{\gamma_d,\Psi_*,\Delta\gamma}
+& Desired axial increment, its azimuthal vector-potential coefficient, and the actual axial increment \NSi{NS-F-P023-006}{\Delta\gamma=\gamma_d-\mathcal A_1\gamma_d}.
+& \eqref{eq:8.14} \\
+\NSi{NS-F-P023-007}{H_\theta,H_z}
+& Supported covariance targets obtained from the averaged tangential residuals after subtracting their weighted radial moments.
+& \eqref{eq:8.18} \\
+\multicolumn{3}{@{}l}{\textbf{Averages and inversion operators}}\\
+\NSi{NS-F-P023-008}{\langle f\rangle_\theta,\langle f\rangle_Y,\langle f\rangle,f^\circ}
+& Angular average, auxiliary Haar average, and auxiliary zero-mean part \NSi{NS-F-P023-009}{f-\langle f\rangle_Y}; bare brackets for wave fields denote the combined angular and auxiliary average. These act before evaluation at the physical phase map.
+& Equations~\eqref{eq:3.7} to~\eqref{eq:3.9} \\
+\NSi{NS-F-P023-010}{\mathcal A_X(f),\mathcal D_X}
+& Radial prefix average \NSi{NS-F-P023-011}{X^{-1}\int_0^X f(x,\eta)\,dx}, and logarithmic radial derivative \NSi{NS-F-P023-012}{X\partial_X}.
+& \eqref{eq:3.10}, \eqref{eq:4.2} \\
+\NSi{NS-F-P023-013}{\mathcal I,\mathcal J,\mathcal I_c}
+& Phase-following prefix integral, full radial integral, and compactly supported primitive \NSi{NS-F-P023-014}{\mathcal I-\chi_m\mathcal J}.
+& \eqref{eq:8.4}, \eqref{eq:8.5} \\
+\NSi{NS-F-P023-015}{\mathcal D_e,\mathsf T_e,\mathcal A_e}
+& Weighted radial derivative, supported inverse, and cutoff remainder: \NSi{NS-F-P023-016}{\mathcal D_e\mathsf T_ef=f-\mathcal A_ef}, \NSi{NS-F-P023-017}{e\in\{0,1,2\}}.
+& \eqref{eq:8.6}, \eqref{eq:8.7} \\
+\NSi{NS-F-P023-018}{N^{-1},N_{\mathrm{abs}}^{-1}}
+& Zero-Haar-mean inverse of the auxiliary-time derivative, in chart and absolute auxiliary coordinates.
+& \eqref{eq:8.19}, \eqref{eq:8.23} \\
+\multicolumn{3}{@{}l}{\textbf{Weights, coefficient classes, and correction orders}}\\
+\NSi{NS-F-P023-019}{\zeta,\delta,\kappa_s}
+& Flat radial-edge weight, capped logarithmic distance to the radial edges, and fixed small radial derivative-loss exponent.
+& \eqref{eq:6.23}, \eqref{eq:6.2} \\
+\NSi{NS-F-P023-020}{\mathsf W_\alpha}
+& Normalized wave amplitudes of order \NSi{NS-F-P023-021}{\varepsilon^\alpha}, with radial weight \NSi{NS-F-P023-022}{\sqrt\zeta}, pulse envelope, and prescribed supports.
+& Definition~\ref{def:6.5}; \eqref{eq:6.29} \\
+\NSi{NS-F-P023-023}{\mathsf M_\alpha}
+& Normalized angular mean coefficients of order \NSi{NS-F-P023-024}{\varepsilon^\alpha}, with radial weight \NSi{NS-F-P023-025}{\zeta}; auxiliary dependence is allowed.
+& Definition~\ref{def:6.4}; \eqref{eq:6.24} \\
+\NSi{NS-F-P023-026}{\mathsf S_\alpha}
+& Normalized radial moments depending on \NSi{NS-F-P023-027}{(Z,T)}, of order \NSi{NS-F-P023-028}{\varepsilon^\alpha}, with the radial integration included in their units.
+& \eqref{eq:6.25}, \eqref{eq:6.26} \\
+\hline
+\end{tabular}
+\par\smallskip
+\hfill\emph{Continued on the next page.}
+
+\NSPage{024}%
+\par\medskip
+\noindent\emph{Guide to the principal symbols (continued).}
+\par\smallskip
+\noindent
+\begin{tabular}{@{}p{0.24\linewidth}p{0.51\linewidth}p{0.19\linewidth}@{}}
+\hline
+Symbol & Meaning and role & Definition \\
+\hline
+\NSi{NS-F-P024-001}{\mathcal G^{[j]},\mathcal F^{[j]}}
+& Supported residual part and separately retained flat residual at stage \NSi{NS-F-P024-002}{j}. Flatness concerns every fixed Cartesian space-time derivative and every power of \NSi{NS-F-P024-003}{q}.
+& \eqref{eq:9.3}, \eqref{eq:9.5} \\
+\NSi{NS-F-P024-004}{\sigma_j,B_j,C_j^*}
+& Stage decay parameters: \NSi{NS-F-P024-005}{\sigma_j=1/5+j/10}, \NSi{NS-F-P024-006}{B_j=1/2+\sigma_j}, \NSi{NS-F-P024-007}{C_j^*=1+\sigma_j}. The latter two are wave and mean residual orders in powers of \NSi{NS-F-P024-008}{\varepsilon}.
+& \eqref{eq:9.8}; Proposition~\ref{prop:9.6} \\
+\NSi{NS-F-P024-009}{\chi(a_jq),a_j}
+& Cutoffs and their increasing scale parameters used to sum the physical corrections on shrinking neighborhoods of \NSi{NS-F-P024-010}{q=0}. Cutoffs are applied to potentials before taking curls.
+& Lemma~\ref{lem:5.4}; \eqref{eq:9.21} \\
+\hline
+\end{tabular}
+\endgroup
+
+\section{Constructing the leading order flow}
+\label{sec:4}
+
+The concentrating flow of Section~\ref{sec:3.1} requires an axisymmetric velocity with prescribed growth near the origin and a heat flow in the exterior. We construct its profiles \NSi{NS-F-P024-011}{E,U,\Pi}, which define the leading velocity and pressure \NSi{NS-F-P024-012}{(u^{(0)},p^{(0)})} in \eqref{eq:4.3}. Incompressibility holds exactly. The leading tangential momentum residual is minus the cylindrical divergence of the two-component stress with profile \NSi{NS-F-P024-013}{\mathcal T_0}, defined in \eqref{eq:4.11}. This stress must vanish near the axis and in the exterior, leaving a cylindrical annulus on which the waves can act: an interval of the scaled radius \NSi{NS-F-P024-014}{X} at each fixed axial parameter \NSi{NS-F-P024-015}{\eta}.
+
+The stress direction is also constrained. As explained in Section~\ref{sec:3}, it must admit the positive covariance representation of Proposition~\ref{prop:7.5}. Theorem~\ref{thm:4.6} gives profiles satisfying this condition, the required regularity and support conditions, and the exact heat exterior. Their remaining momentum residual is treated in two stages: Section~\ref{sec:5} adds higher-order axisymmetric corrections to form the background \NSi{NS-F-P024-016}{(u_B,p_B)}, and Section~\ref{sec:7} supplies waves whose leading covariance supplies the annular stress.
+
+We first derive the stress from the profiles, then identify the five cumulative radial integrals in \eqref{eq:4.15}, whose preservation allows profiles on different radial intervals to be joined without changing the prescribed exterior (Lemma~\ref{lem:4.4}). Next we describe the permitted stress directions and state Theorem~\ref{thm:4.6}. We state the required construction results in Section~\ref{sec:4.5} and then prove the theorem in Section~\ref{sec:4.6}. The proofs of those construction results are in Sections~\ref{sec:A} to~\ref{sec:C}.
+
+\subsection{Similarity variables and radial integration of the residual}
+\label{sec:4.1}
+
+We begin by expressing \NSi{NS-F-P024-017}{(u^{(0)},p^{(0)})} and their derivatives in similarity coordinates, then recover the tangential stress by radial integration in Proposition~\ref{prop:4.2}. We use the right-handed cylindrical coordinates \NSi{NS-F-P024-018}{(r,\theta,z)}, with \NSi{NS-F-P024-019}{\theta\in\mathbb R/(2\pi\mathbb Z)}, and the exponents \NSi{NS-F-P024-020}{A,D} from Section~\ref{sec:3.1}. Along with the relations \eqref{eq:3.2}, we set \NSi{NS-F-P024-021}{d=1-\eta^2}, \NSi{NS-F-P024-022}{L=1-2h\eta^2}, and \NSi{NS-F-P024-023}{s=r^2/2}:
+\NSFormula{NS-F-P024-024}{display}{4.1}
+\begin{equation}
+\begin{gathered}
+\tau=1-t,\qquad A=\frac12+h,\qquad D=\frac12-h,\qquad 0<h<\frac12,\\
+z=q^D\eta,\qquad \tau=q(1-\eta^2),\qquad d=1-\eta^2,\qquad L=1-2h\eta^2,\qquad s=\frac{r^2}{2},\qquad X=\frac{s}{q}.
+\end{gathered}
+\tag{4.1}\label{eq:4.1}
+\end{equation}
+The coordinate identities in this subsection hold for \NSi{NS-F-P024-025}{0<h<1/2}; Theorem~\ref{thm:4.6} will choose \NSi{NS-F-P024-026}{h<1/100}, as in Theorem~\ref{thm:3.1}. As noted in Section~\ref{sec:3.1}, for \NSi{NS-F-P024-027}{\tau>0} the similarity relations

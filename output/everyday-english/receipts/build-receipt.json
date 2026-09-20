@@ -1,0 +1,53 @@
+{
+  "component_receipts": {
+    "checks.json": {
+      "bytes": 1772,
+      "path": "output/everyday-english/receipts/checks.json",
+      "sha256": "bc5b217f1feebdacd5a7049c9a9ad30e0f6f43adb29767d0c648126c02687c06"
+    },
+    "dependencies.json": {
+      "bytes": 4137,
+      "path": "output/everyday-english/receipts/dependencies.json",
+      "sha256": "5873028dffde9a06a27e7319ad11bccc8acd04c08806ff12dcbc85a02b5d0925"
+    },
+    "epub-build.json": {
+      "bytes": 4392,
+      "path": "output/everyday-english/receipts/epub-build.json",
+      "sha256": "93efdf32a19f4c5d7f1513acae7a7984d5df751b541dcfa4a123b945c3b7d0ff"
+    },
+    "html-build.json": {
+      "bytes": 16216,
+      "path": "output/everyday-english/receipts/html-build.json",
+      "sha256": "6c7eb4f05b7b2351918142206b2ecf3d8a6e537dbbf356652e766542e3bcc65c"
+    },
+    "pdf-build.json": {
+      "bytes": 12853,
+      "path": "output/everyday-english/receipts/pdf-build.json",
+      "sha256": "9ca2ffe83df405ba48b95e00561291018b3af2d910d65faac49b3d851a59805a"
+    }
+  },
+  "final_qa_claimed": true,
+  "notice": null,
+  "outputs": [
+    {
+      "bytes": 5108345,
+      "path": "output/everyday-english/pdf/everyday-english-edition.pdf",
+      "sha256": "e8d8a06d53be4fd6e2408485f1be5b97ddef440f98fcabcabcfbf4a04750f55f"
+    },
+    {
+      "bytes": 3865657,
+      "path": "output/everyday-english/html/index.html",
+      "sha256": "56efba577998bd5ff80503b4779587ed659c15b44d6ccf5ec4ce1852bad9f6c3"
+    },
+    {
+      "bytes": 2269611,
+      "path": "output/everyday-english/epub/everyday-english-edition.epub",
+      "sha256": "da3cf6071a690d8bcbeee044daa1e40bf1697f987e91a8c953b247c367e7d821"
+    }
+  ],
+  "profile": "final",
+  "publication_performed": false,
+  "schema": "navier-stokes-everyday-build-receipt/v1",
+  "status": "pass",
+  "translation_evidence_modified": false
+}

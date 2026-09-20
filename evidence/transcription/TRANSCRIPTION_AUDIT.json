@@ -1,0 +1,221 @@
+{
+  "schema": "navier-stokes-transcription-audit/v1",
+  "pdf_sha256": "0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f",
+  "status": "pass",
+  "expected_pages": 166,
+  "completed_ranges": [
+    "pp001-006",
+    "pp007-012",
+    "pp013-018",
+    "pp019-024",
+    "pp025-030",
+    "pp031-036",
+    "pp037-042",
+    "pp043-048",
+    "pp049-054",
+    "pp055-060",
+    "pp061-066",
+    "pp067-072",
+    "pp073-078",
+    "pp079-084",
+    "pp085-090",
+    "pp091-096",
+    "pp097-102",
+    "pp103-108",
+    "pp109-114",
+    "pp115-120",
+    "pp121-126",
+    "pp127-132",
+    "pp133-138",
+    "pp139-144",
+    "pp145-150",
+    "pp151-156",
+    "pp157-162",
+    "pp163-164",
+    "pp165-166"
+  ],
+  "pending_ranges": [],
+  "page_markers": 166,
+  "page_checks": 166,
+  "formula_markers": 6175,
+  "labels": 527,
+  "references": 1671,
+  "unresolved_references": [],
+  "files": [
+    {
+      "range": "pp001-006",
+      "path": "reconstruction/sections/pp001-006.tex",
+      "bytes": 21543,
+      "sha256": "a5efa27522db4b97a5d18e90b8414bca74e44f2e98ed2de0477e9c5bbb78080d"
+    },
+    {
+      "range": "pp007-012",
+      "path": "reconstruction/sections/pp007-012.tex",
+      "bytes": 22842,
+      "sha256": "077c50a30e68490736f531773ccc5bfdf168ca03df5703087a18d7ba94c2fc12"
+    },
+    {
+      "range": "pp013-018",
+      "path": "reconstruction/sections/pp013-018.tex",
+      "bytes": 23144,
+      "sha256": "6c6ca5561776264835f62ce04b924088a54ee999cd9c0152294ef580cdb262a1"
+    },
+    {
+      "range": "pp019-024",
+      "path": "reconstruction/sections/pp019-024.tex",
+      "bytes": 23024,
+      "sha256": "bbf2df9723d4720b63cab67fcac8e3818a454e020ca688eab543fbbd258a77ab"
+    },
+    {
+      "range": "pp025-030",
+      "path": "reconstruction/sections/pp025-030.tex",
+      "bytes": 26593,
+      "sha256": "79f3c38dc7d0c46ca254632bcf74b7712997f23325883bbf72ee46ec82e43d95"
+    },
+    {
+      "range": "pp031-036",
+      "path": "reconstruction/sections/pp031-036.tex",
+      "bytes": 28407,
+      "sha256": "0e6b8389b167db12a1d3b79d450fdbd2581be66b065709e022f7175a583ababc"
+    },
+    {
+      "range": "pp037-042",
+      "path": "reconstruction/sections/pp037-042.tex",
+      "bytes": 28035,
+      "sha256": "34962ea692d33c871c69aefad76f11d4fc967bd3674d00fcadacdc58f7ebb08b"
+    },
+    {
+      "range": "pp043-048",
+      "path": "reconstruction/sections/pp043-048.tex",
+      "bytes": 27381,
+      "sha256": "e2c83a1f3693f8bed47b426917a7586566b85e5b3617fb9dace89f785353359d"
+    },
+    {
+      "range": "pp049-054",
+      "path": "reconstruction/sections/pp049-054.tex",
+      "bytes": 25823,
+      "sha256": "2a5bb1406c6994122c2b2f6abde3eca056e80993740c5ce15c731ef6f767c5b2"
+    },
+    {
+      "range": "pp055-060",
+      "path": "reconstruction/sections/pp055-060.tex",
+      "bytes": 29986,
+      "sha256": "5d5f23647375e6c69e60d866ddf6802d40f1e7fbc7e4fe45f27516d05b7a6864"
+    },
+    {
+      "range": "pp061-066",
+      "path": "reconstruction/sections/pp061-066.tex",
+      "bytes": 27600,
+      "sha256": "a2bfb467ef8525e59037cab98de4e9a28e30ee6c582fb12a05bcb54a22694152"
+    },
+    {
+      "range": "pp067-072",
+      "path": "reconstruction/sections/pp067-072.tex",
+      "bytes": 27108,
+      "sha256": "494bc818c4d6f454f496f9ec98be9e0cf4a2732312ad01688569f0a63d63f5cc"
+    },
+    {
+      "range": "pp073-078",
+      "path": "reconstruction/sections/pp073-078.tex",
+      "bytes": 29025,
+      "sha256": "5b38e8311290ab187574af3428418fbdbf4decf2b5025fc1eb0ff6790e841c79"
+    },
+    {
+      "range": "pp079-084",
+      "path": "reconstruction/sections/pp079-084.tex",
+      "bytes": 28450,
+      "sha256": "99c7c1579dbae68a2debe1def3117c5c72e6d77e1b9dfca5f9f23ccfa18de712"
+    },
+    {
+      "range": "pp085-090",
+      "path": "reconstruction/sections/pp085-090.tex",
+      "bytes": 28695,
+      "sha256": "c2533e877bec521c56d44bff81e21fd2c16c5b8d35789803b6a1b0977119a08a"
+    },
+    {
+      "range": "pp091-096",
+      "path": "reconstruction/sections/pp091-096.tex",
+      "bytes": 29988,
+      "sha256": "6ceefdd7879aaddc86f284306be95e1014043dd5b7c1839e2772bc2f2f6692a6"
+    },
+    {
+      "range": "pp097-102",
+      "path": "reconstruction/sections/pp097-102.tex",
+      "bytes": 27063,
+      "sha256": "2debc08f4cc388a445f3f18ad3717cd53367d13a458d0df9a41406f90cc292f2"
+    },
+    {
+      "range": "pp103-108",
+      "path": "reconstruction/sections/pp103-108.tex",
+      "bytes": 28116,
+      "sha256": "ca19ef475da18d2a1e15d18af7e2d66181c0fb3a3920838a199933c8ebf10ffe"
+    },
+    {
+      "range": "pp109-114",
+      "path": "reconstruction/sections/pp109-114.tex",
+      "bytes": 27515,
+      "sha256": "7e8094ab1cb8144eec7c9e0e746935f921f3307ff83a78a37996ee83ee4199c1"
+    },
+    {
+      "range": "pp115-120",
+      "path": "reconstruction/sections/pp115-120.tex",
+      "bytes": 27814,
+      "sha256": "349578662f5c4b29f1021d09199731a9aa764e5c2703d8c4c75b9bce7bca3726"
+    },
+    {
+      "range": "pp121-126",
+      "path": "reconstruction/sections/pp121-126.tex",
+      "bytes": 25232,
+      "sha256": "243fc34f2eb91236228fe2afa1f6d12b4562bdab426c0a2b77ebbdb1bb3cf833"
+    },
+    {
+      "range": "pp127-132",
+      "path": "reconstruction/sections/pp127-132.tex",
+      "bytes": 29840,
+      "sha256": "a3549d2b3d57019253e46ab04e94441e4d70b64abd497d73f7fa0199d9f2a6c8"
+    },
+    {
+      "range": "pp133-138",
+      "path": "reconstruction/sections/pp133-138.tex",
+      "bytes": 28443,
+      "sha256": "fb6f194afd8606aa273941827ab8065d80cdc4c9c04c23e51cd22c5bad05ca99"
+    },
+    {
+      "range": "pp139-144",
+      "path": "reconstruction/sections/pp139-144.tex",
+      "bytes": 27314,
+      "sha256": "1850511f0e279a13fcaf57fa9c66975b5b495909da200e366ba9e2a143cbe137"
+    },
+    {
+      "range": "pp145-150",
+      "path": "reconstruction/sections/pp145-150.tex",
+      "bytes": 29295,
+      "sha256": "431e84a9dc82d0a6495936a28ea286a7f387d2149c17b712ee001901a4f2377e"
+    },
+    {
+      "range": "pp151-156",
+      "path": "reconstruction/sections/pp151-156.tex",
+      "bytes": 30469,
+      "sha256": "f75c526fb744ca4f6d0cad4f3ffea21d9cb0b06fc9f223280753c04c8bf567d2"
+    },
+    {
+      "range": "pp157-162",
+      "path": "reconstruction/sections/pp157-162.tex",
+      "bytes": 28962,
+      "sha256": "147f8815f76008cc51baed23d67a6dc4e63a531cfd03a05e0e7d5198ee45017d"
+    },
+    {
+      "range": "pp163-164",
+      "path": "reconstruction/sections/pp163-164.tex",
+      "bytes": 9902,
+      "sha256": "02cb72a22db9c3f3c6b6d85b6181142493550aaeb2a2475b14130b8090114ed5"
+    },
+    {
+      "range": "pp165-166",
+      "path": "reconstruction/sections/pp165-166.tex",
+      "bytes": 7252,
+      "sha256": "fbd28d417d02a63eeae499b4abaf7bf142217d00a3925c74a1a4d259d68819bd"
+    }
+  ],
+  "issues": []
+}

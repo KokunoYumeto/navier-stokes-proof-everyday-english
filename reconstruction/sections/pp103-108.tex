@@ -1,0 +1,508 @@
+\NSPage{103}%
+For two curl-generated waves \NSi{NS-F-P103-001}{w,w'} with the same label and exponents
+\NSi{NS-F-P103-002}{\alpha,\alpha'}, the nonzero harmonics of
+\NSi{NS-F-P103-003}{(w\mathbin{\cdot}\nabla_*)w'+(w'\mathbin{\cdot}\nabla_*)w} belong to
+\NSi{NS-F-P103-004}{\mathsf W_{\alpha+\alpha'-\kappa_s}}; the zero harmonic belongs to the mean
+class \NSi{NS-F-P103-005}{\mathsf M_{\alpha+\alpha'-\kappa_s}}. Distinct labels have zero products
+on their closed supports.
+\end{lemma}
+
+\begin{proof}
+Mean advection of a wave phase costs \NSi{NS-F-P103-006}{k=O(\varepsilon^{-1/2})}. Its radial
+transport of the amplitude has a radial mean factor of order \NSi{NS-F-P103-007}{\mu+1} and one
+\NSi{NS-F-P103-008}{D_r}; axial transport gains one through \NSi{NS-F-P103-009}{D_z}. Wave
+transport of a mean costs at most \NSi{NS-F-P103-010}{\kappa_s} radially, and the cylindrical
+connections contain no derivatives. These terms are all bounded by the asserted mean--wave
+exponent.
+
+For two harmonics of one label, phase differentiation in the transport of
+\NSi{NS-F-P103-011}{a'\exp(ikm'\Phi)} by \NSi{NS-F-P103-012}{a\exp(ikm\Phi)} gives
+\NSi{NS-F-P103-013}{ikm'(a\mathbin{\cdot}n_\Phi)a'}. Equation~\eqref{eq:7.39} cancels the
+apparent half-power loss. Transport terms in which the derivative acts on the amplitude cost at
+most \NSi{NS-F-P103-014}{\kappa_s}, and the connections cost none. Products of the weights obey
+\NSi{NS-F-P103-015}{P_v^2\le P_v} and have radial weight \NSi{NS-F-P103-016}{\zeta}; this is also
+stronger than the required \NSi{NS-F-P103-017}{\sqrt\zeta} weight for a nonzero output. The support
+separation in Lemma~\ref{lem:6.1} proves the last assertion. Leibniz' rule proves each statement for
+amplitude derivatives through every fixed order.
+\end{proof}
+
+\subsection{Sources and errors retained during iteration.}\label{sec:9.2}
+To use the estimates in Proposition~\ref{prop:9.1} and Lemma~\ref{lem:9.2} at successive stages,
+each new source must satisfy the support and derivative hypotheses of the pulse inverse in
+Proposition~\ref{prop:7.2}. Mean operations can enlarge auxiliary support, so we must check these
+hypotheses after a complete cycle. We keep the errors already flat at the singularity separate from
+the sources to be corrected, as in \eqref{eq:9.3}, while using the full velocity fields in every
+nonlinear product. The supported sources must remain inside the fixed enlarged rectangle;
+Proposition~\ref{prop:9.3} establishes these properties.
+
+We use the source supports \NSi{NS-F-P103-018}{\Omega_\gamma} and enlarged domains
+\NSi{NS-F-P103-019}{\mathcal E_\gamma^+} of \eqref{eq:6.28}. The flat term below collects the base
+error \NSi{NS-F-P103-020}{\mathcal E_B} from \eqref{eq:5.41}, pulse-cutoff tails, and uncompensated
+cutoff remainders. The exact mean balances can contain such flat terms; their definition always uses
+the complete current velocity. Angular means may occupy the full auxiliary torus; the rectangle and
+envelope conditions below concern the nonzero harmonics.
+
+\begin{proposition}\label{prop:9.3}
+Fix \NSi{NS-F-P103-021}{j\in\mathbb N_0}. Let
+\NSi{NS-F-P103-022}{(u^{[j]},p^{[j]})} be obtained from the fixed slow base and primary waves by a
+finite sequence of the pulse inverse and curl construction, the signed amplitude map for
+auxiliary-independent stresses, and the mean maps of Section~\ref{sec:8}. Suppose that pressure is
+reconstructed by \eqref{eq:8.12} after each update and all products use the complete velocity fields.
+There is a physical residual decomposition
+\NSFormula{NS-F-P103-023}{display}{9.3}
+\begin{equation}
+\mathscr R(u^{[j]},p^{[j]})=\mathcal G^{[j]}+\mathcal F^{[j]}.
+\tag{9.3}\label{eq:9.3}
+\end{equation}
+In a common chart, put
+\NSi{NS-F-P103-024}{\mathcal G_*^{[j]}=Q^{2A+1/2}\mathcal G^{[j]}} and
+\NSi{NS-F-P103-025}{\mathcal F_*^{[j]}=Q^{2A+1/2}\mathcal F^{[j]}}. Then:
+\begin{enumerate}[label=(\roman*)]
+\item \emph{Supported sources.} On the coarsest common auxiliary torus, the nonzero angular
+harmonics have the form
+\NSFormula{NS-F-P103-026}{display}{9.4}
+\begin{equation}
+\begin{gathered}
+\mathcal G_*^{[j]}-\langle\mathcal G_*^{[j]}\rangle_\theta
+ =\sum_{\gamma\in\Gamma}\sum_{m\in\mathscr H_j}
+ f_{\gamma,m}^{[j]}e^{ik_\gamma m\Phi_\gamma},\\
+\mathscr H_j\subset\mathbb Z\setminus\{0\},\qquad |\mathscr H_j|<\infty.
+\end{gathered}
+\tag{9.4}\label{eq:9.4}
+\end{equation}
+The sum is locally finite, and \NSi{NS-F-P103-027}{\mathscr H_j} depends on the finite construction
+but not on the band. The coefficients satisfy
+\NSFormula{NS-F-P103-028}{display}{none}
+\[
+\operatorname{supp}(f_{\gamma,m}^{[j]}|_{\mathcal E_\gamma})\subset\Omega_\gamma,
+\qquad
+f_{\gamma,m}^{[j]}\in C^\infty(\mathcal E_\gamma^+;\mathbb C^3),
+\]
+with smooth zero extension across the fixed slow and transverse supports and the enlarged local
+torus rectangle. Let \NSi{NS-F-P103-029}{\alpha,\mu} be any lower bounds for the wave and mean
+exponents furnished by
+\NSPage{104}%
+applying Propositions~\ref{prop:9.1}, \ref{prop:7.2}, \ref{prop:6.6} and \ref{prop:7.6},
+Section~\ref{sec:8},
+and Lemma~\ref{lem:9.2} along this finite sequence. Then
+\NSFormula{NS-F-P104-001}{display}{none}
+\[
+f_{\gamma,m}^{[j]}\in \mathsf W_\alpha,
+\qquad
+\langle\mathcal G_*^{[j]}\rangle_\theta\in \mathsf M_\mu.
+\]
+The mean coefficients have smooth zero extension outside the active shell. The next pulse inverse is
+applied precisely to the coefficients \NSi{NS-F-P104-002}{f_{\gamma,m}^{[j]}} in \eqref{eq:9.4}.
+
+\item \emph{Flat remainder.} For every fixed \NSi{NS-F-P104-003}{j,m,N},
+\NSFormula{NS-F-P104-004}{display}{9.5}
+\begin{equation}
+|\mathcal F^{[j]}|_m\le C_{j,m,N}q^N.
+\tag{9.5}\label{eq:9.5}
+\end{equation}
+This physical bound is uniform over bands, labels, and points.
+
+\item \emph{Exact mean equations.} Let
+\NSi{NS-F-P104-005}{(\beta^{[j]},v^{[j]},\gamma^{[j]},w^{[j]})} be the complete current velocity
+correction as in \eqref{eq:8.1}, and set
+\NSi{NS-F-P104-006}{\mathcal E_{B,*}=Q^{2A+1/2}\mathcal E_B}. Then
+\NSFormula{NS-F-P104-007}{display}{9.6}
+\begin{equation}
+\begin{gathered}
+W_{ab}^{[j]}=\langle w_a^{[j]}w_b^{[j]}\rangle_\theta,
+\qquad
+\mathcal P^{[j]}=\int\langle g_r^{[j]}\rangle_Y\,dR,
+\qquad
+p_m^{[j]}=\mathsf T_0(g_r^{[j]}-\rho\mathcal P^{[j]}),\\
+\langle\mathcal G_*^{[j]}+\mathcal F_*^{[j]}-\mathcal E_{B,*}\rangle_\theta
+=\bigl(D_r p_m^{[j]}-g_r^{[j]},E_\theta^{[j]},E_z^{[j]}\bigr),
+\end{gathered}
+\tag{9.6}\label{eq:9.6}
+\end{equation}
+where \NSi{NS-F-P104-008}{g_r^{[j]},E_\theta^{[j]},E_z^{[j]}} are given by \eqref{eq:8.3} on
+this tuple.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+We first prove (i), then track the additive errors in (ii) while preserving the exact mean equations
+in (iii).
+
+\noindent\textbf{Part (i): support and coefficient bounds.} The primary pulses have the claimed
+supports and weighted bounds at every derivative order. Differentiation preserves closed support and
+the amplitude class bounds. An explicit \NSi{NS-F-P104-009}{D_r} costs
+\NSi{NS-F-P104-010}{\kappa_s} each time it occurs; taking further amplitude derivatives of that
+estimate enlarges its constants and polynomial degrees, without repeating that exponent loss.
+
+For products, a mean times a wave inherits the wave's slow, transverse, and local torus rectangle
+support, and its \NSi{NS-F-P104-011}{P_v} factor. Two waves of one label add their integer phase
+multipliers. Their zero harmonic is exactly their angular mean, since the angular frequency
+\NSi{NS-F-P104-012}{kp} is a nonzero integer; every other output retains the wave weight by
+\NSi{NS-F-P104-013}{P_v^2\le P_v}. Different labels do not interact. Curls, pressure coefficients,
+and particular pulse propagation preserve the phase integer. Mean operations cannot introduce a
+nonzero angular harmonic. Any subsequent nonzero harmonic product contains a wave factor and
+therefore inherits that factor's support and envelope.
+
+The radial integration, pressure reconstruction, mean-vector-potential construction, and
+auxiliary-time inversion in Section~\ref{sec:8} preserve all mean-amplitude bounds. For the stress correction
+entering Proposition~\ref{prop:7.6}, subtract a supported interior profile with the same weighted
+radial moment as the source. The resulting weighted radial integral can be taken forward from the
+left support boundary or backward from the right support boundary, because the corrected source has
+zero total moment. Near either boundary, let \NSi{NS-F-P104-014}{s} be the corresponding logarithmic
+distance in \eqref{eq:6.23}. The weight \NSi{NS-F-P104-015}{\zeta} is
+\NSi{NS-F-P104-016}{e^{-a/s^2}} times a smooth positive factor bounded above and below there, with
+\NSi{NS-F-P104-017}{a>0} fixed. For each fixed \NSi{NS-F-P104-018}{M\ge0} and integer
+\NSi{NS-F-P104-019}{k\ge0}, the following bounds hold for sufficiently small positive
+\NSi{NS-F-P104-020}{\delta,s}:
+\NSFormula{NS-F-P104-021}{display}{none}
+\[
+\int_0^\delta s^{-M}e^{-a/s^2}\,ds
+ \le C_{M,a}\delta^{3-M}e^{-a/\delta^2},
+\qquad
+\left|\frac{d^k}{ds^k}e^{-a/s^2}\right|
+ \le C_{k,a}s^{-3k}e^{-a/s^2}.
+\]
+\NSPage{105}%
+The first bound follows by the substitution \NSi{NS-F-P105-001}{v=a/s^2}; the second follows by
+differentiation. Radial weights and the radial Jacobian are bounded on the normalized shell.
+Differentiating the radial integral therefore retains
+\NSi{NS-F-P105-002}{\zeta\delta^{-M'}}, with \NSi{NS-F-P105-003}{M'} allowed to depend on the
+derivative; in the interior \NSi{NS-F-P105-004}{\zeta} is bounded below. Thus a source of order
+\NSi{NS-F-P105-005}{\alpha} gives a stress correction
+\NSi{NS-F-P105-006}{\Sigma\in \mathsf M_\alpha}.
+
+For the amplitude division, use the same normalization as \eqref{eq:7.31}:
+\NSi{NS-F-P105-007}{d_\Sigma=\mathsf H^{-1}(\Sigma/\varepsilon)} and
+\NSi{NS-F-P105-008}{\delta a_\sigma=(d_\Sigma)_\sigma/(2a_\sigma)}. The inverse-matrix bounds and
+\eqref{eq:7.25} give, for every fixed coefficient multi-index \NSi{NS-F-P105-009}{I},
+\NSFormula{NS-F-P105-010}{display}{none}
+\[
+\begin{aligned}
+|D^I(d_\Sigma)_\sigma|
+ &\le C_I\varepsilon^{\alpha-1}S_*^{b_I}\zeta\delta^{-M_I},\\
+|D^I(a_\sigma^{-1})|
+ &\le C_I S_*^{b_I}\zeta^{-1/2}\delta^{-M_I},\\
+|D^I\delta a_\sigma|
+ &\le C_I\varepsilon^{\alpha-1}S_*^{b'_I}\sqrt\zeta\,\delta^{-M'_I},\\
+|D^I(\sqrt\varepsilon\,\delta a_\sigma b_\sigma)|
+ &\le C_I\varepsilon^{\alpha-1/2}S_*^{b''_I}\sqrt\zeta\,\delta^{-M''_I}P_v.
+\end{aligned}
+\]
+This recovers \eqref{eq:7.33}. The last estimate uses the fundamental pulse bounds; after the slow
+cutoff it is the \NSi{NS-F-P105-011}{\mathsf W_{\alpha-1/2}} estimate of
+Proposition~\ref{prop:7.6}. The remaining square-root edge weight gives smooth extension by zero.
+
+The hypotheses of Proposition~\ref{prop:7.2} now hold for each new source. Its prescribed path holds
+the slow and transverse variables fixed; zero data along an entire such path give zero solution. The
+final cutoff restores the fixed enlarged local torus rectangle support. Smooth source extensions give
+smooth extensions of the solution. This proves the support-containment hypothesis of the inverse;
+divisibility by the original cutoff is unnecessary.
+
+The local band set remains fixed: radial paths hold \NSi{NS-F-P105-012}{(z,t)} fixed, and
+\NSi{NS-F-P105-013}{q} depends only on \NSi{NS-F-P105-014}{(z,t)}; temporal inversion and pulse
+propagation hold all slow variables fixed. Hence the common-torus construction of
+Lemma~\ref{lem:6.2} applies at every step of the finite construction. A radial mean can aggregate
+polynomially many labels in \NSi{NS-F-P105-015}{S_*}, whereas only boundedly many wave labels
+overlap at a point. Radial aggregation changes only the polynomial factors in
+\NSi{NS-F-P105-016}{S_*}, while preserving the common chart and the
+\NSi{NS-F-P105-017}{\varepsilon} exponent.
+
+\noindent\textbf{Parts (ii) and (iii): flat errors and exact means.} For an actual increment
+\NSi{NS-F-P105-018}{(w,\pi)}, the residual changes by
+\NSFormula{NS-F-P105-019}{display}{none}
+\[
+\begin{aligned}
+\mathscr R(u+w,p+\pi)={}&\mathscr R(u,p)+\partial_t w-\Delta w+\nabla\pi\\
+&+(u\mathbin{\cdot}\nabla)w+(w\mathbin{\cdot}\nabla)u+(w\mathbin{\cdot}\nabla)w.
+\end{aligned}
+\]
+The old \NSi{NS-F-P105-020}{\mathcal F} enters additively, while all displayed products use actual
+fields, including their cutoff curls and remainders from the compactly supported modified radial
+integral. Add newly created flat terms to \NSi{NS-F-P105-021}{\mathcal F}. At a fixed stage there
+are finitely many kinds of such terms. The Gaussian bound in Proposition~\ref{prop:9.1} is uniform
+over labels. The estimate in Lemma~\ref{lem:8.2} bounds each cutoff remainder by any prescribed
+power of \NSi{NS-F-P105-022}{q}, using finitely many additional source derivatives. Summing
+polynomially many labels preserves these bounds. Keep Gaussian nonzero-harmonic cutoff tails in the
+additive residual and exclude them from subsequent forward pulse inputs. The mean residuals
+\NSi{NS-F-P105-023}{E_\theta,E_z} are the exact conservative balances and may contain flat cutoff
+remainders, which a fixed mean inverse may cancel. Remove any canceled contribution from
+\NSi{NS-F-P105-024}{\mathcal F}. The cutoff-remainder bounds place the remainder in
+\NSi{NS-F-P105-025}{\mathsf M_\alpha} for every \NSi{NS-F-P105-026}{\alpha}, so this update
+preserves the stated classes and the exact residual decomposition. This proves \eqref{eq:9.5} at each
+finite stage, hence (ii). Applying Proposition~\ref{prop:8.1} to the complete current tuple, and using
+\eqref{eq:8.12}, gives \eqref{eq:9.6} and proves (iii).
+\end{proof}
+
+The realization step will use a comparison with one fixed finite stage; it will not sum these flat
+residuals directly.
+
+\NSPage{106}%
+\subsection{Initialization and a full correction cycle.}\label{sec:9.3}
+We now put the wave and mean corrections together. The primary pulses, followed by the initial mean
+corrections, will give the first set of residual bounds in Proposition~\ref{prop:9.5}. We then show in
+Proposition~\ref{prop:9.6} that a complete cycle improves all these bounds while preserving the
+support and moment conditions. The induction statement below combines the residual orders in
+\eqref{eq:9.8} with the bounds \eqref{eq:9.9} on the total velocity correction that control its
+interactions with later increments.
+
+We keep the base \NSi{NS-F-P106-001}{(b,V,G)}, the primary amplitudes, and all inverse operators
+fixed throughout the construction. Let
+\NSi{NS-F-P106-002}{w_0^{\mathrm{tan}}=W_0^{\mathrm{as}}} be the normalized representative of the
+assembled primary transverse field in \eqref{eq:7.35}. For each finite construction write its
+normalized velocity and pressure as
+\NSFormula{NS-F-P106-003}{display}{9.7}
+\begin{equation}
+u_*=(b+\beta,V+v,G+\gamma)+w,
+\qquad
+p_*=p_{B,*}+p_m+p_w,
+\qquad
+\langle w\rangle_\theta=\langle p_w\rangle_\theta=0.
+\tag{9.7}\label{eq:9.7}
+\end{equation}
+Here \NSi{NS-F-P106-004}{p_{B,*}} is the base pressure,
+\NSi{NS-F-P106-005}{p_w} consists of the pressure harmonics supplied by the amplitude equations,
+and \NSi{NS-F-P106-006}{p_m} is reconstructed from the current
+\NSi{NS-F-P106-007}{g_r} by \eqref{eq:8.12}. The quantities
+\NSi{NS-F-P106-008}{E_\theta,E_z,\mathcal P,\mathcal J_\theta,\mathcal J_z} are then determined by
+\eqref{eq:8.3}, \eqref{eq:8.12}, and \eqref{eq:8.15}.
+
+\begin{definition}[Finite correction state]\label{def:9.4}
+For \NSi{NS-F-P106-009}{j\in\mathbb N\cup\{0\}}, a state at stage
+\NSi{NS-F-P106-010}{j} consists of real fields of the form \eqref{eq:9.7} with the following
+properties. The wave \NSi{NS-F-P106-011}{w} is a sum of curls of supported wave potentials with the
+fixed label phases, and the mean correction \NSi{NS-F-P106-012}{(\beta,v,\gamma)} is the sum of a
+curl of an azimuthal potential and a direct azimuthal field. In particular, both velocity corrections
+are exactly divergence-free. The source supports, finite harmonic sets, smooth zero extensions, and
+physical residual decomposition are as in Proposition~\ref{prop:9.3}.
+
+The normalized nonzero harmonics \NSi{NS-F-P106-013}{\mathcal G_{\mathrm{wave}}^{[j]}} of
+\NSi{NS-F-P106-014}{\mathcal G_*^{[j]}}, the exact tangential mean residuals, and the three integral
+defects obey
+\NSFormula{NS-F-P106-015}{display}{9.8}
+\begin{equation}
+\begin{gathered}
+\mathcal G_{\mathrm{wave}}^{[j]}\in \mathsf W_{B_j},
+\qquad E_\theta,E_z\in \mathsf M_{C_j^*},
+\qquad (\mathcal P,\mathcal J_\theta,\mathcal J_z)\in \mathsf S_{C_j^*},\\
+B_j=\frac12+\sigma_j,
+\qquad C_j^*=1+\sigma_j,
+\qquad \sigma_j=\frac15+\frac{j}{10},
+\end{gathered}
+\tag{9.8}\label{eq:9.8}
+\end{equation}
+with the following bounds for the total velocity and pressure corrections
+\NSFormula{NS-F-P106-016}{display}{9.9}
+\begin{equation}
+w\in \mathsf W_{1/2},
+\qquad w-w_0^{\mathrm{tan}}\in \mathsf W_{0.68},
+\qquad v,\gamma,p_m\in \mathsf M_{0.9},
+\qquad \beta\in \mathsf M_{1.9}.
+\tag{9.9}\label{eq:9.9}
+\end{equation}
+Wave assertions refer to each grouped nonzero harmonic per label. The two normalized
+angular-momentum and axial-flux moments are maintained exactly:
+\NSFormula{NS-F-P106-017}{display}{9.10}
+\begin{equation}
+\int_0^\infty R^2\langle v\rangle_Y\,dR=0,
+\qquad
+\int_0^\infty R\langle\gamma\rangle_Y\,dR=0.
+\tag{9.10}\label{eq:9.10}
+\end{equation}
+The pressure reconstruction is part of the state.
+
+Consequently, the radial residual of every such state is
+\NSi{NS-F-P106-018}{-\rho\mathcal P} plus the flat cutoff remainder of
+Proposition~\ref{prop:8.3}.
+\end{definition}
+
+\begin{proposition}\label{prop:9.5}
+Starting with the fixed base and the curls of the primary potentials, perform the temporal mean
+update \eqref{eq:8.20} and the five-equation correction \eqref{eq:8.25}, reconstructing pressure by
+\eqref{eq:8.12} before and after each update. The resulting fields form a state at stage
+\NSi{NS-F-P106-019}{0} in the sense of Definition~\ref{def:9.4}; in particular, their residual orders
+are \NSi{NS-F-P106-020}{B_0=0.7} and \NSi{NS-F-P106-021}{C_0^*=1.2}.
+\end{proposition}
+
+\begin{proof}
+We first estimate the primary waves, then remove the torus-dependent means and the three moment
+defects. The initialization uses the higher decay order of the auxiliary-averaged primary residual.
+The primary transverse amplitudes have exponent \NSi{NS-F-P106-022}{1/2}. Their supported linear
+residual components have exponent \NSi{NS-F-P106-023}{1-3\kappa_s}, and their nonlinear wave
+residuals have
+\NSPage{107}%
+exponent \NSi{NS-F-P107-001}{1-\kappa_s}. The exact mean balances \eqref{eq:8.3} give
+\NSi{NS-F-P107-002}{g_r,p_m,E_\theta,E_z\in \mathsf M_{1-\kappa_s}} and defects in
+\NSi{NS-F-P107-003}{\mathsf S_{1-\kappa_s}} before any mean update.
+
+For the auxiliary means, the primary covariance of Proposition~\ref{prop:7.5}, assembled by
+\eqref{eq:7.35}, cancels the order-zero auxiliary radial--tangential stress tensor exactly, including
+derivatives of the slow partition because the squared partition functions sum to one. To display this
+cancellation, write \NSi{NS-F-P107-004}{\Sigma_a^{(0)}} for that leading tensor and
+\NSi{NS-F-P107-005}{\Sigma_a} for the full tensor in \eqref{eq:8.3}. Before the mean velocities are
+added, those equations read
+\NSFormula{NS-F-P107-006}{display}{9.11}
+\begin{equation}
+\begin{aligned}
+\langle E_\theta\rangle_Y
+={}&(\partial_R+2/R)(\langle W_{r\theta}\rangle_Y-\Sigma_\theta^{(0)})
+ -(\partial_R+2/R)(\Sigma_\theta-\Sigma_\theta^{(0)})
+ +\varepsilon\partial_Z\langle W_{z\theta}\rangle_Y,\\
+\langle E_z\rangle_Y
+={}&(\partial_R+1/R)(\langle W_{rz}\rangle_Y-\Sigma_z^{(0)})
+ -(\partial_R+1/R)(\Sigma_z-\Sigma_z^{(0)})
+ +\varepsilon\partial_Z\langle W_{zz}+p_m\rangle_Y.
+\end{aligned}
+\tag{9.11}\label{eq:9.11}
+\end{equation}
+The first differences contain at least one curl correction. The tensor cross interaction between the
+curl correction and a primary transverse amplitude belongs to
+\NSi{NS-F-P107-007}{\mathsf M_{3/2-\kappa_s}} before applying the divergence. Axial fluxes, the
+axial pressure term, and the higher-order auxiliary stress tensor have residual exponent at least
+\NSi{NS-F-P107-008}{2-\kappa_s}. Thus
+\NSi{NS-F-P107-009}{\langle E_\theta\rangle_Y,\langle E_z\rangle_Y\in \mathsf M_{1.49}}.
+
+Set \NSi{NS-F-P107-010}{H_0=1-\kappa_s} and apply the temporal update \eqref{eq:8.20}. The
+tangential increment is \NSi{NS-F-P107-011}{\mathsf M_{H_0}} and its induced radial velocity
+component is \NSi{NS-F-P107-012}{\mathsf M_{H_0+1}}. The pressure change has exponent
+\NSi{NS-F-P107-013}{H_0}, since \NSi{NS-F-P107-014}{2V\Delta v/R} appears in
+\NSi{NS-F-P107-015}{\Delta g_r}. Its contribution to each tangential residual includes an axial
+derivative and therefore has the corresponding additional gain. Beyond the cancelled fast-time
+term, slow-time differentiation supplies one additional power of \NSi{NS-F-P107-016}{\varepsilon},
+radial linear fluxes contain \NSi{NS-F-P107-017}{b=O(\varepsilon)} in every fixed-order amplitude
+derivative on the shell or the induced radial velocity increment, axial fluxes gain one, and viscosity
+gains \NSi{NS-F-P107-018}{1-2\kappa_s}. Radial quadratic mean fluxes also contain a radial mean.
+All these residual changes have exponent at least
+\NSi{NS-F-P107-019}{H_0+1-2\kappa_s}. Mean interaction with
+\NSi{NS-F-P107-020}{w\in \mathsf W_{1/2}} has wave exponent at least
+\NSi{NS-F-P107-021}{H_0}. Defects remain in \NSi{NS-F-P107-022}{\mathsf S_{H_0}} after pressure
+is recomputed.
+
+Now use the five-equation correction map \eqref{eq:8.25} at order
+\NSi{NS-F-P107-023}{H_0} and recompute pressure. Its slow increments have no fast-time term. The
+preceding tangential and wave estimates still hold. In the defect changes, the term
+\NSi{NS-F-P107-024}{2V\Delta v/R} and its two contributions to the weighted flux moments are the
+linear contributions to
+\NSi{NS-F-P107-025}{\Delta\mathcal P,\Delta\mathcal J_\theta,\Delta\mathcal J_z} canceled by this
+system. Every other term contains slow-time differentiation of the induced radial velocity, a radial
+flux with \NSi{NS-F-P107-026}{b} or another radial mean, an axial derivative, radial viscosity, or an
+additional tangential mean in \NSi{NS-F-P107-027}{v^2,\gamma v,\gamma^2}. These have gain greater
+than \NSi{NS-F-P107-028}{0.8} above \NSi{NS-F-P107-029}{H_0}. Hence the remaining defects have
+exponent greater than \NSi{NS-F-P107-030}{1.8-\kappa_s}, and both tangential means retain exponent
+\NSi{NS-F-P107-031}{1.49}. These estimates imply \eqref{eq:9.8} with
+\NSi{NS-F-P107-032}{B_0=0.7} and \NSi{NS-F-P107-033}{C_0^*=1.2}.
+
+The primary curl correction has exponent \NSi{NS-F-P107-034}{1-\kappa_s>0.68}. All mean
+increments and pressure changes have exponent \NSi{NS-F-P107-035}{H_0>0.9}, with radial exponent
+\NSi{NS-F-P107-036}{H_0+1>1.9}. This proves \eqref{eq:9.9}. The prescribed temporal increments
+have zero auxiliary mean. The first two homogeneous equations of the correction system enforce
+\eqref{eq:9.10}, and the mean-field reconstruction preserves the prescribed auxiliary mean exactly.
+\end{proof}
+
+The initialization provides the bounds at stage zero. We now repeat the four corrections and compare
+every new error with the bounds required at the next stage. The total corrections in \eqref{eq:9.9}
+remain available when estimating interactions with the new increments.
+
+\begin{proposition}\label{prop:9.6}
+Let \NSi{NS-F-P107-037}{(u^{[j]},p^{[j]})} be a state at stage
+\NSi{NS-F-P107-038}{j} as in Definition~\ref{def:9.4}. There is a state
+\NSi{NS-F-P107-039}{(u^{[j+1]},p^{[j+1]})}, constructed with the same base, primary amplitudes,
+supports, and inverse operators, whose residual orders are
+\NSFormula{NS-F-P107-040}{display}{none}
+\[
+B_{j+1}=B_j+\frac1{10},
+\qquad
+C_{j+1}^*=C_j^*+\frac1{10}.
+\]
+It is obtained by the following ordered corrections:
+\begin{enumerate}[label=(\roman*)]
+\NSPage{108}%
+\item solve the inhomogeneous amplitude equation for each supported nonzero harmonic;
+\item change the wave amplitudes to correct the auxiliary-averaged tangential residual;
+\item apply the temporal mean inverse to the part with zero auxiliary average;
+\item apply the five-equation correction to the three current defects.
+\end{enumerate}
+Pressure is reconstructed after each correction. Wave and meridional velocity increments are
+realized by their potentials; azimuthal mean increments are added directly. The cumulative bounds
+\eqref{eq:9.9} and the exact moments \eqref{eq:9.10} are preserved.
+\end{proposition}
+
+\begin{proof}
+The four steps below implement (i)--(iv) in order. For this cycle abbreviate
+\NSi{NS-F-P108-001}{B=\frac12+\sigma_j} and
+\NSi{NS-F-P108-002}{C_*=B+\frac12=1+\sigma_j}. At every occurrence of
+\NSi{NS-F-P108-003}{g_r} and \NSi{NS-F-P108-004}{p_m} below, an asserted improved order concerns
+their changes; the total corrections continue to satisfy \eqref{eq:9.9}. Within each step,
+\NSi{NS-F-P108-005}{w,\beta,v,\gamma} denote the fields before that step. An increment replaces them
+by
+\NSFormula{NS-F-P108-006}{display}{none}
+\[
+w+\Delta w,
+\qquad
+(\beta+\Delta\beta,v+\Delta v,\gamma+\Delta\gamma).
+\]
+Compute \NSi{NS-F-P108-007}{g_{r,\mathrm{new}}} from these complete fields using \eqref{eq:8.3},
+and set
+\NSFormula{NS-F-P108-008}{display}{none}
+\[
+\mathcal P_{\mathrm{new}}=\int\langle g_{r,\mathrm{new}}\rangle_Y\,dR,
+\qquad
+p_{m,\mathrm{new}}=\mathsf T_0(g_{r,\mathrm{new}}-\rho\mathcal P_{\mathrm{new}}).
+\]
+All residuals and defects in the next step are computed from this updated state.
+
+\noindent\textbf{Step 1: Cancel the supported harmonics.} We apply Proposition~\ref{prop:7.2} to
+each grouped supported source, with zero initial data at the entrance to the prescribed path in the
+common auxiliary torus. For source coefficient \NSi{NS-F-P108-009}{f_m}, the normalized harmonic
+increments are
+\NSFormula{NS-F-P108-010}{display}{none}
+\[
+\Delta w_m=\operatorname{curl}_*\!\left(
+ \frac{i n_\Phi\times(\psi t_m)}{km|n_\Phi|^2}e^{ikm\Phi}\right),
+\qquad
+\Delta p_{w,m}=\psi\pi_m e^{ikm\Phi},
+\qquad
+\mathscr L_m(t_m,\pi_m)=-f_m.
+\]
+Assemble these fields with their physical rescalings over all labels and harmonics, retaining
+conjugate pairs. The velocity increment has class \NSi{NS-F-P108-011}{\mathsf W_B}, and its pressure
+has class \NSi{NS-F-P108-012}{\mathsf W_{B+1/2}}. The new nonzero harmonic errors have the
+following exponents:
+\NSFormula{NS-F-P108-013}{display}{none}
+\[
+\begin{array}{r|l}
+\text{linear error} & B+1/2-3\kappa_s\\
+\text{cross with old exact waves} & B+1/2-\kappa_s\\
+\text{particular-correction self-interaction} & 2B-\kappa_s\\
+\text{cross with total mean correction} & B+0.4
+\end{array}
+\]
+The first row follows from Proposition~\ref{prop:9.1}; the other three follow from
+Lemma~\ref{lem:9.2}. The mean covariance changes caused by these increments have exponent at least
+\NSi{NS-F-P108-014}{B+1/2=C_*}; a radial divergence costs
+\NSi{NS-F-P108-015}{\kappa_s}. The exact balances and linear pressure map therefore give
+\NSFormula{NS-F-P108-016}{display}{none}
+\[
+E_\theta,E_z,\Delta g_r,\Delta p_m\in \mathsf M_{C_*-\kappa_s},
+\qquad
+(\mathcal P,\mathcal J_\theta,\mathcal J_z)\in \mathsf S_{C_*-\kappa_s}.
+\]
+The preserved angular-momentum and axial-flux constraints and the exact integrated identities
+\eqref{eq:8.16} improve the weighted moments by one:
+\NSFormula{NS-F-P108-017}{display}{9.12}
+\begin{equation}
+\int R^2\langle E_\theta\rangle_Y\,dR,
+\qquad
+\int R\langle E_z\rangle_Y\,dR
+\in \mathsf S_{C_*+1-\kappa_s}.
+\tag{9.12}\label{eq:9.12}
+\end{equation}
+The axial identity includes \NSi{NS-F-P108-018}{c_\rho\mathcal P} inside its axial derivative. This
+term accounts for the normalized correction \NSi{NS-F-P108-019}{-\rho\mathcal P} left in the radial
+equation after pressure reconstruction.
+
+\noindent\textbf{Step 2: Correct the auxiliary-averaged residual by adjusting the stress.} A
+compactly supported stress can cancel the auxiliary-averaged tangential residual once its total
+weighted radial moments have been removed. We make this correction in physical coordinates so that
+the stress agrees across charts. Use the residual components
+\NSi{NS-F-P108-020}{E_\theta,E_z} of \eqref{eq:8.3}, supported in the prescribed annulus, and retain
+the background residual separately with its flatness

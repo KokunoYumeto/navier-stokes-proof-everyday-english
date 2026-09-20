@@ -1,0 +1,598 @@
+\NSPage{097}%
+\begin{EESegment}{EE-TGT-P097-001}
+On the reserved mean patch, Proposition~\ref{prop:5.5} says that the background still follows the
+power law \eqref{eq:4.30}. This form turns the equations into separate power moments of bumps with
+compact support. Lemma~\ref{lem:8.7} first builds one fixed linear map that works for any target
+values. Lemma~\ref{lem:8.8} then finds the terms that remain when those targets are the defects in
+the current fields.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P097-002}
+For \NSi{NS-F-P097-001}{x=r/\sqrt q\in I_m}, normalizing the velocity at
+\NSi{NS-F-P097-002}{q} gives the base
+\end{EESegment}
+\NSFormula{NS-F-P097-003}{display}{8.24}
+\begin{equation}
+G_q=0,\qquad V_q=a(\eta)x^{-1-2\lambda},\qquad |a(\eta)|\ge a_0>0.
+\tag{8.24}\label{eq:8.24}
+\end{equation}
+\begin{EESegment}{EE-TGT-P097-003}
+Here \NSi{NS-F-P097-004}{a(\eta)=2^{1/2+\lambda}c_{\mathrm{patch}}(1+\eta^2)^{-1}}. Equation
+\eqref{eq:5.44} gives the exact statement for the whole summed base. The other tangential
+coefficients, beyond the leading profile, have their support elsewhere by \eqref{eq:5.18}.
+Multiplying their azimuthal potentials by a cutoff in \NSi{NS-F-P097-005}{q} cannot create an axial
+component on this patch, because \NSi{NS-F-P097-006}{q} does not depend on the radius. This means
+that \eqref{eq:8.24} holds for the summed base used in the balances. The fixed parameter
+\NSi{NS-F-P097-007}{\lambda} is positive.
+\end{EESegment}
+
+\begin{lemma}\label{lem:8.7}
+\begin{EESegment}{EE-TGT-P097-004}
+Suppose the fixed slow base satisfies \eqref{eq:8.24} on the reserved interior interval
+\NSi{NS-F-P097-008}{I_m}, where \NSi{NS-F-P097-009}{\lambda>0} and
+\NSi{NS-F-P097-010}{|a(\eta)|\ge a_0>0}. It is possible to choose three fixed azimuthal bump
+profiles and two fixed axial bump profiles, all supported in this interval, with the following
+property. At each \NSi{NS-F-P097-011}{(Z,T)}, take any three scalar targets
+\NSi{NS-F-P097-012}{(\mathcal P,\mathcal J_\theta,\mathcal J_z)}. There is then exactly one
+linear combination \NSi{NS-F-P097-013}{(\Delta v,\gamma_d)} of the physically rescaled profiles
+that satisfies
+\end{EESegment}
+\NSFormula{NS-F-P097-014}{display}{8.25}
+\begin{equation}
+\begin{gathered}
+\int R^2\Delta v\,dR=0,\qquad \int R\gamma_d\,dR=0,\\
+\int (2V/R)\Delta v\,dR=-\mathcal P,\\
+\int R^2(G\Delta v+V\gamma_d)\,dR=-\mathcal J_\theta,\\
+\int (2RG\gamma_d-RV\Delta v)\,dR=-\mathcal J_z.
+\end{gathered}
+\tag{8.25}\label{eq:8.25}
+\end{equation}
+\begin{EESegment}{EE-TGT-P097-005}
+Normalize the three targets one row at a time as in \eqref{eq:8.17}. The resulting increments do
+not depend on either the angular variables or the auxiliary variables, and they depend linearly on
+the targets. For every \NSi{NS-F-P097-015}{\alpha}, targets in
+\NSi{NS-F-P097-016}{\mathsf S_\alpha} give increments in
+\NSi{NS-F-P097-017}{\mathsf M_\alpha} for every fixed coefficient derivative. The constants in
+these bounds may depend on the fixed \NSi{NS-F-P097-018}{\lambda}. The azimuthal-potential
+construction in \eqref{eq:8.14} gives \NSi{NS-F-P097-019}{\Delta\gamma=\gamma_d} exactly and
+\NSi{NS-F-P097-020}{\Delta\beta\in \mathsf M_{\alpha+1}}. It also preserves both integral
+constraints exactly. When the targets are the current defects from Equations~\eqref{eq:8.12} and
+\eqref{eq:8.15}, the last three equations cancel both the current defects and the displayed terms
+that involve the fixed base.
+\end{EESegment}
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P097-006}
+\textbf{Step 1, choose the five profiles.} Normalize each physical row and its target using
+\NSi{NS-F-P097-021}{q}. On this patch, \eqref{eq:8.24} separates the rows into an angular block
+with the powers \NSi{NS-F-P097-022}{x} given by
+\NSi{NS-F-P097-023}{2,-2-2\lambda,-2\lambda}, and an axial block with the powers
+\NSi{NS-F-P097-024}{1,1-2\lambda}. Since the fixed
+\NSi{NS-F-P097-025}{\lambda} is positive, the powers in each list are all different.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P097-007}
+Here is a direct way to see that the map is invertible. Choose a nonnegative bump
+\NSi{NS-F-P097-026}{\eta_0}, not identically zero, whose support lies near some
+\NSi{NS-F-P097-027}{x_0>0} inside the patch. Next choose a small fixed
+\NSi{NS-F-P097-028}{d>0} and make the support narrow enough that the scaled copies
+\NSi{NS-F-P097-029}{\eta_j(x)=a_j^{-1}\eta_0(x/a_j),\ a_j=e^{jd},\ j=0,1,2} lie in disjoint
+subintervals of the patch. Their power moments are
+\end{EESegment}
+\NSFormula{NS-F-P097-030}{display}{none}
+\[
+\int x^p\eta_j(x)\,dx=\mu_p e^{jdp},\qquad
+\mu_p=\int x^p\eta_0(x)\,dx>0.
+\]
+\begin{EESegment}{EE-TGT-P097-008}
+For the three angular powers, divide each row of the matrix by
+\NSi{NS-F-P097-031}{\mu_p}. What remains is the usual Vandermonde matrix in the different
+numbers \NSi{NS-F-P097-032}{e^{dp}}, so its determinant is not zero. Using two copies gives the
+same result for the axial block. Every factor left over is a nonzero multiple of
+\NSi{NS-F-P097-033}{a(\eta)}.
+\end{EESegment}
+
+\NSPage{098}%
+\begin{EESegment}{EE-TGT-P098-001}
+\textbf{Step 2, find the coefficients by inverting the matrices.} Use
+\NSi{NS-F-P098-001}{\eta_0,\eta_1,\eta_2} for the azimuthal profiles and
+\NSi{NS-F-P098-002}{\eta_0,\eta_1} for the axial profiles. Write
+\NSi{NS-F-P098-003}{\mathcal P_q,\mathcal J_{\theta,q},\mathcal J_{z,q}} for the physical
+targets after multiplying them by the powers in \eqref{eq:8.17}, with
+\NSi{NS-F-P098-004}{q} in place of \NSi{NS-F-P098-005}{Q}. Define the two matrices
+\end{EESegment}
+\NSFormula{NS-F-P098-006}{display}{none}
+\[
+\begin{gathered}
+A_\theta=
+\begin{pmatrix}
+\mu_2 & \mu_2e^{2d} & \mu_2e^{4d}\\
+2a\mu_{-2-2\lambda} & 2a\mu_{-2-2\lambda}e^{d(-2-2\lambda)}
+  & 2a\mu_{-2-2\lambda}e^{2d(-2-2\lambda)}\\
+-a\mu_{-2\lambda} & -a\mu_{-2\lambda}e^{-2d\lambda}
+  & -a\mu_{-2\lambda}e^{-4d\lambda}
+\end{pmatrix},
+\\[4pt]
+A_z=
+\begin{pmatrix}
+\mu_1 & \mu_1e^d\\
+a\mu_{1-2\lambda} & a\mu_{1-2\lambda}e^{d(1-2\lambda)}
+\end{pmatrix},
+\qquad a=a(\eta).
+\end{gathered}
+\]
+\begin{EESegment}{EE-TGT-P098-002}
+Step 1 shows that both matrices are invertible. Use their inverses to set
+\end{EESegment}
+\NSFormula{NS-F-P098-007}{display}{none}
+\[
+\begin{gathered}
+(u_0,u_1,u_2)^T=A_\theta^{-1}(0,-\mathcal P_q,-\mathcal J_{z,q})^T,\\
+(s_0,s_1)^T=A_z^{-1}(0,-\mathcal J_{\theta,q})^T,\\
+\Delta v_{\mathrm{phys}}(r,z,t)=q^{-A}\sum_{j=0}^{2}u_j\eta_j(r/\sqrt q),\\
+\gamma_{d,\mathrm{phys}}(r,z,t)=q^{-A}\sum_{j=0}^{1}s_j\eta_j(r/\sqrt q).
+\end{gathered}
+\]
+\begin{EESegment}{EE-TGT-P098-003}
+The matrix \NSi{NS-F-P098-008}{A_\theta} makes the angular-momentum integral zero and gives the
+targets \NSi{NS-F-P098-009}{-\mathcal P_q,-\mathcal J_{z,q}}. The matrix
+\NSi{NS-F-P098-010}{A_z} makes the axial-flux integral zero and gives the target
+\NSi{NS-F-P098-011}{-\mathcal J_{\theta,q}}. Because
+\NSi{NS-F-P098-012}{G_q=0}, these two blocks cover all five equations. Their inverses give one
+physical correction, depending linearly on the three targets. The correction is smooth in the slow
+variables whenever the targets are smooth. The inverse can get worse as
+\NSi{NS-F-P098-013}{\lambda\downarrow0}, but no bound uniform in that limit is needed here.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P098-004}
+\textbf{Step 3, check the normalization and bounds, then build the axial field.} Moving from rows
+normalized at \NSi{NS-F-P098-014}{q} to a chart based at a fixed
+\NSi{NS-F-P098-015}{Q} multiplies each row and its target by the same powers from
+\eqref{eq:8.17}, along with bounded smooth powers of \NSi{NS-F-P098-016}{q/Q}. Every fixed-order
+derivative of those ratios is bounded. Inverting and differentiating the matrices therefore costs
+only fixed constants. The radial weight is also bounded above and below on the fixed interior
+support. This proves the map from \NSi{NS-F-P098-017}{\mathsf S_\alpha} to
+\NSi{NS-F-P098-018}{\mathsf M_\alpha}. The required axial field is slow, and its weighted
+axial-flux integral is zero. Lemma~\ref{lem:8.2} therefore gives a cutoff remainder that vanishes
+identically. Its azimuthal potential and radial velocity component remain inside the mean patch,
+including the intervals between the finitely many bump supports.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P098-005}
+The linear map is now fixed without using the target values. To use it in the nonlinear equations,
+the defects must be recomputed from the updated field. The next lemma gives the exact change and the
+extra decay supplied by the bounds used in the iteration. The base estimates needed for that gain
+hold on the whole support of the azimuthal potential, including the intervals between the bump
+supports.
+\end{EESegment}
+
+\begin{lemma}\label{lem:8.8}
+\begin{EESegment}{EE-TGT-P098-006}
+Suppose the slow base satisfies \eqref{eq:8.24}, with the fixed
+\NSi{NS-F-P098-019}{\lambda>0} and the lower bound
+\NSi{NS-F-P098-020}{|a(\eta)|\ge a_0>0}. Let
+\NSi{NS-F-P098-021}{(\beta,v,\gamma)} be a smooth divergence-free mean correction supported in
+the active shell, and keep the base and the wave field \NSi{NS-F-P098-022}{w} fixed. Use
+Equations~\eqref{eq:8.3}, \eqref{eq:8.12}, and \eqref{eq:8.15} to form
+\NSi{NS-F-P098-023}{g_r} and the three defects
+\NSi{NS-F-P098-024}{(\mathcal P,\mathcal J_\theta,\mathcal J_z)}. Feed those three defects into
+Lemma~\ref{lem:8.7}, and construct the resulting \NSi{NS-F-P098-025}{\gamma_d} through
+\eqref{eq:8.14}. The updated mean velocity is
+\end{EESegment}
+\NSFormula{NS-F-P098-026}{display}{none}
+\[
+(\beta_{\mathrm{new}},v_{\mathrm{new}},\gamma_{\mathrm{new}})
+=(\beta+\Delta\beta,v+\Delta v,\gamma+\Delta\gamma),
+\]
+\NSPage{099}%
+\begin{EESegment}{EE-TGT-P099-001}
+Recompute \NSi{NS-F-P099-001}{g_{r,\mathrm{new}}} from \eqref{eq:8.3}, and define
+\NSi{NS-F-P099-002}{\mathcal R_g=g_{r,\mathrm{new}}-g_r-(2V/R)\Delta v}. Then
+\end{EESegment}
+\NSFormula{NS-F-P099-003}{display}{8.26}
+\begin{equation}
+\begin{aligned}
+\mathcal R_g={}&-\mathfrak t_*\Delta\beta
+ -(D_r+1/R)\bigl(2b\Delta\beta+2\beta\Delta\beta+(\Delta\beta)^2\bigr)\\
+&-D_z\bigl(b\Delta\gamma+G\Delta\beta+\beta\Delta\gamma
+  +\gamma\Delta\beta+\Delta\beta\Delta\gamma\bigr)\\
+&+(2v\Delta v+(\Delta v)^2)/R+\varepsilon(\Delta_0-R^{-2})\Delta\beta.
+\end{aligned}
+\tag{8.26}\label{eq:8.26}
+\end{equation}
+\begin{EESegment}{EE-TGT-P099-002}
+The defects recomputed from the updated field are
+\end{EESegment}
+\NSFormula{NS-F-P099-004}{display}{8.27}
+\begin{equation}
+\begin{aligned}
+\mathcal P_{\mathrm{new}}&=\int\langle\mathcal R_g\rangle_Y\,dR,\\
+(\mathcal J_\theta)_{\mathrm{new}}&=
+ \int R^2\langle\gamma\Delta v+v\Delta\gamma+\Delta\gamma\Delta v\rangle_Y\,dR,\\
+(\mathcal J_z)_{\mathrm{new}}&=
+ \int R\langle2\gamma\Delta\gamma+(\Delta\gamma)^2\rangle_Y\,dR
+ -\frac12\int R^2\langle\mathcal R_g\rangle_Y\,dR.
+\end{aligned}
+\tag{8.27}\label{eq:8.27}
+\end{equation}
+\begin{EESegment}{EE-TGT-P099-003}
+Assume in addition that, everywhere on the support of the azimuthal potential for this correction,
+every fixed coefficient derivative of \NSi{NS-F-P099-005}{b} is bounded by
+\NSi{NS-F-P099-006}{C_I\varepsilon S_*^{B_I}}, while the corresponding derivatives of the slow
+fields \NSi{NS-F-P099-007}{V,G} are bounded by
+\NSi{NS-F-P099-008}{C_I S_*^{B_I}}. Suppose the current corrections satisfy
+\NSi{NS-F-P099-009}{v,\gamma\in \mathsf M_{0.9}} and
+\NSi{NS-F-P099-010}{\beta\in \mathsf M_{1.9}}, and suppose the three targets lie in
+\NSi{NS-F-P099-011}{\mathsf S_\alpha} for \NSi{NS-F-P099-012}{\alpha\ge0.9}. Then
+\end{EESegment}
+\NSFormula{NS-F-P099-013}{display}{none}
+\[
+\mathcal R_g\in \mathsf M_{\alpha+0.9-2\kappa_s},\qquad
+(\mathcal P_{\mathrm{new}},(\mathcal J_\theta)_{\mathrm{new}},
+ (\mathcal J_z)_{\mathrm{new}})\in \mathsf S_{\alpha+0.9-2\kappa_s}.
+\]
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P099-004}
+Subtract the two radial sources in \eqref{eq:8.3}. The covariance
+\NSi{NS-F-P099-014}{W} does not change. Expanding every quadratic product gives
+\eqref{eq:8.26}. In the azimuthal flux defect, the terms linear in the base are
+\NSi{NS-F-P099-015}{\int R^2(G\Delta v+V\Delta\gamma)\,dR}. In the axial flux defect, they are
+\NSi{NS-F-P099-016}{\int(2RG\Delta\gamma-RV\Delta v)\,dR}. The second term here comes from the
+radial-source term \NSi{NS-F-P099-017}{-\frac12\int R^2(2V/R)\Delta v\,dR}. Since
+\NSi{NS-F-P099-018}{\Delta\gamma=\gamma_d}, the last three rows of \eqref{eq:8.25} cancel the
+old defects together with these linear terms. The products left after that cancellation give
+\eqref{eq:8.27}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P099-005}
+For the estimates, Lemma~\ref{lem:8.7} gives
+\NSi{NS-F-P099-019}{\Delta v,\Delta\gamma\in \mathsf M_\alpha} and
+\NSi{NS-F-P099-020}{\Delta\beta\in \mathsf M_{\alpha+1}}. None of these three increments depends
+on the auxiliary variable. In particular,
+\NSi{NS-F-P099-021}{\mathfrak t_*\Delta\beta=-\varepsilon\partial_T\Delta\beta}. The terms in
+\NSi{NS-F-P099-022}{\mathcal R_g} lie in the following classes.
+\end{EESegment}
+\NSFormula{NS-F-P099-023}{display}{none}
+\[
+\begin{array}{c|c}
+\text{term}&\text{class}\\ \hline
+-\mathfrak t_*\Delta\beta&\mathsf M_{\alpha+2}\\
+(D_r+1/R)(2b\Delta\beta)&\mathsf M_{\alpha+2-\kappa_s}\\
+D_z(b\Delta\gamma+G\Delta\beta)&\mathsf M_{\alpha+2}\\
+2v\Delta v/R&\mathsf M_{\alpha+0.9}\\
+(\Delta v)^2/R&\mathsf M_{2\alpha}\\
+\varepsilon(\Delta_0-R^{-2})\Delta\beta&\mathsf M_{\alpha+2-2\kappa_s}.
+\end{array}
+\]
+\begin{EESegment}{EE-TGT-P099-006}
+The other transport products lie in
+\NSi{NS-F-P099-024}{\mathsf M_{\alpha+2-\kappa_s}}. Because
+\NSi{NS-F-P099-025}{\alpha\ge0.9}, every exponent in the table is at least
+\NSi{NS-F-P099-026}{\alpha+0.9-2\kappa_s}. Radial integration keeps these estimates after each
+moment has been normalized by the factors given above. The radial weight has a positive lower bound
+on the interior support of the azimuthal potential, so the local base bounds in the statement are
+enough.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P099-007}
+\subsection{Recomputing the fields and matching them between charts.}\label{sec:8.7}
+This subsection gives the order for recomputing the residuals and defects in
+Equations~\eqref{eq:8.3}, \eqref{eq:8.12}, and \eqref{eq:8.15} after a mean correction. It also
+checks that the constructions match between charts, using Equations~\eqref{eq:8.4} and
+\eqref{eq:8.23} and Lemma~\ref{lem:6.2}. Each correction changes the quadratic fluxes, so the next
+source has to be computed from the updated divergence-free velocity. A cutoff remainder whose
+auxiliary average is zero can have a nonzero average after multiplication by another term. Its
+contributions to the pressure and to the compatibility integrals in Equations~\eqref{eq:8.3} and
+\eqref{eq:8.15} therefore have to be kept in the next step.
+\end{EESegment}
+
+\NSPage{100}%
+\begin{EESegment}{EE-TGT-P100-001}
+Fix the base coefficients and the stress. An actual velocity tuple
+\NSi{NS-F-P100-001}{(\beta,v,\gamma,w)} then determines the pressure and the mean residuals in
+this order.
+\end{EESegment}
+\begin{enumerate}[label=(\arabic*)]
+\item \begin{EESegment}{EE-TGT-P100-002}
+Using the full wave velocities, form
+\NSi{NS-F-P100-002}{W_{ab}=\langle w_aw_b\rangle_\theta}. Then define
+\NSi{NS-F-P100-003}{g_r} by the third row of \eqref{eq:8.3}.
+\end{EESegment}
+\item \begin{EESegment}{EE-TGT-P100-003}
+Define \NSi{NS-F-P100-004}{\mathcal P=\int\langle g_r\rangle_Y\,dR} and
+\NSi{NS-F-P100-005}{p_m=\mathsf T_0(g_r-\rho\mathcal P)}.
+\end{EESegment}
+\item \begin{EESegment}{EE-TGT-P100-004}
+With this pressure, define \NSi{NS-F-P100-006}{E_\theta,E_z} by the first two rows of
+\eqref{eq:8.3}.
+\end{EESegment}
+\item \begin{EESegment}{EE-TGT-P100-005}
+Using the same velocity and radial source, define
+\NSi{NS-F-P100-007}{\mathcal J_\theta,\mathcal J_z} by \eqref{eq:8.15}.
+\end{EESegment}
+\end{enumerate}
+\begin{EESegment}{EE-TGT-P100-006}
+Repeat these definitions after every change to the velocity. For either kind of mean update, the new
+tuple is
+\end{EESegment}
+\NSFormula{NS-F-P100-008}{display}{none}
+\[
+(\beta,v,\gamma,w)_{\mathrm{new}}
+=(\beta+\Delta\beta,v+\Delta v,\gamma+\Delta\gamma,w).
+\]
+\begin{EESegment}{EE-TGT-P100-007}
+For the temporal update, use the current \NSi{NS-F-P100-009}{E_\theta^\circ,E_z^\circ} in
+\eqref{eq:8.20}. For the moment update, use the current
+\NSi{NS-F-P100-010}{(\mathcal P,\mathcal J_\theta,\mathcal J_z)} in \eqref{eq:8.25}. In both
+updates, \NSi{NS-F-P100-011}{\Delta\gamma} means the actual axial increment from
+\eqref{eq:8.14}. Its cutoff remainder is therefore included before any of the products in the four
+definitions above are evaluated. After the moment update, Equations~\eqref{eq:8.26}--\eqref{eq:8.27}
+give the recomputed defects exactly.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P100-008}
+Proposition~\ref{prop:9.6} and its proof give the correction cycle and the estimates for its
+exponents.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P100-009}
+Because the definitions use physical variables, they match across charts. The radial integrals keep
+\NSi{NS-F-P100-012}{(z,t)} fixed, and \NSi{NS-F-P100-013}{q=q(z,t)} keeps them from creating
+new dyadic bands. It is therefore possible to fix one common index on a neighborhood that contains
+the closures of all the supports in question. The Fourier covariance in \eqref{eq:8.23} makes the
+formulas agree where the charts overlap, and the radial formulas agree because they have the same
+physical definition. Changing representations shifts the covering indices by only bounded amounts.
+The integer-valued covering indices are held fixed while derivatives are taken, and the coordinate
+changes preserve the derivative bounds already proved. All the estimates above hold on the same
+domain \NSi{NS-F-P100-014}{0<q<q_*}, which was fixed before the iteration. On any closed region
+\NSi{NS-F-P100-015}{q\ge c>0}, including \NSi{NS-F-P100-016}{\eta=\pm1}, only finitely many
+bands occur. On this region, the fixed-shift integrals, the inverse Fourier transform, and the
+finite-dimensional moment correction preserve every one-sided derivative of the source, including
+the derivatives at the endpoints.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P100-010}
+\section{Improving the residual and building the local field}\label{sec:9}
+The wave and mean constructions from Sections~\ref{sec:7} and \ref{sec:8} correct different parts
+of the momentum residual. This section puts them together to prove Theorem~\ref{thm:3.1}. Start
+with the fixed background \NSi{NS-F-P100-017}{(u_B,p_B)} from Proposition~\ref{prop:5.5} and the
+primary fields assembled in \eqref{eq:7.35}, which Lemma~\ref{lem:7.7} makes divergence-free. The
+construction must produce a local velocity \NSi{NS-F-P100-018}{u_{\mathrm{loc}}} whose residual and every
+derivative of that residual vanish to every order at the singularity, while the inner velocity growth
+and the exterior heat flow remain unchanged. Every correction creates new nonlinear errors. A full
+cycle therefore has to improve the decay before the next cycle begins.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P100-011}
+One cycle works in the following order. Proposition~\ref{prop:7.2} first removes the nonzero angular
+harmonics. Equation~\eqref{eq:7.31} then changes the primary amplitudes to adjust the averaged
+stress. The mean equations use \eqref{eq:8.20} to remove the part whose auxiliary average is zero.
+Finally, the five-equation system \eqref{eq:8.25} corrects the three compactly supported defects
+while preserving the two moment constraints. Proposition~\ref{prop:9.6} proves that a cycle gains a
+fixed positive power of \NSi{NS-F-P100-019}{\varepsilon}. Every inverse uses the same fixed
+background and the same primary amplitudes. This lets every finite stage live on one common domain,
+as Lemma~\ref{lem:9.7} shows. Summing the stages there gives the local field in
+Proposition~\ref{prop:9.9}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P100-012}
+Table~\ref{tab:1} collects the scales, operators, and field classes that occur repeatedly. In this
+section, \NSi{NS-F-P100-020}{\kappa_s=10^{-5}}, and
+\NSi{NS-F-P100-021}{\mathsf W_\alpha,\mathsf M_\alpha,\mathsf S_\alpha} have the meaning given in
+Section~\ref{sec:6.4} at every derivative order. Each exponent is a power of
+\NSi{NS-F-P100-022}{\varepsilon=Q^h}, with the normalization
+\end{EESegment}
+\NSPage{101}%
+\begin{EESegment}{EE-TGT-P101-001}
+used for those classes. At a fixed correction stage and a fixed order of amplitude differentiation,
+the constants, the powers of \NSi{NS-F-P101-001}{S_*}, and the inverse powers of distance are
+allowed to depend on that stage and order. They are uniform in the band, label, copy, and point. The
+angular mean \NSi{NS-F-P101-002}{\langle\cdot\rangle_\theta} and the auxiliary mean
+\NSi{NS-F-P101-003}{\langle\cdot\rangle_Y} are different operations, both defined in
+\eqref{eq:3.7}. Every class estimate is an estimate for normalized chart coefficients. The factors
+that recover the physical velocity, pressure, and residual are
+\NSi{NS-F-P101-004}{Q^{-A}}, \NSi{NS-F-P101-005}{Q^{-2A}}, and
+\NSi{NS-F-P101-006}{Q^{-2A-1/2}}, respectively. In particular, the physical fields have residual
+\end{EESegment}
+\NSFormula{NS-F-P101-007}{display}{none}
+\[
+\mathscr R(u,p)=\partial_tu+(u\cdot\nabla)u-\Delta u+\nabla p,
+\qquad
+\mathscr R_*=Q^{2A+1/2}\mathscr R(u,p).
+\]
+\begin{EESegment}{EE-TGT-P101-002}
+The residual identities below use physical fields, while their estimates use normalized
+coefficients. A Cartesian space--time jet collects a field and all its Cartesian space--time
+derivatives up to the stated order. Equation~\eqref{eq:5.23} writes
+\NSi{NS-F-P101-008}{|\cdot|_m} for the largest absolute value among them through that order.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P101-003}
+\subsection{Residual estimates for velocities built from curls}\label{sec:9.1}
+The amplitude equations \eqref{eq:7.5} cancel the main part of a prescribed source. The physical
+velocity also contains the terms created by taking a curl, as Lemma~\ref{lem:7.7} describes. Its
+residual contains derivatives of the amplitudes and the background as well. Equation~\eqref{eq:9.2}
+expands those terms. Proposition~\ref{prop:9.1} and Lemma~\ref{lem:9.2} first estimate the linear
+terms left after the main cancellation and the nonlinear interactions. Those estimates give the
+gains needed when Proposition~\ref{prop:9.6} adds one correction after another.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P101-004}
+For a fixed label, write an angular harmonic as
+\NSi{NS-F-P101-009}{a\exp(ikm\Phi)}, where
+\NSi{NS-F-P101-010}{m\in\mathbb Z\setminus\{0\}} and
+\NSi{NS-F-P101-011}{a} is the amplitude. Equation~\eqref{eq:7.4} defines the phase normal
+\NSi{NS-F-P101-012}{n_\Phi}, and \eqref{eq:6.6} gives the chain-rule operators for evaluation at
+\NSi{NS-F-P101-013}{Y=Y(r,t)}. The background coefficients
+\NSi{NS-F-P101-014}{(b,V,G)} are the ones used in Sections~\ref{sec:6} and \ref{sec:7}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P101-005}
+For a transverse amplitude \NSi{NS-F-P101-015}{t_m}, the potential in \eqref{eq:7.38} gives
+\end{EESegment}
+\NSFormula{NS-F-P101-016}{display}{none}
+\[
+C_m=\frac{i n_\Phi\times t_m}{km|n_\Phi|^2},
+\qquad
+\operatorname{curl}_*(C_me^{ikm\Phi})=(t_m+r_m)e^{ikm\Phi},
+\qquad
+a_m=t_m+r_m.
+\]
+\begin{EESegment}{EE-TGT-P101-006}
+Here \NSi{NS-F-P101-017}{r_m} is the correction created by taking the curl. If
+\NSi{NS-F-P101-018}{t_m\in \mathsf W_\alpha}, then Lemma~\ref{lem:7.7} gives
+\NSi{NS-F-P101-019}{r_m\in \mathsf W_{\alpha+1/2-\kappa_s}}. Here longitudinal means measured in
+the direction of the phase normal. Equation~\eqref{eq:7.39} estimates the scalar product with that normal for the
+full amplitude \NSi{NS-F-P101-020}{a_m}. This difference matters
+in the quadratic transport term, because the factor doing the advecting is the full divergence-free
+velocity.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P101-007}
+Separate the principal linear operator, which the amplitude equation handles, from all the other
+transport, pressure, and viscous terms. For comparison with the residual later, write the principal
+operator acting on an amplitude and its pressure as
+\end{EESegment}
+\NSFormula{NS-F-P101-021}{display}{9.1}
+\begin{equation}
+\mathscr L_m(a,\pi)=Q^{1+h}N_{\mathrm{abs}}a+\mathcal Ka
++\varepsilon k^2m^2|n_\Phi|^2a+ikmn_\Phi\pi.
+\tag{9.1}\label{eq:9.1}
+\end{equation}
+\begin{EESegment}{EE-TGT-P101-008}
+The inverse from Proposition~\ref{prop:7.2} constructs
+\NSi{NS-F-P101-022}{(t_m,\pi_m)} so that
+\NSi{NS-F-P101-023}{\mathscr L_m(t_m,\pi_m)=-f_m} and
+\NSi{NS-F-P101-024}{n_\Phi\cdot t_m=0}, before the pulse cutoff is applied. The amplitude
+\NSi{NS-F-P101-025}{t_m} does not have to extend by zero in time before that cutoff is applied.
+\end{EESegment}
+
+\begin{proposition}\label{prop:9.1}
+\begin{EESegment}{EE-TGT-P101-009}
+Fix a label, \NSi{NS-F-P101-026}{m\in\mathbb Z\setminus\{0\}}, and
+\NSi{NS-F-P101-027}{\alpha\in\mathbb R}. Let \NSi{NS-F-P101-028}{f_m\in \mathsf W_\alpha}
+satisfy the support and smooth-extension assumptions in Proposition~\ref{prop:7.2}. Also assume
+that the source harmonic \NSi{NS-F-P101-029}{f_me^{ikm\Phi}} extends smoothly by zero outside the
+fixed local rectangle, including across the ends of its pulse. Let
+\NSi{NS-F-P101-030}{(t_m,\pi_m)} solve
+\NSi{NS-F-P101-031}{\mathscr L_m(t_m,\pi_m)=-f_m}. The same conclusion holds for a homogeneous
+pulse \NSi{NS-F-P101-032}{t_m\in \mathsf W_\alpha}, with
+\NSi{NS-F-P101-033}{f_m=0}. Multiply the potential and the pressure by the pulse cutoff, then take
+the curl as in \eqref{eq:7.38}. After the prescribed source
+\NSi{NS-F-P101-034}{f_me^{ikm\Phi}} has been added, the normalized linear residual lies in
+\NSi{NS-F-P101-035}{\mathsf W_{\alpha+1/2-3\kappa_s}}. The only terms left outside that class are
+additive tails from the pulse cutoff, and every Cartesian space--time derivative of each tail
+vanishes to infinite order as \NSi{NS-F-P101-036}{q\downarrow0}. The pressure amplitude
+\NSi{NS-F-P101-037}{\pi_m} lies in \NSi{NS-F-P101-038}{\mathsf W_{\alpha+1/2}}.
+\end{EESegment}
+\end{proposition}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P101-010}
+Expand the linearized residual into its principal operator \eqref{eq:9.1} and the terms left over.
+For this calculation, \NSi{NS-F-P101-039}{a} is any harmonic amplitude and
+\NSi{NS-F-P101-040}{\pi} is its pressure amplitude. Let
+\end{EESegment}
+\NSPage{102}%
+\begin{EESegment}{EE-TGT-P102-001}
+\NSi{NS-F-P102-001}{E_{ik}=(\mathfrak t_*+bD_r+(V/R)\partial_\theta+GD_z)\Phi} be the phase
+transport defect from \eqref{eq:7.9}. The terms left after linearizing around
+\NSi{NS-F-P102-002}{(b,V,G)} are
+\end{EESegment}
+\NSFormula{NS-F-P102-003}{display}{9.2}
+\begin{equation}
+\begin{aligned}
+\mathscr L_m^{\mathrm{rem}}(a,\pi)={}&
+ (-\varepsilon\partial_T+bD_r+GD_z)a+ikmE_{ik}a\\
+&+a_r(\partial_Rb)e_r+a_zD_z(b,V,G)+(b/R)a_\theta e_\theta
+ +(D_r\pi,0,D_z\pi)\\
+&-\varepsilon\left\{
+\begin{aligned}
+ &(D_r^2+R^{-1}D_r+D_z^2)a-R^{-2}(a_r,a_\theta,0)\\
+ &\quad+2ikm(n_{\Phi,r}D_r+n_{\Phi,z}D_z)a\\
+ &\quad+ikm(D_rn_{\Phi,r}+n_{\Phi,r}/R+D_zn_{\Phi,z})a\\
+ &\quad+2ikm(n_{\Phi,\theta}/R)(-a_\theta,a_r,0)
+\end{aligned}
+\right\}.
+\end{aligned}
+\tag{9.2}\label{eq:9.2}
+\end{equation}
+\begin{EESegment}{EE-TGT-P102-002}
+For a cylindrical vector \NSi{NS-F-P102-004}{v} transported by another cylindrical vector
+\NSi{NS-F-P102-005}{u}, differentiation of the moving cylindrical basis contributes
+\NSi{NS-F-P102-006}{(-u_\theta v_\theta,u_\theta v_r,0)/R}. Linearizing that term gives the
+connections in \NSi{NS-F-P102-007}{\mathcal K} and the displayed
+\NSi{NS-F-P102-008}{b/R} term. Applying the scalar Laplacian to the harmonic gives the quadratic
+phase-gradient term in \eqref{eq:9.1} and the two mixed phase--amplitude derivative terms in
+\eqref{eq:9.2}. Applying the vector Laplacian also gives the last angular connection and the
+\NSi{NS-F-P102-009}{R^{-2}} term. The amplitude coefficients do not depend on
+\NSi{NS-F-P102-010}{\theta}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P102-003}
+The transverse-amplitude equation in Proposition~\ref{prop:7.2} gives
+\NSi{NS-F-P102-011}{\mathscr L_m(t_m,\pi_m)=-f_m}, with
+\NSi{NS-F-P102-012}{\pi_m\in \mathsf W_{\alpha+1/2}}. For each kind of term in
+\eqref{eq:9.2}, the gain over \NSi{NS-F-P102-013}{\alpha} is listed below.
+\end{EESegment}
+\NSFormula{NS-F-P102-014}{display}{none}
+\[
+\begin{array}{c|c}
+\text{term}&\text{gain}\\ \hline
+\text{slow transport}&1-\kappa_s\\
+\text{phase transport defect}&1/2\\
+\text{base derivatives and connections}&1\\
+\text{pressure-amplitude gradient}&1/2-\kappa_s\\
+\text{viscous amplitude derivatives}&1-2\kappa_s\\
+\text{mixed derivatives and phase divergence}&1/2-\kappa_s\\
+\text{viscous angular connection}&1/2
+\end{array}
+\]
+\begin{EESegment}{EE-TGT-P102-004}
+The bound for the phase defect allows polynomial factors of
+\NSi{NS-F-P102-015}{S_*}. Applying the principal velocity operator to the curl correction does not
+change its exponent. The fast-time derivative differentiates an amplitude coefficient, and
+\NSi{NS-F-P102-016}{\varepsilon k^2=O(1)}. At every derivative order, the potential formula and
+these chain-rule operators give the common lower bound
+\NSi{NS-F-P102-017}{\alpha+1/2-3\kappa_s} for the exponents of these terms.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P102-005}
+Apply the pulse cutoff to the potential and the pressure before taking the curl. The source left
+uncancelled, \NSi{NS-F-P102-018}{(1-\psi)f}, and the main derivative of the pulse cutoff,
+\NSi{NS-F-P102-019}{\psi't}, together with its fixed multipliers, are supported where
+\NSi{NS-F-P102-020}{P_v\le e^{-cS_*}}. For every fixed physical derivative, their bounds have the
+form \NSi{NS-F-P102-021}{CQ^{-M}S_*^Pe^{-cS_*}}. They are therefore flat, because
+\NSi{NS-F-P102-022}{S_*=\ell^2} and \NSi{NS-F-P102-023}{Q=2^{-\ell}}. Keep these terms in the
+additive residual throughout the iteration. Later forward solves are applied only to the supported
+source terms.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P102-006}
+The nonlinear terms need separate estimates for interactions between a wave and a mean field and
+for interactions between two waves. In the two-wave case, incompressibility controls the contraction
+of the advecting amplitude with the phase gradient.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P102-007}
+In the next lemma, \NSi{NS-F-P102-024}{(w\cdot\nabla_*)v} means cylindrical transport with the
+normalized derivatives \NSi{NS-F-P102-025}{(D_r,R^{-1}\partial_\theta,D_z)}, including the terms
+created by differentiating the cylindrical frame. The lemma therefore estimates the normalized
+nonlinear residual.
+\end{EESegment}
+
+\begin{lemma}\label{lem:9.2}
+\begin{EESegment}{EE-TGT-P102-008}
+Let \NSi{NS-F-P102-026}{w} be a wave in \NSi{NS-F-P102-027}{\mathsf W_\alpha}. Let
+\NSi{NS-F-P102-028}{v} be a mean field whose tangential components lie in
+\NSi{NS-F-P102-029}{\mathsf M_\mu} and whose radial component lies in
+\NSi{NS-F-P102-030}{\mathsf M_{\mu+1}}. Then the nonzero harmonics of
+\NSi{NS-F-P102-031}{(w\cdot\nabla_*)v+(v\cdot\nabla_*)w} lie in
+\NSi{NS-F-P102-032}{\mathsf W_{\alpha+\mu-1/2}}.
+\end{EESegment}

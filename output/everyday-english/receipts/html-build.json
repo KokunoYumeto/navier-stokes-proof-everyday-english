@@ -1,0 +1,481 @@
+{
+  "byte_identical_output_trees": true,
+  "deterministic_rebuilds": 2,
+  "formula_access": "Native MathML is retained, and each formula keeps its TeX source in a MathML annotation. No separately checked spoken rendering is claimed.",
+  "generated_entrypoint_sha256": "7d6714dd9acb476015deba94e60567449f4a02a40fe4f1b5c850cfd7a08fe867",
+  "inputs": [
+    {
+      "bytes": 3154,
+      "path": "everyday/accessibility.css",
+      "sha256": "a84e2d4dd61b72dd9425ee0cba310eb5b9b3e1bfda823ee8bdf978071836c738"
+    },
+    {
+      "bytes": 1863,
+      "path": "everyday/build-config.json",
+      "sha256": "4f022c00249a52d5a420587247ec8904aa28f8c8394b1806283b1546e8ed0dd9"
+    },
+    {
+      "bytes": 2624,
+      "path": "everyday/ee-web.sty",
+      "sha256": "ff30b6dd7c4ce40f823d625314c534ce185ecc59049fc44111aff1bb4997aadb"
+    },
+    {
+      "bytes": 209585,
+      "path": "everyday/illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg",
+      "sha256": "fba18974466fdecad7734538e895144f675927312a6d1d8ca82db65aeca50070"
+    },
+    {
+      "bytes": 1323,
+      "path": "everyday/main.tex",
+      "sha256": "90cee55b7abdeccb20e03c08c1a16fd7a4d1b22c981e05acdcac9b9de20d1774"
+    },
+    {
+      "bytes": 31128,
+      "path": "everyday/sections/pp001-006.tex",
+      "sha256": "edea11f8bae061078316f4a62fae28896a3855e4c4cfc2cef8c9857fdca83cef"
+    },
+    {
+      "bytes": 27343,
+      "path": "everyday/sections/pp007-012.tex",
+      "sha256": "efef4585ae1a38d347cd0c75b5f96331eac9499bd5f6ceb38a106e5f212bbc0c"
+    },
+    {
+      "bytes": 27397,
+      "path": "everyday/sections/pp013-018.tex",
+      "sha256": "1608f2c025c7ef93d96f5af01a2f4512d968dd376883f4e93886ec00f1464dc1"
+    },
+    {
+      "bytes": 25330,
+      "path": "everyday/sections/pp019-024.tex",
+      "sha256": "d18b3fa5cfc149b1c465fb7e29cd1104dfd4bcc33ef501ffe91fc7f20bcb9144"
+    },
+    {
+      "bytes": 30730,
+      "path": "everyday/sections/pp025-030.tex",
+      "sha256": "8860c9276b936ea426611f1f912974dbb2c8a2ca90067a5a87d0ca06a2649bd8"
+    },
+    {
+      "bytes": 33626,
+      "path": "everyday/sections/pp031-036.tex",
+      "sha256": "4e33fc34b5f686e89269e2d5ebaf82fbfb8bad5b0c9bfb1afc6b187e7cf1ebaa"
+    },
+    {
+      "bytes": 32283,
+      "path": "everyday/sections/pp037-042.tex",
+      "sha256": "5a2cdeae6d77ebba3b1732259eeabbea003e691abb91d0ae9623dede1eeffe8c"
+    },
+    {
+      "bytes": 31938,
+      "path": "everyday/sections/pp043-048.tex",
+      "sha256": "5b4c37ce3074041a1d83fe0624a28023cd4553a93109ad19bf4ae30d1b4ebeff"
+    },
+    {
+      "bytes": 28634,
+      "path": "everyday/sections/pp049-054.tex",
+      "sha256": "b8feefbe014da87a9e2504029ddf6182bca6569a534a8fb1c9f6f011acfebf96"
+    },
+    {
+      "bytes": 33167,
+      "path": "everyday/sections/pp055-060.tex",
+      "sha256": "4435b16f2820b6773df9602b76ccc5cd102aba4d50573768d47405101996aab5"
+    },
+    {
+      "bytes": 31482,
+      "path": "everyday/sections/pp061-066.tex",
+      "sha256": "76754641d4ed95f0a9cfef855a7f44c255f9557bf00f0588b30a02c2b4746f81"
+    },
+    {
+      "bytes": 31316,
+      "path": "everyday/sections/pp067-072.tex",
+      "sha256": "3911c204d5cff19976908cdfc3c1e16312c4b31e8a4c88454bae55b6accfa4fa"
+    },
+    {
+      "bytes": 32800,
+      "path": "everyday/sections/pp073-078.tex",
+      "sha256": "40525a1b9666063f9e7ec645ee0ff83d3de3052165eea3e7c4c12199bf3a6ff9"
+    },
+    {
+      "bytes": 32367,
+      "path": "everyday/sections/pp079-084.tex",
+      "sha256": "8153cfd22ffd6dc01833e8465abf74f3d1c7afea78f8d48657b3cf2e870aef78"
+    },
+    {
+      "bytes": 33148,
+      "path": "everyday/sections/pp085-090.tex",
+      "sha256": "31244acc1e8438e379d355b0e8a476fd4332e5c0f8593700a355dc97870b5b00"
+    },
+    {
+      "bytes": 34021,
+      "path": "everyday/sections/pp091-096.tex",
+      "sha256": "d5ee2e23ae0eb46fade796d9e36c9fafabd552ac3edf710d8f5fde7bb2e1cd7c"
+    },
+    {
+      "bytes": 31120,
+      "path": "everyday/sections/pp097-102.tex",
+      "sha256": "d69c1fffc375a0b21e7901b3d29e0a4b05ac9bc811c656160f21f8f316200414"
+    },
+    {
+      "bytes": 32432,
+      "path": "everyday/sections/pp103-108.tex",
+      "sha256": "b69be77d9e0b469448ff3c1465d07e2beddf5d02767936002e0b706520d234d0"
+    },
+    {
+      "bytes": 31242,
+      "path": "everyday/sections/pp109-114.tex",
+      "sha256": "bbb6aa7fdbb7b59b17cca3092c1f151212e7824626dbc0f37aecb0b6d52fd13e"
+    },
+    {
+      "bytes": 32014,
+      "path": "everyday/sections/pp115-120.tex",
+      "sha256": "6ad35ff6fc16e18248d4f18a37105f25070bdaada48a55dd93d56f12db48bfd2"
+    },
+    {
+      "bytes": 27841,
+      "path": "everyday/sections/pp121-126.tex",
+      "sha256": "1d047dfdabe331dc4496418fd174a0d8b6d01060ba5adc049fa8fab48f0d409f"
+    },
+    {
+      "bytes": 32516,
+      "path": "everyday/sections/pp127-132.tex",
+      "sha256": "79f06c8ad017a7aba74df4c0eb30b1ecc815fa3fe8f20dbf3cb2d2e38f67ddc1"
+    },
+    {
+      "bytes": 33096,
+      "path": "everyday/sections/pp133-138.tex",
+      "sha256": "205c5f1c009c8b8bb98e961d0f8a2b111a551dcf2bf5021d0354ed7f6a5b26f6"
+    },
+    {
+      "bytes": 31571,
+      "path": "everyday/sections/pp139-144.tex",
+      "sha256": "d5daa183948b02ccd8b7907cf2f108d62db32faaf03614abf5a64c724e5c5740"
+    },
+    {
+      "bytes": 33685,
+      "path": "everyday/sections/pp145-150.tex",
+      "sha256": "df855bfce50e745ad6e41c9785a85a78bf76b56ff1bf847cf13cef326409b83c"
+    },
+    {
+      "bytes": 34615,
+      "path": "everyday/sections/pp151-156.tex",
+      "sha256": "e10ff7a530694a5db0e7acd9698b6d890865d92786105fd010dac9f17fa7f05a"
+    },
+    {
+      "bytes": 32745,
+      "path": "everyday/sections/pp157-162.tex",
+      "sha256": "e0c6c2fe2449cf70a6ad6c8160a8a68ee39d7166faa07c8ab5cff64206a7dd42"
+    },
+    {
+      "bytes": 11375,
+      "path": "everyday/sections/pp163-164.tex",
+      "sha256": "6b202da6c0b6f4c2f6423baa05e9d3d087c3a1bcfe6fe66b277715d71d140bf5"
+    },
+    {
+      "bytes": 7412,
+      "path": "everyday/sections/pp165-166.tex",
+      "sha256": "87da2a6659ad50685dfb7df6937839e7db45e6a7956a869fe81f1f967eb4abb1"
+    },
+    {
+      "bytes": 3758644,
+      "path": "reconstruction/assets/figures/figure-1.svg",
+      "sha256": "c938c5512dc3f00d29f91c89d7ae81f77508f1596b1efde6bcea94e03c79af04"
+    },
+    {
+      "bytes": 3984767,
+      "path": "reconstruction/assets/figures/figure-2.svg",
+      "sha256": "38155f155c7245a4bb8de1b99f3005cb118fee05185a80901fadbe229c427481"
+    },
+    {
+      "bytes": 669646,
+      "path": "reconstruction/assets/figures/figure-3.svg",
+      "sha256": "a62eecbd48f43e78c27d8b22c77b0c707b4d41488dacda164b2263e2234414e6"
+    },
+    {
+      "bytes": 376747,
+      "path": "reconstruction/assets/figures/figure-4.svg",
+      "sha256": "134d9f78ca6fa7026470fe24b3e5294719229f7e4314e12d2de4cf185a8d6665"
+    },
+    {
+      "bytes": 320530,
+      "path": "reconstruction/assets/figures/figure-5.svg",
+      "sha256": "78f66ddae8783ff1a054a328979c8c522959cab4f4cd4afa70c4c728fd45d546"
+    },
+    {
+      "bytes": 360884,
+      "path": "reconstruction/assets/figures/figure-6.svg",
+      "sha256": "df0ef562db7795890a91fa55be21c41ab44ef7029daafeb3108a928d802ca6dd"
+    }
+  ],
+  "notice": null,
+  "outputs": [
+    {
+      "bytes": 3154,
+      "path": "output/everyday-english/html/accessibility.css",
+      "sha256": "a84e2d4dd61b72dd9425ee0cba310eb5b9b3e1bfda823ee8bdf978071836c738"
+    },
+    {
+      "bytes": 3758644,
+      "path": "output/everyday-english/html/assets/figures/figure-1.svg",
+      "sha256": "c938c5512dc3f00d29f91c89d7ae81f77508f1596b1efde6bcea94e03c79af04"
+    },
+    {
+      "bytes": 3984767,
+      "path": "output/everyday-english/html/assets/figures/figure-2.svg",
+      "sha256": "38155f155c7245a4bb8de1b99f3005cb118fee05185a80901fadbe229c427481"
+    },
+    {
+      "bytes": 669646,
+      "path": "output/everyday-english/html/assets/figures/figure-3.svg",
+      "sha256": "a62eecbd48f43e78c27d8b22c77b0c707b4d41488dacda164b2263e2234414e6"
+    },
+    {
+      "bytes": 376747,
+      "path": "output/everyday-english/html/assets/figures/figure-4.svg",
+      "sha256": "134d9f78ca6fa7026470fe24b3e5294719229f7e4314e12d2de4cf185a8d6665"
+    },
+    {
+      "bytes": 320530,
+      "path": "output/everyday-english/html/assets/figures/figure-5.svg",
+      "sha256": "78f66ddae8783ff1a054a328979c8c522959cab4f4cd4afa70c4c728fd45d546"
+    },
+    {
+      "bytes": 360884,
+      "path": "output/everyday-english/html/assets/figures/figure-6.svg",
+      "sha256": "df0ef562db7795890a91fa55be21c41ab44ef7029daafeb3108a928d802ca6dd"
+    },
+    {
+      "bytes": 209585,
+      "path": "output/everyday-english/html/assets/illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg",
+      "sha256": "fba18974466fdecad7734538e895144f675927312a6d1d8ca82db65aeca50070"
+    },
+    {
+      "bytes": 3865657,
+      "path": "output/everyday-english/html/index.html",
+      "sha256": "56efba577998bd5ff80503b4779587ed659c15b44d6ccf5ec4ce1852bad9f6c3"
+    }
+  ],
+  "profile": "final",
+  "runs": [
+    {
+      "command": {
+        "command": [
+          "${USER_HOME}\\AppData\\Local\\Pandoc\\pandoc.EXE",
+          "expanded-web.tex",
+          "--from=latex+raw_tex",
+          "--to=html5",
+          "--standalone",
+          "--mathml",
+          "--toc",
+          "--toc-depth=3",
+          "--number-sections",
+          "--shift-heading-level-by=1",
+          "--wrap=none",
+          "--metadata=pagetitle:Everyday English Edition of the Navier–Stokes Proof",
+          "--output=pass-a.raw.html"
+        ],
+        "cwd": "tmp/build/everyday-english/html",
+        "exit_code": 0,
+        "timed_out": false
+      },
+      "console_log": "output/everyday-english/receipts/logs/html-pass-a.console.txt",
+      "name": "pass-a",
+      "outputs": [
+        {
+          "bytes": 3154,
+          "path": "accessibility.css",
+          "sha256": "a84e2d4dd61b72dd9425ee0cba310eb5b9b3e1bfda823ee8bdf978071836c738"
+        },
+        {
+          "bytes": 3758644,
+          "path": "assets/figures/figure-1.svg",
+          "sha256": "c938c5512dc3f00d29f91c89d7ae81f77508f1596b1efde6bcea94e03c79af04"
+        },
+        {
+          "bytes": 3984767,
+          "path": "assets/figures/figure-2.svg",
+          "sha256": "38155f155c7245a4bb8de1b99f3005cb118fee05185a80901fadbe229c427481"
+        },
+        {
+          "bytes": 669646,
+          "path": "assets/figures/figure-3.svg",
+          "sha256": "a62eecbd48f43e78c27d8b22c77b0c707b4d41488dacda164b2263e2234414e6"
+        },
+        {
+          "bytes": 376747,
+          "path": "assets/figures/figure-4.svg",
+          "sha256": "134d9f78ca6fa7026470fe24b3e5294719229f7e4314e12d2de4cf185a8d6665"
+        },
+        {
+          "bytes": 320530,
+          "path": "assets/figures/figure-5.svg",
+          "sha256": "78f66ddae8783ff1a054a328979c8c522959cab4f4cd4afa70c4c728fd45d546"
+        },
+        {
+          "bytes": 360884,
+          "path": "assets/figures/figure-6.svg",
+          "sha256": "df0ef562db7795890a91fa55be21c41ab44ef7029daafeb3108a928d802ca6dd"
+        },
+        {
+          "bytes": 209585,
+          "path": "assets/illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg",
+          "sha256": "fba18974466fdecad7734538e895144f675927312a6d1d8ca82db65aeca50070"
+        },
+        {
+          "bytes": 3865657,
+          "path": "index.html",
+          "sha256": "56efba577998bd5ff80503b4779587ed659c15b44d6ccf5ec4ce1852bad9f6c3"
+        }
+      ],
+      "postprocess": {
+        "equation_numbers": 362,
+        "fallback_mathml_displays": 8,
+        "figures": 7,
+        "mathml_elements": 6176,
+        "name_punctuation_replacements": 0,
+        "section_numbers": 78,
+        "symbol_table_group_rows": 6,
+        "tables": 7,
+        "theorem_numbers": 80,
+        "toc_formula_ids_removed": 1
+      },
+      "validation": {
+        "counts": {
+          "formula_anchors": 6175,
+          "ids": 8430,
+          "images": 7,
+          "links_external_not_fetched": 21,
+          "links_local": 1783,
+          "mathml_elements": 6176,
+          "segment_anchors": 1370,
+          "source_pages": 166,
+          "tables": 7
+        },
+        "issues": [],
+        "status": "pass"
+      }
+    },
+    {
+      "command": {
+        "command": [
+          "${USER_HOME}\\AppData\\Local\\Pandoc\\pandoc.EXE",
+          "expanded-web.tex",
+          "--from=latex+raw_tex",
+          "--to=html5",
+          "--standalone",
+          "--mathml",
+          "--toc",
+          "--toc-depth=3",
+          "--number-sections",
+          "--shift-heading-level-by=1",
+          "--wrap=none",
+          "--metadata=pagetitle:Everyday English Edition of the Navier–Stokes Proof",
+          "--output=pass-b.raw.html"
+        ],
+        "cwd": "tmp/build/everyday-english/html",
+        "exit_code": 0,
+        "timed_out": false
+      },
+      "console_log": "output/everyday-english/receipts/logs/html-pass-b.console.txt",
+      "name": "pass-b",
+      "outputs": [
+        {
+          "bytes": 3154,
+          "path": "accessibility.css",
+          "sha256": "a84e2d4dd61b72dd9425ee0cba310eb5b9b3e1bfda823ee8bdf978071836c738"
+        },
+        {
+          "bytes": 3758644,
+          "path": "assets/figures/figure-1.svg",
+          "sha256": "c938c5512dc3f00d29f91c89d7ae81f77508f1596b1efde6bcea94e03c79af04"
+        },
+        {
+          "bytes": 3984767,
+          "path": "assets/figures/figure-2.svg",
+          "sha256": "38155f155c7245a4bb8de1b99f3005cb118fee05185a80901fadbe229c427481"
+        },
+        {
+          "bytes": 669646,
+          "path": "assets/figures/figure-3.svg",
+          "sha256": "a62eecbd48f43e78c27d8b22c77b0c707b4d41488dacda164b2263e2234414e6"
+        },
+        {
+          "bytes": 376747,
+          "path": "assets/figures/figure-4.svg",
+          "sha256": "134d9f78ca6fa7026470fe24b3e5294719229f7e4314e12d2de4cf185a8d6665"
+        },
+        {
+          "bytes": 320530,
+          "path": "assets/figures/figure-5.svg",
+          "sha256": "78f66ddae8783ff1a054a328979c8c522959cab4f4cd4afa70c4c728fd45d546"
+        },
+        {
+          "bytes": 360884,
+          "path": "assets/figures/figure-6.svg",
+          "sha256": "df0ef562db7795890a91fa55be21c41ab44ef7029daafeb3108a928d802ca6dd"
+        },
+        {
+          "bytes": 209585,
+          "path": "assets/illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg",
+          "sha256": "fba18974466fdecad7734538e895144f675927312a6d1d8ca82db65aeca50070"
+        },
+        {
+          "bytes": 3865657,
+          "path": "index.html",
+          "sha256": "56efba577998bd5ff80503b4779587ed659c15b44d6ccf5ec4ce1852bad9f6c3"
+        }
+      ],
+      "postprocess": {
+        "equation_numbers": 362,
+        "fallback_mathml_displays": 8,
+        "figures": 7,
+        "mathml_elements": 6176,
+        "name_punctuation_replacements": 0,
+        "section_numbers": 78,
+        "symbol_table_group_rows": 6,
+        "tables": 7,
+        "theorem_numbers": 80,
+        "toc_formula_ids_removed": 1
+      },
+      "validation": {
+        "counts": {
+          "formula_anchors": 6175,
+          "ids": 8430,
+          "images": 7,
+          "links_external_not_fetched": 21,
+          "links_local": 1783,
+          "mathml_elements": 6176,
+          "segment_anchors": 1370,
+          "source_pages": 166,
+          "tables": 7
+        },
+        "issues": [],
+        "status": "pass"
+      }
+    }
+  ],
+  "schema": "navier-stokes-everyday-html-build/v1",
+  "source_conversion": {
+    "bibliography_items": 22,
+    "edition_images": [
+      {
+        "source": "illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg",
+        "target": "assets/illustrations/EE-ILL-P006-001-angular-momentum-flux-sign.svg"
+      }
+    ],
+    "equation_tags": 362,
+    "figures": 6,
+    "formula_anchors": 6175,
+    "labels": 528,
+    "list_page_anchors_moved_inside_first_item": 2,
+    "segments": 1370,
+    "source_page_anchors": 166,
+    "symbol_table_groups": [
+      "Physical fields and the background construction",
+      "Coordinates, scales, and auxiliary variables",
+      "Waves, amplitudes, and momentum flux",
+      "Mean velocity and its compatibility conditions",
+      "Averages and inverse operators",
+      "Weights, coefficient classes, and correction orders"
+    ]
+  },
+  "status": "pass"
+}

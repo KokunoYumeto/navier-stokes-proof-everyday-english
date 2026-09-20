@@ -1,0 +1,70 @@
+{
+  "content_audit": {
+    "command": null,
+    "first_use_receipt": {
+      "bytes": 26655,
+      "path": "evidence/translation/FIRST_USE_FINALIZATION.json",
+      "sha256": "379b402abd2a34b746fa022864b6b47db5eac74ff4a9bb143fe3a1cfcf672317"
+    },
+    "mode": "verified_frozen_final_audit",
+    "report": {
+      "bytes": 16954,
+      "path": "evidence/translation/FINAL_AGGREGATE_AUDIT.json",
+      "sha256": "69e8ae0214bdd1763420270b48e80f149f6cddf746733875b91973f23d7718d3"
+    },
+    "reported_status": "pass",
+    "verified_files": 232
+  },
+  "epub": {
+    "counts": {
+      "entries": 16,
+      "images": 7,
+      "links_local": 1787,
+      "manifest_items": 12,
+      "mathml_elements": 6168,
+      "xhtml_documents": 3
+    },
+    "issues": [],
+    "status": "pass"
+  },
+  "external_network_links": "Recorded but not fetched. The reproducible build is offline and closes every local link.",
+  "html": {
+    "counts": {
+      "formula_anchors": 6175,
+      "ids": 8430,
+      "images": 7,
+      "links_external_not_fetched": 21,
+      "links_local": 1783,
+      "mathml_elements": 6176,
+      "segment_anchors": 1370,
+      "source_pages": 166,
+      "tables": 7
+    },
+    "issues": [],
+    "status": "pass"
+  },
+  "latex_cross_references": {
+    "counts": {
+      "bibitems": 22,
+      "citations": 26,
+      "figures_declared": 6,
+      "figures_used": 6,
+      "formula_markers": 6175,
+      "labels": 528,
+      "ranges": 29,
+      "references": 1676,
+      "source_page_markers": 166
+    },
+    "external_links_checked_online": false,
+    "issues": [],
+    "status": "pass"
+  },
+  "limitations": null,
+  "pdf": {
+    "page_count": 168,
+    "status": "pass"
+  },
+  "profile": "final",
+  "schema": "navier-stokes-everyday-build-checks/v1",
+  "status": "pass"
+}

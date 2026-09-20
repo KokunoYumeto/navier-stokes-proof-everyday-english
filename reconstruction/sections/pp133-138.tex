@@ -1,0 +1,521 @@
+\NSPage{133}%
+On the pulse \NSi{NS-F-P133-001}{XE^2=X_{\mathrm p} e_b^2 f^2 e^{-2\lambda y}}. Changing to
+\NSi{NS-F-P133-002}{\zeta_b=\lambda y}, and using \eqref{eq:A.14}, \eqref{eq:A.15}, and
+\eqref{eq:A.18}, gives the exact form
+\NSFormula{NS-F-P133-003}{display}{A.19}
+\begin{equation}
+ \frac{\lambda S(\infty)}{X_{\mathrm p} e_b^2 f^2}
+ =\operatorname{Amp}^2K_b-\frac{1-e^{-26}}{4}+\mathcal E(\operatorname{Amp},\eta),
+ \qquad
+ K_b=\int_0^{13}e^{-2\zeta_b}R_0(\zeta_b)^2\,d\zeta_b,
+ \tag{A.19}\label{eq:A.19}
+\end{equation}
+where on \NSi{NS-F-P133-004}{[.9,1.2]\times[-1,1]},
+\NSFormula{NS-F-P133-005}{display}{none}
+\[
+ \lVert\mathcal E\rVert_{C^1_\eta}
+ \leq C_{\mathrm{pre}}\lambda(1+\log(1/\lambda)).
+\]
+All terms contributed by the outer profile \NSi{NS-F-P133-006}{E} in this estimate were
+chosen independently of \NSi{NS-F-P133-007}{\operatorname{Amp}}; the exponentially small affine
+end bumps account for its remaining dependence. Since
+\NSi{NS-F-P133-008}{R_0\leq\zeta_b},
+\NSi{NS-F-P133-009}{K_b\leq\int_0^\infty\zeta_b^2e^{-2\zeta_b}\,d\zeta_b=1/4}. On
+\NSi{NS-F-P133-010}{.02\leq\zeta_b\leq9} one has
+\NSi{NS-F-P133-011}{R_0\geq\zeta_b-.02}, and integration gives
+\NSi{NS-F-P133-012}{K_b>.20}. The principal expression in \eqref{eq:A.19} is below
+\NSi{NS-F-P133-013}{-.047} at \NSi{NS-F-P133-014}{.9} and above
+\NSi{NS-F-P133-015}{.038} at \NSi{NS-F-P133-016}{1.2}, and its derivative in the
+amplitude is at least \NSi{NS-F-P133-017}{.36} on the bracket. For small
+\NSi{NS-F-P133-018}{\lambda} the full expression has a unique root there. Its linearization
+is nonsingular, so the root is smooth and
+\NSFormula{NS-F-P133-019}{display}{A.20}
+\begin{equation}
+ |\partial_\eta\operatorname{Amp}|
+ \leq C_{\mathrm{pre}}\lambda(1+\log(1/\lambda)).
+ \tag{A.20}\label{eq:A.20}
+\end{equation}
+Both equalities of \eqref{eq:A.8} now hold. The remaining task is to verify that these moment
+corrections preserve the stress cone. Only finitely many orders of
+\NSi{NS-F-P133-020}{\eta}-derivatives must satisfy prescribed smallness bounds below. If
+bounds on additional finite derivative orders are prescribed, the differentiated integrals and
+Lemma~\ref{lem:A.2} provide them before the parameters are fixed. Derivatives of every other
+fixed order have finite bounds after the parameters are chosen.
+
+\subsection{Fixing the pressure datum for the axis profile.}\label{sec:A.4}
+The azimuthal profile \NSi{NS-F-P133-021}{E} now determines the axis pressure
+\NSi{NS-F-P133-022}{\Pi_0} by the normalization that pressure vanish at radial infinity, as in
+\eqref{eq:4.25}. The analytic axis construction of Proposition~\ref{prop:B.2} requires this
+datum to extend holomorphically near \NSi{NS-F-P133-023}{[-1,1]}, with the sign and size
+bounds stated in Lemma~\ref{lem:A.5}. In this subsection we verify these properties before
+attaching the axis, and show that the datum is independent of the later choice of the radial
+scale \NSi{NS-F-P133-024}{X_R}. For the pressure integrals in this subsection, we use the
+global logarithmic coordinate \NSi{NS-F-P133-025}{y=\log(X/X_R)} on the complete reference
+profile.
+
+\begin{lemma}\label{lem:A.5}
+Let \NSi{NS-F-P133-026}{E_{\mathrm{id,sched}}} be the reference inner profile \eqref{eq:A.7}
+followed by the outer profile \NSi{NS-F-P133-027}{E} specified in Section~\ref{sec:A.2}, with
+the azimuthal corrections that preserve the total pressure increment omitted and all other
+transition intervals unchanged. The function
+\NSFormula{NS-F-P133-028}{display}{A.21}
+\begin{equation}
+ \Pi_0(\eta)=-\frac12\int_{-\infty}^{\infty}
+ E_{\mathrm{id,sched}}(y,\eta)^2\,dy
+ \tag{A.21}\label{eq:A.21}
+\end{equation}
+is independent of \NSi{NS-F-P133-029}{X_R} and analytic on a complex neighborhood of
+\NSi{NS-F-P133-030}{[-1,1]}. It is even, \NSi{NS-F-P133-031}{\Pi_0'(\eta)} has the sign
+of \NSi{NS-F-P133-032}{\eta} for \NSi{NS-F-P133-033}{\eta\neq0}, and
+\NSFormula{NS-F-P133-034}{display}{A.22}
+\begin{equation}
+ \Pi_0(\eta)\leq-\frac52P_*^2f(\eta)^2.
+ \tag{A.22}\label{eq:A.22}
+\end{equation}
+For the complete reference radial profile, integration of
+\NSi{NS-F-P133-035}{\Pi_X=E^2/(2X)} from this datum gives
+\NSFormula{NS-F-P133-036}{display}{A.23}
+\begin{equation}
+ \Pi(X,\eta)=-\frac12\int_{\log(X/X_R)}^\infty E(v,\eta)^2\,dv.
+ \tag{A.23}\label{eq:A.23}
+\end{equation}
+\end{lemma}
+\begin{proof}
+Without the angular bumps, every part of \NSi{NS-F-P133-037}{E} has the form
+\NSi{NS-F-P133-038}{c(y)f(\eta)^{\vartheta(y)}}, where \NSi{NS-F-P133-039}{c} and the
+transition lengths are independent of \NSi{NS-F-P133-040}{\eta} and
+\NSi{NS-F-P133-041}{0\leq\vartheta\leq1}. The reference inner profile, axial transition,
+intermediate power-law interval, and pulse have \NSi{NS-F-P133-042}{\vartheta=1}; profile
+interpolation decreases it to zero; exterior transition and tail have
+\NSi{NS-F-P133-043}{\vartheta=0}. Choose one simply connected
+\NSPage{134}%
+complex neighborhood of the real interval avoiding the poles and zeros of
+\NSi{NS-F-P134-001}{f}, and fix an analytic logarithm there. Then
+\NSi{NS-F-P134-002}{f^\vartheta=\exp(\vartheta\log f)} is holomorphic with a bound uniform
+in \NSi{NS-F-P134-003}{0\leq\vartheta\leq1}. The squared integrand is bounded by
+\NSi{NS-F-P134-004}{Ce^{y/5}} as \NSi{NS-F-P134-005}{y\to-\infty} and by
+\NSi{NS-F-P134-006}{Ce^{-(1+2h)y}} as \NSi{NS-F-P134-007}{y\to+\infty}, and the
+intermediate interval is finite. Uniform integration of holomorphic functions proves
+analyticity.
+
+For real \NSi{NS-F-P134-008}{\eta}, differentiating each factor gives
+\NSi{NS-F-P134-009}{\partial_\eta f^{2\vartheta}=-2\vartheta J_0'f^{2\vartheta}}. Thus
+every contribution to \NSi{NS-F-P134-010}{\Pi_0'} has the sign of
+\NSi{NS-F-P134-011}{\eta}, and the reference inner profile makes it strict. Its contribution
+is exactly \NSi{NS-F-P134-012}{-(5/2)P_*^2f^2}, proving \eqref{eq:A.22}. The construction
+in the logarithmic radial coordinate contains no \NSi{NS-F-P134-013}{X_R}, proving its
+independence. Finally, \eqref{eq:A.11} says that reinstating the angular bumps changes the
+total pressure increment by zero. Its total increment is therefore
+\NSi{NS-F-P134-014}{-\Pi_0}, which proves \eqref{eq:A.23}.
+\end{proof}
+
+We can now use this pressure datum in the axis construction. Subsequent profile changes must
+preserve the total pressure increment to keep it fixed. Matching all five radial integrals also
+preserves the radial velocity and the functions \NSi{NS-F-P134-015}{Q_s,N_s} beyond the
+correction interval. If an edit has zero total integral of
+\NSi{NS-F-P134-016}{(E_{\mathrm{new}}^2-E_{\mathrm{old}}^2)/(2X)}, the forward pressure is
+unchanged before and after its support, though it can change inside that support. Accordingly,
+a correction supported strictly to the right of \NSi{NS-F-P134-017}{X} that preserves the
+total pressure increment may be omitted in the backward integral \eqref{eq:A.23}. Equality of
+all five radial moment functions at a radius where the fields rejoin has the stronger consequence
+of Lemma~\ref{lem:4.4}: it restores the radial velocity and the functions
+\NSi{NS-F-P134-018}{Q_s,N_s} on the entire later interval, including their parameter
+derivatives. The axis construction will use the already fixed analytic function
+\NSi{NS-F-P134-019}{\Pi_0} and integrate pressure forward. Later smooth, possibly
+nonanalytic, edits of \NSi{NS-F-P134-020}{E} cannot change that datum; their total pressure
+increment is either zero or is restored by the correction matching all five radial moments. The
+heat replacement preserves the required convergent moment differences while changing the
+exterior profile.
+
+\subsection{Uniform admissible stress cone inequalities on the outer interval.}\label{sec:A.5}
+The moment identities and the axis pressure datum are now fixed. It remains to verify the
+stress cone inequalities on the outer intervals specified in Proposition~\ref{prop:A.4}. We
+estimate the ratios entering the sufficient cone test of Lemma~\ref{lem:4.5} before choosing
+the large radial scale \NSi{NS-F-P134-021}{X_R}; this final choice then gives uniform strict
+inequalities on the required finite interval.
+
+Write \NSi{NS-F-P134-022}{w=N_s/(EQ_s)} wherever
+\NSi{NS-F-P134-023}{Q_s>0}. The sufficient test of Lemma~\ref{lem:4.5} is
+\NSFormula{NS-F-P134-024}{display}{A.24}
+\begin{equation}
+ a-b_sw>0,\qquad 2b_sw+b_s^2/a+(a-2)w^2<2.
+ \tag{A.24}\label{eq:A.24}
+\end{equation}
+We establish uniform positive lower bounds for \NSi{NS-F-P134-025}{a-b_sw} and
+\NSi{NS-F-P134-026}{2-2b_sw-b_s^2/a-(a-2)w^2}, with
+\NSi{NS-F-P134-027}{a,b_s,w} in fixed compact ranges and
+\NSi{NS-F-P134-028}{Q_s>0}. Increasing \NSi{NS-F-P134-029}{X_R} afterward then makes
+\NSi{NS-F-P134-030}{p_{s,1}=XQ_s/L} large enough on the designated finite logarithmic
+interval. Where \NSi{NS-F-P134-031}{v_s\leq2}, it is enough to have
+\NSi{NS-F-P134-032}{P_{\mathrm c}=p_{s,1}(1-b_sw/a)>2}.
+
+The reference inner profile and axial transition. On \eqref{eq:A.7}, direct substitution into
+the equation for \NSi{NS-F-P134-033}{Q_s} gives
+\NSFormula{NS-F-P134-034}{display}{A.25}
+\begin{equation}
+ Q_s=\frac{(3/5)(4L-1)-h(1-8\eta^2)+(D+4d)\eta J_0'}{8/5}\geq c>0.
+ \tag{A.25}\label{eq:A.25}
+\end{equation}
+There \NSi{NS-F-P134-035}{b_s=0} and \NSi{NS-F-P134-036}{a=4/5}. In the equation for
+\NSi{NS-F-P134-037}{N_s}, split the source into its geometric and pressure parts. At the start
+of the first transition their values are respectively \NSi{NS-F-P134-038}{O(|\eta|)} and
+\NSi{NS-F-P134-039}{O(P_*^2|\eta|)}; one parameter derivative removes the factor
+\NSi{NS-F-P134-040}{|\eta|}. These estimates follow by integrating the constant ideal
+geometric source and the bounded pressure source against the
+\NSPage{135}%
+kernel in the integral representation of \NSi{NS-F-P135-001}{N_s}. Evenness of the pressure
+and the ideal shapes supplies the vanishing at \NSi{NS-F-P135-002}{\eta=0}.
+
+During the first transition \NSi{NS-F-P135-003}{U=4\eta},
+\NSi{NS-F-P135-004}{W=1-4L<0} and \NSi{NS-F-P135-005}{l\geq0}, so the angular source is at
+least \NSi{NS-F-P135-006}{-h}. The finite transition therefore preserves a positive lower
+bound for \NSi{NS-F-P135-007}{Q_s}, and \NSi{NS-F-P135-008}{b_s=0},
+\NSi{NS-F-P135-009}{a\leq2}. In the axial transition, the angular source
+\NSi{NS-F-P135-010}{S_q} is
+\NSFormula{NS-F-P135-011}{display}{A.26}
+\begin{equation}
+ S_q=-h(1-2k\eta^2)+(D+dk)\eta J_0',\qquad
+ Q_s\geq c(\eta^2+e^{-y})\quad(0\leq y\leq T_d).
+ \tag{A.26}\label{eq:A.26}
+\end{equation}
+The second estimate follows from variation of constants, since
+\NSi{NS-F-P135-012}{\eta J_0'\asymp\eta^2}, \NSi{NS-F-P135-013}{D+dk\geq D}, the value of
+\NSi{NS-F-P135-014}{Q_s} at the inner endpoint is positive, and
+\NSi{NS-F-P135-015}{h\ll e^{-T_d}}.
+
+In this interval the geometric axial source is \NSi{NS-F-P135-016}{O(|\eta|)}. By
+\eqref{eq:A.23}, its pressure source is \NSi{NS-F-P135-017}{O(E^2|\eta|)}: the unmodified
+profile at larger radii decays at least as a constant times
+\NSi{NS-F-P135-018}{e^{-\Delta y/2}} and satisfies
+\NSi{NS-F-P135-019}{|\partial_\eta\log E|\leq|J_0'|}. The subsequent azimuthal-profile
+correction may be omitted because it preserves the total pressure increment. Solving
+\NSi{NS-F-P135-020}{N_s'+N_s=S_n} and using
+\NSi{NS-F-P135-021}{E^2=P_1^2f^2e^{-y}} gives
+\NSFormula{NS-F-P135-022}{display}{none}
+\[
+ \frac{|N_s|}{E^2}\leq C|\eta|
+ \left(\frac{e^{T_d}}{P_*^2}+1+y\right)\leq C|\eta|(1+y).
+\]
+Now \NSi{NS-F-P135-023}{b_s=2k'\eta/E}, so \eqref{eq:A.26} gives
+\NSi{NS-F-P135-024}{|b_sw|\leq Ce_d}. Also \NSi{NS-F-P135-025}{b_s^2\ll1} because
+\NSi{NS-F-P135-026}{P_*>e^{T_d}}. As \NSi{NS-F-P135-027}{a=2}, choosing
+\NSi{NS-F-P135-028}{M_d} first to make \NSi{NS-F-P135-029}{e_d} small and
+\NSi{NS-F-P135-030}{P_*} afterward proves both strict inequalities in \eqref{eq:A.24}.
+
+The intermediate power-law interval. During the axial transition, write
+\NSi{NS-F-P135-031}{\mathcal A_X(U)=\bar k\eta}. Then
+\NSi{NS-F-P135-032}{\bar k'=k-\bar k}, and the final eleven units with
+\NSi{NS-F-P135-033}{k=0} give \NSi{NS-F-P135-034}{L\bar k<1/2}. Hence
+\NSi{NS-F-P135-035}{W=1-L\bar k\geq1/2} on the next transition. Put
+\NSi{NS-F-P135-036}{c_\eta=D\eta J_0'\asymp\eta^2}. With
+\NSi{NS-F-P135-037}{U=0} the angular source on the transition is
+\NSi{NS-F-P135-038}{(-l)W-h+c_\eta}. A positive lower bound for
+\NSi{NS-F-P135-039}{Q_s}, independent of \NSi{NS-F-P135-040}{\lambda}, persists. The
+bound on \NSi{NS-F-P135-041}{w} depends only on the parameters fixed before
+\NSi{NS-F-P135-042}{\lambda}. Thus \NSi{NS-F-P135-043}{\sqrt\lambda|w|} is small and
+\NSi{NS-F-P135-044}{b_s=0}.
+
+In the local logarithmic radial coordinate on the constant-slope interval
+\NSi{NS-F-P135-045}{\bar k(y)=\bar k(0)e^{-y}}, so the angular source is exactly
+\NSi{NS-F-P135-046}{\lambda-h+c_\eta-\lambda L\bar k(0)e^{-y}}. Integrating the scalar
+equation for \NSi{NS-F-P135-047}{Q_s} gives
+\NSFormula{NS-F-P135-048}{display}{A.27}
+\begin{equation}
+\begin{aligned}
+ Q_s&\geq c_{\mathrm{pre}}(\eta^2+\lambda+e^{-(1-\lambda)y}),\\
+ Q_s-\frac{\lambda-h+c_\eta}{1-\lambda}
+   &=O_{C^1_\eta}\!\left(C_{\mathrm{pre}}(1+y)e^{-(1-\lambda)y}\right),\\
+ |N_s/E|&\leq C_{\mathrm{pre}}|\eta|(1+y)e^{-(1/2-\lambda)y}.
+\end{aligned}
+\tag{A.27}\label{eq:A.27}
+\end{equation}
+For the last line, \NSi{NS-F-P135-049}{U=0} eliminates the geometric source and the pressure
+source remains \NSi{NS-F-P135-050}{O(E^2|\eta|)}; convolution with
+\NSi{NS-F-P135-051}{e^{-y}} proves the bound. One \NSi{NS-F-P135-052}{\eta} derivative
+obeys the same estimate without \NSi{NS-F-P135-053}{|\eta|}. Using
+\NSi{NS-F-P135-054}{|\eta|/(\eta^2+e^{-(1-\lambda)y})\leq\tfrac12e^{(1-\lambda)y/2}}, we obtain
+\NSFormula{NS-F-P135-055}{display}{none}
+\[
+ \sqrt\lambda|w|\leq C_{\mathrm{pre}}\sqrt\lambda(1+y)e^{\lambda y/2}=o(1)
+ \qquad(0\leq y\leq60\log(1/\lambda)).
+\]
+Since \NSi{NS-F-P135-056}{a=2+2\lambda} and \NSi{NS-F-P135-057}{b_s=0}, this proves the
+admissible stress cone there. On the preceding transition the same argument gives the
+admissible stress cone condition whenever \NSi{NS-F-P135-058}{l<0}, and the relaxed
+condition at its initial endpoint.
+
+The pulse. Here both shear components vary, so the cone test requires a more precise relation
+between the averaged axial velocity and the pulse profile. Set
+\NSi{NS-F-P135-059}{m=\mathcal A_X(U)/E} and \NSi{NS-F-P135-060}{\beta=1/2-\lambda}. The
+exact equation for \NSi{NS-F-P135-061}{m} is \NSi{NS-F-P135-062}{m'+\beta m=R_b}.
+Extending the main pulse by zero on the left and expanding its exponential convolution twice
+gives
+\NSFormula{NS-F-P135-063}{display}{A.28}
+\begin{equation}
+ m=\frac{R_b}{\beta}-\frac{\lambda\partial_{\zeta_b}R_b}{\beta^2}
+   +O(\lambda^2)+m(0)e^{-\beta y}.
+ \tag{A.28}\label{eq:A.28}
+\end{equation}
+\NSPage{136}%
+Indeed Taylor's formula bounds the convolution remainder by
+\NSi{NS-F-P136-001}{C\lambda^2\lVert\partial_{\zeta_b}^2R_b\rVert_\infty
+\int_0^\infty e^{-\beta v}v^2\,dv}. The start is flat, and the end bumps have exponentially
+small fixed \NSi{NS-F-P136-002}{\zeta_b} derivatives. The same expansion holds after one
+\NSi{NS-F-P136-003}{\eta} derivative. The initial value is bounded by \eqref{eq:A.14}.
+
+In the angular equation, \NSi{NS-F-P136-004}{W=1-2D\eta Em-d(Em)_\eta} and
+\eqref{eq:A.20} show that
+\NSi{NS-F-P136-005}{S_q=\lambda-h+c_\eta+O(C_{\mathrm{pre}}E)}. Equations
+\eqref{eq:A.14} and \eqref{eq:A.27} therefore imply
+\NSFormula{NS-F-P136-006}{display}{A.29}
+\begin{equation}
+ Q_s=\frac{\lambda-h+c_\eta}{1-\lambda}+O(C_{\mathrm{pre}}\lambda^{28}).
+ \tag{A.29}\label{eq:A.29}
+\end{equation}
+The pressure normalized to vanish at radial infinity and its first
+\NSi{NS-F-P136-007}{\eta} derivative are \NSi{NS-F-P136-008}{O(E^2)}. Furthermore,
+integrating \NSi{NS-F-P136-009}{XE^2(R_b^2-1/2)} and the moment discrepancy accumulated
+before the pulse gives
+\NSi{NS-F-P136-010}{S/(XE^2)=O_{C^1_\eta}(C_{\mathrm{pre}}e^{26}/\lambda)} throughout the
+pulse. Formula~\eqref{eq:4.16} expresses \NSi{NS-F-P136-011}{Q_s,N_s} in terms of the radial
+moment functions and their \NSi{NS-F-P136-012}{\eta}-derivatives, without radial derivatives
+of \NSi{NS-F-P136-013}{E,U}. Substitution yields
+\NSFormula{NS-F-P136-014}{display}{A.30}
+\begin{equation}
+ \frac{N_s}{E}=-R_b+(D+c_\eta)m-D\eta m_\eta+O(C_{\mathrm{pre}}\lambda^{27}).
+ \tag{A.30}\label{eq:A.30}
+\end{equation}
+Here all constants are independent of \NSi{NS-F-P136-015}{\mathsf C}. Because
+\NSi{NS-F-P136-016}{|\eta|/(\lambda+c_\eta)\leq C/\sqrt\lambda}, \eqref{eq:A.20} makes
+the contribution of \NSi{NS-F-P136-017}{\eta m_\eta/Q_s} an
+\NSi{NS-F-P136-018}{o(1)} term. Combining Equations \eqref{eq:A.28} to \eqref{eq:A.30}
+gives
+\NSFormula{NS-F-P136-019}{display}{none}
+\[
+ w=2R_b-C_d\partial_{\zeta_b}R_b+o(1),
+ \qquad C_d=\frac{\lambda(D+c_\eta)(1-\lambda)}{\beta^2(\lambda-h+c_\eta)}\leq2+o(1).
+\]
+The estimate for \NSi{NS-F-P136-020}{w} now reduces the cone test to bounds on the pulse
+shape and its derivative. For the coefficient of \NSi{NS-F-P136-021}{R_b} use
+\NSi{NS-F-P136-022}{D+c_\eta-\beta=\lambda-h+c_\eta}; the bound on
+\NSi{NS-F-P136-023}{C_d} follows by maximizing the quotient at
+\NSi{NS-F-P136-024}{c_\eta=0}, with \NSi{NS-F-P136-025}{h/\lambda\to0}. Also
+\NSi{NS-F-P136-026}{a=2+2\lambda} and
+\NSi{NS-F-P136-027}{b_s=-R_b+O(\lambda)}. Apart from exponentially small end bumps,
+\NSi{NS-F-P136-028}{R_b\geq0} and \NSi{NS-F-P136-029}{\partial_{\zeta_b}R_b\leq1.2}. Thus
+\NSFormula{NS-F-P136-030}{display}{none}
+\[
+\begin{aligned}
+ b_sw&\leq\sup_{R\geq0}(-2R^2+2.41R)+o(1)<.74,\\
+ 2b_sw+b_s^2/a+(a-2)w^2
+   &\leq\sup_{R\geq0}(-3.5R^2+4.82R)+o(1)<1.68.
+\end{aligned}
+\]
+Only the upper bound on the pulse derivative is used in these quadratic cross terms; its
+negative derivative near the cutoff decreases the left-hand sides. All derivatives remain
+bounded by fixed constants. The first margin gives \NSi{NS-F-P136-031}{a-b_sw>1}, and
+\NSi{NS-F-P136-032}{v_s\geq a>2}, proving the admissible stress cone on the whole pulse.
+
+Profile interpolation and exterior transition. After the pulse,
+\NSi{NS-F-P136-033}{U=M=J=0} and hence \NSi{NS-F-P136-034}{W=1}. During the profile
+interpolation the angular source is \NSi{NS-F-P136-035}{-l-h+\vartheta_f c_\eta}, so
+\NSi{NS-F-P136-036}{Q_s\geq c\lambda}; the small \NSi{NS-F-P136-037}{C^1_\eta} angular
+correction preserves this bound. Since \NSi{NS-F-P136-038}{S(\infty)=0},
+\NSFormula{NS-F-P136-039}{display}{A.31}
+\begin{equation}
+ \frac{S(X)}{X}=\frac1{2X}\int_X^\infty E(X')^2\,dX'.
+ \tag{A.31}\label{eq:A.31}
+\end{equation}
+Until the exterior transition, \NSi{NS-F-P136-040}{l\leq-\lambda/2}, and the remaining
+exterior transition integral has the bound \eqref{eq:A.18}. Thus
+\NSi{NS-F-P136-041}{(|S|+|S_\eta|)/X\leq CE^2/\lambda}, including the angular edit, while
+\NSi{NS-F-P136-042}{|\Pi|+|\Pi_\eta|\leq CE^2}. Formula~\eqref{eq:4.16} now gives
+\NSi{NS-F-P136-043}{|w|\leq CE/\lambda^2\ll1}, since pulse end made
+\NSi{NS-F-P136-044}{E} exponentially small in \NSi{NS-F-P136-045}{1/\lambda}. Here
+\NSi{NS-F-P136-046}{b_s=0} and
+\NSi{NS-F-P136-047}{2<a\leq2+2\lambda+.2+o(1)}, so both cone margins persist.
+
+Once the exterior transition has started, its fields and remaining radial moment functions are
+uniform in \NSi{NS-F-P136-048}{\eta} except for the explicit coefficients in the identity for
+\NSi{NS-F-P136-049}{Q_s,N_s}. Combining
+\NSPage{137}%
+\eqref{eq:A.23} and \eqref{eq:A.31} gives
+\NSFormula{NS-F-P137-001}{display}{none}
+\[
+ N_s=2\eta\int_y^\infty\bigl(he^{v-y}-A\bigr)E(v)^2\,dv=O(E(y)^2).
+\]
+Throughout the exterior transition and at larger radii,
+\NSi{NS-F-P137-002}{l\leq-3h/4}. Since
+\NSi{NS-F-P137-003}{(\log E)'=l-1/2}, for \NSi{NS-F-P137-004}{v\geq y} we have
+\NSFormula{NS-F-P137-005}{display}{none}
+\[
+ E(v)^2=E(y)^2\exp\!\left(\int_y^v(2l(s)-1)\,ds\right)
+ \leq E(y)^2e^{-(1+3h/2)(v-y)}.
+\]
+Consequently
+\NSFormula{NS-F-P137-006}{display}{none}
+\[
+\begin{aligned}
+ h\int_y^\infty e^{v-y}E(v)^2\,dv
+   &\leq hE(y)^2\int_0^\infty e^{-3hs/2}\,ds=\frac23E(y)^2,\\
+ \int_y^\infty E(v)^2\,dv
+   &\leq E(y)^2\int_0^\infty e^{-(1+3h/2)s}\,ds
+     =\frac{E(y)^2}{1+3h/2}.
+\end{aligned}
+\]
+With \NSi{NS-F-P137-007}{A=1/2+h} and \NSi{NS-F-P137-008}{|\eta|\leq1}, these estimates
+give the stated bound for \NSi{NS-F-P137-009}{N_s} uniformly in
+\NSi{NS-F-P137-010}{h}. Before the steep-decay interval
+\NSi{NS-F-P137-011}{Q_s\geq c\lambda}. After it, and through the first half-unit of the
+terminal interval, \NSi{NS-F-P137-012}{Q_s\geq ch}: in the last constant-slope interval it
+decreases only to \NSi{NS-F-P137-013}{Q_p\asymp h}, and \eqref{eq:A.16} gives the same
+lower bound for \NSi{NS-F-P137-014}{0\leq y\leq1/2}. By \eqref{eq:A.17},
+\NSi{NS-F-P137-015}{E\leq Ce_{\mathrm{rel}}h^6} after the steep-decay interval, so
+\NSi{NS-F-P137-016}{E/Q_s\ll1} even when \NSi{NS-F-P137-017}{h} is much smaller than
+\NSi{NS-F-P137-018}{e_{\mathrm{rel}}}. Consequently \NSi{NS-F-P137-019}{|w|\ll1},
+\NSi{NS-F-P137-020}{b_s=0}, and \NSi{NS-F-P137-021}{2<a\leq4} on the exterior transition
+interval under consideration. This proves the strict true cone there.
+
+Every lower bound for \NSi{NS-F-P137-022}{Q_s} used here is on a fixed compact logarithmic
+interval after all choices in \eqref{eq:A.6}. The fields and the functions
+\NSi{NS-F-P137-023}{Q_s,N_s} on such an interval are independent of
+\NSi{NS-F-P137-024}{X_R} under the normalizations \eqref{eq:A.4}. Hence one final increase
+of \NSi{NS-F-P137-025}{X_R} makes the large-\NSi{NS-F-P137-026}{p_{s,1}} test uniform.
+This finishes the proof of Proposition~\ref{prop:A.4}.
+
+\subsection{Replacing the exterior power by a heat flow.}\label{sec:A.6}
+The reference profile \NSi{NS-F-P137-027}{(U,E)} of Proposition~\ref{prop:A.4} has the
+required moments and satisfies \NSi{NS-F-P137-028}{U=0},
+\NSi{NS-F-P137-029}{E=E_{\mathrm{pow}}=c_\infty X^{-A}} beyond the terminal interval. The
+exterior power law \NSi{NS-F-P137-030}{E_{\mathrm{pow}}} still has a viscous residual. In
+this subsection we will replace it beyond the annulus by the exact radial swirl heat flow
+\NSi{NS-F-P137-031}{K} of Lemma~\ref{lem:A.6}. This will make the exterior momentum
+residual vanish and give the field smooth limits at the singular time away from the axis. This
+replacement changes three moments; a correction in the second reserved interval
+\NSi{NS-F-P137-032}{\mathcal I_2} restores them (Proposition~\ref{prop:A.7}), including the pressure
+datum \NSi{NS-F-P137-033}{\Pi_0} already prescribed for the axis in \eqref{eq:A.21}.
+
+For a profile regular at the axis, write
+\NSi{NS-F-P137-034}{\mathscr R_\theta^{(0)},\mathscr R_z^{(0)}} for its leading azimuthal
+and axial momentum residuals. Thus \NSi{NS-F-P137-035}{\mathscr R_j^{(0)}=R_j^{(0)}} in
+the notation of \eqref{eq:4.12}; these include radial viscosity and omit the higher-order axial
+viscosity. The stress components are
+\NSi{NS-F-P137-036}{T_\theta(r)=-r^{-2}\int_0^r s^2\mathscr R_\theta^{(0)}(s)\,ds} and
+\NSi{NS-F-P137-037}{T_z(r)=-r^{-1}\int_0^r s\mathscr R_z^{(0)}(s)\,ds}, as in
+Proposition~\ref{prop:4.2}. In the following subsection we will use the corrected moment
+conditions to rewrite these integrals as integrals from \NSi{NS-F-P137-038}{r} to infinity
+(Lemma~\ref{lem:A.8}) and determine the sign and limiting direction of the stress at the outer
+endpoint (Proposition~\ref{prop:A.10}).
+
+Throughout this subsection \NSi{NS-F-P137-039}{0<h<1/2},
+\NSi{NS-F-P137-040}{A=1/2+h}, and \NSi{NS-F-P137-041}{D=1/2-h}. We retain
+\NSi{NS-F-P137-042}{d=1-\eta^2}, \NSi{NS-F-P137-043}{\tau=1-t}, and
+\NSi{NS-F-P137-044}{L=1-2h\eta^2} from \eqref{eq:4.1}. All parameters in the construction
+of the outer radial profile are fixed in the order \eqref{eq:A.6} before
+\NSi{NS-F-P137-045}{X_R} is increased. In the local logarithmic radial coordinate for the
+tail of \eqref{eq:A.12}, write \NSi{NS-F-P137-046}{y=\log(X/X_{\mathrm{tail}})},
+\NSi{NS-F-P137-047}{X_b=e^3X_{\mathrm{tail}}}, and
+\NSi{NS-F-P137-048}{E_{\mathrm{pow}}=c_\infty X^{-A}}, where
+\NSi{NS-F-P137-049}{c_\infty>0} is independent of \NSi{NS-F-P137-050}{\eta}. Thus the
+reference tail is \NSi{NS-F-P137-051}{E_{\mathrm{pow}}f_o(y)}.
+
+\NSPage{138}%
+Set \NSi{NS-F-P138-001}{a_K=1+h}, and define the heat factor by
+\NSFormula{NS-F-P138-002}{display}{A.32}
+\begin{equation}
+ \mathcal H(Z)=\frac1{\Gamma(a_K)}\int_0^\infty
+ e^{-v}v^{a_K-1}(1+Zv)^{-h}\,dv,\qquad Z\geq0,
+ \tag{A.32}\label{eq:A.32}
+\end{equation}
+Here \NSi{NS-F-P138-003}{\Gamma(a_K)=\int_0^\infty e^{-v}v^{a_K-1}\,dv} is the gamma
+integral, so \NSi{NS-F-P138-004}{\mathcal H(0)=1}. Write
+\NSi{NS-F-P138-005}{E_{\mathrm{heat}}(X,\eta)=E_{\mathrm{pow}}(X)\mathcal H(2d/X)} for the
+heat profile.
+
+\begin{lemma}\label{lem:A.6}
+The function \NSi{NS-F-P138-006}{\mathcal H} is positive and smooth up to
+\NSi{NS-F-P138-007}{Z=0} from the right. Every fixed derivative is bounded on bounded
+nonnegative intervals. The field
+\NSFormula{NS-F-P138-008}{display}{A.33}
+\begin{equation}
+ K(r,t)=c_\infty s^{-A}\mathcal H(2\tau/s),\qquad s=r^2/2,
+ \tag{A.33}\label{eq:A.33}
+\end{equation}
+is independent of \NSi{NS-F-P138-009}{z}, satisfies
+\NSi{NS-F-P138-010}{\partial_tK=(\partial_{rr}+r^{-1}\partial_r-r^{-2})K}, and has
+\NSi{NS-F-P138-011}{K_r<0}. Its profile is
+\NSi{NS-F-P138-012}{E_{\mathrm{pow}}(X)\mathcal H(2d/X)}, smooth with all
+\NSi{NS-F-P138-013}{\eta}-derivatives extending continuously to
+\NSi{NS-F-P138-014}{\eta=\pm1} from the interior.
+\end{lemma}
+\begin{proof}
+For the rising factorial
+\NSi{NS-F-P138-015}{(b)_m=b(b+1)\cdots(b+m-1)}, with
+\NSi{NS-F-P138-016}{(b)_0=1}, dominated differentiation gives
+\NSFormula{NS-F-P138-017}{display}{A.34}
+\begin{equation}
+ \mathcal H^{(m)}(Z)=\frac{(-1)^m(h)_m}{\Gamma(1+h)}
+ \int_0^\infty e^{-v}v^{h+m}(1+Zv)^{-h-m}\,dv,
+ \tag{A.34}\label{eq:A.34}
+\end{equation}
+\NSFormula{NS-F-P138-018}{display}{A.35}
+\begin{equation}
+ \mathcal H^{(m)}(0)=(-1)^m(h)_m(1+h)_m.
+ \tag{A.35}\label{eq:A.35}
+\end{equation}
+The integrable majorant obtained by deleting the last factor works also at
+\NSi{NS-F-P138-019}{Z=0}. In particular, for each fixed derivative order the usual finite
+Taylor formula is valid there; no convergent Taylor series is needed. On a fixed small
+nonnegative interval it gives
+\NSFormula{NS-F-P138-020}{display}{A.36}
+\begin{equation}
+ \mathcal H(Z)=1-h(1+h)Z+O_h(Z^2),\qquad
+ |\mathcal H(Z)-1|+|Z\mathcal H'(Z)|\leq C_hZ.
+ \tag{A.36}\label{eq:A.36}
+\end{equation}
+Here the last constant can be uniform for \NSi{NS-F-P138-021}{0<h\leq h_0<1/2}. Indeed
+\NSi{NS-F-P138-022}{(h)_m(1+h)_m\leq C_mh} for every fixed
+\NSi{NS-F-P138-023}{m\geq1}. Integration of
+\NSi{NS-F-P138-024}{h\partial_v[e^{-v}v^{a_K}(1+Zv)^{-a_K}]} gives
+\NSFormula{NS-F-P138-025}{display}{A.37}
+\begin{equation}
+ Z^2\mathcal H''+(1+2a_KZ)\mathcal H'+a_K(a_K-1)\mathcal H=0;
+ \tag{A.37}\label{eq:A.37}
+\end{equation}
+both boundary terms vanish. Direct differentiation of \eqref{eq:A.33}, with
+\NSi{NS-F-P138-026}{Z=2\tau/s}, gives
+\NSFormula{NS-F-P138-027}{display}{none}
+\[
+\begin{aligned}
+ \partial_tK&=-2c_\infty s^{-A-1}\mathcal H',\\
+ (\partial_{rr}+r^{-1}\partial_r-r^{-2})K
+ &=2c_\infty s^{-A-1}
+   [Z^2\mathcal H''+(2A+1)Z\mathcal H'+(A^2-1/4)\mathcal H].
+\end{aligned}
+\]
+Since \NSi{NS-F-P138-028}{2A+1=2a_K} and
+\NSi{NS-F-P138-029}{A^2-1/4=a_K(a_K-1)}, \eqref{eq:A.37} proves the heat equation with its
+swirl term. Moreover, \NSi{NS-F-P138-030}{-Z\mathcal H'/\mathcal H} is the average of
+\NSi{NS-F-P138-031}{hZv/(1+Zv)} against the positive probability density proportional to the
+integrand in \eqref{eq:A.32}. Consequently
+\NSFormula{NS-F-P138-032}{display}{none}
+\[
+ 0\leq-\frac{Z\mathcal H'}{\mathcal H}<h,
+ \qquad
+ \frac{rK_r}{2K}=-A-\frac{Z\mathcal H'}{\mathcal H}<-\frac12.
+\]
+The composition with \NSi{NS-F-P138-033}{Z=2(1-\eta^2)/X} uses only
+\NSi{NS-F-P138-034}{Z\geq0}. Each nonzero \NSi{NS-F-P138-035}{\eta}-derivative is a finite
+sum of terms \NSi{NS-F-P138-036}{\mathcal H^{(k)}(2d/X)(2/X)^k} times polynomials in
+\NSi{NS-F-P138-037}{d'=-2\eta} and \NSi{NS-F-P138-038}{d''=-2}. Thus no division by
+\NSi{NS-F-P138-039}{d} occurs. This proves the claimed closed-interval smoothness. The
+integral formula is used only on its stated nonnegative domain. In particular the large-
+\NSi{NS-F-P138-040}{X} expansion, with its remainder after every fixed application of
+\NSi{NS-F-P138-041}{((X\partial_X)^j\partial_\eta^m)}, is
+\NSFormula{NS-F-P138-042}{display}{A.38}
+\begin{equation}
+ \frac{E_{\mathrm{heat}}(X,\eta)}{E_{\mathrm{pow}}(X)}
+ =\mathcal H(2d/X)=1-\frac{2h(1+h)d}{X}+O_{h,j,m}(X^{-2}).
+ \tag{A.38}\label{eq:A.38}
+\end{equation}
+\end{proof}

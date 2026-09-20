@@ -1,0 +1,353 @@
+\NSPage{001}%
+\begin{center}
+  {\Large\bfseries FINITE TIME BLOWUP FOR NAVIER--STOKES\par}
+  \vspace{2.5em}
+  {\large OPENAI\par}
+\end{center}
+
+\vspace{2em}
+\noindent\textsc{Abstract.} For every positive viscosity, we construct a solution of the three-dimensional
+incompressible Navier--Stokes equations that starts from rest and develops unbounded velocity
+in finite time while maintaining uniformly bounded kinetic energy.
+
+\vspace{3em}
+\begin{center}
+  {\large\textsc{Contents}}
+\end{center}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llr}
+1. & Introduction & 1\\
+2. & Physical description of the blowup & 3\\
+3. & Proof outline & 6\\
+4. & Constructing the leading order flow & 24\\
+5. & Correcting the base flow to every order & 45\\
+6. & Auxiliary torus and separation of oscillatory supports & 62\\
+7. & Oscillatory realization and correction of the residual stress & 73\\
+8. & Compactly supported mean corrections & 88\\
+9. & Residual improvement and the local field & 100\\
+10. & Compact forcing and whole-space breakdown & 116\\
+Appendix A. & Matching radial moments and constructing the heat exterior & 126\\
+Appendix B. & Analytic profiles near the axis and their continuation & 144\\
+Appendix C. & Realizing the admissible stress cone & 157\\
+& References & 165
+\end{tabular*}
+
+\section{Introduction}\label{sec:1}
+
+We consider the three-dimensional incompressible Navier--Stokes equations. A fundamental
+question about the nature of these equations is whether a solution starting from
+smooth data can develop unbounded velocity in finite time while its kinetic energy remains
+bounded. We construct such a flow with zero initial velocity and a smooth force compactly
+supported in space and time.
+
+\begin{theorem}\label{thm:1.1}
+For every \NSi{NS-F-P001-001}{\nu>0} there exist a force
+\NSi{NS-F-P001-002}{f\in C_c^\infty(\mathbb R^3\times(0,\infty);\mathbb R^3)}, a compact set
+\NSi{NS-F-P001-003}{K\subset\mathbb R^3}, and smooth velocity and pressure fields
+\NSi{NS-F-P001-004}{u,p} on \NSi{NS-F-P001-005}{\mathbb R^3\times[0,1)} satisfying
+\NSFormula{NS-F-P001-006}{display}{1.1}
+\begin{equation}
+  \partial_tu+(u\cdot\nabla)u-\nu\Delta u+\nabla p=f,
+  \qquad \nabla\cdot u=0,
+  \qquad u(\cdot,0)=0,
+  \tag{1.1}\label{eq:1.1}
+\end{equation}
+such that \NSi{NS-F-P001-007}{\supp u(\cdot,t)\cup\supp p(\cdot,t)\subset K} for every
+\NSi{NS-F-P001-008}{0\leq t<1},
+\NSFormula{NS-F-P001-009}{display}{none}
+\begin{equation*}
+  \sup_{0\leq t<1}\lVert u(t)\rVert_{L^2(\mathbb R^3)}<\infty,
+  \qquad
+  \limsup_{t\uparrow1}\lVert u(t)\rVert_{L^\infty(\mathbb R^3)}=\infty.
+\end{equation*}
+Consequently, there is no smooth solution \NSi{NS-F-P001-010}{(u,P)} on
+\NSi{NS-F-P001-011}{\mathbb R^3\times[0,\infty)} with the same force and initial
+datum whose kinetic energy is uniformly bounded
+\NSi{NS-F-P001-012}{\sup_{t\geq0}\frac12\int_{\mathbb R^3}|u(x,t)|^2\,dx<\infty}.
+\end{theorem}
+
+This establishes alternative (C) in the Millennium problem statement for Navier--Stokes as
+stated by Fefferman in \cite{ref-13}. Compact support also yields the corresponding construction on
+\NSi{NS-F-P001-013}{\mathbb T^3=\mathbb R^3/\mathbb Z^3}, establishing alternative (D) in \cite{ref-13}; see
+Corollary~\ref{cor:10.6}.
+
+\NSPage{002}%
+\subsection{Historical context and previous work}\label{sec:1.1}
+Incompressible and inviscid flows are described
+by the classical Euler equations \cite{ref-12}:
+\NSFormula{NS-F-P002-001}{display}{1.2}
+\begin{equation}
+  D_tu:=\partial_tu+(u\cdot\nabla)u=-\nabla p+f,
+  \qquad \nabla\cdot u=0.
+  \tag{1.2}\label{eq:1.2}
+\end{equation}
+The material acceleration \NSi{NS-F-P002-002}{D_tu} describes the acceleration of a parcel of fluid along its trajectory,
+due both to the changing flow and the parcel's changing position. Crucially, the latter
+contribution \NSi{NS-F-P002-003}{(u\cdot\nabla)u} is nonlinear in the velocity \NSi{NS-F-P002-004}{u}, creating most of the difficulty in the
+analysis. The first equation in \eqref{eq:1.2} says that this acceleration is related by Newton's second
+law to the sum of the negative pressure gradient and the external force. The second equation
+tells us that the fluid is incompressible: we cannot squeeze the fluid in one direction without
+simultaneously stretching it in another.
+
+The Navier--Stokes equations \cite{ref-18,ref-21}, given in \eqref{eq:1.1}, add a viscous force that resists shear
+between neighbouring fluid parcels. The viscous force is linear in \NSi{NS-F-P002-005}{u}. However, it significantly
+changes the character of the flows by smoothing velocity gradients. Whether this smoothing
+is always sufficient to prevent a finite-time singularity in three dimensions lies at the heart
+of the regularity problem.
+
+In 1934, Leray \cite{ref-16} constructed global finite-energy weak solutions of the three-dimensional
+equations satisfying an energy inequality. Whether solutions starting from smooth data
+remain smooth was left unresolved. Caffarelli, Kohn, and Nirenberg \cite{ref-5} proved that the
+singular set of a suitable weak solution has zero one-dimensional parabolic Hausdorff
+measure, a bound that allows isolated singularities. Escauriaza, Seregin, and Šverák \cite{ref-11}
+proved regularity for the unforced Cauchy problem under a bounded scale-invariant
+\NSi{NS-F-P002-006}{L_t^\infty L_x^3} norm.
+
+Tao \cite{ref-22} constructed finite-time blowup for an averaged Navier--Stokes equation that
+retains the energy cancellation of the original nonlinearity. For the original equations,
+Buckmaster and Vicol \cite{ref-4} used convex integration to establish nonuniqueness among finite-
+energy weak solutions. Albritton, Brué, and Colombo \cite{ref-1} subsequently constructed distinct
+suitable Leray--Hopf solutions with zero initial velocity and the same force, using an unstable
+vortex in similarity variables. Their force lies in \NSi{NS-F-P002-007}{L_t^1L_x^2} and is singular at the initial time.
+
+The methods of Lifschitz and Hameiri and of Friedlander and Vishik \cite{ref-17,ref-14} describe
+the evolution of wavevectors and velocity polarizations along a background flow. Craik
+and Criminale \cite{ref-9} constructed exact finite-amplitude waves on affine background flows,
+exploiting the cancellation of the wave's quadratic self-interaction. Further precedents for the
+wave dynamics include the centrifugal-instability criteria of Leibovich and Stewartson \cite{ref-15}
+and of Billant and Gallaire \cite{ref-2,ref-3} and the exact viscous shearing waves of Singh and Sridhar
+\cite{ref-19}. The use of oscillations to realize a prescribed stress is central to the Euler constructions
+of Daneri and Székelyhidi \cite{ref-10}.
+
+Córdoba and Martínez-Zoroa \cite{ref-6} constructed finite-time singularities for the forced three-
+dimensional Euler equations through successive amplification of increasingly concentrated
+vortex layers. Córdoba, Martínez-Zoroa, and Zheng \cite{ref-8} extended this approach to hypodissipative
+Navier--Stokes with small positive dissipation orders and forcing in a local
+well-posedness class. These works established a strategy for singularity formation based on
+amplification across scales while controlling the regularity of the external force. In their constructions,
+larger-scale strain amplifies smaller-scale vorticity, with leading self-interactions
+and feedback on the larger scales suppressed. For the incompressible porous media equation,
+Córdoba and Martínez-Zoroa \cite{ref-7} constructed singularities from smooth initial data by successive
+amplification of oscillatory layers, using approximations of increasing order to keep
+every spatial derivative of the source uniformly bounded. Our construction also exploits
+\NSPage{003}%
+dynamical amplification, with a different role for the amplified disturbances: oscillatory
+pulses generate a mean momentum flux that supplies the missing force on a collapsing
+background vortex.
+
+\section{Physical description of the blowup}\label{sec:2}
+
+We first describe the underlying physics of the flow realizing Theorem~\ref{thm:1.1}; we then provide
+a full sketch of the proof in Section~\ref{sec:3}.
+
+For any incompressible flow \NSi{NS-F-P003-001}{u} and pressure \NSi{NS-F-P003-002}{p}, we can always define the external force
+\NSi{NS-F-P003-003}{f} to be the residual in \eqref{eq:1.1}. The Navier--Stokes equations then hold by construction. The
+challenge is to choose a flow that blows up while this residual remains smooth. The
+individual terms in the momentum residual can diverge, but we must arrange sufficient
+cancellation that their sum and all its derivatives extend smoothly through the singular time.
+
+Specifically, we construct a vortex whose leading profile is self-similar, with radial width
+decreasing faster than axial length. Its central flow combines inward spiralling with axial
+outflow. As the core contracts, the azimuthal and axial velocity scales increase, strengthening
+the shear in the surrounding annulus.
+
+In the inner core, the profile equations impose the leading momentum balance. Joining
+this flow to a smooth exterior whose speed decreases with radius leaves a nonzero residual
+in the intervening annulus. For the background alone, the momentum residual becomes
+unbounded as \NSi{NS-F-P003-004}{t\uparrow1}, so it cannot supply the smooth force required by the theorem. We add
+spatially oscillatory pulses whose nonlinear momentum fluxes cancel the singular part of
+this residual. Further corrections remove the remaining singular errors, leaving a force that
+extends smoothly through \NSi{NS-F-P003-005}{t=1}.
+
+\subsection{Inner core}\label{sec:2.1}
+We construct our flow so that the singularity forms at the spatial origin at
+time \NSi{NS-F-P003-006}{t=1}. We use cylindrical coordinates about the vertical axis:
+\NSFormula{NS-F-P003-007}{display}{none}
+\begin{equation*}
+  x=(r\cos\theta,r\sin\theta,z),
+\end{equation*}
+where \NSi{NS-F-P003-008}{r} is distance from the axis, \NSi{NS-F-P003-009}{\theta} is angle around it, and \NSi{NS-F-P003-010}{z} is height. The velocity
+components \NSi{NS-F-P003-011}{u_r}, \NSi{NS-F-P003-012}{u_\theta}, and \NSi{NS-F-P003-013}{u_z} describe motion toward or away from the axis, around the axis,
+and along it, respectively. The leading flow \NSi{NS-F-P003-014}{u^{(0)}} is axisymmetric: its components depend on
+\NSi{NS-F-P003-015}{r,z,t}, but not on \NSi{NS-F-P003-016}{\theta}.
+
+In the central part of the inner region, fluid spirals inward toward the axis and flows
+upward and downward on opposite sides of a dividing layer close to \NSi{NS-F-P003-017}{z=0} (Figure~\ref{fig:1}).
+Farther above and below this central region, the inner profile also contains radial outflow.
+Pressure decreases toward the axis, supplying the leading centripetal force. Its axial gradient
+enters the axial momentum balance together with transport and viscosity. Near the axis, the
+axial pressure force points toward the plane \NSi{NS-F-P003-018}{z=0}.
+
+Radial inflow contributes to spin-up by carrying angular momentum toward smaller radii.
+For a fluid particle experiencing no torque, the angular momentum per unit mass
+\NSi{NS-F-P003-019}{ru_\theta} is conserved, so moving inward increases \NSi{NS-F-P003-020}{u_\theta}. In the actual core, viscosity transports angular
+momentum outwards; the increasing characteristic speed reflects the balance between inward
+transport and viscous loss. Incompressibility prevents the incoming fluid from accumulating
+near the axis: the axial outflow carries it away, allowing the inward motion and spin-up to
+continue.
+
+To leading order, the core evolves self-similarly: its velocity profile has a fixed shape when
+distances and velocities are measured in their respective time-dependent scales. The radial
+\NSPage{004}%
+\begin{figure}[t]
+  \centering
+  \NSFigurePlaceholder{NS-FIG-1}
+  \caption{The central part of the inner core at successive times
+  \NSi{NS-F-P004-001}{t_1<t_2<t_3<1}. In this region, fluid spirals inward and flows axially on opposite sides of a
+  dividing layer close to \NSi{NS-F-P004-002}{z=0}. As the singular time approaches, the region of
+  intense flow shrinks and the velocity increases. Its radius shrinks faster than
+  its height; this difference is exaggerated in the schematic.}\label{fig:1}
+\end{figure}%
+and axial scales shrink at different rates. Writing \NSi{NS-F-P004-003}{\tau=1-t} for the time remaining before the
+singularity, we have
+\NSFormula{NS-F-P004-004}{display}{none}
+\begin{equation*}
+  \ell_r\asymp\tau^{1/2},
+  \qquad \ell_z\asymp\tau^{1/2-h},
+  \qquad 0<h<1/100,
+\end{equation*}
+where \NSi{NS-F-P004-005}{h} is fixed and \NSi{NS-F-P004-006}{\asymp} denotes bounds above and below by positive factors independent
+of \NSi{NS-F-P004-007}{\tau}. Both lengths tend to zero, while
+\NSi{NS-F-P004-008}{\ell_r/\ell_z\asymp\tau^h\to0}: the core becomes an increasingly
+slender column concentrated at the origin, with volume of order
+\NSi{NS-F-P004-009}{\tau^{3/2-h}}.
+
+The characteristic velocity magnitudes of the leading flow satisfy
+\NSFormula{NS-F-P004-010}{display}{none}
+\begin{equation*}
+  |u_\theta^{(0)}|,|u_z^{(0)}|\asymp\tau^{-1/2-h},
+  \qquad |u_r^{(0)}|=O(\tau^{-1/2}).
+\end{equation*}
+These are typical scales across the core; in particular, the azimuthal velocity vanishes on
+the axis. The flow is smooth for every \NSi{NS-F-P004-011}{t<1}, but its largest speeds become unbounded in
+a shrinking neighbourhood of the origin as \NSi{NS-F-P004-012}{t\uparrow1}. The total kinetic energy of the core is of
+order \NSi{NS-F-P004-013}{\tau^{1/2-3h}}, which tends to zero despite the increasing speeds.
+
+The different velocity scales give different Reynolds numbers. For a speed
+\NSi{NS-F-P004-014}{U}, length \NSi{NS-F-P004-015}{\ell},
+and viscosity \NSi{NS-F-P004-016}{\nu}, the Reynolds number \NSi{NS-F-P004-017}{U\ell/\nu} compares the viscous diffusion time
+\NSi{NS-F-P004-018}{\ell^2/\nu} with
+the time \NSi{NS-F-P004-019}{\ell/U} for fluid motion over that distance. Using the core radius as the length scale,
+the characteristic angular and radial Reynolds numbers are
+\NSFormula{NS-F-P004-020}{display}{none}
+\begin{equation*}
+  \mathrm{Re}_\theta:=\frac{|u_\theta|\ell_r}{\nu}\asymp\tau^{-h}\longrightarrow\infty,
+  \qquad
+  \mathrm{Re}_r:=\frac{|u_r|\ell_r}{\nu}=O(1),
+\end{equation*}
+for fixed \NSi{NS-F-P004-021}{\nu>0}.
+
+The angular Reynolds number grows without bound: fluid makes increasingly many
+turns during a radial diffusion time. The radial Reynolds number remains bounded, so
+viscosity continues to compete with radial inflow. The corresponding transport and diffusion
+\NSPage{005}%
+\begin{figure}[t]
+  \centering
+  \NSFigurePlaceholder{NS-FIG-2}
+  \caption{Pulse geometry and perturbation velocities. \emph{Left:} At fixed height,
+  pulse envelopes occupy complete rings; the close-ups show radial and azimuthal
+  perturbation velocities. \emph{Right:} A radial--axial section, where each
+  localized patch is a cross-section of a complete ring; the close-ups show radial
+  and axial perturbation velocities. Colors distinguish the two families. The
+  specific pulse arrangement shown is schematic; active locations, spacing, and
+  aspect ratios are illustrative.}\label{fig:2}
+\end{figure}%
+rates satisfy
+\NSFormula{NS-F-P005-001}{display}{none}
+\begin{equation*}
+  \frac{|u_r|}{\ell_r}=O(\tau^{-1}),
+  \qquad \frac{|u_z|}{\ell_z}\asymp\tau^{-1},
+  \qquad \frac{\nu}{\ell_r^2}\asymp\tau^{-1}.
+\end{equation*}
+Thus radial diffusion and transport by the radial and axial flow remain in the leading balance
+as the core contracts. Axial diffusion is weaker: the ratio of axial to radial diffusion rates is
+\NSFormula{NS-F-P005-002}{display}{none}
+\begin{equation*}
+  \frac{\nu/\ell_z^2}{\nu/\ell_r^2}
+  =\frac{\ell_r^2}{\ell_z^2}
+  \asymp\tau^{2h}\longrightarrow0.
+\end{equation*}
+
+The core must also provide enough shear at its outer edge to amplify the pulses placed
+there. Away from the middle plane, axial flow carries angular momentum from more rapidly
+rotating layers, supporting a steep radial decrease in angular velocity. With exact reflection
+symmetry, this transport would vanish at \NSi{NS-F-P005-003}{z=0}. Symmetry would also impose
+\NSi{NS-F-P005-004}{u_z(r,0,t)=0},
+leaving no radial shear of the axial velocity to compensate. We therefore choose a slightly
+asymmetric axial profile, with a small upward bias and nonzero velocity at
+\NSi{NS-F-P005-005}{z=0}. This
+separates the layer where rotational amplification is weak from the layer where axial shear
+vanishes. The radial shear of axial velocity then supplies the additional amplification needed
+near the middle plane; farther away, the rotational mechanism already suffices.
+
+\subsection{Annulus and pulses}\label{sec:2.2}
+At the edge of the core, there is an annular region where the inner
+vortex joins onto an exterior flow. The background satisfies its leading momentum equations
+inside the core, but this transition leaves an imbalance in the annulus. The external force
+needed to sustain the background becomes unbounded as \NSi{NS-F-P005-006}{t\uparrow1}, so it cannot serve as the
+smooth external force required by the construction.
+
+We therefore perturb the velocity so that the fluid's own motion supplies the missing
+momentum transport. Through the nonlinear advection term, the perturbation produces
+additional momentum fluxes whose spatial variation acts as an internal force on the background.
+We require this contribution to cancel the singular part of the background residual,
+leaving only a remainder that extends smoothly through \NSi{NS-F-P005-007}{t=1}. These internal forces
+redistribute momentum within the fluid.
+
+\NSPage{006}%
+Our perturbation consists of a sequence of spatially oscillatory pulses that are localized
+in radius, height, and time, but extend around a complete ring. An exponentially small
+external force seeds each pulse; the background shear supplies its subsequent growth. Their
+cylindrical velocity components have zero angular average, but their momentum fluxes
+need not. For example, outward motion carrying an azimuthal velocity surplus and inward
+motion carrying a deficit both increase outward angular momentum flux. Reversing both
+velocity components leaves their product unchanged. Axial momentum is transported in the
+same way. We arrange the net transport into or out of each region to supply the contribution
+missing from the background's momentum balance.
+
+The pulses grow by extracting energy from the background shear. A simple example
+illustrates how this amplification occurs. In a rotating flow, an azimuthal velocity surplus
+produces outward acceleration. If angular velocity decreases sufficiently rapidly with radius,
+this outward motion increases the surplus relative to the surrounding fluid. The two effects
+reinforce one another, giving exponential growth when the amplification exceeds viscous
+damping. In the full flow, axial shear also contributes to the amplification.
+
+The same shear also changes the oscillation's spatial pattern: fluid at different radii carries
+it along at different speeds. We choose the pulse orientations so that this progressively
+shortens the radial wavelength. The changing orientation weakens the amplification, while
+shortening the radial wavelength increases the total squared wavenumber and hence viscous
+damping. We choose the initial wavelength so that amplification dominates at first, but
+damping overtakes it later. The tails are sufficiently small that the cutoff errors and all their
+derivatives vanish at the singularity.
+
+We combine two families of pulses with different ratios of radial angular-momentum
+flux to radial axial-momentum flux. The background profile and oscillation directions are
+chosen together so that the averaged quadratic velocity products of the two families supply
+both components of the required leading stress. We arrange the pulses on successively finer
+spatial and temporal scales as the singularity approaches. Further corrections cancel the
+remaining singular terms in the momentum residual, giving a flow whose velocity becomes
+unbounded while its residual force extends smoothly through the singular time.
+
+\subsection{Exterior flow and localization}\label{sec:2.3}
+Beyond the annulus, the flow is purely azimuthal and
+independent of height: fluid circles the axis, with speed decreasing as the radius increases.
+Pressure supplies the centripetal acceleration, while the azimuthal velocity evolves by viscous
+diffusion. We choose this outer flow to satisfy the radial heat equation for the azimuthal
+velocity exactly, and call it the heat exterior. Its momentum residual vanishes, so no external
+force is needed to sustain this part of the local flow.
+
+At every fixed positive radius, the exterior velocity and pressure have smooth limits,
+together with all their derivatives, as the singular time approaches. Together with the
+regularity of the inner construction away from the origin, this allows us to cut off the flow
+smoothly in space. The additional force produced by this cutoff remains smooth through the
+singular time, while the cutoff leaves the concentrating core unchanged.
+
+\section{Proof outline}\label{sec:3}
+
+The physical description in Section~\ref{sec:2} leads to a precise cancellation problem. We must
+construct a velocity and pressure whose momentum residual extends smoothly through the
+singular time, while the velocity becomes unbounded. At viscosity one, the residual is
+\NSFormula{NS-F-P006-001}{display}{3.1}
+\begin{equation}
+  \mathscr R(u,p)=\partial_tu+(u\cdot\nabla)u-\Delta u+\nabla p.
+  \tag{3.1}\label{eq:3.1}
+\end{equation}

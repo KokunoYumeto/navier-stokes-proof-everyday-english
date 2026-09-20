@@ -1,0 +1,499 @@
+\NSPage{067}%
+\begin{EESegment}{EE-TGT-P067-001}
+for this change of representation and keeps normalized Haar averages unchanged. Fix \NSi{NS-F-P067-001}{(z,t)} with \NSi{NS-F-P067-002}{0<q(z,t)<q_{\mathrm{big}}}. In a small enough neighborhood \NSi{NS-F-P067-003}{U} of this point, set
+\end{EESegment}
+\NSFormula{NS-F-P067-004}{display}{6.17}
+\begin{equation}
+  \begin{aligned}
+    \mathcal D_\ell&=\supp_{(z,t)}\chi_\ell(q(z,t)),
+      & \mathcal L(U)&=\{\ell:\mathcal D_\ell\cap U\ne\varnothing\},\\
+    i_0&=\min_{\ell\in\mathcal L(U)}i(\ell),
+      & H&=\pi_{i_0}(Y).
+  \end{aligned}
+  \tag{6.17}\label{eq:6.17}
+\end{equation}
+\begin{EESegment}{EE-TGT-P067-002}
+Choose \NSi{NS-F-P067-005}{U} small enough that any two of its band indices differ by at most four. Equation~\eqref{eq:6.14} then gives the factorization
+\end{EESegment}
+\NSFormula{NS-F-P067-006}{display}{6.18}
+\begin{equation}
+  \begin{aligned}
+    \Delta_\ell&=i(\ell)-i_0\in\{0,\ldots,\Delta_{\max}\},
+      & \pi_{i(\ell)}&=\pi_{\Delta_\ell}\circ\pi_{i_0},\\
+    Y_i&=J_g^{\Delta_\ell}H,
+      & \mathcal R_\gamma^H&=\pi_{\Delta_\ell}^{-1}(\mathcal R_\gamma),
+      & \mathcal R_\gamma^{\mathrm{abs}}
+        &=\pi_{i_0}^{-1}(\mathcal R_\gamma^H).
+  \end{aligned}
+  \tag{6.18}\label{eq:6.18}
+\end{equation}
+\begin{EESegment}{EE-TGT-P067-003}
+Define \NSi{NS-F-P067-007}{\mathcal R_\gamma^{H,+}} by taking the same preimage with \NSi{NS-F-P067-008}{\mathcal R_\gamma^+}. The map \NSi{NS-F-P067-009}{\pi_{i_0}} is onto, so the separation in \eqref{eq:6.13} also holds for these rectangles on the common torus. A sum of fields from different bands can now be written as
+\end{EESegment}
+\NSFormula{NS-F-P067-010}{display}{none}
+\[
+  \sum_{\ell\in\mathcal L(U)}f_\ell(Y_{i(\ell)})
+  =\sum_{\ell\in\mathcal L(U)}f_\ell(J_g^{\Delta_\ell}H).
+\]
+
+\begin{lemma}\label{lem:6.2}
+\begin{EESegment}{EE-TGT-P067-004}
+Take \NSi{NS-F-P067-011}{U,i_0,H} as in \eqref{eq:6.17}. Every change \NSi{NS-F-P067-012}{H\mapsto Y_i} has derivative factors bounded by one constant that works for every band. The set \NSi{NS-F-P067-013}{\mathcal R_\gamma^H} is made of \NSi{NS-F-P067-014}{14^{\Delta_\ell}\le 14^{\Delta_{\max}}} disjoint lifts of \NSi{NS-F-P067-015}{\mathcal R_\gamma}. Whenever a function is pulled back from the torus in question, its Haar average is the same on the absolute, common, and band tori. Radial integration at fixed \NSi{NS-F-P067-016}{(z,t)}, translation on the torus, averaging, and directional Fourier inversion on zero-mean functions all preserve the property of descending to the common torus and introduce no new dyadic band.
+\end{EESegment}
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P067-005}
+\textbf{Step 1: compare the covering maps and their averages.} Write \NSi{NS-F-P067-017}{\Delta=\Delta_\ell}. The matrix norms of \NSi{NS-F-P067-018}{J_g^\Delta} are bounded because \NSi{NS-F-P067-019}{0\le\Delta\le\Delta_{\max}}. The preimage rectangles are indexed by the finite quotient below.
+\end{EESegment}
+\NSFormula{NS-F-P067-020}{display}{none}
+\[
+  \begin{aligned}
+  \mathcal R_\gamma^H
+    &=\bigsqcup_{[k]\in\mathbb Z^2/J_g^\Delta\mathbb Z^2}
+      \bigl\{J_g^{-\Delta}(c_\gamma+k+\xi v_r+\eta v_t)
+      \pmod{\mathbb Z^2}:|\xi|,|\eta|<r_0\bigr\},\\
+  \#(\mathbb Z^2/J_g^\Delta\mathbb Z^2)
+    &=|\det J_g|^\Delta=14^\Delta.
+  \end{aligned}
+\]
+\begin{EESegment}{EE-TGT-P067-006}
+Here \NSi{NS-F-P067-021}{c_\gamma} is the representative already chosen in \NSi{NS-F-P067-022}{\mathbb R^2}. Compatibility of the Haar averages can be checked on Fourier characters.
+\end{EESegment}
+\NSFormula{NS-F-P067-023}{display}{6.19}
+\begin{equation}
+  \int_{\mathbb T^2} f(J_g^\Delta H)\,dH
+  =\int_{\mathbb T^2} f(Y_i)\,dY_i.
+  \tag{6.19}\label{eq:6.19}
+\end{equation}
+\begin{EESegment}{EE-TGT-P067-007}
+A character with frequency \NSi{NS-F-P067-024}{n} pulls back to one with frequency \NSi{NS-F-P067-025}{(J_g^\Delta)^Tn}. This new frequency is zero exactly when \NSi{NS-F-P067-026}{n=0}, which proves the equality.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P067-008}
+\textbf{Step 2: keep the common representation under all the stated operations.} Radial integration fixes \NSi{NS-F-P067-027}{(z,t)}, so it also fixes \NSi{NS-F-P067-028}{q=q(z,t)}. It leaves every band cutoff unchanged, even if the integral passes through many radial grid boxes. Translations on the torus commute with deck translations. Averaging and directional Fourier multipliers keep the lattice of pullback frequencies unchanged. This proves every preservation claim in the lemma.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P067-009}
+Fields are defined on the extended domain, where \NSi{NS-F-P067-029}{Y} is independent, and use the original physical normalization. The common torus only gives a local way to represent them. Take two overlapping neighborhoods \NSi{NS-F-P067-030}{U,V}, fix the same normalized band chart, and let \NSi{NS-F-P067-031}{f_U,f_V} be the two common-torus representations. They agree by the identity
+\end{EESegment}
+\NSFormula{NS-F-P067-032}{display}{6.20}
+\begin{equation}
+  f_U(R,Z,T,J_g^{i_0(U)}Y)=f_V(R,Z,T,J_g^{i_0(V)}Y)
+  \tag{6.20}\label{eq:6.20}
+\end{equation}
+\begin{EESegment}{EE-TGT-P067-010}
+at every point over \NSi{NS-F-P067-033}{U\cap V}. Both sides are the original field in that chart, so the identity still holds on the support closures where the set of overlapping dyadic supports changes.
+\end{EESegment}
+
+\NSPage{068}%
+\begin{EESegment}{EE-TGT-P068-001}
+Fix a band \NSi{NS-F-P068-001}{\ell\in\mathcal L(U)} and write \NSi{NS-F-P068-002}{\Delta=\Delta_\ell}. On its chart, a field that descends to \NSi{NS-F-P068-003}{H=J_g^{i_0}Y} uses the operators in \eqref{eq:6.6} with \NSi{NS-F-P068-004}{i} replaced by \NSi{NS-F-P068-005}{i_0}; the value of \NSi{NS-F-P068-006}{Q} does not change. This gives \NSi{NS-F-P068-007}{c_{i_0}=T_g^{-\Delta}c_i} and \NSi{NS-F-P068-008}{M_{i_0}=\Lambda_g^{-\Delta}M_i}. Equation~\eqref{eq:6.18} gives a fixed bound on \NSi{NS-F-P068-009}{\Delta}, so changing tori does not change the powers of \NSi{NS-F-P068-010}{\varepsilon} in the derivative bounds.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P068-002}
+Radial integration may collect more terms than pointwise multiplication. The next lemma counts the sums over slow labels that can appear. When several bands are compared, write \NSi{NS-F-P068-011}{S_\ell=\ell^2}.
+\end{EESegment}
+
+\begin{lemma}[Number of relevant labels]\label{lem:6.3}
+\begin{EESegment}{EE-TGT-P068-003}
+There is a constant \NSi{NS-F-P068-012}{C}, independent of the band and the point, such that
+\end{EESegment}
+\NSFormula{NS-F-P068-013}{display}{none}
+\[
+  \sup_{(r,z,t)}\#\{\gamma\in\Gamma:(r,z,t)\in K_\gamma\}\le C.
+\]
+\begin{EESegment}{EE-TGT-P068-004}
+Fix a band \NSi{NS-F-P068-014}{\ell}, a compact chart set \NSi{NS-F-P068-015}{B\subset\mathbb R^3}, and a bounded normalized radial interval \NSi{NS-F-P068-016}{I_R}. Then
+\end{EESegment}
+\NSFormula{NS-F-P068-017}{display}{none}
+\[
+  \begin{aligned}
+    \#\{(\ell,a,\sigma)\in\Gamma:B_{\ell,a}\cap B\ne\varnothing\}
+      &\le C_BS_\ell^9,\\
+    \sup_{Z,T}\#\{(\ell,a,\sigma)\in\Gamma:
+      B_{\ell,a}\cap(I_R\times\{Z\}\times\{T\})\ne\varnothing\}
+      &\le C_{I_R}S_\ell^3.
+  \end{aligned}
+\]
+\begin{EESegment}{EE-TGT-P068-005}
+The same bounds hold after enlarging the mesh boxes by any fixed factor.
+\end{EESegment}
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P068-006}
+At one point, the dyadic partition and every one-dimensional grid partition have bounded overlap. The two signs contribute a factor of two. On a bounded interval, a mesh of size \NSi{NS-F-P068-018}{S_\ell^{-3}} has \NSi{NS-F-P068-019}{O(S_\ell^3)} positions. A compact chart lets all three coordinates vary, so it contains \NSi{NS-F-P068-020}{O(S_\ell^9)} boxes. A radial line lets only one coordinate vary, so it meets \NSi{NS-F-P068-021}{O(S_\ell^3)} boxes. Enlarging the boxes by a fixed factor changes only the constants.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P068-007}
+The possible bands stay fixed during radial integration.
+\end{EESegment}
+\NSFormula{NS-F-P068-022}{display}{none}
+\[
+  \mathcal L(z,t)=\{\ell:(z,t)\in \mathcal D_\ell\},
+  \qquad q=q(z,t)\text{ is independent of }r.
+\]
+\begin{EESegment}{EE-TGT-P068-008}
+The chosen slow supports lie in one uniformly bounded normalized radial interval. Lemma~\ref{lem:6.3} limits the number of labels met by the integral to \NSi{NS-F-P068-023}{O(S_{\mathrm{ref}}^3)}, where \NSi{NS-F-P068-024}{S_{\mathrm{ref}}=\ell_{\mathrm{ref}}^2} for any \NSi{NS-F-P068-025}{\ell_{\mathrm{ref}}\in\mathcal L(U)}. All these \NSi{NS-F-P068-026}{S_\ell} are comparable. Counting the lifts on the common torus adds at most the fixed factor \NSi{NS-F-P068-027}{14^{\Delta_{\max}}}. The sum over the labels can grow by a polynomial in \NSi{NS-F-P068-028}{S_*}, but it does not change the bands or the differences between their covering indices.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P068-009}
+To solve an amplitude equation from the beginning of a pulse up to its current coordinate \NSi{NS-F-P068-029}{v}, use the earlier points on that same lifted rectangle. The slow and transverse coordinates stay fixed along this path. A source built from several bands may be a function of \NSi{NS-F-P068-030}{H} without being a function of one particular \NSi{NS-F-P068-031}{Y_i}, because it may take different values at the different preimages of that point on the band torus. For this reason, describe the path separately on every lifted rectangle. The linear functional \NSi{NS-F-P068-032}{\lambda_t(w)=v_t\cdot w/(1+b_g^2)} satisfies \NSi{NS-F-P068-033}{\lambda_t(v_r)=0} and \NSi{NS-F-P068-034}{\lambda_t(v_t)=1}. Inside one lifted band rectangle, write \NSi{NS-F-P068-035}{\eta_g(H)=\lambda_t(J_g^\Delta H-c_\gamma-k_{\mathrm{copy}})}. For \NSi{NS-F-P068-036}{w\in[0,L_s]}, define
+\end{EESegment}
+\NSFormula{NS-F-P068-037}{display}{6.21}
+\begin{equation}
+  \begin{aligned}
+    H_w&=H+T_g^{-\Delta}c_i\bigl(w-v(H)\bigr)v_t\\
+       &=H_0+T_g^{-\Delta}c_iwv_t,
+       & H_0&=H-T_g^{-\Delta}\bigl(\eta_g(H)+r_0\bigr)v_t.
+  \end{aligned}
+  \tag{6.21}\label{eq:6.21}
+\end{equation}
+\begin{EESegment}{EE-TGT-P068-010}
+This point has the same slow coordinates and the same band transverse coordinate \NSi{NS-F-P068-038}{\xi_g}, while its pulse coordinate is \NSi{NS-F-P068-039}{w}. Along this path, a source \NSi{NS-F-P068-040}{f(R,Z,T,H)} is evaluated as \NSi{NS-F-P068-041}{f(R,Z,T,H_w)}. The other preimages are not averaged together. Since \NSi{NS-F-P068-042}{\lambda_tJ_g^\Delta=T_g^\Delta\lambda_t}, fixing \NSi{NS-F-P068-043}{w} gives
+\end{EESegment}
+\NSFormula{NS-F-P068-044}{display}{6.22}
+\begin{equation}
+  D_HH_w=I-v_t\lambda_t,
+  \qquad D_Hv=\frac{T_g^\Delta}{c_i}\lambda_t=O(S_*).
+  \tag{6.22}\label{eq:6.22}
+\end{equation}
+
+\NSPage{069}%
+\begin{EESegment}{EE-TGT-P069-001}
+Every higher derivative of these affine maps is zero. In the original auxiliary coordinate \NSi{NS-F-P069-001}{Y}, the same path is \NSi{NS-F-P069-002}{Y'=Y+T_g^{-i}(\eta_g'-\eta_g)v_t}. A deck translation that keeps \NSi{NS-F-P069-003}{H} unchanged translates this path by the same amount and relabels the copy of the rectangle. It follows that the unique solution with zero initial data descends to the common torus. Proposition~\ref{prop:7.2} proves the exact differentiated inverse estimate. Equation~\eqref{eq:6.22} supplies the needed coordinate change without adding another power of \NSi{NS-F-P069-004}{\varepsilon}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P069-002}
+\subsection{Coefficient bounds and their algebra}\label{sec:6.4}
+
+The residual estimates have to track both the size of a correction and the way it vanishes at the edge of its support. Let \NSi{NS-F-P069-005}{f,g} stand for angular mean coefficients, and let \NSi{NS-F-P069-006}{a,b} stand for labelled wave amplitudes. Their products and normalized derivatives occur in the correction equations, for example
+\end{EESegment}
+\NSFormula{NS-F-P069-007}{display}{none}
+\[
+  fg,\qquad fa,\qquad ab,\qquad D_rf,\qquad D_ra.
+\]
+\begin{EESegment}{EE-TGT-P069-003}
+Definitions~\ref{def:6.4} and~\ref{def:6.5} introduce three classes. They record the size of a mean coefficient, the size of a wave amplitude, and the size of a radial moment, in that order.
+\end{EESegment}
+\NSFormula{NS-F-P069-008}{display}{none}
+\[
+  f\in\mathsf M_\alpha,
+  \qquad a_{\gamma,m}\in\mathsf W_\alpha,
+  \qquad F(Z,T)\in\mathsf S_\alpha.
+\]
+\begin{EESegment}{EE-TGT-P069-004}
+The exponent \NSi{NS-F-P069-009}{\alpha} records a power of \NSi{NS-F-P069-010}{\varepsilon}. The weight \NSi{NS-F-P069-011}{\zeta} in \eqref{eq:6.23} measures how the function vanishes in the radial direction. An envelope \NSi{NS-F-P069-012}{P_v} measures its decay in time and satisfies \NSi{NS-F-P069-013}{0<P_v\le1} when \NSi{NS-F-P069-014}{0\le v\le L_s}. Equation~\eqref{eq:7.12} will give the formula for this envelope. The estimates are required at every fixed derivative order. This makes the extensions across the shell smooth and keeps the bounds valid under the products and derivatives in Proposition~\ref{prop:6.6}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P069-005}
+Recall the flat edge weight from Theorem~\ref{thm:4.6}. On the fixed active interval \NSi{NS-F-P069-015}{X_a<X<X_b}, it can be written as
+\end{EESegment}
+\NSFormula{NS-F-P069-016}{display}{6.23}
+\begin{equation}
+  \zeta(X)=\exp\!\left(
+    -\frac{a_a}{\log^2(X/X_a)}-\frac{a_b}{\log^2(X_b/X)}
+  \right),
+  \qquad
+  \delta(X)=\min\{1,\log(X/X_a),\log(X_b/X)\},
+  \tag{6.23}\label{eq:6.23}
+\end{equation}
+\begin{EESegment}{EE-TGT-P069-006}
+where \NSi{NS-F-P069-017}{a_a,a_b>0} are fixed. Extend \NSi{NS-F-P069-018}{\zeta} by zero outside the interval. For every \NSi{NS-F-P069-019}{b>0} and every finite \NSi{NS-F-P069-020}{N}, the quantity \NSi{NS-F-P069-021}{\zeta^b\delta^{-N}} goes to zero faster than every power at either endpoint. Both \NSi{NS-F-P069-022}{\zeta} and \NSi{NS-F-P069-023}{\delta} depend only on \NSi{NS-F-P069-024}{X}, so they remain constant along the path in \eqref{eq:6.21}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P069-007}
+The phase varies rapidly, but its amplitude has a different derivative scale. A \emph{coefficient derivative} differentiates only the amplitude after the oscillatory exponential has been factored out. Fix a finite stage \NSi{NS-F-P069-025}{j} and use normalized chart representatives. For a coefficient \NSi{NS-F-P069-026}{a}, write
+\end{EESegment}
+\NSFormula{NS-F-P069-027}{display}{none}
+\[
+  \partial^Ia
+  =\partial_R^{I_1}\partial_Z^{I_2}\partial_T^{I_3}
+   \partial_{H_1}^{I_4}\partial_{H_2}^{I_5}a,
+  \qquad I\in\mathbb N_0^5.
+\]
+\begin{EESegment}{EE-TGT-P069-008}
+These derivatives keep the band, label, representative, and harmonic integer fixed. The derivatives in the auxiliary coordinates measure each representative separately, and the chain rule transforms them when \NSi{NS-F-P069-028}{i_0} changes. In the definitions below, \NSi{NS-F-P069-029}{C_{j,I}>0} and \NSi{NS-F-P069-030}{b_{j,I},d_{j,I}\ge0} may depend on \NSi{NS-F-P069-031}{j,I} and the fixed profile data. They are uniform in the band, label, rectangle copy, and point.
+\end{EESegment}
+
+\begin{definition}[Mean and moment coefficients]\label{def:6.4}
+\begin{EESegment}{EE-TGT-P069-009}
+A smooth coefficient \NSi{NS-F-P069-032}{f=f(R,Z,T,H)} belongs to \NSi{NS-F-P069-033}{\mathsf M_\alpha} when it satisfies all of the following conditions. It descends to every common torus that applies, and its representatives satisfy \eqref{eq:6.20}. It extends smoothly by zero outside the active radial shell. On \NSi{NS-F-P069-034}{X_a<X<X_b}, it satisfies
+\end{EESegment}
+\NSFormula{NS-F-P069-035}{display}{6.24}
+\begin{equation}
+  \begin{gathered}
+    \partial_\theta f=0,
+    \qquad
+    \forall I\in\mathbb N_0^5\ \exists C_{j,I},b_{j,I},d_{j,I}:\\
+    |\partial^If|\le C_{j,I}\varepsilon^\alpha
+      S_*^{b_{j,I}}\zeta\delta^{-d_{j,I}}.
+  \end{gathered}
+  \tag{6.24}\label{eq:6.24}
+\end{equation}
+
+\NSPage{070}%
+\begin{EESegment}{EE-TGT-P070-001}
+The coefficient may depend on \NSi{NS-F-P070-001}{H}. It does not have to stay inside an auxiliary rectangle or satisfy a pulse-envelope bound. For a function \NSi{NS-F-P070-002}{F=F(Z,T)}, define
+\end{EESegment}
+\NSFormula{NS-F-P070-003}{display}{6.25}
+\begin{equation}
+  \begin{gathered}
+    F\in\mathsf S_\alpha
+    \quad\Longleftrightarrow\quad
+    \forall I\in\mathbb N_0^2\ \exists C_{j,I},b_{j,I}:\\
+    |\partial_{Z,T}^IF|\le C_{j,I}\varepsilon^\alpha S_*^{b_{j,I}}.
+  \end{gathered}
+  \tag{6.25}\label{eq:6.25}
+\end{equation}
+\end{definition}
+
+\begin{EESegment}{EE-TGT-P070-002}
+\textbf{Normalization of radial moments.} The moments measured in \NSi{NS-F-P070-004}{\mathsf S_\alpha} include the radial measure and the radial weight in their normalization. If \NSi{NS-F-P070-005}{f_*=Q^{a_f}f_{\mathrm{phys}}}, then
+\end{EESegment}
+\NSFormula{NS-F-P070-006}{display}{6.26}
+\begin{equation}
+  M_*(Z,T):=\int R^e\langle f_*\rangle_Y\,dR
+  =Q^{a_f-(e+1)/2}\int r^e\langle f_{\mathrm{phys}}\rangle_Y\,dr.
+  \tag{6.26}\label{eq:6.26}
+\end{equation}
+\begin{EESegment}{EE-TGT-P070-003}
+The auxiliary Haar average removes the dependence on \NSi{NS-F-P070-007}{Y}. By \eqref{eq:6.19}, the average can be taken on any common torus that applies. The same scaling identity holds before averaging.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P070-004}
+\textbf{The phase, envelope, and support of a wave.} For every label \NSi{NS-F-P070-008}{\gamma}, prescribe the local data
+\end{EESegment}
+\NSFormula{NS-F-P070-009}{display}{6.27}
+\begin{equation}
+  \begin{gathered}
+    \Phi_\gamma=p_\gamma\theta+\varphi_\gamma(R,Z,T,H),
+    \qquad k=\lceil\varepsilon^{-1/2}\rceil,
+    \qquad kp_\gamma\in\mathbb Z\setminus\{0\},\\
+    0<P_v\le1\quad(0\le v\le L_s),
+    \qquad \mathscr H_j\subset\mathbb Z\setminus\{0\},
+    \qquad |\mathscr H_j|<\infty.
+  \end{gathered}
+  \tag{6.27}\label{eq:6.27}
+\end{equation}
+\begin{EESegment}{EE-TGT-P070-005}
+Here \NSi{NS-F-P070-010}{p_\gamma} is fixed for the label, and \NSi{NS-F-P070-011}{\varphi_\gamma} is defined on its enlarged lifted rectangles. The harmonic set \NSi{NS-F-P070-012}{\mathscr H_j} does not depend on the band. Equations~\eqref{eq:7.3} and~\eqref{eq:7.12} give the phases and envelopes used in the pulse construction.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P070-006}
+Write \NSi{NS-F-P070-013}{x_*=(R,Z,T)} and \NSi{NS-F-P070-014}{K_\gamma^*=\mathcal C_\ell(K_\gamma)}. On each component of \NSi{NS-F-P070-015}{\mathcal R_\gamma^H}, use the coordinates \NSi{NS-F-P070-016}{\xi_g,v} from \eqref{eq:6.11}. The domains and the supports allowed inside them are
+\end{EESegment}
+\NSFormula{NS-F-P070-017}{display}{6.28}
+\begin{equation}
+  \begin{aligned}
+    \mathcal E_\gamma
+      &=\{(x_*,H):H\in\mathcal R_\gamma^H\},\\
+    \Omega_\gamma
+      &=\{(x_*,H)\in\mathcal E_\gamma:x_*\in K_\gamma^*,
+        \ \xi_g(H)\in\supp\chi_g,\ X_a\le X\le X_b\},\\
+    \Omega_\gamma^{\mathrm{cut}}
+      &=\Omega_\gamma\cap\{v(H)\in\supp\psi\}.
+  \end{aligned}
+  \tag{6.28}\label{eq:6.28}
+\end{equation}
+\begin{EESegment}{EE-TGT-P070-007}
+The slow coordinates range over the chart domain, and \NSi{NS-F-P070-018}{X=QR^2/(2q)}. Replace the closed rectangle in \NSi{NS-F-P070-019}{\mathcal E_\gamma} by \NSi{NS-F-P070-020}{\mathcal R_\gamma^{H,+}} to get the open enlarged domain \NSi{NS-F-P070-021}{\mathcal E_\gamma^+}.
+\end{EESegment}
+
+\begin{definition}[Labelled wave coefficients]\label{def:6.5}
+\begin{EESegment}{EE-TGT-P070-008}
+Take \NSi{NS-F-P070-022}{\gamma\in\Gamma} and \NSi{NS-F-P070-023}{m\in\mathbb Z\setminus\{0\}}. A smooth amplitude \NSi{NS-F-P070-024}{a_{\gamma,m}} on \NSi{NS-F-P070-025}{\mathcal E_\gamma^+} belongs to \NSi{NS-F-P070-026}{\mathsf W_\alpha} when its local formulas agree whenever two lifts represent the same point on the common torus, satisfy \eqref{eq:6.20} on overlapping neighborhoods, and obey
+\end{EESegment}
+\NSFormula{NS-F-P070-027}{display}{none}
+\[
+  \partial_\theta a_{\gamma,m}=0,
+  \qquad
+  \supp(a_{\gamma,m}|_{\mathcal E_\gamma})\subset\Omega_\gamma.
+\]
+\begin{EESegment}{EE-TGT-P070-009}
+It extends smoothly by zero across the edges of the slow and transverse supports and across both edges of the shell. On \NSi{NS-F-P070-028}{\mathcal E_\gamma\cap\{X_a<X<X_b\}}, its bounds are
+\end{EESegment}
+\NSFormula{NS-F-P070-029}{display}{6.29}
+\begin{equation}
+  \begin{gathered}
+    \forall I\in\mathbb N_0^5\ \exists C_{j,I},b_{j,I},d_{j,I}:\\
+    |\partial^Ia_{\gamma,m}|\le C_{j,I}\varepsilon^\alpha
+      S_*^{b_{j,I}}\sqrt\zeta\,\delta^{-d_{j,I}}P_v,
+    \qquad 0\le v\le L_s.
+  \end{gathered}
+  \tag{6.29}\label{eq:6.29}
+\end{equation}
+\begin{EESegment}{EE-TGT-P070-010}
+These derivatives apply to the amplitude, not to the oscillatory phase. The factor \NSi{NS-F-P070-030}{P_v} is only a pointwise weight. Beyond \NSi{NS-F-P070-031}{v=0,L_s}, the continuation has neither an envelope bound nor a requirement to extend by zero in time.
+\end{EESegment}
+\end{definition}
+
+\begin{EESegment}{EE-TGT-P070-011}
+\textbf{Cutoff fields and sums.} An actual cutoff coefficient also satisfies
+\end{EESegment}
+\NSFormula{NS-F-P070-032}{display}{none}
+\[
+  \supp a_{\gamma,m}^{\mathrm{cut}}\subset\Omega_\gamma^{\mathrm{cut}}
+  \qquad\text{and smooth zero extension in }v.
+\]
+\begin{EESegment}{EE-TGT-P070-012}
+No divisibility by \NSi{NS-F-P070-033}{\eta_\gamma,\chi_g,\psi} is assumed.
+\end{EESegment}
+
+\NSPage{071}%
+\begin{EESegment}{EE-TGT-P071-001}
+Let \NSi{NS-F-P071-001}{a_\nu} be a finite or locally finite family of amplitudes, with labels \NSi{NS-F-P071-002}{\gamma_\nu\in\Gamma} and harmonics \NSi{NS-F-P071-003}{m_\nu\in\mathscr H_j}, representing the real wave
+\end{EESegment}
+\NSFormula{NS-F-P071-004}{display}{none}
+\[
+  w=\sum_\nu a_\nu e^{ik_{\gamma_\nu}m_\nu\Phi_{\gamma_\nu}}.
+\]
+\begin{EESegment}{EE-TGT-P071-002}
+Here \NSi{NS-F-P071-005}{k_\gamma} is the integer \NSi{NS-F-P071-006}{k} from \eqref{eq:6.27} for the band containing \NSi{NS-F-P071-007}{\gamma}. Before checking whether the wave belongs to \NSi{NS-F-P071-008}{\mathsf W_\alpha}, combine all terms with the same label and harmonic.
+\end{EESegment}
+\NSFormula{NS-F-P071-009}{display}{none}
+\[
+  w=\sum_\gamma\sum_{m\in\mathscr H_j}
+    A_{\gamma,m}e^{ik_\gamma m\Phi_\gamma},
+  \qquad
+  A_{\gamma,m}=\sum_{\nu:(\gamma_\nu,m_\nu)=(\gamma,m)}a_\nu.
+\]
+\begin{EESegment}{EE-TGT-P071-003}
+Then \NSi{NS-F-P071-010}{w\in\mathsf W_\alpha} means that every \NSi{NS-F-P071-011}{A_{\gamma,m}} belongs to \NSi{NS-F-P071-012}{\mathsf W_\alpha}, with bounds that are uniform as required in \eqref{eq:6.29}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P071-004}
+The bounds at every fixed derivative order make smooth zero extension across the shell edges possible. The weights \NSi{NS-F-P071-013}{\zeta} and \NSi{NS-F-P071-014}{\sqrt\zeta} absorb every allowed inverse power of \NSi{NS-F-P071-015}{\delta}, including the powers created by differentiation. The size and support of the products in the momentum residual can now be read from the following proposition.
+\end{EESegment}
+
+\begin{proposition}\label{prop:6.6}
+\begin{EESegment}{EE-TGT-P071-005}
+Each class in Section~\ref{sec:6.4} is closed under finite sums at a fixed exponent. If \NSi{NS-F-P071-016}{\alpha,\beta\in\mathbb R}, then products satisfy
+\end{EESegment}
+\NSFormula{NS-F-P071-017}{display}{6.30}
+\begin{equation}
+  \mathsf M_\alpha\mathsf M_\beta\subset\mathsf M_{\alpha+\beta},
+  \qquad
+  \mathsf M_\alpha\mathsf W_\beta\subset\mathsf W_{\alpha+\beta}.
+  \tag{6.30}\label{eq:6.30}
+\end{equation}
+\begin{EESegment}{EE-TGT-P071-006}
+If \NSi{NS-F-P071-018}{a_{\gamma,m}\in\mathsf W_\alpha} and \NSi{NS-F-P071-019}{b_{\gamma,m'}\in\mathsf W_\beta} have the same label, then
+\end{EESegment}
+\NSFormula{NS-F-P071-020}{display}{6.31}
+\begin{equation}
+  a_{\gamma,m}b_{\gamma,m'}\in
+  \begin{cases}
+    \mathsf W_{\alpha+\beta},&m+m'\ne0,
+      \text{ with harmonic }m+m',\\
+    \mathsf M_{\alpha+\beta},&m+m'=0,
+      \text{ after temporal cutoff}.
+  \end{cases}
+  \tag{6.31}\label{eq:6.31}
+\end{equation}
+\begin{EESegment}{EE-TGT-P071-007}
+Before the cutoff, a zero harmonic satisfies the mean bounds on its labelled rectangle. Actual waves with different labels satisfy, for every pair of derivative multi-indices \NSi{NS-F-P071-021}{I,J},
+\end{EESegment}
+\NSFormula{NS-F-P071-022}{display}{none}
+\[
+  (\partial^Iw_\gamma)(\partial^Jw_{\gamma'})=0
+  \qquad(\gamma\ne\gamma').
+\]
+\begin{EESegment}{EE-TGT-P071-008}
+Let \NSi{NS-F-P071-023}{\mathcal C\in\{\mathsf M,\mathsf W\}}. Every coefficient derivative in one fixed common-torus representation keeps the same \NSi{NS-F-P071-024}{\varepsilon} exponent in its defining bounds. The operators below also preserve the compatibility condition \eqref{eq:6.20}, so they act on the classes as shown below.
+\end{EESegment}
+\NSFormula{NS-F-P071-025}{display}{6.32}
+\begin{equation}
+  \begin{array}{c|c}
+    \textit{operator}&\textit{mapping}\\ \hline
+    \partial_{R,Z,T}&\mathcal C_\alpha\longrightarrow \mathcal C_\alpha\\
+    D_r&\mathcal C_\alpha\longrightarrow \mathcal C_{\alpha-\kappa_s}\\
+    D_z=\varepsilon\partial_Z&\mathcal C_\alpha\longrightarrow \mathcal C_{\alpha+1}\\
+    Q^{1+h}N_{\mathrm{abs}}=c_{i_0}N_{i_0}
+      &\mathcal C_\alpha\longrightarrow \mathcal C_\alpha\\
+    -\varepsilon\partial_T&\mathcal C_\alpha\longrightarrow \mathcal C_{\alpha+1}.
+  \end{array}
+  \tag{6.32}\label{eq:6.32}
+\end{equation}
+\begin{EESegment}{EE-TGT-P071-009}
+These mappings act on amplitudes after the phase has been factored out. Bounds for the local coordinate derivatives, including those for \NSi{NS-F-P071-026}{\partial_H}, keep the stated supports unchanged. Before cutoff, the wave rules are local to the labelled rectangles. After cutoff, they hold for fields extended smoothly on the common torus. At every fixed stage, products, derivatives, and angular averages keep the harmonic set finite and independent of the band.
+\end{EESegment}
+\end{proposition}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P071-010}
+The triangle inequality proves closure under finite sums at a fixed exponent.
+
+\textbf{Step 1: multiply the coefficient bounds.} Leibniz' formula bounds every fixed derivative of a product by finitely many derivative bounds for its two factors. The powers of \NSi{NS-F-P071-027}{S_*} and \NSi{NS-F-P071-028}{\delta^{-1}} add
+\end{EESegment}
+\NSPage{072}%
+\begin{EESegment}{EE-TGT-P072-001}
+and may increase. The weight bounds in Equations~\eqref{eq:6.30} and~\eqref{eq:6.31} follow from \NSi{NS-F-P072-001}{0\le\zeta\le1}, \NSi{NS-F-P072-002}{0<P_v\le1}, and
+\end{EESegment}
+\NSFormula{NS-F-P072-003}{display}{none}
+\[
+  \zeta^2\le\zeta,
+  \qquad \zeta^{3/2}P_v\le\sqrt\zeta P_v,
+  \qquad
+  \zeta P_v^2\le
+  \begin{cases}
+    \zeta,&m+m'=0,\\
+    \sqrt\zeta P_v,&m+m'\ne0.
+  \end{cases}
+\]
+\begin{EESegment}{EE-TGT-P072-002}
+A mean coefficient may have wider radial or auxiliary support than a wave coefficient. Their product stays inside the wave's support and keeps its envelope bound.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P072-003}
+\textbf{Step 2: separate the labels and select the angular harmonics.} The support of any derivative of a smoothly extended function stays inside the function's original closed support. Once the time cutoff has supplied that smooth extension, Lemma~\ref{lem:6.1} removes every cross-label product of the actual fields. Before the cutoff, the coefficient algebra is used only on the labelled band rectangle.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P072-004}
+Recall that \NSi{NS-F-P072-004}{\langle\cdot\rangle_\theta} is the physical angular average, while \NSi{NS-F-P072-005}{\langle\cdot\rangle_Y} is the normalized Haar average in the auxiliary variable. Lemma~\ref{lem:6.2} allows the second average to be computed in any torus coordinates that apply. Within one label, the product has harmonic \NSi{NS-F-P072-006}{m+m'}. Since \NSi{NS-F-P072-007}{kp_\gamma} is a nonzero integer, angular averaging gives
+\end{EESegment}
+\NSFormula{NS-F-P072-008}{display}{none}
+\[
+  \left\langle
+    a_{\gamma,m}a_{\gamma,m'}e^{ik(m+m')\Phi_\gamma}
+  \right\rangle_\theta
+  =
+  \begin{cases}
+    a_{\gamma,m}a_{\gamma,m'},&m+m'=0,\\
+    0,&m+m'\ne0.
+  \end{cases}
+\]
+\begin{EESegment}{EE-TGT-P072-005}
+In particular,
+\end{EESegment}
+\NSFormula{NS-F-P072-009}{display}{none}
+\[
+  \langle a_{\gamma,m}e^{ikm\Phi_\gamma}\rangle_\theta=0
+  \quad(m\ne0),
+  \qquad
+  f^\circ=f-\langle f\rangle_Y
+  \quad\text{for an angular mean }f.
+\]
+\begin{EESegment}{EE-TGT-P072-006}
+The second formula is the auxiliary zero-mean projection from \eqref{eq:3.9}. It is different from both the physical angular mean and the radial prefix average \NSi{NS-F-P072-010}{\mathcal A_X(f)} in \eqref{eq:4.6}. A mean coefficient can still have a nonzero auxiliary projection \NSi{NS-F-P072-011}{f^\circ}. Differentiation leaves every harmonic integer unchanged, while products add the integers in pairs. It follows that finitely many operations keep the harmonic set finite at any fixed stage.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P072-007}
+\textbf{Step 3: apply the normalized derivative operators.} On the active annulus, the coordinate coefficients of \NSi{NS-F-P072-012}{D_r} and all their coefficient derivatives are bounded by \NSi{NS-F-P072-013}{C_I\varepsilon^{-\kappa_s}S_*^{C_I}}. Together with \eqref{eq:6.6}, these bounds give the exponent estimates in \eqref{eq:6.32}. Passing from a band torus to a common torus adds only the bounded matrices from Lemma~\ref{lem:6.2}. The local \NSi{NS-F-P072-014}{\partial_H} bounds follow directly from \eqref{eq:6.24} and \eqref{eq:6.29}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P072-008}
+In a fixed band chart, \NSi{NS-F-P072-015}{\partial_{R,Z,T}} preserves \eqref{eq:6.20} because the covering maps do not depend on the slow coordinates. On every common torus, the auxiliary terms \NSi{NS-F-P072-016}{M_{i_0}\mathcal L_{i_0}} and \NSi{NS-F-P072-017}{c_{i_0}N_{i_0}} represent the same absolute operators. The first is \NSi{NS-F-P072-018}{Q^{d_r/2}\mathcal L_{\mathrm{abs}}}, and the second is \NSi{NS-F-P072-019}{Q^{1+h}N_{\mathrm{abs}}}. The other operators in \eqref{eq:6.32} also preserve compatibility. These derivative rules apply to the amplitude coefficients. Differentiating \NSi{NS-F-P072-020}{e^{ikm\Phi_\gamma}} also differentiates the phase and brings down the factor \NSi{NS-F-P072-021}{km}, which remains explicitly present.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P072-009}
+Differentiation, integration, translation, averaging, and Fourier multipliers in \NSi{NS-F-P072-022}{(R,Z,T,H)} all preserve independence from \NSi{NS-F-P072-023}{\theta}.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P072-010}
+The convention for wave supports also works with the initial-value equations used to build the pulses. The path \eqref{eq:6.21} keeps the same slow and transverse variables. If a source vanishes along that whole rectangle, then its linear solution with zero initial data is identically zero there. Multiplying by \NSi{NS-F-P072-024}{\psi} then keeps it inside the original rectangle. A smooth extension of the source, together with smooth dependence of the linear equation on its data, gives a smooth extension at those boundaries. Proposition~\ref{prop:7.2} proves the mapping estimates at every fixed derivative order. The
+\end{EESegment}

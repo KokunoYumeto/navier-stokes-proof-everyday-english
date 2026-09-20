@@ -1,0 +1,429 @@
+\NSPage{013}%
+The correction cycle treats the remaining linear and quadratic interactions, including the
+curl and cutoff errors in \NSi{NS-F-P013-001}{\mathscr R(u_B+w,p_B+\pi)}.
+
+\begin{figure}[htbp]
+  \centering
+  \NSFigurePlaceholder{NS-FIG-5}
+  \caption{Construction of the background and the first oscillatory correction.
+  The averaged pulse flux cancels the leading background stress divergence.
+  The remaining residual is corrected by the cycle in Figure~\ref{fig:6}. A flat remainder
+  and all curl and cutoff terms are retained.}
+  \label{fig:5}
+\end{figure}
+
+\subsection{Correction and summation}\label{sec:3.4}
+The averaged wave flux is chosen to cancel the leading stress divergence associated with
+\NSi{NS-F-P013-002}{T} (Propositions~\ref{prop:7.5} and~\ref{prop:9.5}). The remaining angular
+harmonics, auxiliary means, and radial integral defects require separate corrections. We
+treat them in a fixed cycle and recompute the full residual after each operation, as in
+Proposition~\ref{prop:9.6}, so newly created terms enter the next stage.
+
+Starting from \NSi{NS-F-P013-003}{(u_B+w,p_B+\pi)}, we reconstruct the pressure and correct the angularly
+averaged velocity and its radial integral defects. Proposition~\ref{prop:9.5} proves that the resulting
+pair \NSi{NS-F-P013-004}{(u^{[0]},p^{[0]})} satisfies the bounds required for the correction cycle. Square brackets count
+these cycles; the superscript \NSi{NS-F-P013-005}{(0)} continues to denote the leading field
+\NSi{NS-F-P013-006}{(u^{(0)},p^{(0)})}.
+
+At stage \NSi{NS-F-P013-007}{j}, we add a divergence-free velocity increment
+\NSi{NS-F-P013-008}{\delta u_j} and a pressure increment \NSi{NS-F-P013-009}{\delta p_j}:
+\NSFormula{NS-F-P013-010}{display}{none}
+\[
+u^{[j+1]}=u^{[j]}+\delta u_j,
+\qquad
+p^{[j+1]}=p^{[j]}+\delta p_j.
+\]
+The residual changes according to
+\NSFormula{NS-F-P013-011}{display}{none}
+\[
+\begin{aligned}
+\mathscr R(u^{[j+1]},p^{[j+1]})
+  &=\mathscr R(u^{[j]},p^{[j]})+\mathcal L_{u^{[j]}}(\delta u_j,\delta p_j)\\
+  &\qquad{}+\nabla\mathbin{\cdot}(\delta u_j\otimes\delta u_j).
+\end{aligned}
+\]
+
+\NSPage{014}%
+Here \NSi{NS-F-P014-001}{\mathcal L_v} is the linear residual operator defined above, with background
+\NSi{NS-F-P014-002}{v}. Thus canceling a selected source also introduces linear remainders and quadratic interactions. The four
+operations in Proposition~\ref{prop:9.6} control these terms as follows.
+\begin{enumerate}[label=\arabic*.,leftmargin=*]
+\item We solve the inhomogeneous wave-amplitude equations for the supported nonzero
+angular Fourier modes. Their principal operator cancels the prescribed source. The
+remaining linear terms and the interactions of the new pulses enter the next residual
+(Proposition~\ref{prop:9.1} and Lemma~\ref{lem:9.2}).
+\item We construct signed amplitude increments using the fixed positive leading amplitudes.
+Their symmetrized cross covariance with the leading pulses supplies the prescribed
+correction to the averaged stress. Interactions with earlier corrections and the quadratic
+self-interaction remain as higher-order terms (Proposition~\ref{prop:7.6}, \eqref{eq:9.13}).
+\item We correct the angularly averaged residual with zero auxiliary average by inverting the
+fast auxiliary-time derivative \eqref{eq:8.20}. The axial increment is realized through a vector
+potential in \eqref{eq:8.14}, which also supplies its radial velocity. The reconstruction remainder,
+whose Cartesian space-time derivatives vanish faster than every power of
+\NSi{NS-F-P014-003}{q}, is retained in the residual.
+\item We solve the five radial moment equations in \eqref{eq:8.25}. Two equations preserve the zero
+angular-momentum and axial-flux integrals in \eqref{eq:9.10}. Three cancel the linear contributions
+to \NSi{NS-F-P014-004}{(\mathcal P,\mathcal J_\theta,\mathcal J_z)}, the radial integral defects for pressure and tangential momentum defined
+in \eqref{eq:8.12} and \eqref{eq:8.15}; their nonlinear remainders have improved decay \eqref{eq:8.27}. The radial
+integral constructions keep the velocity and pressure corrections compactly supported.
+\end{enumerate}
+Pressure is reconstructed from the updated radial equation after each operation, and its contribution
+to the axial equation is included in the new residual. All products use the updated
+fields, including the curl and cutoff corrections. The background, leading amplitudes, and
+inverse operators remain fixed throughout the induction.
+
+The parameter \NSi{NS-F-P014-005}{\sigma_j} in \eqref{eq:9.8} measures residual decay. For Cartesian derivatives of order
+\NSi{NS-F-P014-006}{m}, the bound in \eqref{eq:9.18} contains the power
+\NSi{NS-F-P014-007}{q^{h\sigma_j-K_m}}, where \NSi{NS-F-P014-008}{K_m} is independent of
+\NSi{NS-F-P014-009}{j}, together with logarithmic factors and the separately retained remainder. Constants and logarithmic powers
+may depend on \NSi{NS-F-P014-010}{j,m}. Initialization and one correction cycle give
+\NSFormula{NS-F-P014-011}{display}{none}
+\[
+\sigma_0=\frac15,
+\qquad
+\sigma_{j+1}=\sigma_j+\frac1{10},
+\qquad
+\sigma_j=\frac15+\frac j{10}\longrightarrow\infty.
+\]
+The cumulative velocity bounds \eqref{eq:9.9}, support conditions, and two preserved integrals \eqref{eq:9.10}
+persist, so the cycle can be repeated. All finite stages are defined on the common domain of
+Lemma~\ref{lem:9.7}.
+
+To sum the corrections, we apply cutoffs to their vector potentials and pressures, then take
+curls; the direct axisymmetric azimuthal increments receive the same cutoffs. Each cutoff
+equals one sufficiently close to \NSi{NS-F-P014-012}{q=0}, and its support shrinks with the stage. The bounds in
+\eqref{eq:9.17} have a loss in the power of \NSi{NS-F-P014-013}{q} that depends on derivative order but is independent of
+the stage. They allow the cutoffs to be chosen so that every differentiated tail satisfies \eqref{eq:5.35}.
+The sum is locally finite for \NSi{NS-F-P014-014}{q>0} and defines smooth fields
+\NSi{NS-F-P014-015}{(u_{\mathrm{loc}},p_{\mathrm{loc}})} for \NSi{NS-F-P014-016}{t<1}. Comparing
+their residual with that of a fixed finite stage proves \eqref{eq:9.20}, while preserving the leading
+velocity growth (Proposition~\ref{prop:9.9}).
+
+The summation gives the required local velocity growth. To pass to the whole space, we
+also need a vector-potential representation and regularity up to time one away from the
+origin. Proposition~\ref{prop:9.9} proves these properties together with flatness of the residual. In the
+theorem, we write \NSi{NS-F-P014-017}{(u,p)} for the local pair
+\NSi{NS-F-P014-018}{(u_{\mathrm{loc}},p_{\mathrm{loc}})}.
+
+\NSPage{015}%
+\begin{figure}[htbp]
+  \centering
+  \NSFigurePlaceholder{NS-FIG-6}
+  \caption{Residual correction and completion, continuing Figure~\ref{fig:5}. The
+  correction cycle improves the residual exponent \NSi{NS-F-P015-001}{\sigma_j} while retaining all linear
+  and nonlinear terms. The flatness estimate holds uniformly for
+  \NSi{NS-F-P015-002}{0\leq X\leq X_1}
+  as \NSi{NS-F-P015-003}{q\downarrow0}, for each finite \NSi{NS-F-P015-004}{X_1}. Incompressibility is preserved throughout.}
+  \label{fig:6}
+\end{figure}
+
+We write \NSi{NS-F-P015-005}{\partial_x^\alpha\partial_t^b} for Cartesian space-time derivatives, where
+\NSi{NS-F-P015-006}{\alpha} is a spatial multi-index and
+\NSi{NS-F-P015-007}{b\geq0} is an integer.
+
+\begin{theorem}\label{thm:3.1}
+There are constants \NSi{NS-F-P015-008}{0<h<1/100},
+\NSi{NS-F-P015-009}{q_*>0}, \NSi{NS-F-P015-010}{0<X_a<X_{\mathrm{ext}}<\infty}, and smooth fields on
+\NSFormula{NS-F-P015-011}{display}{none}
+\[
+\Omega_* = \{(x,t):\tau>0,\ q<q_*\}
+\]
+with the following properties.
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*]
+\item There is a vector potential \NSi{NS-F-P015-012}{\mathcal A} and an axisymmetric scalar
+\NSi{NS-F-P015-013}{\mathcal B} such that
+\NSFormula{NS-F-P015-014}{display}{3.3}
+\begin{equation}
+u=\operatorname{curl}\mathcal A+\mathcal B e_\theta.
+\tag{3.3}\label{eq:3.3}
+\end{equation}
+Both \NSi{NS-F-P015-015}{\mathcal A} and \NSi{NS-F-P015-016}{\mathcal B e_\theta} are smooth in Cartesian coordinates at the axis. The field is exactly divergence-free.
+
+\item Every Cartesian space-time derivative of
+\NSi{NS-F-P015-017}{\mathcal A,\mathcal B e_\theta,p} is uniformly bounded on compact spatial
+subsets with \NSi{NS-F-P015-018}{c\leq q\leq c'<q_*}, for each
+\NSi{NS-F-P015-019}{0<c<c'}, up to the one-sided boundary
+\NSi{NS-F-P015-020}{\tau=0}. The resulting limits of the derivatives are compatible under spatial and time differentiation.
+
+\item For every \NSi{NS-F-P015-021}{\alpha,b,N} and every finite
+\NSi{NS-F-P015-022}{X_1},
+\NSFormula{NS-F-P015-023}{display}{3.4}
+\begin{equation}
+\lvert\partial_x^\alpha\partial_t^b\mathscr R(u,p)\rvert
+\leq C_{\alpha,b,N,X_1}q^N
+\qquad (0\leq X\leq X_1,\ q\downarrow0).
+\tag{3.4}\label{eq:3.4}
+\end{equation}
+For \NSi{NS-F-P015-024}{X\geq X_{\mathrm{ext}}} the residual is identically zero, and
+\NSFormula{NS-F-P015-025}{display}{3.5}
+\begin{equation}
+\mathcal A=0,
+\qquad \mathcal B=K(r,\tau),
+\qquad p=-\int_r^\infty\frac{K(\rho,\tau)^2}{\rho}\,d\rho,
+\qquad K(r,\tau)=r^{-1-2h}\mathcal H_{\mathrm{ext}}(\tau/r^2).
+\tag{3.5}\label{eq:3.5}
+\end{equation}
+Here \NSi{NS-F-P015-026}{\mathcal H_{\mathrm{ext}}} is smooth on
+\NSi{NS-F-P015-027}{[0,\infty)}, with each fixed derivative bounded. The radial swirl heat equation satisfied by
+\NSi{NS-F-P015-028}{K} is
+\NSFormula{NS-F-P015-029}{display}{none}
+\[
+-\partial_\tau K=\partial_r^2K+r^{-1}\partial_rK-r^{-2}K.
+\]
+
+\NSPage{016}%
+In this statement the second argument of \NSi{NS-F-P016-001}{K} is
+\NSi{NS-F-P016-002}{\tau}; when written as \NSi{NS-F-P016-003}{K(r,t)} below, the same field
+is evaluated at \NSi{NS-F-P016-004}{\tau=1-t}.
+
+\item For some fixed \NSi{NS-F-P016-005}{X_{\mathrm{in}}\in(0,X_a)} and
+\NSi{NS-F-P016-006}{e_0>0},
+\NSFormula{NS-F-P016-007}{display}{3.6}
+\begin{equation}
+u_\theta(\sqrt{2X_{\mathrm{in}}\tau},0,0,1-\tau)
+=\tau^{-A}\bigl(e_0+O(\tau^{2h})\bigr)
+\qquad(\tau\downarrow0).
+\tag{3.6}\label{eq:3.6}
+\end{equation}
+The entries on the left specify cylindrical position and time.
+\end{enumerate}
+\end{theorem}
+
+\subsection{Localization and completion}\label{sec:3.5}
+Finally, using the decomposition in \eqref{eq:3.3}, we multiply the
+vector potential \NSi{NS-F-P016-008}{\mathcal A}, azimuthal coefficient
+\NSi{NS-F-P016-009}{\mathcal B}, and pressure \NSi{NS-F-P016-010}{p_{\mathrm{loc}}} by
+\NSi{NS-F-P016-011}{c=\chi_x\chi_t}. Here \NSi{NS-F-P016-012}{\chi_x} is smooth
+and axisymmetric with compact support \NSi{NS-F-P016-013}{\mathcal K}, and
+\NSi{NS-F-P016-014}{\chi_t} is smooth with \NSi{NS-F-P016-015}{\chi_t=0} on
+\NSi{NS-F-P016-016}{[0,1-\tau_0]} for some \NSi{NS-F-P016-017}{0<\tau_0<1/2}. Both cutoffs equal one near
+\NSi{NS-F-P016-018}{(0,1)}. Since \NSi{NS-F-P016-019}{q\asymp\tau+|z|^{1/D}}, we can
+choose their supports so that \NSi{NS-F-P016-020}{q<q_*/2} wherever
+\NSi{NS-F-P016-021}{c\neq0} and \NSi{NS-F-P016-022}{t<1}. We take the curl after
+multiplication and extend by zero outside the cutoff support:
+\NSFormula{NS-F-P016-023}{display}{none}
+\[
+u=\operatorname{curl}(c\mathcal A)+c\mathcal B e_\theta,
+\qquad p=cp_{\mathrm{loc}},
+\qquad
+u=cu_{\mathrm{loc}}+\nabla c\times\mathcal A.
+\]
+The curl term and the axisymmetric azimuthal term are separately divergence-free. Cartesian
+smoothness of the chosen representatives and the margin from \NSi{NS-F-P016-024}{q=q_*} give a smooth zero
+extension. Thus \NSi{NS-F-P016-025}{u,p} have fixed spatial support in
+\NSi{NS-F-P016-026}{\mathcal K}, vanish on the stated initial time interval,
+and agree with the local fields near \NSi{NS-F-P016-027}{(0,1)} (Proposition~\ref{prop:10.1}).
+
+For \NSi{NS-F-P016-028}{t<1}, we set \NSi{NS-F-P016-029}{f=\mathscr R(u,p)}. In
+\NSi{NS-F-P016-030}{f-c\mathscr R(u_{\mathrm{loc}},p_{\mathrm{loc}})}, differentiating the cutoffs produces
+terms such as \NSi{NS-F-P016-031}{(\partial_t c-\Delta c)u_{\mathrm{loc}}} and
+\NSi{NS-F-P016-032}{p_{\mathrm{loc}}\nabla c}; the curl correction
+\NSi{NS-F-P016-033}{\nabla c\times\mathcal A} contributes its derivatives
+and advection products. The change in self-advection also contains
+\NSi{NS-F-P016-034}{(c^2-c)(u_{\mathrm{loc}}\mathbin{\cdot}\nabla)u_{\mathrm{loc}}}.
+These additional terms are supported in the cutoff transition regions, away from a neighborhood
+of \NSi{NS-F-P016-035}{(0,1)}.
+
+Near \NSi{NS-F-P016-036}{(0,1)}, the cutoffs equal one, so
+\NSi{NS-F-P016-037}{f} is the local residual. Its flatness estimate \eqref{eq:3.4} on
+\NSi{NS-F-P016-038}{X\leq X_{\mathrm{ext}}}, together with the identically zero residual for larger
+\NSi{NS-F-P016-039}{X}, gives the bound \eqref{eq:10.9}
+for every Cartesian space-time derivative. On the cutoff transition regions near time one,
+Theorem~\ref{thm:3.1}\textup{(ii)} bounds all derivatives of the actual potentials and pressure where
+\NSi{NS-F-P016-040}{q} stays positive. In the remaining region,
+\NSi{NS-F-P016-041}{r} stays positive while \NSi{NS-F-P016-042}{q\to0}; there
+\NSi{NS-F-P016-043}{\mathcal A=0}, and the heat bounds \eqref{eq:10.8} and the normalized pressure integral in \eqref{eq:3.5} give the derivative limits.
+These estimates, the uniform flatness bound near the origin, and the fixed support
+\NSi{NS-F-P016-044}{\mathcal K} give compatible limits uniformly on
+\NSi{NS-F-P016-045}{\R^3} for every derivative of \NSi{NS-F-P016-046}{f} (Lemma~\ref{lem:10.2}). Lemma~\ref{lem:10.3}
+realizes these limits from \NSi{NS-F-P016-047}{t>1} with a force supported in
+\NSi{NS-F-P016-048}{\mathcal K\times[0,2]}:
+\NSFormula{NS-F-P016-049}{display}{none}
+\[
+f\in C_c^\infty(\R^3\times(0,\infty);\R^3),
+\qquad
+\mathscr R(u,p)=f
+\qquad(0\leq t<1).
+\]
+The growth path in Theorem~\ref{thm:3.1}\textup{(iv)} eventually lies where the cutoffs equal one. Hence the
+localized velocity retains the asymptotic \eqref{eq:3.6} and becomes unbounded as
+\NSi{NS-F-P016-050}{t\uparrow1}.
+
+The concentration scales are compatible with bounded energy. The core
+\NSi{NS-F-P016-051}{\mathcal C_\tau} has volume of
+order \NSi{NS-F-P016-052}{\tau^{3/2-h}}. Its leading kinetic energy
+\NSi{NS-F-P016-053}{E_{\mathrm{core}}} and the integral of the squared radial derivatives
+of its leading velocity, \NSi{NS-F-P016-054}{D_{\mathrm{core}}}, have scales
+\NSFormula{NS-F-P016-055}{display}{none}
+\[
+E_{\mathrm{core}}\asymp\tau^{3/2-h}\tau^{-1-2h}=\tau^{1/2-3h},
+\qquad
+D_{\mathrm{core}}\asymp\tau^{3/2-h}\tau^{-2-2h}=\tau^{-1/2-3h}.
+\]
+The factors are the regional volume and the squared velocity or squared radial derivative.
+Since \NSi{NS-F-P016-056}{h<1/6},
+\NSFormula{NS-F-P016-057}{display}{none}
+\[
+\tau^{1/2-3h}\longrightarrow0,
+\qquad
+\int_0^{\tau_0}\tau^{-1/2-3h}\,d\tau
+=\frac{\tau_0^{1/2-3h}}{1/2-3h}<\infty
+\qquad(\tau_0>0).
+\]
+
+\NSPage{017}%
+Lemma~\ref{lem:10.4} proves the global energy and integrated dissipation bounds for the localized
+fields directly from their equation.
+
+Finally, Lemma~\ref{lem:10.5} applies to any smooth solution with the same force and zero initial
+datum whose kinetic energy is uniformly bounded. It must agree with
+\NSi{NS-F-P017-001}{u} on every \NSi{NS-F-P017-002}{[0,T]},
+\NSi{NS-F-P017-003}{T<1}. A global smooth solution would therefore agree with the constructed velocity for
+\NSi{NS-F-P017-004}{0\leq t<1}, contradicting its boundedness on a compact neighborhood of
+\NSi{NS-F-P017-005}{(0,1)} along the growth path. This proves Theorem~\ref{thm:1.1}.
+
+\subsection{Notation}\label{sec:3.6}
+All profile choices are fixed before \NSi{NS-F-P017-006}{q\downarrow0}. Constants may depend on those
+choices and on the stated derivative order, but are independent of the concentration scale.
+The notation \NSi{NS-F-P017-007}{O(q^a)} means a bound by
+\NSi{NS-F-P017-008}{Cq^a} on the specified domain; uniformity in other
+parameters is stated when needed. The background expansion order
+\NSi{NS-F-P017-009}{n}, correction stage \NSi{NS-F-P017-010}{j},
+dyadic band index \NSi{NS-F-P017-011}{\ell}, and Fourier harmonic index are distinct.
+
+\paragraph{Averaging conventions.}
+For a scalar field \NSi{NS-F-P017-012}{F(r,\theta,z,t,Y)} on the extended domain, with the
+auxiliary variable \NSi{NS-F-P017-013}{Y\in\T^2=\R^2/\Z^2} independent of the physical coordinates, we define
+\NSFormula{NS-F-P017-014}{display}{3.7}
+\begin{equation}
+\begin{aligned}
+\langle F\rangle_\theta(r,z,t,Y)
+  &:=\frac1{2\pi}\int_0^{2\pi}F(r,\vartheta,z,t,Y)\,d\vartheta,\\
+\langle F\rangle_Y(r,\theta,z,t)
+  &:=\int_{\T^2}F(r,\theta,z,t,Y')\,dY',
+  \qquad \int_{\T^2}1\,dY'=1.
+\end{aligned}
+\tag{3.7}\label{eq:3.7}
+\end{equation}
+Thus angular averaging holds the independent auxiliary coordinate fixed, while auxiliary
+averaging holds all physical coordinates fixed. For vector and tensor fields, these averages
+act on cylindrical components. Their composition, also called the fast average for wave fields,
+is
+\NSFormula{NS-F-P017-015}{display}{3.8}
+\begin{equation}
+\langle F\rangle
+:=\langle\langle F\rangle_\theta\rangle_Y
+=\langle\langle F\rangle_Y\rangle_\theta
+=\frac1{2\pi}\int_{\T^2}\int_0^{2\pi}F(r,\vartheta,z,t,Y)\,d\vartheta\,dY.
+\tag{3.8}\label{eq:3.8}
+\end{equation}
+These averages act before restriction to the physical phase map \eqref{eq:6.3}. They hold
+\NSi{NS-F-P017-016}{(r,z,t)} fixed,
+or equivalently \NSi{NS-F-P017-017}{(R,Z,T)} within a fixed normalized chart. The normalized Haar averages
+agree on the absolute, band, and common auxiliary tori by \eqref{eq:6.19}. In the wave construction,
+this composition specifies the entire fast average, including its normalization. For an angular
+mean coefficient, we define its auxiliary zero-mean part by
+\NSFormula{NS-F-P017-018}{display}{3.9}
+\begin{equation}
+f^\circ:=f-\langle f\rangle_Y,
+\qquad
+\langle f^\circ\rangle_Y=0.
+\tag{3.9}\label{eq:3.9}
+\end{equation}
+The profile construction also uses a separate auxiliary loop angle
+\NSi{NS-F-P017-019}{\theta'} of period \NSi{NS-F-P017-020}{2\pi}: its average
+is \NSi{NS-F-P017-021}{\langle f\rangle_{\theta'}=(2\pi)^{-1}\int_0^{2\pi}f(\theta')\,d\theta'}, as in Lemmas~\ref{lem:C.1} and~\ref{lem:4.11}. Bare brackets in that local profile
+convention refer to this loop average. We also use the radial average
+\NSFormula{NS-F-P017-022}{display}{3.10}
+\begin{equation}
+\mathcal A_X(f)(X,\eta)=\frac1X\int_0^X f(X',\eta)\,dX'.
+\tag{3.10}\label{eq:3.10}
+\end{equation}
+The auxiliary torus parametrizes oscillations; the torus in Corollary~\ref{cor:10.6} is the spatial domain
+of the periodic solution.
+
+\paragraph{Normalized operators and coefficient classes.}
+In a dyadic chart, \NSi{NS-F-P017-023}{Q=2^{-\ell}} is fixed,
+\NSi{NS-F-P017-024}{q\asymp Q}, and
+\NSFormula{NS-F-P017-025}{display}{none}
+\[
+(R,Z,T)=(r/\sqrt Q,z/Q^D,\tau/Q),
+\qquad
+\varepsilon=Q^h,
+\qquad
+S_*=\ell^2.
+\]
+The star on a spatial operator includes the factor \NSi{NS-F-P017-026}{\sqrt Q} converting physical spatial differentiation to chart units. Physical differentiation includes the chain rule for the auxiliary
+phase map. Using the radial operator \NSi{NS-F-P017-027}{\mathfrak r} of \eqref{eq:6.4}, we put
+\NSi{NS-F-P017-028}{D_r=\sqrt Q\,\mathfrak r},
+\NSi{NS-F-P017-029}{D_z=\sqrt Q\,\partial_z=\varepsilon\partial_Z}, and
+\NSPage{018}%
+\NSi{NS-F-P018-001}{D_\theta=R^{-1}\partial_\theta}, as in \eqref{eq:6.6}. For a scalar
+\NSi{NS-F-P018-002}{f} and a vector
+\NSi{NS-F-P018-003}{a=(a_r,a_\theta,a_z)} in cylindrical components,
+our conventions are
+\NSFormula{NS-F-P018-004}{display}{3.11}
+\begin{equation}
+\begin{aligned}
+\nabla_*f&=(D_rf,D_\theta f,D_zf),\\
+\operatorname{div}_*a&=(D_r+R^{-1})a_r+D_\theta a_\theta+D_za_z,\\
+\operatorname{curl}_*a&=(D_\theta a_z-D_za_\theta,\ D_za_r-D_ra_z,\ (D_r+R^{-1})a_\theta-D_\theta a_r).
+\end{aligned}
+\tag{3.11}\label{eq:3.11}
+\end{equation}
+The factors normalizing the fields themselves are recorded separately in \eqref{eq:8.11}. The physical
+momentum residual is \NSi{NS-F-P018-005}{\mathscr R} from \eqref{eq:3.1}.
+
+The classes \NSi{NS-F-P018-006}{\mathsf W_\alpha,\mathsf M_\alpha,\mathsf S_\alpha} record wave amplitudes, angular mean coefficients, and radial
+moments in normalized units. A coefficient derivative differentiates the amplitude with
+its oscillatory exponential factored out, holding the band, label, and harmonic fixed. For
+each fixed correction stage and coefficient derivative order,
+\NSi{NS-F-P018-007}{\partial^I} denotes ordinary derivatives
+in \NSi{NS-F-P018-008}{(R,Z,T,H)}, with \NSi{NS-F-P018-009}{H} the common auxiliary coordinate of \eqref{eq:6.17}; for moments, only
+\NSi{NS-F-P018-010}{(Z,T)} are differentiated. The defining bounds have the following forms. The first two hold on
+\NSi{NS-F-P018-011}{X_a<X<X_b}, and the wave bound is restricted to its labelled rectangle:
+\NSFormula{NS-F-P018-012}{display}{none}
+\[
+\begin{aligned}
+f\in \mathsf M_\alpha
+&\quad\Longrightarrow\quad
+|\partial^If|\leq C_{j,I}\varepsilon^\alpha S_*^{b_{j,I}}\zeta\delta^{-d_{j,I}},\\
+a\in \mathsf W_\alpha
+&\quad\Longrightarrow\quad
+|\partial^Ia|\leq C_{j,I}\varepsilon^\alpha S_*^{b_{j,I}}\sqrt\zeta\,\delta^{-d_{j,I}}P_v
+\qquad(0\leq v\leq L_s),\\
+F\in \mathsf S_\alpha
+&\quad\Longrightarrow\quad
+|\partial_{Z,T}^IF|\leq C_{j,I}\varepsilon^\alpha S_*^{b_{j,I}}.
+\end{aligned}
+\]
+Here \NSi{NS-F-P018-013}{\zeta,\delta} are the radial-edge weights of \eqref{eq:6.23}, and
+\NSi{NS-F-P018-014}{P_v} is the pulse envelope of \eqref{eq:7.12}, used
+as a pointwise weight. The constants \NSi{NS-F-P018-015}{C_{j,I}>0},
+\NSi{NS-F-P018-016}{b_{j,I},d_{j,I}\geq0} may differ by row and depend
+on the fixed stage, derivative order, and profile choices; they are uniform in the band, label,
+rectangle copy, and point. The full definitions, including the support, compatibility, and
+smooth-extension conditions, are Definitions~\ref{def:6.4} and~\ref{def:6.5}. Angular mean coefficients may still
+depend on the auxiliary torus.
+
+\begin{definition}[Regularity at the axis]\label{def:3.2}
+A leading field is regular at the axis if its velocity
+and pressure extend smoothly across \NSi{NS-F-P018-017}{r=0} in Cartesian coordinates, for
+\NSi{NS-F-P018-018}{t<1}. For scalar
+auxiliary profiles, ``regular at the axis'' means a smooth extension in
+\NSi{NS-F-P018-019}{(X,\eta)} to \NSi{NS-F-P018-020}{X=0}.
+\end{definition}
+
+\begin{definition}[Parameter smallness and order of choices]\label{def:3.3}
+For \NSi{NS-F-P018-021}{\alpha\geq0} and \NSi{NS-F-P018-022}{\beta>0}, we write
+\NSi{NS-F-P018-023}{\alpha\ll\beta} when \NSi{NS-F-P018-024}{\alpha/\beta} is required to be sufficiently small, with the allowed size depending on
+all data already fixed. In a chain of constants, choices proceed from right to left; small
+reciprocals specify large parameters. For expressions depending on profile variables, this
+smallness is uniform on the stated domain and is ensured by those parameter choices.
+\end{definition}
+
+The following table collects the principal symbols used in the construction, with references
+to their definitions. The different background fields are grouped together. Repeated letters
+are identified by their role or the section in which they are used. Orders in the coefficient
+classes refer to normalized representatives, with the weights and derivative bounds specified
+in their definitions.

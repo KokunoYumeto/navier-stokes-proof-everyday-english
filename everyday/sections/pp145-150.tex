@@ -1,0 +1,689 @@
+\NSPage{145}%
+\begin{EESegment}{EE-TGT-P145-001}
+The function \NSi{NS-F-P145-001}{\Pi_0} is holomorphic. For
+\NSi{NS-F-P145-002}{\Lambda\geq 1}, define
+\end{EESegment}
+\NSFormula{NS-F-P145-003}{display}{B.3}
+\begin{equation}
+  \zeta_*=-\frac{LH_*}{H_*^2+\sigma_*^2},
+  \qquad \widetilde\xi_0=\Lambda\zeta_*,
+  \qquad \phi_*=\exp\!\left(\Lambda\int_0^\eta \zeta_*(w)\,dw\right).
+  \tag{B.3}\label{eq:B.3}
+\end{equation}
+\begin{EESegment}{EE-TGT-P145-002}
+The integral is well defined throughout \NSi{NS-F-P145-004}{\Omega}. On the real interval,
+\NSi{NS-F-P145-005}{\phi_*>0}. The amplitude \NSi{NS-F-P145-006}{\mathsf C} is chosen after
+\NSi{NS-F-P145-007}{\Lambda}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P145-003}
+\subsection{A space for analytic coefficients.}\label{sec:B.2}
+The profile equations \eqref{eq:4.13} use parameter derivatives as well as radial derivatives. Their highest radial
+derivatives are multiplied by the radial variable. At \NSi{NS-F-P145-008}{X=0} that multiplier
+vanishes, so the equations cannot be solved there for their highest radial derivatives in the
+usual way. The vanishing is only linear, and the smooth power-series coefficients can still be
+solved one at a time by the radial inverse in \eqref{eq:B.5}. That is what regular singular point
+means here. This subsection sets up a weighted
+coefficient space \NSi{NS-F-P145-009}{\mathcal B_\rho} for the integral form of those equations. Its
+norm is given in \eqref{eq:B.4}. In this space, increasing the radial degree makes up for taking a
+parameter derivative. Lemma~\ref{lem:B.1} gives the bounds needed for multiplication and radial
+inversion, the step that solves for a function in the radial variable. Those bounds also cover the
+mixed nonlinear terms used in the contraction argument for Proposition~\ref{prop:B.2}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P145-004}
+For the analytic construction at the axis, use the scalar radial variable
+\NSi{NS-F-P145-010}{Y=\Lambda X}. Fix a small radius \NSi{NS-F-P145-011}{\rho>0}. If
+\NSi{NS-F-P145-012}{F(Y,\eta)=\sum_{\alpha\geq0}F_\alpha(\eta)Y^\alpha}, define
+\end{EESegment}
+\NSFormula{NS-F-P145-013}{display}{B.4}
+\begin{equation}
+  \mathfrak a_{\alpha\beta}
+  =\frac{20^{-\alpha}\rho^{-\beta}\beta!\binom{\alpha+\beta}{\beta}}
+         {(\alpha+1)^2(\beta+1)^2},
+  \qquad
+  \lVert F\rVert_\rho
+  =\sup_{\alpha,\beta\geq0}\sup_{\eta\in I}
+    \frac{|\partial_\eta^\beta F_\alpha(\eta)|}{\mathfrak a_{\alpha\beta}}.
+  \tag{B.4}\label{eq:B.4}
+\end{equation}
+\begin{EESegment}{EE-TGT-P145-005}
+Let \NSi{NS-F-P145-014}{\mathcal B_\rho} be the set of smooth coefficient sequences whose norm is
+finite. This space is complete. In a Cauchy sequence, every coefficient and every order of its
+derivative converges uniformly. Uniform convergence of one derivative after another then shows that
+these limits are the derivatives of the limiting coefficient. In the rescaled variable
+\NSi{NS-F-P145-015}{Y}, the logarithmic radial derivative is
+\NSi{NS-F-P145-016}{\mathcal D_X=X\partial_X=Y\partial_Y}. Define
+\NSi{NS-F-P145-017}{\mathcal I F=\int_0^Y F(Y',\eta)\,dY'}. Rescaling by
+\NSi{NS-F-P145-018}{Y=\Lambda X} does not change radial averaging, so
+\NSi{NS-F-P145-019}{\mathcal A_X(F)=Y^{-1}\mathcal I F}.
+\end{EESegment}
+
+\begin{lemma}\label{lem:B.1}
+\begin{EESegment}{EE-TGT-P145-006}
+Multiplication is bounded on \NSi{NS-F-P145-020}{\mathcal B_\rho}. For
+\NSi{NS-F-P145-021}{\nu=1,2}, let \NSi{NS-F-P145-022}{\mathcal J_\nu F} be the solution
+\NSi{NS-F-P145-023}{G} of
+\NSi{NS-F-P145-024}{YG_{YY}+\nu G_Y=F} that extends smoothly to
+\NSi{NS-F-P145-025}{Y=0} and satisfies \NSi{NS-F-P145-026}{G(0)=0}. Its coefficients are
+\end{EESegment}
+\NSFormula{NS-F-P145-027}{display}{B.5}
+\begin{equation}
+  (\mathcal J_\nu F)_{\alpha+1}
+  =\frac{F_\alpha}{(\alpha+1)(\alpha+\nu)},
+  \qquad (\mathcal J_\nu F)_0=0.
+  \tag{B.5}\label{eq:B.5}
+\end{equation}
+\begin{EESegment}{EE-TGT-P145-007}
+The operator \NSi{NS-F-P145-028}{\mathcal J_\nu} is bounded on
+\NSi{NS-F-P145-029}{\mathcal B_\rho}. The same is true of radial averaging, multiplication by
+\NSi{NS-F-P145-030}{Y}, and the operators \NSi{NS-F-P145-031}{\mathcal I} and
+\NSi{NS-F-P145-032}{\partial_\eta\mathcal I}. Also,
+\end{EESegment}
+\NSFormula{NS-F-P145-033}{display}{B.6}
+\begin{equation}
+  \bigl\lVert\mathcal J_\nu[(\partial_\eta F)(\mathcal D_XG)]\bigr\rVert_\rho
+  \leq C_\rho\lVert F\rVert_\rho\lVert G\rVert_\rho.
+  \tag{B.6}\label{eq:B.6}
+\end{equation}
+\begin{EESegment}{EE-TGT-P145-008}
+The same estimate still holds if either derivative is left out, or if \NSi{NS-F-P145-034}{F} is
+replaced by \NSi{NS-F-P145-035}{\mathcal A_X(F)}. Extra factors without derivatives may also be
+inserted, with one more algebra constant for each extra factor.
+\end{EESegment}
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P145-009}
+  The elementary convolution estimate
+\NSFormula{NS-F-P145-036}{display}{B.7}
+\begin{equation}
+  \sum_{i=0}^{N}\frac{(N+1)^2}{(i+1)^2(N-i+1)^2}
+  \leq 8\sum_{i=1}^{\infty}i^{-2}=:C_{\mathrm{sq}}
+  \tag{B.7}\label{eq:B.7}
+\end{equation}
+  follows by splitting the sum at \NSi{NS-F-P145-037}{N/2}.
+\end{EESegment}
+\begin{EESegment}{EE-TGT-P145-010}
+In the Leibniz formula for a product coefficient, the binomial coefficient from differentiation
+cancels the factorials in the weights. The binomial ratio that remains is at most one, because
+\end{EESegment}
+\NSFormula{NS-F-P145-038}{display}{B.8}
+\begin{equation}
+  \binom{i+k}{k}\binom{\alpha-i+\beta-k}{\beta-k}
+  \leq\binom{\alpha+\beta}{\beta}.
+  \tag{B.8}\label{eq:B.8}
+\end{equation}
+\begin{EESegment}{EE-TGT-P145-011}
+The reason is that the left side counts some, but not necessarily all, of the
+\NSi{NS-F-P145-039}{\beta}-element subsets of a set split into blocks of sizes
+\NSi{NS-F-P145-040}{i+k} and \NSi{NS-F-P145-041}{\alpha-i+\beta-k}. Apply
+\eqref{eq:B.7} in both indices. This gives the algebra constant
+\NSi{NS-F-P145-042}{C_{\mathrm{sq}}^2}.
+\end{EESegment}
+
+\NSPage{146}%
+\begin{EESegment}{EE-TGT-P146-001}
+The two weight ratios needed for integration are
+\end{EESegment}
+\NSFormula{NS-F-P146-001}{display}{B.9}
+\begin{equation}
+  \frac{\mathfrak a_{\alpha\beta}}{\mathfrak a_{\alpha+1,\beta}}
+  =20\frac{(\alpha+2)^2}{(\alpha+1)^2}\frac{\alpha+1}{\alpha+\beta+1}
+  \leq80,
+  \tag{B.9}\label{eq:B.9}
+\end{equation}
+\NSFormula{NS-F-P146-002}{display}{B.10}
+\begin{equation}
+  \frac{\mathfrak a_{i,k+1}}{\mathfrak a_{i+1,k}}
+  =\frac{20}{\rho}(i+1)\frac{(i+2)^2(k+1)^2}{(i+1)^2(k+2)^2}
+  \leq\frac{80}{\rho}(i+1).
+  \tag{B.10}\label{eq:B.10}
+\end{equation}
+\begin{EESegment}{EE-TGT-P146-002}
+The first ratio proves the stated bounds for \NSi{NS-F-P146-003}{\mathcal J_\nu},
+\NSi{NS-F-P146-004}{\mathcal I}, and multiplication by \NSi{NS-F-P146-005}{Y}. Averaging divides
+the term of degree \NSi{NS-F-P146-006}{\alpha} by \NSi{NS-F-P146-007}{\alpha+1}. The second ratio
+proves the bound for \NSi{NS-F-P146-008}{\partial_\eta\mathcal I}, because its integration divisor
+\NSi{NS-F-P146-009}{i+1} cancels the matching factor.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P146-003}
+For the mixed derivative bound \eqref{eq:B.6}, take the coefficient of degree
+\NSi{NS-F-P146-010}{N=\alpha+1} on the left. Assign the extra degree to the factor with the parameter
+derivative, and write \NSi{NS-F-P146-011}{I_1=i+1} and \NSi{NS-F-P146-012}{J_1=\alpha-i}.
+After applying \eqref{eq:B.10} and dividing by \NSi{NS-F-P146-013}{\mathfrak a_{N\beta}}, the
+\NSi{NS-F-P146-014}{\beta}th derivative is bounded by
+\end{EESegment}
+\NSFormula{NS-F-P146-015}{display}{none}
+\begin{equation*}
+  \frac{80}{\rho}\lVert F\rVert_\rho\lVert G\rVert_\rho
+  \sum_{i=0}^{\alpha}\sum_{k=0}^{\beta}
+  \frac{I_1J_1}{N(\alpha+\nu)}
+  \frac{(N+1)^2}{(I_1+1)^2(J_1+1)^2}
+  \frac{(\beta+1)^2}{(k+1)^2(\beta-k+1)^2}.
+\end{equation*}
+\begin{EESegment}{EE-TGT-P146-004}
+Use \eqref{eq:B.8} with radial indices \NSi{NS-F-P146-016}{I_1,J_1} to drop the binomial ratio.
+The first fraction is at most one, and \eqref{eq:B.7} bounds both sums. If
+\NSi{NS-F-P146-017}{F} is averaged, its divisor \NSi{NS-F-P146-018}{i+1} cancels
+\NSi{NS-F-P146-019}{I_1}, and the fraction that remains is again at most one. If the logarithmic
+radial derivative is left out, replace \NSi{NS-F-P146-020}{J_1} by one. A logarithmic radial
+derivative with no \NSi{NS-F-P146-021}{\eta}-derivative is controlled directly by
+\eqref{eq:B.9} and \eqref{eq:B.5}. For extra factors, assign the indices in the same way, leave
+those extra factors undifferentiated, and repeat the convolution estimate. This covers the endpoint
+indices and every \NSi{NS-F-P146-022}{\beta}.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P146-005}
+\subsection{The nonlinear analytic profile at the axis.}\label{sec:B.3}
+This subsection solves the equations \eqref{eq:4.13} for the axis data chosen in
+Section~\ref{sec:B.1}, with the leading residual stress set to zero. Rescale the radius by
+\NSi{NS-F-P146-023}{Y=\Lambda X}. The solution will be shown to approach an explicit profile as
+\NSi{NS-F-P146-024}{\Lambda} grows, with the error stated in \eqref{eq:B.13}. The scalar comparison
+function \NSi{NS-F-P146-025}{f_0} below controls the normalized azimuthal profile
+\NSi{NS-F-P146-026}{\phi/\phi_*} through \NSi{NS-F-P146-027}{f_0(Y\chi)}. The bound
+\eqref{eq:B.11} will show that it stays positive across the radial interval being used. That makes
+division by \NSi{NS-F-P146-028}{\phi} valid in the profile equations.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P146-006}
+The analytic scalar comparison function is
+\end{EESegment}
+\NSFormula{NS-F-P146-029}{display}{none}
+\begin{equation*}
+  f_0(z)=\sum_{\alpha\geq0}\frac{(-z/2)^\alpha}{\alpha!(\alpha+1)!}.
+\end{equation*}
+\begin{EESegment}{EE-TGT-P146-007}
+For \NSi{NS-F-P146-030}{0\leq z\leq4.1}, set \NSi{NS-F-P146-031}{t=z/2}. After the cubic term,
+the terms in the alternating tail get smaller in absolute value. It follows that
+\end{EESegment}
+\NSFormula{NS-F-P146-032}{display}{B.11}
+\begin{equation}
+  f_0(z)\geq1-\frac t2+\frac{t^2}{12}-\frac{t^3}{144}
+  \geq\frac{305719}{1152000}>.265,
+  \qquad f_0(z)\leq1.
+  \tag{B.11}\label{eq:B.11}
+\end{equation}
+\begin{EESegment}{EE-TGT-P146-008}
+The cubic decreases throughout \NSi{NS-F-P146-033}{[0,2.05]}, so its endpoint gives the value just
+stated. For the upper bound, group the alternating tail after the constant term. Starting with the
+linear term, its terms decrease in absolute value.
+\end{EESegment}
+
+\begin{proposition}\label{prop:B.2}
+\begin{EESegment}{EE-TGT-P146-009}
+Take the axis data from Section~\ref{sec:B.1}. There is a
+\NSi{NS-F-P146-034}{\Lambda_0}. For every \NSi{NS-F-P146-035}{\Lambda\geq\Lambda_0}, there is an
+amplitude threshold \NSi{NS-F-P146-036}{\mathsf C_0(\Lambda)} such that every
+\NSi{NS-F-P146-037}{\mathsf C\geq\mathsf C_0(\Lambda)} gives an analytic axis profile whose leading
+residual stress vanishes on \NSi{NS-F-P146-038}{0\leq Y=\Lambda X\leq4.1}. The profile has the form
+\end{EESegment}
+\NSFormula{NS-F-P146-039}{display}{B.12}
+\begin{equation}
+  \phi=\phi_*\Phi,
+  \qquad U=U_*+\Lambda^{-1}\mathfrak u,
+  \qquad \Pi=\Pi_0+\Lambda^{-1}\mathcal I(g^2\Phi^2),
+  \qquad g=\phi_*/\mathsf C,
+  \tag{B.12}\label{eq:B.12}
+\end{equation}
+\NSPage{147}%
+\begin{EESegment}{EE-TGT-P147-001}
+where \NSi{NS-F-P147-001}{\Phi(0,\eta)=1} and \NSi{NS-F-P147-002}{\mathfrak u(0,\eta)=0}. The
+profile is analytic in \NSi{NS-F-P147-003}{Y} and \NSi{NS-F-P147-004}{\eta} on the same
+neighborhood of \NSi{NS-F-P147-005}{[0,4.1]\times I}. For every fixed
+\NSi{NS-F-P147-006}{r,s\geq0},
+\end{EESegment}
+\NSFormula{NS-F-P147-007}{display}{B.13}
+\begin{equation}
+  \sup_{[0,4.1]\times I}
+  \left|\partial_Y^r\partial_\eta^s
+    \left(\Phi-f_0(Y\chi),\mathfrak u+\frac{YZ_*}{2L}\right)\right|
+  \leq\frac{C_{r,s}}{\Lambda}.
+  \tag{B.13}\label{eq:B.13}
+\end{equation}
+\begin{EESegment}{EE-TGT-P147-002}
+For all sufficiently large \NSi{NS-F-P147-008}{\Lambda} and all
+\NSi{NS-F-P147-009}{\mathsf C\geq\mathsf C_0(\Lambda)}, the constants and a smaller common
+parameter neighborhood do not depend on either large parameter. Written with derivatives in the
+original radial variable, the bound is \NSi{NS-F-P147-010}{C_{r,s}\Lambda^{r-1}}.
+\end{EESegment}
+\end{proposition}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P147-003}
+Rewrite the equations using the rescaled radius. The nonlinear remainders then come with a factor
+\NSi{NS-F-P147-011}{\Lambda^{-1}}. Applying the radial inverse operators turns the problem into a
+contraction around the explicit comparison profile. In the notation of the stress equations, set
+\end{EESegment}
+\NSFormula{NS-F-P147-012}{display}{B.14}
+\begin{equation}
+  B=-2D_\eta\mathcal A_X(\mathfrak u)-d\partial_\eta\mathcal A_X(\mathfrak u),
+  \qquad W=W_*+\Lambda^{-1}B,
+  \qquad H_c=H_*+\Lambda^{-1}d\mathfrak u,
+  \qquad \mathfrak p=\mathcal I(g^2\Phi^2).
+  \tag{B.14}\label{eq:B.14}
+\end{equation}
+\begin{EESegment}{EE-TGT-P147-004}
+The equations \eqref{eq:4.13} with zero leading residual stress, together with radial pressure
+balance, are
+\end{EESegment}
+\NSFormula{NS-F-P147-013}{display}{B.15}
+\begin{equation}
+  -2L(X\phi_{XX}+2\phi_X)/\phi=S_q,
+  \qquad -2L(XU_{XX}+U_X)=S_n,
+  \qquad \Pi_X=\phi^2/\mathsf C^2.
+  \tag{B.15}\label{eq:B.15}
+\end{equation}
+\begin{EESegment}{EE-TGT-P147-005}
+Substitute \eqref{eq:B.12}. This gives
+\end{EESegment}
+\NSFormula{NS-F-P147-014}{display}{none}
+\begin{align*}
+  2(Y\Phi_{YY}+2\Phi_Y)&=-\chi\Phi+\Lambda^{-1}R_1,\\
+  2(Y\mathfrak u_{YY}+\mathfrak u_Y)&=-Z_*/L+\Lambda^{-1}R_2,
+\end{align*}
+\begin{EESegment}{EE-TGT-P147-006}
+where the remainders are exactly
+\end{EESegment}
+\NSFormula{NS-F-P147-015}{display}{none}
+\begin{align*}
+  LR_1={}&[W+h(1-2\eta U)+d\mathfrak u\zeta_*]\Phi+W\mathcal D_X\Phi+H_c\Phi_\eta,\\
+  LR_2={}&[A(1-4\eta U_*)+dU_{*\eta}]\mathfrak u-2A_\eta\Lambda^{-1}\mathfrak u^2
+            +W\mathcal D_X\mathfrak u+H_*\mathfrak u_\eta+d\Lambda^{-1}\mathfrak u\mathfrak u_\eta\\
+          &\quad-4A_\eta\mathfrak p+d\partial_\eta\mathfrak p-2\eta\mathcal D_X\mathfrak p.
+\end{align*}
+\begin{EESegment}{EE-TGT-P147-007}
+The leading angular term has this sign because
+\NSi{NS-F-P147-016}{H_*\widetilde\xi_0/(\Lambda L)=-\chi}. To get the expanded axial remainder,
+subtract the constant value \NSi{NS-F-P147-017}{-Z_*/L} from
+\NSi{NS-F-P147-018}{L^{-1}\{A(1-2\eta U)U+W\mathcal D_XU+H_cU_\eta-4A_\eta\Pi+d\Pi_\eta-2\eta\mathcal D_X\Pi\}},
+and multiply the result by \NSi{NS-F-P147-019}{\Lambda}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P147-008}
+The radial inverse bounds require control of the differentiated products in
+\NSi{NS-F-P147-020}{R_1} and \NSi{NS-F-P147-021}{R_2}. The only products that contain both a
+parameter derivative outside an integral and a logarithmic radial derivative are
+\end{EESegment}
+\NSFormula{NS-F-P147-022}{display}{none}
+\begin{equation*}
+  (\partial_\eta\mathcal A_X(\mathfrak u))\mathcal D_X\Phi,
+  \qquad (\partial_\eta\mathcal A_X(\mathfrak u))\mathcal D_X\mathfrak u.
+\end{equation*}
+\begin{EESegment}{EE-TGT-P147-009}
+The two derivatives fall on different factors. Also,
+\NSi{NS-F-P147-023}{\partial_\eta\mathfrak p=\partial_\eta\mathcal I(g^2\Phi^2)} is bounded by
+Lemma~\ref{lem:B.1}, and \NSi{NS-F-P147-024}{\mathcal D_X\mathfrak p=Yg^2\Phi^2}. It follows that
+the maps \NSi{NS-F-P147-025}{(\Phi,\mathfrak u)\longmapsto\mathcal J_\nu R_i} are bounded and
+locally Lipschitz on fixed balls in \NSi{NS-F-P147-026}{\mathcal B_\rho^2}. The displayed algebra
+bounds give this quantitatively. To estimate the difference of two monomials, replace their factors
+one at a time and subtract at each step.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P147-010}
+These coefficient bounds are uniform in the large parameters. The functions
+\NSi{NS-F-P147-027}{\zeta_*,\chi,U_*,Z_*/L} are fixed and holomorphic on
+\NSi{NS-F-P147-028}{\Omega}. Choose a smaller neighborhood, and take
+\NSi{NS-F-P147-029}{\rho} strictly smaller than its distance from the boundary of
+\NSi{NS-F-P147-030}{\Omega}. After choosing \NSi{NS-F-P147-031}{\Lambda}, require
+\end{EESegment}
+\NSFormula{NS-F-P147-032}{display}{B.16}
+\begin{equation}
+  \mathsf C\geq\sup_{\eta\in\Omega}|\phi_*(\eta)|.
+  \tag{B.16}\label{eq:B.16}
+\end{equation}
+\begin{EESegment}{EE-TGT-P147-011}
+Then \NSi{NS-F-P147-033}{|g|\leq1} on \NSi{NS-F-P147-034}{\Omega}. Cauchy's inequality now
+bounds its derivatives on the smaller neighborhood, uniformly in both
+large parameters. Choosing \NSi{NS-F-P147-035}{\rho} strictly smaller absorbs the factor
+\NSi{NS-F-P147-036}{(\beta+1)^2} in \eqref{eq:B.4}.
+\end{EESegment}
+\NSPage{148}%
+\begin{EESegment}{EE-TGT-P148-001}
+The bound on \NSi{NS-F-P148-001}{g} must hold on a complex neighborhood, because
+\NSi{NS-F-P148-002}{\phi_*} itself can grow exponentially with
+\NSi{NS-F-P148-003}{\Lambda}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P148-002}
+The order-one angular term still has to be inverted without assuming that its coefficient is small.
+Let \NSi{NS-F-P148-004}{M_\chi} be a bound for multiplication by
+\NSi{NS-F-P148-005}{\chi} on \NSi{NS-F-P148-006}{\mathcal B_\rho}, and set
+\NSi{NS-F-P148-007}{T=\mathcal J_2\chi/2}, with multiplication done before integration. If
+\NSi{NS-F-P148-008}{F} has no radial coefficient below degree \NSi{NS-F-P148-009}{b}, then
+\eqref{eq:B.9} gives
+\end{EESegment}
+\NSFormula{NS-F-P148-010}{display}{none}
+\begin{equation*}
+  \lVert\mathcal J_2F\rVert_\rho
+  \leq\frac{80}{(b+1)(b+2)}\lVert F\rVert_\rho,
+  \qquad
+  \lVert T^k\rVert\leq\frac{(40M_\chi)^k}{k!(k+1)!}.
+\end{equation*}
+\begin{EESegment}{EE-TGT-P148-003}
+Multiplication by \NSi{NS-F-P148-011}{\chi} keeps every coefficient below degree
+\NSi{NS-F-P148-012}{b} equal to zero, while \NSi{NS-F-P148-013}{\mathcal J_2} raises the lowest
+possible nonzero degree by one. Parameter differentiation does not create any lower-degree
+coefficients. The estimate therefore includes parameter derivatives of every order in these
+iterated products. The series \NSi{NS-F-P148-014}{\sum_{k\geq0}(-T)^k} converges absolutely in
+operator norm, and it is a two-sided inverse of \NSi{NS-F-P148-015}{1+T}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P148-004}
+The unperturbed solution is
+\NSi{NS-F-P148-016}{\Phi^0=(1+T)^{-1}1=f_0(Y\chi)} and
+\NSi{NS-F-P148-017}{\mathfrak u^0=-YZ_*/(2L)}. Solve the equations with the map
+\end{EESegment}
+\NSFormula{NS-F-P148-018}{display}{none}
+\begin{equation*}
+  (\Phi,\mathfrak u)\longmapsto
+  \left(\Phi^0+\frac{(1+T)^{-1}\mathcal J_2R_1}{2\Lambda},
+        \mathfrak u^0+\frac{\mathcal J_1R_2}{2\Lambda}\right).
+\end{equation*}
+\begin{EESegment}{EE-TGT-P148-005}
+Take a fixed ball around \NSi{NS-F-P148-019}{(\Phi^0,\mathfrak u^0)}. For every sufficiently
+large \NSi{NS-F-P148-020}{\Lambda}, the uniform bounds and Lipschitz constants above make the map
+send this ball into itself, and make it a strict contraction there. Its fixed point is at most
+\NSi{NS-F-P148-021}{C/\Lambda} away from the center in the norm. Choose
+\NSi{NS-F-P148-022}{\mathsf C_0(\Lambda)} large enough to include \eqref{eq:B.16}. This keeps the
+parameters in the order stated in the proposition.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P148-006}
+For \NSi{NS-F-P148-023}{R<20},
+\end{EESegment}
+\NSFormula{NS-F-P148-024}{display}{none}
+\begin{equation*}
+  \sum_{\alpha\geq0}\binom{\alpha+\beta}{\beta}(R/20)^\alpha
+  =(1-R/20)^{-\beta-1}.
+\end{equation*}
+\begin{EESegment}{EE-TGT-P148-007}
+Choose \NSi{NS-F-P148-025}{4.1<R<20}. The coefficient norm then gives a single positive parameter radius that works
+for all the functions involved. Any sufficiently small number below
+\NSi{NS-F-P148-026}{\rho(1-R/20)} can be used for this radius on
+\NSi{NS-F-P148-027}{|Y|\leq R}.
+Cauchy estimates on a smaller \NSi{NS-F-P148-028}{Y} disk give \eqref{eq:B.13}, including every
+fixed order of radial derivative. The derivatives in the original variable satisfy
+\NSi{NS-F-P148-029}{\partial_X^r=\Lambda^r\partial_Y^r}. Because the data are real and the fixed
+point is unique, the solution is real on the real rectangle. Analyticity in
+\NSi{NS-F-P148-030}{X} makes the scalar profiles smooth at the axis. Along with
+\NSi{NS-F-P148-031}{E=\sqrt{2X}\phi/\mathsf C}, Equations~\eqref{eq:4.4} to \eqref{eq:4.5}
+then give a smooth Cartesian field. The lower bound \eqref{eq:B.11} gives
+\NSi{NS-F-P148-032}{\Phi>0} when \NSi{NS-F-P148-033}{\Lambda} is large, and hence
+\NSi{NS-F-P148-034}{\phi>0}. Division by \NSi{NS-F-P148-035}{\phi} in the first equation of
+\eqref{eq:B.15} is therefore valid throughout the real rectangle.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P148-008}
+\subsection{Positive sources and the alternative at the outer endpoint.}\label{sec:B.4}
+The analytic solution must satisfy the specific bounds needed to start its continuation toward
+the outer profile. The approximation \eqref{eq:B.13} gives both a positive angular source
+\NSi{NS-F-P148-036}{S_q} and the strict shear inequality \eqref{eq:B.19} at the end of the inner
+interval. The same estimates will bound the normalized profiles and their parameter derivatives for
+the joining construction in Proposition~\ref{prop:B.3} and Lemma~\ref{lem:B.4}.
+\end{EESegment}
+
+\begin{proposition}\label{prop:B.3}
+\begin{EESegment}{EE-TGT-P148-009}
+Increase \NSi{NS-F-P148-037}{\Lambda}, and then increase
+\NSi{NS-F-P148-038}{\mathsf C_0(\Lambda)}, if needed. The normalized azimuthal profile satisfies
+\NSi{NS-F-P148-039}{\Phi\geq c_0>0} on \NSi{NS-F-P148-040}{[0,4.1]\times[-1,1]}. On the same
+rectangle, its angular source satisfies
+\end{EESegment}
+\NSFormula{NS-F-P148-041}{display}{B.17}
+\begin{equation}
+  S_q\geq2.5+.95\Lambda L\chi.
+  \tag{B.17}\label{eq:B.17}
+\end{equation}
+\begin{EESegment}{EE-TGT-P148-010}
+Let \NSi{NS-F-P148-042}{p_1=p_{s,1}=XQ_s/L},
+\NSi{NS-F-P148-043}{p_2=p_{s,2}=XN_s/(LE)}, and \NSi{NS-F-P148-044}{n_s=N_s/L}. On
+\NSi{NS-F-P148-045}{0<X\leq4.1/\Lambda},
+\end{EESegment}
+\NSFormula{NS-F-P148-046}{display}{B.18}
+\begin{equation}
+  p_1/X\geq c_1>0,
+  \qquad 0<p_1\leq C_1,
+  \qquad n_s=-2U_X=Z_*/L+O(\Lambda^{-1}).
+  \tag{B.18}\label{eq:B.18}
+\end{equation}
+\NSPage{149}%
+\begin{EESegment}{EE-TGT-P149-001}
+At \NSi{NS-F-P149-001}{X_0=4/\Lambda}, there is a fixed
+\NSi{NS-F-P149-002}{c_{\mathrm{ex}}>0} such that
+\end{EESegment}
+\NSFormula{NS-F-P149-003}{display}{B.19}
+\begin{equation}
+  p_1+\frac{p_2^2}{p_1}>2+c_{\mathrm{ex}}.
+  \tag{B.19}\label{eq:B.19}
+\end{equation}
+\begin{EESegment}{EE-TGT-P149-002}
+The quantities \NSi{NS-F-P149-004}{\Phi,\log\Phi,\mathfrak u,p_1}, and
+\NSi{NS-F-P149-005}{n_s} have bounded derivatives at every fixed parameter order. Those bounds are
+uniform in all later choices \NSi{NS-F-P149-006}{\mathsf C\geq\mathsf C_0(\Lambda)}. Constants for
+derivatives in the original radial variable \NSi{NS-F-P149-007}{X} may depend on
+\NSi{NS-F-P149-008}{\Lambda}.
+\end{EESegment}
+\end{proposition}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P149-003}
+The scalar bound \eqref{eq:B.11} and the approximation \eqref{eq:B.13} give
+\NSi{NS-F-P149-009}{\Phi\geq c_0>0} when \NSi{NS-F-P149-010}{\Lambda} is large. On a smaller
+common parameter neighborhood, \NSi{NS-F-P149-011}{\Phi} is also nonzero. This follows from
+compactness and the uniform bound on its first derivative. It follows in turn that all parameter
+derivatives of \NSi{NS-F-P149-012}{\log\Phi} are uniformly bounded.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P149-004}
+The source bound uses the logarithmic derivatives of \NSi{NS-F-P149-013}{\Phi}. Since
+\NSi{NS-F-P149-014}{|H_*\chi'|\leq2\lVert H_*'\rVert_\infty\chi} and
+\NSi{NS-F-P149-015}{f_0} stays away from zero,
+\NSi{NS-F-P149-016}{\mathcal D_X\log f_0(Y\chi)=O(\chi)} and
+\NSi{NS-F-P149-017}{H_*\partial_\eta\log f_0(Y\chi)=O(\chi)}. The approximation and positivity
+then give the following bound for the full solution.
+\end{EESegment}
+\NSFormula{NS-F-P149-018}{display}{B.20}
+\begin{equation}
+  |\mathcal D_X\log\Phi|+|H_*\partial_\eta\log\Phi|\leq C\chi+C/\Lambda.
+  \tag{B.20}\label{eq:B.20}
+\end{equation}
+\begin{EESegment}{EE-TGT-P149-005}
+Combine this with \eqref{eq:B.14} and \eqref{eq:B.3}. The result is
+\end{EESegment}
+\NSFormula{NS-F-P149-019}{display}{B.21}
+\begin{align}
+  -H_c\widetilde\xi_0&=\Lambda L\chi+O_{\sigma_*}(\sqrt\chi),\notag\\
+  -H_c(\log\phi)_\eta
+    &\geq\Lambda L\chi-C\chi-C_{\sigma_*}\sqrt\chi-C/\Lambda
+      \geq.95\Lambda L\chi-C_{\sigma_*}/\Lambda.
+  \tag{B.21}\label{eq:B.21}
+\end{align}
+\begin{EESegment}{EE-TGT-P149-006}
+For the first error, use
+\NSi{NS-F-P149-020}{|H_*|/(H_*^2+\sigma_*^2)\leq\sigma_*^{-1}\sqrt\chi}. For the second
+inequality, increase \NSi{NS-F-P149-021}{\Lambda} until the term
+\NSi{NS-F-P149-022}{C\chi} is absorbed. Then apply Young's inequality to the square-root term,
+using a total of \NSi{NS-F-P149-023}{.05\Lambda L\chi}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P149-007}
+For the source itself, use \NSi{NS-F-P149-024}{l=1+\mathcal D_X\log\Phi} and the formula
+\NSi{NS-F-P149-025}{S_q=-Wl-h(1-2\eta U)-H_c(\log E)_\eta}. The conditions
+\NSi{NS-F-P149-026}{j_0\leq.05} and \eqref{eq:B.13} show, after increasing
+\NSi{NS-F-P149-027}{\Lambda}, that \NSi{NS-F-P149-028}{|U|\leq4.1}. Hence
+\NSi{NS-F-P149-029}{|h(1-2\eta U)|\leq10h}. The bounds above and
+\NSi{NS-F-P149-030}{W-W_*=O(\Lambda^{-1})} now give
+\end{EESegment}
+\NSFormula{NS-F-P149-031}{display}{none}
+\begin{equation*}
+  S_q\geq\Lambda L\chi-W_*-10h-C\chi-C_{\sigma_*}\sqrt\chi-C/\Lambda.
+\end{equation*}
+\begin{EESegment}{EE-TGT-P149-008}
+Because \NSi{NS-F-P149-032}{h\leq10^{-2}} and \NSi{NS-F-P149-033}{-W_*>2.8}, absorbing the terms in the same way
+proves \eqref{eq:B.17} once \NSi{NS-F-P149-034}{\Lambda} is large. In particular, the
+argument never divides by \NSi{NS-F-P149-035}{\chi} near a zero of
+\NSi{NS-F-P149-036}{H_*}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P149-009}
+The function \NSi{NS-F-P149-037}{Q_s} extends smoothly to \NSi{NS-F-P149-038}{X=0}, and it has
+the positive integral formula
+\end{EESegment}
+\NSFormula{NS-F-P149-039}{display}{none}
+\begin{equation*}
+  Q_s(X,\eta)
+  =\frac{\displaystyle\int_0^X X'\Phi(\Lambda X',\eta)S_q(X',\eta)\,dX'}
+         {X^2\Phi(\Lambda X,\eta)}.
+\end{equation*}
+\begin{EESegment}{EE-TGT-P149-010}
+Uniform upper and lower bounds for \NSi{NS-F-P149-040}{\Phi}, together with \eqref{eq:B.17}, give
+\NSi{NS-F-P149-041}{p_1/X\geq c_1}. Integrate the equations with zero leading residual stress from
+\NSi{NS-F-P149-042}{X=0}, and use regularity at the axis. This gives
+\end{EESegment}
+\NSFormula{NS-F-P149-043}{display}{none}
+\begin{equation*}
+  p_1=a=-2Y\Phi_Y/\Phi,
+  \qquad n_s=-2\mathfrak u_Y.
+\end{equation*}
+\begin{EESegment}{EE-TGT-P149-011}
+The upper bound for \NSi{NS-F-P149-044}{p_1} and the approximation for
+\NSi{NS-F-P149-045}{n_s} now follow from \eqref{eq:B.13}. The same identities give the stated
+fixed bounds for the \NSi{NS-F-P149-046}{\eta}-derivatives.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P149-012}
+It remains to prove the endpoint inequality. The two parameter regions chosen in \eqref{eq:B.2}
+let either the azimuthal term or the axial term do the job. At \NSi{NS-F-P149-047}{Y=4}, first take
+the case \NSi{NS-F-P149-048}{\chi>.99}. Then \NSi{NS-F-P149-049}{1.98<t=2\chi\leq2}. The
+alternating series for \NSi{NS-F-P149-050}{f_0(z)+zf_0'(z)} gives
+\end{EESegment}
+\NSFormula{NS-F-P149-051}{display}{none}
+\begin{equation*}
+  f_0(z)+zf_0'(z)\leq1-t+\frac{t^2}{4}-\frac{t^3}{36}+\frac{t^4}{576}<-.18.
+\end{equation*}
+\begin{EESegment}{EE-TGT-P149-013}
+This polynomial decreases on \NSi{NS-F-P149-052}{[1.98,2]}. At
+\NSi{NS-F-P149-053}{t=1.98}, its value is
+\NSi{NS-F-P149-054}{-75535511/400000000<-.188}. The decreasing alternating remainder has the
+needed negative sign. By \eqref{eq:B.11},
+\end{EESegment}
+\NSPage{150}%
+\begin{EESegment}{EE-TGT-P150-001}
+\NSi{NS-F-P150-001}{-2zf_0'/f_0=2-2(f_0+zf_0')/f_0>2.36}. Equation \eqref{eq:B.13} then gives
+\NSi{NS-F-P150-002}{p_1>2.3} at the outer endpoint when
+\NSi{NS-F-P150-003}{\Lambda} is large.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P150-002}
+In the other region, \NSi{NS-F-P150-004}{\chi\leq.99}, equation \eqref{eq:B.2} gives
+\NSi{NS-F-P150-005}{|Z_*|>\delta_*}. Then \eqref{eq:B.18} gives
+\NSi{NS-F-P150-006}{|n_s|\geq\delta_*/2} after increasing
+\NSi{NS-F-P150-007}{\Lambda}. At the outer endpoint,
+\end{EESegment}
+\NSFormula{NS-F-P150-008}{display}{none}
+\begin{equation*}
+  |p_2|=\mathsf C\sqrt{2/\Lambda}\frac{|n_s|}{\phi_*\Phi}.
+\end{equation*}
+\begin{EESegment}{EE-TGT-P150-003}
+Now \NSi{NS-F-P150-009}{\Lambda} is fixed. The denominator has a finite upper bound that is
+uniform for all later large choices of \NSi{NS-F-P150-010}{\mathsf C}, while
+\NSi{NS-F-P150-011}{p_1\leq C_1}. Increase \NSi{NS-F-P150-012}{\mathsf C_0(\Lambda)} until
+\NSi{NS-F-P150-013}{p_2^2/p_1>2.3} throughout this region. Both cases give \eqref{eq:B.19}. One
+possible choice is \NSi{NS-F-P150-014}{c_{\mathrm{ex}}=.2}.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P150-004}
+\subsection{A reference continuation with
+\NSi{NS-F-P150-015}{p_{s,1}+p_{s,2}^2/p_{s,1}>2}.}\label{sec:B.5}
+The next step continues the analytic axis profile from Proposition~\ref{prop:B.2} toward the outer
+profile from Section~\ref{sec:A}. This continuation has to introduce a nonzero leading residual
+stress \NSi{NS-F-P150-016}{\mathcal T_0} that satisfies the cone conditions, while keeping the
+pressure datum \NSi{NS-F-P150-017}{\Pi_0} from Lemma~\ref{lem:A.5}. Start by constructing a
+reference continuation \NSi{NS-F-P150-018}{\phi_{\mathrm r},U_{\mathrm r}}. The logarithmic radial
+derivatives of \NSi{NS-F-P150-019}{\phi} and \NSi{NS-F-P150-020}{U} are gradually taken to zero,
+as specified in \eqref{eq:B.22}. Lemma~\ref{lem:B.4} bounds the integrated residual coefficients
+of this reference continuation. Those bounds will control the later change in shear in
+Proposition~\ref{prop:B.5}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P150-005}
+As in Proposition~\ref{prop:B.3}, \NSi{NS-F-P150-021}{p_1,p_2} are the components of
+\NSi{NS-F-P150-022}{p_s}, and \NSi{NS-F-P150-023}{n_s=N_s/L}. Recall that
+\NSi{NS-F-P150-024}{\mathcal D_X=X\partial_X}. In a logarithmic radial coordinate, this is the same
+as \NSi{NS-F-P150-025}{\partial_y}. A bound in \NSi{NS-F-P150-026}{C_\eta^k} concerns only
+parameter derivatives, uniformly for \NSi{NS-F-P150-027}{-1\leq\eta\leq1}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P150-006}
+Set \NSi{NS-F-P150-028}{X_0=4/\Lambda}, \NSi{NS-F-P150-029}{X_{\mathrm b}=100}, and
+\NSi{NS-F-P150-030}{X_i=110}. Choose a fixed \NSi{NS-F-P150-031}{\bar t>0} such that
+\NSi{NS-F-P150-032}{4e^{2\bar t}<4.1}. Use the smooth step \NSi{NS-F-P150-033}{\sigma} from
+\eqref{eq:A.5}. For \NSi{NS-F-P150-034}{0<t_1\leq\bar t}, set
+\NSi{NS-F-P150-035}{y=\log(X/X_0)}. The reference profile agrees with the analytic axis profile
+when \NSi{NS-F-P150-036}{y\leq t_1}. When \NSi{NS-F-P150-037}{t_1<y<2t_1}, prescribe
+\end{EESegment}
+\NSFormula{NS-F-P150-038}{display}{B.22}
+\begin{align}
+  \partial_y\log\phi_{\mathrm r}
+    &=[1-\sigma((y-t_1)/t_1)]\mathcal D_X\log\phi_{\mathrm{nat}}(X,\eta),\notag\\
+  \partial_yU_{\mathrm r}
+    &=[1-\sigma((y-t_1)/t_1)]\mathcal D_XU_{\mathrm{nat}}(X,\eta),
+  \tag{B.22}\label{eq:B.22}
+\end{align}
+\begin{EESegment}{EE-TGT-P150-007}
+and then keep both fields constant in the logarithmic radial coordinate. Compute the reference
+pressure and the functions \NSi{NS-F-P150-039}{Q_s,N_s} by integrating radially from the axis,
+using the datum from Lemma~\ref{lem:A.5}.
+\end{EESegment}
+
+\begin{lemma}\label{lem:B.4}
+\begin{EESegment}{EE-TGT-P150-008}
+After fixing the parameters of the outer and axis profiles, first take
+\NSi{NS-F-P150-040}{\Lambda} large enough, then take \NSi{NS-F-P150-041}{\mathsf C} large enough,
+and finally take \NSi{NS-F-P150-042}{t_1} small enough. The following bounds then hold on
+\NSi{NS-F-P150-043}{[X_0,X_i]\times[-1,1]}.
+\end{EESegment}
+\NSFormula{NS-F-P150-044}{display}{B.23}
+\begin{equation}
+  S_{q,\mathrm r}\geq.94L\Lambda\chi+2.4,
+  \qquad l_{\mathrm r}\leq1,
+  \qquad v_{\mathrm r}:=p_{1,\mathrm r}+\frac{p_{2,\mathrm r}^2}{p_{1,\mathrm r}}>2+c.
+  \tag{B.23}\label{eq:B.23}
+\end{equation}
+\begin{EESegment}{EE-TGT-P150-009}
+Here \NSi{NS-F-P150-045}{p_{1,\mathrm r}>0}, and
+\NSi{NS-F-P150-046}{p_{1,\mathrm r}>3} whenever
+\NSi{NS-F-P150-047}{X_{\mathrm b}\leq X\leq X_i}. For each fixed
+\NSi{NS-F-P150-048}{k}, the parameter norms of \NSi{NS-F-P150-049}{\mathsf C E_{\mathrm r}}, its
+reciprocal, \NSi{NS-F-P150-050}{p_{1,\mathrm r}}, and
+\NSi{NS-F-P150-051}{n_{s,\mathrm r}} on \NSi{NS-F-P150-052}{[X_0,X_i]} are bounded independently
+of all sufficiently large \NSi{NS-F-P150-053}{\mathsf C} and all
+\NSi{NS-F-P150-054}{0<t_1\leq\bar t}.
+\end{EESegment}
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P150-010}
+Propositions~\ref{prop:B.2} and \ref{prop:B.3} show that the analytic axis profile has a positive
+source and satisfies a strict inequality at its outer endpoint. Use the gradient bounds
+\eqref{eq:B.20} and \eqref{eq:B.21}, together with the source bound \eqref{eq:B.17}, to carry these
+properties through the cutoff. Integrating \eqref{eq:B.22} shows that
+\NSi{NS-F-P150-055}{U_{\mathrm r}} and its radial average stay within
+\NSi{NS-F-P150-056}{O(\Lambda^{-1})+o_{t_1}(1)} of \NSi{NS-F-P150-057}{U_*} in every required
+parameter norm. This uses the fact that radial averaging is a contraction.
+\end{EESegment}
+\NSFormula{NS-F-P150-058}{display}{none}
+\begin{equation*}
+  \sup_{0<X\leq X_i}\lVert\mathcal A_X(U_{\mathrm r})-U_*\rVert_{C_\eta^k}
+  \leq\sup_{0\leq X\leq X_i}\lVert U_{\mathrm r}-U_*\rVert_{C_\eta^k}.
+\end{equation*}
+\begin{EESegment}{EE-TGT-P150-011}
+This estimate does not depend on the length of the interval where the reference profile is constant.
+Integrating the same slopes also bounds
+\NSi{NS-F-P150-059}{\log\phi_{\mathrm r}-\log\phi_*} in every parameter norm,
+\end{EESegment}

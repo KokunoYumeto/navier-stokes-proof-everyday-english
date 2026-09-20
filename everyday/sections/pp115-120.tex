@@ -1,0 +1,627 @@
+\NSPage{115}%
+\begin{EESegment}{EE-TGT-P115-001}
+For the fixed background and initialization, all derivatives through order
+\NSi{NS-F-P115-001}{m} are bounded by
+\NSi{NS-F-P115-002}{C_mq^{-K_m}(1+|\log q|)^{P_m}}. Finally, \eqref{eq:9.18} is exactly
+\eqref{eq:5.33} for the fixed differential polynomial
+\end{EESegment}
+\NSFormula{NS-F-P115-003}{display}{none}
+\[
+\mathcal F(u,p)=\mathscr R(u,p)=\partial_tu+(u\mathbin{\cdot}\nabla)u-\Delta u+\nabla p,
+\]
+\begin{EESegment}{EE-TGT-P115-002}
+with \NSi{NS-F-P115-004}{\rho_j=h\sigma_j\to\infty}. The estimate \eqref{eq:9.18} concerns
+the actual residual at each point after the auxiliary variables have been set equal to
+\NSi{NS-F-P115-005}{Y(r,t)}. At any finite stage, the flat term is bounded uniformly over the
+infinitely many dyadic labels. Cutting off the finite initialization adds errors only away from
+\NSi{NS-F-P115-006}{q=0}, and those errors satisfy the same fixed-stage flatness condition. The
+residual estimates hold uniformly over the whole local domain. To see this, choose one fixed,
+bounded interval in \NSi{NS-F-P115-007}{X} that contains every slow support and every annular
+correction support. The estimates above and \eqref{eq:5.41} apply on that interval. Outside it,
+every finite state is exactly the exterior heat field from \eqref{eq:4.29}, together with the
+centrifugal pressure, so its residual is zero there.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P115-003}
+\noindent\textbf{Step 2: Sum the fields and check their Cartesian regularity.}
+Lemma~\ref{lem:5.4} now gives potentials whose locally finite sum defines a velocity with
+\NSi{NS-F-P115-008}{\operatorname{div}u_{\mathrm{loc}}=0}, and
+\end{EESegment}
+\NSFormula{NS-F-P115-009}{display}{9.20}
+\begin{equation}
+\forall m,N\qquad |\mathscr R(u_{\mathrm{loc}},p_{\mathrm{loc}})|_m=O(q^N)
+\qquad(q\downarrow0).
+\tag{9.20}\label{eq:9.20}
+\end{equation}
+\begin{EESegment}{EE-TGT-P115-004}
+The tail estimate compares the field just built with one fixed finite state and that state's flat
+remainder. The flat residuals separated at the finite stages are controlled through this comparison,
+not added together. To identify the potentials and pressure of the summed fields, let
+\NSi{NS-F-P115-010}{\mathcal A_0,\mathcal B_0e_\theta,p_0} be the representatives of
+\NSi{NS-F-P115-011}{U_0}. These representatives are the realized slow base from
+\eqref{eq:5.27}, together with the finite initialization and its pressure. Define
+\end{EESegment}
+\NSFormula{NS-F-P115-012}{display}{9.21}
+\begin{equation}
+\begin{aligned}
+\mathcal A&=\mathcal A_0+\sum_{j\geq1}\chi(a_jq)A_j,\\
+\mathcal Be_\theta&=\mathcal B_0e_\theta+\sum_{j\geq1}\chi(a_jq)B_j,\\
+p_{\mathrm{loc}}&=p_0+\sum_{j\geq1}\chi(a_jq)p_j,
+&u_{\mathrm{loc}}&=\operatorname{curl}\mathcal A+\mathcal Be_\theta.
+\end{aligned}
+\tag{9.21}\label{eq:9.21}
+\end{equation}
+\begin{EESegment}{EE-TGT-P115-005}
+These formulas give the required vector potential, azimuthal field, and pressure. At the axis, the
+base Stokes streamfunctions are \NSi{NS-F-P115-013}{r^2} times a smooth function of
+\NSi{NS-F-P115-014}{(r^2,z,t)}, so the base vector potential is smooth in Cartesian coordinates.
+The base angular field is \NSi{NS-F-P115-015}{r} times such a scalar, times
+\NSi{NS-F-P115-016}{e_\theta}. For each \NSi{NS-F-P115-017}{t<1}, every annular representative
+vanishes on a neighborhood of the axis. Equation~\eqref{eq:9.21} therefore proves
+Theorem~\ref{thm:3.1}\textup{(i)}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P115-006}
+\noindent\textbf{Step 3: Check one-sided regularity away from the singular point.} The endpoint
+regularity still has to be checked away from \NSi{NS-F-P115-018}{q=0}. Fix a compact spatial set
+and numbers \NSi{NS-F-P115-019}{0<c<c'<q_*}. Only finitely many terms in the expansion in powers
+of \NSi{NS-F-P115-020}{q^{2h}} have nonzero cutoff factors on a neighborhood of
+\NSi{NS-F-P115-021}{c\leq q\leq c'}, and only finitely many correction stages
+do, because both cutoff sequences tend to infinity. On the chosen compact set there are also only
+finitely many dyadic bands and slow labels. By Theorem~\ref{thm:4.6} and
+Proposition~\ref{prop:5.5}, the base profiles and their Stokes streamfunctions have bounds for
+derivatives of every fixed order on the closed parameter range
+\NSi{NS-F-P115-022}{-1\leq\eta\leq1}. The geometry chooses its labels, representatives, rounded
+frequencies, and enlarged local torus rectangles from the closed range
+\NSi{NS-F-P115-023}{\tau\geq0}, and it keeps those discrete choices fixed as
+\NSi{NS-F-P115-024}{\tau\to0}. The pulse inverse follows a path on which the physical slow
+variables stay fixed and \NSi{NS-F-P115-025}{\tau\geq0}. Differentiate its fixed linear ODE to
+get the bounds at every derivative order. Combine these bounds with the quotient bound
+\eqref{eq:7.33}, which uses the fixed positive primary amplitudes, and with the radial and temporal
+mean maps. The result is a finite one-sided bound for every fixed derivative of each wave
+potential, mean
+\NSPage{116}%
+vector potential, azimuthal mean component, and pressure whose cutoff is nonzero on this
+neighborhood. Their smooth extensions by zero cover every boundary of their supports.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P116-001}
+The denominator in the coordinate conversion is
+\NSi{NS-F-P116-001}{L\geq1-2h>0}, so the conversion keeps all these fixed-order derivative bounds
+on \NSi{NS-F-P116-002}{q\geq c}. On the annular supports,
+\NSi{NS-F-P116-003}{r} stays away from zero. At the axis, use the Cartesian factors described
+above. The finite sum then has uniformly bounded Cartesian space--time derivatives of every order
+all the way to \NSi{NS-F-P116-004}{\tau=0}, including inside the active shell. Bound one more
+time derivative and apply the fundamental theorem of calculus. This gives a uniform one-sided
+limit for every derivative. Applying the same theorem on compact spatial sets shows that the limits
+agree with spatial differentiation. Integrating in time shows that the limits of consecutive time
+derivatives agree with one another. This proves Theorem~\ref{thm:3.1}\textup{(ii)} for
+\NSi{NS-F-P116-005}{\mathcal A,\mathcal Be_\theta,p_{\mathrm{loc}}} themselves.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P116-002}
+\noindent\textbf{Step 4: Check the exterior heat field and the flat residual.} Every annular wave
+or mean correction potential, every azimuthal mean component, and every pressure correction
+vanishes beyond \NSi{NS-F-P116-006}{X_b}. The leading profile and every coefficient in the
+expansion in powers of \NSi{NS-F-P116-007}{q^{2h}} have zero total axial moment. Their Stokes
+streamfunctions therefore vanish in the same exterior region. It follows that, for one fixed
+\NSi{NS-F-P116-008}{X_{\mathrm{ext}}} beyond all the slow supports,
+\NSi{NS-F-P116-009}{\mathcal A=0} and \NSi{NS-F-P116-010}{\mathcal B=K}. The leading-profile
+pressure is normalized to vanish at radial infinity, and all positive-order pressure corrections
+have compact support. The pressure there is therefore exactly
+\NSi{NS-F-P116-011}{-\int_r^\infty K(\rho,\tau)^2\,d\rho/\rho}. Using \eqref{eq:4.29}, define
+\end{EESegment}
+\NSFormula{NS-F-P116-012}{display}{none}
+\[
+\mathcal H_{\mathrm{ext}}(s)=2^Ac_\infty\mathcal H(4s),
+\qquad K(r,\tau)=r^{-1-2h}\mathcal H_{\mathrm{ext}}(\tau/r^2).
+\]
+\begin{EESegment}{EE-TGT-P116-003}
+This is \eqref{eq:3.5}. For every integer \NSi{NS-F-P116-013}{m\geq0}, the integral formula
+\eqref{eq:A.34} gives
+\end{EESegment}
+\NSFormula{NS-F-P116-014}{display}{none}
+\[
+\sup_{s\geq0}|\mathcal H_{\mathrm{ext}}^{(m)}(s)|
+\leq2^Ac_\infty4^m(h)_m(1+h)_m<\infty,
+\]
+\begin{EESegment}{EE-TGT-P116-004}
+where \NSi{NS-F-P116-015}{(b)_m} is the rising factorial, the product of m factors starting
+at b and increasing by one each time, and
+\NSi{NS-F-P116-016}{(b)_0=1}. The bound follows because the factor
+\NSi{NS-F-P116-017}{(1+Zv)^{-h-m}} in that integral is at most one whenever
+\NSi{NS-F-P116-018}{Z,v\geq0}. The required derivative bounds therefore hold on the whole
+nonnegative half-line. Lemma~\ref{lem:A.6} says that \NSi{NS-F-P116-019}{K} solves the radial
+heat equation, and its centrifugal pressure makes the Navier--Stokes residual exactly zero in the
+exterior. Combine this with the estimates for the background residual on compact sets of profile
+variables in \eqref{eq:5.41} and \eqref{eq:9.20}. This proves all of
+Theorem~\ref{thm:3.1}\textup{(iii)}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P116-005}
+\noindent\textbf{Step 5: Check the growth of the inner velocity.} Finally, choose any fixed
+\NSi{NS-F-P116-020}{X_{\mathrm{in}}\in(0,X_a)} at which the positive leading azimuthal velocity
+is \NSi{NS-F-P116-021}{e_0=E_0(X_{\mathrm{in}},0)>0}. Every annular correction vanishes there.
+The realized expansion in powers of \NSi{NS-F-P116-022}{q^{2h}} in \eqref{eq:5.1} has its
+leading value plus a remainder \NSi{NS-F-P116-023}{O(q^{2h})} after the velocity factor
+\NSi{NS-F-P116-024}{q^{-A}} is removed, at the fixed point
+\NSi{NS-F-P116-025}{(X,\eta)=(X_{\mathrm{in}},0)} in profile coordinates. At
+\NSi{NS-F-P116-026}{z=0}, the coordinates satisfy
+\NSi{NS-F-P116-027}{\eta=0} and \NSi{NS-F-P116-028}{q=\tau}, so
+\end{EESegment}
+\NSFormula{NS-F-P116-029}{display}{none}
+\[
+u_{\theta,\mathrm{loc}}(\sqrt{2X_{\mathrm{in}}\tau},0,0,1-\tau)
+=\tau^{-A}\bigl(e_0+O(\tau^{2h})\bigr).
+\]
+\begin{EESegment}{EE-TGT-P116-006}
+This is Theorem~\ref{thm:3.1}\textup{(iv)}, and it completes the proof.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P116-007}
+\section{A compactly supported force and breakdown on all of space}\label{sec:10}
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P116-008}
+This section turns the fields from Theorem~\ref{thm:3.1} into the solution and force on all of
+space in Theorem~\ref{thm:1.1}. Write the local fields as
+\end{EESegment}
+\NSFormula{NS-F-P116-030}{display}{none}
+\[
+u^{\mathrm{loc}}=\operatorname{curl}\mathcal A+\mathcal Be_\theta,
+\qquad p^{\mathrm{loc}}.
+\]
+\begin{EESegment}{EE-TGT-P116-009}
+Here \NSi{NS-F-P116-031}{\mathcal A} and \NSi{NS-F-P116-032}{\mathcal B} are the representatives
+built in \eqref{eq:9.21}, and \NSi{NS-F-P116-033}{\mathcal B} does not depend on
+\NSi{NS-F-P116-034}{\theta}. Start with viscosity one. The local velocity has the growth in
+\eqref{eq:3.6} required by Theorem~\ref{thm:1.1}. What remains is to give it zero initial data and
+compact spatial support while making its momentum residual agree, before time one, with a force in
+\NSPage{117}%
+\NSi{NS-F-P117-001}{C_c^\infty(\mathbb R^3\times(0,\infty);\mathbb R^3)}. This is done in
+Proposition~\ref{prop:10.1} and Lemma~\ref{lem:10.3}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P117-001}
+Multiply the vector potential, the azimuthal coefficient, and the pressure by cutoffs that equal one
+near \NSi{NS-F-P117-002}{(0,1)}. Lemma~\ref{lem:10.2} then proves that every derivative of the
+new residual has a uniform limit as \NSi{NS-F-P117-003}{t\uparrow1}, and
+Lemma~\ref{lem:10.3} builds a force for \NSi{NS-F-P117-004}{t>1} whose derivatives attain all
+those limits. Before time one, the equation gives a uniform energy bound in
+Lemma~\ref{lem:10.4}. Lemma~\ref{lem:10.5} then compares this field with any smooth solution of
+bounded kinetic energy. That comparison transfers the growth of the local velocity to the smooth
+solution and gives the contradiction needed for Theorem~\ref{thm:1.1}. Rescaling gives every
+positive viscosity and also gives the periodic construction in Corollary~\ref{cor:10.6}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P117-002}
+\subsection{Keeping the construction inside the local domain.}\label{sec:10.1}
+\end{EESegment}
+\begin{EESegment}{EE-TGT-P117-003}
+This subsection places the velocity and pressure inside the domain from
+Theorem~\ref{thm:3.1}. First recall why the chosen vector potential
+\NSi{NS-F-P117-005}{\mathcal A} is smooth at the axis, as stated in
+Theorem~\ref{thm:3.1}\textup{(i)}, and why it vanishes in the heat exterior from
+\eqref{eq:3.5}. Because of these two facts, its curl can be taken after the localization, and the
+force at time one can be estimated in Lemma~\ref{lem:10.2}. For the background coefficients
+\NSi{NS-F-P117-006}{U_n} from \eqref{eq:5.1}, the Stokes streamfunctions and their sum are
+\end{EESegment}
+\NSFormula{NS-F-P117-007}{display}{10.1}
+\begin{equation}
+\begin{gathered}
+\mathcal S_n=q^{1-A+2nh}\int_0^XU_n(X',\eta)\,dX',
+\qquad \mathcal S=\mathcal S_0+\sum_{n\geq1}\chi(c_nq)\mathcal S_n,\\
+\mathcal A_{\mathrm{base}}=\frac{\mathcal S}r e_\theta.
+\end{gathered}
+\tag{10.1}\label{eq:10.1}
+\end{equation}
+\begin{EESegment}{EE-TGT-P117-004}
+The cutoffs \NSi{NS-F-P117-008}{\chi(c_nq)} are the ones used in
+Proposition~\ref{prop:5.5}. Equations~\eqref{eq:4.28} and \eqref{eq:5.10} give
+\NSi{NS-F-P117-009}{\int_0^\infty U_n(X,\eta)\,dX=0} for every
+\NSi{NS-F-P117-010}{n\geq0}. Each radial integral in \eqref{eq:10.1} is therefore zero beyond
+the common support of the axial coefficients. Near the axis,
+\NSi{NS-F-P117-011}{\mathcal S=r^2a(r^2,z,t)} for a smooth scalar
+\NSi{NS-F-P117-012}{a}, so
+\end{EESegment}
+\NSFormula{NS-F-P117-013}{display}{none}
+\[
+(\mathcal S/r)e_\theta=a(r^2,z,t)(-x_2,x_1,0).
+\]
+\begin{EESegment}{EE-TGT-P117-005}
+This is the smooth Cartesian form of the background potential.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P117-006}
+Every wave velocity is the curl of its supported physical potential. For a prescribed axial mean
+increment \NSi{NS-F-P117-014}{\gamma_{d,\mathrm{phys}}}, the mean construction uses the
+azimuthal potential coefficient
+\end{EESegment}
+\NSFormula{NS-F-P117-015}{display}{none}
+\[
+\Psi=r^{-1}\mathcal I_c(r\gamma_{d,\mathrm{phys}}),
+\qquad \mathcal I_cg=\mathcal Ig-\chi_m\mathcal Jg,
+\]
+\begin{EESegment}{EE-TGT-P117-007}
+where the radial operations are defined in \eqref{eq:8.4}. Beyond both the source and the region
+where \NSi{NS-F-P117-016}{\chi_m} changes, the identities
+\NSi{NS-F-P117-017}{\chi_m=1} and \NSi{NS-F-P117-018}{\mathcal Ig=\mathcal Jg} hold, so
+\NSi{NS-F-P117-019}{\Psi=0}. Together with their summation cutoffs, these wave and mean
+potentials are the terms added to \NSi{NS-F-P117-020}{\mathcal A_{\mathrm{base}}} in
+\eqref{eq:9.21}. The direct azimuthal mean increments are part of
+\NSi{NS-F-P117-021}{\mathcal B}. Setting the auxiliary variables equal to
+\NSi{NS-F-P117-022}{Y(r,t)} keeps the fields independent of
+\NSi{NS-F-P117-023}{\theta}. Every annular correction vanishes near the axis for each fixed
+\NSi{NS-F-P117-024}{t<1}. In particular, for the fixed
+\NSi{NS-F-P117-025}{X_{\mathrm{ext}}} from Theorem~\ref{thm:3.1}, the chosen potential satisfies
+\NSi{NS-F-P117-026}{\mathcal A=0} on \NSi{NS-F-P117-027}{X\geq X_{\mathrm{ext}}}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P117-008}
+Now choose cutoffs supported inside the local domain
+\NSi{NS-F-P117-028}{\Omega_* = \{\tau>0,\ q<q_*\}}, where
+\NSi{NS-F-P117-029}{\tau=1-t}. Apply the spatial cutoff before taking the curl, which keeps the
+velocity incompressible. The time cutoff gives zero initial data.
+\end{EESegment}
+
+\begin{proposition}\label{prop:10.1}
+\begin{EESegment}{EE-TGT-P117-009}
+There are a compact set \NSi{NS-F-P117-030}{\mathcal K\subset\mathbb R^3}, a smooth vector field
+\NSi{NS-F-P117-031}{u}, and a smooth scalar field \NSi{NS-F-P117-032}{p} on
+\NSi{NS-F-P117-033}{\mathbb R^3\times[0,1)}. Their supports satisfy
+\NSi{NS-F-P117-034}{\supp u(\mathord\cdot,t)\cup\supp p(\mathord\cdot,t)\subset\mathcal K}
+for every \NSi{NS-F-P117-035}{0\leq t<1},
+and they also satisfy
+\end{EESegment}
+\NSFormula{NS-F-P117-036}{display}{10.2}
+\begin{equation}
+\operatorname{div}u=0,
+\qquad u(\mathord\cdot,t)=p(\mathord\cdot,t)=0
+\qquad\text{for all sufficiently small }t\geq0.
+\tag{10.2}\label{eq:10.2}
+\end{equation}
+\begin{EESegment}{EE-TGT-P117-010}
+These fields agree with \NSi{NS-F-P117-037}{u^{\mathrm{loc}},p^{\mathrm{loc}}} on a spatial
+neighborhood of the origin for every time sufficiently close to \NSi{NS-F-P117-038}{1}.
+\end{EESegment}
+\end{proposition}
+\NSPage{118}%
+\begin{proof}
+\begin{EESegment}{EE-TGT-P118-001}
+A fixed spatial cutoff will stay inside the local domain once \NSi{NS-F-P118-001}{q} is bounded
+above in terms of \NSi{NS-F-P118-002}{z} and \NSi{NS-F-P118-003}{\tau}. The coordinates in
+\eqref{eq:3.2} give such a bound uniformly in \NSi{NS-F-P118-004}{r}. If
+\NSi{NS-F-P118-005}{1-\eta^2\geq1/2}, then \NSi{NS-F-P118-006}{q\leq2\tau}. Otherwise
+\NSi{NS-F-P118-007}{|\eta|>2^{-1/2}}, and
+\NSi{NS-F-P118-008}{q\leq(\sqrt2|z|)^{1/D}}. It follows that
+\end{EESegment}
+\NSFormula{NS-F-P118-009}{display}{10.3}
+\begin{equation}
+q\leq C_0\bigl(\tau+|z|^{1/D}\bigr).
+\tag{10.3}\label{eq:10.3}
+\end{equation}
+\begin{EESegment}{EE-TGT-P118-002}
+Choose \NSi{NS-F-P118-010}{0<\tau_0<1/2} and \NSi{NS-F-P118-011}{z_0>0} so that
+\NSi{NS-F-P118-012}{C_0(\tau_0+z_0^{1/D})<q_*/2}. For any fixed
+\NSi{NS-F-P118-013}{r_0>0}, choose a smooth axisymmetric cutoff
+\NSi{NS-F-P118-014}{0\leq\chi_x\leq1} that is a smooth function of
+\NSi{NS-F-P118-015}{r^2,z} and satisfies
+\end{EESegment}
+\NSFormula{NS-F-P118-016}{display}{none}
+\[
+\chi_x=1\quad(r\leq r_0/2,\ |z|\leq z_0/2),
+\qquad \supp\chi_x\Subset\{r<r_0,\ |z|<z_0\}.
+\]
+\begin{EESegment}{EE-TGT-P118-003}
+Also choose a smooth function \NSi{NS-F-P118-017}{0\leq\chi_t\leq1} of
+\NSi{NS-F-P118-018}{t} with
+\end{EESegment}
+\NSFormula{NS-F-P118-019}{display}{none}
+\[
+\chi_t(t)=0\quad(1-t\geq\tau_0),
+\qquad \chi_t(t)=1\quad(0\leq1-t\leq\tau_0/2),
+\qquad c(x,t)=\chi_x(x)\chi_t(t).
+\]
+\begin{EESegment}{EE-TGT-P118-004}
+By \eqref{eq:10.3}, the support of \NSi{NS-F-P118-020}{c} for
+\NSi{NS-F-P118-021}{t<1} lies in \NSi{NS-F-P118-022}{q<q_*/2}. It therefore stays a fixed
+distance, measured in the \NSi{NS-F-P118-023}{q} coordinate, from the outer boundary of
+\NSi{NS-F-P118-024}{\Omega_*}. On that domain, define
+\end{EESegment}
+\NSFormula{NS-F-P118-025}{display}{10.4}
+\begin{equation}
+u=\operatorname{curl}(c\mathcal A)+c\mathcal Be_\theta,
+\qquad p=cp^{\mathrm{loc}},
+\tag{10.4}\label{eq:10.4}
+\end{equation}
+\begin{EESegment}{EE-TGT-P118-005}
+and extend both fields by zero outside the support of the cutoff. The product rule gives
+\end{EESegment}
+\NSFormula{NS-F-P118-026}{display}{none}
+\[
+u=cu^{\mathrm{loc}}+\nabla c\times\mathcal A,
+\qquad \operatorname{div}u=\operatorname{div}\operatorname{curl}(c\mathcal A)
+ +r^{-1}\partial_\theta(c\mathcal B)=0.
+\]
+\begin{EESegment}{EE-TGT-P118-006}
+The Cartesian forms recalled above make the fields smooth at the axis. The cutoffs, together with
+the margin from \NSi{NS-F-P118-027}{q=q_*}, let the fields extend smoothly by zero everywhere
+else. Their support lies in \NSi{NS-F-P118-028}{\mathcal K=\supp\chi_x}, and the time cutoff
+gives \eqref{eq:10.2}. Both cutoffs equal one near
+\NSi{NS-F-P118-029}{(0,1)}, so they leave the local fields unchanged there.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P118-007}
+For \NSi{NS-F-P118-030}{0\leq t<1}, define
+\end{EESegment}
+\NSFormula{NS-F-P118-031}{display}{10.5}
+\begin{equation}
+f=\mathscr R(u,p)=\partial_tu+(u\mathbin{\cdot}\nabla)u-\Delta u+\nabla p.
+\tag{10.5}\label{eq:10.5}
+\end{equation}
+\begin{EESegment}{EE-TGT-P118-008}
+This definition includes every derivative of the cutoffs. Taking its divergence gives
+\end{EESegment}
+\NSFormula{NS-F-P118-032}{display}{none}
+\[
+-\Delta p=\sum_{i,j=1}^3\partial_i\partial_j(u_iu_j)-\operatorname{div}f.
+\]
+\begin{EESegment}{EE-TGT-P118-009}
+The localized pressure therefore satisfies the Poisson equation with the matching term from the
+divergence of the force. The force is allowed to have nonzero divergence.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P118-010}
+\subsection{Limits of force derivatives at the final time.}\label{sec:10.2}
+\end{EESegment}
+\begin{EESegment}{EE-TGT-P118-011}
+So far, the force in \eqref{eq:10.5} is defined only for
+\NSi{NS-F-P118-033}{t<1}. To extend it smoothly past time one, all of its derivatives must have
+compatible limits as \NSi{NS-F-P118-034}{t\uparrow1}. At the origin, those limits are controlled
+by the flatness of the local residual in \eqref{eq:3.4}. Away from the origin, the terms introduced
+by localization are controlled by the endpoint bounds in Theorem~\ref{thm:3.1}\textup{(ii)} and
+the exact exterior heat flow in \eqref{eq:3.5}. Lemma~\ref{lem:10.2} first proves the derivative
+limits. Lemma~\ref{lem:10.3} then builds an extension with compact support in time.
+\end{EESegment}
+
+\begin{lemma}\label{lem:10.2}
+\begin{EESegment}{EE-TGT-P118-012}
+For every spatial multi-index \NSi{NS-F-P118-035}{\alpha} and every integer
+\NSi{NS-F-P118-036}{j\geq0}, the derivative
+\NSi{NS-F-P118-037}{\partial_x^\alpha\partial_t^jf} converges uniformly on
+\NSi{NS-F-P118-038}{\mathbb R^3} as \NSi{NS-F-P118-039}{t\uparrow1}. There are functions
+\NSi{NS-F-P118-040}{F_j\in C_c^\infty(\mathbb R^3;\mathbb R^3)}, all supported in
+\NSi{NS-F-P118-041}{\mathcal K}, such that
+\end{EESegment}
+\NSFormula{NS-F-P118-042}{display}{10.6}
+\begin{equation}
+\lim_{t\uparrow1}\partial_x^\alpha\partial_t^jf(x,t)=\partial_x^\alpha F_j(x),
+\qquad \partial_x^\alpha F_j(0)=0.
+\tag{10.6}\label{eq:10.6}
+\end{equation}
+\begin{EESegment}{EE-TGT-P118-013}
+These are the derivative limits of \NSi{NS-F-P118-043}{f} from
+\NSi{NS-F-P118-044}{t<1}, and they agree with both spatial and time differentiation.
+\end{EESegment}
+\end{lemma}
+\NSPage{119}%
+\begin{proof}
+\begin{EESegment}{EE-TGT-P119-001}
+Start with endpoint bounds away from the origin. Take a compact spatial set on which
+\NSi{NS-F-P119-001}{q} has a positive lower bound and stays away from
+\NSi{NS-F-P119-002}{q_*}. Theorem~\ref{thm:3.1}\textup{(ii)} bounds every physical derivative
+of the actual potentials and scalar fields there. More exactly, let
+\NSi{NS-F-P119-003}{K_0} be such a compact set, let
+\NSi{NS-F-P119-004}{G=\mathcal A,\mathcal Be_\theta,p^{\mathrm{loc}}}, and take
+\NSi{NS-F-P119-005}{t<t'<1}. The fundamental theorem of calculus gives
+\end{EESegment}
+\NSFormula{NS-F-P119-006}{display}{none}
+\[
+\sup_{K_0}|\partial_x^\alpha\partial_t^jG(\mathord\cdot,t')
+ -\partial_x^\alpha\partial_t^jG(\mathord\cdot,t)|
+\leq|t'-t|\sup_{K_0\times[t,t']}|\partial_x^\alpha\partial_t^{j+1}G|.
+\]
+\begin{EESegment}{EE-TGT-P119-002}
+The last supremum has a bound near time one that does not depend on
+\NSi{NS-F-P119-007}{t,t'}. Every fixed derivative is therefore uniformly Cauchy as
+\NSi{NS-F-P119-008}{t\uparrow1}. These constants may depend on the chosen positive lower bound
+for \NSi{NS-F-P119-009}{q}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P119-003}
+The argument in Proposition~\ref{prop:9.9} that leaves only finitely many nonzero cutoff terms
+gives these bounds on the closed parameter range
+\NSi{NS-F-P119-010}{-1\leq\eta\leq1}. It gives them for the actual representatives and for the
+smooth Cartesian factors in their near-axis forms, while the labels and integer frequencies stay
+fixed. Multiplying by the fixed cutoffs and applying the finite differential expression
+\eqref{eq:10.5} keep the bounds.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P119-004}
+In the region that remains, \NSi{NS-F-P119-011}{r} has a positive lower bound and
+\NSi{NS-F-P119-012}{q} is small enough that
+\NSi{NS-F-P119-013}{X\geq X_{\mathrm{ext}}}. The velocity there is the exterior azimuthal field
+\NSi{NS-F-P119-014}{K(r,\tau)e_\theta} from \eqref{eq:3.5}. In terms of the heat profile
+\NSi{NS-F-P119-015}{\mathcal H} defined in \eqref{eq:A.32},
+\end{EESegment}
+\NSFormula{NS-F-P119-016}{display}{10.7}
+\begin{equation}
+K(r,\tau)=c_\infty s^{-A}\mathcal H(2\tau/s),
+\qquad s=r^2/2.
+\tag{10.7}\label{eq:10.7}
+\end{equation}
+\begin{EESegment}{EE-TGT-P119-005}
+Thus the function in Theorem~\ref{thm:3.1} is
+\NSi{NS-F-P119-017}{\mathcal H_{\mathrm{ext}}(Z)=2^Ac_\infty\mathcal H(4Z)}. For each
+\NSi{NS-F-P119-018}{j}, the integral in \eqref{eq:A.32} can be differentiated uniformly for
+\NSi{NS-F-P119-019}{Z\geq0} because its differentiated integrand is bounded by a constant times
+\NSi{NS-F-P119-020}{e^{-v}v^{h+j}}. It follows that
+\end{EESegment}
+\NSFormula{NS-F-P119-021}{display}{10.8}
+\begin{equation}
+|\partial_\tau^jK(r,\tau)|\leq C_jr^{-1-2h-2j},
+\qquad
+\left|\partial_\tau^j\frac{K(\rho,\tau)^2}{\rho}\right|
+\leq C_j\rho^{-3-4h-2j}.
+\tag{10.8}\label{eq:10.8}
+\end{equation}
+\begin{EESegment}{EE-TGT-P119-006}
+The pressure is normalized to vanish at radial infinity. On a compact interval of positive radii
+\NSi{NS-F-P119-022}{r\in[r_-,r_+]}, where \NSi{NS-F-P119-023}{r_->0}, the second upper bound
+is integrable over \NSi{NS-F-P119-024}{\rho\geq r_-}. Dominated convergence therefore gives
+\end{EESegment}
+\NSFormula{NS-F-P119-025}{display}{none}
+\[
+\partial_\tau^jp^{\mathrm{loc}}(r,\tau)
+=-\int_r^\infty\partial_\tau^j\left(\frac{K(\rho,\tau)^2}{\rho}\right)\,d\rho.
+\]
+\begin{EESegment}{EE-TGT-P119-007}
+It also gives a uniform bound and a one-sided limit for every derivative on each compact interval of
+positive radii. Here \NSi{NS-F-P119-026}{\partial_t=-\partial_\tau}. Differentiate the lower
+endpoint to get the higher radial derivatives of the pressure, and differentiate \eqref{eq:10.7}
+directly to get those of \NSi{NS-F-P119-027}{K}. This gives the required smooth one-sided
+extension to \NSi{NS-F-P119-028}{\tau=0}, using the integral on
+\NSi{NS-F-P119-029}{\tau\geq0}. In this region \NSi{NS-F-P119-030}{\mathcal A=0}, so after
+localization the fields contain only these smooth exterior quantities and the fixed cutoffs. The
+heat equation for \NSi{NS-F-P119-031}{K} and the identity
+\NSi{NS-F-P119-032}{\partial_rp^{\mathrm{loc}}=K^2/r} also show directly that the residual of the
+uncut exterior field is exactly zero.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P119-008}
+These two regions cover the final time slice away from the origin. If
+\NSi{NS-F-P119-033}{z\neq0}, then \NSi{NS-F-P119-034}{q\geq|z|^{1/D}>0}. If
+\NSi{NS-F-P119-035}{z=0} and \NSi{NS-F-P119-036}{x\neq0}, then
+\NSi{NS-F-P119-037}{r>0}, and the exterior argument above applies on a small neighborhood.
+Every Cartesian space--time derivative of the force therefore converges uniformly on compact
+spatial sets that do not contain the origin.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P119-009}
+Near the origin, both cutoffs equal one. Use \eqref{eq:3.4} on
+\NSi{NS-F-P119-038}{X\leq X_{\mathrm{ext}}}, and use the exactly zero residual when
+\NSi{NS-F-P119-039}{X} is larger. For every
+\NSi{NS-F-P119-040}{\alpha,j,N}, this gives, on one fixed neighborhood of
+\NSi{NS-F-P119-041}{(0,1)},
+\end{EESegment}
+\NSFormula{NS-F-P119-042}{display}{10.9}
+\begin{equation}
+|\partial_x^\alpha\partial_t^jf(x,t)|
+\leq C_{\alpha,j,N}\bigl(\tau+|z|^{1/D}\bigr)^N.
+\tag{10.9}\label{eq:10.9}
+\end{equation}
+\begin{EESegment}{EE-TGT-P119-010}
+Given any tolerance, first choose a small ball and then choose a time close enough to one that this
+bound is below the tolerance throughout the ball. A finite cover of the part of
+\NSi{NS-F-P119-043}{\mathcal K} outside that ball gives uniform convergence there. Every one of
+these derivatives is zero outside \NSi{NS-F-P119-044}{\mathcal K}. They are therefore uniformly
+Cauchy on \NSi{NS-F-P119-045}{\mathbb R^3}, and their limits are zero at the origin.
+\end{EESegment}
+\NSPage{120}%
+\begin{EESegment}{EE-TGT-P120-001}
+Define \NSi{NS-F-P120-001}{F_j} as the uniform limit for
+\NSi{NS-F-P120-002}{\alpha=0}. Pass to the limit in the fundamental theorem of calculus along
+segments parallel to the spatial coordinate axes. This identifies every other limit as
+\NSi{NS-F-P120-003}{\partial_x^\alpha F_j}. It follows that
+\NSi{NS-F-P120-004}{F_j} is smooth and has the stated support. Passing to the limit in the
+matching identity in time gives
+\end{EESegment}
+\NSFormula{NS-F-P120-005}{display}{10.10}
+\begin{equation}
+\partial_x^\alpha\partial_t^jf(x,t)
+=\partial_x^\alpha F_j(x)-\int_t^1\partial_x^\alpha\partial_t^{j+1}f(x,s)\,ds.
+\tag{10.10}\label{eq:10.10}
+\end{equation}
+\begin{EESegment}{EE-TGT-P120-002}
+This proves that the derivative limits agree with both spatial and time differentiation, and it
+finishes the proof of \eqref{eq:10.6}.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P120-003}
+The limits \NSi{NS-F-P120-006}{F_j} are the Taylor coefficients needed to continue the force
+through time one. Give the coefficients time cutoffs whose supports shrink as the derivative order
+grows, so the extension also has compact support in time. A smooth force with compact support has
+the decay required in \cite[(5)]{ref-13}, and the zero initial data has the required initial-data
+properties as well.
+\end{EESegment}
+
+\begin{lemma}\label{lem:10.3}
+\begin{EESegment}{EE-TGT-P120-004}
+The force in \eqref{eq:10.5} extends to
+\NSi{NS-F-P120-007}{f\in C_c^\infty(\mathbb R^3\times(0,\infty);\mathbb R^3)}, with support in
+\NSi{NS-F-P120-008}{\mathcal K\times[0,2]}.
+\end{EESegment}
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P120-005}
+Choose \NSi{NS-F-P120-009}{\chi_0\in C_c^\infty(\mathbb R)} so that it equals one near zero and
+equals zero whenever its argument is at least one. For
+\NSi{NS-F-P120-010}{\sigma=t-1\geq0}, set
+\end{EESegment}
+\NSFormula{NS-F-P120-011}{display}{10.11}
+\begin{equation}
+f(x,1+\sigma)=\sum_{j=0}^\infty\chi_0(b_j\sigma)\frac{\sigma^j}{j!}F_j(x),
+\tag{10.11}\label{eq:10.11}
+\end{equation}
+\begin{EESegment}{EE-TGT-P120-006}
+where the increasing integers \NSi{NS-F-P120-012}{b_j\geq1} are chosen below. On the support of
+each summand, \NSi{NS-F-P120-013}{0\leq\sigma\leq b_j^{-1}}. The product rule then gives
+\end{EESegment}
+\NSFormula{NS-F-P120-014}{display}{10.12}
+\begin{equation}
+\left\|\partial_x^\alpha\partial_\sigma^m
+ \left(\chi_0(b_j\sigma)\frac{\sigma^j}{j!}F_j\right)\right\|_\infty
+\leq C_{j,m}b_j^{m-j}\|F_j\|_{C^{|\alpha|}}.
+\tag{10.12}\label{eq:10.12}
+\end{equation}
+\begin{EESegment}{EE-TGT-P120-007}
+To see this, suppose \NSi{NS-F-P120-015}{a} derivatives land on the cutoff. Their factor
+\NSi{NS-F-P120-016}{b_j^a} is multiplied by a monomial of degree
+\NSi{NS-F-P120-017}{j-m+a}, which is bounded by
+\NSi{NS-F-P120-018}{b_j^{-(j-m+a)}}. If that monomial has been differentiated to zero, the term
+is absent. Set \NSi{NS-F-P120-019}{b_0=1}. For \NSi{NS-F-P120-020}{j\geq1}, define
+\end{EESegment}
+\NSFormula{NS-F-P120-021}{display}{none}
+\[
+b_j=\min\left\{b\in\mathbb N:b>b_{j-1},\quad
+\max_{\substack{a,m\geq0\\a+m\leq\lfloor j/2\rfloor}}
+C_{j,m}b^{m-j}\|F_j\|_{C^a}\leq2^{-j}\right\},
+\]
+\begin{EESegment}{EE-TGT-P120-008}
+where the maximum is taken over nonnegative integers \NSi{NS-F-P120-022}{a,m}. This gives only
+finitely many conditions, and each one has \NSi{NS-F-P120-023}{m-j<0}. So the defining set
+contains at least one integer. With this choice, \eqref{eq:10.12} is at most
+\NSi{NS-F-P120-024}{2^{-j}} whenever
+\NSi{NS-F-P120-025}{|\alpha|+m\leq\lfloor j/2\rfloor}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P120-009}
+After any fixed number of derivatives, the tail now converges uniformly. At
+\NSi{NS-F-P120-026}{\sigma=0}, the cutoff in each fixed summand is constant on a neighborhood of
+zero. Its \NSi{NS-F-P120-027}{m}-th derivative therefore contributes only when
+\NSi{NS-F-P120-028}{j=m}, and that contribution is \NSi{NS-F-P120-029}{F_m}. Uniform
+convergence after differentiation, together with \eqref{eq:10.10}, shows that \eqref{eq:10.11}
+matches every mixed space--time derivative limit from \NSi{NS-F-P120-030}{t<1}. Every summand
+keeps its support in \NSi{NS-F-P120-031}{\mathcal K} and is zero when
+\NSi{NS-F-P120-032}{\sigma\geq1}. The same uniform convergence proves smoothness at those support
+boundaries. Finally, the original force is zero near
+\NSi{NS-F-P120-033}{t=0}, by \eqref{eq:10.2} and the construction of
+\NSi{NS-F-P120-034}{p}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P120-010}
+For the decay bounds, choose \NSi{NS-F-P120-035}{R} with
+\NSi{NS-F-P120-036}{\mathcal K\subset B(0,R)}, and write
+\NSi{NS-F-P120-037}{M_{\alpha,m}=\|\partial_x^\alpha\partial_t^mf\|_\infty}. Since the force
+has compact support, every integer \NSi{NS-F-P120-038}{k\geq0} satisfies
+\end{EESegment}
+\NSFormula{NS-F-P120-039}{display}{none}
+\[
+|\partial_x^\alpha\partial_t^mf(x,t)|
+\leq M_{\alpha,m}(3+R)^k(1+|x|+t)^{-k}.
+\]
+\end{proof}

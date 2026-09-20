@@ -1,0 +1,674 @@
+\NSPage{091}%
+\end{lemma}
+\begin{proof}
+\begin{EESegment}{EE-TGT-P091-001}
+First estimate the primitive without differentiating the argument inside it, which shifts rapidly.
+Then check the exact radial identity and use Fourier inversion on the torus to estimate the cutoff
+remainder.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P091-002}
+\noindent\textbf{Step 1. Support and coefficient estimates.} Work in a neighborhood with one fixed
+common index, as in Lemma~\ref{lem:6.2}, and put
+\NSi{NS-F-P091-001}{\mathcal L=v_r\cdot\partial_y} and
+\NSi{NS-F-P091-002}{g=R^e f}. Multiplication by \NSi{NS-F-P091-003}{R^e} leaves the input
+estimate unchanged on the shell. To estimate \NSi{NS-F-P091-004}{\mathcal I_cg}, set
+\NSi{NS-F-P091-005}{U=R^{d_r}} and extend
+\NSi{NS-F-P091-006}{F(U)=g(R)/(d_rR^{d_r-1})} smoothly by zero. The shell stays inside one fixed
+compact subset of \NSi{NS-F-P091-007}{R>0}, so this change of variables and its inverse have
+bounded derivatives of every fixed order. The exact representation on the half-lines is
+\end{EESegment}
+\NSFormula{NS-F-P091-008}{display}{8.9}
+\begin{equation}
+\begin{aligned}
+A_-(U,y)&=\int_{-\infty}^{0}F(U+u,y+Muv_r)\,du,\\
+A_+(U,y)&=\int_{0}^{\infty}F(U+u,y+Muv_r)\,du,\\
+\mathcal Jg&=A_-+A_+,\qquad
+\mathcal I_cg=(1-\chi_m)A_- -\chi_mA_+.
+\end{aligned}
+\tag{8.9}\label{eq:8.9}
+\end{equation}
+\begin{EESegment}{EE-TGT-P091-003}
+For fixed \NSi{NS-F-P091-009}{u}, the shift depends on neither
+\NSi{NS-F-P091-010}{U} nor \NSi{NS-F-P091-011}{(Z,T)}. So a coefficient derivative acts only
+on \NSi{NS-F-P091-012}{F} and \NSi{NS-F-P091-013}{\chi_m}, and brings in no factor of
+\NSi{NS-F-P091-014}{M}. The input's extension by zero includes derivatives of the moving shell,
+so taking derivatives creates no boundary terms.
+
+Near the inner edge, only the left integral appears. Write
+\NSi{NS-F-P091-015}{d_a=\log(X/X_a)} and \NSi{NS-F-P091-016}{d_b=\log(X_b/X)}, so
+\NSi{NS-F-P091-017}{\zeta=\exp(-a_a/d_a^2-a_b/d_b^2)} and
+\NSi{NS-F-P091-018}{\delta=\min(1,d_a,d_b)}, where
+\NSi{NS-F-P091-019}{a_a,a_b} are fixed and positive. For every fixed
+\NSi{NS-F-P091-020}{B}, the function
+\NSi{NS-F-P091-021}{s\mapsto e^{-a_a/s^2}s^{-B}} is increasing when
+\NSi{NS-F-P091-022}{s} is positive and small enough. Along the left integration segment, this
+bounds the input weight by the same kind of weight at the endpoint; the factors from the opposite
+edge are bounded and comparable. Near the outer edge, use the right integral and the matching
+monotonicity for \NSi{NS-F-P091-023}{d_b}. In the interior, the output weight has a positive lower
+bound. Each integration runs over a bounded length. The same facts apply after any fixed coefficient
+derivative, and prove the \NSi{NS-F-P091-024}{\mathsf M_\alpha} estimate. Formula~\eqref{eq:8.9}
+also shows directly that the output is zero below and above the shell. Multiplying by
+\NSi{NS-F-P091-025}{R^{\pm e}} costs only fixed constants there.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P091-004}
+\noindent\textbf{Step 2. The radial equation.} Acting on the integrand in \eqref{eq:8.9}, the
+operator \NSi{NS-F-P091-026}{\partial_U+M\mathcal L} is the same as taking its
+\NSi{NS-F-P091-027}{u}-derivative. It therefore sends
+\NSi{NS-F-P091-028}{A_-} to \NSi{NS-F-P091-029}{F}, sends
+\NSi{NS-F-P091-030}{A_+} to \NSi{NS-F-P091-031}{-F}, and sends
+\NSi{NS-F-P091-032}{\mathcal Jg} to zero. Multiply by
+\NSi{NS-F-P091-033}{d_rR^{d_r-1}}, then use the product rule for
+\NSi{NS-F-P091-034}{R^{-e}}. This gives \eqref{eq:8.7}. In physical variables, the same
+calculation is \NSi{NS-F-P091-035}{\mathfrak r\mathcal I_cg=g-(\partial_r\chi_m)\mathcal Jg}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P091-005}
+\noindent\textbf{Step 3. The cutoff remainder under the moment condition.} The radial identity and
+the support bounds are now proved. To estimate the cutoff term still left, use the cancellation in
+the full radial integral. Haar measure does not change under translation, so
+\NSi{NS-F-P091-036}{\langle\mathcal Jg\rangle_Y=\int\langle g\rangle_Y\,dR}. Under the weighted
+moment condition, this is zero for \NSi{NS-F-P091-037}{g=R^ef}. If
+\NSi{NS-F-P091-038}{H} is a zero-mean function on the torus, the Diophantine inequality
+\eqref{eq:6.7} says that the absolute value of either dot product is at least one fixed positive
+constant divided by one plus the size of the nonzero integer frequency. It gives
+\end{EESegment}
+\NSFormula{NS-F-P091-039}{display}{8.10}
+\begin{equation}
+\|\mathcal L^{-p}H\|_{C_y^m}\le C_{m,p}\|H\|_{C_y^{m+p+3}},
+\qquad p\ge1.
+\tag{8.10}\label{eq:8.10}
+\end{equation}
+\begin{EESegment}{EE-TGT-P091-006}
+The Fourier multiplier here is
+\NSi{NS-F-P091-040}{(2\pi i v_r\cdot k)^{-p}}. After
+\NSi{NS-F-P091-041}{m+p+3} derivatives of \NSi{NS-F-P091-042}{H} have been estimated, the
+series still to be summed is bounded by
+\NSi{NS-F-P091-043}{\sum_{k\in\mathbb Z^2}(1+|k|)^{-3}}. Slow and radial derivatives commute
+with this multiplier. The zero-average part of the full-line integral therefore obeys the exact
+identity
+\end{EESegment}
+\NSFormula{NS-F-P091-044}{display}{none}
+\[
+\mathcal Jg=(-M^{-1})^p\int_{\mathbb R}\partial_U^p\mathcal L^{-p}F^\circ
+   (U+u,y+Muv_r)\,du.
+\]
+\begin{EESegment}{EE-TGT-P091-007}
+This follows by integrating the \NSi{NS-F-P091-045}{u}-derivative of
+\NSi{NS-F-P091-046}{\mathcal L^{-1}F^\circ}, then repeating the same step; compact support makes
+every endpoint term zero. The zero Fourier mode left out of this formula has a full-line
+\NSPage{092}%
+integral that is identically zero at every slow point. Averaging, integration, and slow
+differentiation of the coefficients commute on the smooth extensions by zero, so every derivative
+of that mode also has zero integral. The same fixed-shift argument handles any further coefficient
+derivatives. For the output derivative indexed by \NSi{NS-F-P092-001}{I}, it is enough to use
+radial input derivatives through \NSi{NS-F-P092-002}{I_R+p}, torus derivatives through
+\NSi{NS-F-P092-003}{|I_y|+p+3}, and the slow derivatives named by
+\NSi{NS-F-P092-004}{I}. Since
+\NSi{NS-F-P092-005}{M^{-1}\le C\varepsilon^{\kappa_s}S_*^{\rho_g}} and
+\NSi{NS-F-P092-006}{\partial_R\chi_m} is supported in the interior, this proves
+\eqref{eq:8.8}. Fix a physical normalization and a physical derivative order, and let
+\NSi{NS-F-P092-007}{L\ge0} bound the resulting loss of powers of
+\NSi{NS-F-P092-008}{q}, including the loss from differentiating after evaluation at the phase. The
+graph operators give a finite \NSi{NS-F-P092-009}{L} of this kind that does not depend on
+\NSi{NS-F-P092-010}{p}. Given any flatness order \NSi{NS-F-P092-011}{N\ge0}, choose
+\NSi{NS-F-P092-012}{p} so that
+\NSi{NS-F-P092-013}{h(\alpha+p\kappa_s)>N+L}. Since
+\NSi{NS-F-P092-014}{\varepsilon=Q^h} and \NSi{NS-F-P092-015}{q\asymp Q}, this strict excess
+absorbs the fixed powers of \NSi{NS-F-P092-016}{S_*} and gives an
+\NSi{NS-F-P092-017}{O(q^N)} bound for that physical derivative. No estimate uniform in
+\NSi{NS-F-P092-018}{p} is being claimed. Finally, when \NSi{NS-F-P092-019}{f} does not depend
+on \NSi{NS-F-P092-020}{Y},
+\NSi{NS-F-P092-021}{\mathcal J(R^ef)=\int R^ef\,dR}, which is zero under the stated weighted
+integral condition.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P092-001}
+Whenever the weighted mean integral is zero, the inverse is exact apart from a flat cutoff
+remainder. This flatness uses estimates at every fixed derivative order. Frequencies comparable to
+\NSi{NS-F-P092-022}{M} can come close to resonance with \NSi{NS-F-P092-023}{v_r}, meaning that
+the dot product with the frequency can be small and division by it can be large. The extra
+derivatives in the torus variables in \eqref{eq:8.10} control their small Fourier coefficients. A
+fixed finite regularity bound would give only a fixed finite order of flatness.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P092-002}
+\subsection{Reconstructing the pressure and making divergence-free velocity corrections.}\label{sec:8.3}
+This subsection applies the radial inverse from Lemma~\ref{lem:8.2} first to the pressure
+\NSi{NS-F-P092-024}{p_m}, then to an azimuthal vector potential that produces a divergence-free
+velocity increment; see Proposition~\ref{prop:8.3}. The axial component of that increment equals
+the prescribed source \NSi{NS-F-P092-025}{\gamma_d}, apart from the cutoff remainder in
+\eqref{eq:8.14}. The pressure source may have a nonzero radial integral after its auxiliary average is
+taken. Subtracting a fixed bump times that integral separates out the obstruction, and the source
+left over can then be integrated with compact support, as in \eqref{eq:8.12}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P092-003}
+Let \NSi{NS-F-P092-026}{\mathcal I_{\mathrm{mean}}} be the interval in
+\NSi{NS-F-P092-027}{X} reserved by Theorem~\ref{thm:4.6}(vi), and set
+\end{EESegment}
+\NSFormula{NS-F-P092-028}{display}{none}
+\[
+I_m=\{\sqrt{2X}:X\in \mathcal I_{\mathrm{mean}}\}.
+\]
+\begin{EESegment}{EE-TGT-P092-004}
+The \emph{mean patch} is the region \NSi{NS-F-P092-029}{r/\sqrt q\in I_m}. Choose a fixed bump
+\NSi{NS-F-P092-030}{\widehat\rho\in C_c^\infty(I_m)} with
+\NSi{NS-F-P092-031}{\int\widehat\rho(x)\,dx=1}, and define
+\end{EESegment}
+\NSFormula{NS-F-P092-032}{display}{none}
+\[
+\rho_{\mathrm{phys}}(r,z,t)=q^{-1/2}\widehat\rho(r/\sqrt q),
+\qquad \rho=Q^{1/2}\rho_{\mathrm{phys}}.
+\]
+\begin{EESegment}{EE-TGT-P092-005}
+This bump does not depend on the angular or auxiliary variables, and
+\NSi{NS-F-P092-033}{\int\rho_{\mathrm{phys}}\,dr=\int\rho\,dR=1}. It is fixed independently of
+the velocity corrections.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P092-006}
+The operator \NSi{NS-F-P092-034}{\mathsf T_0} reconstructs the pressure, while
+\NSi{NS-F-P092-035}{\mathsf T_1} reconstructs an azimuthal vector potential. The operators
+\NSi{NS-F-P092-036}{\mathsf T_1} and \NSi{NS-F-P092-037}{\mathsf T_2} also recover the radial
+fluxes of axial and azimuthal momentum. Write \NSi{NS-F-P092-038}{\Psi} for the azimuthal
+coefficient of the vector potential. With a star marking a normalized representative, the physical
+normalizations are
+\end{EESegment}
+\NSFormula{NS-F-P092-039}{display}{8.11}
+\begin{equation}
+\begin{gathered}
+u_*=Q^A u_{\mathrm{phys}},\qquad
+g_*=Q^{2A+1/2}g_{\mathrm{phys}},\qquad
+p_*=Q^{2A}p_{\mathrm{phys}},\\
+\Psi_*=Q^{A-1/2}\Psi_{\mathrm{phys}},\qquad
+\rho_*=Q^{1/2}\rho_{\mathrm{phys}}.
+\end{gathered}
+\tag{8.11}\label{eq:8.11}
+\end{equation}
+\begin{EESegment}{EE-TGT-P092-007}
+In particular,
+\NSi{NS-F-P092-040}{Q^{2A}\mathcal I_{c,\mathrm{phys}}g_{\mathrm{phys}}=\mathcal I_cg_*}.
+When the \NSi{NS-F-P092-041}{\varepsilon} exponent is said to be preserved, it refers to these
+normalized representatives and already includes the length of integration.
+\end{EESegment}
+
+\begin{proposition}\label{prop:8.3}
+\begin{EESegment}{EE-TGT-P092-008}
+Fix the radial operators from Lemma~\ref{lem:8.2} and the bump
+\NSi{NS-F-P092-042}{\rho} defined above.
+\NSPage{093}%
+\end{EESegment}
+\begin{enumerate}[label=(\roman*)]
+\item
+\begin{EESegment}{EE-TGT-P093-001}
+\emph{Pressure.} For a smooth shell-supported scalar source
+\NSi{NS-F-P093-001}{g_r(R,Z,T,y)}, define the radial defect
+\NSi{NS-F-P093-002}{\mathcal P} and the pressure \NSi{NS-F-P093-003}{p_m} by
+\end{EESegment}
+\NSFormula{NS-F-P093-004}{display}{8.12}
+\begin{equation}
+\mathcal P=\int\langle g_r\rangle_Y\,dR,
+\qquad p_m=\mathsf T_0(g_r-\rho\mathcal P),
+\qquad \int\rho\,dR=1.
+\tag{8.12}\label{eq:8.12}
+\end{equation}
+\begin{EESegment}{EE-TGT-P093-002}
+Then
+\end{EESegment}
+\NSFormula{NS-F-P093-005}{display}{8.13}
+\begin{equation}
+D_rp_m-g_r=-\rho\mathcal P-\mathcal A_0(g_r-\rho\mathcal P),
+\qquad \partial_R\langle p_m\rangle_Y=\langle g_r\rangle_Y-\rho\mathcal P.
+\tag{8.13}\label{eq:8.13}
+\end{equation}
+\begin{EESegment}{EE-TGT-P093-003}
+If \NSi{NS-F-P093-006}{g_r\in \mathsf M_\alpha}, then
+\NSi{NS-F-P093-007}{\mathcal P\in \mathsf S_\alpha} and
+\NSi{NS-F-P093-008}{p_m\in \mathsf M_\alpha}. Changing \NSi{NS-F-P093-009}{g_r} by a term
+in \NSi{NS-F-P093-010}{\mathsf M_\alpha} changes the pressure by a term in the same class. Under
+this class assumption, the cutoff remainder in \eqref{eq:8.13} has zero auxiliary mean and is flat
+as \NSi{NS-F-P093-011}{q\downarrow0} at every fixed derivative order.
+\end{EESegment}
+
+\item
+\begin{EESegment}{EE-TGT-P093-004}
+\emph{Axial velocity.} Let \NSi{NS-F-P093-012}{\gamma_d(R,Z,T,y)} be a smooth, shell-supported desired axial increment
+such that \NSi{NS-F-P093-013}{\int R\langle\gamma_d\rangle_Y\,dR=0} at every
+\NSi{NS-F-P093-014}{(Z,T)}. Using \eqref{eq:8.4}, define the physical azimuthal coefficient of the
+vector potential by
+\NSi{NS-F-P093-015}{\Psi=-r^{-1}\mathcal I_c(r\gamma_{d,\mathrm{phys}})}. Define its normalized
+velocity increments by
+\end{EESegment}
+\NSFormula{NS-F-P093-016}{display}{8.14}
+\begin{equation}
+\Psi_*=\mathsf T_1\gamma_d,
+\qquad \Delta\beta=-\varepsilon\partial_Z\Psi_*,
+\qquad \Delta\gamma=(D_r+1/R)\Psi_*=\gamma_d-\mathcal A_1\gamma_d.
+\tag{8.14}\label{eq:8.14}
+\end{equation}
+\begin{EESegment}{EE-TGT-P093-005}
+The actual increment \NSi{NS-F-P093-017}{(\Delta\beta,0,\Delta\gamma)} is divergence-free and
+satisfies \NSi{NS-F-P093-018}{\langle\Delta\gamma\rangle_Y=\langle\gamma_d\rangle_Y}. If
+\NSi{NS-F-P093-019}{\gamma_d\in \mathsf M_\alpha}, then
+\NSi{NS-F-P093-020}{\Psi_*,\Delta\gamma\in \mathsf M_\alpha} and
+\NSi{NS-F-P093-021}{\Delta\beta\in \mathsf M_{\alpha+1}}. If
+\NSi{NS-F-P093-022}{\gamma_d} does not depend on \NSi{NS-F-P093-023}{Y}, its zero weighted
+integral makes \NSi{NS-F-P093-024}{\Delta\gamma=\gamma_d} at every point. The pressure and vector
+potential are compactly supported inside the active shell, and their support in
+\NSi{NS-F-P093-025}{(Z,T)} stays inside the projection of the source support.
+\end{EESegment}
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P093-006}
+\noindent\textbf{Part (i). Pressure.} The source in \eqref{eq:8.12} has zero radial integral after
+its auxiliary mean is taken, since
+\end{EESegment}
+\NSFormula{NS-F-P093-026}{display}{none}
+\[
+\int\langle g_r-\rho\mathcal P\rangle_Y\,dR
+=\mathcal P-\mathcal P\int\rho\,dR=0.
+\]
+\begin{EESegment}{EE-TGT-P093-007}
+Apply Lemma~\ref{lem:8.2} with \NSi{NS-F-P093-027}{e=0}, then take the auxiliary average. The
+moment \NSi{NS-F-P093-028}{\mathcal P} belongs to \NSi{NS-F-P093-029}{\mathsf S_\alpha} when
+\NSi{NS-F-P093-030}{g_r\in \mathsf M_\alpha}. To see this,
+integrate its derivatives of any fixed order over the bounded shell, using the smooth extension by
+zero and the fact that \NSi{NS-F-P093-031}{\zeta\delta^{-B}} is bounded for every finite
+\NSi{NS-F-P093-032}{B}. The interior bump \NSi{NS-F-P093-033}{\rho\mathcal P} belongs to
+\NSi{NS-F-P093-034}{\mathsf M_\alpha}. Since \NSi{NS-F-P093-035}{\rho} is fixed independently
+of the current velocity, the same argument proves the statement about changes and completes part
+(i).
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P093-008}
+\noindent\textbf{Part (ii). Axial velocity.} The azimuthal potential produces the two physical
+velocity components \NSi{NS-F-P093-036}{-\partial_z\Psi} and
+\NSi{NS-F-P093-037}{(\mathfrak r+1/r)\Psi}. The operators
+\NSi{NS-F-P093-038}{\mathfrak r} and \NSi{NS-F-P093-039}{\partial_z} commute when they
+differentiate after evaluation at the phase map, so the divergence of these two components is
+exactly zero:
+\end{EESegment}
+\NSFormula{NS-F-P093-040}{display}{none}
+\[
+(\mathfrak r+r^{-1})(-\partial_z\Psi)+\partial_z\bigl((\mathfrak r+r^{-1})\Psi\bigr)=0.
+\]
+\begin{EESegment}{EE-TGT-P093-009}
+The weighted primitive identity gives the last equality in \eqref{eq:8.14}, including its sign. The
+zero weighted axial-flux integral makes the auxiliary average of its cutoff remainder zero. Finally,
+\NSi{NS-F-P093-041}{Q^{1/2-D}=Q^h=\varepsilon}, which supplies the extra factor
+\NSi{NS-F-P093-042}{\varepsilon} in \NSi{NS-F-P093-043}{\Delta\beta} in \eqref{eq:8.14}. The
+remaining claims follow from Lemma~\ref{lem:8.2}, and part (ii) is complete. No slow derivative is
+moved through \NSi{NS-F-P093-044}{\mathcal I_c} in this argument.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P093-010}
+\subsection{The three compatibility defects in the integrated equations.}\label{sec:8.4}
+This subsection finds the integral defects left by the pressure reconstruction in \eqref{eq:8.13}
+and by the two tangential equations in \eqref{eq:8.3}. These defects are the quantities that must be
+removed before the required compactly supported corrections can exist. Tangential stresses are then
+built so that their radial divergences cancel the auxiliary-averaged residuals apart from two
+explicit bump terms; see Corollary~\ref{cor:8.5}. The pressure reconstruction leaves the integral
+\NSi{NS-F-P093-045}{\mathcal P} from \eqref{eq:8.12} to be corrected. In the same way, the
+auxiliary averages of the tangential residuals must have zero weighted radial integrals before
+compactly supported stresses can represent them, by Lemma~\ref{lem:8.2}. The moment constraints
+in \eqref{eq:8.2} remove the time terms and the axial-viscosity terms from these integrals. The axial
+fluxes left after that give two more defects, as Equations~\eqref{eq:8.15} and \eqref{eq:8.16} show.
+\end{EESegment}
+
+\NSPage{094}%
+\begin{EESegment}{EE-TGT-P094-001}
+Along with \NSi{NS-F-P094-001}{\mathcal P} from \eqref{eq:8.12}, define the two flux defects and
+the second radial moment \NSi{NS-F-P094-002}{c_\rho} of \NSi{NS-F-P094-003}{\rho} by
+\end{EESegment}
+\NSFormula{NS-F-P094-004}{display}{8.15}
+\begin{equation}
+\begin{aligned}
+\mathcal J_\theta
+  &=\int R^2\langle Gv+V\gamma+\gamma v+W_{z\theta}\rangle_Y\,dR,\\
+\mathcal J_z
+  &=\int R\langle2G\gamma+\gamma^2+W_{zz}\rangle_Y\,dR
+    -\frac12\int R^2\langle g_r\rangle_Y\,dR,
+&c_\rho&=\frac12\int R^2\rho\,dR.
+\end{aligned}
+\tag{8.15}\label{eq:8.15}
+\end{equation}
+
+\begin{proposition}\label{prop:8.4}
+\begin{EESegment}{EE-TGT-P094-002}
+Let \NSi{NS-F-P094-005}{(\beta,v,\gamma)} and \NSi{NS-F-P094-006}{w} be the smooth corrections
+from \eqref{eq:8.1}, supported in the shell. Suppose that the two moments in \eqref{eq:8.2} are zero
+at every \NSi{NS-F-P094-007}{(Z,T)}, and reconstruct \NSi{NS-F-P094-008}{p_m} from their radial
+source \NSi{NS-F-P094-009}{g_r} by \eqref{eq:8.12}. For the residual components
+\NSi{NS-F-P094-010}{E_\theta,E_z} from \eqref{eq:8.3} and the defects
+\NSi{NS-F-P094-011}{\mathcal J_\theta,\mathcal J_z,c_\rho} from \eqref{eq:8.15},
+\end{EESegment}
+\NSFormula{NS-F-P094-012}{display}{8.16}
+\begin{equation}
+\int R^2\langle E_\theta\rangle_Y\,dR
+=\varepsilon\partial_Z\mathcal J_\theta,
+\qquad
+\int R\langle E_z\rangle_Y\,dR
+=\varepsilon\partial_Z(\mathcal J_z+c_\rho\mathcal P).
+\tag{8.16}\label{eq:8.16}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P094-003}
+After auxiliary averaging, \NSi{NS-F-P094-013}{D_r} becomes
+\NSi{NS-F-P094-014}{\partial_R}, and \NSi{NS-F-P094-015}{\mathfrak t_*} becomes
+\NSi{NS-F-P094-016}{-\varepsilon\partial_T}. Multiply each radial divergence in
+\eqref{eq:8.3}, including the one from the residual stress tensor, by its stated weight and integrate.
+Each one becomes a term at the endpoints, and compact support makes those terms zero. Two
+integrations by parts make the radial viscous integrals zero.
+\end{EESegment}
+\NSFormula{NS-F-P094-017}{display}{none}
+\[
+\int R^2(v_{RR}+R^{-1}v_R-R^{-2}v)\,dR
+=(2-1-1)\int v\,dR=0,
+\]
+\NSFormula{NS-F-P094-018}{display}{none}
+\[
+\int R(\gamma_{RR}+R^{-1}\gamma_R)\,dR
+=-\int\gamma_R\,dR+\int\gamma_R\,dR=0.
+\]
+\begin{EESegment}{EE-TGT-P094-004}
+These formulas are applied to the auxiliary averages. The time terms and axial-viscosity terms are
+derivatives of the two integrals that are already zero. The compactly supported pressure
+reconstruction fixes the pressure moment as follows.
+\end{EESegment}
+\NSFormula{NS-F-P094-019}{display}{none}
+\[
+\int R\langle p_m\rangle_Y\,dR
+=-\frac12\int R^2\partial_R\langle p_m\rangle_Y\,dR
+=-\frac12\int R^2\langle g_r\rangle_Y\,dR+c_\rho\mathcal P.
+\]
+\begin{EESegment}{EE-TGT-P094-005}
+Putting this expression into the axial fluxes that remain gives \eqref{eq:8.16}. Since
+\NSi{NS-F-P094-020}{\rho} is scaled using the moving \NSi{NS-F-P094-021}{q},
+\NSi{NS-F-P094-022}{c_\rho} may depend on \NSi{NS-F-P094-023}{(Z,T)}. For this reason, its full
+product with \NSi{NS-F-P094-024}{\mathcal P} stays inside
+\NSi{NS-F-P094-025}{\partial_Z}.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P094-006}
+The moments in physical variables and their normalized representatives are related by
+\end{EESegment}
+\NSFormula{NS-F-P094-026}{display}{8.17}
+\begin{equation}
+\begin{gathered}
+(M_\theta)_*=Q^{A-3/2}(M_\theta)_{\mathrm{phys}},
+\qquad (M_z)_*=Q^{A-1}(M_z)_{\mathrm{phys}},\\
+\mathcal P_*=Q^{2A}\mathcal P_{\mathrm{phys}},
+\qquad (c_\rho)_*=Q^{-1}(c_\rho)_{\mathrm{phys}},\\
+(\mathcal J_\theta)_*=Q^{2A-3/2}(\mathcal J_\theta)_{\mathrm{phys}},
+\qquad (\mathcal J_z)_*=Q^{2A-1}(\mathcal J_z)_{\mathrm{phys}}.
+\end{gathered}
+\tag{8.17}\label{eq:8.17}
+\end{equation}
+\begin{EESegment}{EE-TGT-P094-007}
+The constraints that set an integral to zero do not change under normalization. Every nonzero
+correction target uses the normalization for its own row.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P094-008}
+The two tangential residual moments are therefore axial derivatives of
+\NSi{NS-F-P094-027}{\mathcal J_\theta} and
+\NSi{NS-F-P094-028}{\mathcal J_z+c_\rho\mathcal P}. Subtract a fixed normalized bump times each
+weighted residual integral, then apply the radial inverse. These sources do not depend on the
+auxiliary variable, and their weighted integrals are zero, so the inverse is exact. The resulting pair
+will be the target for covariance added by the waves. The weighted radial divergence of that
+covariance enters \eqref{eq:8.3} with a positive sign through
+\NSi{NS-F-P094-029}{W_{r\theta}} and \NSi{NS-F-P094-030}{W_{rz}}. Fix the interior profiles
+\NSi{NS-F-P094-031}{\widehat\sigma_\theta,\widehat\sigma_z} so that
+\NSi{NS-F-P094-032}{\int\xi^2\widehat\sigma_\theta(\xi)\,d\xi
+=\int\xi\widehat\sigma_z(\xi)\,d\xi=1}, and define
+\end{EESegment}
+\NSFormula{NS-F-P094-033}{display}{none}
+\[
+\sigma_{\theta,\mathrm{phys}}=q^{-3/2}\widehat\sigma_\theta(r/\sqrt q),
+\qquad
+\sigma_{z,\mathrm{phys}}=q^{-1}\widehat\sigma_z(r/\sqrt q).
+\]
+\begin{EESegment}{EE-TGT-P094-009}
+Their supports lie inside the mean patch. In each chart, use
+\NSi{NS-F-P094-034}{\sigma_\theta=Q^{3/2}\sigma_{\theta,\mathrm{phys}}} and
+\NSi{NS-F-P094-035}{\sigma_z=Q\sigma_{z,\mathrm{phys}}}, so
+\NSi{NS-F-P094-036}{\int R^2\sigma_\theta\,dR=\int R\sigma_z\,dR=1}. This gives the same
+physical bump functions wherever charts overlap.
+\end{EESegment}
+
+\NSPage{095}%
+\begin{corollary}\label{cor:8.5}
+\begin{EESegment}{EE-TGT-P095-001}
+Under the assumptions of Proposition~\ref{prop:8.4}, define the covariance targets
+\end{EESegment}
+\NSFormula{NS-F-P095-001}{display}{8.18}
+\begin{equation}
+\begin{aligned}
+H_\theta&=-\mathsf T_2\bigl(\langle E_\theta\rangle_Y
+  -\sigma_\theta\varepsilon\partial_Z\mathcal J_\theta\bigr),\\
+H_z&=-\mathsf T_1\bigl(\langle E_z\rangle_Y
+  -\sigma_z\varepsilon\partial_Z(\mathcal J_z+c_\rho\mathcal P)\bigr).
+\end{aligned}
+\tag{8.18}\label{eq:8.18}
+\end{equation}
+\begin{EESegment}{EE-TGT-P095-002}
+They do not depend on the auxiliary variable, are compactly supported inside the active shell, and
+satisfy
+\end{EESegment}
+\NSFormula{NS-F-P095-002}{display}{none}
+\begin{align*}
+(D_r+2/R)H_\theta&=-\langle E_\theta\rangle_Y
+  +\sigma_\theta\varepsilon\partial_Z\mathcal J_\theta,\\
+(D_r+1/R)H_z&=-\langle E_z\rangle_Y
+  +\sigma_z\varepsilon\partial_Z(\mathcal J_z+c_\rho\mathcal P).
+\end{align*}
+\begin{EESegment}{EE-TGT-P095-003}
+The radial primitives act while \NSi{NS-F-P095-003}{(Z,T)} is held fixed. It follows that
+\NSi{NS-F-P095-004}{H_\theta} and \NSi{NS-F-P095-005}{H_z} are zero whenever their matching
+integrands in \eqref{eq:8.18} are zero for every \NSi{NS-F-P095-006}{R}. The construction does
+not enlarge the support in the axial variable \NSi{NS-F-P095-007}{Z}.
+\end{EESegment}
+\end{corollary}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P095-004}
+The integrated identities and the normalization of the two bumps give
+\end{EESegment}
+\NSFormula{NS-F-P095-008}{display}{none}
+\begin{align*}
+\int R^2\bigl(\langle E_\theta\rangle_Y
+  -\sigma_\theta\varepsilon\partial_Z\mathcal J_\theta\bigr)\,dR&=0,\\
+\int R\bigl(\langle E_z\rangle_Y
+  -\sigma_z\varepsilon\partial_Z(\mathcal J_z+c_\rho\mathcal P)\bigr)\,dR&=0.
+\end{align*}
+\begin{EESegment}{EE-TGT-P095-005}
+Both sources are independent of the auxiliary variable. Lemma~\ref{lem:8.2} makes their cutoff
+remainders zero, which proves the two identities and the statements about support.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P095-006}
+These radial-divergence identities leave the factors
+\NSi{NS-F-P095-009}{\varepsilon\partial_Z\mathcal J_\theta} and
+\NSi{NS-F-P095-010}{\varepsilon\partial_Z(\mathcal J_z+c_\rho\mathcal P)} in the bump terms
+that remain. The three defects can therefore be corrected at fixed
+\NSi{NS-F-P095-011}{(Z,T)} without losing the displayed factors of
+\NSi{NS-F-P095-012}{\varepsilon\partial_Z}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P095-007}
+\subsection{Inverting the auxiliary-time derivative on zero-mean functions.}\label{sec:8.5}
+Corollary~\ref{cor:8.5} reduces the auxiliary-averaged correction to the three integral defects and
+a compactly supported stress. The part of the mean residual left after its auxiliary average is
+removed, \NSi{NS-F-P095-013}{(E_\theta^\circ,E_z^\circ)}, has zero auxiliary average at every
+slow point by \eqref{eq:3.9}. Its correction comes from the fast time derivative. The Fourier
+multiplier for that derivative is invertible at every nonzero torus frequency by \eqref{eq:6.7}. The
+axial velocity increment is then made from its azimuthal potential through \eqref{eq:8.14}, which
+keeps the velocity incompressible.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P095-008}
+Recall from Equations~\eqref{eq:6.4} and \eqref{eq:6.6} that
+\NSi{NS-F-P095-014}{N_{\mathrm{abs}}=v_t\cdot\partial_Y} acts on the original auxiliary
+coordinate. On a common torus \NSi{NS-F-P095-015}{y=Y_{i_0}}, the normalized fast time
+derivative is \NSi{NS-F-P095-016}{c_{i_0}N_{i_0}}, where
+\NSi{NS-F-P095-017}{N_{i_0}=v_t\cdot\partial_y} and
+\NSi{NS-F-P095-018}{c_{i_0}=T_g^{i_0}Q^{1+h}}. The normalized physical time derivative splits
+as \NSi{NS-F-P095-019}{\mathfrak t_*=-\varepsilon\partial_T+c_{i_0}N_{i_0}}. Its slow part
+\NSi{NS-F-P095-020}{-\varepsilon\partial_T} differentiates the coefficient's explicit dependence
+on time while \NSi{NS-F-P095-021}{y} stays fixed. Its fast part
+\NSi{NS-F-P095-022}{c_{i_0}N_{i_0}} differentiates the auxiliary oscillations along the physical
+phase map. The fast part is inverted here, while the slow part stays in the residual.
+\end{EESegment}
+
+\begin{lemma}\label{lem:8.6}
+\begin{EESegment}{EE-TGT-P095-009}
+Let \NSi{NS-F-P095-023}{N=v_t\cdot\partial_y} on
+\NSi{NS-F-P095-024}{\mathbb T^2}, with \NSi{NS-F-P095-025}{v_t} as in \eqref{eq:6.2}, and let
+\NSi{NS-F-P095-026}{F} be a smooth function with zero Haar mean. The equation
+\NSi{NS-F-P095-027}{N\varphi=F} has exactly one smooth solution with zero mean, namely
+\NSi{NS-F-P095-028}{\varphi=N^{-1}F}. For every integer
+\NSi{NS-F-P095-029}{m\ge0}, this solution is given by the Fourier series below and satisfies the
+stated norm bound.
+\end{EESegment}
+\NSFormula{NS-F-P095-030}{display}{8.19}
+\begin{equation}
+N^{-1}F=\sum_{k\in\mathbb Z^2\setminus\{0\}}
+\frac{\widehat F(k)}{2\pi i v_t\cdot k}e^{2\pi i k\cdot y},
+\qquad
+\|N^{-1}F\|_{C_y^m}\le C_m\|F\|_{C_y^{m+4}}.
+\tag{8.19}\label{eq:8.19}
+\end{equation}
+\begin{EESegment}{EE-TGT-P095-010}
+For a pair \NSi{NS-F-P095-031}{E_\theta,E_z\in \mathsf M_\alpha} of normalized residual
+coefficients that do not depend on the physical angle, use this inverse in the original auxiliary
+coordinate \NSi{NS-F-P095-032}{Y}. It defines the physical tangential update
+\NSi{NS-F-P095-033}{-N_{\mathrm{abs}}^{-1}
+  (E_{\theta,\mathrm{phys}}^\circ,E_{z,\mathrm{phys}}^\circ)}.
+\NSPage{096}%
+The residuals and velocities here have the normalizations in \eqref{eq:8.11}. Defining the update
+in physical coordinates makes its values agree wherever charts overlap. Its chart representatives
+are
+\end{EESegment}
+\NSFormula{NS-F-P096-001}{display}{8.20}
+\begin{equation}
+\Delta v=-c_{i_0}^{-1}N_{i_0}^{-1}E_\theta^\circ,
+\qquad
+\gamma_d=-c_{i_0}^{-1}N_{i_0}^{-1}E_z^\circ,
+\qquad
+c_{i_0}^{-1}\le CS_*.
+\tag{8.20}\label{eq:8.20}
+\end{equation}
+\begin{EESegment}{EE-TGT-P096-001}
+Both desired increments \NSi{NS-F-P096-002}{\Delta v,\gamma_d} belong to
+\NSi{NS-F-P096-003}{\mathsf M_\alpha}, and each has zero auxiliary mean at every slow and radial
+point. Realizing \NSi{NS-F-P096-004}{\gamma_d} through \eqref{eq:8.14} gives the actual velocity
+increment
+\end{EESegment}
+\NSFormula{NS-F-P096-005}{display}{8.21}
+\begin{equation}
+\begin{gathered}
+(\Delta\beta,\Delta v,\Delta\gamma)
+=(-\varepsilon\partial_Z\mathsf T_1\gamma_d,\Delta v,\gamma_d-\mathcal A_1\gamma_d),\\
+(\Delta\beta,\Delta v,\Delta\gamma)
+\in \mathsf M_{\alpha+1}\times \mathsf M_\alpha\times \mathsf M_\alpha.
+\end{gathered}
+\tag{8.21}\label{eq:8.21}
+\end{equation}
+\begin{EESegment}{EE-TGT-P096-002}
+This field is divergence-free, and adding it leaves both integral constraints in \eqref{eq:8.2}
+unchanged. Let \NSi{NS-F-P096-006}{a=-\mathcal A_1\gamma_d} be the cutoff remainder in the
+axial increment. Its cancellation equations for the fast-time derivative are
+\end{EESegment}
+\NSFormula{NS-F-P096-007}{display}{8.22}
+\begin{equation}
+c_{i_0}N_{i_0}\Delta v=-E_\theta^\circ,
+\qquad
+c_{i_0}N_{i_0}\Delta\gamma=-E_z^\circ+c_{i_0}N_{i_0}a.
+\tag{8.22}\label{eq:8.22}
+\end{equation}
+\begin{EESegment}{EE-TGT-P096-003}
+The angular cancellation is exact. The term
+\NSi{NS-F-P096-008}{c_{i_0}N_{i_0}a} is flat at every fixed order of coefficient derivatives.
+\end{EESegment}
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P096-004}
+The divisor bound in \eqref{eq:6.7} gives
+\NSi{NS-F-P096-009}{|v_t\cdot k|^{-1}\le C(1+|k|)}. Taking four more derivatives of
+\NSi{NS-F-P096-010}{F} than the number requested for the output leaves a summable
+\NSi{NS-F-P096-011}{(1+|k|)^{-3}} bound for the two-dimensional Fourier series. This proves
+\eqref{eq:8.19}, smoothness, and uniqueness once the zero Fourier coefficient is fixed. The
+multiplier commutes with every slow coefficient derivative and preserves real-valued functions. It
+acts while \NSi{NS-F-P096-012}{(R,Z,T)} is held fixed, so it preserves slow and radial support and
+their smooth extensions by zero, though it does not have to preserve support on the auxiliary torus.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P096-005}
+Let \NSi{NS-F-P096-013}{P_iF(Y)=F(J_g^iY)}. A mode \NSi{NS-F-P096-014}{k} on the
+\NSi{NS-F-P096-015}{i}-torus has frequency \NSi{NS-F-P096-016}{(J_g^i)^Tk} in the original
+auxiliary coordinate \NSi{NS-F-P096-017}{Y}. Since
+\NSi{NS-F-P096-018}{J_gv_t=T_gv_t},
+\end{EESegment}
+\NSFormula{NS-F-P096-019}{display}{8.23}
+\begin{equation}
+N_{\mathrm{abs}}P_i=T_g^iP_iN_i,
+\qquad
+N_{\mathrm{abs}}^{-1}P_i=T_g^{-i}P_iN_i^{-1}.
+\tag{8.23}\label{eq:8.23}
+\end{equation}
+\begin{EESegment}{EE-TGT-P096-006}
+The finite covering preserves the Haar average. The same fact also follows from its injective map
+between the frequency lattices. Applying \eqref{eq:8.19} in the common frequency coordinate
+\NSi{NS-F-P096-020}{k} gives the same fixed loss of derivatives in every chart.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P096-007}
+In physical variables, the update is
+\NSi{NS-F-P096-021}{-N_{\mathrm{abs}}^{-1}E_{\mathrm{phys}}^\circ}. Its value in chart coordinates
+has the factor
+\NSi{NS-F-P096-022}{Q^{A-(2A+1/2)}T_g^{-i_0}=Q^{-1-h}T_g^{-i_0}=c_{i_0}^{-1}}, which proves
+\eqref{eq:8.20}. The choice of covering level and its bounded difference from a band level give the
+bound \NSi{NS-F-P096-023}{CS_*} for this factor. For each output derivative, four additional
+derivatives in the torus variables are enough, so the class estimates at every fixed derivative order
+keep their \NSi{NS-F-P096-024}{\varepsilon} exponent. Applying the slow-time term
+\NSi{NS-F-P096-025}{-\varepsilon\partial_T} to these increments supplies one more factor of
+\NSi{NS-F-P096-026}{\varepsilon}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P096-008}
+The desired increments have zero auxiliary mean at every radial point. This gives both desired
+integral constraints, and making the increment from the azimuthal potential keeps them exactly. The
+bounds for \NSi{NS-F-P096-027}{\Delta\beta} and
+\NSi{NS-F-P096-028}{\Delta\gamma} in \eqref{eq:8.21} follow from
+Proposition~\ref{prop:8.3}(ii). The fast derivative commutes with
+\NSi{NS-F-P096-029}{\mathcal I}, \NSi{NS-F-P096-030}{\mathcal J}, and
+\NSi{NS-F-P096-031}{\mathcal I_c}, because the shifts are translations and
+\NSi{NS-F-P096-032}{\chi_m} does not depend on the torus variable. Apply that derivative to
+\NSi{NS-F-P096-033}{\Delta\gamma=\gamma_d+a} to get \eqref{eq:8.22}. Its last term is flat at
+every fixed order of coefficient derivatives by \eqref{eq:8.8}. Full slow differentiation does not
+have to commute with \NSi{NS-F-P096-034}{\mathcal I_c}; Lemma~\ref{lem:8.2} estimates those
+derivatives instead.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P096-009}
+\subsection{A five-dimensional correction that preserves the moment constraints.}\label{sec:8.6}
+At this point, there are inverses for the pressure in Proposition~\ref{prop:8.3}, the
+auxiliary-averaged tangential residual in Corollary~\ref{cor:8.5}, and the part with zero auxiliary
+average in Lemma~\ref{lem:8.6}. What remains are the three integral defects
+\NSi{NS-F-P096-035}{\mathcal P,\mathcal J_\theta,\mathcal J_z} from Equations~\eqref{eq:8.12}
+and \eqref{eq:8.15}. This subsection corrects their linear changes by adding a velocity increment
+that also leaves the two constraints in \eqref{eq:8.2} unchanged. Three azimuthal coefficients and
+two axial coefficients solve the five equations in \eqref{eq:8.25}.
+\end{EESegment}

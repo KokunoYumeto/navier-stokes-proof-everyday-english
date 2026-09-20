@@ -1,0 +1,245 @@
+{
+  "audit_date": "2026-09-20",
+  "counts": {
+    "empty_gap_records": 0,
+    "gap_only_records": 1218,
+    "lean_mapping_entries": 162,
+    "live_ranges": 29,
+    "mapped_records": 64,
+    "mapping_entry_class_counts": {
+      "official_alignment": 2,
+      "partial_static_correspondence": 51,
+      "strong_static_correspondence": 103,
+      "supporting_static_chain": 6
+    },
+    "mathematics_records": 1282,
+    "record_anchor_class_counts": {
+      "indirect_pipeline_only": 14,
+      "no_direct_statement_anchor": 1202,
+      "not_identified": 2,
+      "official_alignment": 2,
+      "partial_static_correspondence": 24,
+      "strong_static_correspondence": 38
+    },
+    "records_by_range": {
+      "pp001-006": 35,
+      "pp007-012": 35,
+      "pp013-018": 38,
+      "pp019-024": 12,
+      "pp025-030": 59,
+      "pp031-036": 72,
+      "pp037-042": 62,
+      "pp043-048": 6,
+      "pp049-054": 6,
+      "pp055-060": 37,
+      "pp061-066": 51,
+      "pp067-072": 61,
+      "pp073-078": 56,
+      "pp079-084": 62,
+      "pp085-090": 49,
+      "pp091-096": 53,
+      "pp097-102": 51,
+      "pp103-108": 61,
+      "pp109-114": 49,
+      "pp115-120": 58,
+      "pp121-126": 26,
+      "pp127-132": 32,
+      "pp133-138": 56,
+      "pp139-144": 63,
+      "pp145-150": 65,
+      "pp151-156": 56,
+      "pp157-162": 49,
+      "pp163-164": 20,
+      "pp165-166": 2
+    },
+    "statement_coverage_counts": {
+      "indirect_pipeline_only": 14,
+      "not_identified": 2,
+      "official_alignment": 2,
+      "partial_static_correspondence": 24,
+      "strong_static_correspondence": 38
+    },
+    "unique_mapped_declarations": 131
+  },
+  "generated_by": "scripts/propagate_everyday_lean_mapping.py",
+  "lean_execution": {
+    "elan_invoked": false,
+    "lake_invoked": false,
+    "lean_invoked": false
+  },
+  "mathematics_files": [
+    {
+      "path": "evidence/translation/pp001-006/MATHEMATICS.jsonl",
+      "records": 35,
+      "sha256": "b248060d0ddee951b80d69557359b2384a63597df2c5ae69d10bcd30a6b3f508"
+    },
+    {
+      "path": "evidence/translation/pp007-012/MATHEMATICS.jsonl",
+      "records": 35,
+      "sha256": "e4423b26f7ac62f34d40d1f793c161f38d3a631862765aa17b3089858dbcb5db"
+    },
+    {
+      "path": "evidence/translation/pp013-018/MATHEMATICS.jsonl",
+      "records": 38,
+      "sha256": "e25f3faba94b3507151d80f7e7896c157bfffdbc4cdaf7c2e2b0c89be46946dd"
+    },
+    {
+      "path": "evidence/translation/pp019-024/MATHEMATICS.jsonl",
+      "records": 12,
+      "sha256": "ca37586dd2243688eec9d6f09197ce1a124d015ea267d2e4f29cd317dae9560b"
+    },
+    {
+      "path": "evidence/translation/pp025-030/MATHEMATICS.jsonl",
+      "records": 59,
+      "sha256": "2b45fc9d5d0ed4d5f8a0e4b1f63dd9552b5ec53758464df67446d7b36a85523e"
+    },
+    {
+      "path": "evidence/translation/pp031-036/MATHEMATICS.jsonl",
+      "records": 72,
+      "sha256": "8d848ff27c4d9d7303d0be55c0bed1ff8fe51d0198c7c15fa14fc76c15b75513"
+    },
+    {
+      "path": "evidence/translation/pp037-042/MATHEMATICS.jsonl",
+      "records": 62,
+      "sha256": "ca3a427852869eb496f4ede5867c015f9e1cfc84f8ca1529a31fa8aabee27f3f"
+    },
+    {
+      "path": "evidence/translation/pp043-048/MATHEMATICS.jsonl",
+      "records": 6,
+      "sha256": "2cd8085e8ab5c953f2d95fb2660742df7560654dd208704c18a8fd0d4d1c34ec"
+    },
+    {
+      "path": "evidence/translation/pp049-054/MATHEMATICS.jsonl",
+      "records": 6,
+      "sha256": "67d1f0a62fd205312d07dae9c3461e53c3d2edf6e4ac905d20a07e74f0daf43c"
+    },
+    {
+      "path": "evidence/translation/pp055-060/MATHEMATICS.jsonl",
+      "records": 37,
+      "sha256": "8931ad291c418a8173739c6a835fb69e2e78a9557a30104736a1c6e4372be9a3"
+    },
+    {
+      "path": "evidence/translation/pp061-066/MATHEMATICS.jsonl",
+      "records": 51,
+      "sha256": "8945313f5059b9e7a222c9c81bc60328f1ca91c62207dcabf6da68d9d610e4aa"
+    },
+    {
+      "path": "evidence/translation/pp067-072/MATHEMATICS.jsonl",
+      "records": 61,
+      "sha256": "c9865435b381597f6da478d10cacb1a04dd79d8209ac2d7031755fb2cc41a4dc"
+    },
+    {
+      "path": "evidence/translation/pp073-078/MATHEMATICS.jsonl",
+      "records": 56,
+      "sha256": "4cb17a545b1f2c38054f3a203cf87656b598f9dcf6f786f33ce3328c14745cef"
+    },
+    {
+      "path": "evidence/translation/pp079-084/MATHEMATICS.jsonl",
+      "records": 62,
+      "sha256": "029f30dbdffca913b83d315c8ad9f02d37266d6497d2c8e1a5c9ffae4b4b8abe"
+    },
+    {
+      "path": "evidence/translation/pp085-090/MATHEMATICS.jsonl",
+      "records": 49,
+      "sha256": "b5b34ef6ead58d44769d1d2e0738990cb3765b3505aa46e8d4dfc6d704bb0c20"
+    },
+    {
+      "path": "evidence/translation/pp091-096/MATHEMATICS.jsonl",
+      "records": 53,
+      "sha256": "50c86b71e97a10fdcf403a49c9129c2036422881c06ab2e5e405a30526e31673"
+    },
+    {
+      "path": "evidence/translation/pp097-102/MATHEMATICS.jsonl",
+      "records": 51,
+      "sha256": "9673163c01c21e75f5d69d5ac44c6352980327e40bc09515b8b6511e6d93b0a6"
+    },
+    {
+      "path": "evidence/translation/pp103-108/MATHEMATICS.jsonl",
+      "records": 61,
+      "sha256": "9362f249ea0587ecc229509b92c16f9ce507091797221851f9f4d7ba721fcc01"
+    },
+    {
+      "path": "evidence/translation/pp109-114/MATHEMATICS.jsonl",
+      "records": 49,
+      "sha256": "a93129018847ebf33ca46156f5037eb76db7620a3808dc4e8b71f051aff3ac73"
+    },
+    {
+      "path": "evidence/translation/pp115-120/MATHEMATICS.jsonl",
+      "records": 58,
+      "sha256": "fc8e719308c1154479bc090176934320a5c7d8dd6928a0ef3aeea635609f3175"
+    },
+    {
+      "path": "evidence/translation/pp121-126/MATHEMATICS.jsonl",
+      "records": 26,
+      "sha256": "6b85f3cb29e44db063c49f84c92772e3a26e11d0e499b02ecbd0fc1c35af843d"
+    },
+    {
+      "path": "evidence/translation/pp127-132/MATHEMATICS.jsonl",
+      "records": 32,
+      "sha256": "86b4364c4f92c30b13bd6cae43ae309a2052544533bc7b3f3a0a873ee24780e3"
+    },
+    {
+      "path": "evidence/translation/pp133-138/MATHEMATICS.jsonl",
+      "records": 56,
+      "sha256": "9289b0de65c34305b3555c7aead73a125cf4070b0088fbe7bdb79709014cf40a"
+    },
+    {
+      "path": "evidence/translation/pp139-144/MATHEMATICS.jsonl",
+      "records": 63,
+      "sha256": "2ec169033a13b2b8b5ee0b24b62c1b955007435535b773202cb601153347fdf5"
+    },
+    {
+      "path": "evidence/translation/pp145-150/MATHEMATICS.jsonl",
+      "records": 65,
+      "sha256": "a9cddb8bbdad42b3aeb7abdfdddf302dc7041036014b7a46c5ab36bc7b6f508d"
+    },
+    {
+      "path": "evidence/translation/pp151-156/MATHEMATICS.jsonl",
+      "records": 56,
+      "sha256": "e9a1e343501723653fd6c358af6b1051a2b2a02019f93db4d5da8daf2cf2c539"
+    },
+    {
+      "path": "evidence/translation/pp157-162/MATHEMATICS.jsonl",
+      "records": 49,
+      "sha256": "200290c5f509cc761b47d2934718d63831801274f45d79b33632a8a6abcd0f1b"
+    },
+    {
+      "path": "evidence/translation/pp163-164/MATHEMATICS.jsonl",
+      "records": 20,
+      "sha256": "44edb2b6c6c9cd560a6f2662d2a018f6e6adc70d0dd9e986936f69c8954e6d04"
+    },
+    {
+      "path": "evidence/translation/pp165-166/MATHEMATICS.jsonl",
+      "records": 2,
+      "sha256": "4b0c27641401b0a05daef773c9a0c177c1e8d1c05767bd809d6364a156ca35a1"
+    }
+  ],
+  "method": {
+    "limits": "This is static evidence propagation. It does not establish a successful Lean build, elaboration, typecheck, captured axiom output, or semantic proof identity.",
+    "nonstatement_records": "Every other live mathematics record receives a record-specific gap naming its source spans and claim or definition IDs.",
+    "statement_binding": "Each numbered source environment is bound to its first live translated segment. Official, strong-static, and partial-static declaration entries come only from MANUSCRIPT_LEAN_MAP; pipeline-only and unidentified items receive gaps only."
+  },
+  "record_id": "NS-EE-LEAN-PROPAGATION-20260920-001",
+  "schema": "navier-stokes-everyday-lean-propagation/v1",
+  "source_map": {
+    "declaration_count": 132,
+    "frozen_commit": "f9e8bc5b38b6e212696e8a30e3e91517af887bbd",
+    "path": "evidence/lean/MANUSCRIPT_LEAN_MAP.json",
+    "record_id": "NS-MANUSCRIPT-LEAN-MAP-20260920-001",
+    "sha256": "1eace21755cbcc1d59ee86f7031dba4e3200f15c0fd9dda018672de8fbb9232c",
+    "statement_count": 80
+  },
+  "validation": {
+    "focused_test": {
+      "command": "python scripts/test_everyday_lean_mapping.py",
+      "result": "pass"
+    },
+    "lean_declaration_locators_checked": 132,
+    "manuscript_statement_locators_checked": 80,
+    "mathematics_schema_records_checked": 1282,
+    "propagation_check": {
+      "command": "python scripts/propagate_everyday_lean_mapping.py --check",
+      "result": "pass"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "missing_optional": [
+    "tex4ebook",
+    "linkchecker"
+  ],
+  "missing_required": [],
+  "notes": {
+    "epubcheck": "Required by the final profile. Provisional builds use the internal EPUB structure, XML, image-alternative, and link checks when it is unavailable.",
+    "linkchecker": "The internal checker closes local HTML and EPUB links. It does not make network requests for external links.",
+    "make4ht": "Detected for reference but not used. The reproducible web route uses Pandoc with native MathML because the installed TeX4ht route does not finish this book in a practical validation window.",
+    "tex4ebook": "Not used. EPUB 3 is built from the checked HTML with Pandoc and then repacked deterministically."
+  },
+  "profile": "local",
+  "python": {
+    "implementation": "cpython",
+    "version": "3.13.9"
+  },
+  "python_modules": {
+    "latex2mathml": {
+      "available": true,
+      "version": "3.81.0"
+    },
+    "lxml": {
+      "available": true,
+      "version": "6.1.1"
+    },
+    "pypdf": {
+      "available": true,
+      "version": "6.12.2"
+    }
+  },
+  "schema": "navier-stokes-everyday-dependencies/v1",
+  "status": "pass",
+  "tools": {
+    "epubcheck": {
+      "available": true,
+      "command": [
+        "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.11.10-hotspot\\bin\\java.EXE",
+        "-jar",
+        "${PROJECT_ROOT}\\tmp\\dependencies\\epubcheck-5.4.0-runtime\\epubcheck-5.4.0\\epubcheck.jar"
+      ],
+      "exit_code": 0,
+      "provenance": {
+        "archive_bytes": 33093170,
+        "archive_present": true,
+        "archive_sha256": "33350c61038e71dfb3d45a76aed04bf5481e6d5500cb780f6e98db8bbd15a28c",
+        "archive_url": "https://github.com/w3c/epubcheck/releases/download/v5.4.0/epubcheck-5.4.0.zip",
+        "archive_verified": true,
+        "fetch_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/fetch_epubcheck.ps1",
+        "locked_version": "5.4.0",
+        "release_page": "https://github.com/w3c/epubcheck/releases/tag/v5.4.0",
+        "runtime_jar": "tmp/dependencies/epubcheck-5.4.0-runtime/epubcheck-5.4.0/epubcheck.jar",
+        "runtime_jar_sha256": "2146665a124998dc6c908010ffe0d09dc4f4c8014f2c8fd6a1aa11f64c40ac93"
+      },
+      "version": "EPUBCheck v5.4.0"
+    },
+    "linkchecker": {
+      "available": false,
+      "command": "linkchecker",
+      "version": null
+    },
+    "make4ht": {
+      "available": true,
+      "command": "make4ht.EXE",
+      "exit_code": 0,
+      "version": "make4ht version v0.4e"
+    },
+    "pandoc": {
+      "available": true,
+      "command": "pandoc.EXE",
+      "exit_code": 0,
+      "version": "pandoc 3.9.0.2 | Features: +server +lua | Scripting engine: Lua 5.4"
+    },
+    "pdfinfo": {
+      "available": true,
+      "command": "pdfinfo.EXE",
+      "exit_code": 0,
+      "version": "pdfinfo version 26.07.0 | Copyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org | Copyright 1996-2011, 2022 Glyph & Cog, LLC"
+    },
+    "pdflatex": {
+      "available": true,
+      "command": "pdflatex.EXE",
+      "exit_code": 0,
+      "version": "MiKTeX-pdfTeX 4.27 (MiKTeX 26.5) | © 1982 D. E. Knuth, © 1996-2026 Hàn Thế Thành | TeX is a trademark of the American Mathematical Society."
+    },
+    "pdftoppm": {
+      "available": true,
+      "command": "pdftoppm.EXE",
+      "exit_code": 0,
+      "version": "pdftoppm version 26.07.0 | Copyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org | Copyright 1996-2011, 2022 Glyph & Cog, LLC"
+    },
+    "tex4ebook": {
+      "available": false,
+      "command": "tex4ebook.EXE",
+      "exit_code": 1,
+      "version": "tex4ebook: The Lua script could not be found. | tex4ebook: Data: path=\"scripts/tex4ebook/tex4ebook\""
+    },
+    "xmllint": {
+      "available": true,
+      "command": "xmllint.EXE",
+      "exit_code": 0,
+      "version": "C:\\Strawberry\\c\\bin\\xmllint.EXE: using libxml version 21210 | compiled with: Threads Tree Output Push Reader Patterns Writer SAXv1 HTTP DTDValid HTML C14N Catalog XPath XPointer XInclude Iconv ISO8859X Unicode Regexps Automata Schemas Schematron Modules Debug Zlib Lzma"
+    }
+  }
+}

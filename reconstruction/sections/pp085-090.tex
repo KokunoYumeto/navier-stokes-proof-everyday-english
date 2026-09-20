@@ -1,0 +1,521 @@
+\NSPage{085}%
+In particular, the covariance identity before the curl correction is
+\NSFormula{NS-F-P085-001}{display}{none}
+\[
+  \mathcal C(W_0+\mathcal L\Sigma)=\varepsilon \mathcal T_{0,*}+\Sigma+\mathcal C(\mathcal L\Sigma).
+\]
+Thus \NSi{NS-F-P085-002}{\mathcal L} is a right inverse of
+\NSi{NS-F-P085-003}{D\mathcal C(W_0)}. The quadratic remainder
+\NSi{NS-F-P085-004}{\mathcal C(\mathcal L\Sigma)} is retained in the stress.
+The same squared partition used for the leading covariance also assembles this linear inverse
+across the slow boxes. Write \NSi{NS-F-P085-005}{W_{0,\beta}} and
+\NSi{NS-F-P085-006}{\mathcal L_\beta} for the local constructions before multiplication
+by the slow cutoff. For a real two-vector stress \NSi{NS-F-P085-007}{\sigma(r,z,t)}, independent of the angular and
+auxiliary variables, whose normalized representatives \NSi{NS-F-P085-008}{Q^{2A}\sigma} are in
+\NSi{NS-F-P085-009}{\mathsf M_\alpha}, set
+\NSFormula{NS-F-P085-010}{display}{7.35}
+\begin{equation}
+\begin{aligned}
+  W_{0,\mathrm{phys}}^{\mathrm{as}}
+    &=\sum_{\beta=(\ell,a)} Q^{-A}\eta_\beta W_{0,\beta},\\
+  \mathcal L_{\mathrm{phys}}^{\mathrm{as}}\sigma
+    &=\sum_{\beta=(\ell,a)} Q^{-A}\eta_\beta\mathcal L_\beta(Q^{2A}\sigma).
+\end{aligned}
+\tag{7.35}\label{eq:7.35}
+\end{equation}
+Each summand uses the scale \NSi{NS-F-P085-011}{Q=2^{-\ell}} of its label
+\NSi{NS-F-P085-012}{\beta=(\ell,a)}. The sums are locally finite for
+\NSi{NS-F-P085-013}{q>0}. For overlapping slow supports, disjointness of the assigned rectangles, the squared
+partitions, and the physical factor \NSi{NS-F-P085-014}{Q^{-2A}} give
+\NSi{NS-F-P085-015}{\mathcal B(W_{0,\mathrm{phys}}^{\mathrm{as}},
+\mathcal L_{\mathrm{phys}}^{\mathrm{as}}\sigma)=\sigma}. In a chart of scale
+\NSi{NS-F-P085-016}{Q}, set \NSi{NS-F-P085-017}{\Sigma=Q^{2A}\sigma} and define the normalized representatives by
+\NSFormula{NS-F-P085-018}{display}{none}
+\[
+  W_0^{\mathrm{as}}=Q^A W_{0,\mathrm{phys}}^{\mathrm{as}},
+  \qquad
+  \mathcal L^{\mathrm{as}}\Sigma
+  =Q^A\mathcal L_{\mathrm{phys}}^{\mathrm{as}}(Q^{-2A}\Sigma).
+\]
+To test wave-class membership, collect all coefficients with the same label and harmonic, as
+in Definition~\ref{def:6.5}. Bounded overlap of the slow cutoffs and the common-torus bounds give
+\NSi{NS-F-P085-019}{W_0^{\mathrm{as}}\in \mathsf W_{1/2}} and
+\NSi{NS-F-P085-020}{\mathcal L^{\mathrm{as}}\Sigma\in \mathsf W_{\alpha-1/2}}, and
+\NSFormula{NS-F-P085-021}{display}{7.36}
+\begin{equation}
+  \mathcal B(W_0^{\mathrm{as}},\mathcal L^{\mathrm{as}}\Sigma)=\Sigma.
+\tag{7.36}\label{eq:7.36}
+\end{equation}
+These definitions are consistent across overlapping charts. Auxiliary independence of the
+input allows the scalar coefficients to be taken outside the covariance integral, as required
+for the identity in Proposition~\ref{prop:7.6}.
+
+\subsection{Exact curls, retained tails, and the covariance remainder.}\label{sec:7.4}
+For the harmonic velocity
+\NSi{NS-F-P085-022}{t_m e^{ikm\Phi}}, orthogonality to the phase gradient,
+\NSi{NS-F-P085-023}{n_\Phi\cdot t_m=0}, cancels the leading term in its
+divergence. Derivatives of the amplitude \NSi{NS-F-P085-024}{t_m} still contribute. Taking the full curl of the vector
+potential \NSi{NS-F-P085-025}{A_m=C_m e^{ikm\Phi}} in \eqref{eq:7.38} supplies the corrected amplitude
+\NSi{NS-F-P085-026}{t_m+r_m} needed for exact
+incompressibility: the amplitude from differentiating the exponential is \NSi{NS-F-P085-027}{t_m}, while derivatives
+of the potential coefficient \NSi{NS-F-P085-028}{C_m} and the cylindrical frame give
+\NSi{NS-F-P085-029}{r_m}. In this subsection we
+will estimate \NSi{NS-F-P085-030}{r_m} in Lemma~\ref{lem:7.7}, then the temporal cutoff residual in
+\eqref{eq:7.40}, and finally the
+covariance of a stress increment formed from the actual velocities in Corollary~\ref{cor:7.8}.
+
+For a normalized potential \NSi{NS-F-P085-031}{A=(A_r,A_\theta,A_z)}, we define
+\NSFormula{NS-F-P085-032}{display}{7.37}
+\begin{equation}
+  \operatorname{curl}_* A
+  =\bigl(R^{-1}\partial_\theta A_z-D_zA_\theta,
+         D_zA_r-D_rA_z,
+         (D_r+R^{-1})A_\theta-R^{-1}\partial_\theta A_r\bigr).
+\tag{7.37}\label{eq:7.37}
+\end{equation}
+The normalized derivatives include the chain-rule terms for evaluation at \eqref{eq:6.3}, so
+\NSi{NS-F-P085-033}{\operatorname{curl}_* A} is
+the normalized physical curl of the evaluated potential.
+
+Fix a label, a nonzero integer \NSi{NS-F-P085-034}{m}, and a harmonic coefficient
+\NSi{NS-F-P085-035}{t_m\in \mathsf W_\alpha} independent of
+\NSi{NS-F-P085-036}{\theta}, with \NSi{NS-F-P085-037}{n_\Phi\cdot t_m=0}. We require
+\NSi{NS-F-P085-038}{t_m} to be supported in the prescribed slow and transverse
+supports and compactly inside the pulse interval, with smooth zero extension across all
+these boundaries. We choose the potential so that the amplitude obtained when its curl
+\NSPage{086}%
+differentiates the exponential is \NSi{NS-F-P086-001}{t_m}. The potential coefficient
+\NSi{NS-F-P086-002}{C_m} and the oscillating potential
+\NSi{NS-F-P086-003}{A_m} are
+\NSFormula{NS-F-P086-004}{display}{7.38}
+\begin{equation}
+  C_m=\frac{i\,n_\Phi\times t_m}{km|n_\Phi|^2},
+  \qquad A_m=C_m e^{ikm\Phi},
+  \qquad \operatorname{curl}_*A_m=(t_m+r_m)e^{ikm\Phi}.
+\tag{7.38}\label{eq:7.38}
+\end{equation}
+The last identity defines \NSi{NS-F-P086-005}{r_m}, the difference between the curl amplitude and the prescribed
+transverse amplitude. Since \NSi{NS-F-P086-006}{C_m} is independent of
+\NSi{NS-F-P086-007}{\theta}, the remainder \NSi{NS-F-P086-008}{r_m} is
+\NSFormula{NS-F-P086-009}{display}{none}
+\[
+  r_m=\bigl(-D_z(C_m)_\theta,
+             D_z(C_m)_r-D_r(C_m)_z,
+             (D_r+R^{-1})(C_m)_\theta\bigr).
+\]
+
+\begin{lemma}\label{lem:7.7}
+For every \NSi{NS-F-P086-010}{\alpha\in\R} and nonzero integer
+\NSi{NS-F-P086-011}{m}, let \NSi{NS-F-P086-012}{t_m\in \mathsf W_\alpha} satisfy
+\NSi{NS-F-P086-013}{n_\Phi\cdot t_m=0}. Assume it
+is supported in the prescribed slow and transverse supports and compactly inside the pulse interval,
+with smooth zero extension across all these boundaries. The construction \eqref{eq:7.38} gives
+\NSi{NS-F-P086-014}{C_m\in \mathsf W_{\alpha+1/2}}
+and \NSi{NS-F-P086-015}{r_m\in \mathsf W_{\alpha+1/2-\kappa_s}}. The velocity
+\NSi{NS-F-P086-016}{(t_m+r_m)e^{ikm\Phi}=\operatorname{curl}_*A_m} is exactly divergence-free for the
+normalized operators and after evaluation at the phase map. Potential and velocity have smooth zero
+extensions across their support boundaries. For the full amplitude
+\NSi{NS-F-P086-017}{a_m=t_m+r_m}, the scalar product
+with the phase normal satisfies
+\NSFormula{NS-F-P086-018}{display}{7.39}
+\begin{equation}
+  ikm\,n_\Phi\cdot a_m
+  =-\bigl((D_r+R^{-1})(a_m)_r+D_z(a_m)_z\bigr),
+  \qquad n_\Phi\cdot a_m\in \mathsf W_{\alpha+1/2-\kappa_s}.
+\tag{7.39}\label{eq:7.39}
+\end{equation}
+Physical potentials and pressures are obtained from chart ones by multiplication by
+\NSi{NS-F-P086-019}{Q^{1/2-A}} and \NSi{NS-F-P086-020}{Q^{-2A}}, respectively.
+\end{lemma}
+
+\begin{proof}
+The amplitude from differentiating the exponential in \NSi{NS-F-P086-021}{\operatorname{curl}_*A_m} is
+\NSFormula{NS-F-P086-022}{display}{none}
+\[
+  ikm\,n_\Phi\times C_m
+  =-\frac{n_\Phi\times(n_\Phi\times t_m)}{|n_\Phi|^2}
+  =t_m-\frac{n_\Phi(n_\Phi\cdot t_m)}{|n_\Phi|^2}
+  =t_m.
+\]
+Every remaining term in \NSi{NS-F-P086-023}{\operatorname{curl}_*A_m} differentiates the potential coefficient
+\NSi{NS-F-P086-024}{C_m} or the cylindrical
+frame. The factor \NSi{NS-F-P086-025}{(km)^{-1}} increases the
+\NSi{NS-F-P086-026}{\varepsilon} exponent by \NSi{NS-F-P086-027}{1/2}, and applying
+\NSi{NS-F-P086-028}{D_r} decreases it by at
+most \NSi{NS-F-P086-029}{\kappa_s}, by \eqref{eq:6.32}. The multiplier
+\NSi{NS-F-P086-030}{n_\Phi/|n_\Phi|^2} has polynomial coefficient bounds by Lemma~\ref{lem:7.1}.
+These estimates prove the two class bounds with all derivatives of fixed order. The normalized
+divergence is
+\NSi{NS-F-P086-031}{\operatorname{div}_*a=(D_r+R^{-1})a_r+R^{-1}\partial_\theta a_\theta+D_z a_z}.
+Since \NSi{NS-F-P086-032}{D_r(R^{-1})=-R^{-2}}, we have
+\NSi{NS-F-P086-033}{(D_r+R^{-1})(R^{-1}f)=R^{-1}D_r f}. Substituting \eqref{eq:7.37} gives
+\NSFormula{NS-F-P086-034}{display}{none}
+\begin{align*}
+  \operatorname{div}_*\operatorname{curl}_*A
+   ={}&R^{-1}D_r\partial_\theta A_z-(D_r+R^{-1})D_zA_\theta\\
+     &+R^{-1}D_z\partial_\theta A_r-R^{-1}\partial_\theta D_rA_z\\
+     &+D_z(D_r+R^{-1})A_\theta-R^{-1}D_z\partial_\theta A_r=0,
+\end{align*}
+where the three pairs cancel by commutation. The chain rule preserves this identity after
+evaluation at the phase map. Expanding the divergence of
+\NSi{NS-F-P086-035}{a_m e^{ikm\Phi}}, whose amplitude
+coefficient is independent of \NSi{NS-F-P086-036}{\theta}, gives \eqref{eq:7.39}; division by
+\NSi{NS-F-P086-037}{km} and one application of \NSi{NS-F-P086-038}{D_r} give
+the exponent improvement \NSi{NS-F-P086-039}{1/2-\kappa_s}. The support and smooth extension statements follow
+from the coefficient bounds and cutoffs.
+\end{proof}
+
+To assemble real velocities, use conjugate pairs. For example,
+\NSi{NS-F-P086-040}{t\cos(k\Phi)}, with real \NSi{NS-F-P086-041}{t},
+has coefficients \NSi{NS-F-P086-042}{t/2} at harmonics
+\NSi{NS-F-P086-043}{m=1,-1}. The corresponding potential and pressure
+coefficients obey the same conjugacy condition. In particular, the pressure associated with a
+real cosine velocity mode retains the factor \NSi{NS-F-P086-044}{i/(km)} in \eqref{eq:7.13}.
+
+\paragraph{The temporal cutoff and its residual.}
+For the solution of Proposition~\ref{prop:7.2}, we set
+\NSi{NS-F-P086-045}{\widehat t_m=\psi t_m}
+and \NSi{NS-F-P086-046}{\widehat\pi_m=\psi\pi_m}, and apply Lemma~\ref{lem:7.7} to
+\NSi{NS-F-P086-047}{\widehat t_m}. We write \NSi{NS-F-P086-048}{\widehat r_m} for the curl remainder of this cutoff
+amplitude. The solution before multiplication by \NSi{NS-F-P086-049}{\psi} may reach both pulse endpoints. The
+\NSPage{087}%
+cutoff makes the potential and pressure zero on an open neighborhood of each endpoint.
+On the labelled rectangle \NSi{NS-F-P087-001}{0\leq v\leq L_s}, the product rule in \eqref{eq:7.5} gives
+\NSFormula{NS-F-P087-002}{display}{7.40}
+\begin{equation}
+  \widehat t_m'+\mathcal K\widehat t_m+m^2d\widehat t_m
+  +ikm n_\Phi\widehat\pi_m+f_m
+  =(1-\psi)f_m+\psi't_m.
+\tag{7.40}\label{eq:7.40}
+\end{equation}
+By \eqref{eq:6.16}, \NSi{NS-F-P087-003}{\psi=1\text{ on }|v-L_s/2|\leq L_s/5}, where both terms on the right vanish. Wherever
+either term remains, \NSi{NS-F-P087-004}{|v-L_s/2|\geq L_s/5}, so \eqref{eq:7.16} gives an additional factor
+\NSi{NS-F-P087-005}{S_*^C e^{-cS_*}} in every
+fixed coefficient derivative estimate. In the iteration, \NSi{NS-F-P087-006}{f_m e^{ikm\Phi}} is an actual supported harmonic
+source with smooth zero extension; thus this local identity describes its global uncancelled
+remainder as well.
+
+At a fixed correction stage, converting any fixed derivative estimate to physical variables
+introduces a fixed power of \NSi{NS-F-P087-007}{Q^{-1}} and a polynomial in
+\NSi{NS-F-P087-008}{S_*}. As \NSi{NS-F-P087-009}{S_*=\ell^2},
+\NSi{NS-F-P087-010}{Q=2^{-\ell}}, and \NSi{NS-F-P087-011}{q\asymp Q},
+for each fixed \NSi{NS-F-P087-012}{M,C,N} we have
+\NSFormula{NS-F-P087-013}{display}{none}
+\[
+  q^{-N}Q^{-M}S_*^C e^{-cS_*}
+  \leq C_N\exp\bigl(-c\ell^2+(M+N)\ell\log 2+2C\log\ell\bigr)
+  \longrightarrow 0.
+\]
+Thus the resulting physical derivatives are \NSi{NS-F-P087-014}{O(q^N)} for every fixed
+\NSi{NS-F-P087-015}{N}. These terms remain
+separate additive flat residuals throughout subsequent corrections. The same argument
+treats homogeneous cutoff tails. The pressure coefficient still satisfies
+\NSi{NS-F-P087-016}{\widehat\pi_m\in \mathsf W_{\alpha+1/2}}, while
+the exact velocity amplitude is
+\NSi{NS-F-P087-017}{\widehat t_m+\widehat r_m}, with
+\NSi{NS-F-P087-018}{\widehat r_m\in \mathsf W_{\alpha+1/2-\kappa_s}}.
+
+\paragraph{Covariance of the actual velocities.}
+The linear covariance inverse was defined at the fixed
+primary wave. During iteration, its increment is added to a divergence-free wave field that
+already contains earlier corrections, and the new increment has its own curl remainder. The
+exact expansion below identifies the prescribed stress increment and retains three further
+contributions: interaction with previous corrections, interaction with the new curl remainder,
+and the square of the new velocity.
+
+\begin{corollary}\label{cor:7.8}
+Fix \NSi{NS-F-P087-019}{\alpha,\rho\in\R}, and use the normalized representatives of \eqref{eq:7.35}. Suppose
+\NSi{NS-F-P087-020}{U} is a real
+divergence-free wave field, including its curl remainders, such that
+\NSFormula{NS-F-P087-021}{display}{none}
+\[
+  U=W_0^{\mathrm{as}}+E,
+  \qquad U\in \mathsf W_{1/2},
+  \qquad E\in \mathsf W_\rho.
+\]
+Let \NSi{NS-F-P087-022}{\Sigma(R,Z,T)\in \mathsf M_\alpha} be a real two-vector independent of the angular and auxiliary variables. Apply
+Lemma~\ref{lem:7.7} to the signed amplitudes
+\NSi{NS-F-P087-023}{\mathcal L^{\mathrm{as}}\Sigma}, obtaining the divergence-free increment
+\NSi{NS-F-P087-024}{V=\mathcal L^{\mathrm{as}}\Sigma+R},
+where \NSi{NS-F-P087-025}{R\in \mathsf W_{\alpha-\kappa_s}} is its curl remainder. Then
+\NSFormula{NS-F-P087-026}{display}{7.41}
+\begin{equation}
+  \mathcal C(U+V)-\mathcal C(U)
+  =\Sigma+\mathcal B(E,\mathcal L^{\mathrm{as}}\Sigma)
+   +\mathcal B(U,R)+\mathcal C(V).
+\tag{7.41}\label{eq:7.41}
+\end{equation}
+The three remainder terms satisfy
+\NSFormula{NS-F-P087-027}{display}{7.42}
+\begin{equation}
+\begin{aligned}
+  \mathcal B(E,\mathcal L^{\mathrm{as}}\Sigma)&\in \mathsf M_{\rho+\alpha-1/2},\\
+  \mathcal B(U,R)&\in \mathsf M_{\alpha+1/2-\kappa_s},\\
+  \mathcal C(V)&\in \mathsf M_{2\alpha-1}.
+\end{aligned}
+\tag{7.42}\label{eq:7.42}
+\end{equation}
+Taking the radial divergence of each remainder term decreases the
+\NSi{NS-F-P087-028}{\varepsilon} exponent by at most a further
+\NSi{NS-F-P087-029}{\kappa_s}.
+\end{corollary}
+
+\begin{proof}
+We expand the quadratic map and use
+\NSi{NS-F-P087-030}{\mathcal B(W_0^{\mathrm{as}},\mathcal L^{\mathrm{as}}\Sigma)=\Sigma}:
+\NSFormula{NS-F-P087-031}{display}{none}
+\begin{align*}
+  \mathcal C(U+V)-\mathcal C(U)
+    &=\mathcal B(U,V)+\mathcal C(V)\\
+    &=\mathcal B(W_0^{\mathrm{as}},\mathcal L^{\mathrm{as}}\Sigma)
+      +\mathcal B(E,\mathcal L^{\mathrm{as}}\Sigma)+\mathcal B(U,R)+\mathcal C(V)\\
+    &=\Sigma+\mathcal B(E,\mathcal L^{\mathrm{as}}\Sigma)
+      +\mathcal B(U,R)+\mathcal C(V).
+\end{align*}
+The bounds for \NSi{NS-F-P087-032}{\mathcal B(E,\mathcal L^{\mathrm{as}}\Sigma)} and
+\NSi{NS-F-P087-033}{\mathcal B(U,R)} are products of the stated classes. Since
+\NSi{NS-F-P087-034}{\kappa_s<1/2},
+\NSi{NS-F-P087-035}{V\in \mathsf W_{\alpha-1/2}}, so
+\NSi{NS-F-P087-036}{\mathcal C(V)\in \mathsf M_{2\alpha-1}}. This proves \eqref{eq:7.41} and \eqref{eq:7.42} without any positivity condition
+\NSPage{088}%
+on an accumulated stress. The radial-divergence assertion follows from \eqref{eq:6.32}; the zeroth-
+order cylindrical terms cause no further exponent loss.
+\end{proof}
+
+\section{Compactly supported mean corrections}\label{sec:8}
+The wave construction in Section~\ref{sec:7} provides pulses whose averaged covariance realizes the
+leading stress target \eqref{eq:7.26}, and an inverse for the principal equation of each nonzero angular
+harmonic (Proposition~\ref{prop:7.2}). The angular mean of the residual still requires correction. It
+includes quadratic wave products and may depend on the auxiliary torus even though it is
+independent of the physical angle (Proposition~\ref{prop:8.1}). In this section we construct pressure,
+tangential stresses, and divergence-free velocity increments for this mean, with support
+inside the active annulus (Proposition~\ref{prop:8.3} and Corollary~\ref{cor:8.5}).
+
+There are two different inversion problems. For an auxiliary-averaged source, a compactly
+supported solution \NSi{NS-F-P088-001}{\varphi} of
+\NSi{NS-F-P088-002}{(D_r+e/R)\varphi=f}, with
+\NSi{NS-F-P088-003}{e\in\{0,1,2\}}, requires
+\NSi{NS-F-P088-004}{\int R^e f\,dR=0}; see
+Lemma~\ref{lem:8.2}. For a source depending on the auxiliary torus, inversion of the fast time
+derivative requires zero auxiliary average at each slow point (Lemma~\ref{lem:8.6}). We first derive the
+mean momentum equations (Proposition~\ref{prop:8.1}) and construct the radial inverse (Lemma~\ref{lem:8.2}),
+including the remainder needed when its source depends on the torus. We then apply it to
+pressure and divergence-free axial increments (Proposition~\ref{prop:8.3}), and to tangential stresses
+(Corollary~\ref{cor:8.5}). The integrated equations \eqref{eq:8.16} identify three scalar defects
+\NSi{NS-F-P088-005}{\mathcal P,\mathcal J_\theta,\mathcal J_z}, defined
+in Equations~\eqref{eq:8.12} and \eqref{eq:8.15}. A final linear map chooses five velocity coefficients to cancel
+their linear changes while preserving two velocity moments (Lemma~\ref{lem:8.7}); we compute the
+nonlinear changes explicitly in Lemma~\ref{lem:8.8}. The correction cycle in Proposition~\ref{prop:9.6} uses these
+constructions after each wave update.
+
+Unspecified radial integrals run from zero to infinity. We use the averaging and projection
+conventions of Equations~\eqref{eq:3.7} and \eqref{eq:3.9}. Recall that
+\NSi{NS-F-P088-006}{\langle\,\cdot\,\rangle_\theta} takes the angular average componentwise
+in the cylindrical basis, whereas \NSi{NS-F-P088-007}{\langle\,\cdot\,\rangle_Y} takes Haar average on the auxiliary torus of
+Lemma~\ref{lem:6.2}, and \NSi{NS-F-P088-008}{f^\circ=f-\langle f\rangle_Y}. In particular, an angularly invariant field may still depend
+on that torus. The coefficient classes \NSi{NS-F-P088-009}{\mathsf M_\alpha} and
+\NSi{NS-F-P088-010}{\mathsf S_\alpha} are those of Definition~\ref{def:6.4}; their estimates
+hold for every fixed derivative order. Unless physical variables are displayed, we use the
+normalized chart variables and operators of \eqref{eq:6.6}.
+
+\subsection{Conservative momentum equations and integral constraints.}\label{sec:8.1}
+In this subsection we
+derive the mean momentum equations in divergence form (Proposition~\ref{prop:8.1}) and state the
+two velocity moments \eqref{eq:8.2} that the corrections must preserve. The radial integrals of these
+equations determine which compactly supported corrections are possible (Proposition~\ref{prop:8.4}
+and Corollary~\ref{cor:8.5}); divergence form makes the boundary contributions explicit. The calculation
+retains the quadratic products of the actual divergence-free field
+\NSi{NS-F-P088-011}{w}, including its curl
+remainders, as in \eqref{eq:8.1}. In a common chart with the normalized operators of \eqref{eq:6.6}, the actual
+velocity has the decomposition
+\NSFormula{NS-F-P088-012}{display}{8.1}
+\begin{equation}
+  u=(b+\beta,V+v,G+\gamma)+w,
+  \qquad \langle w\rangle_\theta=0,
+  \qquad W_{ab}=\langle w_aw_b\rangle_\theta.
+\tag{8.1}\label{eq:8.1}
+\end{equation}
+Here \NSi{NS-F-P088-013}{(b,V,G)} is the slow base,
+\NSi{NS-F-P088-014}{(\beta,v,\gamma)} is its angularly invariant correction, and
+\NSi{NS-F-P088-015}{w} is the
+sum of the divergence-free fields obtained by taking curls of the wave potentials. The indices
+in \NSi{NS-F-P088-016}{W_{ab}} range over
+\NSi{NS-F-P088-017}{a,b\in\{r,\theta,z\}}; thus \NSi{NS-F-P088-018}{W} includes every curl remainder. The correction
+components and \NSi{NS-F-P088-019}{W} extend smoothly by zero outside the active shell. The mean correction is
+divergence-free, meaning \NSi{NS-F-P088-020}{(D_r+R^{-1})\beta+D_z\gamma=0}, and we impose the two integral constraints
+\NSFormula{NS-F-P088-021}{display}{8.2}
+\begin{equation}
+  M_\theta:=\int_0^\infty R^2\langle v\rangle_Y\,dR=0,
+  \qquad
+  M_z:=\int_0^\infty R\langle\gamma\rangle_Y\,dR=0.
+\tag{8.2}\label{eq:8.2}
+\end{equation}
+\NSPage{089}%
+These identities hold at every \NSi{NS-F-P089-001}{(Z,T)}. They are the zero angular-momentum moment and
+zero axial-flux integral of the auxiliary-averaged correction, up to normalization; the base
+is treated separately. Compactly supported azimuthal potentials preserve the axial-flux
+constraint, and the finite-dimensional moment correction preserves both.
+
+Let \NSi{NS-F-P089-002}{p_m} be the perturbation mean pressure, and put
+\NSi{NS-F-P089-003}{\Delta_0=D_r^2+R^{-1}D_r+D_z^2} and
+\NSi{NS-F-P089-004}{\Sigma_a=Q^{2A}\mathcal T_{\mathrm{phys},a}} for
+\NSi{NS-F-P089-005}{a=\theta,z}, where the full residual stress tensor is that in \eqref{eq:5.41}.
+
+\begin{proposition}\label{prop:8.1}
+Let \NSi{NS-F-P089-006}{u} have the divergence-free decomposition \eqref{eq:8.1}, with slow base
+\NSi{NS-F-P089-007}{(b,V,G)},
+angularly invariant correction \NSi{NS-F-P089-008}{(\beta,v,\gamma)}, and
+\NSi{NS-F-P089-009}{\langle w\rangle_\theta=0}. Let \NSi{NS-F-P089-010}{p_m} be its angularly invariant pressure
+correction and let \NSi{NS-F-P089-011}{\Sigma_a=Q^{2A}\mathcal T_{\mathrm{phys},a}} be the normalized base stress components from \eqref{eq:5.41}. Retain the
+base's flat residual as a separate additive error: all its derivatives of every fixed order vanish faster than
+every power of \NSi{NS-F-P089-012}{q}. Then the angular mean of the remaining normalized residual is
+\NSi{NS-F-P089-013}{(D_rp_m-g_r,E_\theta,E_z)}, where
+\NSFormula{NS-F-P089-014}{display}{8.3}
+\begin{equation}
+\begin{aligned}
+E_\theta={}&\mathfrak t_*v+(D_r+2/R)(bv+\beta V+\beta v+W_{r\theta})\\
+ &+D_z(Gv+V\gamma+\gamma v+W_{z\theta})
+   -\varepsilon(\Delta_0-R^{-2})v-(D_r+2/R)\Sigma_\theta,\\
+E_z={}&\mathfrak t_*\gamma+(D_r+1/R)(b\gamma+\beta G+\beta\gamma+W_{rz})\\
+ &+D_z(2G\gamma+\gamma^2+W_{zz}+p_m)-\varepsilon\Delta_0\gamma-(D_r+1/R)\Sigma_z,\\
+g_r={}&-\mathfrak t_*\beta-(D_r+1/R)(2b\beta+\beta^2+W_{rr})\\
+ &-D_z(b\gamma+G\beta+\beta\gamma+W_{zr})
+   +(2Vv+v^2+W_{\theta\theta})/R+\varepsilon(\Delta_0-R^{-2})\beta.
+\end{aligned}
+\tag{8.3}\label{eq:8.3}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Incompressibility puts the transport terms in divergence form. For cylindrical components of any divergence-free field, the three transport expressions are
+\NSFormula{NS-F-P089-015}{display}{none}
+\begin{align*}
+  (u\cdot\nabla u)_r
+    &=(D_r+1/R)u_r^2+R^{-1}\partial_\theta(u_\theta u_r)+D_z(u_z u_r)-u_\theta^2/R,\\
+  (u\cdot\nabla u)_\theta
+    &=(D_r+2/R)(u_r u_\theta)+R^{-1}\partial_\theta u_\theta^2+D_z(u_z u_\theta),\\
+  (u\cdot\nabla u)_z
+    &=(D_r+1/R)(u_r u_z)+R^{-1}\partial_\theta(u_\theta u_z)+D_z u_z^2.
+\end{align*}
+The rotation of the cylindrical frame contributes the centrifugal term in the first row and the
+additional \NSi{NS-F-P089-016}{u_ru_\theta/R} in the second. Angular differentiation integrates to zero; products with
+exactly one factor of \NSi{NS-F-P089-017}{w} do also. Subtracting the pure base terms therefore leaves the fluxes in
+\eqref{eq:8.3}. The angular derivative terms in the vector Laplacian have zero angular average, leaving
+\NSi{NS-F-P089-018}{\Delta_0-R^{-2}} in the radial and angular components and
+\NSi{NS-F-P089-019}{\Delta_0} in the axial component. The residual
+stress tensor contributes the two displayed radial divergences by \eqref{eq:5.41}. Excluded pulse tails
+have nonzero angular harmonics and hence zero angular mean. The calculation retains the
+full covariance of the divergence-free wave field, including the curl remainders.
+\end{proof}
+
+\subsection{A compactly supported primitive for the cylindrical weights.}\label{sec:8.2}
+In this subsection we
+construct a radial primitive with support in the active shell (Lemma~\ref{lem:8.2}). A direct radial
+integral can remain nonzero beyond the source support. We will subtract its full radial
+integral with a fixed cutoff and retain the resulting error. Since the radial derivative after
+phase evaluation also differentiates the auxiliary variable \eqref{eq:6.4}, both integrals must follow
+the corresponding path on the torus. We include that path in the physical definition below.
+
+We define the radial operations first in physical variables, holding
+\NSi{NS-F-P089-020}{(z,t)} and the independent angular variable fixed. We choose a slow cutoff
+\NSi{NS-F-P089-021}{\chi_m(X)} that is zero on an inner collar,
+one on an outer collar, and changes only in a fixed interior portion of the active shell. For a
+smooth source \NSi{NS-F-P089-022}{g(r,z,t,Y)}, periodic in
+\NSi{NS-F-P089-023}{Y} and smoothly extended by zero outside that shell,
+\NSPage{090}%
+set
+\NSFormula{NS-F-P090-001}{display}{8.4}
+\begin{equation}
+\begin{aligned}
+  \mathcal I g(r,Y)
+    &=\int_0^r g\bigl(r',Y+((r')^{d_r}-r^{d_r})v_r\bigr)\,dr',\\
+  \mathcal J g(r,Y)
+    &=\int_0^\infty g\bigl(r',Y+((r')^{d_r}-r^{d_r})v_r\bigr)\,dr',\\
+  \mathcal I_c g&=\mathcal I g-\chi_m\mathcal J g.
+\end{aligned}
+\tag{8.4}\label{eq:8.4}
+\end{equation}
+The shift in \NSi{NS-F-P090-002}{Y} follows the radial phase map while the physical
+\NSi{NS-F-P090-003}{(z,t)} stay fixed. Below the
+shell, \NSi{NS-F-P090-004}{\mathcal I g=0}; above it,
+\NSi{NS-F-P090-005}{\mathcal I g=\mathcal J g}. Thus
+\NSi{NS-F-P090-006}{\mathcal I_c g} vanishes for
+\NSi{NS-F-P090-007}{X\leq X_a} and \NSi{NS-F-P090-008}{X\geq X_b}, with smooth
+zero extension across both radial edges. The subtraction introduces an error supported
+where \NSi{NS-F-P090-009}{\chi_m} varies, which we retain in the radial equation.
+
+For the normalized operators, we use a common torus
+\NSi{NS-F-P090-010}{y=Y_{i_0}} and put
+\NSi{NS-F-P090-011}{M=\Lambda_g^{i_0}Q^{d_r}/2}. At
+fixed \NSi{NS-F-P090-012}{(Z,T)}, the same symbols denote
+\NSFormula{NS-F-P090-013}{display}{8.5}
+\begin{equation}
+\begin{aligned}
+  \mathcal I g(R,y)
+    &=\int_0^R g\bigl(R',y+M((R')^{d_r}-R^{d_r})v_r\bigr)\,dR',\\
+  \mathcal J g(R,y)
+    &=\int_0^\infty g\bigl(R',y+M((R')^{d_r}-R^{d_r})v_r\bigr)\,dR',\\
+  \mathcal I_c g&=\mathcal I g-\chi_m\mathcal J g.
+\end{aligned}
+\tag{8.5}\label{eq:8.5}
+\end{equation}
+Here \NSi{NS-F-P090-014}{\chi_m=\chi_m(QR^2/(2q))} is the chart representative of the fixed physical cutoff. For
+\NSi{NS-F-P090-015}{e\in\{0,1,2\}}, define
+\NSFormula{NS-F-P090-016}{display}{8.6}
+\begin{equation}
+  \mathcal D_e=D_r+e/R,
+  \qquad \mathsf T_e f=R^{-e}\mathcal I_c(R^e f),
+  \qquad \mathcal A_e f=R^{-e}(\partial_R\chi_m)\mathcal J(R^e f).
+\tag{8.6}\label{eq:8.6}
+\end{equation}
+At corresponding physical and chart points, with
+\NSi{NS-F-P090-017}{r=\sqrt Q\,R}, the normalization is
+\NSFormula{NS-F-P090-018}{display}{none}
+\[
+  f_*=Q^a f_{\mathrm{phys}},
+  \qquad
+  Q^{a-1/2}r^{-e}\mathcal I_{c,\mathrm{phys}}(r^e f_{\mathrm{phys}})
+   =R^{-e}\mathcal I_c(R^e f_*)=\mathsf T_e f_*.
+\]
+Here \NSi{NS-F-P090-019}{\mathcal I_{c,\mathrm{phys}}} is the physical operator defined above. We call
+\NSi{NS-F-P090-020}{\mathcal A_e f} the cutoff remainder
+introduced by making the primitive compactly supported.
+
+The inverse must preserve the decay order of its source. We also need its cutoff remainder
+to be flat when the weighted auxiliary-mean integral vanishes. The next statement provides
+both estimates.
+
+\begin{lemma}\label{lem:8.2}
+Fix a correction stage \NSi{NS-F-P090-021}{j}, an exponent
+\NSi{NS-F-P090-022}{\alpha}, a band, its common torus
+\NSi{NS-F-P090-023}{y=Y_{i_0}}, and
+\NSi{NS-F-P090-024}{e\in\{0,1,2\}}. Let
+\NSi{NS-F-P090-025}{f\in \mathsf M_\alpha} be a smooth scalar coefficient. In particular, its smooth zero extension
+satisfies, for every fixed multi-index \NSi{NS-F-P090-026}{I} of derivatives in
+\NSi{NS-F-P090-027}{(R,Z,T,y)},
+\NSFormula{NS-F-P090-028}{display}{none}
+\[
+  |\partial^I f|\leq C_{j,I}\varepsilon^\alpha S_*^{B_{j,I}}\zeta\delta^{-B_{j,I}}.
+\]
+Then \NSi{NS-F-P090-029}{\mathsf T_e f} is supported in the same active radial shell and in the projection of the input support to
+\NSi{NS-F-P090-030}{(Z,T)}, and belongs to \NSi{NS-F-P090-031}{\mathsf M_\alpha} under the primitive normalization just defined. Exactly,
+\NSFormula{NS-F-P090-032}{display}{8.7}
+\begin{equation}
+  \mathcal D_e\mathsf T_e f=f-\mathcal A_e f.
+\tag{8.7}\label{eq:8.7}
+\end{equation}
+If \NSi{NS-F-P090-033}{\int R^e\langle f\rangle_Y\,dR=0} at every
+\NSi{NS-F-P090-034}{(Z,T)}, then \NSi{NS-F-P090-035}{\langle\mathcal A_e f\rangle_Y=0}, and for every fixed
+\NSi{NS-F-P090-036}{I} and integer \NSi{NS-F-P090-037}{p\geq1},
+\NSFormula{NS-F-P090-038}{display}{8.8}
+\begin{equation}
+  |\partial^I\mathcal A_e f|
+  \leq C_{j,I,p}\varepsilon^{\alpha+p\kappa_s}S_*^{B_{j,I,p}}
+         \zeta\delta^{-B_{j,I,p}}.
+\tag{8.8}\label{eq:8.8}
+\end{equation}
+Only finitely many input derivatives are used for each
+\NSi{NS-F-P090-039}{(I,p)}. Constants and powers may depend on
+these indices, the stage, and the fixed profile, but not on the band, label, or point. If
+\NSi{NS-F-P090-040}{f} is independent
+of \NSi{NS-F-P090-041}{Y} and \NSi{NS-F-P090-042}{\int R^e f\,dR=0} at every slow point, the cutoff remainder is identically zero.

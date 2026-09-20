@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/KokunoYumeto/navier-stokes-proof-everyday-english/blob/main/evidence/schemas/EVERYDAY_FINAL_QA.schema.json",
+  "title": "Everyday English final release QA receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "receipt_id",
+    "edition",
+    "status",
+    "accepted_at",
+    "final_build",
+    "artifacts",
+    "visual_qa",
+    "html_validation",
+    "epubcheck",
+    "everyday_audit",
+    "scans",
+    "structure",
+    "publication_performed"
+  ],
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "fileRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "bytes", "sha256"],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?![A-Za-z]:)(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "passCount": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "matches"],
+      "properties": {
+        "status": {"const": "pass"},
+        "matches": {"const": 0}
+      }
+    }
+  },
+  "properties": {
+    "schema": {
+      "const": "navier-stokes-everyday-final-qa/v1"
+    },
+    "receipt_id": {
+      "const": "NS-VQA-20260920-006"
+    },
+    "edition": {
+      "const": "Everyday English Edition of the Navier–Stokes Proof"
+    },
+    "status": {
+      "const": "pass"
+    },
+    "accepted_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "final_build": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profile", "status", "receipt"],
+      "properties": {
+        "profile": {"const": "final"},
+        "status": {"const": "pass"},
+        "receipt": {"$ref": "#/$defs/fileRecord"}
+      }
+    },
+    "artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pdf", "html", "epub"],
+      "properties": {
+        "pdf": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "bytes", "sha256", "page_count"],
+          "properties": {
+            "path": {"type": "string", "minLength": 1},
+            "bytes": {"type": "integer", "minimum": 0},
+            "sha256": {"$ref": "#/$defs/sha256"},
+            "page_count": {"type": "integer", "minimum": 166}
+          }
+        },
+        "html": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "bytes", "sha256", "validator_status", "direct_index_path"],
+          "properties": {
+            "path": {"type": "string", "minLength": 1},
+            "bytes": {"type": "integer", "minimum": 0},
+            "sha256": {"$ref": "#/$defs/sha256"},
+            "validator_status": {"const": "pass"},
+            "direct_index_path": {"const": "docs/index.html"}
+          }
+        },
+        "epub": {"$ref": "#/$defs/fileRecord"}
+      }
+    },
+    "visual_qa": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_id", "status", "scope", "inspected_pages", "ledger"],
+      "properties": {
+        "record_id": {"const": "NS-VQA-20260920-006"},
+        "status": {"const": "pass"},
+        "scope": {"const": "every-page"},
+        "inspected_pages": {"type": "integer", "minimum": 166},
+        "ledger": {"$ref": "#/$defs/fileRecord"}
+      }
+    },
+    "html_validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "receipt"],
+      "properties": {
+        "status": {"const": "pass"},
+        "receipt": {"$ref": "#/$defs/fileRecord"}
+      }
+    },
+    "epubcheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "version",
+        "runtime_jar_sha256",
+        "lock",
+        "dependencies_receipt",
+        "epub_receipt"
+      ],
+      "properties": {
+        "status": {"const": "pass"},
+        "version": {"const": "5.4.0"},
+        "runtime_jar_sha256": {"$ref": "#/$defs/sha256"},
+        "lock": {"$ref": "#/$defs/fileRecord"},
+        "dependencies_receipt": {"$ref": "#/$defs/fileRecord"},
+        "epub_receipt": {"$ref": "#/$defs/fileRecord"}
+      }
+    },
+    "everyday_audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "range_count", "failed_ranges", "pending_ranges", "receipt"],
+      "properties": {
+        "status": {"const": "pass"},
+        "range_count": {"const": 29},
+        "failed_ranges": {"const": 0},
+        "pending_ranges": {"const": 0},
+        "receipt": {"$ref": "#/$defs/fileRecord"}
+      }
+    },
+    "scans": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["receipt", "disallowed_token", "authorial_we", "local_path_leaks"],
+      "properties": {
+        "receipt": {"$ref": "#/$defs/fileRecord"},
+        "disallowed_token": {"$ref": "#/$defs/passCount"},
+        "authorial_we": {"$ref": "#/$defs/passCount"},
+        "local_path_leaks": {"$ref": "#/$defs/passCount"}
+      }
+    },
+    "structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unresolved_references",
+        "unresolved_citations",
+        "overfull_boxes",
+        "checks_receipt",
+        "pdf_receipt"
+      ],
+      "properties": {
+        "unresolved_references": {"const": 0},
+        "unresolved_citations": {"const": 0},
+        "overfull_boxes": {"const": 0},
+        "checks_receipt": {"$ref": "#/$defs/fileRecord"},
+        "pdf_receipt": {"$ref": "#/$defs/fileRecord"}
+      }
+    },
+    "publication_performed": {
+      "const": false
+    }
+  }
+}

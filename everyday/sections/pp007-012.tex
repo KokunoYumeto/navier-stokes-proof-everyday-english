@@ -1,0 +1,560 @@
+\NSPage{007}%
+\begin{EESegment}{EE-TGT-P007-001}
+The estimates have to control every Cartesian space--time derivative of this residual.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P007-002}
+First, the proof builds the axisymmetric background
+\NSi{NS-F-P007-001}{(u_B,p_B)} from Proposition~\ref{prop:5.5}. Its residual in
+\eqref{eq:5.41} is the negative divergence
+of a stress supported in an annulus, apart from a remainder that vanishes to every order at the
+singular point. The oscillating velocities produce the leading part of this stress when their
+quadratic products are averaged, as Proposition~\ref{prop:7.5} shows. Corrections added one after
+another make the residual left over from that step decay faster, as Proposition~\ref{prop:9.6}
+shows. The fields are then added together and confined to a fixed region without losing
+incompressibility or the leading growth of the velocity. This lets the residual extend to the smooth,
+compactly supported force in Theorem~\ref{thm:1.1}, by Propositions~\ref{prop:10.1}
+and~\ref{prop:9.9} and Lemma~\ref{lem:10.3}. Every estimate used below is proved for the viscous
+equations. Figures~\ref{fig:5} and~\ref{fig:6} show how the whole construction fits together.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P007-003}
+For every \NSi{NS-F-P007-002}{\nu>0}, any solution with viscosity one gives a solution with
+viscosity \NSi{NS-F-P007-003}{\nu} after the following change of scale.
+\NSFormula{NS-F-P007-004}{display}{none}
+\[
+ u_\nu(x,t)=\sqrt{\nu}\,u(x/\sqrt{\nu},t),\qquad
+ p_\nu(x,t)=\nu p(x/\sqrt{\nu},t),\qquad
+ f_\nu(x,t)=\sqrt{\nu}\,f(x/\sqrt{\nu},t).
+\]
+This change does not move the singular time. Equations~\eqref{eq:10.22}--\eqref{eq:10.23}
+check both the equation and the way the energy changes under this scaling. The rest of this
+outline uses \NSi{NS-F-P007-005}{\nu=1}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P007-004}
+\subsection{The concentrating leading field.}\label{sec:3.1}
+The fixed velocity profiles \NSi{NS-F-P007-006}{E,U} and pressure profile
+\NSi{NS-F-P007-007}{\Pi} from \eqref{eq:4.3} put the geometry of Section~\ref{sec:2.1} into the
+leading field. The similarity coordinates \NSi{NS-F-P007-008}{(X,\eta)} from \eqref{eq:3.2}
+keep track of the different rates at which the field contracts in the radial and axial directions.
+They also write the growth of the velocity as powers of one concentration scale. This subsection
+sets up that representation. The next one builds profiles whose remaining momentum residual can
+be supplied by the pulses.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P007-005}
+Set
+\NSFormula{NS-F-P007-009}{display}{none}
+\[
+ \tau=1-t,\qquad A=\frac12+h,\qquad D=\frac12-h,
+ \qquad 0<h<1/100,
+\]
+and keep \NSi{NS-F-P007-010}{h} fixed while the profiles are built.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P007-006}
+In cylindrical coordinates,
+\NSFormula{NS-F-P007-011}{display}{none}
+\[
+ x=(r\cos\theta,r\sin\theta,z),\qquad
+ e_r=(\cos\theta,\sin\theta,0),\qquad
+ e_\theta=(-\sin\theta,\cos\theta,0),\qquad
+ e_z=(0,0,1).
+\]
+The leading field
+\NSi{NS-F-P007-012}{u^{(0)}=u_r^{(0)}e_r+u_\theta^{(0)}e_\theta+u_z^{(0)}e_z}
+is axisymmetric, meaning that its cylindrical components do not depend on
+\NSi{NS-F-P007-013}{\theta}. Its two tangential components are the azimuthal component and the
+axial component. Both point along directions tangent to the cylinders on which
+\NSi{NS-F-P007-014}{r} is constant.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P007-007}
+Use the similarity coordinates
+\NSFormula{NS-F-P007-015}{display}{3.2}
+\begin{equation}
+ \tau=q(1-\eta^2),\qquad z=q^D\eta,\qquad X=\frac{r^2}{2q},
+ \qquad q>0,\qquad -1<\eta<1.
+ \tag{3.2}\label{eq:3.2}
+\end{equation}
+For \NSi{NS-F-P007-016}{\tau>0}, removing \NSi{NS-F-P007-017}{\eta} from these equations leaves
+\NSFormula{NS-F-P007-018}{display}{none}
+\[
+ q-z^2q^{2h}=\tau,\qquad
+ \partial_q(q-z^2q^{2h})=1-2h\eta^2\geq 1-2h>0
+ \quad\text{on }|\eta|<1.
+\]
+The derivative is positive, so these equations determine exactly one
+\NSi{NS-F-P007-019}{q=q(z,\tau)}. They also give
+\NSi{NS-F-P007-020}{q\asymp\tau+|z|^{1/D}}. Here
+\NSi{NS-F-P007-021}{\asymp} means that fixed positive factors give bounds in both directions.
+On any fixed compact set of similarity coordinates that stays away from
+\NSi{NS-F-P007-022}{\eta=\pm1}, the more specific comparison
+\NSi{NS-F-P007-023}{q\asymp\tau} holds. If \NSi{NS-F-P007-024}{X} stays bounded, letting
+\NSi{NS-F-P007-025}{q\downarrow0} takes the coordinates toward the singular point. The endpoints
+\NSi{NS-F-P007-026}{\eta=\pm1}, with \NSi{NS-F-P007-027}{q>0}, instead describe
+\NSi{NS-F-P007-028}{t=1} away from that point, as Lemma~\ref{lem:4.1} shows.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P007-008}
+The azimuthal and axial profiles \NSi{NS-F-P007-029}{E(X,\eta),U(X,\eta)} give the leading fields
+through
+\NSFormula{NS-F-P007-030}{display}{none}
+\[
+ u_\theta^{(0)}=q^{-A}E,\qquad u_z^{(0)}=q^{-A}U,
+ \qquad
+ ru_r^{(0)}=V_0,\qquad p^{(0)}=q^{-2A}\Pi.
+\]
+Incompressibility and regularity at the axis then fix \NSi{NS-F-P007-031}{V_0} through
+\NSFormula{NS-F-P007-032}{display}{none}
+\[
+ \frac1r\partial_r(ru_r^{(0)})+\partial_z u_z^{(0)}=0,
+ \qquad V_0(0,\eta)=0.
+\]
+\end{EESegment}
+\NSPage{008}%
+\begin{EESegment}{EE-TGT-P008-001}
+The leading radial pressure balance, together with the normalization at radial infinity, gives
+\NSFormula{NS-F-P008-001}{display}{none}
+\[
+ \partial_r p^{(0)}=\frac{(u_\theta^{(0)})^2}{r},
+ \qquad
+ \Pi(X,\eta)=-\int_X^\infty\frac{E(x,\eta)^2}{2x}\,dx.
+\]
+The construction makes \NSi{NS-F-P008-002}{E/\sqrt{2X}},
+\NSi{NS-F-P008-003}{U}, and \NSi{NS-F-P008-004}{V_0/X} smooth at
+\NSi{NS-F-P008-005}{X=0}. These are the combinations that have to be smooth for the Cartesian
+field to be smooth at the axis whenever \NSi{NS-F-P008-006}{t<1}. In particular,
+\NSi{NS-F-P008-007}{u_\theta^{(0)}=0} on the axis, while
+\NSi{NS-F-P008-008}{E(X,\eta)>0} when \NSi{NS-F-P008-009}{X>0}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P008-002}
+Choose \NSi{NS-F-P008-010}{X_c>0} and \NSi{NS-F-P008-011}{0<\eta_c<1} so that the rectangle
+\NSi{NS-F-P008-012}{[0,X_c]\times[-\eta_c,\eta_c]} stays inside the inner region from
+Theorem~\ref{thm:4.6}. At time \NSi{NS-F-P008-013}{t=1-\tau}, define the core by
+\NSFormula{NS-F-P008-014}{display}{none}
+\[
+ \mathcal C_\tau=\{(r\cos\theta,r\sin\theta,z):0\leq X(r,z,\tau)\leq X_c,
+ \ |\eta(z,\tau)|\leq\eta_c\}.
+\]
+Throughout this core, \NSi{NS-F-P008-015}{q\asymp\tau}, so its radial and axial sizes satisfy
+\NSFormula{NS-F-P008-016}{display}{none}
+\[
+ \ell_r\asymp\tau^{1/2},\qquad
+ \ell_z\asymp\tau^{1/2-h},\qquad
+ \frac{\ell_z}{\ell_r}\asymp\tau^{-h}.
+\]
+Both sizes go to zero, but their ratio goes to infinity.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P008-003}
+The profiles give the following sizes for the three velocity components inside the core.
+\NSFormula{NS-F-P008-017}{display}{none}
+\[
+ \begin{gathered}
+  \|u_\theta^{(0)}\|_{L^\infty(\mathcal C_\tau)}\asymp\tau^{-1/2-h},
+  \qquad
+  \|u_z^{(0)}\|_{L^\infty(\mathcal C_\tau)}\asymp\tau^{-1/2-h},\\
+  \|u_r^{(0)}\|_{L^\infty(\mathcal C_\tau)}=O(\tau^{-1/2}),
+  \qquad
+  \frac{\|u_r^{(0)}\|_{L^\infty(\mathcal C_\tau)}}
+       {\|u_\theta^{(0)}\|_{L^\infty(\mathcal C_\tau)}}=O(\tau^h).
+ \end{gathered}
+\]
+The lower bound for the axial component comes from the nonzero value on the axis in
+Proposition~\ref{prop:B.2}. For any fixed \NSi{NS-F-P008-018}{0<X_*<X_c}, the circle given by
+\NSi{NS-F-P008-019}{z=0,\ r=\sqrt{2X_*\tau}} has
+\NSi{NS-F-P008-020}{q=\tau,\eta=0}, and on that circle
+\NSFormula{NS-F-P008-021}{display}{none}
+\[
+ u_\theta^{(0)}=E(X_*,0)\tau^{-1/2-h}\longrightarrow+\infty.
+\]
+The core is a region of space that changes with time, while its boundary always has the same
+similarity coordinates. A material region consists of the same fluid particles as the velocity
+carries them along. Incompressibility keeps the volume of every such region fixed. Figure~\ref{fig:3}(a)
+shows the radial regions.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P008-004}
+The leading field continues outside the core. Outside a fixed interval of values of
+\NSi{NS-F-P008-022}{X}, both \NSi{NS-F-P008-023}{U=V_0=0}, while
+\NSFormula{NS-F-P008-024}{display}{none}
+\[
+ E(X,\eta)=c_\infty X^{-1/2-h}\bigl(1+O(X^{-1})\bigr)
+ \qquad (X\to\infty),\qquad c_\infty>0,
+\]
+with one uniform estimate for every \NSi{NS-F-P008-025}{\eta}. The exact exterior formula
+\eqref{eq:4.29} makes the exterior field a purely azimuthal solution of the radial heat equation
+for the azimuthal velocity. The final spatial cutoff in Proposition~\ref{prop:10.1} leaves the
+completed velocity supported inside one fixed compact region.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P008-005}
+At viscosity one, the local radial and axial length scales
+\NSi{NS-F-P008-026}{\ell_r=q^{1/2},\ \ell_z=q^D} give
+\NSFormula{NS-F-P008-027}{display}{none}
+\[
+ \operatorname{Re}_\theta=q^{-A}\ell_r=q^{-h}\longrightarrow\infty,
+ \qquad
+ \operatorname{Re}_r=|u_r^{(0)}|\ell_r=O(1).
+\]
+The rotation rate is larger than the rate of radial diffusion. In the axisymmetric tangential
+equations, radial diffusion and transport in both the radial and axial directions enter the leading
+balance at the following rates.
+\NSFormula{NS-F-P008-028}{display}{none}
+\[
+ \frac{|u_r^{(0)}|}{\ell_r}=O(q^{-1}),
+ \qquad
+ \frac{q^{-A}}{\ell_z}=\frac1{\ell_r^2}=q^{-1}.
+\]
+Axial diffusion is smaller than radial diffusion by the factor
+\NSi{NS-F-P008-029}{\ell_r^2/\ell_z^2=q^{2h}}. This small factor is the expansion parameter that
+orders the corrections to the background.
+\end{EESegment}
+
+\NSPage{009}%
+\begin{figure}[htbp]
+ \centering
+ \NSFigurePlaceholder{NS-FIG-3}
+ \begin{EESegment}{EE-TGT-P009-001}
+ \caption{The concentrating geometry and the reference pulse. At one fixed time, panel (a) shows
+ a radial--axial section. The pulse annulus lies between the two level surfaces
+ \NSi{NS-F-P009-001}{X=X_a} and \NSi{NS-F-P009-002}{X=X_b}. The horizontal and vertical axes are
+ each measured on their own similarity scale, and both physical length scales shrink. Panel (b)
+ shows a reference amplitude \NSi{NS-F-P009-003}{P(v)}. It is normalized to equal one at the
+ midpoint of a pulse interval of length \NSi{NS-F-P009-004}{L_s} in
+ \NSi{NS-F-P009-005}{v}, and it first grows and then decays. The shaded parts contain the small
+ tails made by the cutoff. The radii and pulse parameters in the picture are only representative.
+ The proof chooses their actual values from the estimates in the sections that build the profiles
+ and pulses.}
+ \label{fig:3}
+ \end{EESegment}
+\end{figure}
+
+\begin{EESegment}{EE-TGT-P009-002}
+\subsection{Construction of the background stress.}\label{sec:3.2}
+Next, choose the profiles \NSi{NS-F-P009-006}{E,U} so that the pulses can supply the remaining
+momentum transport. The radial integrals below define the resulting
+stress \NSi{NS-F-P009-007}{T}. This stress has to vanish outside the pulse annulus, and inside the
+annulus it has to be a positive combination of the fluxes carried by the two wave families.
+Theorem~\ref{thm:4.6}(ii) gives the required support. The admissible stress cone condition from
+Lemma~\ref{lem:4.5} is the condition that makes the positive representation in
+Proposition~\ref{prop:7.5} possible.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P009-003}
+Let \NSi{NS-F-P009-008}{R_\theta^{(0)},R_z^{(0)}} be the tangential momentum residuals of
+\NSi{NS-F-P009-009}{(u^{(0)},p^{(0)})}. These residuals include radial viscosity and leave
+out axial viscosity. Construct physical stress components
+\NSi{NS-F-P009-010}{T=(T_{r\theta},T_{rz})} that satisfy
+\NSFormula{NS-F-P009-011}{display}{none}
+\[
+ R_\theta^{(0)}=-(\partial_r+2/r)T_{r\theta},
+ \qquad
+ R_z^{(0)}=-(\partial_r+1/r)T_{rz}.
+\]
+Regularity at the axis fixes the constants of integration, giving
+\NSFormula{NS-F-P009-012}{display}{none}
+\[
+ T_{r\theta}(r)=-\frac1{r^2}\int_0^r s^2R_\theta^{(0)}(s)\,ds,
+ \qquad
+ T_{rz}(r)=-\frac1r\int_0^r sR_z^{(0)}(s)\,ds.
+\]
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P009-004}
+Require \NSi{NS-F-P009-013}{T} to be nonzero exactly in the annulus
+\NSi{NS-F-P009-014}{X_a<X<X_b}, which is the same region as
+\NSi{NS-F-P009-015}{\sqrt{2qX_a}<r<\sqrt{2qX_b}}, with
+\NSi{NS-F-P009-016}{0<X_a<X_b}. Make the residual zero both in the inner region and in the heat
+exterior, and impose the two moment identities
+\NSFormula{NS-F-P009-017}{display}{none}
+\[
+ \int_0^\infty r^2R_\theta^{(0)}\,dr=0,
+ \qquad
+ \int_0^\infty rR_z^{(0)}\,dr=0.
+\]
+These identities make the stress zero beyond the exterior radius as well as near the axis. The
+prescribed exterior moment identities give exactly these two zero integrals, by
+Lemma~\ref{lem:A.8}. Matching the profiles and the five radial integrals from \eqref{eq:4.15}
+keeps the exterior fields unchanged, by Lemma~\ref{lem:4.4}.
+\end{EESegment}
+
+\NSPage{010}%
+\begin{EESegment}{EE-TGT-P010-001}
+At each point of the annulus, the admissible stress cone condition lets the pulse construction
+choose two wave families whose covariance vectors
+\NSi{NS-F-P010-001}{v_1,v_2\in\mathbb R^2} are linearly independent. Each vector has two entries.
+They record the azimuthal and axial momentum flux produced there by one unit of squared amplitude
+from that wave family in the local background. The two vectors can produce the required stress
+with positive weights,
+\NSFormula{NS-F-P010-002}{display}{none}
+\[
+ T=c_1v_1+c_2v_2,\qquad c_1,c_2>0\quad\text{where }T\neq0.
+\]
+Because both coefficients are positive, \NSi{NS-F-P010-003}{T} lies inside the cone generated by
+\NSi{NS-F-P010-004}{v_1,v_2}. This cone is the set of all nonnegative combinations of the two
+vectors, and being inside it means that this representation uses both directions with strictly
+positive coefficients. Proposition~\ref{prop:7.5} builds the representation from the admissible
+stress cone condition on the profiles. Figure~\ref{fig:4} shows the same positive representation.
+\end{EESegment}
+
+\begin{figure}[htbp]
+ \centering
+ \NSFigurePlaceholder{NS-FIG-4}
+ \begin{EESegment}{EE-TGT-P010-002}
+ \caption{Positive representation of the target stress. The shaded cone is the set of all
+ nonnegative linear combinations of the covariance directions
+ \NSi{NS-F-P010-005}{v_1,v_2}. The target
+ \NSi{NS-F-P010-006}{T=c_1v_1+c_2v_2} is inside this cone because
+ \NSi{NS-F-P010-007}{c_1,c_2>0}. The dashed lines show the two weighted vectors adding to
+ the target stress. If the two directions change by a sufficiently small amount, both coefficients stay
+ positive.}
+ \label{fig:4}
+ \end{EESegment}
+\end{figure}
+
+\begin{EESegment}{EE-TGT-P010-003}
+These conditions tie the inner and exterior profiles together because both the pressure and the
+radial velocity depend on cumulative radial integrals, the integrals collected from the axis out
+to the current radius. For that reason, the pressure datum comes first. The equations are then
+solved near the axis, and the integrals are matched before the cone condition is imposed.
+\end{EESegment}
+\begin{enumerate}[label=\arabic*.]
+ \item \begin{EESegment}{EE-TGT-P010-004}
+ \emph{Exterior and axis pressure.} Proposition~\ref{prop:A.4} builds reference profiles with a
+ purely azimuthal tail. Their radial pressure integral \eqref{eq:4.31} fixes
+ \NSi{NS-F-P010-008}{\Pi(0,\eta)}, the pressure value on the axis. Replacing this tail with the
+ exact heat flow from Lemma~\ref{lem:A.6} changes the integral. The corrections in
+ Proposition~\ref{prop:A.7} put back the same integral at smaller radii, so the pressure on the
+ axis stays unchanged.
+ \end{EESegment}
+
+ \item \begin{EESegment}{EE-TGT-P010-005}
+ \emph{Inner solution.} Using this pressure value and the specified axis data,
+ Proposition~\ref{prop:B.2} constructs \NSi{NS-F-P010-009}{E/\sqrt{2X},U,\Pi} as functions that
+ are analytic in \NSi{NS-F-P010-010}{X,\eta} near the axis, meaning that around each point,
+ each function equals a convergent power series in those two variables, and satisfy \eqref{eq:4.13}. Their
+ leading tangential residual and their stress are both zero on
+ \NSi{NS-F-P010-011}{X\leq X_a}.
+ \end{EESegment}
+
+ \item \begin{EESegment}{EE-TGT-P010-006}
+ \emph{Joining and moment matching.} Corollary~\ref{cor:B.10} joins the inner profiles to the
+ prescribed outer profiles. The correction in Proposition~\ref{prop:B.8} makes the five
+ cumulative radial integrals agree. These are the integrals that determine the pressure, radial
+ velocity, and stress. When both the profiles and these integrals agree at the joining radius,
+ Lemma~\ref{lem:4.4} gives back the prescribed exterior fields. The inner identity
+ \eqref{eq:4.13} and the exterior conclusion of Lemma~\ref{lem:A.8} then give
+ \NSi{NS-F-P010-012}{T=0} for \NSi{NS-F-P010-013}{X\leq X_a} and
+ \NSi{NS-F-P010-014}{X\geq X_b}.
+ \end{EESegment}
+
+ \item \begin{EESegment}{EE-TGT-P010-007}
+ \emph{Enforcing the cone condition.} On a compact subinterval of the annulus,
+ Proposition~\ref{prop:C.2} adds a radial oscillation with phase
+ \NSi{NS-F-P010-015}{N\log X}, where \NSi{NS-F-P010-016}{N} is one large fixed integer. The
+ oscillation itself has amplitude \NSi{NS-F-P010-017}{O(N^{-1})}. Applying
+ \NSi{NS-F-P010-018}{X\partial_X} removes that small factor from the derivative and produces a
+ change of order one in the radial derivatives. This changes the leading tangential shear while
+ changing the profile values and radial moments by only \NSi{NS-F-P010-019}{O(N^{-1})}. The
+ shear follows a periodic curve that satisfies the admissible stress cone condition. A separate
+ correction, supported in the same local region, restores all five radial integrals exactly. The
+ inner solution and the heat exterior stay unchanged, and the resulting stress has positive
+ covariance weights everywhere in the annulus, by Proposition~\ref{prop:C.3}.
+ \end{EESegment}
+\end{enumerate}
+
+\NSPage{011}%
+\begin{EESegment}{EE-TGT-P011-001}
+The leading profiles are now fixed. Before the pulses are added, Section~\ref{sec:5} builds
+corrections in the successive powers \NSi{NS-F-P011-001}{q^{2nh},\ n=1,2,\ldots}. At each order,
+the coefficients already found provide the source terms in the equations for the next
+coefficients. This recursion takes care of the radial momentum equation, axial viscosity, and all
+the lower-order terms still left. Smooth cutoffs are then applied to the vector potentials and
+pressures before the coefficients are added together. Each cutoff equals one near the singularity,
+and the supports shrink from one correction to the next. Taking the curl after multiplication by
+the cutoff keeps the field incompressible. The resulting smooth axisymmetric background
+\NSi{NS-F-P011-002}{(u_B,p_B)} satisfies
+\NSFormula{NS-F-P011-003}{display}{none}
+\[
+ \begin{aligned}
+ \mathscr R(u_B,p_B)
+   & =-(\partial_r+2/r)\mathcal T_{\mathrm{phys},\theta}e_\theta \\
+   & \phantom{={}}-(\partial_r+1/r)\mathcal T_{\mathrm{phys},z}e_z+\mathcal E_B.
+ \end{aligned}
+\]
+The stress \NSi{NS-F-P011-004}{\mathcal T_{\mathrm{phys}}} is supported in the annulus, and its
+leading term is \NSi{NS-F-P011-005}{T}. Calling a residual \emph{flat} as
+\NSi{NS-F-P011-006}{q\downarrow0} means that every Cartesian space--time derivative is
+\NSi{NS-F-P011-007}{O(q^N)} for every \NSi{NS-F-P011-008}{N\geq0}, with one uniform estimate on
+each bounded interval of \NSi{NS-F-P011-009}{X}. Proposition~\ref{prop:5.5} proves that the
+remainder \NSi{NS-F-P011-010}{\mathcal E_B} is flat in this sense.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P011-002}
+\subsection{Oscillations and momentum transport.}\label{sec:3.3}
+At this point, the background \NSi{NS-F-P011-011}{(u_B,p_B)} has the required growth and the
+leading annular stress \NSi{NS-F-P011-012}{T} that the two pulse families can produce. The next
+step builds divergence-free pulses, using Lemma~\ref{lem:7.7}. When their quadratic flux is
+averaged, its leading term supplies \NSi{NS-F-P011-013}{T}, by Propositions~\ref{prop:7.5}
+and~\ref{prop:9.5}. The exact increment identity below keeps this cancellation separate from the
+linear evolution of the pulses and from the interactions that later corrections must handle.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P011-003}
+For a divergence-free velocity increment \NSi{NS-F-P011-014}{w} and a pressure increment
+\NSi{NS-F-P011-015}{\pi}, the residual obeys the exact identity
+\NSFormula{NS-F-P011-016}{display}{none}
+\[
+ \mathscr R(u_B+w,p_B+\pi)=\mathscr R(u_B,p_B)+\mathcal L_{u_B}(w,\pi)
+   +\nabla\cdot(w\otimes w),
+\]
+where
+\NSFormula{NS-F-P011-017}{display}{none}
+\[
+ \mathcal L_{u_B}(w,\pi):=\partial_t w+(u_B\cdot\nabla)w+(w\cdot\nabla)u_B
+   -\Delta w+\nabla\pi.
+\]
+The linear term describes how the pulses evolve in the background. The quadratic term provides
+the stress that cancels the leading part of
+\NSi{NS-F-P011-018}{\mathscr R(u_B,p_B)}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P011-004}
+Write \NSi{NS-F-P011-019}{A_{\mathrm{wave}}} for the typical size of a pulse oscillation and
+\NSi{NS-F-P011-020}{\ell_{\mathrm{wave}}} for its wavelength. At points in the pulse annulus
+where the profile values are fixed and nonzero, set aside the logarithmic factors and the weights
+that go to zero at the edge of the support. The remaining sizes are
+\NSFormula{NS-F-P011-021}{display}{none}
+\[
+ \begin{gathered}
+  A_{\mathrm{wave}}\asymp q^{-1/2-h/2},\qquad
+  \ell_{\mathrm{wave}}\asymp q^{1/2+h/2},\\
+  \frac{A_{\mathrm{wave}}}{q^{-1/2-h}}\asymp
+  \frac{\ell_{\mathrm{wave}}}{q^{1/2}}\asymp q^{h/2}.
+ \end{gathered}
+\]
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P011-005}
+The square of the amplitude has the required stress scale.
+\NSFormula{NS-F-P011-022}{display}{none}
+\[
+ A_{\mathrm{wave}}^2\asymp q^{-1-h}\asymp
+ \frac{|u_\theta^{(0)}|}{q^{1/2}},
+ \qquad
+ \frac{A_{\mathrm{wave}}^2}{q^{1/2}}\asymp q^{-3/2-h}.
+\]
+The last quantity is the size of the averaged radial stress divergence. It matches the leading
+time derivative, transport, and radial viscosity in the tangential momentum equations.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P011-006}
+Freeze the amplitude and the phase gradient at one point. The leading wave then has the following
+schematic local form.
+\NSFormula{NS-F-P011-023}{display}{none}
+\[
+ w_{\mathrm{lead}}(x)=a\cos(\xi\cdot x+\varphi),\qquad a\cdot\xi=0.
+\]
+Here \NSi{NS-F-P011-024}{a\in\mathbb R^3} is the constant amplitude,
+\NSi{NS-F-P011-025}{\xi\in\mathbb R^3} is the wavevector, and
+\NSi{NS-F-P011-026}{\varphi\in\mathbb R} is the phase. The displayed orthogonality condition says
+that the velocity oscillates in a direction perpendicular to its wavevector. Different localized
+pulses have to stay separate.
+\end{EESegment}
+\NSPage{012}%
+\begin{EESegment}{EE-TGT-P012-001}
+At the same time, the construction still needs periodic averaging. It handles both needs by
+introducing an extended field
+\NSi{NS-F-P012-001}{\widetilde w(r,\theta,z,t,Y)} that depends on a separate auxiliary variable
+\NSi{NS-F-P012-002}{Y\in\mathbb T^2}. The physical field comes from putting the fixed phase map
+into that variable,
+\NSFormula{NS-F-P012-003}{display}{none}
+\[
+ w(r,\theta,z,t)=\widetilde w(r,\theta,z,t,Y(r,t)),
+\]
+where \NSi{NS-F-P012-004}{Y(r,t)} is defined in \eqref{eq:6.3}. The covariance is averaged before
+this substitution is made. The angular and auxiliary averages are
+\NSFormula{NS-F-P012-005}{display}{none}
+\[
+ \langle F\rangle_\theta:=\frac1{2\pi}\int_0^{2\pi}F\,d\theta,
+ \qquad
+ \langle F\rangle_Y:=\int_{\mathbb T^2}F\,dY,
+ \qquad
+ \int_{\mathbb T^2}1\,dY=1.
+\]
+Doing the two averages one after the other is written as
+\NSi{NS-F-P012-006}{\langle F\rangle:=\langle\langle F\rangle_\theta\rangle_Y}. Equations
+\eqref{eq:3.7}--\eqref{eq:3.9} collect these conventions. All components are taken in the
+cylindrical basis. If different labeled pulses overlap in their slowly varying space--time
+supports, their supports in \NSi{NS-F-P012-007}{Y} are chosen to be disjoint. Their products are
+then zero at every point, even after \NSi{NS-F-P012-008}{Y(r,t)} is substituted, by
+Lemma~\ref{lem:6.1}. Harmonics and corrections with the same label still interact with one another.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P012-002}
+In the actual construction, the amplitudes, phases, and cutoffs all vary. First evaluate the
+localized vector potentials at \NSi{NS-F-P012-009}{Y(r,t)} to obtain
+\NSi{NS-F-P012-010}{\mathcal A_{\mathrm{wave}}}. Then take the physical curl,
+\NSFormula{NS-F-P012-011}{display}{none}
+\[
+ w=\nabla\times\mathcal A_{\mathrm{wave}},\qquad \nabla\cdot w=0.
+\]
+This curl makes the resulting velocity divergence-free. Every chain-rule term coming from
+\NSi{NS-F-P012-012}{Y(r,t)} is included. Differentiating the amplitudes and cutoffs also produces
+smaller velocity terms, and Lemma~\ref{lem:7.7} keeps all of them.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P012-003}
+The chosen phases have nonzero integer angular frequencies. Because of that, each wave has angular
+average zero, while the angular average of the square of its cosine is
+\NSi{NS-F-P012-013}{1/2}. The two wave families produce the momentum-flux directions used above
+to choose \NSi{NS-F-P012-014}{c_1,c_2>0}. Those coefficients then become the squared amplitude
+weights. After the physical scaling and the corrections made by taking the curl, the covariance is
+\NSFormula{NS-F-P012-015}{display}{none}
+\[
+ \begin{pmatrix}
+  \langle\widetilde w_r\widetilde w_\theta\rangle\\
+  \langle\widetilde w_r\widetilde w_z\rangle
+ \end{pmatrix}
+ =T+\text{higher-order terms}.
+\]
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P012-004}
+The higher-order terms include the corrections made by the curl. They are smaller by positive
+powers of \NSi{NS-F-P012-016}{q}, with derivative bounds proved in
+Corollary~\ref{cor:7.8}. Taking the radial divergence of the leading covariance shown above
+cancels the leading negative stress divergence of the background, by
+Propositions~\ref{prop:7.5} and~\ref{prop:9.5}. The extended residual still contains oscillating
+terms and angular means that depend on \NSi{NS-F-P012-017}{Y}. In the physical equation, these
+terms are evaluated at \NSi{NS-F-P012-018}{Y(r,t)}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P012-005}
+The same quadratic products also control the energy passed from the background to the waves.
+Take the homogeneous linearized model, where the linearized equation has zero right-hand side,
+\NSFormula{NS-F-P012-019}{display}{none}
+\[
+ \mathcal L_{u_B}(w_{\mathrm{lin}},\pi_{\mathrm{lin}})=0,
+ \qquad \nabla\cdot w_{\mathrm{lin}}=0.
+\]
+If the fields decay fast enough in space, integration by parts gives
+\NSFormula{NS-F-P012-020}{display}{none}
+\[
+ \frac d{dt}\frac12\int|w_{\mathrm{lin}}|^2
+ =-\sum_{i,j}\int(w_{\mathrm{lin}})_i(w_{\mathrm{lin}})_j\partial_j(u_B)_i
+   -\int|\nabla w_{\mathrm{lin}}|^2.
+\]
+The first term moves energy between the background and the perturbation. The second term
+dissipates energy. The chosen transverse velocity amplitudes draw energy from the shear and
+provide the two momentum-flux directions whose positive span contains
+\NSi{NS-F-P012-021}{T}. During each pulse, the shear increases the size of the radial component of
+the wavevector. Viscous damping then grows until it is larger than the amplification, so the pulse
+first grows and then decays. The time cutoff acts only in the exponentially small tails. The phase
+and amplitude equations prove these facts in Lemmas~\ref{lem:7.1} and~\ref{lem:7.4}, and
+Figure~\ref{fig:3}(b) shows the resulting envelope.
+\end{EESegment}

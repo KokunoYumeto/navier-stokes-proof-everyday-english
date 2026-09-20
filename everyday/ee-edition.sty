@@ -1,0 +1,29 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ee-edition}[2026/09/20 Everyday English Edition of the Navier--Stokes Proof]
+
+\RequirePackage{../reconstruction/ns-edition}
+\RequirePackage[most]{tcolorbox}
+
+\newenvironment{EESegment}[1]{%
+  \par\hypertarget{#1}{}%
+}{\par}
+
+\newtcolorbox{EEAddition}[2]{%
+  enhanced,
+  breakable,
+  colback=blue!3,
+  colframe=blue!35!black,
+  boxrule=0.45pt,
+  arc=1.5pt,
+  left=8pt,right=8pt,top=6pt,bottom=6pt,
+  before skip=8pt,after skip=8pt,
+  title={Everyday English note: #2},
+  fonttitle=\bfseries,
+  before upper={\hypertarget{#1}{}}
+}
+
+\hypersetup{
+  pdftitle={Everyday English Edition of the Navier--Stokes Proof},
+  pdfsubject={A complete mathematics-preserving edition in everyday English},
+  pdfcreator={Independent Everyday English Edition built from the verified source-faithful reconstruction}
+}

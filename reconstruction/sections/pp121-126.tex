@@ -1,0 +1,545 @@
+\NSPage{121}%
+\subsection{Energy and comparison.}\label{sec:10.3}
+In this subsection we first prove that the smooth compactly supported force
+\NSi{NS-F-P121-001}{f} of Lemma~\ref{lem:10.3} gives a uniform energy bound for the
+constructed velocity \NSi{NS-F-P121-002}{u} up to time one (Lemma~\ref{lem:10.4}).
+We then show that any smooth solution with the same force, zero datum, and bounded kinetic
+energy agrees with it on every shorter time interval (Lemma~\ref{lem:10.5}). This comparison
+will transfer the local velocity growth \eqref{eq:3.6} to a hypothetical global smooth
+solution. In these whole-space energy estimates, \NSi{NS-F-P121-003}{\|\cdot\|_p}
+denotes the spatial \NSi{NS-F-P121-004}{L^p(\R^3)} norm, and unmarked spatial integrals
+are over \NSi{NS-F-P121-005}{\R^3}.
+
+\begin{lemma}\label{lem:10.4}
+Let \NSi{NS-F-P121-006}{\mathcal F(t)=\int_0^t\|f(s)\|_2\,ds} for
+\NSi{NS-F-P121-007}{0\leq t\leq 1}. Then
+\NSi{NS-F-P121-008}{\mathcal F(1)<\infty}, and
+\NSFormula{NS-F-P121-009}{display}{10.13}
+\begin{equation}
+  \|u(t)\|_2^2+2\int_0^t\|\nabla u(s)\|_2^2\,ds
+  \leq \mathcal F(t)^2
+  \qquad (0\leq t<1).
+\tag{10.13}\label{eq:10.13}
+\end{equation}
+In particular the kinetic energy is uniformly bounded, and the total dissipation on
+\NSi{NS-F-P121-010}{[0,1)} is finite.
+\end{lemma}
+
+\begin{proof}
+On each \NSi{NS-F-P121-011}{[0,T]}, \NSi{NS-F-P121-012}{T<1}, the localized velocity
+and pressure are smooth with fixed compact spatial support. Integrating the equation against
+\NSi{NS-F-P121-013}{u} therefore gives
+\NSFormula{NS-F-P121-014}{display}{10.14}
+\begin{equation}
+  \frac12\frac{d}{dt}\|u(t)\|_2^2+\|\nabla u(t)\|_2^2
+  =\langle f(t),u(t)\rangle.
+\tag{10.14}\label{eq:10.14}
+\end{equation}
+For \NSi{NS-F-P121-015}{\delta>0}, we divide this identity by
+\NSi{NS-F-P121-016}{(\|u(t)\|_2^2+\delta^2)^{1/2}}, discard dissipation, and use
+Cauchy--Schwarz. Integration from the zero datum and
+\NSi{NS-F-P121-017}{\delta\downarrow0} yield
+\NSi{NS-F-P121-018}{\|u(t)\|_2\leq\mathcal F(t)}. Returning to
+\eqref{eq:10.14} and integrating gives
+\NSFormula{NS-F-P121-019}{display}{none}
+\[
+  \|u(t)\|_2^2+2\int_0^t\|\nabla u(s)\|_2^2\,ds
+  \leq 2\int_0^t\mathcal F'(s)\mathcal F(s)\,ds
+  =\mathcal F(t)^2.
+\]
+The compact smooth force has \NSi{NS-F-P121-020}{\mathcal F(1)<\infty}. Monotone
+convergence gives finite integrated dissipation on \NSi{NS-F-P121-021}{[0,1)}, using
+the bounds for \NSi{NS-F-P121-022}{t<1} alone.
+\end{proof}
+
+The comparison argument uses smoothness and a uniform spatial
+\NSi{NS-F-P121-023}{L^2} bound on \NSi{NS-F-P121-024}{[0,T]}, where
+\NSi{NS-F-P121-025}{T<1}. These hypotheses leave the growth of spatial derivatives at
+infinity unrestricted. We recover the pressure gradient from the equation before passing to
+the limit in the localized energy identity.
+
+\begin{lemma}\label{lem:10.5}
+Fix \NSi{NS-F-P121-026}{T<1}. If \NSi{NS-F-P121-027}{v,P} is a smooth solution of
+\eqref{eq:1.1} at viscosity one on \NSi{NS-F-P121-028}{\R^3\times[0,T]}, with the force
+\NSi{NS-F-P121-029}{f} of Lemma~\ref{lem:10.3}, zero initial velocity, and
+\NSi{NS-F-P121-030}{v\in L^\infty([0,T];L^2(\R^3))}, then
+\NSi{NS-F-P121-031}{v=u} on that interval, where \NSi{NS-F-P121-032}{u} is the
+localized velocity of Proposition~\ref{prop:10.1}.
+\end{lemma}
+
+\begin{proof}
+We estimate the difference of the two solutions on expanding balls. The pressure term
+requires separate control because no spatial growth condition has been imposed on
+\NSi{NS-F-P121-033}{P}. Constants denoted by \NSi{NS-F-P121-034}{C_T} below may
+depend on \NSi{NS-F-P121-035}{T} and the stated bounds for the fields, but not on the
+cutoff radius. We set
+\NSFormula{NS-F-P121-036}{display}{none}
+\[
+  w=v-u,\qquad
+  \pi=P-p,\qquad
+  g_{ij}=v_iv_j-u_iu_j=w_iw_j+w_iu_j+u_iw_j.
+\]
+We use the convention
+\NSi{NS-F-P121-037}{(\operatorname{div}g)_i=\sum_j\partial_jg_{ij}}.
+On \NSi{NS-F-P121-038}{[0,T]},
+\NSi{NS-F-P121-039}{\|w(t)\|_2\leq C_T} and
+\NSi{NS-F-P121-040}{\sum_{i,j}\|g_{ij}(t)\|_1\leq C_T}.
+The common force cancels, so
+\NSFormula{NS-F-P121-041}{display}{10.15}
+\begin{equation}
+  \partial_t w+(v\cdot\nabla)w+(w\cdot\nabla)u
+  =\Delta w-\nabla\pi,\qquad \operatorname{div}w=0.
+\tag{10.15}\label{eq:10.15}
+\end{equation}
+
+\paragraph{\normalfont\itshape Pressure gradient.}
+Let \NSi{NS-F-P121-042}{R_i} be the Riesz transform with Fourier multiplier
+\NSi{NS-F-P121-043}{i\xi_i/|\xi|}, and define the distribution
+\NSFormula{NS-F-P121-044}{display}{10.16}
+\begin{equation}
+  \pi_*=\sum_{i,j=1}^3 R_iR_jg_{ij}.
+\tag{10.16}\label{eq:10.16}
+\end{equation}
+
+\NSPage{122}%
+Its multiplier is \NSi{NS-F-P122-001}{-\xi_i\xi_j/|\xi|^2}, with the value at zero
+irrelevant. Since the Fourier transform of an \NSi{NS-F-P122-002}{L^1} function is
+bounded, \NSi{NS-F-P122-003}{\pi_*} lies uniformly in
+\NSi{NS-F-P122-004}{H^{-s}(\R^3)} for each \NSi{NS-F-P122-005}{s>3/2}: its squared
+norm is bounded by a constant times
+\NSi{NS-F-P122-006}{\|g\|_1^2\int_{\R^3}(1+|\xi|^2)^{-s}\,d\xi}. The multiplier gives
+\NSFormula{NS-F-P122-007}{display}{none}
+\[
+  \Delta\pi_*=-\sum_{i,j}\partial_i\partial_jg_{ij}.
+\]
+We claim that \NSi{NS-F-P122-008}{\nabla\pi=\nabla\pi_*} in the space--time interior.
+For \NSi{NS-F-P122-009}{a\in C_c^\infty(0,T)}, the conservative form of
+\eqref{eq:10.15} gives
+\NSFormula{NS-F-P122-010}{display}{none}
+\[
+  \int_0^T a\nabla\pi\,dt
+  =\Delta\int_0^T aw\,dt+\int_0^T a'w\,dt
+   -\operatorname{div}\int_0^T ag\,dt.
+\]
+The three terms on the right belong respectively to
+\NSi{NS-F-P122-011}{H^{-2}}, \NSi{NS-F-P122-012}{L^2}, and
+\NSi{NS-F-P122-013}{H^{-3}}: the last assertion follows from
+\NSi{NS-F-P122-014}{g\in L_t^\infty L_x^1} and the Fourier estimate above with
+\NSi{NS-F-P122-015}{s=2}. Also
+\NSi{NS-F-P122-016}{\pi_*\in L_t^\infty H_x^{-2}}, so
+\NSFormula{NS-F-P122-017}{display}{none}
+\[
+  H_a:=\int_0^T a(\nabla\pi-\nabla\pi_*)\,dt\in H^{-3}(\R^3).
+\]
+Taking divergence of the difference equation gives
+\NSi{NS-F-P122-018}{\Delta\pi=-\sum_{i,j}\partial_i\partial_jg_{ij}=\Delta\pi_*}.
+Hence \NSi{NS-F-P122-019}{\Delta H_a=0}. The Fourier transform of
+\NSi{NS-F-P122-020}{H_a} is a weighted \NSi{NS-F-P122-021}{L^2} function supported at
+\NSi{NS-F-P122-022}{\{0\}}, and is therefore zero. Testing also in space proves the
+claim. This determines the pressure gradient under the stated hypotheses, with the spatial
+growth of \NSi{NS-F-P122-023}{P} unrestricted.
+
+\paragraph{\normalfont\itshape Pressure flux.}
+We now bound the pressure contribution at the boundary of an expanding ball in terms of the
+weighted dissipation inside it. We first estimate
+\NSi{NS-F-P122-024}{\int\pi w\cdot\nabla\chi_R} by powers of a weighted
+\NSi{NS-F-P122-025}{L^6} norm of \NSi{NS-F-P122-026}{w} that can be absorbed by
+dissipation. We choose \NSi{NS-F-P122-027}{0\leq\varphi\leq1} smooth, compactly
+supported and equal to one on the unit ball. For \NSi{NS-F-P122-028}{R\geq1}, we write
+\NSi{NS-F-P122-029}{\varphi_R(x)=\varphi(x/R)}, \NSi{NS-F-P122-030}{\chi_R=\varphi_R^8},
+and set
+\NSFormula{NS-F-P122-031}{display}{none}
+\[
+  E_R=\int\chi_R|w|^2,\qquad
+  A_R=\left(\int\chi_R|\nabla w|^2\right)^{1/2},\qquad
+  B_R=\|\varphi_R^4w\|_6.
+\]
+The Sobolev inequality and the product rule imply
+\NSFormula{NS-F-P122-032}{display}{10.17}
+\begin{equation}
+  B_R\leq C\|\nabla(\varphi_R^4w)\|_2
+  \leq C(A_R+R^{-1}\|w\|_2).
+\tag{10.17}\label{eq:10.17}
+\end{equation}
+We use the standard \NSi{NS-F-P122-033}{L^p} boundedness of Riesz transforms for
+\NSi{NS-F-P122-034}{1<p<\infty}; see \cite{ref-20}. For multiplication by a scalar
+function \NSi{NS-F-P122-035}{a} and a linear operator \NSi{NS-F-P122-036}{\mathcal T}, we write
+\NSi{NS-F-P122-037}{[a,\mathcal T]g=a(\mathcal Tg)-\mathcal T(ag)}. Multiplication of \eqref{eq:10.16} by
+\NSi{NS-F-P122-038}{\varphi_R^4} then gives
+\NSFormula{NS-F-P122-039}{display}{10.18}
+\begin{equation}
+  \varphi_R^4\pi_*
+  =\sum_{i,j}R_iR_j(\varphi_R^4g_{ij})
+   +\sum_{i,j}[\varphi_R^4,R_iR_j]g_{ij}.
+\tag{10.18}\label{eq:10.18}
+\end{equation}
+The first sum has \NSi{NS-F-P122-040}{L^{3/2}} norm at most
+\NSi{NS-F-P122-041}{C_T(B_R+1)}, since
+\NSFormula{NS-F-P122-042}{display}{none}
+\[
+  \|\varphi_R^4w_iw_j\|_{3/2}\leq B_R\|w\|_2,\qquad
+  \|\varphi_R^4w_iu_j\|_{3/2}\leq\|w\|_2\|u\|_6.
+\]
+The nonlocal kernel of \NSi{NS-F-P122-043}{R_iR_j} is bounded by
+\NSi{NS-F-P122-044}{C|x-y|^{-3}}. The possible multiple of the identity cancels in the
+commutator, whose kernel is therefore bounded in absolute value by
+\NSFormula{NS-F-P122-045}{display}{none}
+\[
+  K_R(x-y)=C|x-y|^{-3}\min\{|x-y|/R,1\}.
+\]
+Direct radial integration gives
+\NSFormula{NS-F-P122-046}{display}{none}
+\[
+  \|K_R\|_{4/3}^{4/3}
+  \leq C\left[
+    R^{-4/3}\int_0^R r^{-2/3}\,dr+\int_R^\infty r^{-2}\,dr
+  \right]
+  \leq CR^{-1}.
+\]
+
+\NSPage{123}%
+Young's convolution inequality bounds the second sum in \eqref{eq:10.18} in
+\NSi{NS-F-P123-001}{L^{4/3}} by \NSi{NS-F-P123-002}{C_TR^{-3/4}}. These identities
+hold first for compact smooth cutoffs of \NSi{NS-F-P123-003}{g}, then for
+\NSi{NS-F-P123-004}{g} by convergence in \NSi{NS-F-P123-005}{L^1}, the uniform
+commutator bound, and convergence of its Riesz transforms in
+\NSi{NS-F-P123-006}{H^{-s}}. In particular \NSi{NS-F-P123-007}{\pi_*} is locally
+integrable in space and time.
+
+The equality of pressure gradients, tested against the compact vector field
+\NSi{NS-F-P123-008}{a(t)\chi_Rw}, now gives
+\NSFormula{NS-F-P123-009}{display}{none}
+\[
+  \int\pi w\cdot\nabla\chi_R\,dx
+  =\int\pi_*w\cdot\nabla\chi_R\,dx
+  \qquad\text{for almost every }t\in(0,T).
+\]
+Since \NSi{NS-F-P123-010}{|\nabla\chi_R|\leq CR^{-1}\varphi_R^7}, the two terms in
+\eqref{eq:10.18} pair with \NSi{NS-F-P123-011}{CR^{-1}\varphi_R^3|w|}.
+Interpolation yields
+\NSFormula{NS-F-P123-012}{display}{none}
+\[
+  \|\varphi_R^3w\|_3\leq\|\varphi_R^2w\|_3
+  \leq B_R^{1/2}\|w\|_2^{1/2},
+  \qquad
+  \|\varphi_R^3w\|_4\leq B_R^{3/4}\|w\|_2^{1/4}.
+\]
+Consequently
+\NSFormula{NS-F-P123-013}{display}{10.19}
+\begin{equation}
+  \left|\int\pi w\cdot\nabla\chi_R\right|
+  \leq C_TR^{-1}\left[(B_R+1)B_R^{1/2}+R^{-3/4}B_R^{3/4}\right].
+\tag{10.19}\label{eq:10.19}
+\end{equation}
+
+\paragraph{\normalfont\itshape Difference energy.}
+The pressure flux can now be included in the energy estimate for the difference. All
+integrations have compact support, so smoothness suffices. Pairing \eqref{eq:10.15} with
+\NSi{NS-F-P123-014}{\chi_Rw} gives
+\NSFormula{NS-F-P123-015}{display}{none}
+\[
+\begin{aligned}
+  \frac12E_R'+A_R^2
+  ={}&-\int\chi_R(w\cdot\nabla)u\cdot w
+      +\frac12\int|w|^2\Delta\chi_R\\
+     &+\frac12\int|w|^2v\cdot\nabla\chi_R
+      +\int\pi w\cdot\nabla\chi_R.
+\end{aligned}
+\]
+We take \NSi{NS-F-P123-016}{R} large enough that
+\NSi{NS-F-P123-017}{\chi_R=1} on a neighborhood of
+\NSi{NS-F-P123-018}{\operatorname{supp}u}. Then
+\NSi{NS-F-P123-019}{v=w} on \NSi{NS-F-P123-020}{\operatorname{supp}\nabla\chi_R},
+and the transport flux is bounded by
+\NSFormula{NS-F-P123-021}{display}{none}
+\[
+  CR^{-1}\int\varphi_R^6|w|^3\leq C_TR^{-1}B_R^{3/2}.
+\]
+Here
+\NSi{NS-F-P123-022}{\varphi_R^2|w|=(\varphi_R^4|w|)^{1/2}|w|^{1/2}} and
+Hölder's inequality give the last bound. The Laplacian term is at most
+\NSi{NS-F-P123-023}{C_TR^{-2}}. Using \eqref{eq:10.17} in \eqref{eq:10.19}, every
+power of \NSi{NS-F-P123-024}{A_R} in these flux bounds is at most
+\NSi{NS-F-P123-025}{3/2<2}. Young's inequality therefore gives
+\NSFormula{NS-F-P123-026}{display}{none}
+\[
+  \frac12E_R'+\frac12A_R^2
+  \leq\|\nabla u\|_\infty E_R+\frac{C_T}{R}
+  \qquad\text{for almost every }t\in(0,T).
+\]
+For example,
+\NSi{NS-F-P123-027}{R^{-1}A_R^{3/2}\leq\delta A_R^2+C_\delta R^{-4}}; the terms
+of powers \NSi{NS-F-P123-028}{1/2} and \NSi{NS-F-P123-029}{3/4} have the same
+required bound. The coefficient \NSi{NS-F-P123-030}{\|\nabla u\|_\infty} is bounded
+on \NSi{NS-F-P123-031}{[0,T]}, and \NSi{NS-F-P123-032}{E_R(0)=0}. Gronwall gives
+\NSFormula{NS-F-P123-033}{display}{none}
+\[
+  E_R(t)\leq\frac{2C_T}{R}\int_0^t
+  \exp\left(2\int_s^t\|\nabla u(a)\|_\infty\,da\right)\,ds
+  \leq\frac{C_T'}{R}.
+\]
+Since \NSi{NS-F-P123-034}{\chi_R=1} on each fixed ball for all sufficiently large
+\NSi{NS-F-P123-035}{R}, letting \NSi{NS-F-P123-036}{R\to\infty} gives
+\NSi{NS-F-P123-037}{w=0} throughout \NSi{NS-F-P123-038}{[0,T]}.
+\end{proof}
+
+\subsection{Growth, lifespan, and viscosity.}\label{sec:10.4}
+The force extension and energy estimate are now established for the localized fields
+\NSi{NS-F-P123-039}{(u,p)} (Lemma~\ref{lem:10.3}, \eqref{eq:10.13}). In this subsection
+we use the inner growth asymptotic \eqref{eq:3.6} from Theorem~\ref{thm:3.1} to identify
+the maximal classical lifespan and, with the comparison lemma (Lemma~\ref{lem:10.5}),
+exclude a global smooth solution of bounded energy. A spatial rescaling then gives the
+result for every fixed positive viscosity without changing the singular time.
+
+\NSPage{124}%
+\begin{proof}[Proof of Theorem~\ref{thm:1.1}]
+The field constructed above solves the equation exactly on
+\NSi{NS-F-P124-001}{[0,1)}, by \eqref{eq:10.5}. Smoothness and fixed compact support
+give \NSi{NS-F-P124-002}{u\in C([0,T];H^3)} for each
+\NSi{NS-F-P124-003}{T<1}. The force has the required smoothness and support by
+Lemma~\ref{lem:10.3}, and Lemma~\ref{lem:10.4} gives bounded energy.
+
+For the fixed \NSi{NS-F-P124-004}{X_{\mathrm{in}}} in Theorem~\ref{thm:3.1}, we take
+the Cartesian points
+\NSFormula{NS-F-P124-005}{display}{10.20}
+\begin{equation}
+  x_\tau=(\sqrt2X_{\mathrm{in}}\tau,0,0),\qquad t=1-\tau.
+\tag{10.20}\label{eq:10.20}
+\end{equation}
+Along this path \NSi{NS-F-P124-006}{z=0}, \NSi{NS-F-P124-007}{q=\tau}, and the
+spatial and time cutoffs in \eqref{eq:10.4} equal one for all sufficiently small
+\NSi{NS-F-P124-008}{\tau>0}. Hence \eqref{eq:3.6} gives
+\NSFormula{NS-F-P124-009}{display}{10.21}
+\begin{equation}
+  u_\theta(x_\tau,1-\tau)
+  =\tau^{-A}\bigl(e_0+O(\tau^{2h})\bigr)\longrightarrow+\infty.
+\tag{10.21}\label{eq:10.21}
+\end{equation}
+Here the annular corrections vanish in the fixed inner similarity region, and the cutoff sum
+of terms with \NSi{NS-F-P124-010}{n\geq1} in the expansion in powers of
+\NSi{NS-F-P124-011}{q^{2h}} satisfies the stated relative-error estimate. The summation
+cutoffs remain in this estimate. The points \NSi{NS-F-P124-012}{x_\tau} along which the
+velocity diverges converge to the origin. The embedding
+\NSi{NS-F-P124-013}{H^3(\R^3)\hookrightarrow L^\infty(\R^3)} excludes a classical
+\NSi{NS-F-P124-014}{H^3} continuation through time one. In the classical
+\NSi{NS-F-P124-015}{H^3} class, the same difference energy calculation is justified by
+Sobolev approximation and \NSi{NS-F-P124-016}{H^3\hookrightarrow W^{1,\infty}};
+Gronwall gives uniqueness on every shorter interval. Thus the maximal classical existence
+interval is \NSi{NS-F-P124-017}{[0,1)}.
+
+Suppose that a global smooth solution \NSi{NS-F-P124-018}{v,P} with the same data had
+uniformly bounded kinetic energy. For every \NSi{NS-F-P124-019}{T<1},
+Lemma~\ref{lem:10.5} applies on the closed interval \NSi{NS-F-P124-020}{[0,T]}. It
+follows that \NSi{NS-F-P124-021}{v=u} throughout \NSi{NS-F-P124-022}{[0,1)}.
+Equation~\eqref{eq:10.21} then contradicts the boundedness of the smooth
+\NSi{NS-F-P124-023}{v} on a compact neighborhood of \NSi{NS-F-P124-024}{(0,1)}.
+The force is nonzero, since \eqref{eq:10.13} would otherwise give
+\NSi{NS-F-P124-025}{u=0}.
+
+Finally, for fixed \NSi{NS-F-P124-026}{\nu>0}, we define
+\NSFormula{NS-F-P124-027}{display}{10.22}
+\begin{equation}
+\begin{aligned}
+  u_\nu(x,t)&=\sqrt\nu\,u(x/\sqrt\nu,t),\\
+  p_\nu(x,t)&=\nu p(x/\sqrt\nu,t),
+  &f_\nu(x,t)&=\sqrt\nu\,f(x/\sqrt\nu,t).
+\end{aligned}
+\tag{10.22}\label{eq:10.22}
+\end{equation}
+With \NSi{NS-F-P124-028}{y=x/\sqrt\nu}, the chain rule gives
+\NSFormula{NS-F-P124-029}{display}{none}
+\[
+\begin{aligned}
+  \partial_tu_\nu+(u_\nu\cdot\nabla_x)u_\nu-\nu\Delta_xu_\nu+\nabla_xp_\nu
+  &=\sqrt\nu\,[\partial_tu+(u\cdot\nabla_y)u-\Delta_yu+\nabla_yp](y,t)
+    =f_\nu(x,t),\\
+  \nabla_x\cdot u_\nu(x,t)&=(\nabla_y\cdot u)(y,t)=0.
+\end{aligned}
+\]
+The datum remains zero and the common spatial support becomes
+\NSi{NS-F-P124-030}{\mathcal K_\nu=\sqrt\nu\mathcal K}. Time is unchanged, and
+\NSFormula{NS-F-P124-031}{display}{none}
+\[
+  \partial_x^\alpha\partial_t^m f_\nu(x,t)
+  =\nu^{(1-|\alpha|)/2}
+   (\partial_y^\alpha\partial_t^m f)(x/\sqrt\nu,t).
+\]
+Thus the force remains smooth and compactly supported in
+\NSi{NS-F-P124-032}{\mathcal K_\nu\times[0,2]}, and satisfies all required decay bounds for each
+fixed \NSi{NS-F-P124-033}{\nu>0}. The energy and dissipation scale by
+\NSFormula{NS-F-P124-034}{display}{10.23}
+\begin{equation}
+  \|u_\nu(t)\|_2^2=\nu^{5/2}\|u(t)\|_2^2,\qquad
+  \nu\int_0^1\|\nabla u_\nu\|_2^2\,dt
+  =\nu^{5/2}\int_0^1\|\nabla u\|_2^2\,dt.
+\tag{10.23}\label{eq:10.23}
+\end{equation}
+Growth occurs at \NSi{NS-F-P124-035}{\sqrt\nu x_\tau} at the same time one. Any smooth
+bounded-energy competitor \NSi{NS-F-P124-036}{v_\nu,P_\nu} for the rescaled data would
+give the viscosity-one competitor
+\NSFormula{NS-F-P124-037}{display}{none}
+\[
+  v(y,t)=\nu^{-1/2}v_\nu(\sqrt\nu y,t),\qquad
+  P(y,t)=\nu^{-1}P_\nu(\sqrt\nu y,t),\qquad
+  \|v(t)\|_2^2=\nu^{-5/2}\|v_\nu(t)\|_2^2.
+\]
+This competitor has already been excluded. The theorem follows for every fixed positive
+viscosity.
+\end{proof}
+
+\NSPage{125}%
+\subsection{The periodic equations.}\label{sec:10.5}
+The fixed compact support of the velocity, pressure, and force
+(Proposition~\ref{prop:10.1} and Lemma~\ref{lem:10.3}) also allows a periodic
+construction. In this subsection we rescale their supports into the interior of a fundamental
+cube, then sum their integer translates. The translates have disjoint supports, so the
+momentum equation is preserved, including its nonlinear term. The pressure is periodic as
+well, as required in the erratum to the problem statement \cite{ref-13}.
+
+The periodic domain and the interior of its fundamental cube are
+\NSFormula{NS-F-P125-001}{display}{none}
+\[
+  \T^3=\R^3/\Z^3,\qquad Q_0=(-1/2,1/2)^3.
+\]
+The following corollary gives the periodic breakdown alternative (D) in \cite{ref-13}.
+
+\begin{corollary}\label{cor:10.6}
+For every \NSi{NS-F-P125-002}{\nu>0}, there is a smooth force on
+\NSi{NS-F-P125-003}{\T^3\times[0,\infty)}, compactly supported in time, for which the
+solution \NSi{NS-F-P125-004}{(U,P_{\mathrm{per}})} of the periodic Navier--Stokes
+equations with viscosity \NSi{NS-F-P125-005}{\nu} and zero initial velocity is smooth on
+\NSi{NS-F-P125-006}{[0,1)} and satisfies
+\NSFormula{NS-F-P125-007}{display}{none}
+\[
+  \limsup_{t\uparrow1}\|U(t)\|_{L^\infty(\T^3)}=\infty.
+\]
+Its velocity and pressure have support in a fixed compact subset of the interior of
+\NSi{NS-F-P125-008}{Q_0} at every time before one. There is no global smooth periodic
+solution for the same datum and force.
+\end{corollary}
+
+\begin{proof}
+At a fixed viscosity \NSi{NS-F-P125-009}{\nu}, we take the whole-space fields and force
+already constructed and denote them here by \NSi{NS-F-P125-010}{u,p,f}. Their common
+spatial support is contained in \NSi{NS-F-P125-011}{\mathcal K_\nu=\sqrt\nu\mathcal K}, as in the
+viscosity rescaling \eqref{eq:10.22}. We choose \NSi{NS-F-P125-012}{\lambda>1} so large
+that \NSi{NS-F-P125-013}{\lambda^{-1}\mathcal K_\nu\Subset Q_0}, and put
+\NSi{NS-F-P125-014}{t_0=1-\lambda^{-2}}. For \NSi{NS-F-P125-015}{t\geq t_0}, we set
+\NSFormula{NS-F-P125-016}{display}{none}
+\[
+\begin{aligned}
+  \widetilde u(x,t)&=\lambda u(\lambda x,\lambda^2(t-t_0)),\\
+  \widetilde p(x,t)&=\lambda^2p(\lambda x,\lambda^2(t-t_0)),\\
+  \widetilde f(x,t)&=\lambda^3f(\lambda x,\lambda^2(t-t_0)).
+\end{aligned}
+\]
+The first two formulas are used for \NSi{NS-F-P125-017}{t<1}, and the force formula is
+used for all \NSi{NS-F-P125-018}{t\geq t_0}. We extend all three by zero for
+\NSi{NS-F-P125-019}{t<t_0}. They are smooth across
+\NSi{NS-F-P125-020}{t=t_0}, since the original fields and force vanish on an interval
+after their initial time. Each term of the momentum equation is
+\NSi{NS-F-P125-021}{\lambda^3} times its original value, so the viscosity stays equal
+to \NSi{NS-F-P125-022}{\nu}. The original time one is reached precisely when
+\NSi{NS-F-P125-023}{\lambda^2(t-t_0)=1}, namely at \NSi{NS-F-P125-024}{t=1}.
+
+The periodic fields are defined by
+\NSFormula{NS-F-P125-025}{display}{none}
+\[
+\begin{aligned}
+  U(x,t)&=\sum_{k\in\Z^3}\widetilde u(x+k,t),&&0\leq t<1,\\
+  P_{\mathrm{per}}(x,t)&=\sum_{k\in\Z^3}\widetilde p(x+k,t),&&0\leq t<1,\\
+  F_{\mathrm{per}}(x,t)&=\sum_{k\in\Z^3}\widetilde f(x+k,t),&&t\geq0.
+\end{aligned}
+\]
+Distinct translates have disjoint support, with a positive gap between them. Derivatives
+commute with the locally finite sums, and at every point at most one translate is nonzero.
+In particular,
+\NSFormula{NS-F-P125-026}{display}{none}
+\[
+  (U\cdot\nabla)U(x,t)
+  =\sum_{k\in\Z^3}(\widetilde u(x+k,t)\cdot\nabla)\widetilde u(x+k,t).
+\]
+Thus the periodized velocity, pressure and force solve the equation exactly:
+\NSFormula{NS-F-P125-027}{display}{none}
+\[
+  \partial_tU+(U\cdot\nabla)U-\nu\Delta U+\nabla P_{\mathrm{per}}
+  =F_{\mathrm{per}},\qquad
+  \operatorname{div}U=0,\qquad U(\cdot,0)=0.
+\]
+
+\NSPage{126}%
+The force is smooth, with time support contained in
+\NSi{NS-F-P126-001}{[t_0,1+\lambda^{-2}]}. On the torus this implies every decay estimate
+\NSi{NS-F-P126-002}{\|\partial_x^\alpha\partial_t^mF_{\mathrm{per}}(t)\|_\infty
+\leq C_{\alpha,m,N}(1+t)^{-N}}. For the path \NSi{NS-F-P126-003}{x_\tau} defined in
+\eqref{eq:10.20}, the rescaled growth path is
+\NSFormula{NS-F-P126-004}{display}{none}
+\[
+  \widetilde x_\tau=\lambda^{-1}\sqrt\nu x_\tau,\qquad
+  \widetilde t_\tau=1-\lambda^{-2}\tau.
+\]
+It remains inside \NSi{NS-F-P126-005}{Q_0} near \NSi{NS-F-P126-006}{(0,1)}, where the
+zeroth translate is the only nonzero term. By \eqref{eq:10.21} and \eqref{eq:10.22},
+\NSFormula{NS-F-P126-007}{display}{none}
+\[
+  U_\theta(\widetilde x_\tau,\widetilde t_\tau)
+  =\lambda\sqrt\nu\,\tau^{-A}\bigl(e_0+O(\tau^{2h})\bigr)\longrightarrow+\infty.
+\]
+
+Finally, on each \NSi{NS-F-P126-008}{[0,T]} with
+\NSi{NS-F-P126-009}{T<1}, two smooth periodic solutions with the same force and datum
+have difference \NSi{NS-F-P126-010}{w} obeying
+\NSFormula{NS-F-P126-011}{display}{none}
+\[
+  \frac12\frac{d}{dt}\|w\|_{L^2(\T^3)}^2
+  +\nu\|\nabla w\|_{L^2(\T^3)}^2
+  \leq\|\nabla U\|_\infty\|w\|_{L^2(\T^3)}^2.
+\]
+Periodic integration removes both the transport and pressure terms. Gronwall gives equality
+of the solutions through \NSi{NS-F-P126-012}{T}. A global smooth competitor would
+therefore coincide with \NSi{NS-F-P126-013}{U} before time one and contradict its velocity
+blowup at \NSi{NS-F-P126-014}{t=1}.
+\end{proof}
+
+\appendix
+\section{Matching radial moments and constructing the heat exterior}\label{sec:A}
+In this appendix we construct the outer part of the leading profile
+\NSi{NS-F-P126-015}{(U,E,\Pi)} in Theorem~\ref{thm:4.6}. Its pressure integral supplies
+the datum \NSi{NS-F-P126-016}{\Pi_0} for the regular axis problem
+(Lemma~\ref{lem:A.5}). Its moment conditions, including \eqref{eq:A.8}, ensure that the
+radially integrated leading residual stress \NSi{NS-F-P126-017}{\mathcal T_0} vanishes in the
+exterior after the heat replacement (Lemma~\ref{lem:A.8}). The construction must satisfy
+both requirements while retaining the strict stress cone inequalities on the designated
+radial intervals (Propositions~\ref{prop:A.4}, \ref{prop:A.7} and \ref{prop:A.10}).
+
+We begin with finite-dimensional moment corrections (Lemmas~\ref{lem:A.1} and
+\ref{lem:A.2}) that will also be used to attach the axis profile
+(Proposition~\ref{prop:B.8}) and modify the shear (Proposition~\ref{prop:C.2}). We then
+build the outer profile from a prescribed inner reference profile (Section~\ref{sec:A.2}).
+Its terminal power law \NSi{NS-F-P126-018}{E_{\mathrm{pow}}} is finally replaced by an
+exact heat flow, with compensating moment corrections that preserve the pressure datum and
+exterior stress conditions (Lemmas~\ref{lem:A.6} and \ref{lem:A.8} and
+Proposition~\ref{prop:A.7}).
+
+\subsection{Adjusting finitely many moments.}\label{sec:A.1}
+Changes to a profile on a compact radial interval alter its cumulative moments
+\eqref{eq:4.15}. In this subsection we correct these changes by adding fixed smooth bumps
+with adjustable coefficients. The following results show that distinct power weights give
+independent moment changes (Lemma~\ref{lem:A.1}) and that the resulting quadratic moment
+equations can be solved for small discrepancies (Lemma~\ref{lem:A.2}). They will allow
+each radial modification to preserve the data prescribed farther out, by Lemma~\ref{lem:4.4}.
+
+\begin{lemma}\label{lem:A.1}
+Let \NSi{NS-F-P126-019}{\alpha_1,\ldots,\alpha_m} be distinct real numbers. For each
+\NSi{NS-F-P126-020}{j} let \NSi{NS-F-P126-021}{\beta_j} be a nonnegative, nonzero
+smooth function supported in the interior of a compact interval
+\NSi{NS-F-P126-022}{I_j\subset(0,\infty)}, with
+\NSi{NS-F-P126-023}{I_1<\cdots<I_m}. The matrix
+\NSFormula{NS-F-P126-024}{display}{none}
+\[
+  B_{ij}=\int_0^\infty x^{\alpha_i}\beta_j(x)\,dx
+\]
+is invertible. The assertion also holds for exponential weights in a logarithmic coordinate.
+If these data vary smoothly over a compact parameter set and the stated separations persist,
+the inverse and each fixed parameter derivative of it are bounded.
+\end{lemma}

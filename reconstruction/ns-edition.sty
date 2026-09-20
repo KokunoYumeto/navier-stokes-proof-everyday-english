@@ -1,0 +1,99 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ns-edition}[2026/09/19 Source-faithful Navier--Stokes reconstruction]
+
+\ifdefined\pdfinfoomitdate\pdfinfoomitdate=1\fi
+\ifdefined\pdftrailerid\pdftrailerid{}\fi
+\ifdefined\pdfsuppressptexinfo\pdfsuppressptexinfo=15\fi
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{mathpazo}
+\RequirePackage{amsmath,amssymb,amsthm,mathtools}
+\RequirePackage{mathrsfs}
+\RequirePackage{graphicx}
+\RequirePackage{xcolor}
+\RequirePackage{microtype}
+\RequirePackage{enumitem}
+\RequirePackage{geometry}
+\RequirePackage{fancyhdr}
+\RequirePackage[hypertexnames=false]{hyperref}
+\RequirePackage[nameinlink,noabbrev]{cleveref}
+
+\geometry{letterpaper,top=0.70in,bottom=0.70in,inner=0.88in,outer=0.88in,headheight=14pt,headsep=12pt}
+\setlength{\parindent}{1.3em}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\setlist{nosep}
+\hypersetup{
+  hidelinks,
+  pdftitle={Finite Time Blowup for Navier--Stokes: independent source-faithful LaTeX reconstruction},
+  pdfauthor={OpenAI (paper); independent source reconstruction},
+  pdfsubject={Editable source-faithful reconstruction of the complete 166-page paper},
+  pdfkeywords={Navier--Stokes, finite-time blowup, LaTeX, source reconstruction},
+  pdfcreator={Independent source-faithful reconstruction from the frozen official PDF}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\thepage}
+\fancyhead[RE]{\small OPENAI}
+\fancyhead[LO]{\small FINITE TIME BLOWUP FOR NAVIER--STOKES}
+\fancyhead[RO]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{construction}[theorem]{Construction}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{notation}[theorem]{Notation}
+
+\newcounter{nssourcepage}
+\newcounter{nsformulaanchor}
+\newcommand{\NSPage}[1]{%
+  \ifnum\value{nssourcepage}>0\clearpage\fi
+  \stepcounter{nssourcepage}%
+  \setcounter{page}{#1}%
+  \hypertarget{source-page-#1}{}%
+}
+\newcommand{\NSi}[2]{\ensuremath{#2}}
+\newcommand{\NSFormula}[3]{%
+  \stepcounter{nsformulaanchor}%
+  \hypertarget{formula-#1}{}%
+}
+\makeatletter
+\newcommand{\NSDeclareFigure}[2]{\expandafter\def\csname nsfig@#1\endcsname{#2}}
+\NSDeclareFigure{NS-FIG-1}{assets/figures/figure-1.pdf}
+\NSDeclareFigure{NS-FIG-2}{assets/figures/figure-2.pdf}
+\NSDeclareFigure{NS-FIG-3}{assets/figures/figure-3.pdf}
+\NSDeclareFigure{NS-FIG-4}{assets/figures/figure-4.pdf}
+\NSDeclareFigure{NS-FIG-5}{assets/figures/figure-5.pdf}
+\NSDeclareFigure{NS-FIG-6}{assets/figures/figure-6.pdf}
+\renewcommand{\@biblabel}[1]{#1.}
+\newcommand{\NSFigurePlaceholder}[1]{%
+  \ifcsname nsfig@#1\endcsname
+    \edef\NS@figurefile{\csname nsfig@#1\endcsname}%
+    \includegraphics[width=\linewidth,height=0.46\textheight,keepaspectratio]{\NS@figurefile}%
+  \else
+    \fbox{\parbox[c][2.0in][c]{0.86\linewidth}{\centering Missing checked vector crop\\\texttt{#1}}}%
+  \fi
+}
+\makeatother
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\divergence}{\operatorname{div}}
+\newcommand{\curl}{\operatorname{curl}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\Id}{\operatorname{Id}}
+
+\numberwithin{equation}{section}
+\graphicspath{{assets/figures/}}

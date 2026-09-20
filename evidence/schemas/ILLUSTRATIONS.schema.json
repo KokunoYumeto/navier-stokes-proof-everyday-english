@@ -1,0 +1,1100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ILLUSTRATIONS.schema.json",
+  "title": "Everyday English Edition illustration evidence record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "record_type",
+    "status",
+    "source_pages",
+    "formula_ids",
+    "statement_ids",
+    "dependent_spans",
+    "placement_target_ids",
+    "mathematics",
+    "epistemic_status",
+    "epistemic_basis",
+    "proof_role",
+    "limitations",
+    "generation",
+    "outputs",
+    "validation_tests",
+    "caption",
+    "alt_text",
+    "long_description",
+    "non_color_cues",
+    "visual_inspection",
+    "supersession"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "#/$defs/illustrationId"
+    },
+    "record_type": {
+      "const": "illustration"
+    },
+    "status": {
+      "enum": [
+        "pass",
+        "pending",
+        "fail",
+        "superseded"
+      ]
+    },
+    "source_pages": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 166
+      }
+    },
+    "formula_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/formulaId"
+      }
+    },
+    "statement_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/statementId"
+      }
+    },
+    "dependent_spans": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/dependentSpan"
+      }
+    },
+    "placement_target_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/targetId"
+      }
+    },
+    "mathematics": {
+      "$ref": "#/$defs/mathematics"
+    },
+    "epistemic_status": {
+      "enum": [
+        "exact_consequence",
+        "definitional_diagram",
+        "faithful_schematic",
+        "numerical_example"
+      ]
+    },
+    "epistemic_basis": {
+      "$ref": "#/$defs/nonempty"
+    },
+    "proof_role": {
+      "const": "supplements_proof_does_not_replace"
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/nonempty"
+      }
+    },
+    "generation": {
+      "$ref": "#/$defs/generation"
+    },
+    "outputs": {
+      "$ref": "#/$defs/outputs"
+    },
+    "validation_tests": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/validationTest"
+      }
+    },
+    "caption": {
+      "$ref": "#/$defs/caption"
+    },
+    "alt_text": {
+      "$ref": "#/$defs/nonempty"
+    },
+    "long_description": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/nonempty"
+        }
+      ]
+    },
+    "non_color_cues": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/nonempty"
+      }
+    },
+    "visual_inspection": {
+      "$ref": "#/$defs/visualInspection"
+    },
+    "supersession": {
+      "$ref": "#/$defs/supersession"
+    }
+  },
+  "$defs": {
+    "nonempty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[^\\\\\\u0000]+$"
+    },
+    "illustrationId": {
+      "type": "string",
+      "pattern": "^EE-ILL-P(?:00[1-9]|0[1-9][0-9]|1[0-5][0-9]|16[0-6])-(?!000)[0-9]{3}$"
+    },
+    "formulaId": {
+      "type": "string",
+      "pattern": "^NS-F-P(?:00[1-9]|0[1-9][0-9]|1[0-5][0-9]|16[0-6])-(?!000)[0-9]{3}$"
+    },
+    "statementId": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9:._/-]{0,127}$"
+    },
+    "targetId": {
+      "type": "string",
+      "pattern": "^EE-(?:TGT|ADD)-P(?:00[1-9]|0[1-9][0-9]|1[0-5][0-9]|16[0-6])-(?!000)[0-9]{3}$"
+    },
+    "dependentSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dependency_id",
+        "roles",
+        "path",
+        "file_sha256",
+        "byte_start",
+        "byte_end_exclusive",
+        "exact_bytes_base64",
+        "span_sha256",
+        "description"
+      ],
+      "properties": {
+        "dependency_id": {
+          "type": "string",
+          "pattern": "^EE-ILL-P(?:00[1-9]|0[1-9][0-9]|1[0-5][0-9]|16[0-6])-(?!000)[0-9]{3}-DEP-(?!000)[0-9]{3}$"
+        },
+        "roles": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "source_formula",
+              "source_statement",
+              "translation_segment",
+              "translation_addition",
+              "other_mathematical_dependency"
+            ]
+          }
+        },
+        "path": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "file_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "byte_start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "byte_end_exclusive": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "exact_bytes_base64": {
+          "type": "string",
+          "minLength": 4
+        },
+        "span_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "description": {
+          "$ref": "#/$defs/nonempty"
+        }
+      }
+    },
+    "sourceIdArray": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "mathematics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "depicted_claim_or_relation",
+        "variables",
+        "domains",
+        "coordinate_systems",
+        "coordinate_free_reason",
+        "constants",
+        "hypotheses",
+        "parameters",
+        "invariants"
+      ],
+      "properties": {
+        "depicted_claim_or_relation": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "variables": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "symbol",
+              "meaning",
+              "domain",
+              "units"
+            ],
+            "properties": {
+              "symbol": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "meaning": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "domain": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "units": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "$ref": "#/$defs/nonempty"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "domains": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "definition",
+              "constraints"
+            ],
+            "properties": {
+              "name": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "definition": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "constraints": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/nonempty"
+                }
+              }
+            }
+          }
+        },
+        "coordinate_systems": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "variables",
+              "domain",
+              "codomain",
+              "map",
+              "orientation",
+              "units"
+            ],
+            "properties": {
+              "name": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "variables": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "$ref": "#/$defs/nonempty"
+                }
+              },
+              "domain": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "codomain": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "map": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "orientation": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "units": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "$ref": "#/$defs/nonempty"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "coordinate_free_reason": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/nonempty"
+            }
+          ]
+        },
+        "constants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "symbol",
+              "exact_value_or_constraint",
+              "role",
+              "units",
+              "source_ids"
+            ],
+            "properties": {
+              "symbol": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "exact_value_or_constraint": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "role": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "units": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "$ref": "#/$defs/nonempty"
+                  }
+                ]
+              },
+              "source_ids": {
+                "$ref": "#/$defs/sourceIdArray"
+              }
+            }
+          }
+        },
+        "hypotheses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "hypothesis_id",
+              "statement",
+              "source_ids"
+            ],
+            "properties": {
+              "hypothesis_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9:._/-]{0,127}$"
+              },
+              "statement": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "source_ids": {
+                "$ref": "#/$defs/sourceIdArray"
+              }
+            }
+          }
+        },
+        "parameters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "symbol",
+              "value_or_range",
+              "units",
+              "source_ids"
+            ],
+            "properties": {
+              "symbol": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "value_or_range": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "units": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "$ref": "#/$defs/nonempty"
+                  }
+                ]
+              },
+              "source_ids": {
+                "$ref": "#/$defs/sourceIdArray"
+              }
+            }
+          }
+        },
+        "invariants": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "statement",
+              "exact",
+              "source_ids"
+            ],
+            "properties": {
+              "statement": {
+                "$ref": "#/$defs/nonempty"
+              },
+              "exact": {
+                "type": "boolean"
+              },
+              "source_ids": {
+                "$ref": "#/$defs/sourceIdArray"
+              }
+            }
+          }
+        }
+      }
+    },
+    "hashedFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256",
+        "role"
+      ],
+      "properties": {
+        "path": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "role": {
+          "$ref": "#/$defs/nonempty"
+        }
+      }
+    },
+    "softwareVersion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "version",
+        "role"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "version": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "role": {
+          "$ref": "#/$defs/nonempty"
+        }
+      }
+    },
+    "timestamp": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]+)?(?:Z|[+-][0-9]{2}:[0-9]{2})$"
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "generator_name",
+        "generator_version",
+        "software_versions",
+        "source_files",
+        "configuration_files",
+        "command",
+        "random_seed",
+        "deterministic",
+        "environment",
+        "generated_at"
+      ],
+      "properties": {
+        "generator_name": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "generator_version": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "software_versions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/softwareVersion"
+          }
+        },
+        "source_files": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/hashedFile"
+          }
+        },
+        "configuration_files": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/hashedFile"
+          }
+        },
+        "command": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "random_seed": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "$ref": "#/$defs/nonempty"
+            }
+          ]
+        },
+        "deterministic": {
+          "type": "boolean"
+        },
+        "environment": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "generated_at": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "width",
+        "height",
+        "units"
+      ],
+      "properties": {
+        "width": {
+          "type": "number",
+          "minimum": 0
+        },
+        "height": {
+          "type": "number",
+          "minimum": 0
+        },
+        "units": {
+          "$ref": "#/$defs/nonempty"
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "output_id",
+        "path",
+        "media_type",
+        "sha256",
+        "role",
+        "view",
+        "dimensions"
+      ],
+      "properties": {
+        "output_id": {
+          "type": "string",
+          "pattern": "^EE-ILL-P(?:00[1-9]|0[1-9][0-9]|1[0-5][0-9]|16[0-6])-(?!000)[0-9]{3}-OUT-(?!000)[0-9]{3}$"
+        },
+        "path": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "media_type": {
+          "enum": [
+            "image/svg+xml",
+            "image/png",
+            "image/jpeg",
+            "application/pdf",
+            "text/html",
+            "model/gltf+json",
+            "model/gltf-binary"
+          ]
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "role": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "view": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "dimensions": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/dimensions"
+            }
+          ]
+        }
+      }
+    },
+    "fallbackRelation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "interactive_output_ids",
+        "static_output_ids",
+        "relationship",
+        "multi_view_description",
+        "parity_test_ids",
+        "direct_reading_output_id"
+      ],
+      "properties": {
+        "interactive_output_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "static_output_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "relationship": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "multi_view_description": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "parity_test_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "direct_reading_output_id": {
+          "$ref": "#/$defs/nonempty"
+        }
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "static",
+        "interactive",
+        "fallback_relation"
+      ],
+      "properties": {
+        "static": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/output"
+          }
+        },
+        "interactive": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/output"
+          }
+        },
+        "fallback_relation": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/fallbackRelation"
+            }
+          ]
+        }
+      }
+    },
+    "tolerance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "absolute",
+        "relative",
+        "units"
+      ],
+      "properties": {
+        "absolute": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "number",
+              "minimum": 0
+            }
+          ]
+        },
+        "relative": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "number",
+              "minimum": 0
+            }
+          ]
+        },
+        "units": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/nonempty"
+            }
+          ]
+        }
+      }
+    },
+    "validationTest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "test_id",
+        "kind",
+        "source_ids",
+        "assertion",
+        "method",
+        "expected",
+        "observed",
+        "tolerance",
+        "result",
+        "evidence"
+      ],
+      "properties": {
+        "test_id": {
+          "type": "string",
+          "pattern": "^EE-ILL-P(?:00[1-9]|0[1-9][0-9]|1[0-5][0-9]|16[0-6])-(?!000)[0-9]{3}-VAL-(?!000)[0-9]{3}$"
+        },
+        "kind": {
+          "enum": [
+            "exact_symbolic",
+            "numerical",
+            "geometric",
+            "topological",
+            "render_integrity",
+            "accessibility",
+            "fallback_parity"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "assertion": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "method": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "expected": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "observed": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "tolerance": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/tolerance"
+            }
+          ]
+        },
+        "result": {
+          "enum": [
+            "pass",
+            "pending",
+            "fail"
+          ]
+        },
+        "evidence": {
+          "$ref": "#/$defs/nonempty"
+        }
+      }
+    },
+    "caption": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "what_reader_should_see",
+        "exact_relation_or_invariant",
+        "source_attribution",
+        "limits"
+      ],
+      "properties": {
+        "text": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "what_reader_should_see": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "exact_relation_or_invariant": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "source_attribution": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "limits": {
+          "$ref": "#/$defs/nonempty"
+        }
+      }
+    },
+    "receiptHash": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "sha256"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "visualCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "result",
+        "evidence"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "mathematical_fidelity",
+            "parameter_and_coordinate_fidelity",
+            "labels_and_non_color_cues",
+            "caption_and_alt_text",
+            "clipping_and_legibility",
+            "interactive_fallback_parity"
+          ]
+        },
+        "result": {
+          "enum": [
+            "pass",
+            "pending",
+            "fail"
+          ]
+        },
+        "evidence": {
+          "$ref": "#/$defs/nonempty"
+        }
+      }
+    },
+    "visualInspection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "receipt_id",
+        "status",
+        "inspector",
+        "inspector_kind",
+        "inspected_at",
+        "inspected_output_ids",
+        "dependent_span_hashes",
+        "generation_input_hashes",
+        "output_hashes",
+        "views_inspected",
+        "checks",
+        "issues",
+        "notes"
+      ],
+      "properties": {
+        "receipt_id": {
+          "type": "string",
+          "pattern": "^EE-VIS-ILL-P(?:00[1-9]|0[1-9][0-9]|1[0-5][0-9]|16[0-6])-(?!000)[0-9]{3}$"
+        },
+        "status": {
+          "enum": [
+            "pass",
+            "pending",
+            "fail"
+          ]
+        },
+        "inspector": {
+          "$ref": "#/$defs/nonempty"
+        },
+        "inspector_kind": {
+          "enum": [
+            "human",
+            "assisted_human",
+            "visual_model"
+          ]
+        },
+        "inspected_at": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "inspected_output_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonempty"
+          }
+        },
+        "dependent_span_hashes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/receiptHash"
+          }
+        },
+        "generation_input_hashes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/receiptHash"
+          }
+        },
+        "output_hashes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/receiptHash"
+          }
+        },
+        "views_inspected": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonempty"
+          }
+        },
+        "checks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/visualCheck"
+          }
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonempty"
+          }
+        },
+        "notes": {
+          "$ref": "#/$defs/nonempty"
+        }
+      }
+    },
+    "supersession": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "supersedes",
+        "superseded_by"
+      ],
+      "properties": {
+        "supersedes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/illustrationId"
+          }
+        },
+        "superseded_by": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/illustrationId"
+          }
+        }
+      }
+    }
+  }
+}

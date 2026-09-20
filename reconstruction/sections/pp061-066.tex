@@ -1,0 +1,294 @@
+\NSPage{061}%
+Thus the same derivative estimates hold uniformly after applying the cutoffs. The stress-divergence coefficient bounds were checked in Proposition~\ref{prop:5.3}, whose estimate \eqref{eq:5.25} is the lemma's finite-residual hypothesis with \NSi{NS-F-P061-001}{\rho_N=2h(N+1)} and no additional remainder. The hypotheses of Lemma~\ref{lem:5.4} are therefore satisfied on each fixed compact profile range. We apply it to obtain \NSi{NS-F-P061-002}{u_B,p_B,\mathcal T_{\mathrm{phys}}}, with residual \NSi{NS-F-P061-003}{\mathcal E_B=\mathcal F_{\mathrm{slow}}(u_B,p_B,\mathcal T_{\mathrm{phys}})} bounded by every power of \NSi{NS-F-P061-004}{q} with all prescribed physical derivatives.
+
+\textbf{Step 2: preserve divergence, support, and the mean-patch velocity.} The radial contribution from differentiating the cutoff appears explicitly in
+\NSFormula{NS-F-P061-005}{display}{5.45}
+\begin{equation}
+ r u^{\mathrm{cut}}_{r,n}
+ =q^{2nh}\left[\chi(c_nq)V_n-\frac{2\eta}{L}(c_nq)\chi'(c_nq)F_n\right],
+ \qquad
+ u^{\mathrm{cut}}_{z,n}=q^{-A+2nh}\chi(c_nq)U_n.
+ \tag{5.45}\label{eq:5.45}
+\end{equation}
+The term containing \NSi{NS-F-P061-006}{\chi'(c_nq)F_n} has the same \NSi{NS-F-P061-007}{q^{2nh}} prefactor and the common radial support supplied by Lemma~\ref{lem:5.2}. Commutation of physical derivatives proves that the divergence is identically zero across every cutoff transition. Equation~\eqref{eq:5.18} makes both terms in the radial bracket zero on the mean patch; the positive-order axial and azimuthal terms also vanish there. This proves \eqref{eq:5.44}, including the Stokes streamfunction cutoff contributions.
+
+\textbf{Step 3: prove the normalized velocity and stress estimates.} We use the additional diagonal bounds in \eqref{eq:5.40} to control, through order \NSi{NS-F-P061-008}{n}, all normalized coefficient and Stokes streamfunction derivatives, the extra streamfunction derivative, and, for \NSi{NS-F-P061-009}{n\ge 2}, all derivatives of \NSi{NS-F-P061-010}{\mathcal T_n/\zeta}. The normalized velocity estimates are taken on the fixed enlarged rectangle in the statement; the weighted stress estimates are on \NSi{NS-F-P061-011}{X_a<X<X_b}, \NSi{NS-F-P061-012}{-1\le\eta\le 1}. For estimates reaching the axis we use the profiles expressed in smooth Cartesian coordinates. The finite constants include the powers of \NSi{NS-F-P061-013}{n} and the fixed cutoff derivatives. Thus, in addition to the lemma's physical requirements, the cutoff choice gives
+\NSFormula{NS-F-P061-014}{display}{5.46}
+\begin{equation}
+ \left|\mathscr D^I\!\left[\chi(c_nq)q^{2nh}a_n\right]\right|
+ \le 2^{-n}q^{nh}
+ \qquad \bigl(n\ge\max\{2,|I|\}\bigr),
+ \tag{5.46}\label{eq:5.46}
+\end{equation}
+where \NSi{NS-F-P061-015}{a_n} denotes one of \NSi{NS-F-P061-016}{E_n,U_n,\Pi_n,V_n/\sqrt{2X},F_n/\sqrt{2X}} on the enlarged rectangle, or a component of \NSi{NS-F-P061-017}{\mathcal T_n/\zeta} for \NSi{NS-F-P061-018}{n\ge 2} on the active radial interior. The same estimate holds for the expression in brackets in \eqref{eq:5.45} after multiplication by \NSi{NS-F-P061-019}{q^{2nh}}. The diagonal choice in the summation lemma accommodates these finitely many additional seminorms at each order. The analytic neighborhoods may depend on the order.
+
+At a fixed derivative order, we retain a finite initial block, whose positive-order terms are all \NSi{NS-F-P061-020}{O(q^{2h})}, and sum \eqref{eq:5.46} from an index at least two and larger than the selected derivative order. This proves \eqref{eq:5.42}; in the common normalization \NSi{NS-F-P061-021}{q^A}, the positive-order radial correction is even \NSi{NS-F-P061-022}{O(q^{3h})}. For the stress components, the same argument for \NSi{NS-F-P061-023}{n\ge 2} carries the factor \NSi{NS-F-P061-024}{\zeta}. The single term \NSi{NS-F-P061-025}{n=1} is controlled by \eqref{eq:5.22}, with a finite inverse power of \NSi{NS-F-P061-026}{\delta} in each derivative. This proves \eqref{eq:5.43}. The wave construction can therefore use the fixed positive covariance representation of \NSi{NS-F-P061-027}{\mathcal T_0} and treat the higher-order stress by signed corrections.
+
+\textbf{Step 4: recover the full expansion and the endpoint extensions.} For a fixed formal order \NSi{NS-F-P061-028}{N} and fixed derivative order \NSi{NS-F-P061-029}{m}, we split the summed remainder at \NSi{NS-F-P061-030}{J=\max\{2N+2,m+1\}}: the finitely many terms \NSi{NS-F-P061-031}{N<n<J} have their original powers at least \NSi{NS-F-P061-032}{q^{2h(N+1)}}, and the tail satisfies the displayed geometric estimate
+\NSFormula{NS-F-P061-033}{display}{none}
+\[
+ \sum_{n\ge J}2^{-n}q^{nh}
+ \le 2^{1-J}q^{Jh}
+ \le 2^{1-J}q^{2h(N+1)}
+ \qquad (0<q\le 1).
+\]
+\NSPage{062}%
+The coefficient constants for the finite intermediate block may depend on \NSi{NS-F-P062-001}{N,m}. The cutoffs of the finitely many initial terms are identically one for sufficiently small \NSi{NS-F-P062-002}{q}. This recovers every fixed original formal order, including after physical differentiation with its fixed exponent loss. The geometric bounds used for summation therefore do not change the asymptotic coefficients. The residual conclusion was established in Step~1 by comparison with a sufficiently long finite partial sum.
+
+Finally, the cutoff sequence grows at least geometrically, so only finitely many positive-order terms remain on any compact set with \NSi{NS-F-P062-003}{q} bounded below. For each fixed physical space-time derivative, we intersect the finitely many parameter neighborhoods of the contributing positive-order coefficients. Their profiles and Stokes streamfunctions extend to this neighborhood. The order-zero term has the smooth one-sided extension in \NSi{NS-F-P062-004}{\eta} supplied by the leading profile and heat construction. Since \NSi{NS-F-P062-005}{L>0}, the coordinate map transfers these extensions to the physical variables, including all the specified derivatives. This proves the asserted extensions at \NSi{NS-F-P062-006}{\eta=\pm1}.
+\end{proof}
+
+\section{Auxiliary torus and separation of oscillatory supports}\label{sec:6}
+
+Fix the background velocity \NSi{NS-F-P062-007}{u_B}, pressure \NSi{NS-F-P062-008}{p_B}, and annular stress \NSi{NS-F-P062-009}{\mathcal T_{\mathrm{phys}}} supplied by Proposition~\ref{prop:5.5}. Its momentum residual is the divergence of that stress, with the sign in \eqref{eq:5.41}, plus a flat remainder. The leading stress will be supplied by the waves of Proposition~\ref{prop:7.5}, whose amplitudes evolve under the local background shear through \eqref{eq:7.5}. We must first localize the waves to regions where that shear varies little and arrange their supports so that distinct waves do not produce additional quadratic interactions. The localization must also permit rapid temporal variation without introducing radial derivatives large enough to spoil the residual estimates.
+
+We introduce the periodic variable \NSi{NS-F-P062-010}{Y\in\mathbb T^2=\mathbb R^2/\mathbb Z^2}, independent of the physical coordinates \NSi{NS-F-P062-011}{(r,\theta,z,t)}, then obtain physical fields by evaluating it at the fixed map of \NSi{NS-F-P062-012}{(r,t)} in \eqref{eq:6.3}. This map allows rapid temporal variation with much smaller additional radial derivatives. The temporal variation drives the pulse equation in Section~\ref{sec:7}; the radial derivative bounds control the errors caused by localization. Oscillations whose supports in the remaining variables overlap receive disjoint auxiliary supports, so their cross products vanish after evaluation. Harmonics of the same localized oscillation still interact.
+
+We first derive the evaluated derivative operators in \eqref{eq:6.6}. Lemma~\ref{lem:6.1} gives the support separation, and Lemma~\ref{lem:6.2} supplies a common representation for overlapping bands. We finish with the coefficient classes in Section~\ref{sec:6.4} and their product and derivative rules in Proposition~\ref{prop:6.6}.
+
+All preliminary geometric choices are made on one domain \NSi{NS-F-P062-013}{0<q<q_{\mathrm{big}}}. The number \NSi{NS-F-P062-014}{q_{\mathrm{big}}} may be decreased when the fixed base and pulse coefficients are chosen, before the correction iteration begins.
+
+\subsection{Dyadic charts and derivatives after phase evaluation}\label{sec:6.1}
+
+Recall \NSi{NS-F-P062-015}{q=q(z,t)} and \NSi{NS-F-P062-016}{A=1/2+h}, \NSi{NS-F-P062-017}{D=1/2-h} from \eqref{eq:4.1}. We work on dyadic regions where \NSi{NS-F-P062-018}{q} is comparable to a fixed scale \NSi{NS-F-P062-019}{Q}. The radial, axial, and temporal coordinates are rescaled by \NSi{NS-F-P062-020}{Q^{1/2},Q^D,Q}, respectively, so that the concentrating annulus has bounded size in each region. For a dyadic index \NSi{NS-F-P062-021}{\ell}, we set
+\NSFormula{NS-F-P062-022}{display}{6.1}
+\begin{equation}
+ Q=2^{-\ell},\qquad \varepsilon=Q^h,\qquad S_*=\ell^2,
+ \qquad R=\frac r{\sqrt Q},\qquad Z=\frac z{Q^D},\qquad
+ T=\frac\tau Q,\qquad \tau=1-t.
+ \tag{6.1}\label{eq:6.1}
+\end{equation}
+\NSPage{063}%
+The radius \NSi{NS-F-P063-001}{R} now uses the fixed band scale \NSi{NS-F-P063-002}{Q}, whereas in the profile calculations it denoted \NSi{NS-F-P063-003}{\sqrt{2X}=r/\sqrt q}; the two representatives satisfy \NSi{NS-F-P063-004}{R_{\mathrm{chart}}=\sqrt{q/Q}\,R_{\mathrm{profile}}}. Throughout a chart, \NSi{NS-F-P063-005}{Q,\varepsilon,S_*} are constants. A physical velocity, pressure, and residual have chart representatives obtained by multiplication by \NSi{NS-F-P063-006}{Q^A,Q^{2A},Q^{2A+1/2}}, respectively. An integer matrix acts on the torus while preserving periodicity. Its distinct eigenvalues will give different rates of variation in the radial and temporal directions. Fix
+\NSFormula{NS-F-P063-007}{display}{6.2}
+\begin{equation}
+\begin{gathered}
+ J_g=\begin{pmatrix}3&1\\1&5\end{pmatrix},\qquad
+ \Lambda_g=4-\sqrt2,\qquad T_g=4+\sqrt2,\qquad b_g=\sqrt2-1,\\
+ v_r=(1,-b_g),\qquad v_t=(b_g,1),\qquad
+ \rho_g=\frac{\log\Lambda_g}{\log T_g},\\
+ \kappa_s=10^{-5},\qquad d_r=2\bigl((1+h)\rho_g-h\kappa_s\bigr)>0.
+\end{gathered}
+\tag{6.2}\label{eq:6.2}
+\end{equation}
+These vectors satisfy \NSi{NS-F-P063-008}{J_gv_r=\Lambda_gv_r} and \NSi{NS-F-P063-009}{J_gv_t=T_gv_t}, with \NSi{NS-F-P063-010}{1<\Lambda_g<T_g}. We define the physical evaluation map by
+\NSFormula{NS-F-P063-011}{display}{6.3}
+\begin{equation}
+ Y=v_rr^{d_r}+v_tt\pmod{\mathbb Z^2}.
+ \tag{6.3}\label{eq:6.3}
+\end{equation}
+For a field on the extended domain with independent variable \NSi{NS-F-P063-012}{Y}, the chain rule differentiates its restriction to this map by the operators
+\NSFormula{NS-F-P063-013}{display}{6.4}
+\begin{equation}
+\begin{aligned}
+ N_{\mathrm{abs}}&=v_t\mathbin\cdot\partial_Y,
+ &\mathcal L_{\mathrm{abs}}&=v_r\mathbin\cdot\partial_Y,\\
+ \mathfrak t&=\partial_t+N_{\mathrm{abs}},
+ &\mathfrak r&=\partial_r+d_rr^{d_r-1}\mathcal L_{\mathrm{abs}}.
+\end{aligned}
+\tag{6.4}\label{eq:6.4}
+\end{equation}
+Here \NSi{NS-F-P063-014}{\partial_t} and \NSi{NS-F-P063-015}{\partial_r} on the extended domain hold \NSi{NS-F-P063-016}{Y} fixed. Thus physical time and radial differentiation become \NSi{NS-F-P063-017}{\mathfrak t} and \NSi{NS-F-P063-018}{\mathfrak r}, respectively, before restriction.
+
+We call \NSi{NS-F-P063-019}{Y} the \emph{absolute} auxiliary variable. Its \emph{band representative} for band \NSi{NS-F-P063-020}{\ell} is the image \NSi{NS-F-P063-021}{Y_i} under the following integer covering:
+\NSFormula{NS-F-P063-022}{display}{6.5}
+\begin{equation}
+ Y_i=J_g^iY\pmod{\mathbb Z^2},
+ \qquad
+ i=i(\ell)=\left\lfloor\log_{T_g}\frac{Q^{-1-h}}{S_*}\right\rfloor.
+ \tag{6.5}\label{eq:6.5}
+\end{equation}
+For a function \NSi{NS-F-P063-023}{f} on the band torus, its pullback to the absolute torus is the composition \NSi{NS-F-P063-024}{f(J_g^iY)}. A function descends to that band torus when its value is unchanged by every translation \NSi{NS-F-P063-025}{Y\mapsto Y+a} with \NSi{NS-F-P063-026}{J_g^ia\in\mathbb Z^2}; such translations are called deck translations. Only large \NSi{NS-F-P063-027}{\ell}, for which \NSi{NS-F-P063-028}{i(\ell)\ge0}, will be used. Writing \NSi{NS-F-P063-029}{N_i=v_t\mathbin\cdot\partial_{Y_i}} and \NSi{NS-F-P063-030}{\mathcal L_i=v_r\mathbin\cdot\partial_{Y_i}}, the eigenvector identities give \NSi{NS-F-P063-031}{N_{\mathrm{abs}}=T_g^iN_i} and \NSi{NS-F-P063-032}{\mathcal L_{\mathrm{abs}}=\Lambda_g^i\mathcal L_i} on band pullbacks. The chart versions of the physical derivatives are therefore
+\NSFormula{NS-F-P063-033}{display}{6.6}
+\begin{equation}
+\begin{aligned}
+ \mathfrak t_*&=Q^{1+h}\mathfrak t=-\varepsilon\partial_T+c_iN_i,
+ &c_i&=T_g^iQ^{1+h}\asymp S_*^{-1},\\
+ D_r&=\sqrt Q\,\mathfrak r=\partial_R+M_id_rR^{d_r-1}\mathcal L_i,
+ &M_i&=\Lambda_g^iQ^{d_r/2}\asymp\varepsilon^{-\kappa_s}S_*^{-\rho_g},\\
+ D_z&=\sqrt Q\,\partial_z=\varepsilon\partial_Z,
+ &D_\theta&=R^{-1}\partial_\theta.
+\end{aligned}
+\tag{6.6}\label{eq:6.6}
+\end{equation}
+The velocity and residual normalizations following \eqref{eq:6.1} will be used throughout. In \eqref{eq:6.6}, the \emph{slow} derivative terms act on \NSi{NS-F-P063-034}{R,Z,T} while holding the auxiliary variable \NSi{NS-F-P063-035}{Y_i} fixed. The \emph{fast} terms act on \NSi{NS-F-P063-036}{Y_i} and arise from the chain rule along the physical phase map. For example, \NSi{NS-F-P063-037}{-\varepsilon\partial_T} is the slow time term and \NSi{NS-F-P063-038}{c_iN_i} is the fast time term. The velocity and residual normalizations give the time factor \NSi{NS-F-P063-039}{Q^{2A+1/2}Q^{-A}=Q^{1+h}} and the viscous factor \NSi{NS-F-P063-040}{Q^{2A+1/2}Q^{-A}Q^{-1}=\varepsilon}.
+
+\NSPage{064}%
+The integer \NSi{NS-F-P064-001}{i(\ell)} in \eqref{eq:6.5} satisfies
+\NSFormula{NS-F-P064-002}{display}{none}
+\[
+ \frac1{T_g}\frac{Q^{-1-h}}{S_*}<T_g^{i(\ell)}\le\frac{Q^{-1-h}}{S_*},
+ \qquad
+ \Lambda_g^{i(\ell)}=\bigl(T_g^{i(\ell)}\bigr)^{\rho_g}.
+\]
+These inequalities prove both comparisons in \eqref{eq:6.6}: the choice of covering index makes \NSi{NS-F-P064-003}{c_i} comparable to \NSi{NS-F-P064-004}{S_*^{-1}}, and the choice of \NSi{NS-F-P064-005}{d_r} leaves only the factor \NSi{NS-F-P064-006}{\varepsilon^{-\kappa_s}} in \NSi{NS-F-P064-007}{M_i}, apart from its power of \NSi{NS-F-P064-008}{S_*}. These are the two derivative scales used below.
+
+The absolute coordinate derivatives \NSi{NS-F-P064-009}{\mathfrak r,\partial_z,\partial_\theta,\mathfrak t} commute: the only variable coefficient is a function of \NSi{NS-F-P064-010}{r} multiplying a constant torus direction. Cylindrical frame coefficients, such as \NSi{NS-F-P064-011}{1/R}, must still be retained when differentiating vector components. Every correction depending on the auxiliary variable is supported away from the axis, so no smoothness of \NSi{NS-F-P064-012}{r^{d_r}} at \NSi{NS-F-P064-013}{r=0} is required. Auxiliary periodicity imposes no spatial periodicity after restriction to \eqref{eq:6.3}.
+
+We will also integrate along each of the two torus directions. On a Fourier mode of frequency \NSi{NS-F-P064-014}{n}, this requires division by the scalar product of that direction with \NSi{NS-F-P064-015}{n}. Both directions satisfy the bound
+\NSFormula{NS-F-P064-016}{display}{6.7}
+\begin{equation}
+ |v_r\mathbin\cdot n|\ge\frac c{1+|n|},
+ \qquad
+ |v_t\mathbin\cdot n|\ge\frac c{1+|n|}
+ \qquad \bigl(n\in\mathbb Z^2\setminus\{0\}\bigr).
+ \tag{6.7}\label{eq:6.7}
+\end{equation}
+Indeed \NSi{NS-F-P064-017}{v_r\mathbin\cdot n=(n_1+n_2)-\sqrt2\,n_2}; multiplication by its algebraic conjugate gives the nonzero integer \NSi{NS-F-P064-018}{(n_1+n_2)^2-2n_2^2}. The conjugate has absolute value at most \NSi{NS-F-P064-019}{C|n|}. For \NSi{NS-F-P064-020}{v_t}, we use \NSi{NS-F-P064-021}{(n_2-n_1)+\sqrt2\,n_1} and the same argument. The inverse directional operators on zero-mean torus functions therefore have only a finite loss of torus derivatives; they are used in Lemma~\ref{lem:8.2} and in the mean correction equations.
+
+\subsection{Slow cutoffs and disjoint auxiliary rectangles}\label{sec:6.2}
+
+We next assign supports to the localized oscillations. The squared partition of unity formed from the slow cutoffs in \eqref{eq:6.9} will recover the target stress when their covariances are summed in \eqref{eq:7.30}. To eliminate cross terms between distinct local oscillations, we place them in disjoint auxiliary rectangles whenever their slow supports meet, as proved in Lemma~\ref{lem:6.1}.
+
+We choose a smooth squared partition \NSi{NS-F-P064-022}{\sum_\ell\chi_\ell(q)^2=1}, with \NSi{NS-F-P064-023}{\chi_\ell} supported where \NSi{NS-F-P064-024}{q/Q\in[1/2,2]}. In each band we choose a product squared partition \NSi{NS-F-P064-025}{\sum_a\chi_{\ell,a}(R,Z,T)^2=1} whose mesh is \NSi{NS-F-P064-026}{S_*^{-3}} in each coordinate and whose supports extend at most one mesh length on either side of a grid point. Normalizing translates of a smooth bump by the square root of their squared sum constructs both partitions. To specify which boxes and labels we use, we write
+\NSFormula{NS-F-P064-027}{display}{none}
+\[
+ \mathcal C_\ell(r,z,t)=\left(\frac r{\sqrt Q},\frac z{Q^D},\frac{1-t}{Q}\right),
+ \qquad
+ B_{\ell,a}=\supp\chi_{\ell,a}.
+\]
+Fix a sufficiently large lower band index \NSi{NS-F-P064-028}{\ell_0}, and decrease \NSi{NS-F-P064-029}{q_{\mathrm{big}}} so that \NSi{NS-F-P064-030}{q_{\mathrm{big}}\le2^{-\ell_0}}. The closed active part of band \NSi{NS-F-P064-031}{\ell} at \NSi{NS-F-P064-032}{\tau\ge0}, expressed in this chart, is
+\NSFormula{NS-F-P064-033}{display}{none}
+\[
+ \mathcal A_\ell=
+ \left\{\mathcal C_\ell(r,z,t):
+ \begin{array}{c}
+ 0<q<q_{\mathrm{big}},\quad \frac12\le q/Q\le2,\quad \tau\ge0,\\[2pt]
+ X_a\le r^2/(2q)\le X_b
+ \end{array}
+ \right\}.
+\]
+We select the indices, representatives, and labels by
+\NSFormula{NS-F-P064-034}{display}{6.8}
+\begin{equation}
+\begin{gathered}
+ \mathcal I_\ell=\{a:B_{\ell,a}\cap\mathcal A_\ell\ne\varnothing\},
+ \qquad x^0_{\ell,a}\in B_{\ell,a}\cap\mathcal A_\ell,\\
+ \Gamma=\{(\ell,a,\sigma):\ell\ge\ell_0,\ a\in\mathcal I_\ell,\ \sigma\in\{+,-\}\}.
+\end{gathered}
+ \tag{6.8}\label{eq:6.8}
+\end{equation}
+\NSPage{065}%
+For \NSi{NS-F-P065-001}{\gamma=(\ell,a,\sigma)\in\Gamma}, we define its slow cutoff and its closed support in physical slow coordinates by
+\NSFormula{NS-F-P065-002}{display}{6.9}
+\begin{equation}
+\begin{gathered}
+ \eta_\gamma(R,Z,T)=\chi_\ell(q)\chi_{\ell,a}(R,Z,T),\\
+ K_\gamma=\supp_{(r,z,t)}(\eta_\gamma\circ\mathcal C_\ell).
+\end{gathered}
+ \tag{6.9}\label{eq:6.9}
+\end{equation}
+The supports are taken in the coordinate domain, including its smooth extension near \NSi{NS-F-P065-003}{\tau=0}. The signs duplicate the cutoff, so on the active shell the partition identity is
+\NSFormula{NS-F-P065-004}{display}{none}
+\[
+ \eta_{(\ell,a,+)}=\eta_{(\ell,a,-)},
+ \qquad
+ \sum_\ell\sum_{a\in\mathcal I_\ell}(\eta_{(\ell,a,+)}\circ\mathcal C_\ell)^2=1.
+\]
+Representatives and all other discrete choices are fixed before taking derivatives.
+
+On these supports, \NSi{NS-F-P065-005}{R} lies in a fixed compact subinterval of \NSi{NS-F-P065-006}{(0,\infty)} and \NSi{NS-F-P065-007}{Z,T} in fixed bounded intervals. These bounds may depend on the fixed profile scale \NSi{NS-F-P065-008}{\mathsf C}. Derivatives of any fixed order in \NSi{NS-F-P065-009}{(R,Z,T)} of these cutoffs are bounded by powers of \NSi{NS-F-P065-010}{S_*}. The same statements hold on fixed small enlargements within the coordinate domain, using the smooth base extension from Proposition~\ref{prop:5.5}.
+
+Each label receives a small rectangle in its band torus. Its coordinates are chosen along \NSi{NS-F-P065-011}{v_r,v_t}, so that the pulse coordinate will advance at unit speed under \NSi{NS-F-P065-012}{\mathfrak t_*}. For each label we will choose a center \NSi{NS-F-P065-013}{c_\gamma\in\mathbb T^2}. We write \NSi{NS-F-P065-014}{\pi_j(Y)=J_g^jY\pmod{\mathbb Z^2}} for the covering in \eqref{eq:6.5}. Given \NSi{NS-F-P065-015}{r_0>0}, we define a band rectangle, its enlargement, and their preimages on the absolute torus by
+\NSFormula{NS-F-P065-016}{display}{6.10}
+\begin{equation}
+\begin{aligned}
+ \mathcal R_\gamma
+ &=\{c_\gamma+\xi v_r+\eta v_t:|\xi|,|\eta|<r_0\}\pmod{\mathbb Z^2},\\
+ \mathcal R_\gamma^+
+ &=\{c_\gamma+\xi v_r+\eta v_t:|\xi|,|\eta|<2r_0\}\pmod{\mathbb Z^2},\\
+ \mathcal R_\gamma^{\mathrm{abs}}
+ &=\pi_{i(\ell)}^{-1}(\mathcal R_\gamma),
+ &\mathcal R_\gamma^{\mathrm{abs},+}
+ &=\pi_{i(\ell)}^{-1}(\mathcal R_\gamma^+).
+\end{aligned}
+\tag{6.10}\label{eq:6.10}
+\end{equation}
+We take \NSi{NS-F-P065-017}{r_0} small enough that the enlarged parametrizations are injective. We choose a representative of \NSi{NS-F-P065-018}{c_\gamma} in \NSi{NS-F-P065-019}{\mathbb R^2}. On a local lift of \NSi{NS-F-P065-020}{\mathcal R_\gamma}, the coordinates are
+\NSFormula{NS-F-P065-021}{display}{6.11}
+\begin{equation}
+\begin{gathered}
+ Y_i-c_\gamma-k_{\mathrm{copy}}=\xi_gv_r+\eta_gv_t,
+ \qquad |\xi_g|,|\eta_g|<r_0,\\
+ v=\frac{\eta_g+r_0}{c_i},
+ \qquad
+ L_s=\frac{2r_0}{c_i}\asymp S_*.
+\end{gathered}
+\tag{6.11}\label{eq:6.11}
+\end{equation}
+Here \NSi{NS-F-P065-022}{k_{\mathrm{copy}}\in\mathbb Z^2} selects the local lift; the same coordinates extend to \NSi{NS-F-P065-023}{\mathcal R_\gamma^+}. The dual coordinates satisfy \NSi{NS-F-P065-024}{\mathcal L_i\eta_g=N_i\xi_g=0} and \NSi{NS-F-P065-025}{N_i\eta_g=\mathcal L_i\xi_g=1}. Since \NSi{NS-F-P065-026}{c_i} is constant within the chart, \eqref{eq:6.6} gives
+\NSFormula{NS-F-P065-027}{display}{6.12}
+\begin{equation}
+ D_rv=D_zv=0,
+ \qquad \mathfrak t_*v=1,
+ \qquad N_i\xi_g=0.
+ \tag{6.12}\label{eq:6.12}
+\end{equation}
+Thus \NSi{NS-F-P065-028}{v} measures normalized time along a rectangle while staying constant under the normalized spatial derivatives. We now choose the centers so that these local coordinates can be used without cross products between different local oscillations.
+
+\begin{lemma}\label{lem:6.1}
+For the labels \NSi{NS-F-P065-029}{\Gamma} and slow supports \NSi{NS-F-P065-030}{K_\gamma} in Equations~\eqref{eq:6.8} and \eqref{eq:6.9}, there exist centers \NSi{NS-F-P065-031}{c_\gamma} and a radius \NSi{NS-F-P065-032}{r_0>0}, common to all labels and independent of the band, such that the enlarged rectangles in \eqref{eq:6.10} are injectively parametrized and
+\NSFormula{NS-F-P065-033}{display}{6.13}
+\begin{equation}
+ \gamma\ne\gamma',\qquad K_\gamma\cap K_{\gamma'}\ne\varnothing
+ \qquad\Longrightarrow\qquad
+ \overline{\mathcal R_\gamma^{\mathrm{abs},+}}
+ \cap
+ \overline{\mathcal R_{\gamma'}^{\mathrm{abs},+}}
+ =\varnothing.
+ \tag{6.13}\label{eq:6.13}
+\end{equation}
+\end{lemma}
+\begin{proof}
+\textbf{Step 1: bound the number of possible interactions.} If two dyadic supports meet, then \NSi{NS-F-P065-034}{q/Q,q/Q'\in[1/2,2]}, so \NSi{NS-F-P065-035}{|\ell-\ell'|\le2}. We enlarge each mesh box by a fixed factor. We join two distinct labels if these enlarged slow boxes intersect in physical coordinates and their band indices differ by at most four; we also join opposite signs of one box. This graph has
+\NSPage{066}%
+bounded degree. In fact, for \NSi{NS-F-P066-001}{|\ell-\ell'|\le4}, the changes of physical scale in each coordinate are bounded, as are the ratios \NSi{NS-F-P066-002}{\ell^2/(\ell')^2}. A box can consequently meet only a bounded number of enlarged boxes of any such band. The degrees and the number of colors required are independent of the band.
+
+There is also a fixed bound on the differences of covering indices \NSi{NS-F-P066-003}{i(\ell)}. If all bands have \NSi{NS-F-P066-004}{\ell\ge\ell_0}, then, for \NSi{NS-F-P066-005}{|\ell-\ell'|\le4},
+\NSFormula{NS-F-P066-006}{display}{6.14}
+\begin{equation}
+ |i(\ell)-i(\ell')|
+ \le 1+\frac{4(1+h)\log2+8/\ell_0}{\log T_g}
+ \le\Delta_{\max},
+ \tag{6.14}\label{eq:6.14}
+\end{equation}
+after taking an integer upper bound. This follows by subtracting \NSi{NS-F-P066-007}{((1+h)\ell\log2-2\log\ell)/\log T_g} and using the mean value theorem; flooring adds at most one.
+
+\textbf{Step 2: separate the centers under the relevant coverings.} We greedily color the countable graph with finitely many colors. We choose one rational center \NSi{NS-F-P066-008}{c_\nu\in\mathbb T^2} for each color \NSi{NS-F-P066-009}{\nu}, and assign \NSi{NS-F-P066-010}{c_\gamma=c_\nu} when label \NSi{NS-F-P066-011}{\gamma} has that color. The color centers are chosen subject to all the ordered constraints
+\NSFormula{NS-F-P066-012}{display}{6.15}
+\begin{equation}
+ c_\mu\ne J_g^\Delta c_\nu\pmod{\mathbb Z^2}
+ \quad (0\le\Delta\le\Delta_{\max}),
+ \qquad
+ \text{unless }(\Delta,\nu,\mu)=(0,\nu,\nu).
+ \tag{6.15}\label{eq:6.15}
+\end{equation}
+Each excluded equality is a proper closed constraint on the finite tuple of centers. For a self-pair and \NSi{NS-F-P066-013}{\Delta>0}, this uses that \NSi{NS-F-P066-014}{J_g^\Delta-I} is invertible. Their complement is open and dense and contains a rational tuple. Thus all the finitely many forbidden differences have a positive separation from the integer lattice.
+
+\textbf{Step 3: choose one rectangle size.} We take rectangles in the eigenvector coordinates around these centers, small enough to be injective on the band torus and to retain that separation after a fixed enlargement. If a point belonged to the lifted rectangles of adjacent labels of levels \NSi{NS-F-P066-015}{i} and \NSi{NS-F-P066-016}{i+\Delta}, it would give \NSi{NS-F-P066-017}{c_\mu-J_g^\Delta c_\nu=J_g^\Delta e_\nu-e_\mu} modulo the lattice, with \NSi{NS-F-P066-018}{|e_\nu|+|e_\mu|\le Cr_0}. The finite bound on \NSi{NS-F-P066-019}{\Delta} contradicts \eqref{eq:6.15} for one sufficiently small fixed \NSi{NS-F-P066-020}{r_0}. By Step~1 every pair with overlapping slow supports was joined in the graph. This proves \eqref{eq:6.13}, including the separation needed for supports of derivatives.
+\end{proof}
+
+For the remainder of the construction, we fix the centers \NSi{NS-F-P066-021}{c_\gamma} and radius \NSi{NS-F-P066-022}{r_0} supplied by Lemma~\ref{lem:6.1}, together with one integer \NSi{NS-F-P066-023}{\Delta_{\max}} satisfying \eqref{eq:6.14}. In particular, for a family \NSi{NS-F-P066-024}{(F_\gamma)_{\gamma\in\Gamma}}, with supports taken in \NSi{NS-F-P066-025}{(r,z,t,Y)} uniformly in \NSi{NS-F-P066-026}{\theta},
+\NSFormula{NS-F-P066-027}{display}{none}
+\[
+ \bigl[\supp F_\gamma\subset K_\gamma\times\mathcal R_\gamma^{\mathrm{abs},+}
+ \text{ for all }\gamma\in\Gamma\bigr]
+ \qquad\Longrightarrow\qquad
+ F_\gamma F_{\gamma'}=0
+ \quad(\gamma\ne\gamma').
+\]
+The same identity holds for derivatives of smoothly extended fields and after evaluation on \eqref{eq:6.3}.
+
+We choose a nonzero smooth transverse cutoff \NSi{NS-F-P066-028}{\chi_g\in C_c^\infty((-r_0,r_0))}, with \NSi{NS-F-P066-029}{0\le\chi_g\le1}. The time cutoff \NSi{NS-F-P066-030}{0\le\psi\le1} is rescaled from a fixed function and has
+\NSFormula{NS-F-P066-031}{display}{6.16}
+\begin{equation}
+ \psi(v)=1\quad\text{if }|v-L_s/2|\le L_s/5,
+ \qquad
+ \supp\psi\subset\{|v-L_s/2|<L_s/3\}.
+ \tag{6.16}\label{eq:6.16}
+\end{equation}
+These cutoffs lie strictly inside the enlarged rectangles. Multiplication by \NSi{NS-F-P066-032}{\psi} will give temporal support inside the rectangle after the pulse equation has been solved there.
+
+\subsection{A common torus for overlapping bands}\label{sec:6.3}
+
+The rectangle \NSi{NS-F-P066-033}{\mathcal R_\gamma} in \eqref{eq:6.10}, for a label in band \NSi{NS-F-P066-034}{\ell}, is expressed in the band coordinate \NSi{NS-F-P066-035}{Y_i=\pi_{i(\ell)}(Y)} of \eqref{eq:6.5}. To add fields from overlapping bands, we first express these rectangles and fields on the same torus \NSi{NS-F-P066-036}{H}, without changing their physical evaluations. Lemma~\ref{lem:6.2} gives uniformly bounded derivative factors

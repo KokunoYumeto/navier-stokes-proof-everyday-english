@@ -1,0 +1,458 @@
+\NSPage{079}%
+\begin{EESegment}{EE-TGT-P079-001}
+Let \NSi{NS-F-P079-001}{V_m(v,w)} be the forward fundamental matrix for the homogeneous equation \NSi{NS-F-P079-002}{z'=A_mz}, so it carries data from the coordinate in its second argument forward to the coordinate in its first. Normalize it by \NSi{NS-F-P079-003}{V_m(w,w)=I_2}; then \NSi{NS-F-P079-004}{\partial_vV_m(v,w)=A_m(v)V_m(v,w)}. Because the damping is scalar, there is an exact identity
+\end{EESegment}
+\NSFormula{NS-F-P079-005}{display}{7.18}
+\begin{equation}
+  V_m(v,w)=\exp\!\left(-(m^2-1)\int_w^v d(a)\,da\right)V_1(v,w).
+  \tag{7.18}\label{eq:7.18}
+\end{equation}
+\begin{EESegment}{EE-TGT-P079-002}
+For the \NSi{NS-F-P079-006}{m=1} equation, the Euclidean norm satisfies \NSi{NS-F-P079-007}{\partial_v|z|\leq(\lambda-d_{\mathrm{ref}}+C/S_*)|z|}. Since \NSi{NS-F-P079-008}{L_s/S_*} is bounded, this gives
+\end{EESegment}
+\NSFormula{NS-F-P079-009}{display}{7.19}
+\begin{equation}
+  \lVert V_m(v,w)\rVert\leq C P(v)/P(w),
+  \qquad 0\leq w\leq v\leq L_s,\qquad m\neq0.
+  \tag{7.19}\label{eq:7.19}
+\end{equation}
+\begin{EESegment}{EE-TGT-P079-003}
+This value bound is uniform for every nonzero integer \NSi{NS-F-P079-010}{m}, because the exponential in \eqref{eq:7.18} is at most one.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P079-004}
+\textbf{Step 2: values and coefficient derivatives.}
+The zero initial condition gives Duhamel's formula. The bound on \NSi{NS-F-P079-011}{g_m(w)} contains \NSi{NS-F-P079-012}{P(w)}, which cancels the denominator in \eqref{eq:7.19}. Integrating then contributes \NSi{NS-F-P079-013}{L_s=O(S_*)}.
+\end{EESegment}
+\NSFormula{NS-F-P079-014}{display}{none}
+\[
+  z_m(v)=\int_0^v V_m(v,w)g_m(w)\,dw,
+  \qquad
+  |z_m(v)|\leq C\varepsilon^\alpha S_*^{b_0+1}\sqrt{\zeta}\,\delta^{-a_0}P(v),
+\]
+\begin{EESegment}{EE-TGT-P079-005}
+after increasing \NSi{NS-F-P079-015}{b_0} to cover the frame factors. To differentiate this formula, begin with the slow variables, the transverse coordinate at \NSi{NS-F-P079-016}{v=0}, and the pulse coordinate. In the next equation, \NSi{NS-F-P079-017}{D^I} differentiates only the slow variables and the initial transverse coordinate, with \NSi{NS-F-P079-018}{v} held fixed. These parameter derivatives commute with \NSi{NS-F-P079-019}{\partial_v}, so differentiating the two-dimensional equation gives
+\end{EESegment}
+\NSFormula{NS-F-P079-020}{display}{7.20}
+\begin{equation}
+  (D^I z_m)'=A_mD^Iz_m+D^Ig_m+
+  \sum_{0<J\leq I}\binom{I}{J}(D^JA_m)D^{I-J}z_m.
+  \tag{7.20}\label{eq:7.20}
+\end{equation}
+\begin{EESegment}{EE-TGT-P079-006}
+All of these parameter derivatives of the zero initial data are zero. Suppose the coefficient derivatives satisfy \NSi{NS-F-P079-021}{|D^J A_m|\leq C_JS_*^{c_J}}. An induction using \eqref{eq:7.19} raises the polynomial degree by at most
+\end{EESegment}
+\NSFormula{NS-F-P079-022}{display}{none}
+\[
+  1+\max\{b_I,\max_{0<J\leq I}(c_J+b'_{I-J})\}
+\]
+\begin{EESegment}{EE-TGT-P079-007}
+at the \NSi{NS-F-P079-023}{I}th step. The inverse-distance exponent can be increased to the largest of the source and lower-order exponents. The slow point stays fixed in the integral, so \NSi{NS-F-P079-024}{\sqrt{\zeta}} and \NSi{NS-F-P079-025}{\delta} stay fixed as well. Derivatives in the pulse coordinate then follow from \eqref{eq:7.17}. This proves every fixed-order derivative estimate without reducing \NSi{NS-F-P079-026}{\alpha}. Differentiating in the moving frame keeps the constraint \NSi{NS-F-P079-027}{n_\Phi\cdot t_m=0} and includes the derivatives of the plane \NSi{NS-F-P079-028}{n_\Phi^\perp}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P079-008}
+\textbf{Step 3: common-torus coordinates and support.}
+The estimates above used \NSi{NS-F-P079-029}{\xi_g,v} on one lifted rectangle. To write the derivative estimates in \NSi{NS-F-P079-030}{H}, use the directions \NSi{NS-F-P079-031}{v_r,v_t} from \eqref{eq:6.2} and recall the linear functional \NSi{NS-F-P079-032}{\lambda_t(w)=v_t\cdot w/(1+b_g^2)}. It has \NSi{NS-F-P079-033}{\lambda_t(v_r)=0} and \NSi{NS-F-P079-034}{\lambda_t(v_t)=1}. If the current point is \NSi{NS-F-P079-035}{H} and its pulse coordinate is \NSi{NS-F-P079-036}{v(H)}, then the point on the same path with pulse coordinate \NSi{NS-F-P079-037}{w} is
+\end{EESegment}
+\NSFormula{NS-F-P079-038}{display}{none}
+\[
+  H_w=H+T_g^{-(i-i_0)}c_i\bigl(w-v(H)\bigr)v_t.
+\]
+\begin{EESegment}{EE-TGT-P079-009}
+The vector \NSi{NS-F-P079-039}{v_t} is an eigenvector of \NSi{NS-F-P079-040}{J_g} with eigenvalue \NSi{NS-F-P079-041}{T_g}, so
+\end{EESegment}
+\NSFormula{NS-F-P079-042}{display}{none}
+\[
+  D_HH_w=I_2-v_t\lambda_t,\qquad
+  D_H^aH_w=0\quad(a\geq2),\qquad
+  D_Hv=T_g^{i-i_0}\lambda_t/c_i=O(S_*).
+\]
+\begin{EESegment}{EE-TGT-P079-010}
+Thus the pullback \NSi{NS-F-P079-043}{H\mapsto H_w} has bounded derivatives when \NSi{NS-F-P079-044}{w} is held fixed. Returning to the current common coordinate adds only powers of \NSi{NS-F-P079-045}{S_*} multiplying fixed derivatives in the pulse coordinate. Together with Step 2, this proves \eqref{eq:7.14} in the stated coefficient variables. Deck translations reindex the copies and commute with this path. Uniqueness for the initial-value
+\end{EESegment}
+\NSPage{080}%
+\begin{EESegment}{EE-TGT-P080-001}
+equation with zero data proves descent to \NSi{NS-F-P080-001}{H}; it does not identify sources at different preimages of the finer band torus. The path keeps the slow and transverse points fixed. If the source vanishes along their whole rectangle, the solution vanishes there too. Apply the differentiated equation at the support boundaries to get smooth extension by zero and containment of the support.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P080-002}
+\textbf{Step 4: the constraint and pressure.}
+The definition of \NSi{NS-F-P080-002}{\mathcal A_\Phi} gives
+\end{EESegment}
+\NSFormula{NS-F-P080-003}{display}{none}
+\[
+  n_\Phi\cdot t'_m=-n'_\Phi\cdot t_m-m^2d(n_\Phi\cdot t_m),
+  \qquad
+  (n_\Phi\cdot t_m)'=-m^2d(n_\Phi\cdot t_m).
+\]
+\begin{EESegment}{EE-TGT-P080-003}
+Zero initial data therefore keep \NSi{NS-F-P080-004}{n_\Phi\cdot t_m=0}. Substituting this into the projected equation gives
+\end{EESegment}
+\NSFormula{NS-F-P080-005}{display}{none}
+\[
+  t'_m+\mathcal Kt_m+m^2dt_m+f_m
+  =\frac{n_\Phi}{|n_\Phi|^2}
+  (n_\Phi\cdot\mathcal Kt_m-n'_\Phi\cdot t_m+n_\Phi\cdot f_m).
+\]
+\begin{EESegment}{EE-TGT-P080-004}
+Multiply \eqref{eq:7.13} by \NSi{NS-F-P080-006}{ikmn_\Phi}; the result is the negative of this normal vector. Thus \NSi{NS-F-P080-007}{(t_m,\pi_m)} satisfies the full principal cancellation \eqref{eq:7.5}. The factor \NSi{NS-F-P080-008}{(km)^{-1}=O(\varepsilon^{1/2})}, together with the fixed bounds on coefficient derivatives, proves \eqref{eq:7.15}. This cancels the normal components of the source as well. On a compact set where \NSi{NS-F-P080-009}{q>0}, the base has the one-sided endpoint derivative data from Proposition~\ref{prop:5.5}. The same parameter-dependent equations and differentiated Duhamel formulas carry those endpoint derivatives from the source to \NSi{NS-F-P080-010}{t_m}, and then to \NSi{NS-F-P080-011}{\pi_m}.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P080-005}
+The harmonic factor in \eqref{eq:7.18} only adds damping. Later higher harmonics therefore do not require a smaller space-time domain for these inverses.
+\end{EESegment}
+
+\begin{corollary}\label{cor:7.3}
+\begin{EESegment}{EE-TGT-P080-006}
+The solution operators \NSi{NS-F-P080-012}{f_m\mapsto(t_m,\pi_m)} for the projected amplitude equation with \NSi{NS-F-P080-013}{t_m(0)=0} are defined at every finite correction stage on the same domain \NSi{NS-F-P080-014}{0<q<q_*}. Enlarging the finite set of harmonics or raising the derivative order changes the constants and polynomial degrees, but it does not require a smaller domain.
+\end{EESegment}
+\end{corollary}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P080-007}
+The frame and damping comparisons need only the one finite choice made in Lemma~\ref{lem:7.1}. The exact factor in \eqref{eq:7.18} makes every higher harmonic at least as damped in value as the first harmonic. In \eqref{eq:7.20}, the extra factors of \NSi{NS-F-P080-015}{m} and the coefficient derivatives raise only the constants and polynomial degrees in the source bounds. The already chosen threshold \NSi{NS-F-P080-016}{q_*} therefore remains valid.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P080-008}
+The zero-data inverse can now handle prescribed harmonic sources. The leading stress needs something different, a nonzero real solution whose radial component stays comparable to \NSi{NS-F-P080-017}{P(v)}. Choose its initial value along the growing coordinate of the frame \NSi{NS-F-P080-018}{B}. Its amplitude and direction must stay controlled while it later decays.
+\end{EESegment}
+
+\begin{lemma}\label{lem:7.4}
+\begin{EESegment}{EE-TGT-P080-009}
+For each sign \NSi{NS-F-P080-019}{\sigma}, let \NSi{NS-F-P080-020}{t^h_\sigma=B(z_+,z_-)^T} solve \NSi{NS-F-P080-021}{(t^h_\sigma)'=\mathcal A_\Phi t^h_\sigma-dt^h_\sigma}, with \NSi{NS-F-P080-022}{z_+(0)=P(0)} and \NSi{NS-F-P080-023}{z_-(0)=0}. This fixes the real amplitude for the homogeneous \NSi{NS-F-P080-024}{m=1} problem. Its pressure is given by \eqref{eq:7.13} with \NSi{NS-F-P080-025}{f_m=0}. Using \NSi{NS-F-P080-026}{K_a,N_a,s_a} from \eqref{eq:7.7}, write \NSi{NS-F-P080-027}{t^h_\sigma=x(e_r-s_aK_a)+yN_a}. Then
+\end{EESegment}
+\NSFormula{NS-F-P080-028}{display}{7.21}
+\begin{equation}
+  cP(v)\leq x(v)\leq CP(v),
+  \qquad
+  \frac{y(v)}{x(v)}=c_0\sqrt{1+s(v)^2}+O(S_*^{-1}).
+  \tag{7.21}\label{eq:7.21}
+\end{equation}
+\begin{EESegment}{EE-TGT-P080-010}
+Every fixed derivative of this homogeneous solution in either the coefficient variables or the pulse coordinate is bounded by \NSi{NS-F-P080-029}{C_IS_*^{b_I}P(v)}. Its homogeneous pressure, given by \eqref{eq:7.13} with \NSi{NS-F-P080-030}{f=0}, has the extra factor \NSi{NS-F-P080-031}{\varepsilon^{1/2}}.
+\end{EESegment}
+\end{lemma}
+\NSPage{081}%
+\begin{proof}
+\begin{EESegment}{EE-TGT-P081-001}
+First control the ratio between the decaying and growing coordinates of the frame, then convert those coordinates to the radial and tangential coordinates \NSi{NS-F-P081-001}{x,y}. Write \NSi{NS-F-P081-002}{E=(E_{ab})}. As long as \NSi{NS-F-P081-003}{z_+>0}, the ratio \NSi{NS-F-P081-004}{r=z_-/z_+} satisfies
+\end{EESegment}
+\NSFormula{NS-F-P081-005}{display}{none}
+\[
+  r'=E_{21}+(-2\lambda+E_{22}-E_{11})r-E_{12}r^2,
+  \qquad r(0)=0.
+\]
+\begin{EESegment}{EE-TGT-P081-002}
+Let \NSi{NS-F-P081-006}{c_\lambda>0} be a uniform lower bound for \NSi{NS-F-P081-007}{\lambda}. Choose a sufficiently large fixed \NSi{NS-F-P081-008}{K_b}. Then, whenever \NSi{NS-F-P081-009}{S_*} is sufficiently large,
+\end{EESegment}
+\NSFormula{NS-F-P081-010}{display}{none}
+\[
+  \left.\pm r'\right|_{r=\pm K_b/S_*}
+  \leq
+  \frac{-2c_\lambda K_b+C(1+K_b/S_*+K_b^2/S_*^2)}{S_*}<0.
+\]
+\begin{EESegment}{EE-TGT-P081-003}
+It follows that \NSi{NS-F-P081-011}{|r|\leq K_b/S_*}. Since \NSi{NS-F-P081-012}{z_+(0)=P(0)>0}, the definition of the envelope gives
+\end{EESegment}
+\NSFormula{NS-F-P081-013}{display}{none}
+\[
+  \left(\log\frac{z_+}{P}\right)'
+  =-(d-d_{\mathrm{ref}})+E_{11}+E_{12}r=O(S_*^{-1}),
+  \qquad
+  \left|\log\frac{z_+(v)}{P(v)}\right|
+  \leq\frac{Cv}{S_*}\leq\frac{CL_s}{S_*}\leq C.
+\]
+\begin{EESegment}{EE-TGT-P081-004}
+This keeps \NSi{NS-F-P081-014}{z_+} from reaching zero and proves \NSi{NS-F-P081-015}{cP\leq z_+\leq CP} on the whole interval. Multiplying by the matrix in \eqref{eq:7.8} gives \NSi{NS-F-P081-016}{x=z_++z_-=z_+(1+r)} and \NSi{NS-F-P081-017}{y=c_0\sqrt{1+s^2}(z_+-z_-)
+=c_0\sqrt{1+s^2}\,z_+(1-r)}. These identities give \eqref{eq:7.21}. Differentiate the coordinate equation and use \eqref{eq:7.19}; this proves the derivative estimates in the same way as \eqref{eq:7.20}. The initial value \NSi{NS-F-P081-018}{P(0)} is fixed with the label. The pressure formula supplies the extra factor \NSi{NS-F-P081-019}{\varepsilon^{1/2}}.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P081-005}
+\textbf{How the shear transfers energy.}
+The pulse equation also shows where the growth of the homogeneous solution comes from. For the real amplitude \NSi{NS-F-P081-020}{t=t^h_\sigma}, the constraint \NSi{NS-F-P081-021}{n_\Phi\cdot t=0} makes the normal term in \NSi{NS-F-P081-022}{\mathcal A_\Phi t} perpendicular to \NSi{NS-F-P081-023}{t}. Also,
+\end{EESegment}
+\NSFormula{NS-F-P081-024}{display}{none}
+\[
+  t\cdot\mathcal Kt=-2F t_rt_\theta+(2F+RF_R)t_rt_\theta+G_Rt_rt_z
+  =g\cdot\bigl(t_r(t_\theta,t_z)\bigr).
+\]
+\begin{EESegment}{EE-TGT-P081-006}
+Take the scalar product of \NSi{NS-F-P081-025}{t'=\mathcal A_\Phi t-dt} with \NSi{NS-F-P081-026}{t}. This gives
+\end{EESegment}
+\NSFormula{NS-F-P081-027}{display}{7.22}
+\begin{equation}
+  \frac12\frac{d}{dv}|t|^2
+  =-g\cdot\bigl(t_r(t_\theta,t_z)\bigr)
+  -\varepsilon k^2|n_\Phi|^2|t|^2.
+  \tag{7.22}\label{eq:7.22}
+\end{equation}
+\begin{EESegment}{EE-TGT-P081-007}
+The first term is the exchange of energy with the base shear, while the second is viscous dissipation. The vector \NSi{NS-F-P081-028}{t_r(t_\theta,t_z)} records the transport of azimuthal and axial momentum across a cylinder. At the representative point, write such a flux vector as \NSi{NS-F-P081-029}{T=T_NN+T_KK}. The energy transfer is \NSi{NS-F-P081-030}{-g_0\cdot T=-|g_0|T_N}. The covariance construction also fixes the transverse component \NSi{NS-F-P081-031}{T_K}. Both components of the covariance must therefore match the prescribed momentum flux.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P081-008}
+Viscosity remains a leading-order term in the pulse equation. With viscosity equal to one, the base velocity and radial length give a Reynolds number of order \NSi{NS-F-P081-032}{q^{-h}}. The carrier wavelength is \NSi{NS-F-P081-033}{\sqrt{Q}/k\asymp Q^{1/2+h/2}}, while the physical amplitude of the leading oscillations built below is of order \NSi{NS-F-P081-034}{Q^{-A}\sqrt{\varepsilon}=Q^{-1/2-h/2}}, apart from powers of \NSi{NS-F-P081-035}{S_*}. The powers of \NSi{NS-F-P081-036}{Q} cancel in their product. Thus \NSi{NS-F-P081-037}{\varepsilon k^2\asymp1} throughout the correction process in the pulse equation.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P081-009}
+\subsection{The covariance of the leading oscillations and its linearization}
+\label{sec:7.3}
+\end{EESegment}
+\begin{EESegment}{EE-TGT-P081-010}
+The two real homogeneous pulses \NSi{NS-F-P081-038}{t^h_\pm} from Lemma~\ref{lem:7.4} give two covariance directions in each slow box. Proposition~\ref{prop:7.5} chooses their scalar amplitudes \NSi{NS-F-P081-039}{a_\pm} so that a positive combination of those directions equals the leading stress. This subsection computes the two covariances, solves for the squared amplitudes, and then differentiates that relation. The differentiated relation gives signed stress corrections through \NSi{NS-F-P081-040}{\mathcal L} from Proposition~\ref{prop:7.6}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P081-011}
+Recall the angular and auxiliary averages in \eqref{eq:3.7}, with normalized Haar measure on the auxiliary torus. Take these averages at fixed slow variables, before evaluating at the physical phase map. For real velocity fields \NSi{NS-F-P081-041}{w,v} on the extended domain, write \NSi{NS-F-P081-042}{w_{\mathrm{tan}}=(w_\theta,w_z)}.
+\end{EESegment}
+\NSPage{082}%
+\begin{EESegment}{EE-TGT-P082-001}
+The product \NSi{NS-F-P082-001}{w_rw_{\mathrm{tan}}} records radial transport of azimuthal and axial momentum. At each fixed slow point, define the covariance \NSi{NS-F-P082-002}{\mathcal C(w)} and the symmetric cross term \NSi{NS-F-P082-003}{\mathcal B(w,v)} by
+\end{EESegment}
+\NSFormula{NS-F-P082-004}{display}{7.23}
+\begin{equation}
+  \mathcal C(w)=\bigl\langle\langle w_rw_{\mathrm{tan}}\rangle_\theta\bigr\rangle_Y,
+  \qquad
+  \mathcal B(w,v)=\bigl\langle\langle
+  w_rv_{\mathrm{tan}}+v_rw_{\mathrm{tan}}
+  \rangle_\theta\bigr\rangle_Y.
+  \tag{7.23}\label{eq:7.23}
+\end{equation}
+\begin{EESegment}{EE-TGT-P082-002}
+Lemma~\ref{lem:6.2} allows these averages to be computed on any common torus that applies. Expanding the product gives \NSi{NS-F-P082-005}{D\mathcal C(w)[v]=\mathcal B(w,v)}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P082-003}
+Write \NSi{NS-F-P082-006}{\beta=(\ell,a)} for a slow box and \NSi{NS-F-P082-007}{\gamma=(\beta,\sigma)} for one of its two rectangle labels. The two signs use the same slow cutoff, \NSi{NS-F-P082-008}{\eta_\beta=\eta_{(\beta,+)}=\eta_{(\beta,-)}}. The squared partition therefore sums over \NSi{NS-F-P082-009}{\beta}, counting each box once. On the slow neighborhood of \NSi{NS-F-P082-010}{\beta}, define
+\end{EESegment}
+\NSFormula{NS-F-P082-011}{display}{none}
+\[
+  b_\sigma=\chi_g(\xi_g)\psi(v)t^h_\sigma\cos(k\Phi_\sigma),
+  \qquad \sigma\in\{+,-\},
+\]
+\begin{EESegment}{EE-TGT-P082-004}
+and extend it by zero outside the auxiliary rectangle with that sign. The factors \NSi{NS-F-P082-012}{\chi_g,\psi} make this extension smooth. The field \NSi{NS-F-P082-013}{b_\sigma} contains neither the slow cutoff \NSi{NS-F-P082-014}{\eta_\beta} nor a scalar amplitude. The auxiliary supports for the two signs are disjoint.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P082-005}
+Let \NSi{NS-F-P082-015}{\mathsf H=[\mathcal C(b_+)\mid\mathcal C(b_-)]}. This is a real \NSi{NS-F-P082-016}{2\times2} matrix that depends on the slow point, and its columns use the component order \NSi{NS-F-P082-017}{(r\theta,rz)}. For any real numbers \NSi{NS-F-P082-018}{a_+,a_-}, the disjoint supports give \NSi{NS-F-P082-019}{\mathcal C(a_+b_++a_-b_-)=\mathsf H(a_+^2,a_-^2)^T}. The stresses produced by these two waves are therefore exactly the nonnegative combinations of its two columns. The strict cone condition will make the two coefficients for the leading stress positive; their square roots define the real amplitudes of the waves.
+\end{EESegment}
+
+\begin{proposition}\label{prop:7.5}
+\begin{EESegment}{EE-TGT-P082-006}
+For each slow box \NSi{NS-F-P082-020}{\beta}, use the homogeneous pulses from Lemma~\ref{lem:7.4} to form \NSi{NS-F-P082-021}{b_\pm} and \NSi{NS-F-P082-022}{\mathsf H} as above. Use the order-zero target \NSi{NS-F-P082-023}{\mathcal T_{0,*}=(Q/q)^{A+1/2}\mathcal T_0}. After decreasing \NSi{NS-F-P082-024}{q_*} once more, the matrix \NSi{NS-F-P082-025}{\mathsf H} is invertible throughout every enlarged slow neighborhood. Both components of \NSi{NS-F-P082-026}{\mathsf H^{-1}\mathcal T_{0,*}} are positive where that neighborhood meets \NSi{NS-F-P082-027}{X_a<X<X_b}. Componentwise square roots can therefore be used to define
+\end{EESegment}
+\NSFormula{NS-F-P082-028}{display}{7.24}
+\begin{equation}
+  \boldsymbol y=\mathsf H^{-1}\mathcal T_{0,*},
+  \qquad a_\sigma=\sqrt{y_\sigma},
+  \qquad W_0=\sqrt{\varepsilon}\sum_{\sigma=\pm}a_\sigma b_\sigma.
+  \tag{7.24}\label{eq:7.24}
+\end{equation}
+\begin{EESegment}{EE-TGT-P082-007}
+For every fixed slow multi-index \NSi{NS-F-P082-029}{I}, the squared amplitudes satisfy the following bounds on \NSi{NS-F-P082-030}{X_a<X<X_b}.
+\end{EESegment}
+\NSFormula{NS-F-P082-031}{display}{7.25}
+\begin{equation}
+  y_\sigma\geq c\sqrt{S_*}\,\zeta,
+  \qquad
+  |D^Iy_\sigma|\leq C_IS_*^{b_I}\zeta\delta^{-a_I}.
+  \tag{7.25}\label{eq:7.25}
+\end{equation}
+\begin{EESegment}{EE-TGT-P082-008}
+The coefficients \NSi{NS-F-P082-032}{a_\sigma} extend smoothly by zero at the edges of the shell. On the slow neighborhood of the label, the harmonic coefficients of \NSi{NS-F-P082-033}{W_0} satisfy the derivative and envelope estimates of \NSi{NS-F-P082-034}{\mathsf W_{1/2}}. After multiplication by the slow cutoff, \NSi{NS-F-P082-035}{\eta_\beta W_0\in\mathsf W_{1/2}}. Before that multiplication, the covariance is
+\end{EESegment}
+\NSFormula{NS-F-P082-036}{display}{7.26}
+\begin{equation}
+  \mathcal C(W_0)=\varepsilon\mathcal T_{0,*}.
+  \tag{7.26}\label{eq:7.26}
+\end{equation}
+\begin{EESegment}{EE-TGT-P082-009}
+This decomposition with positive coefficients uses only the order-zero target \NSi{NS-F-P082-037}{\mathcal T_{0,*}}.
+\end{EESegment}
+\end{proposition}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P082-010}
+The proof of Lemma~\ref{lem:7.1} works throughout these neighborhoods. Their diameter is still \NSi{NS-F-P082-038}{O(S_*^{-3})}, and the comparison with the base holds on the enlarged annulus. The phase and homogeneous-pulse estimates, and therefore the estimates for the columns below, hold there with uniform constants.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P082-011}
+\textbf{Step 1: compute and estimate the covariance columns.}
+The angular frequency \NSi{NS-F-P082-039}{kp} is a nonzero integer, so the angular average of \NSi{NS-F-P082-040}{\cos^2(k\Phi_\sigma)} is exactly \NSi{NS-F-P082-041}{1/2}. The auxiliary average can be computed on the band torus. On that torus, the rectangle parametrization has area element \NSi{NS-F-P082-042}{|\det(v_r,v_t)|\,d\xi_g\,d\eta_g}, where \NSi{NS-F-P082-043}{d\eta_g=c_i\,dv}. Recall that \NSi{NS-F-P082-044}{x,y} are the geometric coordinates of \NSi{NS-F-P082-045}{t^h_\sigma} from Lemma~\ref{lem:7.4}. This amplitude does not depend on \NSi{NS-F-P082-046}{\xi_g}, and its radial component is \NSi{NS-F-P082-047}{x}. The column \NSi{NS-F-P082-048}{\mathsf H_\sigma} is therefore
+\end{EESegment}
+\NSFormula{NS-F-P082-049}{display}{7.27}
+\begin{equation}
+  \mathsf H_\sigma=
+  \frac{|\det(v_r,v_t)|}{2}
+  \left(\int\chi_g^2\,d\xi_g\right)c_i
+  \int_0^{L_s}\psi^2x\,t^h_{\sigma,\mathrm{tan}}\,dv.
+  \tag{7.27}\label{eq:7.27}
+\end{equation}
+\NSPage{083}%
+\begin{EESegment}{EE-TGT-P083-001}
+Define the corresponding positive scalar by
+\end{EESegment}
+\NSFormula{NS-F-P083-001}{display}{none}
+\[
+  h_\sigma=
+  \frac{|\det(v_r,v_t)|}{2}
+  \left(\int\chi_g^2\,d\xi_g\right)c_i
+  \int_0^{L_s}\psi^2x^2\,dv.
+\]
+\begin{EESegment}{EE-TGT-P083-002}
+The Gaussian envelope and the region where \NSi{NS-F-P083-002}{\psi=1} give
+\end{EESegment}
+\NSFormula{NS-F-P083-003}{display}{none}
+\[
+  c\sqrt{L_s}\leq\int_0^{L_s}\psi^2x^2\,dv\leq C\sqrt{L_s},
+  \qquad
+  \int_0^{L_s}\frac{|v-L_s/2|}{L_s}\psi^2x^2\,dv\leq C.
+\]
+\begin{EESegment}{EE-TGT-P083-003}
+To see this, make the substitution \NSi{NS-F-P083-004}{w=(v-L_s/2)/\sqrt{L_s}}. The two expressions reduce to integrals of \NSi{NS-F-P083-005}{e^{-cw^2}} and \NSi{NS-F-P083-006}{|w|e^{-cw^2}}. It follows that \NSi{NS-F-P083-007}{h_\sigma\asymp c_i\sqrt{L_s}\asymp S_*^{-1/2}}, and the normalized \NSi{NS-F-P083-008}{x^2\psi^2} average of \NSi{NS-F-P083-009}{|v-L_s/2|/L_s} is \NSi{NS-F-P083-010}{O(S_*^{-1/2})}. The definitions of \NSi{NS-F-P083-011}{K_a,N_a,s_a} in \eqref{eq:7.7} give the tangential part of the pulse, \NSi{NS-F-P083-012}{t^h_{\sigma,\mathrm{tan}}=-s_axK_a+yN_a}. Lemma~\ref{lem:7.4} says that its ratio to \NSi{NS-F-P083-013}{x} differs by \NSi{NS-F-P083-014}{O(S_*^{-1})} from \NSi{NS-F-P083-015}{-s(v)K+c_0\sqrt{1+s(v)^2}N}. The weighted average above is concentrated near \NSi{NS-F-P083-016}{v=L_s/2}, where \NSi{NS-F-P083-017}{s=\sigma u_*}. Set \NSi{NS-F-P083-018}{A_c=-c_0\sqrt{1+u_*^2}>0}. Then
+\end{EESegment}
+\NSFormula{NS-F-P083-019}{display}{7.28}
+\begin{equation}
+  \mathsf H_\sigma=h_\sigma(-A_cN-\sigma u_*K+e_\sigma),
+  \qquad |e_\sigma|\leq CS_*^{-1/2}.
+  \tag{7.28}\label{eq:7.28}
+\end{equation}
+\begin{EESegment}{EE-TGT-P083-004}
+Lemma~\ref{lem:7.4} also gives polynomial bounds for the derivatives of the covariance columns and the homogeneous solutions.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P083-005}
+\textbf{Step 2: solve for positive squared amplitudes.}
+First leave out the errors \NSi{NS-F-P083-020}{e_\sigma} in \eqref{eq:7.28}. For a target \NSi{NS-F-P083-021}{T=T_NN+T_KK}, the two scalar equations then give
+\end{EESegment}
+\NSFormula{NS-F-P083-022}{display}{none}
+\[
+  h_+y_+=\tfrac12(-T_N/A_c-T_K/u_*),
+  \qquad
+  h_-y_-=\tfrac12(-T_N/A_c+T_K/u_*).
+\]
+\begin{EESegment}{EE-TGT-P083-006}
+The reference cone is therefore given by \NSi{NS-F-P083-023}{T_N<0} and \NSi{NS-F-P083-024}{|T_K|<(u_*/A_c)(-T_N)}. The two formulas above then give a decomposition with positive coefficients. The choice of \NSi{NS-F-P083-025}{u_*}, together with the uniform margin in the leading cone, gives \NSi{NS-F-P083-026}{|T_K|/u_*\leq(1-\eta_c)(-T_N/A_c)} for some fixed \NSi{NS-F-P083-027}{\eta_c>0} when \NSi{NS-F-P083-028}{T=\mathcal T_{0,*}}, by \eqref{eq:7.1}. Freezing \NSi{NS-F-P083-029}{N,K,c_0} at the representative changes this normalized cone inequality by an error that tends uniformly to zero. At the radial edges, the smooth limiting stress direction gives the same comparison. The errors in \eqref{eq:7.28} keep this strict inequality valid and give
+\end{EESegment}
+\NSFormula{NS-F-P083-030}{display}{7.29}
+\begin{equation}
+  |\det\mathsf H|\geq c/S_*,
+  \qquad \lVert\mathsf H^{-1}\rVert\leq C\sqrt{S_*},
+  \qquad c\sqrt{S_*}|T|\leq y_\sigma\leq C\sqrt{S_*}|T|.
+  \tag{7.29}\label{eq:7.29}
+\end{equation}
+
+\begin{EESegment}{EE-TGT-P083-007}
+\textbf{Step 3: derivatives, shell edges, and covariance.}
+Apply the bounds for the leading stress in \eqref{eq:4.27} inside the chart. Differentiating \NSi{NS-F-P083-031}{\mathsf H\mathsf H^{-1}=I_2} gives polynomial bounds for every fixed derivative of \NSi{NS-F-P083-032}{\mathsf H^{-1}}. Differentiating \NSi{NS-F-P083-033}{\boldsymbol y=\mathsf H^{-1}\mathcal T_{0,*}} then proves \eqref{eq:7.25}. When \NSi{NS-F-P083-034}{|I|\geq1}, the chain rule gives
+\end{EESegment}
+\NSFormula{NS-F-P083-035}{display}{none}
+\[
+  D^Ia_\sigma=
+  \sum_{n=1}^{|I|}
+  \sum_{\substack{I_1+\cdots+I_n=I\\|I_\nu|\geq1}}
+  c_{I_1,\ldots,I_n}y_\sigma^{1/2-n}
+  \prod_{\nu=1}^nD^{I_\nu}y_\sigma.
+\]
+\begin{EESegment}{EE-TGT-P083-008}
+The bounds in \eqref{eq:7.25} therefore imply
+\end{EESegment}
+\NSFormula{NS-F-P083-036}{display}{none}
+\[
+  |D^Ia_\sigma|\leq C_IS_*^{b'_I}\sqrt{\zeta}\,\delta^{-a'_I}.
+\]
+\begin{EESegment}{EE-TGT-P083-009}
+The same bound holds when \NSi{NS-F-P083-037}{I=0}. For every fixed derivative order, its right-hand side tends to zero at each edge of the shell, so extending \NSi{NS-F-P083-038}{a_\sigma} by zero is smooth. The bounds for \NSi{NS-F-P083-039}{a_\sigma}, Lemma~\ref{lem:7.4}, and the cutoffs \NSi{NS-F-P083-040}{\chi_g,\psi} give the local derivative and envelope bounds for \NSi{NS-F-P083-041}{W_0}. Multiplying by \NSi{NS-F-P083-042}{\eta_\beta} then gives \NSi{NS-F-P083-043}{\eta_\beta W_0\in\mathsf W_{1/2}}. The two rectangles are disjoint, and \eqref{eq:7.24} gives \NSi{NS-F-P083-044}{\mathcal C(W_0)=\varepsilon\mathsf H\boldsymbol y}. This is exactly \eqref{eq:7.26}.
+\end{EESegment}
+\end{proof}
+\NSPage{084}%
+\begin{EESegment}{EE-TGT-P084-001}
+Each slow box now has the required local covariance. Multiplying by the shared slow cutoff \NSi{NS-F-P084-001}{\eta_\beta} multiplies \eqref{eq:7.26} by \NSi{NS-F-P084-002}{\eta_\beta^2}. Return to physical velocities, then add the slow boxes and bands. This gives the leading physical stress pair
+\end{EESegment}
+\NSFormula{NS-F-P084-003}{display}{7.30}
+\begin{equation}
+  \sum_{\beta=(\ell,a)}Q^{-2A}\eta_\beta^2\varepsilon\mathcal T_{0,*}
+  =q^{-A-1/2}\mathcal T_0.
+  \tag{7.30}\label{eq:7.30}
+\end{equation}
+\begin{EESegment}{EE-TGT-P084-002}
+The scale can be checked directly. Since \NSi{NS-F-P084-004}{A=1/2+h},
+\end{EESegment}
+\NSFormula{NS-F-P084-005}{display}{none}
+\[
+  Q^{-2A}\varepsilon\mathcal T_{0,*}
+  =Q^{-2A+h}(Q/q)^{A+1/2}\mathcal T_0
+  =Q^{-A+h+1/2}q^{-A-1/2}\mathcal T_0
+  =q^{-A-1/2}\mathcal T_0.
+\]
+\begin{EESegment}{EE-TGT-P084-003}
+Now use \NSi{NS-F-P084-006}{\sum_\beta\eta_\beta^2=1}. Cross products between different labels vanish because their auxiliary supports are disjoint.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P084-004}
+This sum gives the leading physical stress. Later residuals need stress increments with either sign. Obtain them by varying the amplitudes to first order around this fixed positive representation. Keep the positive coefficients \NSi{NS-F-P084-007}{a_\sigma} fixed at the values from Proposition~\ref{prop:7.5}. Let \NSi{NS-F-P084-008}{\alpha\in\mathbb R}, and let \NSi{NS-F-P084-009}{\Sigma(R,Z,T)\in\mathsf M_\alpha} be a real two-vector that does not depend on either the angular or the auxiliary variables. This independence from the auxiliary variables is an extra requirement here; membership in \NSi{NS-F-P084-010}{\mathsf M_\alpha} by itself allows such dependence. On the slow neighborhood of the label, define
+\end{EESegment}
+\NSFormula{NS-F-P084-011}{display}{7.31}
+\begin{equation}
+  d_\Sigma=\mathsf H^{-1}(\Sigma/\varepsilon),
+  \qquad
+  \delta a_\sigma=\frac{(d_\Sigma)_\sigma}{2a_\sigma},
+  \qquad
+  \mathcal L\Sigma=\sqrt{\varepsilon}\sum_{\sigma=\pm}\delta a_\sigma b_\sigma.
+  \tag{7.31}\label{eq:7.31}
+\end{equation}
+\begin{EESegment}{EE-TGT-P084-005}
+Each division is taken component by component. It is defined first on \NSi{NS-F-P084-012}{X_a<X<X_b}, where \NSi{NS-F-P084-013}{a_\sigma>0}. The estimates below show that the extension by zero at the edges of the shell is smooth.
+\end{EESegment}
+
+\begin{proposition}\label{prop:7.6}
+\begin{EESegment}{EE-TGT-P084-006}
+For every \NSi{NS-F-P084-014}{\alpha\in\mathbb R} and every real two-vector \NSi{NS-F-P084-015}{\Sigma(R,Z,T)\in\mathsf M_\alpha} that is independent of the angular and auxiliary variables, \eqref{eq:7.31} defines a linear operation \NSi{NS-F-P084-016}{\mathcal L\Sigma}. On the slow neighborhood, its harmonic coefficients satisfy the local derivative and envelope bounds of \NSi{NS-F-P084-017}{\mathsf W_{\alpha-1/2}}, with smooth extension by zero at the edges of the shell. When the slow cutoffs are written out, its bounds and covariance are
+\end{EESegment}
+\NSFormula{NS-F-P084-018}{display}{7.32}
+\begin{equation}
+  \eta_\beta\mathcal L\Sigma\in\mathsf W_{\alpha-1/2},
+  \qquad
+  \mathcal B(W_0,\mathcal L\Sigma)=\Sigma,
+  \qquad
+  \mathcal C(\eta_\beta\mathcal L\Sigma)\in\mathsf M_{2\alpha-1}.
+  \tag{7.32}\label{eq:7.32}
+\end{equation}
+\begin{EESegment}{EE-TGT-P084-007}
+At every correction stage, the denominator \NSi{NS-F-P084-019}{a_\sigma} remains this same fixed coefficient.
+\end{EESegment}
+\end{proposition}
+
+\begin{EESegment}{EE-TGT-P084-008}
+Proposition~\ref{prop:7.6} places no restriction on the sign or relative size of \NSi{NS-F-P084-020}{\Sigma}.
+\end{EESegment}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P084-009}
+Apply Leibniz' rule to \NSi{NS-F-P084-021}{d_\Sigma=\mathsf H^{-1}(\Sigma/\varepsilon)}, using \eqref{eq:7.29} and the bounds for the differentiated inverse proved in Proposition~\ref{prop:7.5}. The weighted derivative bounds on \NSi{NS-F-P084-022}{\Sigma} give \NSi{NS-F-P084-023}{|D^I(d_\Sigma)_\sigma|
+\leq C_I\varepsilon^{\alpha-1}S_*^{b'_I}\zeta\delta^{-a'_I}}. Every derivative of \NSi{NS-F-P084-024}{y_\sigma^{-1/2}} is a sum of terms of the form \NSi{NS-F-P084-025}{Cy_\sigma^{-k-1/2}
+\prod_{\nu=1}^kD^{I_\nu}y_\sigma}. By \eqref{eq:7.25}, the \NSi{NS-F-P084-026}{k} weights in the numerator cancel all but \NSi{NS-F-P084-027}{\zeta^{-1/2}} in the denominator. Leibniz' rule therefore gives
+\end{EESegment}
+\NSFormula{NS-F-P084-028}{display}{7.33}
+\begin{equation}
+  |D^I\delta a_\sigma|
+  \leq C_I\varepsilon^{\alpha-1}S_*^{b'_I}\sqrt{\zeta}\,\delta^{-a'_I}.
+  \tag{7.33}\label{eq:7.33}
+\end{equation}
+\begin{EESegment}{EE-TGT-P084-010}
+The remaining square-root weight at the edge proves smooth extension by zero. Lemma~\ref{lem:7.4} gives the local estimates for the wave. Multiplying by \NSi{NS-F-P084-029}{\eta_\beta} puts it in the supported wave class. Write \NSi{NS-F-P084-030}{a=(a_+,a_-)^T} and \NSi{NS-F-P084-031}{\delta a=(\delta a_+,\delta a_-)^T}, and let \NSi{NS-F-P084-032}{\odot} mean multiplication component by component. These scalar coefficients do not depend on the averaging variables, and the rectangles are disjoint, so the following bilinear identity is exact.
+\end{EESegment}
+\NSFormula{NS-F-P084-033}{display}{7.34}
+\begin{equation}
+  \mathcal B(W_0,\mathcal L\Sigma)
+  =\varepsilon\mathsf H(2a\odot\delta a)=\varepsilon\mathsf Hd_\Sigma=\Sigma.
+  \tag{7.34}\label{eq:7.34}
+\end{equation}
+\begin{EESegment}{EE-TGT-P084-011}
+The factor \NSi{NS-F-P084-034}{1/2} for the real cosine already appears in \eqref{eq:7.27}. The factor \NSi{NS-F-P084-035}{2} in this cross identity is why \eqref{eq:7.31} has its denominator. In \NSi{NS-F-P084-036}{\mathcal C(\eta_\beta\mathcal L\Sigma)}, both wave factors have exponent \NSi{NS-F-P084-037}{\alpha-1/2}. The product rule for the classes then gives the last claim in \eqref{eq:7.32}.
+\end{EESegment}
+\end{proof}

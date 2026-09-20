@@ -1,0 +1,64 @@
+[WARNING] Deprecated: --epub-chapter-level. use --split-level
+[WARNING] Could not convert TeX math c\geq c_K,\qquad G\geq\gamma_K,\qquad v\leq B_K,\qquad cv\leq B_K\quad\hbox{on }K., rendering as TeX:
+  v\leq B_K\quad\hbox{on }K.
+                     ^
+  unexpected control sequence \hbox
+  expecting "%", "\\label", "\\tag", "\\nonumber", whitespace or "\\allowbreak"
+[WARNING] Could not convert TeX math \partial_X^jg(X_e,\eta)=0\quad\hbox{for every }j\geq0\hbox{ and }\eta\in[-1,1]., rendering as TeX:
+  e,\eta)=0\quad\hbox{for every }j\geq0\hb
+                     ^
+  unexpected control sequence \hbox
+  expecting "%", "\\label", "\\tag", "\\nonumber", whitespace or "\\allowbreak"
+[WARNING] Could not convert TeX math E_o=c_{\mathrm{patch}}f(\eta)X^{-1/2-\lambda}\quad\hbox{on }\mathcal{I}_1,\mathcal{I}_3,\mathcal{I}_4,
+    \qquad c_{\mathrm{patch}}>0., rendering as TeX:
+  -\lambda}\quad\hbox{on }\mathcal{I}_1,\m
+                     ^
+  unexpected control sequence \hbox
+  expecting "%", "\\label", "\\tag", "\\nonumber", whitespace or "\\allowbreak"
+[WARNING] Could not convert TeX math \chi=\frac{H_*^2}{H_*^2+\sigma_*^2}>.99
+  \quad\hbox{where}\quad \lvert Z_*\rvert\le\delta_*., rendering as TeX:
+  \quad\hbox{where}\quad \lvert Z_*\rvert\
+            ^
+  unexpected control sequence \hbox
+  expecting "%", "\\label", "\\tag", "\\nonumber", whitespace or "\\allowbreak"
+[WARNING] Could not convert TeX math \begin{equation}
+  \Psi_i(a_L,b_L,p_s)\ge\mu_L
+  \quad\hbox{on }\mathcal I\times[-1,1]\times\mathbb R/\mathbb Z,
+  \qquad 1\le i\le4.
+  \tag{4.36}
+  \end{equation}, rendering as TeX:
+  \quad\hbox{on }\mathcal I\times[-1,1]\ti
+            ^
+  unexpected control sequence \hbox
+  expecting "%", "\\label", "\\tag", "\\nonumber", whitespace or "\\allowbreak"
+[WARNING] Could not convert TeX math \begin{equation}
+  \Pi_0(\eta)=-\frac12\int_{-\infty}^{\infty}
+  E_{\mathrm{id,sched}}(y,\eta)^2\,dy
+  \tag{A.21}
+  \end{equation}, rendering as TeX:
+  \tag{A.21}
+      ^
+  unexpected control sequence \tag
+  expecting "%", "\\label", "\\tag", "\\nonumber", whitespace or "\\allowbreak"
+[WARNING] Could not convert TeX math \begin{align}
+    -H_c\widetilde\xi_0&=\Lambda L\chi+O_{\sigma_*}(\sqrt\chi),\notag\\
+    -H_c(\log\phi)_\eta
+      &\geq\Lambda L\chi-C\chi-C_{\sigma_*}\sqrt\chi-C/\Lambda
+        \geq.95\Lambda L\chi-C_{\sigma_*}/\Lambda.
+    \tag{B.21}
+  \end{align}, rendering as TeX:
+  igma_*}(\sqrt\chi),\notag\\
+                     ^
+  unexpected "\\"
+  expecting "&", "\\\\", white space or "\\end"
+[WARNING] Could not convert TeX math \begin{align}
+    \partial_y\log\phi_{\mathrm r}
+      &=[1-\sigma((y-t_1)/t_1)]\mathcal D_X\log\phi_{\mathrm{nat}}(X,\eta),\notag\\
+    \partial_yU_{\mathrm r}
+      &=[1-\sigma((y-t_1)/t_1)]\mathcal D_XU_{\mathrm{nat}}(X,\eta),
+    \tag{B.22}
+  \end{align}, rendering as TeX:
+  thrm{nat}}(X,\eta),\notag\\
+                     ^
+  unexpected "\\"
+  expecting "&", "\\\\", white space or "\\end"

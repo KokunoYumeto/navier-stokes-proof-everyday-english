@@ -1,0 +1,9 @@
+{
+  "schema": "navier-stokes-everyday-github-pages/v1",
+  "repository": "KokunoYumeto/navier-stokes-proof-everyday-english",
+  "source_branch": "main",
+  "source_directory": "docs",
+  "index": "docs/index.html",
+  "jekyll": false,
+  "direct_reading_url": "https://kokunoyumeto.github.io/navier-stokes-proof-everyday-english/"
+}

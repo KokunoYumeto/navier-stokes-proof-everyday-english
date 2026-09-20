@@ -1,0 +1,795 @@
+\NSPage{031}%
+\begin{EESegment}{EE-TGT-P031-001}
+So the quantities \NSi{NS-F-P031-001}{P_c,J_c} are the scalar products of
+\NSi{NS-F-P031-002}{p_s} with the two orthogonal, unnormalized vectors
+\NSi{NS-F-P031-003}{(1,t_s)} and \NSi{NS-F-P031-004}{(-t_s,1)}, respectively.
+Also, \NSi{NS-F-P031-005}{\mathfrak{s}=a(1,t_s)}. Define
+\end{EESegment}
+\NSFormula{NS-F-P031-006}{display}{4.21}
+\begin{equation}
+  \mathcal{U}(P_c,J_c)=P_c+\frac{J_c^2}{4}-|J_c|\sqrt{\frac{P_c-2}{2}+\frac{J_c^2}{16}},
+  \qquad P_c>2,\quad v_s<\mathcal{U}(P_c,J_c).
+  \tag{4.21}\label{eq:4.21}
+\end{equation}
+\begin{EESegment}{EE-TGT-P031-002}
+When \NSi{NS-F-P031-007}{a>0}, the two inequalities in \eqref{eq:4.21} are
+called the \emph{relaxed cone condition}. The \emph{admissible stress cone
+condition} asks for those same two inequalities and also requires
+\NSi{NS-F-P031-008}{v_s>2}. The relaxed condition is used while the profile
+on the axis is being joined to the outer profile. Viscous waves need the
+extra inequality. Once the admissible condition holds,
+Proposition~\ref{prop:7.5} produces positive squared amplitudes whose wave
+covariances give the required stress. The next lemma gives an equivalent way
+to check the condition and a sufficient condition used in the outer
+construction of Proposition~\ref{prop:A.4}.
+\end{EESegment}
+
+\begin{lemma}\label{lem:4.5}
+\begin{EESegment}{EE-TGT-P031-003}
+Let \NSi{NS-F-P031-009}{a>0}, \NSi{NS-F-P031-010}{b_s\in\mathbb{R}}, and
+\NSi{NS-F-P031-011}{p_s=(p_{s,1},p_{s,2})\in\mathbb{R}^2}. Define
+\NSi{NS-F-P031-012}{t_s,v_s,P_c,J_c} by \eqref{eq:4.20}. If
+\NSi{NS-F-P031-013}{v_s>2}, then the admissible stress cone condition, which
+means the inequalities in \eqref{eq:4.21} together with
+\NSi{NS-F-P031-014}{v_s>2}, is equivalent to
+\end{EESegment}
+\NSFormula{NS-F-P031-015}{display}{4.22}
+\begin{equation}
+  P_c>v_s,\qquad (v_s-2)J_c^2<2(P_c-v_s)^2.
+  \tag{4.22}\label{eq:4.22}
+\end{equation}
+
+\begin{EESegment}{EE-TGT-P031-004}
+Now take any nonempty compact set
+\end{EESegment}
+\NSFormula{NS-F-P031-016}{display}{none}
+\[
+  K\subset\{(a,b_s,w)\in\mathbb{R}^3:a>0\}
+\]
+\begin{EESegment}{EE-TGT-P031-005}
+such that every \NSi{NS-F-P031-017}{(a,b_s,w)\in K} satisfies
+\end{EESegment}
+\NSFormula{NS-F-P031-018}{display}{none}
+\[
+  a-b_sw>0,\qquad 2b_sw+\frac{b_s^2}{a}+(a-2)w^2<2,
+\]
+\begin{EESegment}{EE-TGT-P031-006}
+There is then a number \NSi{NS-F-P031-019}{P_K>0} with the following
+property. For every \NSi{NS-F-P031-020}{(a,b_s,w)\in K} and every
+\NSi{NS-F-P031-021}{p_{s,1}\geq P_K}, set
+\NSi{NS-F-P031-022}{p_{s,2}=wp_{s,1}}. These data satisfy the relaxed cone
+condition \eqref{eq:4.21}. If \NSi{NS-F-P031-023}{v_s>2} as well, they
+satisfy the admissible stress cone condition.
+\end{EESegment}
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P031-007}
+Either set of conditions in the first claim gives
+\NSi{NS-F-P031-024}{P_c>2}. On this range, the polynomial
+\NSi{NS-F-P031-025}{2(P_c-v)^2-(v-2)J_c^2} in
+\NSi{NS-F-P031-026}{v} has roots
+\end{EESegment}
+\NSFormula{NS-F-P031-027}{display}{none}
+\[
+  v_{\pm}=P_c+\frac{J_c^2}{4}\pm |J_c|\sqrt{\frac{P_c-2}{2}+\frac{J_c^2}{16}}.
+\]
+\begin{EESegment}{EE-TGT-P031-008}
+When \NSi{NS-F-P031-028}{P_c>2}, the lower root satisfies
+\NSi{NS-F-P031-029}{2<v_-\leq P_c}. So on
+\NSi{NS-F-P031-030}{2<v<P_c}, the polynomial is positive exactly when
+\NSi{NS-F-P031-031}{v<v_-}. Since
+\NSi{NS-F-P031-032}{\mathcal{U}(P_c,J_c)=v_-}, this proves the first claim.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P031-009}
+For the second claim, put
+\end{EESegment}
+\NSFormula{NS-F-P031-033}{display}{none}
+\[
+  c=1-\frac{b_sw}{a},\qquad j=w+\frac{b_s}{a},\qquad v=a+\frac{b_s^2}{a}=v_s.
+\]
+\begin{EESegment}{EE-TGT-P031-010}
+Then \NSi{NS-F-P031-034}{P_c=p_{s,1}c,\ J_c=p_{s,1}j}, and
+\end{EESegment}
+\NSFormula{NS-F-P031-035}{display}{none}
+\[
+  (v_s-2)\left(w+\frac{b_s}{a}\right)^2-2\left(1-\frac{b_sw}{a}\right)^2
+  =\left(1+\frac{b_s^2}{a^2}\right)\left((a-2)w^2+2b_sw+\frac{b_s^2}{a}-2\right).
+\]
+\begin{EESegment}{EE-TGT-P031-011}
+The assumptions say that \NSi{NS-F-P031-036}{c>0} and
+\NSi{NS-F-P031-037}{G:=2c^2-(v-2)j^2>0} everywhere on
+\NSi{NS-F-P031-038}{K}. Because this set is compact, there are constants
+\NSi{NS-F-P031-039}{c_K,\gamma_K>0} and
+\NSi{NS-F-P031-040}{B_K\geq 1} such that
+\end{EESegment}
+\NSFormula{NS-F-P031-041}{display}{none}
+\[
+  c\geq c_K,\qquad G\geq\gamma_K,\qquad v\leq B_K,\qquad cv\leq B_K\quad\hbox{on }K.
+\]
+\begin{EESegment}{EE-TGT-P031-012}
+Choose
+\end{EESegment}
+\NSFormula{NS-F-P031-042}{display}{none}
+\[
+  P_K=\max\left\{\frac{B_K+2}{c_K},\frac{8B_K}{\gamma_K}\right\}.
+\]
+\NSPage{032}%
+\begin{EESegment}{EE-TGT-P032-001}
+For every \NSi{NS-F-P032-001}{p_{s,1}\geq P_K}, this choice gives
+\NSi{NS-F-P032-002}{P_c\geq B_K+2>\max\{2,v\}} and
+\end{EESegment}
+\NSFormula{NS-F-P032-003}{display}{none}
+\[
+  \frac{2(P_c-v)^2-(v-2)J_c^2}{p_{s,1}^2}
+  =G-\frac{4cv}{p_{s,1}}+\frac{2v^2}{p_{s,1}^2}
+  \geq\frac{\gamma_K}{2}>0.
+\]
+\begin{EESegment}{EE-TGT-P032-002}
+If \NSi{NS-F-P032-004}{v>2}, the first claim gives the relaxed condition.
+If \NSi{NS-F-P032-005}{v\leq 2}, the relaxed condition follows instead from
+\NSi{NS-F-P032-006}{P_c>2} and
+\NSi{NS-F-P032-007}{\mathcal{U}(P_c,J_c)>2}. So the same threshold works
+everywhere on \NSi{NS-F-P032-008}{K}, including the points where
+\NSi{NS-F-P032-009}{v_s=2}.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P032-003}
+In stress coordinates, the cone condition is
+\end{EESegment}
+\NSFormula{NS-F-P032-010}{display}{4.23}
+\begin{equation}
+  \mathcal{T}_{0,\theta}+t_s\mathcal{T}_{0,z}=F(P_c-v_s),\qquad
+  \mathcal{T}_{0,z}-t_s\mathcal{T}_{0,\theta}=FJ_c.
+  \tag{4.23}\label{eq:4.23}
+\end{equation}
+\begin{EESegment}{EE-TGT-P032-004}
+Since \NSi{NS-F-P032-011}{F>0}, when
+\NSi{NS-F-P032-012}{v_s>2} the admissible stress cone condition says exactly
+that
+\end{EESegment}
+\NSFormula{NS-F-P032-013}{display}{none}
+\[
+  \mathcal{T}_{0,\theta}+t_s\mathcal{T}_{0,z}>0,
+  \qquad
+  (v_s-2)(\mathcal{T}_{0,z}-t_s\mathcal{T}_{0,\theta})^2
+  <2(\mathcal{T}_{0,\theta}+t_s\mathcal{T}_{0,z})^2.
+\]
+\begin{EESegment}{EE-TGT-P032-005}
+These inequalities are homogeneous in
+\NSi{NS-F-P032-014}{\mathcal{T}_0}, so multiplying the stress by a positive
+number does not change them. The stress can tend to zero at an edge of the
+annulus while its unit direction still satisfies the cone inequalities with
+a strict margin. Theorem~\ref{thm:4.6}(iii) states that boundary condition
+precisely. Proposition~\ref{prop:7.5} writes every nonzero stress of this
+kind as a positive combination of the allowed wave covariances.
+Differentiating that representation gives the signed changes in amplitude
+used for the higher-order stress corrections in
+Proposition~\ref{prop:7.6}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P032-006}
+\subsection{Properties of the leading profile}\label{sec:4.4}
+
+The profiles \NSi{NS-F-P032-015}{E,U} must meet both the radial matching
+conditions of Lemma~\ref{lem:4.4} and the stress cone inequalities of
+Lemma~\ref{lem:4.5}. At each edge of the annulus, the stress
+\NSi{NS-F-P032-016}{\mathcal{T}_0} must go smoothly to zero while its direction
+stays inside the cone. Theorem~\ref{thm:4.6} puts fixed margins and bounds on these
+edge conditions. It also supplies regular behavior at the axis, the heat-flow exterior,
+and the moment identities needed in Sections~\ref{sec:2.1} and~\ref{sec:3},
+and it keeps aside the intervals later used for the background and mean
+corrections in \eqref{eq:4.30}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P032-007}
+The edge estimates use the names \emph{inner collar} and \emph{outer collar}
+for fixed neighborhoods of the two annular edges in profile coordinates. If
+\NSi{NS-F-P032-017}{0<X_a<X_b} and
+\NSi{NS-F-P032-018}{0<\varepsilon<\log(X_b/X_a)}, these collars are the
+rectangles
+\end{EESegment}
+\NSFormula{NS-F-P032-019}{display}{4.24}
+\begin{equation}
+\begin{aligned}
+  \mathcal{C}_a(\varepsilon)&=[X_a,X_ae^\varepsilon]\times[-1,1],\\
+  \mathcal{C}_b(\varepsilon)&=[X_be^{-\varepsilon},X_b]\times[-1,1].
+\end{aligned}
+\tag{4.24}\label{eq:4.24}
+\end{equation}
+\begin{EESegment}{EE-TGT-P032-008}
+At a fixed \NSi{NS-F-P032-020}{\eta}, the inner collar has
+\NSi{NS-F-P032-021}{0\leq\log(X/X_a)\leq\varepsilon}, while the outer collar
+has \NSi{NS-F-P032-022}{0\leq\log(X_b/X)\leq\varepsilon}. Their widths do
+not depend on \NSi{NS-F-P032-023}{\eta} or the physical variable
+\NSi{NS-F-P032-024}{q}. A smaller collar means the same kind of set with a
+smaller positive \NSi{NS-F-P032-025}{\varepsilon}. If a condition is meant
+only for points inside the annulus, the collar is intersected with
+\NSi{NS-F-P032-026}{\{X_a<X<X_b\}}.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P032-009}
+A smooth scalar or vector \NSi{NS-F-P032-027}{g} is \emph{flat at the radial
+edge} \NSi{NS-F-P032-028}{X_e\in\{X_a,X_b\}} when every one of its radial
+derivatives, including the zeroth, vanishes there component by component,
+\end{EESegment}
+\NSFormula{NS-F-P032-029}{display}{none}
+\[
+  \partial_X^jg(X_e,\eta)=0\quad\hbox{for every }j\geq0\hbox{ and }\eta\in[-1,1].
+\]
+\begin{EESegment}{EE-TGT-P032-010}
+The stress will be flat at both edges. Wherever the stress is nonzero, its normalized direction is
+found by dividing the stress by its length, so it is the unit vector that points in the same direction
+as the stress. The theorem below states that the constructed stress is nonzero on the marked open
+annulus \NSi{NS-F-P032-030}{X_a<X<X_b}, so its normalized direction is defined there. It also
+extends that direction to the closed collars with the positive margin stated in
+Theorem~\ref{thm:4.6}(iii). The construction results used in that proof come after the theorem.
+\end{EESegment}
+
+\begin{theorem}\label{thm:4.6}
+\begin{EESegment}{EE-TGT-P032-011}
+There are fixed numbers
+\NSi{NS-F-P032-031}{h\in(0,1/100),\ \lambda>0,\ \mathsf C>1} and
+\NSi{NS-F-P032-032}{0<X_a<X_b}, together with profiles
+\NSi{NS-F-P032-033}{E,U,\Pi} for \NSi{NS-F-P032-034}{X\geq0} and
+\NSi{NS-F-P032-035}{-1\leq\eta\leq1}, with the properties listed below. The
+quantities
+\NSi{NS-F-P032-036}{F,H,V_0,Q_s,N_s,p_s,a,b_s\text{ and }\mathcal{T}_0}
+are defined by Equations~\eqref{eq:4.7} to~\eqref{eq:4.11}. Wherever
+\NSi{NS-F-P032-037}{a>0}, the quantities \NSi{NS-F-P032-038}{t_s,v_s} are
+defined by \eqref{eq:4.20}. The symbols \NSi{NS-F-P032-039}{A,d} come from
+\eqref{eq:4.1}. Here the closed annulus means the profile rectangle
+\NSi{NS-F-P032-040}{[X_a,X_b]\times[-1,1]} in
+\NSi{NS-F-P032-041}{(X,\eta)}. Every claim below holds for every
+\NSi{NS-F-P032-042}{\eta\in[-1,1]}.
+\end{EESegment}
+\begin{enumerate}[label=(\roman*)]
+\NSPage{033}%
+\item
+\begin{EESegment}{EE-TGT-P033-001}
+For every finite \NSi{NS-F-P033-001}{R>0}, the scalars
+\NSi{NS-F-P033-002}{F=\phi/\mathsf C,U,\Pi,V_0/X} are smooth on
+\NSi{NS-F-P033-003}{[0,R]\times[-1,1]}. Every fixed mixed
+\NSi{NS-F-P033-004}{X,\eta} derivative has a uniform bound there, with
+one-sided derivatives at the boundary. Also, \NSi{NS-F-P033-005}{\phi>0},
+and \NSi{NS-F-P033-006}{E=\sqrt{2X}F>0} whenever
+\NSi{NS-F-P033-007}{X>0}. By Equations~\eqref{eq:4.4}--\eqref{eq:4.5}, these
+factors give a smooth Cartesian field across the axis.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P033-002}
+There is one fixed \NSi{NS-F-P033-008}{X_{\mathrm{an}}\in(X_a,X_b)} with the
+following property. On
+\NSi{NS-F-P033-009}{[0,X_{\mathrm{an}}]\times[-1,1]}, these scalars and each
+fixed radial derivative are analytic in \NSi{NS-F-P033-010}{\eta} on one
+common complex neighborhood of \NSi{NS-F-P033-011}{[-1,1]}. The inner collar
+\NSi{NS-F-P033-012}{[X_a,X_{\mathrm{an}}]\times[-1,1]}, understood as in
+\eqref{eq:4.24}, has the positive directional margin stated in part~(iii).
+The pressure is normalized to vanish at radial infinity, so
+\end{EESegment}
+\NSFormula{NS-F-P033-013}{display}{4.25}
+\begin{equation}
+  \Pi(X,\eta)=-\int_X^\infty\frac{E(x,\eta)^2}{2x}\,dx.
+  \tag{4.25}\label{eq:4.25}
+\end{equation}
+
+\item
+\begin{EESegment}{EE-TGT-P033-003}
+The radial pressure balance
+\NSi{NS-F-P033-014}{\Pi_X=E^2/(2X)} in \eqref{eq:4.7}, with its smooth extension
+\NSi{NS-F-P033-015}{\Pi_X=F^2} at \NSi{NS-F-P033-016}{X=0}, holds exactly.
+So do the tangential residual identities in Proposition~\ref{prop:4.2}, with
+physical stress \NSi{NS-F-P033-017}{q^{-A-1/2}\mathcal{T}_0}. The stress
+profile \NSi{NS-F-P033-018}{\mathcal{T}_0} is zero when
+\NSi{NS-F-P033-019}{0\leq X\leq X_a\text{ and }X\geq X_b}, and it is nonzero
+at every point with \NSi{NS-F-P033-020}{X_a<X<X_b}. On
+\NSi{NS-F-P033-021}{0\leq X\leq X_a}, the profiles solve \eqref{eq:4.13}.
+\end{EESegment}
+
+\item
+\begin{EESegment}{EE-TGT-P033-004}
+Each of \NSi{NS-F-P033-022}{F,a,v_s-2} has a positive lower bound on the
+closed annulus \NSi{NS-F-P033-023}{[X_a,X_b]\times[-1,1]}. The unit
+direction \NSi{NS-F-P033-024}{n=\mathcal{T}_0/|\mathcal{T}_0|} starts out
+defined on the radial interior
+\NSi{NS-F-P033-025}{(X_a,X_b)\times[-1,1]}, and it extends smoothly to the
+whole closed annulus, including the boundaries
+\NSi{NS-F-P033-026}{X=X_a,X_b}. There is one fixed
+\NSi{NS-F-P033-027}{\kappa\in(0,2)} such that everywhere on this rectangle,
+\end{EESegment}
+\NSFormula{NS-F-P033-028}{display}{4.26}
+\begin{equation}
+  n_\theta+t_sn_z\geq\kappa,\qquad
+  (v_s-2)(n_z-t_sn_\theta)^2\leq(2-\kappa)(n_\theta+t_sn_z)^2.
+  \tag{4.26}\label{eq:4.26}
+\end{equation}
+\begin{EESegment}{EE-TGT-P033-005}
+For each \NSi{NS-F-P033-029}{\eta}, the vector
+\NSi{NS-F-P033-030}{n(X_a,\eta)\text{ is parallel to }(a(X_a,\eta),-b_s(X_a,\eta))}.
+At \NSi{NS-F-P033-031}{X=X_b},
+\NSi{NS-F-P033-032}{n(X_b,\eta)=(1,0)} and
+\NSi{NS-F-P033-033}{b_s(X_b,\eta)=0}.
+\end{EESegment}
+
+\item
+\begin{EESegment}{EE-TGT-P033-006}
+There is a smooth weight \NSi{NS-F-P033-034}{\zeta(X)}. It is positive when
+\NSi{NS-F-P033-035}{X_a<X<X_b\text{ and zero for }X\leq X_a\text{ and }X\geq X_b}.
+Every radial derivative of \NSi{NS-F-P033-036}{\zeta} vanishes at
+\NSi{NS-F-P033-037}{X_a,X_b}. In the radial interior, put
+\NSi{NS-F-P033-038}{\delta=\min\{1,\log(X/X_a),\log(X_b/X)\}}. There is a
+constant \NSi{NS-F-P033-039}{c>0} that does not depend on
+\NSi{NS-F-P033-040}{\alpha}. For each fixed multi-index
+\NSi{NS-F-P033-041}{\alpha=(\alpha_1,\alpha_2)}, there are finite constants
+\NSi{NS-F-P033-042}{C_\alpha,m_\alpha} such that, with
+\NSi{NS-F-P033-043}{\partial^\alpha=\partial_X^{\alpha_1}\partial_\eta^{\alpha_2}},
+the following bounds hold throughout
+\NSi{NS-F-P033-044}{(X_a,X_b)\times[-1,1]}.
+\end{EESegment}
+\NSFormula{NS-F-P033-045}{display}{4.27}
+\begin{equation}
+  |\mathcal{T}_0|\geq c\zeta,\qquad
+  |\partial^\alpha\mathcal{T}_0|\leq C_\alpha\zeta\delta^{-m_\alpha}.
+  \tag{4.27}\label{eq:4.27}
+\end{equation}
+
+\item
+\begin{EESegment}{EE-TGT-P033-007}
+The limits \NSi{NS-F-P033-046}{M(\infty,\eta),J(\infty,\eta),S(\infty,\eta)}
+of the cumulative integrals in \eqref{eq:4.15} exist. The angular moment is
+made convergent by subtracting the exterior power
+\NSi{NS-F-P033-047}{H_{\mathrm{pow}}} below from
+\NSi{NS-F-P033-048}{H} before integrating. These four convergent quantities
+satisfy
+\end{EESegment}
+\NSFormula{NS-F-P033-049}{display}{4.28}
+\begin{equation}
+  M(\infty,\eta)=J(\infty,\eta)=S(\infty,\eta)=0,\qquad
+  \int_0^\infty(H-H_{\mathrm{pow}})\,dX=0,\qquad
+  H_{\mathrm{pow}}=\sqrt{2X}\,c_\infty X^{-A},
+  \tag{4.28}\label{eq:4.28}
+\end{equation}
+\begin{EESegment}{EE-TGT-P033-008}
+where \NSi{NS-F-P033-050}{c_\infty>0} does not depend on
+\NSi{NS-F-P033-051}{\eta}. For \NSi{NS-F-P033-052}{X\geq X_b},
+\end{EESegment}
+\NSFormula{NS-F-P033-053}{display}{4.29}
+\begin{equation}
+\begin{aligned}
+  U=V_0=0,\qquad&E=c_\infty X^{-A}\mathcal{H}(2d/X),\\
+  \mathcal{H}(Z)&=\frac{1}{\Gamma(1+h)}\int_0^\infty e^{-v}v^h(1+Zv)^{-h}\,dv.
+\end{aligned}
+\tag{4.29}\label{eq:4.29}
+\end{equation}
+\begin{EESegment}{EE-TGT-P033-009}
+In this region the physical swirl is the exact radial heat solution
+\NSi{NS-F-P033-054}{c_\infty s^{-A}\mathcal{H}(2\tau/s)}. The profile
+\NSi{NS-F-P033-055}{\mathcal{H}} is positive and smooth for
+\NSi{NS-F-P033-056}{Z\geq0}, including the one-sided endpoint at zero. There
+is also a fixed \NSi{NS-F-P033-057}{X_v\in(X_a,X_b)} such that
+\NSi{NS-F-P033-058}{U=V_0=0} on all of
+\NSi{NS-F-P033-059}{[X_v,\infty)}, including the outer collar
+\NSi{NS-F-P033-060}{[X_v,X_b]}.
+\end{EESegment}
+
+\item
+\begin{EESegment}{EE-TGT-P033-010}
+Two fixed, disjoint intervals
+\NSi{NS-F-P033-061}{\mathcal{I}_{\mathrm{pos}}\text{ and }\mathcal{I}_{\mathrm{mean}}}
+are left available for later use. Lemma~\ref{lem:5.2} uses the first for
+positive-order background corrections, and Lemma~\ref{lem:8.7} uses the
+second for corrections to the averaged flow,
+\end{EESegment}
+\NSPage{034}%
+\begin{EESegment}{EE-TGT-P034-001}
+with \NSi{NS-F-P034-001}{\sup\mathcal{I}_{\mathrm{pos}}<\inf\mathcal{I}_{\mathrm{mean}}}.
+Here positive order means a relative power
+\NSi{NS-F-P034-002}{q^{2nh},\ n\geq1} in the background expansion
+\eqref{eq:5.1}. Both intervals lie in
+\NSi{NS-F-P034-003}{(X_a,X_v)}. For every \NSi{NS-F-P034-004}{X} in either
+interval,
+\end{EESegment}
+\NSFormula{NS-F-P034-005}{display}{4.30}
+\begin{equation}
+  U=0,\qquad E=c_{\mathrm{patch}}(1+\eta^2)^{-1}X^{-1/2-\lambda},
+  \tag{4.30}\label{eq:4.30}
+\end{equation}
+\begin{EESegment}{EE-TGT-P034-002}
+where the positive constant \NSi{NS-F-P034-006}{c_{\mathrm{patch}}} does not
+depend on \NSi{NS-F-P034-007}{X,\eta}. Building the leading profile does not
+change either interval.
+\end{EESegment}
+\end{enumerate}
+
+\begin{EESegment}{EE-TGT-P034-003}
+Every constant in this theorem depends only on the fixed choices used to
+build the profile and, for a derivative bound, on the order of that
+derivative. None depends on the physical variable
+\NSi{NS-F-P034-008}{q}, on any later dyadic band, or on any later correction
+stage.
+\end{EESegment}
+\end{theorem}
+
+\begin{EESegment}{EE-TGT-P034-004}
+\subsection{Construction results used in the proof}\label{sec:4.5}
+
+Building the profile takes three choices that have to work together. The
+outer flow fixes the pressure on the axis, the regular inner flow matches the outer flow's
+five cumulative integrals, and the shear on the interval between them
+satisfies the admissible cone condition. Lemma~\ref{lem:4.7} first solves the
+finite-dimensional moment problem. Lemma~\ref{lem:4.8} and
+Proposition~\ref{prop:4.10} then build the outer and inner flows, and
+Lemma~\ref{lem:4.11} builds the periodic shear. These results provide the
+pieces used in the proof of Theorem~\ref{thm:4.6}. The appendices prove each
+construction in full at the references given below.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P034-005}
+In these statements, a \emph{parameter derivative} means a derivative with
+respect to \NSi{NS-F-P034-009}{\eta}, with every construction constant held
+fixed. For a function on \NSi{NS-F-P034-010}{[-1,1]}, write
+\NSi{NS-F-P034-011}{\|f\|_{C^k}=\max_{0\leq j\leq k}\sup_\eta|\partial_\eta^jf|}.
+For vectors, use the largest component norm. Only finitely many of these
+norms have to be small when the parameters are chosen. After the parameters
+have been fixed, every other fixed derivative order has a finite bound.
+\end{EESegment}
+
+\begin{lemma}\label{lem:4.7}
+\begin{EESegment}{EE-TGT-P034-006}
+Let \NSi{NS-F-P034-012}{\alpha_1,\ldots,\alpha_m} be distinct real numbers.
+Let \NSi{NS-F-P034-013}{\beta_1,\ldots,\beta_m} be nonnegative, nonzero
+smooth functions supported in ordered, disjoint compact intervals of
+\NSi{NS-F-P034-014}{(0,\infty)}. Then the matrix
+\end{EESegment}
+\NSFormula{NS-F-P034-015}{display}{none}
+\[
+  B_{ij}=\int_0^\infty x^{\alpha_i}\beta_j(x)\,dx
+\]
+\begin{EESegment}{EE-TGT-P034-007}
+is invertible. Its inverse and every fixed parameter derivative stay bounded
+for any smooth compact family that keeps these assumptions true.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P034-008}
+There is also a more general statement. Let
+\NSi{NS-F-P034-016}{B(\eta)} be a smooth invertible matrix on
+\NSi{NS-F-P034-017}{[-1,1]}, let
+\NSi{NS-F-P034-018}{\mathcal Q_\eta} be a smooth bilinear map, and let
+\NSi{NS-F-P034-019}{d\in C^\infty([-1,1];\mathbb{R}^m)}. Fix an integer
+\NSi{NS-F-P034-020}{k\geq0}. Let \NSi{NS-F-P034-021}{\nu_j} be the norm of multiplication by
+\NSi{NS-F-P034-022}{B^{-1}} on \NSi{NS-F-P034-023}{C^j}, and let
+\NSi{NS-F-P034-024}{q_j} be the bilinear norm of
+\NSi{NS-F-P034-025}{\mathcal Q} on \NSi{NS-F-P034-026}{C^j}, for
+\NSi{NS-F-P034-027}{j=0,k}. If
+\end{EESegment}
+\NSFormula{NS-F-P034-028}{display}{none}
+\[
+  8\nu_j^2q_j\|d\|_{C^j}\leq1\qquad(j=0,k),
+\]
+\begin{EESegment}{EE-TGT-P034-009}
+then the equation
+\end{EESegment}
+\NSFormula{NS-F-P034-029}{display}{none}
+\[
+  B(\eta)c(\eta)+\mathcal Q_\eta(c(\eta),c(\eta))=d(\eta)
+\]
+\begin{EESegment}{EE-TGT-P034-010}
+has a smooth solution. It is the only solution with
+\NSi{NS-F-P034-030}{\|c\|_{C^0}\leq2\nu_0\|d\|_{C^0}}, and it satisfies
+\NSi{NS-F-P034-031}{\|c\|_{C^k}\leq2\nu_k\|d\|_{C^k}}. When
+\NSi{NS-F-P034-032}{\mathcal Q=0}, no smallness condition is needed and the
+solution is \NSi{NS-F-P034-033}{c=B^{-1}d}.
+\end{EESegment}
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P034-011}
+These two claims are Lemmas~\ref{lem:A.1} and~\ref{lem:A.2}. For the first,
+multilinearity gives
+\end{EESegment}
+\NSFormula{NS-F-P034-034}{display}{none}
+\[
+  \det B=\int\det[x_j^{\alpha_i}]\prod_j\beta_j(x_j)\,dx_1\cdots dx_m.
+\]
+\begin{EESegment}{EE-TGT-P034-012}
+When \NSi{NS-F-P034-035}{x_1<\cdots<x_m}, the determinant inside this
+integral has one fixed nonzero sign. To see why, any nonzero linear
+combination of \NSi{NS-F-P034-036}{m} distinct powers has at most
+\NSi{NS-F-P034-037}{m-1} positive zeros, by induction and Rolle's theorem.
+So the integral is nonzero.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P034-013}
+For the second claim, on the ball of radius
+\NSi{NS-F-P034-038}{r_j=2\nu_j\|d\|_{C^j}}, the iteration
+\NSi{NS-F-P034-039}{c\mapsto B^{-1}(d-\mathcal Q(c,c))} satisfies
+\end{EESegment}
+\NSFormula{NS-F-P034-040}{display}{none}
+\[
+  \|B^{-1}(d-\mathcal Q(c,c))\|_{C^j}\leq r_j/2+\nu_jq_jr_j^2\leq r_j,
+  \qquad 2\nu_jq_jr_j\leq\tfrac12.
+\]
+\NSPage{035}%
+\begin{EESegment}{EE-TGT-P035-001}
+It is a contraction in \NSi{NS-F-P035-001}{C^0} and
+\NSi{NS-F-P035-002}{C^k}. Starting the iteration from zero picks the same
+solution in both spaces. The pointwise implicit function theorem then shows
+that this solution is smooth.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P035-002}
+The exterior is built before the part near the axis. Requiring its pressure
+to vanish at infinity fixes the pressure value that the axis problem must
+use. The family below contains the heat-flow exterior and keeps several
+intervals available, so later changes can restore the required moments.
+\end{EESegment}
+
+\begin{lemma}\label{lem:4.8}
+\begin{EESegment}{EE-TGT-P035-003}
+There are finite choices of the parameters
+\NSi{NS-F-P035-003}{M_d,P_\ast,\lambda,h} and a constant
+\NSi{NS-F-P035-004}{R_\ast>0} with the following properties. First choose
+\NSi{NS-F-P035-005}{M_d}. Then \NSi{NS-F-P035-006}{P_\ast} may depend on
+\NSi{NS-F-P035-007}{M_d}; \NSi{NS-F-P035-008}{\lambda} may depend on
+\NSi{NS-F-P035-009}{M_d,P_\ast}; and \NSi{NS-F-P035-010}{h} may depend on
+\NSi{NS-F-P035-011}{M_d,P_\ast,\lambda}. The choices satisfy
+\end{EESegment}
+\NSFormula{NS-F-P035-012}{display}{none}
+\[
+  T_d=e^{M_d}+10,\qquad P_\ast>e^{T_d},\qquad
+  0<h<\min\{1/100,\lambda,e^{-T_d}\}.
+\]
+\begin{EESegment}{EE-TGT-P035-004}
+For every \NSi{NS-F-P035-013}{X_R\geq R_\ast}, there are smooth profiles
+\NSi{NS-F-P035-014}{(U_o,E_o)} on
+\NSi{NS-F-P035-015}{(0,\infty)\times[-1,1]}, with
+\NSi{NS-F-P035-016}{E_o>0}, that satisfy the conditions below. Put
+\NSi{NS-F-P035-017}{x=X/X_R} and
+\NSi{NS-F-P035-018}{f(\eta)=(1+\eta^2)^{-1}}.
+\end{EESegment}
+\begin{enumerate}[label=(\roman*)]
+\item
+\begin{EESegment}{EE-TGT-P035-005}
+When \NSi{NS-F-P035-019}{0<x\leq1},
+\end{EESegment}
+\NSFormula{NS-F-P035-020}{display}{none}
+\[
+  U_o=4\eta,\qquad E_o=P_\ast f(\eta)x^{1/10}.
+\]
+\begin{EESegment}{EE-TGT-P035-006}
+The pressure value
+\end{EESegment}
+\NSFormula{NS-F-P035-021}{display}{4.31}
+\begin{equation}
+  \Pi_0(\eta)=-\int_0^\infty\frac{E_o(X,\eta)^2}{2X}\,dX,
+  \qquad
+  \Pi_o(X,\eta)=\Pi_0(\eta)+C_{p,o}(X,\eta)
+  \tag{4.31}\label{eq:4.31}
+\end{equation}
+\begin{EESegment}{EE-TGT-P035-007}
+does not depend on \NSi{NS-F-P035-022}{X_R}. It is analytic on one complex
+neighborhood of \NSi{NS-F-P035-023}{[-1,1]}, it is even, and it satisfies
+\end{EESegment}
+\NSFormula{NS-F-P035-024}{display}{none}
+\[
+  \Pi_0\leq-\frac52P_\ast^2f^2,\qquad \eta\Pi_0'(\eta)>0\quad(\eta\neq0).
+\]
+\begin{EESegment}{EE-TGT-P035-008}
+For this temporary profile, define the five cumulative integrals by
+\eqref{eq:4.15}, \NSi{NS-F-P035-025}{V_{0,o}} by \eqref{eq:4.7}, and
+\NSi{NS-F-P035-026}{Q_{s,o},N_{s,o}} by the explicit formulas
+\eqref{eq:4.16}. Equations~\eqref{eq:4.11} and~\eqref{eq:4.20} then define
+its shear, stress, and cone coordinates. These are the same definitions used
+in Lemma~\ref{lem:4.4}. They make sense on
+\NSi{NS-F-P035-027}{X>0}, even though this temporary inner branch does not
+have to be regular at the physical axis.
+\end{EESegment}
+
+\item
+\begin{EESegment}{EE-TGT-P035-009}
+There are four nonempty, ordered, disjoint intervals
+\NSi{NS-F-P035-028}{\mathcal{I}_j=X_R(\alpha_j,\beta_j)} and radii satisfying
+\end{EESegment}
+\NSFormula{NS-F-P035-029}{display}{none}
+\[
+  X_R<X_{\mathrm{good}}<\inf\mathcal{I}_1,\qquad
+  \sup\mathcal{I}_4<X_v<X_{\mathrm{tail}}<X_b=e^3X_{\mathrm{tail}},
+\]
+\begin{EESegment}{EE-TGT-P035-010}
+and the endpoints of those intervals, after division by
+\NSi{NS-F-P035-030}{X_R}, do not depend on
+\NSi{NS-F-P035-031}{X_R,\eta}. On all four intervals,
+\NSi{NS-F-P035-032}{U_o=0}, and
+\end{EESegment}
+\NSFormula{NS-F-P035-033}{display}{none}
+\[
+  E_o=c_{\mathrm{patch}}f(\eta)X^{-1/2-\lambda}\quad\hbox{on }\mathcal{I}_1,\mathcal{I}_3,\mathcal{I}_4,
+  \qquad c_{\mathrm{patch}}>0.
+\]
+\begin{EESegment}{EE-TGT-P035-011}
+Only \NSi{NS-F-P035-034}{\mathcal{I}_2} is used for the heat compensation.
+The other three intervals remain available for corrections. Also,
+\end{EESegment}
+\NSFormula{NS-F-P035-035}{display}{none}
+\[
+  U_o=M_o=J_o=0\qquad(X\geq X_v),
+\]
+\NSFormula{NS-F-P035-036}{display}{none}
+\[
+  M_o(\infty)=J_o(\infty)=S_o(\infty)=0,
+  \qquad \int_0^\infty(H_o-H_{\mathrm{pow}})\,dX=0,
+\]
+\begin{EESegment}{EE-TGT-P035-012}
+where \NSi{NS-F-P035-037}{H_o=\sqrt{2X}E_o} and
+\NSi{NS-F-P035-038}{H_{\mathrm{pow}}=\sqrt{2X}c_\infty X^{-A}}. Both
+\NSi{NS-F-P035-039}{c_{\mathrm{patch}},c_\infty>0} are independent of
+\NSi{NS-F-P035-040}{X,\eta}.
+\end{EESegment}
+
+\item
+\begin{EESegment}{EE-TGT-P035-013}
+The relaxed cone condition holds on
+\NSi{NS-F-P035-041}{[e^{-5}X_R,e^{1/2}X_{\mathrm{tail}}]\times\allowbreak[-1,1]}.
+The admissible condition holds on
+\NSi{NS-F-P035-042}{[X_{\mathrm{good}},e^{1/2}X_{\mathrm{tail}}]\times\allowbreak[-1,1]}.
+On each closed rectangle, every gap that defines the relevant condition has
+a positive minimum. These minima may depend on
+\NSi{NS-F-P035-043}{X_R}. For \NSi{NS-F-P035-044}{X\geq X_b},
+\end{EESegment}
+\NSFormula{NS-F-P035-045}{display}{none}
+\[
+  U_o=V_{0,o}=0,\qquad E_o=c_\infty X^{-A}\mathcal{H}(2d/X),
+\]
+\begin{EESegment}{EE-TGT-P035-014}
+where \NSi{NS-F-P035-046}{\mathcal{H}} is defined in \eqref{eq:4.29}. The
+physical swirl
+\NSi{NS-F-P035-047}{K=c_\infty(r^2/2)^{-A}\mathcal{H}(4\tau/r^2)} satisfies
+\NSi{NS-F-P035-048}{\partial_tK=(\partial_{rr}+r^{-1}\partial_r-r^{-2})K}
+and \NSi{NS-F-P035-049}{K_r<0\text{ for }r>0}.
+\end{EESegment}
+\end{enumerate}
+\end{lemma}
+
+\NSPage{036}%
+\begin{proof}
+\begin{EESegment}{EE-TGT-P036-001}
+Proposition~\ref{prop:A.4} and Lemma~\ref{lem:A.5} provide the reference
+profiles and the common pressure value in part~(i). The four intervals
+defined after \eqref{eq:A.9} are the intervals in part~(ii). The parameter
+\NSi{NS-F-P036-001}{M_d} controls the decrease in the axial direction,
+\NSi{NS-F-P036-002}{T_d} controls how long that decrease lasts in logarithmic
+radius, \NSi{NS-F-P036-003}{P_\ast} is the initial azimuthal amplitude, and
+\NSi{NS-F-P036-004}{\lambda,h} are the intermediate and outer exponents.
+\end{EESegment}
+
+\begin{EESegment}{EE-TGT-P036-002}
+Lemma~\ref{lem:A.6} and Proposition~\ref{prop:A.7} replace the tail by the
+heat profile from part~(iii). The correction on
+\NSi{NS-F-P036-005}{\mathcal{I}_2} restores the pressure integral from
+part~(i), along with the total \NSi{NS-F-P036-006}{S}-moment and the
+renormalized angular moment from part~(ii). Once the other parameters have
+been fixed, those results keep the cone inequalities from part~(iii) true
+for every sufficiently large \NSi{NS-F-P036-007}{X_R}.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P036-003}
+The exterior is now prepared with the right moments and heat flow. Its stress
+was defined by integrating outward from the axis. To get the conclusions at
+the outer edge as well, it still needs a regular inner extension with the
+same moments. Once that condition is met, the stress can instead be
+integrated backward from infinity, and its limiting direction can be found
+explicitly.
+\end{EESegment}
+
+\begin{lemma}\label{lem:4.9}
+\begin{EESegment}{EE-TGT-P036-004}
+For every \NSi{NS-F-P036-008}{X_R\geq R_\ast}, the family in
+Lemma~\ref{lem:4.8} can be chosen to have the following extra property.
+Suppose a leading field is regular at the axis, agrees with that family when
+\NSi{NS-F-P036-009}{X\geq X_{\mathrm{tail}}}, satisfies the four moment
+identities in \eqref{eq:4.28} as functions of
+\NSi{NS-F-P036-010}{\eta}, and has the canonical pressure \eqref{eq:4.25}.
+Then its physical stress \NSi{NS-F-P036-011}{T=q^{-A-1/2}\mathcal T_0}
+satisfies
+\end{EESegment}
+\NSFormula{NS-F-P036-012}{display}{none}
+\[
+  T_\theta(r)=r^{-2}\int_r^\infty r'^2R_\theta^{(0)}(r')\,dr',
+  \qquad
+  T_z(r)=r^{-1}\int_r^\infty r'R_z^{(0)}(r')\,dr',
+\]
+\begin{EESegment}{EE-TGT-P036-005}
+so \NSi{NS-F-P036-013}{\mathcal{T}_0=0} whenever
+\NSi{NS-F-P036-014}{X\geq X_b}. On
+\NSi{NS-F-P036-015}{e^{1/2}X_{\mathrm{tail}}\leq X<X_b}, the admissible cone
+condition holds and
+\end{EESegment}
+\NSFormula{NS-F-P036-016}{display}{none}
+\[
+  b_s=0,\qquad 2+h<a\leq2+2h,\qquad T_\theta>0,
+  \qquad 2-(a-2)(T_z/T_\theta)^2\geq\kappa_o>0.
+\]
+\begin{EESegment}{EE-TGT-P036-006}
+Put \NSi{NS-F-P036-017}{y_b=\log(X_b/X)}. There are smooth functions
+\NSi{NS-F-P036-018}{b_\theta,b_z} on a closed outer collar, with
+\NSi{NS-F-P036-019}{\inf b_\theta>0}, such that
+\end{EESegment}
+\NSFormula{NS-F-P036-020}{display}{4.32}
+\begin{equation}
+  \mathcal{T}_{0,\theta}=e^{-4/y_b^2}y_b^{-3}b_\theta(y_b,\eta),
+  \qquad
+  \mathcal{T}_{0,z}=e^{-4/y_b^2}y_b^3b_z(y_b,\eta).
+  \tag{4.32}\label{eq:4.32}
+\end{equation}
+\begin{EESegment}{EE-TGT-P036-007}
+For this fixed profile, all these claims hold uniformly for
+\NSi{NS-F-P036-021}{\eta\in[-1,1]}. Their constants may depend on
+\NSi{NS-F-P036-022}{X_R}, but they do not depend on the physical variable
+\NSi{NS-F-P036-023}{q}.
+\end{EESegment}
+\end{lemma}
+
+\begin{proof}
+\begin{EESegment}{EE-TGT-P036-008}
+These claims are Lemma~\ref{lem:A.8} and
+Proposition~\ref{prop:A.10}. The four moment identities make the total
+residual integrals cancel. This gives the backward primitives shown above,
+which are the integrals from the current radius to infinity. The prepared
+terminal profile then gives the cone inequalities and
+\eqref{eq:4.32}.
+\end{EESegment}
+\end{proof}
+
+\begin{EESegment}{EE-TGT-P036-009}
+The missing inner extension can now be built. It must be smooth at the axis
+and must match the five cumulative integrals of the prepared exterior at a
+chosen joining radius. It uses the function
+\NSi{NS-F-P036-024}{\Pi_0(\eta)} from Lemma~\ref{lem:4.8} as its pressure
+value at \NSi{NS-F-P036-025}{X=0}.
+\end{EESegment}
+
+\begin{proposition}\label{prop:4.10}
+\begin{EESegment}{EE-TGT-P036-010}
+Fix the outer-profile data from Lemma~\ref{lem:4.8} and any prescribed finite
+set of \NSi{NS-F-P036-026}{\eta}-derivative orders. It is possible to choose
+finite axis parameters
+\NSi{NS-F-P036-027}{j_0,\delta_\ast,\sigma_\ast,\Lambda}, a logarithmic
+transition length \NSi{NS-F-P036-028}{T_{\mathrm{sh}}}, and an amplitude
+threshold \NSi{NS-F-P036-029}{\mathsf C_0} so that every
+\NSi{NS-F-P036-030}{\mathsf C\geq \mathsf C_0} allows the following
+construction. Set
+\end{EESegment}
+\NSFormula{NS-F-P036-031}{display}{none}
+\[
+  X_a=4/\Lambda,\qquad X_R=110(\mathsf C P_\ast)^{10},\qquad
+  x=X/X_R,\qquad X_h=X_Re^{-5},\qquad f=(1+\eta^2)^{-1}.
+\]
+\begin{EESegment}{EE-TGT-P036-011}
+After choosing \NSi{NS-F-P036-032}{\mathsf C}, choose a positive activation
+width \NSi{NS-F-P036-033}{t_1} in the logarithmic coordinate
+\NSi{NS-F-P036-034}{\log(X/X_a)}, a positive shear factor
+\NSi{NS-F-P036-035}{\kappa_0}, and the remaining transition widths. There
+are profiles \NSi{NS-F-P036-036}{E=\sqrt{2X}\phi/\mathsf C,U} and
+\NSi{NS-F-P036-037}{\Pi=\Pi_0+C_p} on
+\NSi{NS-F-P036-038}{[0,X_h]\times[-1,1]} with the following properties.
+\end{EESegment}
+\begin{enumerate}[label=(\roman*)]
+\item
+\begin{EESegment}{EE-TGT-P036-012}
+The scalar \NSi{NS-F-P036-039}{\phi} is positive, and
+\NSi{NS-F-P036-040}{\phi,U,\Pi,V_0/X} are smooth on
+\NSi{NS-F-P036-041}{[0,X_h]\times[-1,1]}, including at
+\NSi{NS-F-P036-042}{X=0}. So Equations~\eqref{eq:4.4}--\eqref{eq:4.5}
+give a Cartesian velocity and pressure that are smooth across the
+axis. For some
+\NSi{NS-F-P036-043}{X_{\mathrm{an}}\in(X_a,X_h)}, these scalars and every
+fixed radial derivative are analytic in \NSi{NS-F-P036-044}{\eta} on one
+common complex neighborhood throughout
+\NSi{NS-F-P036-045}{[0,X_{\mathrm{an}}]\times[-1,1]}. The profiles solve
+\eqref{eq:4.13} on \NSi{NS-F-P036-046}{0\leq X\leq X_a}, and
+\NSi{NS-F-P036-047}{\mathcal{T}_0=0} there.
+\end{EESegment}

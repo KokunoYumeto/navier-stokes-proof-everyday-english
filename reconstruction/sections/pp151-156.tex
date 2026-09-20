@@ -1,0 +1,506 @@
+\NSPage{151}%
+uniformly in \NSi{NS-F-P151-001}{\mathsf C,t_1}; its real value is bounded above and below. Thus
+\NSi{NS-F-P151-002}{\mathsf C E_{\mathrm r}=\sqrt{2X}\phi_{\mathrm r}} and its reciprocal have the asserted bounds away from
+\NSi{NS-F-P151-003}{X=0}. Moreover
+\NSFormula{NS-F-P151-004}{display}{B.24}
+\begin{equation}
+  \Pi_{\mathrm r}(X)-\Pi_0=\mathsf C^{-2}\int_0^X\phi_{\mathrm r}(X',\eta)^2\,dX',
+  \qquad
+  \sup_{X\leq X_i}\lVert\Pi_{\mathrm r}-\Pi_0\rVert_{C_\eta^k}\leq C_k\mathsf C^{-2}.
+\tag{B.24}\label{eq:B.24}
+\end{equation}
+The regular axis factor makes this integral finite at zero.
+
+For the source sign, its leading gradient contribution is
+\NSi{NS-F-P151-005}{-H_*\widetilde\xi_0=L\Lambda\chi}. The bound
+\NSi{NS-F-P151-006}{|\widetilde\xi_0|\leq L\Lambda\sigma_*^{-1}\sqrt\chi} shows that replacing
+\NSi{NS-F-P151-007}{H_*} by \NSi{NS-F-P151-008}{H_{c,\mathrm r}} introduces an error bounded by
+\NSi{NS-F-P151-009}{C_{\sigma_*}\sqrt\chi+o_{t_1}(1)}, after
+\NSi{NS-F-P151-010}{\Lambda,\mathsf C} are fixed. The logarithmic slope of the axis profile and the remaining gradient give
+\NSi{NS-F-P151-011}{C\chi+C/\Lambda}. Absorb these errors into a small fraction of
+\NSi{NS-F-P151-012}{L\Lambda\chi}, using
+\NSi{NS-F-P151-013}{C_{\sigma_*}\sqrt\chi\leq\varepsilon\Lambda L\chi+C_{\varepsilon,\sigma_*}/\Lambda}.
+The constant contribution retains the slack from \NSi{NS-F-P151-014}{-W_*>2.8}, yielding the first inequality
+in \eqref{eq:B.23}. Since the axis profile satisfies \NSi{NS-F-P151-015}{p_1=a>0}, its logarithmic
+\NSi{NS-F-P151-016}{\phi} slope is nonpositive; cutting this slope to zero gives
+\NSi{NS-F-P151-017}{l_{\mathrm r}\leq1}.
+
+The axial source satisfies
+\NSi{NS-F-P151-018}{S_{n,\mathrm r}=Z_*+O(\Lambda^{-1})+o_{t_1}(1)+O(\mathsf C^{-2})}. Here
+\NSi{NS-F-P151-019}{\mathcal D_XU_{\mathrm{nat}}=O(\Lambda^{-1})} on the short cutoff, and \eqref{eq:B.24}
+controls pressure and its needed parameter derivative on the entire finite interval. The equations for
+\NSi{NS-F-P151-020}{p_{1,\mathrm r},n_{s,\mathrm r}} are
+\NSFormula{NS-F-P151-021}{display}{B.25}
+\begin{equation}
+  \mathcal D_Xp_{1,\mathrm r}=\frac{XS_{q,\mathrm r}}{L}-l_{\mathrm r}p_{1,\mathrm r},
+  \qquad
+  \mathcal D_Xn_{s,\mathrm r}+n_{s,\mathrm r}=\frac{S_{n,\mathrm r}}{L}.
+\tag{B.25}\label{eq:B.25}
+\end{equation}
+Their regular initial values and bounded coefficients give the claimed parameter bounds. On
+\NSi{NS-F-P151-022}{\chi\leq.99}, the axis alternative
+\NSi{NS-F-P151-023}{|Z_*|>\delta_*} therefore preserves the sign and a positive lower bound of
+\NSi{NS-F-P151-024}{|n_{s,\mathrm r}|}.
+
+The first equation in \eqref{eq:B.25} preserves positivity and gives both comparisons
+\NSFormula{NS-F-P151-025}{display}{none}
+\[
+\begin{aligned}
+  p_{1,\mathrm r}(y)&\geq p_{1,\mathrm r}(0)e^{-y}+1.88\chi(e^y-e^{-y}),\\
+  p_{1,\mathrm r}(X)&\geq p_{1,\mathrm r}(X_0)\frac{X_0}{X}+1.2\left(X-\frac{X_0^2}{X}\right).
+\end{aligned}
+\]
+On \NSi{NS-F-P151-026}{\chi>.99}, the first right-hand side remains above
+\NSi{NS-F-P151-027}{2.3}, since its initial value can be replaced by
+\NSi{NS-F-P151-028}{2.3} and \NSi{NS-F-P151-029}{1.88\chi>2.3/2}. On the complement,
+\NSi{NS-F-P151-030}{p_{2,\mathrm r}=Xn_{s,\mathrm r}/E_{\mathrm r}} grows uniformly in absolute value with
+\NSi{NS-F-P151-031}{\mathsf C}, while \NSi{NS-F-P151-032}{p_{1,\mathrm r}} remains positive and bounded. This proves
+\NSi{NS-F-P151-033}{v_{\mathrm r}>2+c}. The second comparison gives
+\NSi{NS-F-P151-034}{p_{1,\mathrm r}>3} from \NSi{NS-F-P151-035}{X=100} onward.
+\end{proof}
+
+\subsection{Continuation to nonzero leading residual stress.}\label{sec:B.6}
+In this subsection, we use the reference bounds of Lemma~\ref{lem:B.4} to reduce the shear
+\NSi{NS-F-P151-036}{\mathfrak s} while keeping the integrated residual coefficients
+\NSi{NS-F-P151-037}{p_s} close to their reference values as in \eqref{eq:B.28}. The resulting stress
+\NSi{NS-F-P151-038}{\mathcal T_0=F(p_s-\mathfrak s)} of \eqref{eq:4.11} must become nonzero smoothly at the end of the axis region,
+satisfy the admissible stress cone on a first collar, and retain the relaxed cone condition along the rest of the
+continuation (Proposition~\ref{prop:B.5}).
+
+\begin{proposition}\label{prop:B.5}
+The analytic axis profile can be continued to \NSi{NS-F-P151-039}{X_i} with positive
+\NSi{NS-F-P151-040}{E}, remaining unchanged for \NSi{NS-F-P151-041}{X\leq X_0}. Its stress has the factorization
+\NSi{NS-F-P151-042}{\mathcal T_0=e_aB_0}, where the scalar factor \NSi{NS-F-P151-043}{e_a} vanishes to infinite order at
+\NSi{NS-F-P151-044}{X_0} and the smooth vector coefficient \NSi{NS-F-P151-045}{B_0} is nonzero there. The admissible stress
+cone holds on a first collar, and the strict relaxed cone condition holds on the rest of
+\NSi{NS-F-P151-046}{(X_0,X_i]}. At \NSi{NS-F-P151-047}{X_i},
+\NSi{NS-F-P151-048}{a=.8}, \NSi{NS-F-P151-049}{\mathcal D_XU=0}, and \NSi{NS-F-P151-050}{p_1>2}.
+\end{proposition}
+\begin{proof}
+We reduce the reference shear on a short interval while \NSi{NS-F-P151-051}{p_s} changes by a controlled
+small error. The resulting residual stress is nonzero and satisfies the cone conditions stated
+above. We then verify its factorization by a function vanishing to infinite order and complete
+the continuation with small shear.
+
+\NSPage{152}%
+Fix a sufficiently large finite \NSi{NS-F-P152-001}{\mathsf C}. Choose
+\NSi{NS-F-P152-002}{0<t_*\leq\bar t} sufficiently small that the bounds of Lemma~\ref{lem:B.4}
+hold uniformly for every reference width \NSi{NS-F-P152-003}{0<t_1\leq t_*}. The parameter bounds of
+Lemma~\ref{lem:B.4} and its positive lower comparison for \NSi{NS-F-P152-004}{p_{1,\mathrm r}} give one finite upper bound
+\NSi{NS-F-P152-005}{V_{\max}} for \NSi{NS-F-P152-006}{v_{\mathrm r}} over this entire reference family. It may depend on
+\NSi{NS-F-P152-007}{\mathsf C}, but not on \NSi{NS-F-P152-008}{t_1}. Let
+\NSi{NS-F-P152-009}{0<\kappa_0<1/2}, to be chosen using that bound, and on
+\NSi{NS-F-P152-010}{0<y<t_1} set
+\NSFormula{NS-F-P152-011}{display}{B.26}
+\begin{equation}
+  e_a=(1-\kappa_0)\sigma(y/t_1),\quad
+  \kappa=1-e_a,\quad
+  a=\kappa p_{1,\mathrm r},\quad
+  \mathcal D_XU=-\frac{\kappa Xn_{s,\mathrm r}}{2},\quad
+  \partial_y\log\phi=-\frac{\kappa p_{1,\mathrm r}}{2}.
+\tag{B.26}\label{eq:B.26}
+\end{equation}
+The reference agrees with the analytic axis profile on this interval. Subtracting its equations
+gives exactly
+\NSFormula{NS-F-P152-012}{display}{B.27}
+\begin{equation}
+  \partial_y(\log\phi-\log\phi_{\mathrm r})=\frac{e_ap_{1,\mathrm r}}{2},
+  \qquad
+  \partial_y(U-U_{\mathrm r})=\frac{e_aXn_{s,\mathrm r}}{2}.
+\tag{B.27}\label{eq:B.27}
+\end{equation}
+Since \NSi{NS-F-P152-013}{e_a} increases, each fixed parameter derivative of these field differences is
+\NSi{NS-F-P152-014}{O(ye_a)}. Constants in the activation comparisons may depend on the already fixed
+\NSi{NS-F-P152-015}{\mathsf C,\Lambda}, but are uniform as \NSi{NS-F-P152-016}{t_1} and
+\NSi{NS-F-P152-017}{\kappa_0} decrease within the admissible ranges. The reference family bounds
+control the integrated coefficients independently of both widths. The radial moment identities
+\eqref{eq:4.16}, using one additional parameter derivative, imply
+\NSFormula{NS-F-P152-018}{display}{B.28}
+\begin{equation}
+  p_s-p_{s,\mathrm r}=O(ye_a),
+  \qquad
+  E_{\mathrm r}/E=1+O(ye_a).
+\tag{B.28}\label{eq:B.28}
+\end{equation}
+The comparison holds for field values and parameter derivatives; radial derivatives of the
+narrow cutoffs may be large.
+
+The actual shear is \NSi{NS-F-P152-019}{\kappa(p_{1,\mathrm r},p_{2,\mathrm r}E_{\mathrm r}/E)}. In particular the common
+\NSi{NS-F-P152-020}{\kappa} cancels from the ratio \NSi{NS-F-P152-021}{t_s=-b_s/a} before it is estimated.
+The definitions of \NSi{NS-F-P152-022}{P_{\mathrm c},J_{\mathrm c},v_s} yield
+\NSFormula{NS-F-P152-023}{display}{B.29}
+\begin{equation}
+  t_s=\frac{p_{2,\mathrm r}E_{\mathrm r}}{p_{1,\mathrm r}E},\qquad
+  v_s=\kappa v_{\mathrm r}+O(ye_a),\qquad
+  P_{\mathrm c}=v_{\mathrm r}+O(ye_a),\qquad
+  J_{\mathrm c}=O(ye_a).
+\tag{B.29}\label{eq:B.29}
+\end{equation}
+No inverse power of \NSi{NS-F-P152-024}{\kappa_0} enters these error constants. Taking
+\NSi{NS-F-P152-025}{t_1} sufficiently small gives
+\NSi{NS-F-P152-026}{P_{\mathrm c}-v_s\geq ce_a}, \NSi{NS-F-P152-027}{P_{\mathrm c}>2+c}, and
+\NSFormula{NS-F-P152-028}{display}{none}
+\[
+  (v_s-2)_+J_{\mathrm c}^2<2(P_{\mathrm c}-v_s)^2
+  \qquad(0<y\leq t_1).
+\]
+Indeed the ratio of its left side to \NSi{NS-F-P152-029}{(P_{\mathrm c}-v_s)^2} is at most
+\NSi{NS-F-P152-030}{Cy^2}. The quadratic test of Lemma~\ref{lem:4.5} proves the admissible stress cone condition
+when \NSi{NS-F-P152-031}{v_s>2}; when \NSi{NS-F-P152-032}{v_s\leq2},
+\NSi{NS-F-P152-033}{P_{\mathrm c}>2} gives the strict relaxed condition directly. Continuity from
+\NSi{NS-F-P152-034}{v_{\mathrm r}(0)>2+c} gives one positive-width first collar on which
+\NSi{NS-F-P152-035}{v_s>2+c/2}, uniformly in \NSi{NS-F-P152-036}{\eta} for the final fixed parameters.
+
+To establish smoothness after division by the flat factor, write
+\NSi{NS-F-P152-037}{e_a=e^{-t_1^2/y^2}g_a(y)} near zero, where
+\NSi{NS-F-P152-038}{g_a} is smooth and positive. Lemma~\ref{lem:A.9}, applied with
+\NSi{NS-F-P152-039}{c=t_1^2}, \NSi{NS-F-P152-040}{j=0}, and coefficient
+\NSi{NS-F-P152-041}{g_a b}, gives for every smooth coefficient \NSi{NS-F-P152-042}{b}
+\NSFormula{NS-F-P152-043}{display}{none}
+\[
+  \frac{1}{e_a(y)}\int_0^y e_a(u)b(u,\eta)\,du
+  =y^3B(y,\eta),
+  \qquad B\in C^\infty.
+\]
+Division by the positive smooth \NSi{NS-F-P152-044}{g_a(y)} preserves smoothness and bounds on mixed derivatives
+of each fixed order. The differences in \eqref{eq:B.27} belong to
+\NSi{NS-F-P152-045}{e_ay^3C^\infty}. Products, smooth compositions, and reciprocals of nonvanishing fields preserve this class. The moment and
+pressure differences vanish before \NSi{NS-F-P152-046}{X_0}; their additional integration puts them in
+\NSi{NS-F-P152-047}{e_ay^6C^\infty}. Substitution in \eqref{eq:4.16} consequently justifies \eqref{eq:B.28}
+after division by \NSi{NS-F-P152-048}{e_a} in every fixed mixed derivative, and gives the exact factorization
+\NSFormula{NS-F-P152-049}{display}{B.30}
+\begin{equation}
+  \mathcal T_0=e_aB_0(y,\eta),
+  \qquad
+  B_0(0,\eta)=F(X_0,\eta)p_{s,\mathrm r}(X_0,\eta)\neq0,
+  \qquad
+  B_0\in C^\infty.
+\tag{B.30}\label{eq:B.30}
+\end{equation}
+\NSPage{153}%
+At the edge the limiting shear is \NSi{NS-F-P153-001}{p_{s,\mathrm r}}. Therefore
+\NSi{NS-F-P153-002}{B_0\cdot(-t_s,1)=0} and \NSi{NS-F-P153-003}{B_0\cdot(1,t_s)>0} there. At
+the endpoint, \NSi{NS-F-P153-004}{B_0\cdot(1,t_s)>0} and
+\NSi{NS-F-P153-005}{2(B_0\cdot(1,t_s))^2-(v_s-2)(B_0\cdot(-t_s,1))^2>0}. Both quantities
+have positive lower bounds on a smaller collar. In particular, for every fixed radial/parameter
+multi-index \NSi{NS-F-P153-006}{I},
+\NSFormula{NS-F-P153-007}{display}{B.31}
+\begin{equation}
+  |\mathcal T_0|\geq ce^{-t_1^2/y^2},
+  \qquad
+  |\partial^I\mathcal T_0|\leq C_Ie^{-t_1^2/y^2}y^{-N_I}.
+\tag{B.31}\label{eq:B.31}
+\end{equation}
+The derivatives in \eqref{eq:B.31} act in \NSi{NS-F-P153-008}{(y,\eta)}; fixed derivatives in
+\NSi{NS-F-P153-009}{X} obey the same form because \NSi{NS-F-P153-010}{X_0>0}. The nonzero vector
+\NSi{NS-F-P153-011}{B_0(0,\eta)} determines the limiting stress direction.
+
+We now continue to \NSi{NS-F-P153-012}{X_i} while preserving the relaxed cone condition. After the first
+transition keep \eqref{eq:B.26} with \NSi{NS-F-P153-013}{\kappa=\kappa_0} through the reference cutoff and constant-slope interval.
+For fixed \NSi{NS-F-P153-014}{\mathsf C,\Lambda}, integration over \NSi{NS-F-P153-015}{[X_0,X_{\mathrm b}]} and \eqref{eq:4.16} give
+\NSi{NS-F-P153-016}{O(t_1+\kappa_0)} differences of field values, logarithms, and the required derivatives with respect to
+\NSi{NS-F-P153-017}{\eta}. Choose \NSi{NS-F-P153-018}{\kappa_0} small compared to
+\NSi{NS-F-P153-019}{V_{\max}} and the uniform family comparison constants, then choose
+\NSi{NS-F-P153-020}{t_1} small. This order does not require a reference width to be fixed before
+\NSi{NS-F-P153-021}{\kappa_0}. Formula \eqref{eq:B.29} now gives
+\NSi{NS-F-P153-022}{P_{\mathrm c}>2+c/2} and \NSi{NS-F-P153-023}{v_s<1}. The strict relaxed cone condition follows,
+regardless of the size of \NSi{NS-F-P153-024}{J_{\mathrm c}}.
+
+At \NSi{NS-F-P153-025}{X_{\mathrm b}}, multiply the axial prescription for \NSi{NS-F-P153-026}{\mathcal D_XU} by a smooth factor
+\NSi{NS-F-P153-027}{\beta} decreasing from one to zero in a short log interval. During this transition,
+\NSi{NS-F-P153-028}{P_{\mathrm c}=p_{1,\mathrm r}+\beta p_{2,\mathrm r}^2/p_{1,\mathrm r}+o(1)>2}, while
+\NSi{NS-F-P153-029}{v_s<1}. Next interpolate \NSi{NS-F-P153-030}{a} convexly from
+\NSi{NS-F-P153-031}{\kappa_0p_{1,\mathrm r}} to \NSi{NS-F-P153-032}{.8}, keeping
+\NSi{NS-F-P153-033}{\mathcal D_XU=0}. Arrange first that
+\NSi{NS-F-P153-034}{\kappa_0\sup p_{1,\mathrm r}<.8}. The second transition has
+\NSi{NS-F-P153-035}{v_s=a\leq.8}, and \NSi{NS-F-P153-036}{P_{\mathrm c}=p_1>2} by continuity from
+the positive margin established at \NSi{NS-F-P153-037}{X_{\mathrm b}}. Both transitions fit strictly before
+\NSi{NS-F-P153-038}{X_i}. On the final constant-slope interval
+\NSi{NS-F-P153-039}{a=.8}, \NSi{NS-F-P153-040}{l=.6}, and the same gradient absorption as in Lemma~\ref{lem:B.4}
+gives \NSi{NS-F-P153-041}{S_q>1}: its constant contribution is
+\NSi{NS-F-P153-042}{.6(-W_*)>1.68}, while its leading gradient is
+\NSi{NS-F-P153-043}{L\Lambda\chi}. At a hypothetical downward crossing
+\NSi{NS-F-P153-044}{p_1=2},
+\NSi{NS-F-P153-045}{\mathcal D_Xp_1=XS_q/L-.6p_1>X-1.2>0}, a contradiction. This completes the continuation.
+\end{proof}
+
+The continuation remains analytic in \NSi{NS-F-P153-046}{\eta} on the first collar. We reserve a smaller rectangle
+there, so that later modifications preserve this regularity as well as the inner stress factorization.
+
+\begin{corollary}\label{cor:B.6}
+There is \NSi{NS-F-P153-047}{t_c>0}, with \NSi{NS-F-P153-048}{t_c<t_1} and
+\NSi{NS-F-P153-049}{4e^{t_c}<4.1}, such that the functions
+\NSi{NS-F-P153-050}{E/\sqrt{2X},U,V_0/X,\Pi} on
+\NSi{NS-F-P153-051}{[0,X_0e^{t_c}]\times[-1,1]} are smooth in
+\NSi{NS-F-P153-052}{(X,\eta)} through \NSi{NS-F-P153-053}{X=0} and analytic in
+\NSi{NS-F-P153-054}{\eta} on one complex neighborhood. Every fixed radial derivative of these four functions has that same
+parameter neighborhood and finite bounds on a smaller neighborhood. On
+\NSi{NS-F-P153-055}{X_0<X\leq X_0e^{t_c}}, the admissible stress cone condition and the factorization
+\eqref{eq:B.30} hold. All subsequent profile modifications are supported strictly to the right of
+\NSi{NS-F-P153-056}{X_0e^{t_c}}.
+\end{corollary}
+\begin{proof}
+Choose a compact complex neighborhood inside that of Proposition~\ref{prop:B.2}, small enough that the positive function
+\NSi{NS-F-P153-057}{\Phi} of the analytic axis profile has no zeros. The formulas for
+\NSi{NS-F-P153-058}{Q_s,N_s} computed from the reference profile, and \eqref{eq:B.26}, involve only analytic parameter coefficients,
+their parameter derivatives, and forward integrals, multiplied by cutoffs in \NSi{NS-F-P153-059}{y} alone. Their
+denominators are nonzero on a smaller neighborhood. Exponentiation gives nonvanishing
+\NSi{NS-F-P153-060}{\phi}, so one neighborhood works throughout the fixed first collar. Radial differentiation changes
+the cutoff bounds but not the parameter domain. Compactness and Proposition~\ref{prop:B.5} give an inner collar on which the admissible stress cone condition holds; choose
+\NSi{NS-F-P153-061}{t_c} strictly inside it and reserve the resulting rectangle from all later modifications. Neither
+\NSi{NS-F-P153-062}{t_c} nor radial derivative bounds are asserted uniform as \NSi{NS-F-P153-063}{\mathsf C} grows and the transition widths shrink. The
+radial moment and pressure integrals are forward, so changes supported later leave this
+rectangle unchanged.
+\end{proof}
+
+\NSPage{154}%
+\subsection{A radial transition length chosen before the amplitude.}\label{sec:B.7}
+In this subsection, we construct the remaining transition \eqref{eq:B.34} to
+\NSi{NS-F-P154-001}{E=P_*f(X/X_R)^{1/10}}, with
+\NSi{NS-F-P154-002}{f=(1+\eta^2)^{-1}}, before correcting its radial moment functions in the next subsection
+(Proposition~\ref{prop:B.8}). We first bound its logarithmic radial length
+\NSi{NS-F-P154-003}{T_{\mathrm{sh}}} independently of the amplitude
+\NSi{NS-F-P154-004}{\mathsf C} chosen later, using Lemma~\ref{lem:B.7} and \eqref{eq:B.33}. Increasing that amplitude can then move the matching radius
+\NSi{NS-F-P154-005}{X_R} outward without lengthening this transition, making the normalized inner moment discrepancies
+small (Equations~\eqref{eq:B.38} and \eqref{eq:B.39}). The estimates below concern parameter derivatives;
+bounds for derivatives with respect to \NSi{NS-F-P154-006}{X} need not be uniform in the radial transition widths.
+In the bounds below, \NSi{NS-F-P154-007}{\kappa_0\in(0,1/2)} is the parameter controlling the shear reduction in \eqref{eq:B.26}.
+
+\begin{lemma}\label{lem:B.7}
+Fix the data for the outer profile and the axis, \NSi{NS-F-P154-008}{\Lambda}, and a finite parameter order
+\NSi{NS-F-P154-009}{k}. Put \NSi{NS-F-P154-010}{\ell_i=\log(\mathsf C E(X_i,\eta))} and
+\NSi{NS-F-P154-011}{G_i=U(X_i,\eta)}. Let \NSi{NS-F-P154-012}{\omega_{\mathrm{fin}}} be the sum of the logarithmic radial lengths of the
+final axial cutoff and the interpolation of \NSi{NS-F-P154-013}{a} to
+\NSi{NS-F-P154-014}{.8} in the proof of Proposition~\ref{prop:B.5}. The continuations
+constructed there satisfy
+\NSFormula{NS-F-P154-015}{display}{B.32}
+\begin{equation}
+\begin{aligned}
+  \lVert\ell_i\rVert_{C_\eta^k}&\leq\mathcal B_k,\\
+  \lVert G_i-U_*\rVert_{C_\eta^k}&\leq\frac{C_k^{\mathrm{nat}}}{\Lambda}
+    +C_k^{\mathrm{join}}(\Lambda)(t_1+\kappa_0+\omega_{\mathrm{fin}}).
+\end{aligned}
+\tag{B.32}\label{eq:B.32}
+\end{equation}
+The constant \NSi{NS-F-P154-016}{C_k^{\mathrm{nat}}} is independent of both
+\NSi{NS-F-P154-017}{\Lambda} and sufficiently large \NSi{NS-F-P154-018}{\mathsf C}, with the preceding axis data fixed.
+The bounds \NSi{NS-F-P154-019}{\mathcal B_k} and \NSi{NS-F-P154-020}{C_k^{\mathrm{join}}(\Lambda)} may depend on
+\NSi{NS-F-P154-021}{\Lambda}, but are independent of sufficiently large \NSi{NS-F-P154-022}{\mathsf C} and of
+smaller radial transition widths.
+\end{lemma}
+\begin{proof}
+Write \NSi{NS-F-P154-023}{L_0=\log(X_i/X_0)}. Let \NSi{NS-F-P154-024}{M_k,N_k} be the amplitude-independent bounds for
+\NSi{NS-F-P154-025}{p_{1,\mathrm r},n_{s,\mathrm r}} from Lemma~\ref{lem:B.4}. Before the final interpolation of
+\NSi{NS-F-P154-026}{a} to \NSi{NS-F-P154-027}{.8}, the actual logarithmic slope is
+\NSi{NS-F-P154-028}{-\kappa p_{1,\mathrm r}/2}, with \NSi{NS-F-P154-029}{0<\kappa\leq1}; during that interpolation it varies convexly to
+\NSi{NS-F-P154-030}{-.4}, after which it remains constant. Consequently
+\NSFormula{NS-F-P154-031}{display}{none}
+\[
+  \lVert\log\phi(X_i)\rVert_{C_\eta^k}
+  \leq\lVert\log\phi_*+\log\Phi(4,\mathord\cdot)\rVert_{C_\eta^k}
+  +\tfrac12(M_k+.8)L_0.
+\]
+Adding \NSi{NS-F-P154-032}{\tfrac12\log(2X_i)} proves the first assertion, using \eqref{eq:B.13}. The first axial transition changes
+\NSi{NS-F-P154-033}{U} by at most \NSi{NS-F-P154-034}{X_0e^{\bar t}N_kt_1/2}; the remainder contributes at most
+\NSi{NS-F-P154-035}{X_iN_k\kappa_0/2}, with the same bound for its transition to zero. The approximation error for the analytic axis profile is
+\NSi{NS-F-P154-036}{C_k^{\mathrm{nat}}/\Lambda}, with the constant independent of
+\NSi{NS-F-P154-037}{\Lambda}, by \eqref{eq:B.13}. These estimates prove \eqref{eq:B.32}. Only integrals
+of bounded cutoff values were used, so inverse powers of their widths do not occur.
+\end{proof}
+
+The bounds just proved let us choose the length of the transition independently of the
+final amplitude. We choose
+\NSFormula{NS-F-P154-038}{display}{B.33}
+\begin{equation}
+  T_{\mathrm{sh}}\geq20\lVert\sigma'\rVert_\infty
+  \bigl(\mathcal B_0+\lVert\log f\rVert_\infty\bigr).
+\tag{B.33}\label{eq:B.33}
+\end{equation}
+For \NSi{NS-F-P154-039}{y_i=\log(X/X_i)} we prescribe
+\NSFormula{NS-F-P154-040}{display}{B.34}
+\begin{equation}
+  \log E=-\log\mathsf C+\frac{y_i}{10}
+  +(1-\sigma(y_i/T_{\mathrm{sh}}))\ell_i
+  +\sigma(y_i/T_{\mathrm{sh}})\log f,
+  \qquad U=G_i.
+\tag{B.34}\label{eq:B.34}
+\end{equation}
+Then \NSi{NS-F-P154-041}{l=.6+T_{\mathrm{sh}}^{-1}\sigma'(y_i/T_{\mathrm{sh}})(\log f-\ell_i)} lies in
+\NSi{NS-F-P154-042}{[.55,.65]}, so \NSi{NS-F-P154-043}{a\in[.7,.9]} and
+\NSi{NS-F-P154-044}{b_s=0}.
+
+Along the transition \eqref{eq:B.34}, the source still satisfies \NSi{NS-F-P154-045}{S_q>1}. To verify its sign, make the
+changes before the final \NSi{NS-F-P154-046}{.8} constant-slope interval small in the required
+\NSi{NS-F-P154-047}{C_\eta^k} norms; that constant-slope interval has a parameter-independent slope. Thus
+\NSi{NS-F-P154-048}{\ell_i'=\widetilde\xi_0+(\log\Phi(4,\mathord\cdot))_\eta+}%
+\NSPage{155}%
+\NSi{NS-F-P155-001}{o(1)} and
+\NSi{NS-F-P155-002}{G_i-U_*=O(\Lambda^{-1})+o(1)}. The old gradient obeys
+\NSFormula{NS-F-P155-003}{display}{none}
+\[
+\begin{aligned}
+  -H_c\ell_i'&\geq L\Lambda\chi-C\chi-C_{\sigma_*}\sqrt\chi-C/\Lambda-o(1),\\
+  -H_c(\log f)'&=\frac{2\eta H_c}{1+\eta^2}\geq-Cj_0^2-C/\Lambda-o(1).
+\end{aligned}
+\]
+For the second line use \NSi{NS-F-P155-004}{\eta H_*=(D+4d)\eta^2+dj_0\eta} and complete the square. For the first line
+use \eqref{eq:B.20}, which gives
+\NSi{NS-F-P155-005}{H_*\partial_\eta\log\Phi=O(\chi)+O(\Lambda^{-1})}; multiplication of the
+\NSi{NS-F-P155-006}{O(\Lambda^{-1})} field error by \NSi{NS-F-P155-007}{\widetilde\xi_0} introduces an error bounded by
+\NSi{NS-F-P155-008}{C_{\sigma_*}\sqrt\chi}, which is absorbed as before. The two gradients are combined convexly in
+\eqref{eq:B.34}. Since \NSi{NS-F-P155-009}{-W} remains close to
+\NSi{NS-F-P155-010}{-W_*>2.8}, \NSi{NS-F-P155-011}{l\geq.55}, and
+\NSi{NS-F-P155-012}{h,j_0} are small, \NSi{NS-F-P155-013}{S_q>1} follows. The barrier
+\NSi{NS-F-P155-014}{\mathcal D_Xp_1=XS_q/L-lp_1>0} at \NSi{NS-F-P155-015}{p_1=2} preserves
+\NSi{NS-F-P155-016}{p_1>2}. Thus this entire transition, and the subsequent constant-slope interval before
+restoration, continue to satisfy the strict inequalities defining the relaxed cone condition.
+
+\subsection{Matching the five radial moment functions exactly.}\label{sec:B.8}
+The azimuthal profile \NSi{NS-F-P155-017}{E} now has the required reference form \eqref{eq:A.7}, and the axial profile
+\NSi{NS-F-P155-018}{U=G_i} is close to its reference value \NSi{NS-F-P155-019}{4\eta} by \eqref{eq:B.32} and \eqref{eq:B.1}.
+In this subsection, we match the five cumulative radial integrals
+\NSi{NS-F-P155-020}{M,I,J,S,C_p} of \eqref{eq:4.15} to attach the outer profile. We first choose the radial scale
+\NSi{NS-F-P155-021}{X_R} so that their normalized discrepancies are small, then correct them with five fixed bumps
+while preserving the relaxed cone inequalities (Proposition~\ref{prop:B.8}). The common axis pressure datum
+\NSi{NS-F-P155-022}{\Pi_0} and exact moment matching will then preserve every subsequent outer field by Lemma~\ref{lem:4.4}.
+
+We set
+\NSFormula{NS-F-P155-023}{display}{none}
+\[
+  X_R=X_i(\mathsf C P_*)^{10},
+  \qquad
+  x=X/X_R.
+\]
+We also set \NSi{NS-F-P155-024}{X_{\mathrm{sep}}=X_ie^{T_{\mathrm{sh}}}}, the endpoint of the transition
+\eqref{eq:B.34}; it is fixed before the amplitude.
+
+\begin{proposition}\label{prop:B.8}
+For a sufficiently large amplitude \NSi{NS-F-P155-025}{\mathsf C}, followed by sufficiently small activation transitions,
+the profile constructed in Proposition~\ref{prop:B.5} and continued by \eqref{eq:B.34} can be continued to
+\NSi{NS-F-P155-026}{\log x=-5}, preserving the strict relaxed cone condition, so that its fields, pressure
+\NSi{NS-F-P155-027}{\Pi}, and all five radial moment functions
+\NSi{NS-F-P155-028}{M,I,J,S,C_p} agree exactly with those of the reference inner profile \eqref{eq:A.7}. It
+can then follow the reference outer radial profile without changing its prescribed pressure datum or
+the subsequent values of \NSi{NS-F-P155-029}{Q_s,N_s}.
+\end{proposition}
+\begin{proof}
+We first normalize the radial moment map so that its inverse bounds do not depend
+on the later large radius. We then show that the discrepancy accumulated at the inner
+endpoint is small in those units and cancel it with five fixed bumps.
+
+We introduce \NSi{NS-F-P155-030}{\widehat H=\sqrt{2x}E} and normalized radial moment functions by
+\NSFormula{NS-F-P155-031}{display}{none}
+\[
+\begin{gathered}
+  M=X_R\widehat M,\qquad
+  I=X_R^{3/2}\widehat I,\qquad
+  J=X_R^{3/2}\widehat J,\qquad
+  S=X_R\widehat S,\\
+  C_p=\displaystyle\int_0^x\frac{E(\xi,\eta)^2}{2\xi}\,d\xi,
+  \qquad
+  \Pi=\Pi_0+C_p.
+\end{gathered}
+\]
+Here \NSi{NS-F-P155-032}{\widehat M,\widehat I,\widehat J,\widehat S} are the integrals of
+\NSi{NS-F-P155-033}{U,\widehat H,U\widehat H,U^2-E^2/2}, respectively, with respect to
+\NSi{NS-F-P155-034}{x}. Substitution in \eqref{eq:4.16} gives
+\NSFormula{NS-F-P155-035}{display}{B.35}
+\begin{equation}
+\begin{aligned}
+  W&=1-2D\eta\widehat M/x-d\widehat M_\eta/x,\\
+  Q_s&=-W+\frac{(1-h)\widehat I-D\eta\widehat I_\eta-d\widehat J_\eta
+                   +2(h-D)\eta\widehat J}{x\widehat H},\\
+  N_s&=-WU+\frac{D(\widehat M-\eta\widehat M_\eta)+4h\eta\widehat S-d\widehat S_\eta}{x}
+                   +4A\eta\Pi-d\Pi_\eta.
+\end{aligned}
+\tag{B.35}\label{eq:B.35}
+\end{equation}
+\NSPage{156}%
+In particular \NSi{NS-F-P156-001}{X_R} has disappeared from the formulas for
+\NSi{NS-F-P156-002}{Q_s,N_s}. On the fixed interval
+\NSi{NS-F-P156-003}{\mathcal R=[e^{-8},e^{-5}]}, the ideal
+\NSi{NS-F-P156-004}{E_0=P_*fx^{1/10}} and \NSi{NS-F-P156-005}{Q_{s,0}} have positive minima, and the ideal
+\NSi{NS-F-P156-006}{N_{s,0}} is bounded; these are properties of the explicit formula \eqref{eq:A.25}. The map \eqref{eq:B.35} is Lipschitz
+there in each prescribed finite parameter norm, with one further parameter derivative on its
+inputs, and with constants depending only on data of the outer profile.
+
+The same is true of the fixed restoration and moment correction operations. To make
+the cone tolerance explicit, set
+\NSi{NS-F-P156-007}{Q_{\min}=\min_{\mathcal R\times[-1,1]}Q_{s,0}>0},
+\NSi{NS-F-P156-008}{e_*=\min E_0>0}, and
+\NSi{NS-F-P156-009}{w_*=1+\max|N_{s,0}/(E_0Q_{s,0})|}. A tolerance determined by the exterior-profile data can ensure
+throughout both operations that
+\NSFormula{NS-F-P156-010}{display}{B.36}
+\begin{equation}
+  Q_s\geq Q_{\min}/2,\qquad
+  E\geq e_*/2,\qquad
+  |a-.8|\leq.1,\qquad
+  \left|\frac{N_s}{EQ_s}\right|\leq w_*,\qquad
+  |b_s|\leq\frac{.1}{1+w_*}.
+\tag{B.36}\label{eq:B.36}
+\end{equation}
+It follows that \NSi{NS-F-P156-011}{v_s\leq.9+.01/.7<1}. Setting
+\NSi{NS-F-P156-012}{G=Q_s-b_sN_s/(aE)}, we obtain
+\NSFormula{NS-F-P156-013}{display}{B.37}
+\begin{equation}
+  G\geq\frac67Q_s\geq\frac{3Q_{\min}}7,
+  \qquad
+  P_{\mathrm c}=\frac{X_Rx}{L}G.
+\tag{B.37}\label{eq:B.37}
+\end{equation}
+Thus \NSi{NS-F-P156-014}{P_{\mathrm c}>2} follows by increasing \NSi{NS-F-P156-015}{X_R} after fixing the tolerance. No moment correction
+tolerance has to shrink with \NSi{NS-F-P156-016}{X_R}.
+
+It remains to show that this fixed tolerance is achievable. In normalized coordinates, the
+endpoint \NSi{NS-F-P156-017}{X_{\mathrm{sep}}} has coordinate
+\NSFormula{NS-F-P156-018}{display}{B.38}
+\begin{equation}
+  x_{\mathrm{sep}}=X_{\mathrm{sep}}/X_R=e^{T_{\mathrm{sh}}}/(\mathsf C P_*)^{10}.
+\tag{B.38}\label{eq:B.38}
+\end{equation}
+On \NSi{NS-F-P156-019}{[0,X_{\mathrm{sep}}]}, the previously established bounds for
+\NSi{NS-F-P156-020}{\log(\mathsf C E(X_i,\mathord\cdot))} and
+\NSi{NS-F-P156-021}{U(X_i,\mathord\cdot)}, together with \eqref{eq:B.34} bound
+\NSi{NS-F-P156-022}{U} and \NSi{NS-F-P156-023}{\mathsf C E} in each required parameter norm; near zero
+\NSi{NS-F-P156-024}{\mathsf C E=O(\sqrt X)}. Hence the contributions to the cumulative integrals from
+\NSi{NS-F-P156-025}{0\leq x\leq x_{\mathrm{sep}}} satisfy
+\NSFormula{NS-F-P156-026}{display}{B.39}
+\begin{equation}
+\begin{aligned}
+  \lVert\widehat M\rVert_{C_\eta^k}+\lVert\widehat S\rVert_{C_\eta^k}
+    &\leq C_kx_{\mathrm{sep}},\\
+  \lVert\widehat I\rVert_{C_\eta^k}+\lVert\widehat J\rVert_{C_\eta^k}
+    &\leq C_k\mathsf C^{-1}x_{\mathrm{sep}}^{3/2},\\
+  \lVert C_p\rVert_{C_\eta^k}
+    &\leq C_k\mathsf C^{-2}\qquad(x=x_{\mathrm{sep}}).
+\end{aligned}
+\tag{B.39}\label{eq:B.39}
+\end{equation}
+The corresponding integrals of the ideal profile with positive weights also vanish as positive
+powers of \NSi{NS-F-P156-027}{x_{\mathrm{sep}}}. The pressure increment of the reference profile at
+\NSi{NS-F-P156-028}{x_{\mathrm{sep}}} is
+\NSi{NS-F-P156-029}{(5/2)P_*^2f^2x_{\mathrm{sep}}^{1/5}=O(\mathsf C^{-2})}. All constants in these vanishing errors may depend on the already fixed axis and
+shape parameters.
+
+After \NSi{NS-F-P156-030}{X_{\mathrm{sep}}}, formula \eqref{eq:B.34} is exactly the ideal angular profile because
+\NSi{NS-F-P156-031}{\mathsf C^{-1}f(X/X_i)^{1/10}=P_*fx^{1/10}}. Choose the amplitude so large that
+\NSi{NS-F-P156-032}{x_{\mathrm{sep}}<e^{-8}}. On \NSi{NS-F-P156-033}{-8<\log x<-7}, restore
+\NSi{NS-F-P156-034}{G_i} smoothly to \NSi{NS-F-P156-035}{4\eta}, keeping
+\NSi{NS-F-P156-036}{E} ideal. The discrepancy \NSi{NS-F-P156-037}{G_i-4\eta} can be made as small as required
+by first choosing \NSi{NS-F-P156-038}{j_0}, then \NSi{NS-F-P156-039}{\Lambda}, and finally the small transitions in \eqref{eq:B.32}. Integration over the
+remaining interval gives bounds depending only on the exterior-profile data: all relevant
+weights are integrable positive powers at zero. Therefore the five normalized moment
+discrepancies at the moment correction have size at most
+\NSi{NS-F-P156-040}{C_k\lVert G_i-4\eta\rVert_{C_\eta^{k+1}}+o_{\mathrm C}(1)}. The same estimate controls field values, logarithmic radial derivatives, and
+\NSi{NS-F-P156-041}{Q_s,N_s} on the fixed restoration patch.
+
+On \NSi{NS-F-P156-042}{-6<\log x<-5}, add two fixed radial bumps to \NSi{NS-F-P156-043}{U} and three to
+\NSi{NS-F-P156-044}{E}. At the ideal profile, replace the \NSi{NS-F-P156-045}{J} row by
+\NSi{NS-F-P156-046}{J-4\eta I}, and the \NSi{NS-F-P156-047}{S} row by
+\NSi{NS-F-P156-048}{S-8\eta M}. Up to fixed nonzero normalizing factors, the derivative of the normalized moment map has the two blocks
+\NSFormula{NS-F-P156-049}{display}{none}
+\[
+  U\ \text{weights}:\quad 1,\ fx^{3/5};
+  \qquad
+  E\ \text{weights}:\quad x^{1/2},\ fx^{1/10},\ fx^{-9/10}.
+\]

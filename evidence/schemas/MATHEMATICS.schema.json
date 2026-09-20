@@ -1,0 +1,240 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/navier-stokes-everyday/MATHEMATICS.schema.json",
+  "title": "Everyday English mathematical-validation record",
+  "description": "Mathematical coverage and identity evidence for one or more target segments or teaching additions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "record_type",
+    "status",
+    "pdf_pages",
+    "target_ids",
+    "claims",
+    "definitions",
+    "formulas",
+    "dependencies",
+    "source_authorities",
+    "bidirectional_coverage",
+    "formula_marker_identity",
+    "checks",
+    "lean_mapping",
+    "lean_coverage_gap",
+    "supersession"
+  ],
+  "properties": {
+    "id": { "$ref": "#/$defs/recordId" },
+    "record_type": { "const": "mathematics" },
+    "status": { "$ref": "#/$defs/status" },
+    "pdf_pages": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/pdfPage" }
+    },
+    "target_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/targetId" }
+    },
+    "claims": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/claim" }
+    },
+    "definitions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/definition" }
+    },
+    "formulas": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/formula" }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/dependency" }
+    },
+    "source_authorities": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/authority" }
+    },
+    "bidirectional_coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_to_target", "target_to_source"],
+      "properties": {
+        "source_to_target": { "$ref": "#/$defs/requiredCheck" },
+        "target_to_source": { "$ref": "#/$defs/requiredCheck" }
+      }
+    },
+    "formula_marker_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["result", "marker_ids", "evidence"],
+      "properties": {
+        "result": { "enum": ["pass", "pending", "fail", "not_applicable"] },
+        "marker_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/nonemptyString" }
+        },
+        "evidence": { "$ref": "#/$defs/nonemptyString" }
+      }
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hypothesis", "quantifier", "negation", "constant", "sign", "domain", "codomain"],
+      "properties": {
+        "hypothesis": { "$ref": "#/$defs/check" },
+        "quantifier": { "$ref": "#/$defs/check" },
+        "negation": { "$ref": "#/$defs/check" },
+        "constant": { "$ref": "#/$defs/check" },
+        "sign": { "$ref": "#/$defs/check" },
+        "domain": { "$ref": "#/$defs/check" },
+        "codomain": { "$ref": "#/$defs/check" }
+      }
+    },
+    "lean_mapping": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_or_definition_id", "declaration", "path", "locator", "coverage"],
+        "properties": {
+          "claim_or_definition_id": { "$ref": "#/$defs/recordId" },
+          "declaration": { "$ref": "#/$defs/nonemptyString" },
+          "path": { "$ref": "#/$defs/relativePath" },
+          "locator": { "$ref": "#/$defs/nonemptyString" },
+          "coverage": { "$ref": "#/$defs/nonemptyString" }
+        }
+      }
+    },
+    "lean_coverage_gap": { "type": ["string", "null"] },
+    "supersession": { "$ref": "#/$defs/supersession" }
+  },
+  "$defs": {
+    "nonemptyString": { "type": "string", "minLength": 1 },
+    "recordId": { "type": "string", "minLength": 1, "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$" },
+    "targetId": { "type": "string", "pattern": "^EE-(?:TGT|ADD)-P[0-9]{3}-[0-9]{3}$" },
+    "status": { "enum": ["pass", "pending", "fail", "superseded"] },
+    "pdfPage": { "type": "integer", "minimum": 1, "maximum": 166 },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "relativePath": { "type": "string", "minLength": 1, "pattern": "^(?![A-Za-z]:)(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$" },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_id", "exact_claim", "source_authority_ids"],
+      "properties": {
+        "claim_id": { "$ref": "#/$defs/recordId" },
+        "exact_claim": { "$ref": "#/$defs/nonemptyString" },
+        "source_authority_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/recordId" }
+        }
+      }
+    },
+    "definition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["definition_id", "exact_definition", "source_authority_ids", "accepting_case", "rejecting_case"],
+      "properties": {
+        "definition_id": { "$ref": "#/$defs/recordId" },
+        "exact_definition": { "$ref": "#/$defs/nonemptyString" },
+        "source_authority_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/recordId" }
+        },
+        "accepting_case": { "type": ["string", "null"] },
+        "rejecting_case": { "type": ["string", "null"] }
+      }
+    },
+    "formula": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["formula_id", "marker_id", "kind", "exact_role", "source_tex_sha256", "target_tex_sha256", "identity_result"],
+      "properties": {
+        "formula_id": { "$ref": "#/$defs/recordId" },
+        "marker_id": { "$ref": "#/$defs/nonemptyString" },
+        "kind": { "enum": ["inline", "display", "teaching"] },
+        "exact_role": { "$ref": "#/$defs/nonemptyString" },
+        "source_tex_sha256": {
+          "oneOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        },
+        "target_tex_sha256": { "$ref": "#/$defs/sha256" },
+        "identity_result": { "enum": ["pass", "pending", "fail", "not_applicable"] }
+      }
+    },
+    "dependency": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dependency_id", "from_id", "to_id", "relation", "source_authority_ids"],
+      "properties": {
+        "dependency_id": { "$ref": "#/$defs/recordId" },
+        "from_id": { "$ref": "#/$defs/recordId" },
+        "to_id": { "$ref": "#/$defs/recordId" },
+        "relation": { "$ref": "#/$defs/nonemptyString" },
+        "source_authority_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/recordId" }
+        }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authority_id", "authority_type", "path", "locator", "file_sha256", "coverage"],
+      "properties": {
+        "authority_id": { "$ref": "#/$defs/recordId" },
+        "authority_type": { "enum": ["paper", "frozen_lean", "local_derivation"] },
+        "path": { "$ref": "#/$defs/relativePath" },
+        "locator": { "$ref": "#/$defs/nonemptyString" },
+        "file_sha256": {
+          "oneOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        },
+        "coverage": { "$ref": "#/$defs/nonemptyString" }
+      }
+    },
+    "requiredCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["result", "evidence"],
+      "properties": {
+        "result": { "enum": ["pass", "pending", "fail"] },
+        "evidence": { "$ref": "#/$defs/nonemptyString" }
+      }
+    },
+    "check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["result", "evidence"],
+      "properties": {
+        "result": { "enum": ["pass", "pending", "fail", "not_applicable"] },
+        "evidence": { "$ref": "#/$defs/nonemptyString" }
+      }
+    },
+    "supersession": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supersedes", "superseded_by"],
+      "properties": {
+        "supersedes": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/recordId" } },
+        "superseded_by": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/recordId" } }
+      }
+    }
+  }
+}
