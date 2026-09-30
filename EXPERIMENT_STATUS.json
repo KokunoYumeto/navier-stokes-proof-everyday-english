@@ -1,0 +1,14 @@
+{
+  "status": "unfinished_experiment",
+  "writing_success_established": false,
+  "retained_formats": [
+    "PDF",
+    "EPUB",
+    "HTML",
+    "LaTeX"
+  ],
+  "earlier_draft": "Full-paper attempt; rejected as a basis for the later rewrite",
+  "later_manual_restart": "Source page 1; unfinished",
+  "reader_purpose": "Reference, reading and comparison",
+  "underlying_mathematics": "This writing experiment does not independently certify the source theorem"
+}

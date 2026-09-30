@@ -1,8 +1,18 @@
 # Everyday English Edition of the Navier–Stokes Proof
 
-[Read the book online](https://kokunoyumeto.github.io/navier-stokes-proof-everyday-english/) · [Read the PDF](output/everyday-english/pdf/everyday-english-edition.pdf) · [Download the EPUB](output/everyday-english/epub/everyday-english-edition.epub) · [Open the LaTeX](everyday/main.tex)
+**Experimental attempt; unfinished and not established as successful.**
+This repository preserves an attempt to present the paper in Everyday English.
+A full-paper draft and its PDF, EPUB, HTML and LaTeX were produced, but page
+coverage and build checks did not establish that the writing met its intended
+purpose. That draft was subsequently rejected as the basis for a new rewrite.
+The later manual effort returned to source page 1 and remained unfinished.
+The earlier files are retained for reading, comparison and reference. Statements
+of completion in older receipts describe the producer's earlier release decision,
+not current acceptance of the experiment.
 
-This is a complete Everyday English edition of OpenAI's 166-page paper *Finite Time Blowup for Navier–Stokes*. It keeps the mathematics, formulas, notation, claim order, numbered statements, proofs, citations, and source-page links. The prose around them has been rewritten so that each idea says who or what acts, what it acts on, why the step is needed, and what follows from it.
+[Read the experimental draft online](https://kokunoyumeto.github.io/navier-stokes-proof-everyday-english/) · [Read the PDF](output/everyday-english/pdf/everyday-english-edition.pdf) · [Download the EPUB](output/everyday-english/epub/everyday-english-edition.epub) · [Open the LaTeX](everyday/main.tex)
+
+The earlier full-paper draft attempts an Everyday English treatment of OpenAI's 166-page paper *Finite Time Blowup for Navier–Stokes*. It keeps the mathematics, formulas, notation, claim order, numbered statements, proofs, citations, and source-page links. The prose around them has been rewritten so that each idea says who or what acts, what it acts on, why the step is needed, and what follows from it.
 
 Technical terms stay when the mathematics needs them. The first place that needs a term also says what the term means and what job it does there. Explanations added for the reader are marked and kept separate from claims made by the source paper.
 
@@ -19,9 +29,9 @@ This is an independent edition, not an official OpenAI release. The [official pa
 
 Every section is tied to the matching source span and source-page marker. The records under [`evidence/translation/`](evidence/translation/) give the source and target hashes, the exact change, its language evidence, its mathematical checks, and any term that had to stay. The formula records check each formula in both directions. The [first-use record](evidence/translation/FIRST_USE_FINALIZATION.json) shows where technical ideas first become clear in the running text.
 
-The release gate accepts only final builds. It checks the PDF, HTML, and EPUB against their recorded SHA-256 hashes; requires two matching builds of each format; requires all 29 Everyday English range audits to pass; requires zero unresolved references, zero unresolved citations, and zero overfull boxes; requires EPUBCheck to pass; and requires the final PDF's every-page visual record. The exact release decision is in [`EVERYDAY_ENGLISH_FINAL_QA.json`](evidence/build/EVERYDAY_ENGLISH_FINAL_QA.json). [`MANIFEST.sha256`](MANIFEST.sha256) binds every file in the repository to the bytes that were staged.
+The historical release gate accepted builds designated final by the producer. It checks the PDF, HTML, and EPUB against their recorded SHA-256 hashes; requires two matching builds of each format; requires all 29 Everyday English range audits to pass; requires zero unresolved references, zero unresolved citations, and zero overfull boxes; requires EPUBCheck to pass; and requires the final PDF's every-page visual record. The exact release decision is in [`EVERYDAY_ENGLISH_FINAL_QA.json`](evidence/build/EVERYDAY_ENGLISH_FINAL_QA.json). [`MANIFEST.sha256`](MANIFEST.sha256) binds every file in the repository to the bytes that were staged.
 
-The checks establish correspondence, build integrity, and the recorded review work. They do not independently prove the mathematics, turn this edition into an official source, or decide recognition by the Clay Mathematics Institute.
+The historical checks record correspondence, build integrity, and review work; they do not establish the success of the writing experiment. They do not independently prove the mathematics, turn this edition into an official source, or decide recognition by the Clay Mathematics Institute.
 
 ## Illustrations
 
@@ -49,7 +59,7 @@ The command builds each format twice, compares the resulting bytes, runs the ran
 
 ## Repository map
 
-- `everyday/` contains the complete Everyday English LaTeX and the edition's illustration files.
+- `everyday/` contains the full-paper Everyday English draft in LaTeX and the edition's illustration files.
 - `docs/` contains the checked HTML served by GitHub Pages.
 - `output/everyday-english/pdf/` contains the checked PDF.
 - `output/everyday-english/epub/` contains the checked EPUB.

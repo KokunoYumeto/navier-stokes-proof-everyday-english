@@ -1,0 +1,10 @@
+{
+  "scope": "Experimental-status metadata; earlier mathematical and draft artifacts retained",
+  "earlier_snapshot": "f6df5e07e75bc63950754478abf3fd16ac4c94d7",
+  "files_sha256": {
+    "README.md": "56fe574f330fb8d6966b27fa91a8c87a5d9839881f55943f2991d6f23174ffaf",
+    "docs/index.html": "eb9876f853545f0eb2925939ae9cb6fee7effc938e035aa77f9e5af4db213828",
+    "EXPERIMENT_STATUS.json": "ca5f2d9d91c9e8dad618ba867385915e0df59231471ed155cabc5cdccf16dc64"
+  },
+  "historical_manifest": "MANIFEST.sha256 binds the earlier staged release, not later metadata changes"
+}
